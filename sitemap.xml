@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
-  </url>
-  
-  <url>
     <loc>/posts/20200416083138-acehan_turkish_leatherworkers_in_peabody_massachusetts/</loc>
   </url>
   
@@ -127,6 +123,10 @@
   </url>
   
   <url>
+    <loc>/posts/ddr/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415113437-development_theory/</loc>
   </url>
   
@@ -215,6 +215,10 @@
   </url>
   
   <url>
+    <loc>/posts/hinnebusch_identity_and_state_formation_in_multi_sectarian_societies/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/hugo/</loc>
   </url>
   
@@ -224,6 +228,10 @@
   
   <url>
     <loc>/posts/20200415200613-india/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/integrated_ddr_standards/</loc>
   </url>
   
   <url>
@@ -263,7 +271,19 @@
   </url>
   
   <url>
+    <loc>/posts/libya/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/libyia/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414200012-makdisi_the_ecumenical_frame/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/maoist_fighters_in_nepal/</loc>
   </url>
   
   <url>
@@ -287,6 +307,10 @@
   </url>
   
   <url>
+    <loc>/posts/nasser/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415213332-nationalism_and_outsiders_in_the_middle_east/</loc>
   </url>
   
@@ -300,6 +324,10 @@
   
   <url>
     <loc>/posts/20200415154022-networks/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/next_generation_disarmament_demobilization_and_reintegration/</loc>
   </url>
   
   <url>
@@ -352,6 +380,10 @@
   
   <url>
     <loc>/posts/peer_review/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
   </url>
   
   <url>
@@ -411,6 +443,10 @@
   </url>
   
   <url>
+    <loc>/posts/sez_s/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200404075512-ssh_notes/</loc>
   </url>
   
@@ -432,6 +468,14 @@
   
   <url>
     <loc>/posts/20200416085736-tanzimat/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/the_danger_of_treating_ideas_from_finance_as_generalized_self_help/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/the_twin_insurgency/</loc>
   </url>
   
   <url>

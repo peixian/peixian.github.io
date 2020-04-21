@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
+    <title>Peixian&#39;s Notes</title>
     <link>/</link>
-    <description>Recent content on </description>
+    <description>Recent content on Peixian&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
@@ -184,7 +184,7 @@ Mountaineering objectives  2x max strength workout with Scott&amp;rsquo;s Killer
       
       <guid>/posts/bgc_vaccine/</guid>
       <description>Tags: covid
- invented in france  </description>
+ invented in france Used against TB Not well understood Possible health benefits against covid-19?  </description>
     </item>
     
     <item>
@@ -316,6 +316,16 @@ multicore ocaml Tags: Computers</description>
       <description>Tags: Computers
 MariaDB  https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/  Backlinks 2 Backlinks Cassandra Tags: Databases, Computers
 postgres Tags: Databases, Computers</description>
+    </item>
+    
+    <item>
+      <title>ddr</title>
+      <link>/posts/ddr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ddr/</guid>
+      <description>Tags: militias
+Backlinks  integrated ddr standards next generation disarmament, demobilization, and reintegration maoist fighters in nepal  </description>
     </item>
     
     <item>
@@ -543,10 +553,8 @@ Backlinks  Nationalism and Outsiders in the Middle East - Midterm Draft Saunders
       <description>Tags: Workouts
 Align heart rate zones with training periods.
 4 Zones Zone 1 Basic endurance, 55-75% of max HR
-Zone 2 No man&amp;rsquo;s land, 75-80% of max HR
- Note that this can &amp;ldquo;feel&amp;rdquo; like training, but the gains are small here. Zone 1 is a safer bet.  Zone 3 Uppermost aerobic training, 80-90% of max HR
-Zone 4 Anaerobic zone, 90-95% of max HR
-Zone 5 Max effort</description>
+ Low Speed. At low intensities, predominately using slow twitch (ST) muscle fibers, the rate of ATP production is modest.  Zone 2 No man&amp;rsquo;s land, 75-80% of max HR
+ Note that this can &amp;ldquo;feel&amp;rdquo; like training, but the gains are small here. Zone 1 is a safer bet.  Zone 3 Uppermost aerobic training, 80-90% of max HR</description>
     </item>
     
     <item>
@@ -557,6 +565,16 @@ Zone 5 Max effort</description>
       <guid>/posts/higher-ed/</guid>
       <description>Tags: grad school
  https://www.sup.org/books/title/?id=9404&amp;amp;bottom%5Fref=recommended https://www.sup.org/books/title/?id=24607&amp;amp;bottom%5Fref=recommended https://www.sup.org/books/title/?id=18531&amp;amp;bottom%5Fref=recommended https://www.sup.org/books/title/?id=792&amp;amp;bottom%5Fref=recommended  </description>
+    </item>
+    
+    <item>
+      <title>Hinnebusch - Identity and State Formation in Multi‐sectarian Societies</title>
+      <link>/posts/hinnebusch_identity_and_state_formation_in_multi_sectarian_societies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hinnebusch_identity_and_state_formation_in_multi_sectarian_societies/</guid>
+      <description>Tags: papers, Nationalism and Outsiders in the Middle East
+ State formation and identity in MENA are not necessarily co-terminus  Sect and class are not necessarily orthonognal   Claims that the westphalian state was unnaturally applied to MENA 3 levels of identity  Supra-state  Islam, Ummah, Pan-Arabism, etc   State level  Nationalism, secularism, etc   Sub-state  Sectarian, tribal, etc     Hybrid states with multiple identities can exist for a surprisingly long time In the long run, strong, inclusive states and national identities work in tandem, alongside weak states and sectarianism.</description>
     </item>
     
     <item>
@@ -593,6 +611,16 @@ Discussion questions From Erin   Is the idea that to be post-ottoman in contempo
     </item>
     
     <item>
+      <title>integrated ddr standards</title>
+      <link>/posts/integrated_ddr_standards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/integrated_ddr_standards/</guid>
+      <description>Tags: ddr
+ http://un.org.np/node/11787  Advises everything from collection of data to ensuring the national ownership of the DDR.</description>
+    </item>
+    
+    <item>
       <title>iraq</title>
       <link>/posts/20200413223156-iraq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -624,9 +652,8 @@ Simon - Imposition of Nationalism on Non-Nation State Tags: iraq, books, Nationa
       
       <guid>/posts/20200419130420-iraqi_ghost_militias/</guid>
       <description>Tags: PMF&amp;rsquo;s in Iraq, articles
- https://www.instapaper.com/read/1296820928  As of April 17th, 2020, 3 new unknown militia groups have appeared:
- Usbat Al-Thaereen Ashab Al-Kahf Qabdat Al-Hoda  Usbat Al-Thaereen   The establishment of Usbat al-Thaereen, as it claimed responsibility for the latest attacks on U.S. bases, will heighten tensions between Washington and Tehran.  First released statement on March 18th
-  Very similar to Kata’ib Hezbollah, Harakat Hezbollah al-Nujaba and Kata&amp;rsquo;ib Sayyid al-Shuhada</description>
+ https://www.instapaper.com/read/1296820928 https://www.instapaper.com/read/1287238419  As of April 17th, 2020, 3 new unknown militia groups have appeared:
+ Usbat Al-Thaereen Ashab Al-Kahf Qabdat Al-Hoda  Usbat Al-Thaereen   The establishment of Usbat al-Thaereen, as it claimed responsibility for the latest attacks on U.S. bases, will heighten tensions between Washington and Tehran. By Sunday evening, a video emerged online from a group called “Usbat al-Tha’ireen” (The League of Revolutionaries), claiming that their members conducted both recent attacks on Camp Taji    First released statement on March 18th</description>
     </item>
     
     <item>
@@ -686,12 +713,40 @@ Simon - Imposition of Nationalism on Non-Nation State Tags: iraq, books, Nationa
     </item>
     
     <item>
+      <title>libya</title>
+      <link>/posts/libya/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/libya/</guid>
+      <description>Backlinks  next generation disarmament, demobilization, and reintegration  </description>
+    </item>
+    
+    <item>
+      <title>libyia</title>
+      <link>/posts/libyia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/libyia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Makdisi - The Ecumenical Frame</title>
       <link>/posts/20200414200012-makdisi_the_ecumenical_frame/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200414200012-makdisi_the_ecumenical_frame/</guid>
       <description>Tags: books, Post-Ottoman Near East, iraq, lebanon,syria</description>
+    </item>
+    
+    <item>
+      <title>maoist fighters in nepal</title>
+      <link>/posts/maoist_fighters_in_nepal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/maoist_fighters_in_nepal/</guid>
+      <description>Tags: ddr, militias
+Backlinks  next generation disarmament, demobilization, and reintegration  </description>
     </item>
     
     <item>
@@ -751,6 +806,16 @@ https://www.instapaper.com/read/1297636718</description>
     </item>
     
     <item>
+      <title>nasser</title>
+      <link>/posts/nasser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/nasser/</guid>
+      <description>Tags: egypt
+Backlinks  Hinnebusch - Identity and State Formation in Multi‐sectarian Societies  </description>
+    </item>
+    
+    <item>
       <title>Nationalism and Outsiders in the Middle East</title>
       <link>/posts/20200415213332-nationalism_and_outsiders_in_the_middle_east/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -789,6 +854,19 @@ Question 1  How can we understand the scope of nationalism today: as an ideology
       
       <guid>/posts/20200415154022-networks/</guid>
       <description>Tags: Computers</description>
+    </item>
+    
+    <item>
+      <title>next generation disarmament, demobilization, and reintegration</title>
+      <link>/posts/next_generation_disarmament_demobilization_and_reintegration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/next_generation_disarmament_demobilization_and_reintegration/</guid>
+      <description>Tags: ddr, militias, articles
+DDR continues to rely on outdated principles and requires a rethink. The third generation of DDR is around, involving the integration of local elites alongside soldiers, rebels and miltias, in place like the CAR, libya, Mali and the Niger Delta
+Examples in Haiti and the DRC, with greater experimental design: https://journals.sagepub.com/doi/abs/10.1177/0022002707302790
+integrated ddr standards has helped fusion of DDR with wider recovery and reconstruction strats
+Although there appears to be consensus on the imperative for DDR from Colombia and Haiti to Afghanistan and Libya, there are still many outstanding questions about how this ought to be pursuedmaoist fighters in nepal have rejected the discourse of DDR, but they have successfully integrated into the government.</description>
     </item>
     
     <item>
@@ -1067,6 +1145,15 @@ Summary  Shi&amp;rsquo;is desired a state independent from foreign rule Kurds of
     </item>
     
     <item>
+      <title>special economic zones</title>
+      <link>/posts/sez_s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sez_s/</guid>
+      <description>Tags: finance</description>
+    </item>
+    
+    <item>
       <title>ssh-notes</title>
       <link>/posts/20200404075512-ssh_notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1115,6 +1202,29 @@ Academic Talks:  http://matt.might.net/articles/academic-presentation-tips/ Desc
       <guid>/posts/20200416085736-tanzimat/</guid>
       <description>Tags: ottoman
  Reforms attemped to centralize all currencies into a single treasury issued currency Streamlining the Ottoman empire&amp;rsquo;s coercive abilites to command economic production - Blumi - Ottoman Refugees, 1878-1939  </description>
+    </item>
+    
+    <item>
+      <title>the danger of treating ideas from finance as generalized self help</title>
+      <link>/posts/the_danger_of_treating_ideas_from_finance_as_generalized_self_help/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the_danger_of_treating_ideas_from_finance_as_generalized_self_help/</guid>
+      <description>Tags: articles, personal
+Also see https://www.researchgate.net/publication/26798603%5FConditions%5Ffor%5FIntuitive%5FExpertise%5FA%5FFailure%5Fto%5FDisagree?enrichId=rgreq-7a806a35-ae6b-4eb6-ab51-89923c22b177&amp;amp;enrichSource=Y292ZXJQYWdlOzI2Nzk4NjAzO0FTOjI5OTQ5MjcwMTE2MzUyMUAxNDQ4NDE2MDMyMTgz&amp;amp;el=1%5Fx%5F2
+Takeaway: financial advice is generalized because finance is a weird field, software has much more acute learning signals. Finance models are generically not generalizable, no one would apply black-scholes towards their groceries.
+Advice should be taken on how easily something can be abstracted or whether the problem is domain specific. Some patterns applied in firmware and SDR cannot be applied to higher level programming, for example.</description>
+    </item>
+    
+    <item>
+      <title>the twin insurgency</title>
+      <link>/posts/the_twin_insurgency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the_twin_insurgency/</guid>
+      <description>Tags: articles, organized labor
+ https://www.instapaper.com/read/1278350355  Claims that there are two insurgencies:
+ interconnected criminal insurgencies where the global disenfranchised resist, co-opt, and route around states  Cartels, traffickers, hackers, arms dealers, etc   Plutocratic insurgency, global elites seek to disengage from traditional national obligations and responsbilities  Libertarians, tax havens, currency speculators    Neither insurgency wishes to seek the control over the state, nor destroy it.</description>
     </item>
     
     <item>
