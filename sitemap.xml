@@ -19,6 +19,10 @@
   </url>
   
   <url>
+    <loc>/posts/adjacency_lists/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415115345-aerobic_capacity/</loc>
   </url>
   
@@ -39,6 +43,10 @@
   </url>
   
   <url>
+    <loc>/posts/algorithms/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414194612-anderson_imagined_communities/</loc>
   </url>
   
@@ -48,6 +56,10 @@
   
   <url>
     <loc>/posts/20200415213157-anscombe_state_faith_and_nation/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/approximate_nearest_neighbor/</loc>
   </url>
   
   <url>
@@ -119,6 +131,10 @@
   </url>
   
   <url>
+    <loc>/posts/crypto/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/databases/</loc>
   </url>
   
@@ -128,6 +144,10 @@
   
   <url>
     <loc>/posts/20200415113437-development_theory/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/disarmingly_forthright_mscs_advice/</loc>
   </url>
   
   <url>
@@ -159,6 +179,10 @@
   </url>
   
   <url>
+    <loc>/posts/embedding_text_into_vector_spaces/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414135839-endianness/</loc>
   </url>
   
@@ -168,6 +192,10 @@
   
   <url>
     <loc>/posts/20200414140012-farc_colombia/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/fasttext/</loc>
   </url>
   
   <url>
@@ -191,11 +219,31 @@
   </url>
   
   <url>
+    <loc>/posts/google_fi/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/gpt2/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415130616-grad_school/</loc>
   </url>
   
   <url>
     <loc>/posts/20200415132921-grad_school_fellowships/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/graph_based_approximate_nearest_neighbor_search/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/graph_traversal/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/greedy_search/</loc>
   </url>
   
   <url>
@@ -208,6 +256,10 @@
   
   <url>
     <loc>/posts/20200415114157-heart_rate_zones/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/hierarchical_navigable_small_world_graph/</loc>
   </url>
   
   <url>
@@ -283,11 +335,19 @@
   </url>
   
   <url>
+    <loc>/posts/macbook_butterfly_keyboard_repair/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414200012-makdisi_the_ecumenical_frame/</loc>
   </url>
   
   <url>
     <loc>/posts/maoist_fighters_in_nepal/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/math/</loc>
   </url>
   
   <url>
@@ -300,6 +360,14 @@
   
   <url>
     <loc>/posts/20200415154216-militias/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/ml/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/mmap/</loc>
   </url>
   
   <url>
@@ -327,6 +395,10 @@
   </url>
   
   <url>
+    <loc>/posts/nearest_neighbor/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415154022-networks/</loc>
   </url>
   
@@ -339,6 +411,10 @@
   </url>
   
   <url>
+    <loc>/posts/nlp/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200418205453-notes_on_surviving_grad_school/</loc>
   </url>
   
@@ -348,6 +424,10 @@
   
   <url>
     <loc>/posts/20200414093947-org_mode/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/org_roam/</loc>
   </url>
   
   <url>
@@ -364,6 +444,10 @@
   
   <url>
     <loc>/posts/20200419210105-overemphasis_of_the_discrete_blog_post/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/pandas/</loc>
   </url>
   
   <url>
@@ -435,7 +519,19 @@
   </url>
   
   <url>
+    <loc>/posts/quantization/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/root/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200419123109-saunders_the_ummah_as_a_nation_a_reappraisal_in_the_wake_of_the_cartoons_affair/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/secure_chat_apps/</loc>
   </url>
   
   <url>
@@ -456,6 +552,10 @@
   
   <url>
     <loc>/posts/20200415213619-syria/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/syscalls/</loc>
   </url>
   
   <url>
@@ -492,6 +592,10 @@
   
   <url>
     <loc>/posts/20200414222310-turkey/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/word2vec/</loc>
   </url>
   
   <url>

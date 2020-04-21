@@ -53,6 +53,16 @@ Little attention has been paid to relationship between meotions and nationalism.
     </item>
     
     <item>
+      <title>adjacency lists</title>
+      <link>/posts/adjacency_lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/adjacency_lists/</guid>
+      <description>Tags: algorithms
+Backlinks  graph based approximate nearest neighbor search (granne)  </description>
+    </item>
+    
+    <item>
       <title>aerobic capacity</title>
       <link>/posts/20200415115345-aerobic_capacity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -107,6 +117,16 @@ Simon - Imposition of Nationalism on Non-Nation State says:  Husri cited german 
     </item>
     
     <item>
+      <title>algorithms</title>
+      <link>/posts/algorithms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/algorithms/</guid>
+      <description>Tags: Computers
+Backlinks  approximate nearest neighbor graph traversal greedy search hierarchical navigable small-world graph (HNSW) nearest neighbor quantization/discretization graph based approximate nearest neighbor search (granne) adjacency lists  </description>
+    </item>
+    
+    <item>
       <title>Anderson - Imagined Communities</title>
       <link>/posts/20200414194612-anderson_imagined_communities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -138,6 +158,15 @@ Backlinks  Blumi - Ottoman Refugees, 1878-1939 Saunders - The Ummah as a Nation:
     </item>
     
     <item>
+      <title>approximate nearest neighbor</title>
+      <link>/posts/approximate_nearest_neighbor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/approximate_nearest_neighbor/</guid>
+      <description>Tags: algorithms, ml</description>
+    </item>
+    
+    <item>
       <title>arabic</title>
       <link>/posts/arabic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -155,7 +184,8 @@ Backlinks  Blumi - Ottoman Refugees, 1878-1939 Saunders - The Ummah as a Nation:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200419124622-articles/</guid>
-      <description></description>
+      <description>Tags: root
+Backlinks  parlimentarism recidivus airlines bailout - 2020 iraqi ghost militias the danger of treating ideas from finance as generalized self help the twin insurgency next generation disarmament, demobilization, and reintegration disarmingly forthright mscs advice embedding text into vector spaces  </description>
     </item>
     
     <item>
@@ -203,13 +233,8 @@ Refugees and history are a two way street, internal refugees of the Ottoman empi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200414223410-books/</guid>
-      <description>Backlinks 20 Backlinks Taking Smart Notes Tags: books, personal
-Anderson - Imagined Communities Tags: books
-Makdisi - The Ecumenical Frame Tags: books, Post-Ottoman Near East, iraq, lebanon,syria
-Meeker - A Nation of Empire Tags: turkey, middle east, books, Post-Ottoman Near East
-Pursely - Familiar Futures Tags: iraq, books, Post-Ottoman Near East
-Ahmed - Afghanistan Rising Tags: books, Post-Ottoman Near East, afghanistan
-Hassan - Longing for the Lost Caliphate Tags: books, Post-Ottoman Near East</description>
+      <description>Tags: root
+Backlinks  Taking Smart Notes Anderson - Imagined Communities Makdisi - The Ecumenical Frame Meeker - A Nation of Empire Pursely - Familiar Futures Adalet - Hotels and Highways Mumby - Graduate School Peters - Getting What You Came For Simon - Imposition of Nationalism on Non-Nation State Provonce - The Last Ottoman Generation Blumi - Ottoman Refugees, 1878-1939 Can - Spiritual Subjects Chaterjee - The Nations and Its Fragments Simpson - War from the Ground Up Hart - Why Don&amp;rsquo;t We Learn From History?</description>
     </item>
     
     <item>
@@ -280,22 +305,14 @@ Stephen Yegge Compilers matter because it Compiler Construction is the first cou
     </item>
     
     <item>
-      <title>Computers</title>
+      <title>computers</title>
       <link>/posts/computers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/computers/</guid>
       <description>endianness - https://wiki.c2.com/?SufficientlySmartCompiler
-Backlinks 10 Backlinks ssh-notes Tags: computers
-Endianess Computers
-Cassandra Tags: Databases, Computers
-Networks Tags: Computers
-postgres Tags: Databases, Computers
-compilers Tags: Computers
-Databases Tags: Computers
-Domain Fronting in Signal Article Tags: Computers, Networks
-Kafka Computers
-multicore ocaml Tags: Computers</description>
+Tags: root
+Backlinks  ssh-notes Endianess Cassandra Networks postgres compilers Databases Domain Fronting in Signal Article Kafka multicore ocaml hugo fish macbook butterfly keyboard repair ml algorithms crypto (for cryptography) greedy search syscalls  </description>
     </item>
     
     <item>
@@ -304,7 +321,18 @@ multicore ocaml Tags: Computers</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/covid/</guid>
-      <description>Backlinks  BGC Vaccine  </description>
+      <description>Tags: root
+Backlinks  BGC Vaccine  </description>
+    </item>
+    
+    <item>
+      <title>crypto (for cryptography)</title>
+      <link>/posts/crypto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/crypto/</guid>
+      <description>Tags: Computers
+Backlinks  secure chat apps  </description>
     </item>
     
     <item>
@@ -339,6 +367,17 @@ development theory brought along a positivist orientation: knowledge existed in 
 Experts had to package development theory for it to be replicated
 development theory was not internally consistent
 dujayla land project Tags: iraq, middle east, development theory</description>
+    </item>
+    
+    <item>
+      <title>disarmingly forthright mscs advice</title>
+      <link>/posts/disarmingly_forthright_mscs_advice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/disarmingly_forthright_mscs_advice/</guid>
+      <description>Tags: articles, grad school
+Read the man pages and check the return values!
+ Join ACM and IEEE, compete and practice good opsec. Most code you read is broken, including:  open source stuff industry code textbook code   Bookmark, study, and seek out good code Learn the entire toolchain, details don&amp;rsquo;t need to memorized right away but should be understood Learn a scripting language, functional language, and a data retrival language, and learn C &amp;amp; C++ well.</description>
     </item>
     
     <item>
@@ -418,6 +457,20 @@ Egypt has a demographics problem, with over 100 million Egyptians. Cairo birth r
     </item>
     
     <item>
+      <title>embedding text into vector spaces</title>
+      <link>/posts/embedding_text_into_vector_spaces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/embedding_text_into_vector_spaces/</guid>
+      <description>Tags: ml, articles
+  https://www.instapaper.com/read/1260653942
+  Word embedding is an nlp technique to map text or words to vectors
+  Allows vector space operations to happen, such as summing or computing the distances of vectors
+ word2vec fasttext gpt2    Once words are generated into individual vectors, combine them into text vectors (aka document or sentence vecotrs)
+ Easy way typically sums or averages the vectors together        Two snippets of text are discovered by mapping both of them into vector space and finding the distances between the vectors</description>
+    </item>
+    
+    <item>
       <title>Endianess</title>
       <link>/posts/20200414135839-endianness/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -449,6 +502,16 @@ Possible classes for fall 2020: @ NYU
     </item>
     
     <item>
+      <title>fasttext</title>
+      <link>/posts/fasttext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/fasttext/</guid>
+      <description>Tags: ml, nlp
+ https://fasttext.cc/docs/en/supervised-tutorial.html  Backlinks  embedding text into vector spaces  </description>
+    </item>
+    
+    <item>
       <title>FED Powers</title>
       <link>/posts/20200414140816-fed_powers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -474,7 +537,8 @@ Possible classes for fall 2020: @ NYU
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200415154751-finance/</guid>
-      <description></description>
+      <description>Tags: root
+Backlinks  FED Powers airlines bailout - 2020 special economic zones  </description>
     </item>
     
     <item>
@@ -498,20 +562,33 @@ Possible classes for fall 2020: @ NYU
     </item>
     
     <item>
+      <title>google fi</title>
+      <link>/posts/google_fi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/google_fi/</guid>
+      <description>Tags: Networks, iraq
+ https://fi.google.com/about/international-rates/ Can now sign up on iphones with esim: https://arstechnica.com/gadgets/2020/04/google-fi-gets-iphone-esim-support/  </description>
+    </item>
+    
+    <item>
+      <title>gpt2</title>
+      <link>/posts/gpt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gpt2/</guid>
+      <description>Tags: ml, nlp
+ https://github.com/peixian/gpt2-testing  Backlinks  embedding text into vector spaces  </description>
+    </item>
+    
+    <item>
       <title>grad school</title>
       <link>/posts/20200415130616-grad_school/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200415130616-grad_school/</guid>
-      <description>http://matt.might.net/articles/how-to-email/  Backlinks 12 Backlinks classes Tags: grad school
-Mumby - Graduate School Tags: books, grad school
-Peters - Getting What You Came For Tags: books, grad school
-Potential Advisors for Master&amp;rsquo;s Thesis Tags: grad school
-Potential Schools for Phd Tags: grad school
-Phd Planning Tags: grad school
-grad school fellowships Tags: grad school
-fall 2020 classes Tags: grad school, classes
-Notes on Surviving Grad School Tags: grad school</description>
+      <description>Tags: root
+ http://matt.might.net/articles/how-to-email/  Backlinks  classes Mumby - Graduate School Peters - Getting What You Came For Potential Advisors for Master&amp;rsquo;s Thesis Potential Schools for Phd grad school fellowships fall 2020 classes Notes on Surviving Grad School Fiebelman - A PhD is Not Enough Higher Ed Readings Phd Planning peer review thesis proposals talks arabic disarmingly forthright mscs advice  </description>
     </item>
     
     <item>
@@ -522,6 +599,38 @@ Notes on Surviving Grad School Tags: grad school</description>
       <guid>/posts/20200415132921-grad_school_fellowships/</guid>
       <description>Tags: grad school
    Name Type Requirements Link     Boren Fellowship Language Matriculated https://www.borenawards.org/eligible-programs   CIS Language Matriculated https://clscholarship.org/   New York State ? ? www.hesc.org   Soros Fellowship Full Matriculated full time https://www.pdsoros.org/   Davis Putter ? ? https://davisputter.org/apply-for-scholarships/   Overseas Press Club ? Matriculated https://overseaspressclubfoundation.org/apply.html    Search Engines:  https://www.iefa.org https://grad.uchicago.edu/fellowships/  Strict Fellowships  Minority Fellowship - March 13 - https://www.</description>
+    </item>
+    
+    <item>
+      <title>graph based approximate nearest neighbor search (granne)</title>
+      <link>/posts/graph_based_approximate_nearest_neighbor_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/graph_based_approximate_nearest_neighbor_search/</guid>
+      <description>Tags: approximate nearest neighbor, algorithms
+  https://github.com/granne/granne
+  Stores adjacency lists with a variable number of neighbors per node
+ saves space on metadata size of index structure depends on the properties of the graph usable index of 4 bil vectors at 240GB can actually use mmap to map the index and the query vectors for lazy loading    Data locality can be increased on the SSD by ordering elements with closer HNSW nodes</description>
+    </item>
+    
+    <item>
+      <title>graph traversal</title>
+      <link>/posts/graph_traversal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/graph_traversal/</guid>
+      <description>Tags: algorithms
+Backlinks  hierarchical navigable small-world graph (HNSW)  </description>
+    </item>
+    
+    <item>
+      <title>greedy search</title>
+      <link>/posts/greedy_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/greedy_search/</guid>
+      <description>Tags: Computers, algorithms
+Backlinks  hierarchical navigable small-world graph (HNSW)  </description>
     </item>
     
     <item>
@@ -555,6 +664,20 @@ Align heart rate zones with training periods.
 4 Zones Zone 1 Basic endurance, 55-75% of max HR
  Low Speed. At low intensities, predominately using slow twitch (ST) muscle fibers, the rate of ATP production is modest.  Zone 2 No man&amp;rsquo;s land, 75-80% of max HR
  Note that this can &amp;ldquo;feel&amp;rdquo; like training, but the gains are small here. Zone 1 is a safer bet.  Zone 3 Uppermost aerobic training, 80-90% of max HR</description>
+    </item>
+    
+    <item>
+      <title>hierarchical navigable small-world graph (HNSW)</title>
+      <link>/posts/hierarchical_navigable_small_world_graph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hierarchical_navigable_small_world_graph/</guid>
+      <description>Tags: ml, algorithms, approximate nearest neighbor
+  https://arxiv.org/abs/1603.09320
+  One of the fastest ANN&amp;rsquo;s
+  uses a search index with multiple layers in a proximity graph
+ each node in the graph corresponds to a query vector    Uses a zooming in approach
+ start at entrypoint at the top layer and recursively perform a greedy search graph traversal until it reaches the local minimum      Backlinks  embedding text into vector spaces  </description>
     </item>
     
     <item>
@@ -700,7 +823,8 @@ Simon - Imposition of Nationalism on Non-Nation State Tags: iraq, books, Nationa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200414224409-latam/</guid>
-      <description></description>
+      <description>Tags: root
+Backlinks  nicaragua electricity colombia  </description>
     </item>
     
     <item>
@@ -742,6 +866,16 @@ Backlinks  next generation disarmament, demobilization, and reintegration  </des
     </item>
     
     <item>
+      <title>macbook butterfly keyboard repair</title>
+      <link>/posts/macbook_butterfly_keyboard_repair/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/macbook_butterfly_keyboard_repair/</guid>
+      <description>Tags: Computers
+ https://support.apple.com/keyboard-service-program-for-mac-notebooks  </description>
+    </item>
+    
+    <item>
       <title>Makdisi - The Ecumenical Frame</title>
       <link>/posts/20200414200012-makdisi_the_ecumenical_frame/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -761,6 +895,16 @@ Backlinks  next generation disarmament, demobilization, and reintegration  </des
     </item>
     
     <item>
+      <title>math</title>
+      <link>/posts/math/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/math/</guid>
+      <description>Tags:root
+Backlinks  ml  </description>
+    </item>
+    
+    <item>
       <title>Meeker - A Nation of Empire</title>
       <link>/posts/20200414201002-meeker_a_nation_of_empire/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -776,7 +920,8 @@ Ottoman era power circuits were maintained in Trapzon Despite issues with Trapzo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200414222840-middle_east/</guid>
-      <description>Backlinks  iraq Meeker - A Nation of Empire turkey Adalet - Hotels and Highways dujayla land project egypt Khalifat movement Adar - Emotions and Nationalism: Armenian Genocide as a Case Study lebanon syria ottoman libya  </description>
+      <description>Tags: root
+Backlinks  iraq Meeker - A Nation of Empire turkey Adalet - Hotels and Highways dujayla land project egypt Khalifat movement Adar - Emotions and Nationalism: Armenian Genocide as a Case Study lebanon syria ottoman libya  </description>
     </item>
     
     <item>
@@ -785,9 +930,28 @@ Ottoman era power circuits were maintained in Trapzon Despite issues with Trapzo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200415154216-militias/</guid>
-      <description>Backlinks 3 Backlinks FARC in Colombia Tags: militias, colombia
-PMF&amp;rsquo;s in Iraq Tags: iraq, militias
-Blumi - Ottoman Refugees, 1878-1939 Refugees often became armed militias, social clubs, viable constituencies demanding institutional attention.</description>
+      <description>Tags: root
+Backlinks  FARC in Colombia PMF&amp;rsquo;s in Iraq Blumi - Ottoman Refugees, 1878-1939 next generation disarmament, demobilization, and reintegration ddr maoist fighters in nepal  </description>
+    </item>
+    
+    <item>
+      <title>ml</title>
+      <link>/posts/ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ml/</guid>
+      <description>Tags: Computers, math
+Backlinks  fasttext pandas word2vec embedding text into vector spaces nlp gpt2  </description>
+    </item>
+    
+    <item>
+      <title>mmap</title>
+      <link>/posts/mmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mmap/</guid>
+      <description>Tags: syscalls
+ https://en.wikipedia.org/wiki/Mmap  </description>
     </item>
     
     <item>
@@ -852,6 +1016,16 @@ Question 1  How can we understand the scope of nationalism today: as an ideology
     </item>
     
     <item>
+      <title>nearest neighbor</title>
+      <link>/posts/nearest_neighbor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/nearest_neighbor/</guid>
+      <description>Tags: algorithms, ml
+ Does not work for high dimensions, check approximate nearest neighbor  Backlinks  embedding text into vector spaces  </description>
+    </item>
+    
+    <item>
       <title>Networks</title>
       <link>/posts/20200415154022-networks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -884,6 +1058,16 @@ Nicaraguan electricty is expensive due to inefficiency and US sanctions. Transpa
     </item>
     
     <item>
+      <title>nlp</title>
+      <link>/posts/nlp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/nlp/</guid>
+      <description>Tags: ml
+Backlinks  fasttext gpt2 word2vec embedding text into vector spaces  </description>
+    </item>
+    
+    <item>
       <title>Notes on Surviving Grad School</title>
       <link>/posts/20200418205453-notes_on_surviving_grad_school/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -911,6 +1095,16 @@ http://matt.might.net/articles/successful-phd-students/  Must extend the boundar
       <guid>/posts/20200414093947-org_mode/</guid>
       <description>Taking Smart Notes
  org deft: https://jblevins.org/projects/deft/ https://www.leonrische.me/ has org flashcards (https://www.leonrische.me/pages/org%5Fflashcards.html) and org zettelkasten (https://github.com/l3kn/org-zettelkasten) org roam appendix: https://org-roam.readthedocs.io/en/master/notetaking%5Fworkflow/ org roam HN thread: https://news.ycombinator.com/item?id=22767658  </description>
+    </item>
+    
+    <item>
+      <title>org-roam</title>
+      <link>/posts/org_roam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/org_roam/</guid>
+      <description>Tags: org-mode
+Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download  </description>
     </item>
     
     <item>
@@ -956,6 +1150,15 @@ Matt Might stated that computer programmers tend to optimize for the discrete pa
     </item>
     
     <item>
+      <title>pandas</title>
+      <link>/posts/pandas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pandas/</guid>
+      <description>Tags: ml</description>
+    </item>
+    
+    <item>
       <title>Paper Proposal</title>
       <link>/posts/abstract-and-proposal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -981,10 +1184,8 @@ Resources  Timothy Mitchell, &amp;ldquo;Rule of Experts&amp;rdquo; Aaron Jakes -
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200415203856-papers/</guid>
-      <description>Backlinks 4 Backlinks Adar - Emotions and Nationalism: Armenian Genocide as a Case Study Tags: middle east, turkey, papers
-Acehan - Turkish Leatherworkers in Peabody, Massachusetts Tags: papers, Post-Ottoman Near East
-Dodge - Rethinking Political Identities in Iraq After 2003 Tags: papers, Nationalism and Outsiders in the Middle East, iraq
-Saunders - The Ummah as a Nation: A reappraisal in the wake of the &amp;lsquo;Cartoons Affair&amp;rsquo; Tags: papers, Nationalism and Outsiders in the Middle East,islamic political thought</description>
+      <description>Tags: root
+Backlinks  Adar - Emotions and Nationalism: Armenian Genocide as a Case Study Acehan - Turkish Leatherworkers in Peabody, Massachusetts Dodge - Rethinking Political Identities in Iraq After 2003 Saunders - The Ummah as a Nation: A reappraisal in the wake of the &amp;lsquo;Cartoons Affair&amp;rsquo; Aciksoz - Sacrificial Limbs of Soverignty Hinnebusch - Identity and State Formation in Multi‐sectarian Societies  </description>
     </item>
     
     <item>
@@ -1118,6 +1319,26 @@ Talks about the dujayla land project</description>
     </item>
     
     <item>
+      <title>quantization/discretization</title>
+      <link>/posts/quantization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/quantization/</guid>
+      <description>Tags: algorithms
+ https://en.wikipedia.org/wiki/Quantization  Constrain an input from large set of values
+ We tried a few other quantization techniques based on e.g. product-quantization, but did not manage to get them to work with sufficient quality at scale.embedding text into vector spaces  Backlinks  embedding text into vector spaces  </description>
+    </item>
+    
+    <item>
+      <title>root</title>
+      <link>/posts/root/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/root/</guid>
+      <description>Backlinks  computers grad school middle east math books papers articles latam militias covid finance  </description>
+    </item>
+    
+    <item>
       <title>Saunders - The Ummah as a Nation: A reappraisal in the wake of the &#39;Cartoons Affair&#39;</title>
       <link>/posts/20200419123109-saunders_the_ummah_as_a_nation_a_reappraisal_in_the_wake_of_the_cartoons_affair/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1126,6 +1347,16 @@ Talks about the dujayla land project</description>
       <description>Tags: papers, Nationalism and Outsiders in the Middle East,islamic political thought
 &amp;ldquo;Cartoons&amp;rdquo; affair from Dutch newspaper Jyllands-Posten caused riots to break out against the Dutch embassies worldwide and lead to halted exports.
  Saunders attempts to debunk the notion that the Ummah is not a political identity  Ummah is clearly a political identity via Islamism  Sufi lodges with Can - Spiritual Subjects Exceptionalism of Islam, Balkan Christian orthodoxies were absorbed into the state, but Islam was not Anscombe - State, Faith, and Nation Hassan - Longing for the Lost Caliphate clearly shows precendence     Muslims living in a disapora constitute a &amp;ldquo;nation on the move&amp;rdquo;  Similar to pilgrims or Blumi - Ottoman Refugees, 1878-1939   This is somewhat unconvincing when he uses the &amp;ldquo;American immigrant experience&amp;rdquo; Rather than trying to dominate a place deﬁned by physical territory (e.</description>
+    </item>
+    
+    <item>
+      <title>secure chat apps</title>
+      <link>/posts/secure_chat_apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/secure_chat_apps/</guid>
+      <description>Tags: crypto
+ both Signal and Telegram use phone numbers for identification Telegram allows the usage of an username in addition to the phone number Whatsapp also requires a phone number Telegram/Whatsapp/Signal are all centralized and non-federated  Status attempts to decentralize it   Status rents a username via an ethereum token or the status token  </description>
     </item>
     
     <item>
@@ -1174,6 +1405,16 @@ SSH Reverse Tunneling  ssh -L 9283:localhost:9283 space.af -&amp;gt; forward rem
       
       <guid>/posts/20200415213619-syria/</guid>
       <description>Tags: middle east</description>
+    </item>
+    
+    <item>
+      <title>syscalls</title>
+      <link>/posts/syscalls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/syscalls/</guid>
+      <description>Tags: Computers
+Backlinks  mmap  </description>
     </item>
     
     <item>
@@ -1260,6 +1501,16 @@ Also align with food for training</description>
       
       <guid>/posts/20200414222310-turkey/</guid>
       <description>Tags: middle east</description>
+    </item>
+    
+    <item>
+      <title>word2vec</title>
+      <link>/posts/word2vec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/word2vec/</guid>
+      <description>Tags: ml, nlp
+ https://fasttext.cc/docs/en/supervised-tutorial.html https://en.wikipedia.org/wiki/Word2vec  Backlinks  embedding text into vector spaces  </description>
     </item>
     
     <item>
