@@ -218,6 +218,15 @@ Mountaineering objectives  2x max strength workout with Scott&amp;rsquo;s Killer
     </item>
     
     <item>
+      <title>black scholes</title>
+      <link>/posts/black_scholes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/black_scholes/</guid>
+      <description>Tags: finance</description>
+    </item>
+    
+    <item>
       <title>Blumi - Ottoman Refugees, 1878-1939</title>
       <link>/posts/20200416084831-blumi_ottoman_refugees_1878_1939/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -316,6 +325,17 @@ Backlinks  ssh-notes Endianess Cassandra Networks postgres compilers Databases D
     </item>
     
     <item>
+      <title>Cook - The Aswan Low Dam and Modernizing the Nile</title>
+      <link>/posts/cook_the_aswan_low_dam_and_modernizing_the_nile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cook_the_aswan_low_dam_and_modernizing_the_nile/</guid>
+      <description>Tags: egypt, papers
+The completion of the Aswan Low Dam was premised on orientialist perceptions that the British would &amp;lsquo;modernize&amp;rsquo; the Egyptians.
+ Ended up miscalculating  Did not respect the environmental impacts of this  British engineers saw this as a time to experiment as well as a time to dig into their &amp;ldquo;Christian&amp;rdquo; past for relics   Did not respect the cyclic abundance of the Nile  Farmers now needed to use more fertilizer Mitchell notes that by 1933 due to the Aswan Low Dam project only, “one-fifth of the Nile valley was now irrigated by the river’s annual flood, which in the past had fertilized the soil by depositing a layer of silt and nutrients…By the end of the 1930s Egyptian farmers were using 600,000 tons of fertilizer a year - pg 7, from Mitchel - Rule of Experts: Egypt, Techno-politics, Modernity     Attempts at the regulating the Nile had been done before Persistent belief from the British that the Egyptians were somehow &amp;ldquo;squandering&amp;rdquo; the Nile Dam did not account for salination like in irrigation in iraq with the dujayla land project  </description>
+    </item>
+    
+    <item>
       <title>covid</title>
       <link>/posts/covid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -408,8 +428,8 @@ Domain Fronting in Signal  What is domain fronting?  History  Cozy Bear in 2017 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200419210053-drafts/</guid>
-      <description>Backlinks 2 Backlinks organization for grad school blog post Tags: writing, drafts
-overemphasis of the discrete blog post Tags: writing, drafts</description>
+      <description>Tags: root
+Backlinks  organization for grad school blog post overemphasis of the discrete blog post learning tower of babel  </description>
     </item>
     
     <item>
@@ -538,7 +558,7 @@ Possible classes for fall 2020: @ NYU
       
       <guid>/posts/20200415154751-finance/</guid>
       <description>Tags: root
-Backlinks  FED Powers airlines bailout - 2020 special economic zones  </description>
+Backlinks  FED Powers airlines bailout - 2020 special economic zones black scholes oil trading  </description>
     </item>
     
     <item>
@@ -790,6 +810,16 @@ Simon - Imposition of Nationalism on Non-Nation State Tags: iraq, books, Nationa
     </item>
     
     <item>
+      <title>irrigation in iraq</title>
+      <link>/posts/irrigation_in_iraq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/irrigation_in_iraq/</guid>
+      <description>Tags: iraq
+Backlinks  Cook - The Aswan Low Dam and Modernizing the Nile  </description>
+    </item>
+    
+    <item>
       <title>islamic political thought</title>
       <link>/posts/20200419123136-islamic_political_thought/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -833,7 +863,7 @@ Backlinks  nicaragua electricity colombia  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/learning_tower_of_babel/</guid>
-      <description>Tags: drafts, writing
+      <description>Tags: drafts
 ┌────────────────────────┐ ┌────────────────────────────────────────┐ │ Sources │ │ Reference and Storage │ └────────────────────────┘ └────────────────────────────────────────┘ ┌────────────────────────┐ ┌────────────────────────────────────────┐ │ │ │ │ │ │ │ │ │ ┌───────────────┐ │ │ ┌───────────────┐ │ │ │ │ │ │ │ │ │ │ │ Twitter │────┼───────┼───────────────────┬─▶│ Pinboard │─┼───┐ │ │ │ │ │ │ │ │ │ │ │ └───────────────┘ │ │ │ └───────────────┘ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ ┌───────────────┐ │ │ ┌───────────────┐ │ ┌───────────────┐ │ │ ┌────────────────┐ ┌────────────────┐ ┌────────────────┐ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ Web Page │────┼───────┼▶│ Instapaper │─┴─▶│ Readwise │─┼───┼────▶│ Org-Roam │─────▶│ Ox-Hugo │──────▶│ wiki.</description>
     </item>
     
@@ -932,6 +962,16 @@ Backlinks  iraq Meeker - A Nation of Empire turkey Adalet - Hotels and Highways 
       <guid>/posts/20200415154216-militias/</guid>
       <description>Tags: root
 Backlinks  FARC in Colombia PMF&amp;rsquo;s in Iraq Blumi - Ottoman Refugees, 1878-1939 next generation disarmament, demobilization, and reintegration ddr maoist fighters in nepal  </description>
+    </item>
+    
+    <item>
+      <title>Mitchel - Rule of Experts: Egypt, Techno-politics, Modernity</title>
+      <link>/posts/mitchel_rule_of_experts_egypt_techno_politics_modernity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mitchel_rule_of_experts_egypt_techno_politics_modernity/</guid>
+      <description>Tags: books, egypt
+Backlinks  Cook - The Aswan Low Dam and Modernizing the Nile  </description>
     </item>
     
     <item>
@@ -1089,6 +1129,17 @@ http://matt.might.net/articles/successful-phd-students/  Must extend the boundar
     </item>
     
     <item>
+      <title>oil trading</title>
+      <link>/posts/oil_trading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/oil_trading/</guid>
+      <description>Tags: finance
+2 kinds of oil traders:
+ betting actually taking orders   taking oil is highly regulated and extremely expensive once terminals run out of space, then you are effectively at the behest of the counterparty and will pay anything to get out of the situation negative oil pricing impacts models like black scholes  </description>
+    </item>
+    
+    <item>
       <title>org-mode</title>
       <link>/posts/20200414093947-org_mode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1114,7 +1165,7 @@ Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.c
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200419205801-organization_for_grad_school_blog_post/</guid>
-      <description>Tags: writing, drafts
+      <description>Tags: drafts
 Organization:
  GTD via Things Planning my morning in my calendar every day 7:30-9:00 is arabic all the time Read later via Instapaper Archiving via pinboard References via Zotero  Zotfile for file syncing   Book tracking in goodreads Org-roam ties it all together  Goals:
  Work on multiple projects at the same time Deep work on specific tasks, but work on multiple projects Isolate the micro, decentralize the macro  </description>
@@ -1146,7 +1197,7 @@ Can - Spiritual Subjects Tags: books, ottoman</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200419210105-overemphasis_of_the_discrete_blog_post/</guid>
-      <description>Tags: writing, drafts
+      <description>Tags: drafts
 Matt Might stated that computer programmers tend to optimize for the discrete past the point of usefulness. Random stuff, each new piece of technology is a shiny gadget. Even worse is the intention of only using old gadgets to retrofit and quanitfy each part of our lives</description>
     </item>
     
@@ -1217,7 +1268,8 @@ France refined parlimentarism in the wake of the French Revolution and theorized
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200415114142-personal/</guid>
-      <description></description>
+      <description>Tags: root
+Backlinks  Taking Smart Notes the danger of treating ideas from finance as generalized self help Workouts  </description>
     </item>
     
     <item>
@@ -1336,7 +1388,7 @@ Talks about the dujayla land project</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/root/</guid>
-      <description>Backlinks  computers grad school middle east math books papers articles latam militias covid finance  </description>
+      <description>Backlinks  middle east books latam grad school militias papers articles computers covid math finance drafts writing personal  </description>
     </item>
     
     <item>
@@ -1530,7 +1582,8 @@ Also align with food for training</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200419205815-writing/</guid>
-      <description></description>
+      <description>Tags: root
+ node for the actual act of writing  </description>
     </item>
     
   </channel>
