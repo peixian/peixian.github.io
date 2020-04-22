@@ -471,10 +471,6 @@
   </url>
   
   <url>
-    <loc>/</loc>
-  </url>
-  
-  <url>
     <loc>/posts/20200415114142-personal/</loc>
   </url>
   
@@ -604,6 +600,10 @@
   
   <url>
     <loc>/posts/20200419205815-writing/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
   </url>
   
 </urlset>
