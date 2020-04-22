@@ -247,6 +247,16 @@ Backlinks  Taking Smart Notes Anderson - Imagined Communities Makdisi - The Ecum
     </item>
     
     <item>
+      <title>brent</title>
+      <link>/posts/brent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/brent/</guid>
+      <description>Tags: oil
+Backlinks  west texas intermediate  </description>
+    </item>
+    
+    <item>
       <title>Can - Spiritual Subjects</title>
       <link>/posts/20200416092129-can_spiritual_subjects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -300,6 +310,16 @@ Chapter one  Goes against Anderson - Imagined Communities by stating that the co
       
       <guid>/posts/20200415154222-colombia/</guid>
       <description>Tags: latam</description>
+    </item>
+    
+    <item>
+      <title>commodities</title>
+      <link>/posts/commodities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/commodities/</guid>
+      <description>Tags: finance
+Backlinks  oil  </description>
     </item>
     
     <item>
@@ -579,6 +599,16 @@ Backlinks  FED Powers airlines bailout - 2020 special economic zones black schol
       <guid>/posts/20200415114633-food_for_training/</guid>
       <description>Tags: Workouts
    Period Carb Intake Protein Intake     3-5 hours before training/climbing 1-4 g/kg or .5-1.8 g/lb or 50-300g 15-20g   30-60 min before training climbing 30-50g 10g before strength training session   Fueling during training/climbing 1g/min or 30-60g per hour no intake   Within 30-60 min of training session or post-climb, especially important for twice a day sessions 1 g/kg or .</description>
+    </item>
+    
+    <item>
+      <title>futures</title>
+      <link>/posts/futures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/futures/</guid>
+      <description>Tags: finance
+Contago/Backwardation  Contago is when the futures 1st derivative is postive Backwardation is the when the 1st derivative is negative  </description>
     </item>
     
     <item>
@@ -1119,12 +1149,22 @@ http://matt.might.net/articles/successful-phd-students/  Must extend the boundar
     </item>
     
     <item>
+      <title>oil</title>
+      <link>/posts/oil/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/oil/</guid>
+      <description>Tags: finance, commodities
+Backlinks  urals brent west texas intermediate oil trading Oil Outputs in Iraq  </description>
+    </item>
+    
+    <item>
       <title>Oil Outputs in Iraq</title>
       <link>/posts/20200414093536-oil_outputs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200414093536-oil_outputs/</guid>
-      <description>Tags: iraq
+      <description>Tags: iraq, oil
  Oil production peaks to around 100m barrels per day  </description>
     </item>
     
@@ -1134,9 +1174,9 @@ http://matt.might.net/articles/successful-phd-students/  Must extend the boundar
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/oil_trading/</guid>
-      <description>Tags: finance
+      <description>Tags: oil
 2 kinds of oil traders:
- betting actually taking orders   taking oil is highly regulated and extremely expensive once terminals run out of space, then you are effectively at the behest of the counterparty and will pay anything to get out of the situation negative oil pricing impacts models like black scholes  </description>
+ betting actually taking orders   taking oil is highly regulated and extremely expensive once terminals run out of space, then you are effectively at the behest of the counterparty and will pay anything to get out of the situation negative oil pricing impacts models like black scholes  Ticker Strategy Futures Regular Futures  &amp;ldquo;Root Ticker&amp;rdquo; + &amp;ldquo;Month&amp;rdquo; + &amp;ldquo;Year&amp;rdquo; Example: &amp;ldquo;CL&amp;rdquo; + &amp;ldquo;Z&amp;rdquo; + &amp;ldquo;2&amp;rdquo; = CLZ2, (WTI crude) expiring December 2022  Active Tickers  &amp;ldquo;Root Ticker&amp;rdquo; + &amp;ldquo;A&amp;rdquo; Example: &amp;ldquo;CLA&amp;rdquo; - WTI active Best gauge of market sentiment  Generic or Rolling Tickers  &amp;ldquo;Root Ticker&amp;rdquo; + &amp;ldquo;1&amp;rdquo; &amp;ldquo;CL1&amp;rdquo; - Front of the month  Backlinks  uso etf  </description>
     </item>
     
     <item>
@@ -1554,6 +1594,46 @@ Also align with food for training</description>
       
       <guid>/posts/20200414222310-turkey/</guid>
       <description>Tags: middle east</description>
+    </item>
+    
+    <item>
+      <title>urals</title>
+      <link>/posts/urals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/urals/</guid>
+      <description>Tags: oil
+ Extremely vicious Exports from Russian Baltic Sea ports of Primorsk and Ust-Luga, to Nizhnevartovsk in west Siberia  Backlinks  west texas intermediate  </description>
+    </item>
+    
+    <item>
+      <title>uso etf</title>
+      <link>/posts/uso_etf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/uso_etf/</guid>
+      <description>Tags: oil trading
+ United States Oil Fund, derivatives based ETF for trading oil. Reflects the changes of the price of the west texas intermediate crude delivered to Cushing commodities pool estimated to account for 25%-30% of the futures commodity volume has text stating that oil funds &amp;ldquo;might be compulsively redeemed&amp;rdquo; aka closed  </description>
+    </item>
+    
+    <item>
+      <title>west texas intermediate</title>
+      <link>/posts/wti/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wti/</guid>
+      <description>Tags: oil
+ typically &amp;ldquo;sweeter&amp;rdquo; than brent, used to trade at a ~$2 premium  spreads (as of April 2020), are as wide as ~$20 now   from Permian Basin Traded out of Cushing, OK   </description>
+    </item>
+    
+    <item>
+      <title>west texas intermediate</title>
+      <link>/posts/wti/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wti/</guid>
+      <description>Tags: oil
+ typically &amp;ldquo;sweeter&amp;rdquo; than brent, used to trade at a ~$2 premium  spreads (as of April 2020), are as wide as ~$20 now far sweeter than urals   from Permian Basin Traded out of Cushing, OK {IGPV} for function  Backlinks  uso etf  </description>
     </item>
     
     <item>
