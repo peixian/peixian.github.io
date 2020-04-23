@@ -188,7 +188,7 @@ Backlinks  Blumi - Ottoman Refugees, 1878-1939 Saunders - The Ummah as a Nation:
       
       <guid>/posts/20200419124622-articles/</guid>
       <description>Tags: root
-Backlinks  parlimentarism recidivus airlines bailout - 2020 iraqi ghost militias the danger of treating ideas from finance as generalized self help the twin insurgency next generation disarmament, demobilization, and reintegration disarmingly forthright mscs advice embedding text into vector spaces  </description>
+Backlinks  parlimentarism recidivus iraqi ghost militias airlines bailout - 2020 disarmingly forthright mscs advice embedding text into vector spaces next generation disarmament, demobilization, and reintegration the danger of treating ideas from finance as generalized self help the twin insurgency obscure features of jpeg  </description>
     </item>
     
     <item>
@@ -365,7 +365,7 @@ Stephen Yegge Compilers matter because it Compiler Construction is the first cou
       <guid>/posts/computers/</guid>
       <description>endianness - https://wiki.c2.com/?SufficientlySmartCompiler
 Tags: root
-Backlinks  ssh-notes Endianess Cassandra Networks postgres compilers Databases Domain Fronting in Signal Article Kafka multicore ocaml hugo fish macbook butterfly keyboard repair ml algorithms crypto (for cryptography) greedy search syscalls  </description>
+Backlinks  ssh-notes Endianess Cassandra Networks postgres compilers algorithms crypto (for cryptography) Databases Domain Fronting in Signal Article fish greedy search hugo Kafka macbook butterfly keyboard repair ml multicore ocaml syscalls distributed systems real time systems (rts) obscure features of jpeg  </description>
     </item>
     
     <item>
@@ -1173,7 +1173,8 @@ https://www.instapaper.com/read/1297636718</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200415130511-mumby_graduate_school/</guid>
-      <description>Tags: books, grad school</description>
+      <description>Tags: books, grad school
+ &amp;hellip;such as, contacting prospective graduate supervisors before applying to their programs (see Chapter 9), obtaining three strong letters of recommendation from professors who know you in relevant contexts, and putting together a compelling personal statement.  </description>
     </item>
     
     <item>
@@ -1289,6 +1290,16 @@ Backlinks  fasttext gpt2 word2vec embedding text into vector spaces  </descripti
       <guid>/posts/20200418205453-notes_on_surviving_grad_school/</guid>
       <description>Tags: grad school
 http://matt.might.net/articles/successful-phd-students/  Must extend the boundaries of human knowledge and convince people that you have First take classes to figure out where the boundaries are Finding a problem to solve is rarely a problem itself. Every field is brimming with open problems. If finding a problem is hard, you&amp;rsquo;re in the wrong field. That&amp;rsquo;s why I recommend that new students start a blog. Even if no one else reads it, start one.</description>
+    </item>
+    
+    <item>
+      <title>obscure features of jpeg</title>
+      <link>/posts/obscure_features_of_jpeg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/obscure_features_of_jpeg/</guid>
+      <description>Tags: computers, articles
+ https://hodapple.com/blag/posts/2011-11-24-obscure-features-of-jpeg.html  Progessive JPEGs  contains data in a different order, lets the decoder produce a full-sized image from first chunk of file with low detail, then fill details in as image loads originally made for web browsers over slow connections  Multi-Scan JPEGs  Regular JPEGs are single scan sequential: all data is stored from top to bottom, with colors and coefficients in full Multi-scan stores this in a separate way, allows JPEGs to be scanned multiple times, each scan loading additional data  Means that first load can show sketch of image, second load can show colors, etc    </description>
     </item>
     
     <item>
@@ -1860,7 +1871,9 @@ Backlinks  Ahmed - Afghanistan Rising  </description>
       
       <guid>/posts/workouts/</guid>
       <description>Tags: personal
- https://www.uphillathlete.com/wp-content/uploads/2020/02/Scott%E2%80%99s-Killer-Core-Routine-V2.pdf  </description>
+  https://www.uphillathlete.com/wp-content/uploads/2020/02/Scott%E2%80%99s-Killer-Core-Routine-V2.pdf
+  Are your muscles sore or are do they feel dead, heavy, and flat? In the first instance of soreness, this is caused by micro-tears in the muscles. In the second case, of dead legs, the neurological fatigue mentioned above or glycogen depletion are the primary culprits.- Training for the Uphill Athlete
+  Backlinks  heart rate zones training periods food for training base period training aerobic capacity  </description>
     </item>
     
     <item>
