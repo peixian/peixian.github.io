@@ -71,6 +71,10 @@
   </url>
   
   <url>
+    <loc>/posts/atomic_broadcast/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415115031-base_period_training/</loc>
   </url>
   
@@ -96,6 +100,10 @@
   
   <url>
     <loc>/posts/brent/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/bully_algorithm/</loc>
   </url>
   
   <url>
@@ -164,6 +172,10 @@
   
   <url>
     <loc>/posts/disarmingly_forthright_mscs_advice/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/distributed_systems/</loc>
   </url>
   
   <url>
@@ -263,6 +275,10 @@
   </url>
   
   <url>
+    <loc>/posts/gray_failures/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/greedy_search/</loc>
   </url>
   
@@ -327,7 +343,15 @@
   </url>
   
   <url>
+    <loc>/posts/islam/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200419123136-islamic_political_thought/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/jurisprudence/</loc>
   </url>
   
   <url>
@@ -404,6 +428,10 @@
   
   <url>
     <loc>/posts/20200415130511-mumby_graduate_school/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/mustafa_kemal/</loc>
   </url>
   
   <url>
@@ -519,6 +547,10 @@
   </url>
   
   <url>
+    <loc>/posts/physalia_amazon_ebs/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415154513-pmf/</loc>
   </url>
   
@@ -555,6 +587,10 @@
   </url>
   
   <url>
+    <loc>/posts/real_time_systems_rts/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/root/</loc>
   </url>
   
@@ -567,11 +603,19 @@
   </url>
   
   <url>
+    <loc>/posts/sharia_law/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415195910-simon_imposition_of_nationalism_on_non_nation_state/</loc>
   </url>
   
   <url>
     <loc>/posts/20200418225926-simpson_war_from_the_ground_up/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/south_asia/</loc>
   </url>
   
   <url>
@@ -619,11 +663,19 @@
   </url>
   
   <url>
+    <loc>/posts/timer_lawn_low_latency_timer_data_structure/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415114319-training_periods/</loc>
   </url>
   
   <url>
     <loc>/posts/20200414222310-turkey/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/ummah/</loc>
   </url>
   
   <url>
