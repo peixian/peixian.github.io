@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tags: Kafka, atomic broadcast
+ https://www.instapaper.com/read/1298476349  Exactly once semantics in Kafka are defined in terms of atomic broadcast:
+ Messages are published and they will be delivered one time exactly by one or more receiving applications.
+ Design docs:
+ https://cwiki.apache.org/confluence/display/KAFKA/KIP-98&#43;-&#43;Exactly&#43;Once&#43;Delivery&#43;and&#43;Transactional&#43;Messaging https://cwiki.apache.org/confluence/display/KAFKA/KIP-129%3A&#43;Streams&#43;Exactly-Once&#43;Semantics https://docs.google.com/document/d/11Jqy%5FGjUGtdXJK94XGsEIK7CP1SnQGdp2eF0wSw9ra8/edit#heading=h.xq0ee1vnpz4o  Notes  Original impossibility of consensus with one faulty process describes failures within extremely limited scenarios few main problems:  If the producer writes to the log but doesn&rsquo;t get an ack  solved by the idempotence of kafka, producer can write as much as it wants (and kafka will just drop duplicates)   consumer reads from the log but doesn&rsquo;t update its offset  Consumer ensures the dervied states it creates and the offsets in the upstream need to stay in sync so we can:  store offsets in the same db as derive state, and only update them as a transaction, restarting reads current offset from the db write both state updates and offsets in idempotent fashion   not technically &ldquo;exactly once&rdquo;, more like &ldquo;effectively once&rdquo;   leverages kafka streams  3 components:  log compaction in kafka allows it to be used for a journal and snapshot state changes reading data from kafka = advancing offsets writing to kafka   wrapping all 3 in a kafka stream as a whole transaction allows for the atomic broadcasts      "><meta property="og:title" content="exactly once semantics in kafka (atomic broadcast)" />
+<meta property="og:description" content="Tags: Kafka, atomic broadcast
+ https://www.instapaper.com/read/1298476349  Exactly once semantics in Kafka are defined in terms of atomic broadcast:
+ Messages are published and they will be delivered one time exactly by one or more receiving applications.
+ Design docs:
+ https://cwiki.apache.org/confluence/display/KAFKA/KIP-98&#43;-&#43;Exactly&#43;Once&#43;Delivery&#43;and&#43;Transactional&#43;Messaging https://cwiki.apache.org/confluence/display/KAFKA/KIP-129%3A&#43;Streams&#43;Exactly-Once&#43;Semantics https://docs.google.com/document/d/11Jqy%5FGjUGtdXJK94XGsEIK7CP1SnQGdp2eF0wSw9ra8/edit#heading=h.xq0ee1vnpz4o  Notes  Original impossibility of consensus with one faulty process describes failures within extremely limited scenarios few main problems:  If the producer writes to the log but doesn&rsquo;t get an ack  solved by the idempotence of kafka, producer can write as much as it wants (and kafka will just drop duplicates)   consumer reads from the log but doesn&rsquo;t update its offset  Consumer ensures the dervied states it creates and the offsets in the upstream need to stay in sync so we can:  store offsets in the same db as derive state, and only update them as a transaction, restarting reads current offset from the db write both state updates and offsets in idempotent fashion   not technically &ldquo;exactly once&rdquo;, more like &ldquo;effectively once&rdquo;   leverages kafka streams  3 components:  log compaction in kafka allows it to be used for a journal and snapshot state changes reading data from kafka = advancing offsets writing to kafka   wrapping all 3 in a kafka stream as a whole transaction allows for the atomic broadcasts      " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/exactly_once_semantics_in_kafka/" />
+
+<title>exactly once semantics in kafka (atomic broadcast) | الـبـحـر الـزاخـر</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
+<script defer src="/en.search.min.33bc480cea66adae41a788cdd4b1f6ae24b62988e0166b2af9cb36bacd961cec.js" integrity="sha256-M7xIDOpmra5Bp4jN1LH2riS2KYjgFmsq&#43;cs2us2WHOw="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+    <a href="/">
+        <img src="/svg/icon.svg" alt="icon" id="raccoon" />
+    <span>الـبـحـر الـزاخـر</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>exactly once semantics in kafka (atomic broadcast)</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#notes">Notes</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/exactly_once_semantics_in_kafka/">exactly once semantics in kafka (atomic broadcast)</a>
+  </h1>
+  
+
+
+  
+
+  
+
+
+  <p><p>Tags: <a href="/posts/kafka/">Kafka</a>, <a href="/posts/broadcasting_and_multi_cast/">atomic broadcast</a></p>
+<ul>
+<li><a href="https://www.instapaper.com/read/1298476349">https://www.instapaper.com/read/1298476349</a></li>
+</ul>
+<p>Exactly once semantics in Kafka are defined in terms of atomic broadcast:</p>
+<blockquote>
+<p>Messages are published and they will be delivered one time exactly by one or more receiving applications.</p>
+</blockquote>
+<p>Design docs:</p>
+<ol>
+<li><a href="https://cwiki.apache.org/confluence/display/KAFKA/KIP-98+-+Exactly+Once+Delivery+and+Transactional+Messaging">https://cwiki.apache.org/confluence/display/KAFKA/KIP-98+-+Exactly+Once+Delivery+and+Transactional+Messaging</a></li>
+<li><a href="https://cwiki.apache.org/confluence/display/KAFKA/KIP-129%3A+Streams+Exactly-Once+Semantics">https://cwiki.apache.org/confluence/display/KAFKA/KIP-129%3A+Streams+Exactly-Once+Semantics</a></li>
+<li><a href="https://docs.google.com/document/d/11Jqy%5FGjUGtdXJK94XGsEIK7CP1SnQGdp2eF0wSw9ra8/edit#heading=h.xq0ee1vnpz4o">https://docs.google.com/document/d/11Jqy%5FGjUGtdXJK94XGsEIK7CP1SnQGdp2eF0wSw9ra8/edit#heading=h.xq0ee1vnpz4o</a></li>
+</ol>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Original <a href="/posts/impossibility_of_consensus_with_one_faulty_process/">impossibility of consensus with one faulty process</a> describes failures within extremely limited scenarios</li>
+<li>few main problems:
+<ul>
+<li>If the producer writes to the log but doesn&rsquo;t get an ack
+<ul>
+<li>solved by the idempotence of kafka, producer can write as much as it wants (and kafka will just drop duplicates)</li>
+</ul>
+</li>
+<li>consumer reads from the log but doesn&rsquo;t update its offset
+<ul>
+<li>Consumer ensures the dervied states it creates and the offsets in the upstream need to stay in sync</li>
+<li>so we can:
+<ul>
+<li>store offsets in the same db as derive state, and only update them as a transaction, restarting reads current offset from the db</li>
+<li>write both state updates and offsets in idempotent fashion</li>
+</ul>
+</li>
+<li>not technically &ldquo;exactly once&rdquo;, more like &ldquo;effectively once&rdquo;</li>
+</ul>
+</li>
+<li>leverages <a href="/posts/kafka_streams/">kafka streams</a>
+<ul>
+<li>3 components:
+<ul>
+<li>log compaction in kafka allows it to be used for a journal and snapshot state changes</li>
+<li>reading data from kafka = advancing offsets</li>
+<li>writing to kafka</li>
+</ul>
+</li>
+<li>wrapping all 3 in a kafka stream as a whole transaction allows for the atomic broadcasts</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#notes">Notes</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

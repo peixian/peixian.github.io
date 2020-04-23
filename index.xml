@@ -192,16 +192,6 @@ Backlinks  parlimentarism recidivus iraqi ghost militias airlines bailout - 2020
     </item>
     
     <item>
-      <title>atomic broadcast</title>
-      <link>/posts/atomic_broadcast/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/atomic_broadcast/</guid>
-      <description>Tags: algorithms, distributed systems, papers
-http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.3.4709&amp;amp;rep=rep1&amp;amp;type=pdf</description>
-    </item>
-    
-    <item>
       <title>base period training</title>
       <link>/posts/20200415115031-base_period_training/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -267,6 +257,17 @@ Backlinks  Taking Smart Notes Anderson - Imagined Communities Makdisi - The Ecum
       <guid>/posts/brent/</guid>
       <description>Tags: oil
 Backlinks  west texas intermediate  </description>
+    </item>
+    
+    <item>
+      <title>broadcasting and multicast</title>
+      <link>/posts/broadcasting_and_multi_cast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/broadcasting_and_multi_cast/</guid>
+      <description>Tags: algorithms, distributed systems, papers
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.3.4709&amp;amp;rep=rep1&amp;amp;type=pdf
+Backlinks  exactly once semantics in kafka (atomic broadcast)  </description>
     </item>
     
     <item>
@@ -363,7 +364,7 @@ Stephen Yegge Compilers matter because it Compiler Construction is the first cou
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/computers/</guid>
-      <description>endianness - https://wiki.c2.com/?SufficientlySmartCompiler
+      <description>https://wiki.c2.com/?SufficientlySmartCompiler
 Tags: root
 Backlinks  ssh-notes Endianess Cassandra Networks postgres compilers algorithms crypto (for cryptography) Databases Domain Fronting in Signal Article fish greedy search hugo Kafka macbook butterfly keyboard repair ml multicore ocaml syscalls distributed systems real time systems (rts) obscure features of jpeg  </description>
     </item>
@@ -463,7 +464,7 @@ Read the man pages and check the return values!
       
       <guid>/posts/distributed_systems/</guid>
       <description>Tags: computers
-Backlinks  bully algorithm physalia - amazon ebs gray failures atomic broadcast  </description>
+Backlinks  bully algorithm gray failures physalia - amazon ebs broadcasting and multicast impossibility of consensus with one faulty process  </description>
     </item>
     
     <item>
@@ -572,6 +573,19 @@ Egypt has a demographics problem, with over 100 million Egyptians. Cairo birth r
       <guid>/posts/europe/</guid>
       <description>Tags: root
 Backlinks  france  </description>
+    </item>
+    
+    <item>
+      <title>exactly once semantics in kafka (atomic broadcast)</title>
+      <link>/posts/exactly_once_semantics_in_kafka/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/exactly_once_semantics_in_kafka/</guid>
+      <description>Tags: Kafka, atomic broadcast
+ https://www.instapaper.com/read/1298476349  Exactly once semantics in Kafka are defined in terms of atomic broadcast:
+ Messages are published and they will be delivered one time exactly by one or more receiving applications.
+ Design docs:
+ https://cwiki.apache.org/confluence/display/KAFKA/KIP-98+-+Exactly+Once+Delivery+and+Transactional+Messaging https://cwiki.apache.org/confluence/display/KAFKA/KIP-129%3A+Streams+Exactly-Once+Semantics https://docs.google.com/document/d/11Jqy%5FGjUGtdXJK94XGsEIK7CP1SnQGdp2eF0wSw9ra8/edit#heading=h.xq0ee1vnpz4o  Notes  Original impossibility of consensus with one faulty process describes failures within extremely limited scenarios few main problems:  If the producer writes to the log but doesn&amp;rsquo;t get an ack  solved by the idempotence of kafka, producer can write as much as it wants (and kafka will just drop duplicates)   consumer reads from the log but doesn&amp;rsquo;t update its offset  Consumer ensures the dervied states it creates and the offsets in the upstream need to stay in sync so we can:  store offsets in the same db as derive state, and only update them as a transaction, restarting reads current offset from the db write both state updates and offsets in idempotent fashion   not technically &amp;ldquo;exactly once&amp;rdquo;, more like &amp;ldquo;effectively once&amp;rdquo;   leverages kafka streams  3 components:  log compaction in kafka allows it to be used for a journal and snapshot state changes reading data from kafka = advancing offsets writing to kafka   wrapping all 3 in a kafka stream as a whole transaction allows for the atomic broadcasts      </description>
     </item>
     
     <item>
@@ -876,6 +890,16 @@ Discussion questions From Erin   Is the idea that to be post-ottoman in contempo
     </item>
     
     <item>
+      <title>impossibility of consensus with one faulty process</title>
+      <link>/posts/impossibility_of_consensus_with_one_faulty_process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/impossibility_of_consensus_with_one_faulty_process/</guid>
+      <description>Tags: distributed systems, papers
+ Consensus is impossible with one faulty process w/o allowing for failure dectors like local timers (https://www.cs.utexas.edu/~lorenzo/corsi/cs380d/papers/p225-chandra.pdf) or randomization (https://dl.acm.org/doi/10.1145/800221.806707)  Backlinks  exactly once semantics in kafka (atomic broadcast)  </description>
+    </item>
+    
+    <item>
       <title>india</title>
       <link>/posts/20200415200613-india/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -982,13 +1006,24 @@ Backlinks  Ahmed - Afghanistan Rising  </description>
     </item>
     
     <item>
-      <title>Kafka</title>
+      <title>kafka</title>
       <link>/posts/kafka/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/kafka/</guid>
-      <description>Computers
- https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html  </description>
+      <description>Tags: Computers
+ https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html  Backlinks  exactly once semantics in kafka  </description>
+    </item>
+    
+    <item>
+      <title>kafka streams</title>
+      <link>/posts/kafka_streams/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/kafka_streams/</guid>
+      <description>Tags: kafka
+API on top of producer and consumer that allows for defining transformations on top of input and output streams, extremely general
+Backlinks  exactly once semantics in kafka (atomic broadcast)  </description>
     </item>
     
     <item>
@@ -1715,9 +1750,8 @@ Backlinks  mmap  </description>
       
       <guid>/posts/20200414091517-smart_note_taking/</guid>
       <description>Tags: books, personal
-Key takeaways: make fleeting notes and project notes, review the fleeting notes and file the project notes accordingly. Fleeting notes should be for when things pop into your mind, although I somewhat use things for this purpose as well. Project notes are for long term storage.
-Work on different things at once! The slip box has the information, let blockages be free somewhere else!
-When cutting things from a piece of writing, make a second note that contains the things cut.</description>
+ Rather, you will try to learn as efficiently as possible so you can quickly get to the point where actual open questions arise, as these are the only questions worth writing about.
+ Key takeaways: make fleeting notes and project notes, review the fleeting notes and file the project notes accordingly. Fleeting notes should be for when things pop into your mind, although I somewhat use things for this purpose as well.</description>
     </item>
     
     <item>

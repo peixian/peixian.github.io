@@ -71,10 +71,6 @@
   </url>
   
   <url>
-    <loc>/posts/atomic_broadcast/</loc>
-  </url>
-  
-  <url>
     <loc>/posts/20200415115031-base_period_training/</loc>
   </url>
   
@@ -100,6 +96,10 @@
   
   <url>
     <loc>/posts/brent/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/broadcasting_and_multi_cast/</loc>
   </url>
   
   <url>
@@ -223,6 +223,10 @@
   </url>
   
   <url>
+    <loc>/posts/exactly_once_semantics_in_kafka/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415133402-fall_2020_classes/</loc>
   </url>
   
@@ -339,6 +343,10 @@
   </url>
   
   <url>
+    <loc>/posts/impossibility_of_consensus_with_one_faulty_process/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415200613-india/</loc>
   </url>
   
@@ -380,6 +388,10 @@
   
   <url>
     <loc>/posts/kafka/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/kafka_streams/</loc>
   </url>
   
   <url>
