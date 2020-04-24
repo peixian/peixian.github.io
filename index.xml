@@ -246,7 +246,7 @@ Refugees and history are a two way street, internal refugees of the Ottoman empi
       
       <guid>/posts/20200414223410-books/</guid>
       <description>Tags: root
-Backlinks  Taking Smart Notes Anderson - Imagined Communities Makdisi - The Ecumenical Frame Meeker - A Nation of Empire Pursely - Familiar Futures Adalet - Hotels and Highways Mumby - Graduate School Peters - Getting What You Came For Simon - Imposition of Nationalism on Non-Nation State Provonce - The Last Ottoman Generation Blumi - Ottoman Refugees, 1878-1939 Can - Spiritual Subjects Chaterjee - The Nations and Its Fragments Simpson - War from the Ground Up Hart - Why Don&amp;rsquo;t We Learn From History?</description>
+Backlinks  Anderson - Imagined Communities Makdisi - The Ecumenical Frame Meeker - A Nation of Empire Pursely - Familiar Futures Hassan - Longing for the Lost Caliphate Adalet - Hotels and Highways Peters - Getting What You Came For Simon - Imposition of Nationalism on Non-Nation State Provonce - The Last Ottoman Generation Anscombe - State, Faith, and Nation Blumi - Ottoman Refugees, 1878-1939 Can - Spiritual Subjects Chaterjee - The Nations and Its Fragments Simpson - War from the Ground Up Hart - Why Don&amp;rsquo;t We Learn From History?</description>
     </item>
     
     <item>
@@ -287,6 +287,18 @@ https://en.wikipedia.org/wiki/Bully%5Falgorithm</description>
       
       <guid>/posts/20200416092129-can_spiritual_subjects/</guid>
       <description>Tags: books, ottoman</description>
+    </item>
+    
+    <item>
+      <title>career advice</title>
+      <link>/posts/career_advice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/career_advice/</guid>
+      <description>Tags: personal
+ https://commoncog.com/blog/so-good-they-cant-ignore-you/#2adoptthecraftsmanmindset  5 steps from So Good They Can&amp;rsquo;t Ignore You:
+ Decide what capital market you&amp;rsquo;re in, either winner-takes-all or auction  CS is auction Middle East studies/academia is&amp;hellip;winner takes all? Maybe?  writing is winner takes all     Identify capital type, which skill dominates?   in CS I care about distributed systems skills and navigating large code bases
+ read &amp;ldquo;working with legacy systems&amp;rdquo;?</description>
     </item>
     
     <item>
@@ -419,6 +431,16 @@ postgres Tags: Databases, Computers</description>
       <guid>/posts/ddr/</guid>
       <description>Tags: militias
 Backlinks  integrated ddr standards next generation disarmament, demobilization, and reintegration maoist fighters in nepal  </description>
+    </item>
+    
+    <item>
+      <title>deep work</title>
+      <link>/posts/deep_work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/deep_work/</guid>
+      <description>Tags: books, personal
+ Premised around distraction free work Getting into a state of flow GTD, but with focused blocks First principals approach of the book belies him being a programmer Originally negative thoughts, but overall now positive after reading Good quote about generic technology skill does not make a smart person  hot wheels = ipad, GLM = automechanics   Deliberate practice and setting aside time  in 90 min chunks   Schedule your whole day, block off areas that capture uncertainty Mythical man month Point on settled habits Interrogate your activities based on how difficult it is for a fresh college grad to do it Puts on the (possible) strawman of someone that works all the time, is busy with email all the time, and others  the act of defining large blocks of time is useful, but I&amp;rsquo;m not the person that&amp;rsquo;s on email all the time deliberately eliminating distractions during your deep work is important, stopped listening to music or taking breaks to look at phone   Point on embracing bordem is good Scheduling downtime is good, you find yourself more happy when all work is meaningful  </description>
     </item>
     
     <item>
@@ -563,6 +585,17 @@ Egypt has a demographics problem, with over 100 million Egyptians. Cairo birth r
       <guid>/posts/20200414135839-endianness/</guid>
       <description>Computers
  Intel is little endian SPARC/Sun is big endian &amp;lt;endian.h&amp;gt; on linux allows for conversion between big endian and little endian  Nonstandard, BSD&amp;rsquo;s have their own version    </description>
+    </item>
+    
+    <item>
+      <title>epistime</title>
+      <link>/posts/epistime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/epistime/</guid>
+      <description>Tags: root
+On thinking
+Backlinks  mental models Taking Smart Notes  </description>
     </item>
     
     <item>
@@ -926,13 +959,17 @@ Backlinks  Khalifat movement  </description>
       
       <guid>/posts/20200413223156-iraq/</guid>
       <description>Tags: middle east
-Artifical State Nationalism and Outsiders in the Middle East - Midterm
- Artificial state narratives  Modernity Irrigation Backlinks 10 Backlinks Oil Outputs in Iraq Tags: iraq
-Makdisi - The Ecumenical Frame Tags: books, Post-Ottoman Near East, iraq, lebanon,syria
-Pursely - Familiar Futures Tags: iraq, books, Post-Ottoman Near East
-dujayla land project Tags: iraq, middle east, development theory
-PMF&amp;rsquo;s in Iraq Tags: iraq, militias
-Simon - Imposition of Nationalism on Non-Nation State Tags: iraq, books, Nationalism and Outsiders in the Middle East</description>
+Artifical State  Artificial state narratives  Modernity Irrigation Backlinks  Makdisi - The Ecumenical Frame Pursely - Familiar Futures dujayla land project Simon - Imposition of Nationalism on Non-Nation State al-Husri basra iraqi kurdistan google fi iraqi arabic Dodge - Rethinking Political Identities in Iraq After 2003 irrigation in iraq PMF&amp;rsquo;s in Iraq Oil Outputs in Iraq iraq agricultural exports  </description>
+    </item>
+    
+    <item>
+      <title>iraq barley exports</title>
+      <link>/posts/iraq_barley_exports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/iraq_barley_exports/</guid>
+      <description>Tags: iraq
+April 23rd  Agricultural ministry empowered to export barley @ $125/ton first time in more than a decade for Iraq to export barley forecasts have climbed 4x this year to exporting 2m tons of barley 1.3m tons of barely consumed a year  </description>
     </item>
     
     <item>
@@ -1130,6 +1167,16 @@ Backlinks  ml  </description>
       <guid>/posts/20200414201002-meeker_a_nation_of_empire/</guid>
       <description>Tags: turkey, middle east, books, Post-Ottoman Near East
 Ottoman era power circuits were maintained in Trapzon Despite issues with Trapzon&amp;rsquo;s outward Islamism people bought into the concept of a kemalist turkey Notes  Brings to light provincial governments of turkey Maintains same relationships, the same pipes of power remain while shifting the actors slightly  Aghas replaced by large families   Style of emulation of central gov remains  &amp;ldquo;Citizens had represented an agha and hodja&amp;rdquo;   Interpersonal connections w/in the modern age has slightly disrupted Role of women  Passive throughout the book, draws a parallel to the silent viziers of the ottoman empire   Selimoglu vs Muradoglu Tea cooperative story, where Hussein sits at a large desk at the tea co-op emulating the president Mehmet Bey&amp;rsquo;s fall from grace due to not being engaged within the two family system Familial ties remain, where nicknames stuck &amp;lt;&amp;mdash; on an anthropological level Reorinetation of social structures Life and death in the empire Stories about the french traveling, and the mouth and organs of the central empire sets up the logical nature of recursive emulation Blindness of outsiders to this recursive system, where the French/British consul was the only one would took into account this system Name law, unveiling encouragement Uneven application of methods: history transitions into anthropology  Response  Hodjas are brought up, so much of the book is focused on Islam as a passive force, but islam actually remains one of the more consistent aspects of the region Exisiting power circuits remain, but islam glues this together, rooted in some kind of islamic notion  Supported via the &amp;ldquo;conservatism&amp;rdquo; notion of Of (women need to be veiled) Supported via the notion that Oflus are religious extremists Oflus felt lost without an Imam    Questions  What is the legitmate affect of Islam today within this region?</description>
+    </item>
+    
+    <item>
+      <title>mental models</title>
+      <link>/posts/mental_models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mental_models/</guid>
+      <description>Tags: epistime
+What is a mental model?  Originally traced back to Jean Piaget&amp;rsquo;s Theory of Cognitive Development  https://www.simplypsychology.org/piaget.html   Modern usage covers:  Frameworks  Frameworks for decision making and for life   Thinking tools  Tools and techniques for thinking, sometimes &amp;ldquo;rationality&amp;rdquo; research  i.e. &amp;lsquo;reasoning from first principles&amp;rsquo;, &amp;lsquo;avoiding cognitive bias&amp;rsquo;, etc     Mental representations  Piaget&amp;rsquo;s orginal theory, internal representations of some problem domain  &amp;lsquo;tacit knowledge&amp;rsquo; vs &amp;lsquo;explicit knowledge&amp;rsquo;, or technê vs epistêmê   Made through experience     https://fs.</description>
     </item>
     
     <item>
@@ -1354,7 +1401,7 @@ Backlinks  urals brent west texas intermediate oil trading Oil Outputs in Iraq  
       
       <guid>/posts/20200414093536-oil_outputs/</guid>
       <description>Tags: iraq, oil
- Oil production peaks to around 100m barrels per day  </description>
+ Oil production peaks to around 100m barrels per day  2020 - Coronavirus  Per April 23  Oil revenues expected to drop 50% in 2020 expectations of 40 billion of output this year Kurdistan itself produces 500k (per quarter? per year? unsure)    </description>
     </item>
     
     <item>
@@ -1488,7 +1535,7 @@ France refined parlimentarism in the wake of the French Revolution and theorized
       
       <guid>/posts/20200415114142-personal/</guid>
       <description>Tags: root
-Backlinks  Taking Smart Notes the danger of treating ideas from finance as generalized self help Workouts  </description>
+Backlinks  the danger of treating ideas from finance as generalized self help Workouts Taking Smart Notes career advice deep work  </description>
     </item>
     
     <item>
@@ -1628,6 +1675,19 @@ Talks about the dujayla land project</description>
     </item>
     
     <item>
+      <title>reading books article</title>
+      <link>/posts/reading_books_article/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/reading_books_article/</guid>
+      <description>Tags: drafts
+  inspired by https://commoncog.com/blog/lessons-learnt-from-reading-51-books-in-2018/
+  didn&amp;rsquo;t think that blogging about reading was a thing
+  2017: https://www.goodreads.com/user/year%5Fin%5Fbooks/2017/64912470
+ 35 books most impactful book: https://www.goodreads.com/book/show/35710804-the-field-study-handbook  I liked it because it was good inspiration, which sounds vapid, but is the truth   book I didn&amp;rsquo;t even remember I read: https://www.goodreads.com/book/show/31119360-typewriters-bombs-jellyfish  honestly can&amp;rsquo;t recall a single essay out of this book   books I liked  https://www.</description>
+    </item>
+    
+    <item>
       <title>real time systems (rts)</title>
       <link>/posts/real_time_systems_rts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1749,7 +1809,7 @@ Backlinks  mmap  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200414091517-smart_note_taking/</guid>
-      <description>Tags: books, personal
+      <description>Tags: books, personal, epistime
  Rather, you will try to learn as efficiently as possible so you can quickly get to the point where actual open questions arise, as these are the only questions worth writing about.
  Key takeaways: make fleeting notes and project notes, review the fleeting notes and file the project notes accordingly. Fleeting notes should be for when things pop into your mind, although I somewhat use things for this purpose as well.</description>
     </item>
