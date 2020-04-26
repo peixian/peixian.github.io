@@ -1152,6 +1152,16 @@ Backlinks  Saunders - The Ummah as a Nation: A reappraisal in the wake of the &a
     </item>
     
     <item>
+      <title>java</title>
+      <link>/posts/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/java/</guid>
+      <description>Tags: computers
+tail call optimization  https://github.com/Sipkab/jvm-tail-recursion  </description>
+    </item>
+    
+    <item>
       <title>jurisprudence</title>
       <link>/posts/jurisprudence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2090,6 +2100,16 @@ Backlinks  kelly criterion  </description>
       <guid>/posts/syscalls/</guid>
       <description>Tags: Computers
 Backlinks  mmap  </description>
+    </item>
+    
+    <item>
+      <title>tail call optimization</title>
+      <link>/posts/tail_call_optimization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tail_call_optimization/</guid>
+      <description>Tags: computers
+Backlinks  java  </description>
     </item>
     
     <item>

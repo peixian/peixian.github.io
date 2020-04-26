@@ -443,6 +443,10 @@
   </url>
   
   <url>
+    <loc>/posts/java/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/jurisprudence/</loc>
   </url>
   
@@ -816,6 +820,10 @@
   
   <url>
     <loc>/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/tail_call_optimization/</loc>
   </url>
   
   <url>
