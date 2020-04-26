@@ -31,6 +31,10 @@
   </url>
   
   <url>
+    <loc>/posts/africa/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414223749-ahmed_afghanistan_rising/</loc>
   </url>
   
@@ -131,6 +135,10 @@
   </url>
   
   <url>
+    <loc>/posts/chechnya/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414222241-classes/</loc>
   </url>
   
@@ -144,6 +152,10 @@
   
   <url>
     <loc>/posts/20200419124208-compilers/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/comprehensive_test_ban_treaty/</loc>
   </url>
   
   <url>
@@ -163,15 +175,15 @@
   </url>
   
   <url>
+    <loc>/posts/danforth_the_ottoman_empire_from_1923_to_today/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/databases/</loc>
   </url>
   
   <url>
     <loc>/posts/ddr/</loc>
-  </url>
-  
-  <url>
-    <loc>/posts/deep_work/</loc>
   </url>
   
   <url>
@@ -239,7 +251,15 @@
   </url>
   
   <url>
+    <loc>/posts/exarchia/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415133402-fall_2020_classes/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/fao/</loc>
   </url>
   
   <url>
@@ -283,6 +303,10 @@
   </url>
   
   <url>
+    <loc>/posts/full_text_static_search/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/futures/</loc>
   </url>
   
@@ -315,7 +339,19 @@
   </url>
   
   <url>
+    <loc>/posts/greece/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/greedy_search/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/habitus/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/hajdarpasic_reflections_on_the_ottoman_legacy_in_south_eastern_europe/</loc>
   </url>
   
   <url>
@@ -367,6 +403,10 @@
   </url>
   
   <url>
+    <loc>/posts/iran/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200413223156-iraq/</loc>
   </url>
   
@@ -399,6 +439,10 @@
   </url>
   
   <url>
+    <loc>/posts/ivory_coast/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/jurisprudence/</loc>
   </url>
   
@@ -408,6 +452,10 @@
   
   <url>
     <loc>/posts/kafka_streams/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/kelly_criterion/</loc>
   </url>
   
   <url>
@@ -435,6 +483,10 @@
   </url>
   
   <url>
+    <loc>/posts/linear_algebra/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/macbook_butterfly_keyboard_repair/</loc>
   </url>
   
@@ -444,6 +496,10 @@
   
   <url>
     <loc>/posts/maoist_fighters_in_nepal/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/master_s_thesis/</loc>
   </url>
   
   <url>
@@ -495,6 +551,10 @@
   </url>
   
   <url>
+    <loc>/posts/nabih_berri/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/nasser/</loc>
   </url>
   
@@ -511,11 +571,19 @@
   </url>
   
   <url>
+    <loc>/posts/nationalism_and_outsiders_in_the_middle_east_thesis_proposal/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/nearest_neighbor/</loc>
   </url>
   
   <url>
     <loc>/posts/20200415154022-networks/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/deep_work/</loc>
   </url>
   
   <url>
@@ -607,11 +675,19 @@
   </url>
   
   <url>
+    <loc>/posts/philliou_interpreting_the_ottoman_past_through_the_national_present/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/physalia_amazon_ebs/</loc>
   </url>
   
   <url>
     <loc>/posts/20200415154513-pmf/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/political_risk_career/</loc>
   </url>
   
   <url>
@@ -643,6 +719,10 @@
   </url>
   
   <url>
+    <loc>/posts/professional_development_session_with_thanassis_cambanis/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415200432-provonce_the_last_ottoman_generation/</loc>
   </url>
   
@@ -667,11 +747,23 @@
   </url>
   
   <url>
+    <loc>/posts/satellites/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200419123109-saunders_the_ummah_as_a_nation_a_reappraisal_in_the_wake_of_the_cartoons_affair/</loc>
   </url>
   
   <url>
+    <loc>/posts/secor_children_of_paradise/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/secure_chat_apps/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/shannon_a_mathematical_theory_of_communication/</loc>
   </url>
   
   <url>
@@ -687,6 +779,18 @@
   </url>
   
   <url>
+    <loc>/posts/university_budgeting/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/sociology/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/20200414091517-smart_note_taking/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/south_asia/</loc>
   </url>
   
@@ -699,6 +803,10 @@
   </url>
   
   <url>
+    <loc>/posts/statistics/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415213619-syria/</loc>
   </url>
   
@@ -708,10 +816,6 @@
   
   <url>
     <loc>/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>/posts/20200414091517-smart_note_taking/</loc>
   </url>
   
   <url>
@@ -731,7 +835,7 @@
   </url>
   
   <url>
-    <loc>/posts/thesis_proposals/</loc>
+    <loc>/posts/thesis_proposals_help/</loc>
   </url>
   
   <url>
@@ -743,6 +847,10 @@
   </url>
   
   <url>
+    <loc>/posts/trial_error_vs_theory_insight_in_work_academia/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414222310-turkey/</loc>
   </url>
   
@@ -751,11 +859,23 @@
   </url>
   
   <url>
+    <loc>/posts/un/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/undersea_fiber/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/urals/</loc>
   </url>
   
   <url>
     <loc>/posts/uso_etf/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/web/</loc>
   </url>
   
   <url>
@@ -775,7 +895,19 @@
   </url>
   
   <url>
+    <loc>/posts/food_production/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200419205815-writing/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/yassine_jaber/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/zadrozna_reconstructing_the_past_in_a_post_ottoman_village/</loc>
   </url>
   
   <url>

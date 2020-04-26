@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tags: statistics
+ \[\]   http://www.herrold.com/brokerage/kelly.pdf
+  Criterion: \( f^* = p - \frac{q}{b} = \frac{bp-q}{b} = \frac{bp-(1-p)}{b} = \frac{p(b&#43;1) - 1}{b}\)
+ \(f^*\) is the fraction of the current bankroll to wager  how much to bet   \(b\) is the net odds received on the wager  betting $10, on win, rewards $4 -&gt; \(b = 0.4\)   \(p\) is the probability of a win \(q = 1-p\) is the probability of loss      Maximize the expected log of wealth"><meta property="og:title" content="kelly criterion" />
+<meta property="og:description" content="Tags: statistics
+ \[\]   http://www.herrold.com/brokerage/kelly.pdf
+  Criterion: \( f^* = p - \frac{q}{b} = \frac{bp-q}{b} = \frac{bp-(1-p)}{b} = \frac{p(b&#43;1) - 1}{b}\)
+ \(f^*\) is the fraction of the current bankroll to wager  how much to bet   \(b\) is the net odds received on the wager  betting $10, on win, rewards $4 -&gt; \(b = 0.4\)   \(p\) is the probability of a win \(q = 1-p\) is the probability of loss      Maximize the expected log of wealth" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/kelly_criterion/" />
+
+<title>kelly criterion | الـبـحـر الـزاخـر</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
+<script defer src="/en.search.min.4c20279e7e2e7d371f1d4765803cbdb4f463ef5d082cfd634f10dc8091ce6c35.js" integrity="sha256-TCAnnn4ufTcfHUdlgDy9tPRj710ILP1jTxDcgJHObDU="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+    <a href="/">
+        <img src="/svg/icon.svg" alt="icon" id="raccoon" />
+    <span>الـبـحـر الـزاخـر</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>kelly criterion</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents"></nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/kelly_criterion/">kelly criterion</a>
+  </h1>
+  
+
+
+  
+
+  
+
+
+  <p><p>Tags: <a href="/posts/statistics/">statistics</a></p>
+
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>\[\]</span>
+
+<ul>
+<li>
+<p><a href="http://www.herrold.com/brokerage/kelly.pdf">http://www.herrold.com/brokerage/kelly.pdf</a></p>
+</li>
+<li>
+<p>Criterion: \( f^* = p - \frac{q}{b} = \frac{bp-q}{b} = \frac{bp-(1-p)}{b} = \frac{p(b+1) - 1}{b}\)</p>
+<ul>
+<li>\(f^*\) is the fraction of the current bankroll to wager
+<ul>
+<li>how much to bet</li>
+</ul>
+</li>
+<li>\(b\) is the net odds received on the wager
+<ul>
+<li>betting $10, on win, rewards $4 -&gt; \(b = 0.4\)</li>
+</ul>
+</li>
+<li>\(p\) is the probability of a win</li>
+<li>\(q = 1-p\) is the probability of loss</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Maximize the expected log of wealth</p>
+<ul>
+<li>sometimes known as the &ldquo;geometric mean maximizing portfolio strategy&rdquo;, maximimizing logarithmic utility, etc</li>
+<li>derived from <a href="/posts/shannon_a_mathematical_theory_of_communication/">Shannon - A Mathematical Theory of Communication</a></li>
+</ul>
+</li>
+<li>
+<p>relatively simple proof: <a href="https://en.wikipedia.org/wiki/Kelly%5Fcriterion#Proof">https://en.wikipedia.org/wiki/Kelly%5Fcriterion#Proof</a></p>
+</li>
+<li>
+<p>Usage in blackjack: <a href="https://wayback.archive-it.org/all/20090320125959/http://www.edwardothorp.com/sitebuildercontent/sitebuilderfiles/KellyCriterion2007.pdf">https://wayback.archive-it.org/all/20090320125959/http://www.edwardothorp.com/sitebuildercontent/sitebuilderfiles/KellyCriterion2007.pdf</a></p>
+</li>
+<li>
+<p><a href="https://www.amazon.com/dp/B000SBTWNC/ref=dp-kindle-redirect?%5Fencoding=UTF8&amp;btkr=1">https://www.amazon.com/dp/B000SBTWNC/ref=dp-kindle-redirect?%5Fencoding=UTF8&amp;btkr=1</a></p>
+</li>
+</ul>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents"></nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
