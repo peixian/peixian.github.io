@@ -71,6 +71,10 @@
   </url>
   
   <url>
+    <loc>/posts/ariha/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200419124622-articles/</loc>
   </url>
   
@@ -112,6 +116,10 @@
   
   <url>
     <loc>/posts/20200416092129-can_spiritual_subjects/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/cap_theorm/</loc>
   </url>
   
   <url>
@@ -203,11 +211,19 @@
   </url>
   
   <url>
+    <loc>/posts/distributed_systems_for_fun_and_profit/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200419121216-dodge_rethinking_policical_identities_in_iraq_after_2003/</loc>
   </url>
   
   <url>
     <loc>/posts/domain-fronting/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/double_loop_learning/</loc>
   </url>
   
   <url>
@@ -431,11 +447,15 @@
   </url>
   
   <url>
+    <loc>/posts/iraqi_constitutionalism/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200419130420-iraqi_ghost_militias/</loc>
   </url>
   
   <url>
-    <loc>/posts/20200419204045-iraqi_kurdistan/</loc>
+    <loc>/posts/post_ottoman_iraq_egypt_irrigation_essay_draft/</loc>
   </url>
   
   <url>
@@ -480,6 +500,10 @@
   
   <url>
     <loc>/posts/20200415200544-khalifat_movement/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/20200419204045-iraqi_kurdistan/</loc>
   </url>
   
   <url>
@@ -639,6 +663,10 @@
   </url>
   
   <url>
+    <loc>/posts/operating_systems/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414093947-org_mode/</loc>
   </url>
   
@@ -755,6 +783,10 @@
   </url>
   
   <url>
+    <loc>/posts/ragel/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/reading_books_article/</loc>
   </url>
   
@@ -788,6 +820,10 @@
   
   <url>
     <loc>/posts/secure_chat_apps/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/shabak/</loc>
   </url>
   
   <url>
@@ -860,6 +896,10 @@
   
   <url>
     <loc>/posts/20200416085736-tanzimat/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/tcp_syn/</loc>
   </url>
   
   <url>
