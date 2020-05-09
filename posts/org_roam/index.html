@@ -5,16 +5,20 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Tags: org-mode
-Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download  "><meta property="og:title" content="org-roam" />
+Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download  Graphs   Groups - https://org-roam.discourse.group/t/analysing-the-semantic-network/56
+  Example:
+## Fetch data library(DBI) # Sqlite con &lt;- dbConnect(RSQLite::SQLite(), &#34;org-roam.db&#34;) dbListTables(con) links &lt;- dbSendQuery(con, &#34;SELECT [from], [to] FROM links&#34;) links &lt;- dbFetch(links) titles &lt;- dbSendQuery(con, &#34;SELECT * FROM titles&#34;) titles &lt;- dbFetch(titles) dbDisconnect(con) ## Create edge list [from - to] with clean labels library(dplyr) # Transformation library(stringr) # String manipulation edges &lt;- inner_join(links, titles, by = c(&#34;from&#34; = &#34;file&#34;)) %&gt;% inner_join(titles, by = c(&#34;to&#34; = &#34;file&#34;)) %&gt;% select(From = titles."><meta property="og:title" content="org-roam" />
 <meta property="og:description" content="Tags: org-mode
-Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download  " />
+Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download  Graphs   Groups - https://org-roam.discourse.group/t/analysing-the-semantic-network/56
+  Example:
+## Fetch data library(DBI) # Sqlite con &lt;- dbConnect(RSQLite::SQLite(), &#34;org-roam.db&#34;) dbListTables(con) links &lt;- dbSendQuery(con, &#34;SELECT [from], [to] FROM links&#34;) links &lt;- dbFetch(links) titles &lt;- dbSendQuery(con, &#34;SELECT * FROM titles&#34;) titles &lt;- dbFetch(titles) dbDisconnect(con) ## Create edge list [from - to] with clean labels library(dplyr) # Transformation library(stringr) # String manipulation edges &lt;- inner_join(links, titles, by = c(&#34;from&#34; = &#34;file&#34;)) %&gt;% inner_join(titles, by = c(&#34;to&#34; = &#34;file&#34;)) %&gt;% select(From = titles." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/org_roam/" />
 
 <title>org-roam | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.ffaeb897fff22471a9e63b232a869adb5aeb3deea2dc27d0b646af31e89a5be7.js" integrity="sha256-/664l//yJHGp5jsjKoaa21rrPe6i3CfQtkavMeiaW&#43;c="></script>
+<script defer src="/en.search.min.30f85f7e7dc82332fa0a042b5abd9a70d256cca398c44b103020b6819eca980f.js" integrity="sha256-MPhffn3IIzL6CgQrWr2acNJWzKOYxEsQMCC2gZ7KmA8="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -104,6 +108,7 @@ https://github.com/alex-shpak/hugo-book
   <nav id="TableOfContents">
   <ul>
     <li><a href="#org-download">Org-Download</a></li>
+    <li><a href="#graphs">Graphs</a></li>
   </ul>
 </nav>
 
@@ -132,6 +137,48 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li><a href="https://github.com/syl20bnr/spacemacs/issues/8479">https://github.com/syl20bnr/spacemacs/issues/8479</a></li>
 <li><a href="https://github.com/abo-abo/org-download">https://github.com/abo-abo/org-download</a></li>
+</ul>
+<h2 id="graphs">Graphs</h2>
+<ul>
+<li>
+<p>Groups - <a href="https://org-roam.discourse.group/t/analysing-the-semantic-network/56">https://org-roam.discourse.group/t/analysing-the-semantic-network/56</a></p>
+</li>
+<li>
+<p>Example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">## Fetch data</span>
+<span style="color:#a6e22e">library</span>(DBI) <span style="color:#75715e"># Sqlite</span>
+con <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbConnect</span>(RSQLite<span style="color:#f92672">::</span><span style="color:#a6e22e">SQLite</span>(), <span style="color:#e6db74">&#34;org-roam.db&#34;</span>)
+<span style="color:#a6e22e">dbListTables</span>(con)
+links <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbSendQuery</span>(con, <span style="color:#e6db74">&#34;SELECT [from], [to] FROM links&#34;</span>)
+links <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbFetch</span>(links)
+titles <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbSendQuery</span>(con, <span style="color:#e6db74">&#34;SELECT * FROM titles&#34;</span>)
+titles <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbFetch</span>(titles)
+<span style="color:#a6e22e">dbDisconnect</span>(con)
+
+<span style="color:#75715e">## Create edge list [from - to] with clean labels</span>
+<span style="color:#a6e22e">library</span>(dplyr) <span style="color:#75715e"># Transformation</span>
+<span style="color:#a6e22e">library</span>(stringr) <span style="color:#75715e"># String manipulation</span>
+edges <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">inner_join</span>(links, titles, by <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;from&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;file&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">inner_join</span>(titles, by <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;to&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;file&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">select</span>(From <span style="color:#f92672">=</span> titles.x, To <span style="color:#f92672">=</span> titles.y) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">mutate</span>(From <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_sub</span>(From, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">-3</span>), <span style="color:#75715e"># Clean titles</span>
+         From <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace</span>(From, <span style="color:#e6db74">&#39;&#34; &#34;&#39;</span> ,<span style="color:#e6db74">&#34;/&#34;</span>),
+         To <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_sub</span>(To, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">-3</span>),
+         To <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace</span>(To, <span style="color:#e6db74">&#39;&#34; &#34;&#39;</span> ,<span style="color:#e6db74">&#34;/&#34;</span>),
+         )
+
+<span style="color:#75715e">## Visualise and save as png</span>
+<span style="color:#a6e22e">library</span>(igraph) <span style="color:#75715e"># Network analysis</span>
+<span style="color:#a6e22e">svg</span>(<span style="color:#e6db74">&#34;./org-roam-graph.svg&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">19200</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">10800</span>)
+<span style="color:#a6e22e">par</span>(mar <span style="color:#f92672">=</span> <span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>))
+g <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">graph_from_edgelist</span>(<span style="color:#a6e22e">as.matrix</span>(edges), directed <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+g <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">simplify</span>(g)
+coms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">spinglass.community</span>(g) <span style="color:#75715e"># Community detection</span>
+<span style="color:#a6e22e">plot</span>(coms, g, layout <span style="color:#f92672">=</span> layout_with_fr,
+            vertex.size<span style="color:#f92672">=</span><span style="color:#a6e22e">degree</span>(g))
+<span style="color:#a6e22e">dev.off</span>()
+
+</code></pre></div></li>
 </ul>
 </p>
 </article>
@@ -170,6 +217,7 @@ https://github.com/alex-shpak/hugo-book
   <nav id="TableOfContents">
   <ul>
     <li><a href="#org-download">Org-Download</a></li>
+    <li><a href="#graphs">Graphs</a></li>
   </ul>
 </nav>
 

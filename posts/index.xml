@@ -259,6 +259,16 @@ Mountaineering objectives  2x max strength workout with Scott&amp;rsquo;s Killer
     </item>
     
     <item>
+      <title>Blanch - Sabers of Paradise</title>
+      <link>/posts/blanch_sabers_of_paradise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blanch_sabers_of_paradise/</guid>
+      <description>Tags: books
+ Heavily influenced Dune Revolves around Imam Shamyl, “The Lion of Dagestan,” during the struggle against Russians https://lareviewofbooks.org/article/the-secret-history-of-dune/  </description>
+    </item>
+    
+    <item>
       <title>Blumi - Ottoman Refugees, 1878-1939</title>
       <link>/posts/20200416084831-blumi_ottoman_refugees_1878_1939/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -275,17 +285,33 @@ Refugees and history are a two way street, internal refugees of the Ottoman empi
       
       <guid>/posts/20200414223410-books/</guid>
       <description>Tags: root
-Backlinks  Soren - Taking Smart Notes Anderson - Imagined Communities Makdisi - The Ecumenical Frame Meeker - A Nation of Empire Pursely - Familiar Futures Ahmed - Afghanistan Rising Hassan - Longing for the Lost Caliphate Adalet - Hotels and Highways Mumby - Graduate School Peters - Getting What You Came For Simon - Imposition of Nationalism on Non-Nation State Provonce - The Last Ottoman Generation Anscombe - State, Faith, and Nation Blumi - Ottoman Refugees, 1878-1939 Can - Spiritual Subjects Chaterjee - The Nations and Its Fragments Simpson - War from the Ground Up Hart - Why Don&amp;rsquo;t We Learn From History?</description>
+Backlinks  Soren - Taking Smart Notes Anderson - Imagined Communities Makdisi - The Ecumenical Frame Meeker - A Nation of Empire Pursely - Familiar Futures Ahmed - Afghanistan Rising Hassan - Longing for the Lost Caliphate Adalet - Hotels and Highways Peters - Getting What You Came For Simon - Imposition of Nationalism on Non-Nation State Provonce - The Last Ottoman Generation Anscombe - State, Faith, and Nation Blumi - Ottoman Refugees, 1878-1939 Can - Spiritual Subjects Chaterjee - The Nations and Its Fragments Simpson - War from the Ground Up Hart - Why Don&amp;rsquo;t We Learn From History?</description>
     </item>
     
     <item>
-      <title>bpf (berkley packet filter)</title>
+      <title>bpf</title>
       <link>/posts/bpf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/bpf/</guid>
       <description>Tags: kernel
- https://www.linux.com/news/bpf-tour-program-types/ https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git originally named for the packet filter, extended for a generic kernel execution engine http://www.brendangregg.com/bpf-performance-tools-book.html  </description>
+  originally named for the packet filter, extended for a generic kernel execution engine
+  Main frontends are BCC (https://github.com/iovisor/bcc) and bpftrace (https://github.com/iovisor/bpftrace)
+  https://www.linux.com/news/bpf-tour-program-types/
+  https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git
+  http://www.brendangregg.com/bpf-performance-tools-book.html
+  </description>
+    </item>
+    
+    <item>
+      <title>brady plan</title>
+      <link>/posts/brady_plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/brady_plan/</guid>
+      <description>Tags: finance
+Plan implemented in 1989 for Latin America, Eastern Europe, and African countries, US lead debt restructuring program that created by Brady bonds backed by zero-coupon US treasury bonds or funds from IMF or World Bank.
+ Transformed commerial bank loans into collateralized bonds https://www.emta.org/em-background/the-brady-plan/  Backlinks  emerging markets  </description>
     </item>
     
     <item>
@@ -392,12 +418,32 @@ Chapter one  Goes against Anderson - Imagined Communities by stating that the co
     </item>
     
     <item>
+      <title>chips</title>
+      <link>/posts/chips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/chips/</guid>
+      <description>Tags: computers, hardware
+ Die die interconnects are mostly constrained on power https://en.wikichip.org/wiki/amd/infinity%5Ffabric  </description>
+    </item>
+    
+    <item>
       <title>classes</title>
       <link>/posts/20200414222241-classes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200414222241-classes/</guid>
       <description>Tags: grad school</description>
+    </item>
+    
+    <item>
+      <title>climate change</title>
+      <link>/posts/climate_change/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/climate_change/</guid>
+      <description>Tags: root
+Backlinks  Kolbert - Field Notes from a Catastrophe  </description>
     </item>
     
     <item>
@@ -448,7 +494,7 @@ US  The Senate’s consent to ratify the CTBT requires the acknowledgement of a 
       <guid>/posts/computers/</guid>
       <description>https://wiki.c2.com/?SufficientlySmartCompiler
 Tags: root
-Backlinks  ssh-notes Endianess Cassandra Networks postgres compilers algorithms crypto (for cryptography) Databases Domain Fronting in Signal Article fish greedy search hugo Kafka macbook butterfly keyboard repair ml multicore ocaml syscalls distributed systems real time systems (rts) obscure features of jpeg  </description>
+Backlinks  ssh-notes Endianess Cassandra networks postgres compilers algorithms crypto (for cryptography) Databases distributed systems dma Domain Fronting in Signal Article emacs fish gephi greedy search hugo java kafka kernel linux macbook butterfly keyboard repair ml multicore ocaml obscure features of jpeg operating systems r ragel real time systems (rts) sdr Shannon - A Mathematical Theory of Communication shell syscalls tail call optimization usb web rust http kubernentes (k8s) chips hardware  </description>
     </item>
     
     <item>
@@ -470,6 +516,17 @@ The completion of the Aswan Low Dam was premised on orientialist perceptions tha
       <guid>/posts/covid/</guid>
       <description>Tags: root
 Damascus, syria  https://www.instapaper.com/read/1299358661 Despite the justification given for this, on grounds of enforcing “social distancing,” I can’t help being reminded of the notion of the urban-rural binary, and the degrading treatment of people from rural areas whenever they pass through the cities. Fear of the pandemic prompted Bashar al-Assad to issue a general amnesty for crimes committed before 22 March of this year, but this amnesty did not cover political detainees held in security branches, whom the regime does not recognize at all.</description>
+    </item>
+    
+    <item>
+      <title>criu/kernal checkpointing</title>
+      <link>/posts/criu_kernal_checkpointing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/criu_kernal_checkpointing/</guid>
+      <description>Tags: kernel, linux
+Provides checkpointing and snapshotting of applications and containers to disk = https://en.wikipedia.org/wiki/CRIU
+ https://criu.org/Main%5FPage https://access.redhat.com/articles/2455211 https://github.com/checkpoint-restore/criu  </description>
     </item>
     
     <item>
@@ -571,6 +628,16 @@ Short Introduction  http://book.mixu.net/distsys/single-page.html http://citesee
     </item>
     
     <item>
+      <title>dma</title>
+      <link>/posts/dma/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dma/</guid>
+      <description>Tags: computers
+ cloud apps domainted by packet processing https://www.usenix.org/sites/default/files/conference/protected-files/hotos15%5Fslides%5Fkaufmann.pdf  </description>
+    </item>
+    
+    <item>
       <title>Dodge - Rethinking Political Identities in Iraq After 2003</title>
       <link>/posts/20200419121216-dodge_rethinking_policical_identities_in_iraq_after_2003/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -622,6 +689,16 @@ Backlinks  organization for grad school blog post overemphasis of the discrete b
       <description>Tags: iraq, middle east, development theory
 Backlinks 2 Backlinks Pursely - Familiar Futures Talks about the dujayla land project
 Adalet - Hotels and Highways Same for Iraq development like dujayla land project</description>
+    </item>
+    
+    <item>
+      <title>economics</title>
+      <link>/posts/economics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/economics/</guid>
+      <description>Tags: finance
+Backlinks  ensemble average vs time average  </description>
     </item>
     
     <item>
@@ -680,6 +757,18 @@ Backlinks  recoll from emacs  </description>
     </item>
     
     <item>
+      <title>emerging markets</title>
+      <link>/posts/emerging_markets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/emerging_markets/</guid>
+      <description>Tags: finance
+  Emerging markets own around $8.4 trillion @ May 2020, or ~30% of the developing world&amp;rsquo;s gross domestic debt
+  In response to covid, G20 countries have backed a debit waiver to mostly world&amp;rsquo;s developing countries
+ paris club and institute of international finance are also considering brady plan similarities are being drawn up  Emerging markets have heterogenous debt, making this plan more difficult   https://www.</description>
+    </item>
+    
+    <item>
       <title>Endianess</title>
       <link>/posts/20200414135839-endianness/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -687,6 +776,19 @@ Backlinks  recoll from emacs  </description>
       <guid>/posts/20200414135839-endianness/</guid>
       <description>Computers
  Intel is little endian SPARC/Sun is big endian &amp;lt;endian.h&amp;gt; on linux allows for conversion between big endian and little endian  Nonstandard, BSD&amp;rsquo;s have their own version    </description>
+    </item>
+    
+    <item>
+      <title>ensemble average vs time average</title>
+      <link>/posts/ensemble_average_vs_time_average/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ensemble_average_vs_time_average/</guid>
+      <description>Tags: statistics
+Both properties of stochastic process, ensemble average is effectively the expected value, whereas the time average is a strict random variable.
+Time average of a stochastic process is simply the average value of a single outcome of a stochastic process.
+Modern economics tends to conflate these and use ensemble averages when a time average is probably better.
+ https://math.stackexchange.com/questions/1339012/what-does-ensemble-average-mean https://www.nii.ac.jp/qis/first-quantum/forStudents/lecture/pdf/noise/chapter1.pdf  </description>
     </item>
     
     <item>
@@ -801,7 +903,7 @@ Possible classes for fall 2020: @ NYU
       
       <guid>/posts/20200415154751-finance/</guid>
       <description>Tags: root
-Backlinks  FED Powers airlines bailout - 2020 special economic zones black scholes oil trading  </description>
+Backlinks  FED Powers airlines bailout - 2020 black scholes commodities futures oil s curves special economic zones economics imf institute of international finance (iif) iraqi bonds brady plan emerging markets paris club  </description>
     </item>
     
     <item>
@@ -894,6 +996,16 @@ Tags: drafts
     </item>
     
     <item>
+      <title>gephi</title>
+      <link>/posts/gephi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gephi/</guid>
+      <description>Tags: computers
+ Open source graph exploration tool Reads dot files https://gephi.org/  </description>
+    </item>
+    
+    <item>
       <title>google fi</title>
       <link>/posts/google_fi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -920,7 +1032,7 @@ Tags: drafts
       
       <guid>/posts/20200415130616-grad_school/</guid>
       <description>Tags: root
- http://matt.might.net/articles/how-to-email/  Backlinks  classes Mumby - Graduate School Peters - Getting What You Came For Potential Advisors for Master&amp;rsquo;s Thesis Potential Schools for Phd grad school fellowships fall 2020 classes Notes on Surviving Grad School Fiebelman - A PhD is Not Enough Higher Ed Readings Phd Planning peer review thesis proposals talks arabic disarmingly forthright mscs advice  </description>
+ http://matt.might.net/articles/how-to-email/  Backlinks  classes Peters - Getting What You Came For Potential Advisors for Master&amp;rsquo;s Thesis Potential Schools for Phd Phd Planning grad school fellowships fall 2020 classes Notes on Surviving Grad School Fiebelman - A PhD is Not Enough arabic disarmingly forthright mscs advice Higher Ed Readings master&amp;rsquo;s thesis peer review professional development session with thanassis cambanis talks thesis proposals help Mumby - Graduate School Smith - How University Budgets Work  </description>
     </item>
     
     <item>
@@ -1022,6 +1134,16 @@ Concludes with that the idea of &amp;lsquo;Ottoman ruins&amp;rsquo; and &amp;lsq
     </item>
     
     <item>
+      <title>hardware</title>
+      <link>/posts/hardware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hardware/</guid>
+      <description>Tags: computers
+Backlinks  chips  </description>
+    </item>
+    
+    <item>
       <title>Hart - Why Don&#39;t We Learn From History?</title>
       <link>/posts/20200418230042-hart_why_don_t_we_learn_from_history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1033,7 +1155,7 @@ Concludes with that the idea of &amp;lsquo;Ottoman ruins&amp;rsquo; and &amp;lsq
     </item>
     
     <item>
-      <title>hart&#39;s theory of saw</title>
+      <title>hart&#39;s theory of law</title>
       <link>/posts/hart_s_theory_of_law/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1120,16 +1242,26 @@ Align heart rate zones with training periods.
     </item>
     
     <item>
+      <title>http</title>
+      <link>/posts/http/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/http/</guid>
+      <description>Tags: computers
+Servers  http://canonical.org/~kragen/sw/dev3/httpdito-readme  </description>
+    </item>
+    
+    <item>
       <title>hugo</title>
       <link>/posts/hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/hugo/</guid>
       <description>Tags: Computers
- Quickstart - https://gohugo.io/getting-started/quick-start/  Themes:
+ \[\]  Quickstart - https://gohugo.io/getting-started/quick-start/  Themes:
   https://themes.gohugo.io/hugo-book/
   https://willschenk.com/articles/2019/using%5Forg%5Fmode%5Fin%5Fhugo/
-  </description>
+  Hugo Theme Demo Features Code import os os.print(&amp;#34;test&amp;#34;) Buttons  Get Home  Contribute  Columns Lorem markdownum insigne&amp;hellip;  Lorem markdownum insigne&amp;hellip;  Lorem markdownum insigne&amp;hellip;   Expand  Custom Label ...  ## Markdown content Lorem markdownum insigne&amp;hellip;    Hints Markdown content Lorem markdownum insigne. Olympo signis Delphis!</description>
     </item>
     
     <item>
@@ -1163,6 +1295,16 @@ Discussion questions From Erin   Is the idea that to be post-ottoman in contempo
     </item>
     
     <item>
+      <title>imf</title>
+      <link>/posts/imf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/imf/</guid>
+      <description>Tags: finance, un
+ Response to covid - https://www.imf.org/en/About/FAQ/imf-response-to-covid-19  </description>
+    </item>
+    
+    <item>
       <title>impossibility of consensus with one faulty process</title>
       <link>/posts/impossibility_of_consensus_with_one_faulty_process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1184,6 +1326,15 @@ Discussion questions From Erin   Is the idea that to be post-ottoman in contempo
       <guid>/posts/20200415200613-india/</guid>
       <description>Tags: south asia
 Backlinks  Khalifat movement  </description>
+    </item>
+    
+    <item>
+      <title>institute of international finance (iif)</title>
+      <link>/posts/institute_of_international_finance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/institute_of_international_finance/</guid>
+      <description>Tags: finance</description>
     </item>
     
     <item>
@@ -1213,7 +1364,7 @@ Backlinks  Secor - Children of Paradise  </description>
       
       <guid>/posts/20200413223156-iraq/</guid>
       <description>Tags: middle east
-Artifical State  Artificial state narratives  Modernity Irrigation  http://documents.worldbank.org/curated/en/609671468049219564/Iraq-Integrated-National-Energy-Strategy-Technical-Assistance-Project  Backlinks  Oil Outputs in Iraq Makdisi - The Ecumenical Frame Pursely - Familiar Futures dujayla land project PMF&amp;rsquo;s in Iraq Simon - Imposition of Nationalism on Non-Nation State al-Husri basra Dodge - Rethinking Political Identities in Iraq After 2003 KRG/iraqi kurdistan google fi iraq agricultural exports iraqi arabic iraqi constitutionalism irrigation in iraq shabak undersea fiber  </description>
+Artifical State  Artificial state narratives  Modernity  Budget  Oil accounts for 90% of Baghdad&amp;rsquo;s revenue IS particularly active in Diyala province    Irrigation  http://documents.worldbank.org/curated/en/609671468049219564/Iraq-Integrated-National-Energy-Strategy-Technical-Assistance-Project  Backlinks  Oil Outputs in Iraq Makdisi - The Ecumenical Frame Pursely - Familiar Futures dujayla land project PMF&amp;rsquo;s in Iraq Simon - Imposition of Nationalism on Non-Nation State al-Husri basra Dodge - Rethinking Political Identities in Iraq After 2003 KRG/iraqi kurdistan google fi iraq agricultural exports iraqi constitutionalism irrigation in iraq shabak undersea fiber iraqi arabic iraqi air strikes iraqi bonds  </description>
     </item>
     
     <item>
@@ -1244,6 +1395,16 @@ https://docs.google.com/spreadsheets/d/1ARRruWyxvZjgGcSKDV5ml3yvVux81zbPzNdwkFBg
       <guid>/posts/iraqi_arabic/</guid>
       <description>Tags: arabic, iraq
 Grammar خل + فعل  Let (imperative) + فعل Example:  Let us go: خل نروح Let them (f) play: خل يلعبن Let them (m) sleep: خل ينامون Let me sit: خل أگعد    هذا &amp;amp; هدي/هاي  Demonstrative pronouns, used the same way as فصحى  محتاج/محتاجة/محتاجين  To need/should Example:  I should rest: آني محتاج اراح They need food: هم محتاجين الاكل She needs information: هي محتاجة معلومات    Emphasis with personal الصمائر  Attach the personal pronoun for emphasis Example:  Where is the book?</description>
+    </item>
+    
+    <item>
+      <title>iraqi bonds</title>
+      <link>/posts/iraqi_bonds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/iraqi_bonds/</guid>
+      <description>Tags: iraq, finance
+ Iraq has asked for deferrals on ~546 MM in loans Eurobonds yields average 15.7% as of May 07, 2020 Forcasted to contract by 9.7% in 2020 - World Bank, with budget shortfall 22% of GDP  Grew 4.4% in 2019   http://www.clubdeparis.org/en/traitements/iraq-21-11-2004/en  Plan to restructure Saddam era securities in 2006 annual coupon of 5.8% 6.25% of the total amount (168.75 MM) every 6 months, with first installment on July 15 2020   FX reserves lay around $66 B  </description>
     </item>
     
     <item>
@@ -1284,7 +1445,7 @@ Abstract The opening of the Aswan Low Dam in 1902, as well as the Aswan High Dam
       
       <guid>/posts/irrigation_in_iraq/</guid>
       <description>Tags: iraq
-Backlinks  Cook - The Aswan Low Dam and Modernizing the Nile  </description>
+ The Euphrates does not receive water from permanent tributaries within Iraq territory and is fed only by seasonal runoff from wadis.  Backlinks  Cook - The Aswan Low Dam and Modernizing the Nile hindyia barrage salqawia canal mosul  </description>
     </item>
     
     <item>
@@ -1400,13 +1561,33 @@ Backlinks  bpf (berkley packet filter)  </description>
     </item>
     
     <item>
+      <title>Kolbert - Field Notes from a Catastrophe</title>
+      <link>/posts/kolbert_field_notes_from_a_catastrophe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/kolbert_field_notes_from_a_catastrophe/</guid>
+      <description>Tags: books, climate change
+ &amp;ldquo;During the Last Glacial Maximum, average global temperatures were only about ten degrees colder than they are today. It is worth noting that the total forcing that ended that ice age is estimated to have been just six and a half watts per square meter.&amp;rdquo;  </description>
+    </item>
+    
+    <item>
       <title>KRG/iraqi kurdistan</title>
       <link>/posts/20200419204045-iraqi_kurdistan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200419204045-iraqi_kurdistan/</guid>
       <description>Tags: iraq
- https://twitter.com/baxtiyargoran/status/1251954218589663235?s=12  Joint investment with the KRG in terms of natural gas, end goal is for the KRG to export natural gas to the rest of Iraq    Backlinks  iraqi constitutionalism  </description>
+ https://twitter.com/baxtiyargoran/status/1251954218589663235?s=12  Joint investment with the KRG in terms of natural gas, end goal is for the KRG to export natural gas to the rest of Iraq   &amp;ldquo;The revolt of Sheikh Ubeydullah in the 1870s, which is sometimes known as the first nationalist uprising of the Kurds, aimed to establish a state for the Kurds on the territories occupied by Ottomans and Iranian&amp;rdquo; (Yeğen 1996:220)  Backlinks  iraqi constitutionalism Nagel, Ferran - Politics of Religion and Nationalism  </description>
+    </item>
+    
+    <item>
+      <title>kubernentes (k8s)</title>
+      <link>/posts/kubernentes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/kubernentes/</guid>
+      <description>Tags: computers
+ https://github.com/ramitsurana/awesome-kubernetes  </description>
     </item>
     
     <item>
@@ -1465,6 +1646,16 @@ Backlinks  next generation disarmament, demobilization, and reintegration  </des
       <guid>/posts/linear_algebra/</guid>
       <description>Tags: math
 Krylov Subspace  https://en.wikipedia.org/wiki/Krylov%5Fsubspace  Quantum Algorithms Via Linear Algebra  https://rjlipton.wordpress.com/2014/12/06/quantum-algorithms-via-linear-algebra-2/ Our saving grace is that although the linear algebraic objects—that is, the vectors and matrices—are so huge as to make “our computations” with them unscalable, the linear algebraic formulas do scale when put in succinct functional form.  </description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>/posts/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux/</guid>
+      <description>Tags: computers
+Backlinks  criu/kernal checkpointing  </description>
     </item>
     
     <item>
@@ -1587,6 +1778,16 @@ Backlinks  fasttext pandas word2vec embedding text into vector spaces nlp gpt2  
     </item>
     
     <item>
+      <title>mosul</title>
+      <link>/posts/mosul/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mosul/</guid>
+      <description>Tags: iraq
+Mosul Dam - irrigation in iraq  https://en.wikipedia.org/wiki/Mosul%5FDam  </description>
+    </item>
+    
+    <item>
       <title>Muhammad Abduh</title>
       <link>/posts/muhammad_abduh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1647,6 +1848,16 @@ Backlinks  Ahmed - Afghanistan Rising  </description>
     </item>
     
     <item>
+      <title>Nagel, Ferran - Politics of Religion and Nationalism</title>
+      <link>/posts/nagel_ferran_politics_of_religion_and_nationalism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/nagel_ferran_politics_of_religion_and_nationalism/</guid>
+      <description>Tags: books, Nationalism and Outsiders in the Middle East
+Chapter 1 - Introduction  In order to prove national&amp;rsquo;s modernity, Gellner, Hobsbawn, and Anderson - Imagined Communities have not provided much space to religion or its contemporary role.  Religion is only interesting as a impairs or propels the formation of nationalism Miroslav Hroch does not dedicate much time to this either   The French Revolution brought Christianity down from heaven to earth - pg 4  Does sectarianism raise it back up?</description>
+    </item>
+    
+    <item>
       <title>nasser</title>
       <link>/posts/nasser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1663,7 +1874,7 @@ Backlinks  Hinnebusch - Identity and State Formation in Multi‐sectarian Societ
       
       <guid>/posts/20200415213332-nationalism_and_outsiders_in_the_middle_east/</guid>
       <description>Tags: classes
-Backlinks  Simon - Imposition of Nationalism on Non-Nation State Chaterjee - The Nations and Its Fragments Dodge - Rethinking Political Identities in Iraq After 2003 Saunders - The Ummah as a Nation: A reappraisal in the wake of the &amp;lsquo;Cartoons Affair&amp;rsquo; Hinnebusch - Identity and State Formation in Multi‐sectarian Societies nationalism and outsiders in the middle east - thesis proposal  </description>
+Memory  Does memory provide realness to a specific identity? Much of the historiography is written by Israeli authors The present is interpreted through the past Arab nationalis, palestinian nationalism, arab-palestinian nationalism, and the historical realities of this  Backlinks  Simon - Imposition of Nationalism on Non-Nation State Chaterjee - The Nations and Its Fragments Dodge - Rethinking Political Identities in Iraq After 2003 Saunders - The Ummah as a Nation: A reappraisal in the wake of the &amp;lsquo;Cartoons Affair&amp;rsquo; Hinnebusch - Identity and State Formation in Multi‐sectarian Societies nationalism and outsiders in the middle east - thesis proposal Nagel, Ferran - Politics of Religion and Nationalism Toufic - Palestine Ltd: Neoliberalism and Nationalism  </description>
     </item>
     
     <item>
@@ -1684,6 +1895,16 @@ Question 1  How can we understand the scope of nationalism today: as an ideology
       <guid>/posts/20200418212315-nationalism_and_outsiders_in_the_middle_east_midterm_final/</guid>
       <description>Tags: Nationalism and Outsiders in the Middle East - Midterm Draft
 Question 1 Nationalism today must be defined within the Middle East as two broad components: a more &amp;ldquo;traditional&amp;rdquo; inner component derived from the nation-state, and another outer component derived from the modern empires of the world. Anthony Smith defines nationalism as &amp;ldquo;language and symbolism, a sociopolitical movement and an ideology of the nation&amp;rsquo;&amp;rsquo; (Smith, 7). The component is easily observable within the Middle East, as contemporary nations within the region offer a wide range of examples speaking to each aspect that Smith describes.</description>
+    </item>
+    
+    <item>
+      <title>nationalism and outsiders in the middle east - thesis</title>
+      <link>/posts/nationalism_and_outsiders_in_the_middle_east_thesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/nationalism_and_outsiders_in_the_middle_east_thesis/</guid>
+      <description>Tags: Nationalism and Outsiders in the Middle East, nationalism and outsiders in the middle east - thesis proposal
+Outline  Engagement with prior literature  Anderson, Gellner, Miroslav Hroch Khalidi&amp;rsquo;s Arab Nationalism  Common approaches via top-down statebuilding or comparison to built states  Top-down statebuilding informed by mandate era perceptions (i.e. iraq as an artifical state) Comparison to built states -&amp;gt; reflects of turkey       Case Studies of Bosnia and Iraq Jihadism, or the &amp;ldquo;breaking down of a state&amp;rdquo;?</description>
     </item>
     
     <item>
@@ -1751,6 +1972,16 @@ DDR continues to rely on outdated principles and requires a rethink. The third g
 Examples in Haiti and the DRC, with greater experimental design: https://journals.sagepub.com/doi/abs/10.1177/0022002707302790
 integrated ddr standards has helped fusion of DDR with wider recovery and reconstruction strats
 Although there appears to be consensus on the imperative for DDR from Colombia and Haiti to Afghanistan and Libya, there are still many outstanding questions about how this ought to be pursuedmaoist fighters in nepal have rejected the discourse of DDR, but they have successfully integrated into the government.</description>
+    </item>
+    
+    <item>
+      <title>ngo</title>
+      <link>/posts/ngo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ngo/</guid>
+      <description>Tags: root
+Backlinks  paris club  </description>
     </item>
     
     <item>
@@ -1851,7 +2082,9 @@ Backlinks  urals brent west texas intermediate oil trading Oil Outputs in Iraq  
       
       <guid>/posts/org_roam/</guid>
       <description>Tags: org-mode
-Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download  </description>
+Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download  Graphs   Groups - https://org-roam.discourse.group/t/analysing-the-semantic-network/56
+  Example:
+## Fetch data library(DBI) # Sqlite con &amp;lt;- dbConnect(RSQLite::SQLite(), &amp;#34;org-roam.db&amp;#34;) dbListTables(con) links &amp;lt;- dbSendQuery(con, &amp;#34;SELECT [from], [to] FROM links&amp;#34;) links &amp;lt;- dbFetch(links) titles &amp;lt;- dbSendQuery(con, &amp;#34;SELECT * FROM titles&amp;#34;) titles &amp;lt;- dbFetch(titles) dbDisconnect(con) ## Create edge list [from - to] with clean labels library(dplyr) # Transformation library(stringr) # String manipulation edges &amp;lt;- inner_join(links, titles, by = c(&amp;#34;from&amp;#34; = &amp;#34;file&amp;#34;)) %&amp;gt;% inner_join(titles, by = c(&amp;#34;to&amp;#34; = &amp;#34;file&amp;#34;)) %&amp;gt;% select(From = titles.</description>
     </item>
     
     <item>
@@ -1921,7 +2154,17 @@ Resources  Timothy Mitchell, &amp;ldquo;Rule of Experts&amp;rdquo; Aaron Jakes -
       
       <guid>/posts/20200415203856-papers/</guid>
       <description>Tags: root
-Backlinks  Adar - Emotions and Nationalism: Armenian Genocide as a Case Study Aciksoz - Sacrificial Limbs of Soverignty Acehan - Turkish Leatherworkers in Peabody, Massachusetts Saunders - The Ummah as a Nation: A reappraisal in the wake of the &amp;lsquo;Cartoons Affair&amp;rsquo; Hinnebusch - Identity and State Formation in Multi‐sectarian Societies Dodge - Rethinking Political Identities in Iraq After 2003 Cook - The Aswan Low Dam and Modernizing the Nile gray failures timer lawn: low latency timer data structure broadcasting and multicast impossibility of consensus with one faulty process Danforth: The Ottoman Empire from 1923 to Today Hajdarpasic: Reflections on the Ottoman Legacy in South-eastern Europe Zadrozna: Reconstructing the past in a post-Ottoman Village  </description>
+Backlinks  Adar - Emotions and Nationalism: Armenian Genocide as a Case Study Aciksoz - Sacrificial Limbs of Soverignty Acehan - Turkish Leatherworkers in Peabody, Massachusetts Dodge - Rethinking Political Identities in Iraq After 2003 Saunders - The Ummah as a Nation: A reappraisal in the wake of the &amp;lsquo;Cartoons Affair&amp;rsquo; broadcasting and multicast cap theorm (brewer&amp;rsquo;s conjecture and the feasibility of consistent, available, partition-tolerant web services Cook - The Aswan Low Dam and Modernizing the Nile Danforth: A Ottoman Empire from 1923 to Today gray failures Hajdarpasic: Reflections on the Ottoman Legacy in South-eastern Europe Hinnebusch - Identity and State Formation in Multi‐sectarian Societies impossibility of consensus with one faulty process Shannon - A Mathematical Theory of Communication timer lawn: low latency timer data structure Zadrozna: Reconstructing the past in a post-Ottoman Village  </description>
+    </item>
+    
+    <item>
+      <title>paris club</title>
+      <link>/posts/paris_club/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/paris_club/</guid>
+      <description>Tags: finance, ngo
+ https://en.wikipedia.org/wiki/Paris%5FClub  Backlinks  emerging markets  </description>
     </item>
     
     <item>
@@ -2134,6 +2377,21 @@ Talks about the dujayla land project</description>
     </item>
     
     <item>
+      <title>r</title>
+      <link>/posts/r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/r/</guid>
+      <description>Tags: computers
+  Use brew cask
+ cairo is not supported in homebrew R anymore: https://stackoverflow.com/questions/50767445/how-to-fix-failed-to-load-cairo-dll-in-r    https://macos.rbind.io/
+ Extra binaries for R, details in https://yihui.org/en/2018/07/cranextra-macos/    emacs integration with https://ess.r-project.org/Manual/ess.html#Activating-and-Loading-ESS
+  https://igraph.org/r/doc/layout%5F.html
+  https://dh-r.lincolnmullen.com/
+ https://github.com/lmullen/dh-r    </description>
+    </item>
+    
+    <item>
       <title>ragel</title>
       <link>/posts/ragel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2183,6 +2441,16 @@ Talks about the dujayla land project</description>
       
       <guid>/posts/root/</guid>
       <description>Backlinks  latam grad school militias covid finance writing drafts central asia south asia articles computers europe jurisprudence epistime personal middle east un papers books islam math sociology africa  </description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>/posts/rust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rust/</guid>
+      <description>Tags: computers
+ https://rust-analyzer.github.io/blog/2020/04/20/first-release.html  </description>
     </item>
     
     <item>
@@ -2359,7 +2627,8 @@ Backlinks  habitus  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/south_asia/</guid>
-      <description>Tags: root</description>
+      <description>Tags: root
+Backlinks  india  </description>
     </item>
     
     <item>
@@ -2392,13 +2661,25 @@ Backlinks  kelly criterion  </description>
     </item>
     
     <item>
+      <title>stochastic process</title>
+      <link>/posts/stochastic_process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/stochastic_process/</guid>
+      <description>Tags: statistics
+Backlinks  ensemble average vs time average  </description>
+    </item>
+    
+    <item>
       <title>syria</title>
       <link>/posts/20200415213619-syria/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200415213619-syria/</guid>
       <description>Tags: middle east
- Supreme Sharia Judge as of April 26, 2020 is Mahmoud al-Maarawi  Backlinks  Makdisi - The Ecumenical Frame the twin insurgency fao covid  </description>
+  Supreme Sharia Judge as of April 26, 2020 is Mahmoud al-Maarawi
+  &amp;ldquo;Rifaat argues to this day that he, not Bashar, should have succeeded to the presidency of Syria upon Hafez&amp;rsquo;s death in 2000, but he does his arguing from France, where it surprisingly doesn&amp;rsquo;t have much effect.&amp;rdquo; (Today in Middle Eastern History: The Hama Massacre Begins)
+  Backlinks  Makdisi - The Ecumenical Frame ariha covid fao the twin insurgency  </description>
     </item>
     
     <item>
@@ -2496,6 +2777,17 @@ Advice should be taken on how easily something can be abstracted or whether the 
       <guid>/posts/timer_lawn_low_latency_timer_data_structure/</guid>
       <description>Tags: papers, real time systems (rts)
 https://arxiv.org/pdf/1906.10860.pdf</description>
+    </item>
+    
+    <item>
+      <title>Toufic - Palestine Ltd: Neoliberalism and Nationalism</title>
+      <link>/posts/toufic_palestine_ltd_neoliberalism_and_nationalism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/toufic_palestine_ltd_neoliberalism_and_nationalism/</guid>
+      <description>Tags: books, Nationalism and Outsiders in the Middle East
+Explores the economic, political and social realities as a consequence of the Oslo process
+ Driven by:  EU US IMF and World Bank (International Financial Instiutions/IFIs)   Palestinian National Authority Zachary Lockman&amp;rsquo;s form of relational history throws in Westerners Belief of the neoliberal reforms of neoclassical economics would solve all problems  Western actors engage only on economic terms   pg 4:   This has ultimately led to a particular isolation of the Palestinian question within critical studies of development, peacebuilding, statebuilding and neoliberalism itself, despite the fact that the legacy of these policies has been so large and destructive in regards to Palestinian economic wellbeing, political freedoms, democratic norms and the overall claim to self-determination and national liberation.</description>
     </item>
     
     <item>

@@ -99,6 +99,10 @@
   </url>
   
   <url>
+    <loc>/posts/blanch_sabers_of_paradise/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200416084831-blumi_ottoman_refugees_1878_1939/</loc>
   </url>
   
@@ -108,6 +112,10 @@
   
   <url>
     <loc>/posts/bpf/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/brady_plan/</loc>
   </url>
   
   <url>
@@ -155,7 +163,15 @@
   </url>
   
   <url>
+    <loc>/posts/chips/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414222241-classes/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/climate_change/</loc>
   </url>
   
   <url>
@@ -184,6 +200,10 @@
   
   <url>
     <loc>/posts/covid/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/criu_kernal_checkpointing/</loc>
   </url>
   
   <url>
@@ -223,6 +243,10 @@
   </url>
   
   <url>
+    <loc>/posts/dma/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200419121216-dodge_rethinking_policical_identities_in_iraq_after_2003/</loc>
   </url>
   
@@ -240,6 +264,10 @@
   
   <url>
     <loc>/posts/20200415113415-dujayla_land_project/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/economics/</loc>
   </url>
   
   <url>
@@ -263,7 +291,15 @@
   </url>
   
   <url>
+    <loc>/posts/emerging_markets/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414135839-endianness/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/ensemble_average_vs_time_average/</loc>
   </url>
   
   <url>
@@ -347,6 +383,10 @@
   </url>
   
   <url>
+    <loc>/posts/gephi/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/google_fi/</loc>
   </url>
   
@@ -395,6 +435,10 @@
   </url>
   
   <url>
+    <loc>/posts/hardware/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200418230042-hart_why_don_t_we_learn_from_history/</loc>
   </url>
   
@@ -431,6 +475,10 @@
   </url>
   
   <url>
+    <loc>/posts/http/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/hugo/</loc>
   </url>
   
@@ -447,11 +495,19 @@
   </url>
   
   <url>
+    <loc>/posts/imf/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/impossibility_of_consensus_with_one_faulty_process/</loc>
   </url>
   
   <url>
     <loc>/posts/20200415200613-india/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/institute_of_international_finance/</loc>
   </url>
   
   <url>
@@ -476,6 +532,10 @@
   
   <url>
     <loc>/posts/iraqi_arabic/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/iraqi_bonds/</loc>
   </url>
   
   <url>
@@ -539,7 +599,15 @@
   </url>
   
   <url>
+    <loc>/posts/kolbert_field_notes_from_a_catastrophe/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200419204045-iraqi_kurdistan/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/kubernentes/</loc>
   </url>
   
   <url>
@@ -564,6 +632,10 @@
   
   <url>
     <loc>/posts/linear_algebra/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/linux/</loc>
   </url>
   
   <url>
@@ -615,6 +687,10 @@
   </url>
   
   <url>
+    <loc>/posts/mosul/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/muhammad_abduh/</loc>
   </url>
   
@@ -639,6 +715,10 @@
   </url>
   
   <url>
+    <loc>/posts/nagel_ferran_politics_of_religion_and_nationalism/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/nasser/</loc>
   </url>
   
@@ -652,6 +732,10 @@
   
   <url>
     <loc>/posts/20200418212315-nationalism_and_outsiders_in_the_middle_east_midterm_final/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/nationalism_and_outsiders_in_the_middle_east_thesis/</loc>
   </url>
   
   <url>
@@ -676,6 +760,10 @@
   
   <url>
     <loc>/posts/next_generation_disarmament_demobilization_and_reintegration/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/ngo/</loc>
   </url>
   
   <url>
@@ -744,6 +832,10 @@
   
   <url>
     <loc>/posts/20200415203856-papers/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/paris_club/</loc>
   </url>
   
   <url>
@@ -831,6 +923,10 @@
   </url>
   
   <url>
+    <loc>/posts/r/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/ragel/</loc>
   </url>
   
@@ -848,6 +944,10 @@
   
   <url>
     <loc>/posts/root/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/rust/</loc>
   </url>
   
   <url>
@@ -931,6 +1031,10 @@
   </url>
   
   <url>
+    <loc>/posts/stochastic_process/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415213619-syria/</loc>
   </url>
   
@@ -972,6 +1076,10 @@
   
   <url>
     <loc>/posts/timer_lawn_low_latency_timer_data_structure/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/toufic_palestine_ltd_neoliberalism_and_nationalism/</loc>
   </url>
   
   <url>
