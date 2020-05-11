@@ -175,6 +175,10 @@
   </url>
   
   <url>
+    <loc>/posts/coffee/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415154222-colombia/</loc>
   </url>
   
@@ -192,6 +196,10 @@
   
   <url>
     <loc>/posts/computers/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/conference_on_iraq_20_02_28/</loc>
   </url>
   
   <url>
@@ -335,6 +343,10 @@
   </url>
   
   <url>
+    <loc>/posts/fed_helicopter_money_march_april_2020/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414140816-fed_powers/</loc>
   </url>
   
@@ -375,6 +387,10 @@
   </url>
   
   <url>
+    <loc>/posts/fuzzing/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/gcc_policing/</loc>
   </url>
   
@@ -391,7 +407,15 @@
   </url>
   
   <url>
+    <loc>/posts/gorno_badakhasan/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/gpt2/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/gpu/</loc>
   </url>
   
   <url>
@@ -568,6 +592,10 @@
   
   <url>
     <loc>/posts/ivory_coast/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/janus_v_asfcme/</loc>
   </url>
   
   <url>
@@ -795,6 +823,14 @@
   </url>
   
   <url>
+    <loc>/posts/historiography/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/ooda_observe_orient_decide_act/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/operating_systems/</loc>
   </url>
   
@@ -840,6 +876,10 @@
   
   <url>
     <loc>/posts/20200419124610-parlimentarism_recidivus/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/payment_processors/</loc>
   </url>
   
   <url>
@@ -931,11 +971,19 @@
   </url>
   
   <url>
+    <loc>/posts/ray_tracing/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/reading_books_article/</loc>
   </url>
   
   <url>
     <loc>/posts/real_time_systems_rts/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/recipes/</loc>
   </url>
   
   <url>
@@ -976,6 +1024,10 @@
   
   <url>
     <loc>/posts/secure_chat_apps/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/sgx/</loc>
   </url>
   
   <url>
@@ -1051,6 +1103,10 @@
   </url>
   
   <url>
+    <loc>/posts/tajikistan/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/talks/</loc>
   </url>
   
@@ -1060,6 +1116,10 @@
   
   <url>
     <loc>/posts/tcp_syn/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/text_boundary_analysis/</loc>
   </url>
   
   <url>
@@ -1092,6 +1152,10 @@
   
   <url>
     <loc>/posts/tufekci_twitter_and_tear_gas/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/turabian_a_manual_for_writers/</loc>
   </url>
   
   <url>
@@ -1152,6 +1216,10 @@
   
   <url>
     <loc>/posts/yassine_jaber/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/young_ultralearning/</loc>
   </url>
   
   <url>

@@ -394,7 +394,7 @@ Internals  Seed nodes:  No purpose other than bootstrapping the gossip process D
       
       <guid>/posts/20200415213733-central_asia/</guid>
       <description>Tags: root
-Backlinks  afghanistan  </description>
+Backlinks  afghanistan tajikistan  </description>
     </item>
     
     <item>
@@ -442,8 +442,18 @@ Chapter one  Goes against Anderson - Imagined Communities by stating that the co
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/climate_change/</guid>
-      <description>Tags: root
+      <description>Tags: root recipes
 Backlinks  Kolbert - Field Notes from a Catastrophe  </description>
+    </item>
+    
+    <item>
+      <title>coffee</title>
+      <link>/posts/coffee/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/coffee/</guid>
+      <description>Tags: personal
+ Decaf turkish coffee: https://www.hashems.com/store/coffee/decaffeinated-turkish-coffee-16oz  </description>
     </item>
     
     <item>
@@ -494,7 +504,18 @@ US  The Senate’s consent to ratify the CTBT requires the acknowledgement of a 
       <guid>/posts/computers/</guid>
       <description>https://wiki.c2.com/?SufficientlySmartCompiler
 Tags: root
-Backlinks  ssh-notes Endianess Cassandra networks postgres compilers algorithms crypto (for cryptography) Databases distributed systems dma Domain Fronting in Signal Article emacs fish gephi greedy search hugo java kafka kernel linux macbook butterfly keyboard repair ml multicore ocaml obscure features of jpeg operating systems r ragel real time systems (rts) sdr Shannon - A Mathematical Theory of Communication shell syscalls tail call optimization usb web rust http kubernentes (k8s) chips hardware  </description>
+Backlinks  ssh-notes Endianess Cassandra networks postgres compilers algorithms crypto (for cryptography) Databases Domain Fronting in Signal Article fish gephi greedy search java kafka kernel linux macbook butterfly keyboard repair ml multicore ocaml obscure features of jpeg operating systems r ragel sdr Shannon - A Mathematical Theory of Communication shell syscalls tail call optimization usb web dma chips distributed systems http hugo kubernentes (k8s) rust hardware real time systems (rts) emacs fuzzing payment processors ray tracing text boundary analysis gpu sgx  </description>
+    </item>
+    
+    <item>
+      <title>conference on iraq - 20-02-28</title>
+      <link>/posts/conference_on_iraq_20_02_28/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/conference_on_iraq_20_02_28/</guid>
+      <description>Tags: iraq, grad school
+Notes from the Iraqi conference: http://cih.columbia.edu/iraqi-studies-past-present-and-future/ Archive: https://pinboard.in/cached/38304eb62267/
+ October Revolution - Davis  Definition of grpups that define themselves as &amp;ldquo;iraqi&amp;rdquo; Ultimiately a war of position emotional baggage generated from the post-2003   Reflections on Iraqi Studies - Pursely  Driven by post-invasion Shaping of modern iraqi scholars Oversimplication Destruction of 21st century iraq via imperialism Can we define iraq from post-colonial notions? How many states are built on necropolitics Have iraqi scholars engaged in a purely defensive study?</description>
     </item>
     
     <item>
@@ -525,8 +546,9 @@ Damascus, syria  https://www.instapaper.com/read/1299358661 Despite the justific
       
       <guid>/posts/criu_kernal_checkpointing/</guid>
       <description>Tags: kernel, linux
-Provides checkpointing and snapshotting of applications and containers to disk = https://en.wikipedia.org/wiki/CRIU
- https://criu.org/Main%5FPage https://access.redhat.com/articles/2455211 https://github.com/checkpoint-restore/criu  </description>
+Provides checkpointing and snapshotting of applications and containers to disk
+ https://en.wikipedia.org/wiki/CRIU https://criu.org/Main%5FPage https://access.redhat.com/articles/2455211 https://github.com/checkpoint-restore/criu  Fortran days this was common to checkpoint against cores being used, however now issues with:
+ signal states, semaphores, futexes, SELinux state, ptrace status, CPU affinities, special purpose file descriptors epoll_wait()  </description>
     </item>
     
     <item>
@@ -614,7 +636,7 @@ Read the man pages and check the return values!
       
       <guid>/posts/distributed_systems/</guid>
       <description>Tags: computers
-Short Introduction  http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628  Theory  https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/  Fallacies  https://en.wikipedia.org/wiki/Fallacies%5Fof%5Fdistributed%5Fcomputing  Backlinks  bully algorithm gray failures physalia - amazon ebs broadcasting and multicast impossibility of consensus with one faulty process  </description>
+Short Introduction  http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628  Theory  https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/  Fallacies  https://en.wikipedia.org/wiki/Fallacies%5Fof%5Fdistributed%5Fcomputing https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf  Backlinks  broadcasting and multicast bully algorithm cap theorm (brewer&amp;rsquo;s conjecture and the feasibility of consistent, available, partition-tolerant web services distributed systems for fun and profit gray failures impossibility of consensus with one faulty process physalia - amazon ebs  </description>
     </item>
     
     <item>
@@ -739,7 +761,7 @@ Egypt has a demographics problem, with over 100 million Egyptians. Cairo birth r
       
       <guid>/posts/emacs/</guid>
       <description>Tags: computers
-Backlinks  recoll from emacs  </description>
+ https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bcompletion/auto-completion https://github.com/jwiegley/use-package Org tempo problems: https://github.com/syl20bnr/spacemacs/issues/11798#issuecomment-454941024  https://github.com/syl20bnr/spacemacs/issues/12003#issuecomment-465686129    Backlinks  r recoll from emacs org-mode  </description>
     </item>
     
     <item>
@@ -877,6 +899,18 @@ Possible classes for fall 2020: @ NYU
     </item>
     
     <item>
+      <title>fed helicopter money march-april 2020</title>
+      <link>/posts/fed_helicopter_money_march_april_2020/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/fed_helicopter_money_march_april_2020/</guid>
+      <description>Tags: finance
+  FED QE has dramatically slowed down since 2nd week of March
+  Same QE playblock as before, front load the bailout and cut back asset purchases
+    MBS  Balance of MBS&amp;rsquo;s have actually fallen  https://www.newyorkfed.org/markets/ambs/transaction-summary   MBS&amp;rsquo;s take weeks to actually settle  Why?   Boom in mortagage refinancing  https://wolfstreet.com/2020/04/29/mortgage-forbearance-balloons-home-sales-plunge/    REPO  Repo purchases have stalled, big REPO ops are being leftover from a few weeks ago  SPV (special purchase vehicles)  Technically gets around limits imposed by the Federal Reserve Act FED Powers Remained steady at ~162 b Composed of:  Primary credit Secondary Credit Seasonal Credit Primary Dealer credit Money Market Mutual Fund Paycheck Protection Program    Central Bank Repos  BoJ largest user  49% 214 bil   ECB second biggest  32% 142 bil    7 days or 84 day maturities   </description>
+    </item>
+    
+    <item>
       <title>FED Powers</title>
       <link>/posts/20200414140816-fed_powers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -903,7 +937,7 @@ Possible classes for fall 2020: @ NYU
       
       <guid>/posts/20200415154751-finance/</guid>
       <description>Tags: root
-Backlinks  FED Powers airlines bailout - 2020 black scholes commodities futures oil s curves special economic zones economics imf institute of international finance (iif) iraqi bonds brady plan emerging markets paris club  </description>
+Backlinks  FED Powers airlines bailout - 2020 black scholes brady plan commodities emerging markets futures iraqi bonds oil paris club s curves special economic zones imf economics institute of international finance (iif)  </description>
     </item>
     
     <item>
@@ -975,6 +1009,19 @@ Contago/Backwardation  Contago is when the futures 1st derivative is postive Bac
     </item>
     
     <item>
+      <title>fuzzing</title>
+      <link>/posts/fuzzing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/fuzzing/</guid>
+      <description>Tags: computers
+Fuzzing Image IO   https://www.instapaper.com/read/1303612511
+  No source code, large range of inptus is perfect for fuzzing
+  Choosing type of fuzzing is more difficult
+ Try https://github.com/google/honggfuzz Covered in https://arxiv.org/abs/1812.11875    </description>
+    </item>
+    
+    <item>
       <title>gcc policing</title>
       <link>/posts/gcc_policing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1016,6 +1063,16 @@ Tags: drafts
     </item>
     
     <item>
+      <title>gorno-badakhasan</title>
+      <link>/posts/gorno_badakhasan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gorno_badakhasan/</guid>
+      <description>Tags: tajikistan
+Integration of Ismaili Pamiris  https://www.instapaper.com/read/1301237992 Resistance to Dushabe in middle of 1990&amp;rsquo;s  Gov has alternated between military crackdown and expanded assistence   Central government has not achieved much in promoting a common Taijik identity Lack of strong central Islamic law means intermarriage and burial within same cemeteries is allowed  </description>
+    </item>
+    
+    <item>
       <title>gpt2</title>
       <link>/posts/gpt2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1023,6 +1080,16 @@ Tags: drafts
       <guid>/posts/gpt2/</guid>
       <description>Tags: ml, nlp
  https://github.com/peixian/gpt2-testing  Backlinks  embedding text into vector spaces  </description>
+    </item>
+    
+    <item>
+      <title>gpu</title>
+      <link>/posts/gpu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gpu/</guid>
+      <description>Tags: computers
+History of NVIDIA GPU&amp;rsquo;s  Until 2006 GPU design was correlated to the logical stages of the rendering API  DirectX pipeline made this untable   Stream Multiprocessor replaces this with Tesla release  Could run vertex, fragement, and geometry kernels without distinction   Ideas of a &amp;ldquo;farm&amp;rdquo; with a master renderer CUDA introduced as a superset of C99 Turing release gave dedicated cores for AI and ray tracing  Very reminiscent of pre-2006    </description>
     </item>
     
     <item>
@@ -1334,7 +1401,8 @@ Backlinks  Khalifat movement  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/institute_of_international_finance/</guid>
-      <description>Tags: finance</description>
+      <description>Tags: finance, ngo
+ https://www.iif.com/  Backlinks  emerging markets  </description>
     </item>
     
     <item>
@@ -1364,7 +1432,7 @@ Backlinks  Secor - Children of Paradise  </description>
       
       <guid>/posts/20200413223156-iraq/</guid>
       <description>Tags: middle east
-Artifical State  Artificial state narratives  Modernity  Budget  Oil accounts for 90% of Baghdad&amp;rsquo;s revenue IS particularly active in Diyala province    Irrigation  http://documents.worldbank.org/curated/en/609671468049219564/Iraq-Integrated-National-Energy-Strategy-Technical-Assistance-Project  Backlinks  Oil Outputs in Iraq Makdisi - The Ecumenical Frame Pursely - Familiar Futures dujayla land project PMF&amp;rsquo;s in Iraq Simon - Imposition of Nationalism on Non-Nation State al-Husri basra Dodge - Rethinking Political Identities in Iraq After 2003 KRG/iraqi kurdistan google fi iraq agricultural exports iraqi constitutionalism irrigation in iraq shabak undersea fiber iraqi arabic iraqi air strikes iraqi bonds  </description>
+Artifical State  Artificial state narratives  Modernity  Budget  Oil accounts for 90% of Baghdad&amp;rsquo;s revenue IS particularly active in Diyala province    Irrigation  http://documents.worldbank.org/curated/en/609671468049219564/Iraq-Integrated-National-Energy-Strategy-Technical-Assistance-Project  Backlinks  Oil Outputs in Iraq Makdisi - The Ecumenical Frame Pursely - Familiar Futures dujayla land project PMF&amp;rsquo;s in Iraq Simon - Imposition of Nationalism on Non-Nation State al-Husri basra Dodge - Rethinking Political Identities in Iraq After 2003 google fi iraq agricultural exports iraqi air strikes iraqi bonds iraqi constitutionalism shabak undersea fiber iraqi arabic irrigation in iraq mosul KRG/iraqi kurdistan conference on iraq - 20-02-28  </description>
     </item>
     
     <item>
@@ -1489,6 +1557,16 @@ Backlinks  Saunders - The Ummah as a Nation: A reappraisal in the wake of the &a
     </item>
     
     <item>
+      <title>janus v ASFCME</title>
+      <link>/posts/janus_v_asfcme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/janus_v_asfcme/</guid>
+      <description>Tags: jurisprudence
+ Landmark supreme court decision that bans public unions from collecting dues from non-members From Justice Alito  </description>
+    </item>
+    
+    <item>
       <title>java</title>
       <link>/posts/java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1577,7 +1655,7 @@ Backlinks  bpf (berkley packet filter)  </description>
       
       <guid>/posts/20200419204045-iraqi_kurdistan/</guid>
       <description>Tags: iraq
- https://twitter.com/baxtiyargoran/status/1251954218589663235?s=12  Joint investment with the KRG in terms of natural gas, end goal is for the KRG to export natural gas to the rest of Iraq   &amp;ldquo;The revolt of Sheikh Ubeydullah in the 1870s, which is sometimes known as the first nationalist uprising of the Kurds, aimed to establish a state for the Kurds on the territories occupied by Ottomans and Iranian&amp;rdquo; (Yeğen 1996:220)  Backlinks  iraqi constitutionalism Nagel, Ferran - Politics of Religion and Nationalism  </description>
+ https://twitter.com/baxtiyargoran/status/1251954218589663235?s=12  Joint investment with the KRG in terms of natural gas, end goal is for the KRG to export natural gas to the rest of Iraq   &amp;ldquo;The revolt of Sheikh Ubeydullah in the 1870s, which is sometimes known as the first nationalist uprising of the Kurds, aimed to establish a state for the Kurds on the territories occupied by Ottomans and Iranian&amp;rdquo; (Yeğen 1996:220) Kurdistan Region of Iraq (KRI), where as much as 300 million scf/d of surplus gas can potentially be secured from the Khor Mor gas field in one year.</description>
     </item>
     
     <item>
@@ -1903,8 +1981,8 @@ Question 1 Nationalism today must be defined within the Middle East as two broad
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/nationalism_and_outsiders_in_the_middle_east_thesis/</guid>
-      <description>Tags: Nationalism and Outsiders in the Middle East, nationalism and outsiders in the middle east - thesis proposal
-Outline  Engagement with prior literature  Anderson, Gellner, Miroslav Hroch Khalidi&amp;rsquo;s Arab Nationalism  Common approaches via top-down statebuilding or comparison to built states  Top-down statebuilding informed by mandate era perceptions (i.e. iraq as an artifical state) Comparison to built states -&amp;gt; reflects of turkey       Case Studies of Bosnia and Iraq Jihadism, or the &amp;ldquo;breaking down of a state&amp;rdquo;?</description>
+      <description>Introduction Works relating to constructivist approaches to nationalism has left much to be desired with regards to the contemporary role of religion. Using Hinnebusch&amp;rsquo;s three tiered model of nationalism, comprising of super-state, state-level, and sub-state actors, I propose that analysis of religion confined to a single stratum does not fully explain the power and integration of religion.
+Benard Anderson&amp;rsquo;s seminal work on imagined communities fails to account for the contemporary status of religion.</description>
     </item>
     
     <item>
@@ -2056,6 +2134,28 @@ Backlinks  urals brent west texas intermediate oil trading Oil Outputs in Iraq  
     </item>
     
     <item>
+      <title>on historiography</title>
+      <link>/posts/historiography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/historiography/</guid>
+      <description>Tags: epistime, drafts
+What is historiography good for?
+ Reveals lacuna in the thinking of history  History shapes nationalism egypt particularly has had history held in stasis since the 50&amp;rsquo;s - DiCapua - Gatekeepers of the Arab Past    </description>
+    </item>
+    
+    <item>
+      <title>ooda (observe orient decide act)</title>
+      <link>/posts/ooda_observe_orient_decide_act/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ooda_observe_orient_decide_act/</guid>
+      <description>Tags: epistime
+ https://en.wikipedia.org/wiki/OODA%5Floop  Called the OODA loop, prioritizes agility over raw power by increasing the tempo of decisions
+ If decisions are made faster, then you can then observe the adversary&amp;rsquo;s OODA loop Eventually aiming for the breakdown of the adversary&amp;rsquo;s ooda loop by exploting weaknesses  </description>
+    </item>
+    
+    <item>
       <title>operating systems</title>
       <link>/posts/operating_systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2071,8 +2171,10 @@ Backlinks  urals brent west texas intermediate oil trading Oil Outputs in Iraq  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200414093947-org_mode/</guid>
-      <description>Taking Smart Notes
- org deft: https://jblevins.org/projects/deft/ https://www.leonrische.me/ has org flashcards (https://www.leonrische.me/pages/org%5Fflashcards.html) and org zettelkasten (https://github.com/l3kn/org-zettelkasten) org roam appendix: https://org-roam.readthedocs.io/en/master/notetaking%5Fworkflow/ org roam HN thread: https://news.ycombinator.com/item?id=22767658  </description>
+      <description>Tags: Taking Smart Notes, emacs
+ org deft: https://jblevins.org/projects/deft/ https://www.leonrische.me/ has org flashcards (https://www.leonrische.me/pages/org%5Fflashcards.html) and org zettelkasten (https://github.com/l3kn/org-zettelkasten) org roam appendix: https://org-roam.readthedocs.io/en/master/notetaking%5Fworkflow/ org roam HN thread: https://news.ycombinator.com/item?id=22767658 Org bullets: https://www.spacemacs.org/layers/+emacs/org/README.html  Org-ref  https://github.com/jkitchin/org-ref/blob/master/org-ref.org Example: https://raw.githubusercontent.com/jkitchin/org-ref/master/tests/test-1.org  setup need
+#+latex_header: \usepackage[citestyle=verbose,bibstyle=numeric, hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true] {biblatex} #+latex_header: \addbibresource{~/Dropbox/bib/refs.bib} #+EXCLUDE_TAGS: noexport at the start of every file. :noexport: marks headings to not export within the file also see https://tex.stackexchange.com/questions/21439/is-there-any-advantage-to-using-addbibresource-over-bibliography
+ Footcites: https://tex.stackexchange.com/questions/344116/setting-bibliography-style-in-footnotes-with-biblatex  Biblatex vs bibtex vs biber  https://tex.</description>
     </item>
     
     <item>
@@ -2180,6 +2282,17 @@ France refined parlimentarism in the wake of the French Revolution and theorized
     </item>
     
     <item>
+      <title>payment processors</title>
+      <link>/posts/payment_processors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/payment_processors/</guid>
+      <description>Tags: computers, finance
+ https://www.instapaper.com/read/1303705607  PayPal and Stripe usually advertise low transaction fees, but the actual fees are much higher
+ Quoted fees are almost always only for domestic transactions within the same currency Almost always you need to convert through their system, which takes a very inflated currency conversion rate  </description>
+    </item>
+    
+    <item>
       <title>peer review</title>
       <link>/posts/peer_review/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2196,7 +2309,7 @@ France refined parlimentarism in the wake of the French Revolution and theorized
       
       <guid>/posts/20200415114142-personal/</guid>
       <description>Tags: root
-Backlinks  the danger of treating ideas from finance as generalized self help Taking Smart Notes deep work Workouts satellites career advice  </description>
+ Most skills aren&amp;rsquo;t transferrable, nor are they that useful beyond the context of the single project  So, selfishly, I tend to think this way: if 90% of what I’m doing today won’t help me in the next job, then I should either reduce that 90% (for example, by focusing on general-purpose ideas, systems, abstractions, technologies), just not care as much about that 90% (as I used to), or find a job where I’m willing to sacrifice that 90% of my time because I think the cause is really important or the money is so&amp;hellip;   Signoff/buyin meetings are useless.</description>
     </item>
     
     <item>
@@ -2402,6 +2515,16 @@ Talks about the dujayla land project</description>
     </item>
     
     <item>
+      <title>ray tracing</title>
+      <link>/posts/ray_tracing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ray_tracing/</guid>
+      <description>Tags: computers
+Grid Acceleration  Speeding up performance by analyzing objects that &amp;ldquo;obviously&amp;rdquo; won&amp;rsquo;t be apart of the screen being rendered  Backlinks  gpu  </description>
+    </item>
+    
+    <item>
       <title>reading books article</title>
       <link>/posts/reading_books_article/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2421,7 +2544,17 @@ Talks about the dujayla land project</description>
       
       <guid>/posts/real_time_systems_rts/</guid>
       <description>Tags: computers
- Time sharing designs switch tasks more often than strictly needed, but give smoother multitasking, giving the illusion that a process or user has sole use of a machine.  Backlinks  timer lawn: low latency timer data structure  </description>
+ Time sharing designs switch tasks more often than strictly needed, but give smoother multitasking, giving the illusion that a process or user has sole use of a machine. Standard mem allocation schemes linear scan a linked list  Can&amp;rsquo;t be done for RTOS    Backlinks  timer lawn: low latency timer data structure  </description>
+    </item>
+    
+    <item>
+      <title>recipes</title>
+      <link>/posts/recipes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/recipes/</guid>
+      <description>Tags: root
+Mushrooms  https://cafedelites.com/roasted-mushrooms/  Backlinks  climate change  </description>
     </item>
     
     <item>
@@ -2440,7 +2573,7 @@ Talks about the dujayla land project</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/root/</guid>
-      <description>Backlinks  latam grad school militias covid finance writing drafts central asia south asia articles computers europe jurisprudence epistime personal middle east un papers books islam math sociology africa  </description>
+      <description>Backlinks  middle east books latam personal grad school militias papers articles writing drafts africa epistime europe islam jurisprudence math ngo sociology south asia un computers climate change recipes finance central asia covid  </description>
     </item>
     
     <item>
@@ -2526,6 +2659,17 @@ In the absence of the twelfth imam, the duty of guiding such a nation must fall 
     </item>
     
     <item>
+      <title>sgx</title>
+      <link>/posts/sgx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sgx/</guid>
+      <description>Tags: computers
+ https://www.instapaper.com/read/1303504711  Software Guard eXtensions, provided since Skylake
+ Multiple issues  Malware vector Requires commerial license from intel Massive vulns  cache timing speculative execution load value injection     Some novel approaches to blockchain trust and client/cloud database trust  EnclaveDB - https://www.microsoft.com/en-us/research/uploads/prod/2018/02/enclavedb.pdf    </description>
+    </item>
+    
+    <item>
       <title>shabak</title>
       <link>/posts/shabak/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2582,7 +2726,7 @@ Summary  Shi&amp;rsquo;is desired a state independent from foreign rule Kurds of
       
       <guid>/posts/20200418225926-simpson_war_from_the_ground_up/</guid>
       <description>Tags: books
- There is no logical spatial, or chronological, limit to the ‘War on Terror’. Complete opposite of Anderson&amp;rsquo;s imagined communities    </description>
+ There is no logical spatial, or chronological, limit to the ‘War on Terror’. Complete opposite of Anderson&amp;rsquo;s imagined communities   Yet in the West’s contemporary conflicts people’s reception of events, including battles, through the lens of their personal experience does matter to the conflict’s outcome.  Why? Why do personal experiences matter here, when we tend to percieve things as part of a giant neoliberal machine?    Backlinks  Hart - Why Don&amp;rsquo;t We Learn From History?</description>
     </item>
     
     <item>
@@ -2703,6 +2847,16 @@ Backlinks  java  </description>
     </item>
     
     <item>
+      <title>tajikistan</title>
+      <link>/posts/tajikistan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tajikistan/</guid>
+      <description>Tags: central asia
+Backlinks  gorno-badakhasan  </description>
+    </item>
+    
+    <item>
       <title>talks</title>
       <link>/posts/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2734,6 +2888,17 @@ What Are?   https://blog.cloudflare.com/syn-packet-handling-in-the-wild/
   Two queues in TCP, one a SYN queue and one Accept Queue
     Syn queue responsible for storing inbound syn packets
  https://elixir.free-electrons.com/linux/v4.14.12/source/include/net/inet%5Fsock.h#L73    Blogs  https://www.snellman.net/blog/archive/2017-07-20-s3-mystery/ https://kognitio.com/blog/syn-cookies-ate-my-dog-breaking-tcp-on-linux/  Commits  https://github.com/freebsd/freebsd/commit/56ba0a68edde7b38323f81f9d56998b10668dd9e https://github.com/freebsd/freebsd/commit/fc2be30b217171175bae209edb4f697cc0cb542d  Research  https://link.springer.com/chapter/10.1007/978-3-642-36516-4%5F14  </description>
+    </item>
+    
+    <item>
+      <title>text boundary analysis</title>
+      <link>/posts/text_boundary_analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/text_boundary_analysis/</guid>
+      <description>Tags: computers
+Chrome V8 detects text boundaries with:
+ Specifically, v8 uses ICU to do a bunch of Unicode-related text processing things, including breaking text up into words. The ICU boundary-detection code includes a &amp;ldquo;Dictionary-Based BreakIterator&amp;rdquo; for languages that don&amp;rsquo;t have spaces, including Japanese, Chinese, Thai, etc. https://www.instapaper.com/read/1303705767  Character boundary rules: http://www.unicode.org/reports/tr29/#Grapheme%5FCluster%5FBoundaries</description>
     </item>
     
     <item>
@@ -2823,6 +2988,16 @@ Also align with food for training</description>
       <guid>/posts/tufekci_twitter_and_tear_gas/</guid>
       <description>Tags: books
  Reverse Streisand effect - deliberate information glut to hide the truth  </description>
+    </item>
+    
+    <item>
+      <title>Turabian - A Manual for Writers</title>
+      <link>/posts/turabian_a_manual_for_writers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/turabian_a_manual_for_writers/</guid>
+      <description>Tags: books, writing
+Interrogate your topic:  How does the topic fit into a larger context? Historical, social, cultural, geographic, functional, economic, etc  How do the topics fit into a larger story? How is the topic a functioning part of the system?   How does the topic compare and contrast to other topics like it? How has the topic changed through time? Why? What is its future? How does the part of your topic fit together as a system?</description>
     </item>
     
     <item>
@@ -2977,6 +3152,18 @@ Backlinks  full text static search  </description>
       <guid>/posts/yassine_jaber/</guid>
       <description>Tags: lebanon
  Liberal Shia member of the Lebanese parliment from Nabatiyeh South Lebanon district.  Amal affliated, but considered independent from nabih berri   responsible for spearheading the majaruna legalization law https://en.wikipedia.org/wiki/Yassine%5FJaber  </description>
+    </item>
+    
+    <item>
+      <title>Young - Ultralearning</title>
+      <link>/posts/young_ultralearning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/young_ultralearning/</guid>
+      <description>Tags: books, epistime
+  Notions of memory:
+ 3 types:  Degredation  Memory degrades as time goes on   Lock and Key  Memory stays, but the key to it disappears, which is why it requires certain cues   Overwritten  Memory stays, but is overwritten by others        Carefully design drills
+ Choose for direct practice    Take notes as questions instead of answers to practice retrival</description>
     </item>
     
     <item>

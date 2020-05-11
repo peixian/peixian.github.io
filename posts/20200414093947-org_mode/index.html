@@ -4,17 +4,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Taking Smart Notes
- org deft: https://jblevins.org/projects/deft/ https://www.leonrische.me/ has org flashcards (https://www.leonrische.me/pages/org%5Fflashcards.html) and org zettelkasten (https://github.com/l3kn/org-zettelkasten) org roam appendix: https://org-roam.readthedocs.io/en/master/notetaking%5Fworkflow/ org roam HN thread: https://news.ycombinator.com/item?id=22767658  "><meta property="og:title" content="org-mode" />
-<meta property="og:description" content="Taking Smart Notes
- org deft: https://jblevins.org/projects/deft/ https://www.leonrische.me/ has org flashcards (https://www.leonrische.me/pages/org%5Fflashcards.html) and org zettelkasten (https://github.com/l3kn/org-zettelkasten) org roam appendix: https://org-roam.readthedocs.io/en/master/notetaking%5Fworkflow/ org roam HN thread: https://news.ycombinator.com/item?id=22767658  " />
+<meta name="description" content="Tags: Taking Smart Notes, emacs
+ org deft: https://jblevins.org/projects/deft/ https://www.leonrische.me/ has org flashcards (https://www.leonrische.me/pages/org%5Fflashcards.html) and org zettelkasten (https://github.com/l3kn/org-zettelkasten) org roam appendix: https://org-roam.readthedocs.io/en/master/notetaking%5Fworkflow/ org roam HN thread: https://news.ycombinator.com/item?id=22767658 Org bullets: https://www.spacemacs.org/layers/&#43;emacs/org/README.html  Org-ref  https://github.com/jkitchin/org-ref/blob/master/org-ref.org Example: https://raw.githubusercontent.com/jkitchin/org-ref/master/tests/test-1.org  setup need
+#&#43;latex_header: \usepackage[citestyle=verbose,bibstyle=numeric, hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true] {biblatex} #&#43;latex_header: \addbibresource{~/Dropbox/bib/refs.bib} #&#43;EXCLUDE_TAGS: noexport at the start of every file. :noexport: marks headings to not export within the file also see https://tex.stackexchange.com/questions/21439/is-there-any-advantage-to-using-addbibresource-over-bibliography
+ Footcites: https://tex.stackexchange.com/questions/344116/setting-bibliography-style-in-footnotes-with-biblatex  Biblatex vs bibtex vs biber  https://tex."><meta property="og:title" content="org-mode" />
+<meta property="og:description" content="Tags: Taking Smart Notes, emacs
+ org deft: https://jblevins.org/projects/deft/ https://www.leonrische.me/ has org flashcards (https://www.leonrische.me/pages/org%5Fflashcards.html) and org zettelkasten (https://github.com/l3kn/org-zettelkasten) org roam appendix: https://org-roam.readthedocs.io/en/master/notetaking%5Fworkflow/ org roam HN thread: https://news.ycombinator.com/item?id=22767658 Org bullets: https://www.spacemacs.org/layers/&#43;emacs/org/README.html  Org-ref  https://github.com/jkitchin/org-ref/blob/master/org-ref.org Example: https://raw.githubusercontent.com/jkitchin/org-ref/master/tests/test-1.org  setup need
+#&#43;latex_header: \usepackage[citestyle=verbose,bibstyle=numeric, hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true] {biblatex} #&#43;latex_header: \addbibresource{~/Dropbox/bib/refs.bib} #&#43;EXCLUDE_TAGS: noexport at the start of every file. :noexport: marks headings to not export within the file also see https://tex.stackexchange.com/questions/21439/is-there-any-advantage-to-using-addbibresource-over-bibliography
+ Footcites: https://tex.stackexchange.com/questions/344116/setting-bibliography-style-in-footnotes-with-biblatex  Biblatex vs bibtex vs biber  https://tex." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/20200414093947-org_mode/" />
 
 <title>org-mode | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.30f85f7e7dc82332fa0a042b5abd9a70d256cca398c44b103020b6819eca980f.js" integrity="sha256-MPhffn3IIzL6CgQrWr2acNJWzKOYxEsQMCC2gZ7KmA8="></script>
+<script defer src="/en.search.min.0e6142467802980fb8096786d7285649fb095185e144965b05f33745b764e533.js" integrity="sha256-DmFCRngCmA&#43;4CWeG1yhWSfsJUYXhRJZbBfM3Rbdk5TM="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -101,7 +105,18 @@ https://github.com/alex-shpak/hugo-book
     <input type="checkbox" class="hidden" id="toc-control" />
     <aside class="hidden clearfix">
       
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#org-ref">Org-ref</a>
+      <ul>
+        <li><a href="#setup">setup</a></li>
+        <li><a href="#biblatex-vs-bibtex-vs-biber">Biblatex vs bibtex vs biber</a></li>
+        <li><a href="#cite-types">Cite types</a></li>
+      </ul>
+    </li>
+    <li><a href="#backlinks">Backlinks</a></li>
+  </ul>
+</nav>
 
 
     </aside>
@@ -123,12 +138,41 @@ https://github.com/alex-shpak/hugo-book
   
 
 
-  <p><p><a href="/posts/20200414091517-smart_note_taking/">Taking Smart Notes</a></p>
+  <p><p>Tags: <a href="/posts/20200414091517-smart_note_taking/">Taking Smart Notes</a>, <a href="/posts/emacs/">emacs</a></p>
 <ul>
 <li>org deft: <a href="https://jblevins.org/projects/deft/">https://jblevins.org/projects/deft/</a></li>
 <li><a href="https://www.leonrische.me/">https://www.leonrische.me/</a> has org flashcards (<a href="https://www.leonrische.me/pages/org%5Fflashcards.html">https://www.leonrische.me/pages/org%5Fflashcards.html</a>) and org zettelkasten (<a href="https://github.com/l3kn/org-zettelkasten">https://github.com/l3kn/org-zettelkasten</a>)</li>
 <li>org roam appendix: <a href="https://org-roam.readthedocs.io/en/master/notetaking%5Fworkflow/">https://org-roam.readthedocs.io/en/master/notetaking%5Fworkflow/</a></li>
 <li>org roam HN thread: <a href="https://news.ycombinator.com/item?id=22767658">https://news.ycombinator.com/item?id=22767658</a></li>
+<li>Org bullets: <a href="https://www.spacemacs.org/layers/+emacs/org/README.html">https://www.spacemacs.org/layers/+emacs/org/README.html</a></li>
+</ul>
+<h2 id="org-ref">Org-ref</h2>
+<ul>
+<li><a href="https://github.com/jkitchin/org-ref/blob/master/org-ref.org">https://github.com/jkitchin/org-ref/blob/master/org-ref.org</a></li>
+<li>Example: <a href="https://raw.githubusercontent.com/jkitchin/org-ref/master/tests/test-1.org">https://raw.githubusercontent.com/jkitchin/org-ref/master/tests/test-1.org</a></li>
+</ul>
+<h3 id="setup">setup</h3>
+<p>need</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-org" data-lang="org"><span style="color:#75715e">#+latex_header</span><span style="color:#75715e">: \usepackage[citestyle=verbose,bibstyle=numeric, hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true] {biblatex}</span>
+<span style="color:#75715e">#+latex_header</span><span style="color:#75715e">: \addbibresource{~/Dropbox/bib/refs.bib}</span>
+<span style="color:#75715e">#+EXCLUDE_TAGS</span><span style="color:#75715e">: noexport</span>
+</code></pre></div><p>at the start of every file. <code>:noexport:</code> marks headings to not export within the file
+also see <a href="https://tex.stackexchange.com/questions/21439/is-there-any-advantage-to-using-addbibresource-over-bibliography">https://tex.stackexchange.com/questions/21439/is-there-any-advantage-to-using-addbibresource-over-bibliography</a></p>
+<ul>
+<li>Footcites: <a href="https://tex.stackexchange.com/questions/344116/setting-bibliography-style-in-footnotes-with-biblatex">https://tex.stackexchange.com/questions/344116/setting-bibliography-style-in-footnotes-with-biblatex</a></li>
+</ul>
+<h3 id="biblatex-vs-bibtex-vs-biber">Biblatex vs bibtex vs biber</h3>
+<ul>
+<li><a href="https://tex.stackexchange.com/questions/25701/bibtex-vs-biber-and-biblatex-vs-natbib">https://tex.stackexchange.com/questions/25701/bibtex-vs-biber-and-biblatex-vs-natbib</a></li>
+</ul>
+<h3 id="cite-types">Cite types</h3>
+<ul>
+<li>defined in <code>org-ref-cite-types</code></li>
+</ul>
+<p>*</p>
+<h2 id="backlinks">Backlinks</h2>
+<ul>
+<li><a href="/posts/org_roam/">org-roam</a></li>
 </ul>
 </p>
 </article>
@@ -164,7 +208,18 @@ https://github.com/alex-shpak/hugo-book
     
     <aside class="book-toc">
       
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#org-ref">Org-ref</a>
+      <ul>
+        <li><a href="#setup">setup</a></li>
+        <li><a href="#biblatex-vs-bibtex-vs-biber">Biblatex vs bibtex vs biber</a></li>
+        <li><a href="#cite-types">Cite types</a></li>
+      </ul>
+    </li>
+    <li><a href="#backlinks">Backlinks</a></li>
+  </ul>
+</nav>
 
  
     </aside>
