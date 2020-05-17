@@ -231,6 +231,16 @@ Mountaineering objectives  2x max strength workout with Scott&amp;rsquo;s Killer
     </item>
     
     <item>
+      <title>bash</title>
+      <link>/posts/bash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bash/</guid>
+      <description>Tags: computers
+If statements if [ -v ] # checks for the existance of a variable </description>
+    </item>
+    
+    <item>
       <title>basra</title>
       <link>/posts/20200416090936-basra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -384,7 +394,7 @@ https://en.wikipedia.org/wiki/Bully%5Falgorithm</description>
       
       <guid>/posts/20200415152613-cassandra/</guid>
       <description>Tags: Databases, Computers
-Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    </description>
+Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    concurrent_compactors  Sets the number of IO threads dedicated to compaction If too high, can cause IO starvation and not servicing requests  Depends on NVME drives   set by the concurrenct_compactors string in yaml  can also use nodetool setconcurrent_compactors in C* &amp;gt; 3    </description>
     </item>
     
     <item>
@@ -504,7 +514,7 @@ US  The Senate’s consent to ratify the CTBT requires the acknowledgement of a 
       <guid>/posts/computers/</guid>
       <description>https://wiki.c2.com/?SufficientlySmartCompiler
 Tags: root
-Backlinks  ssh-notes Endianess Cassandra networks postgres compilers algorithms crypto (for cryptography) Databases Domain Fronting in Signal Article fish gephi greedy search java kafka kernel linux macbook butterfly keyboard repair ml multicore ocaml obscure features of jpeg operating systems r ragel sdr Shannon - A Mathematical Theory of Communication shell syscalls tail call optimization usb web dma chips distributed systems http hugo kubernentes (k8s) rust hardware real time systems (rts) emacs fuzzing payment processors ray tracing text boundary analysis gpu sgx  </description>
+Backlinks  ssh-notes Endianess networks postgres compilers algorithms crypto (for cryptography) Databases Domain Fronting in Signal Article fish gephi greedy search java kafka kernel linux macbook butterfly keyboard repair ml multicore ocaml obscure features of jpeg operating systems r ragel sdr Shannon - A Mathematical Theory of Communication shell syscalls tail call optimization usb web dma chips distributed systems http hugo kubernentes (k8s) rust hardware real time systems (rts) emacs fuzzing payment processors text boundary analysis ray tracing gpu sgx Cassandra bash python  </description>
     </item>
     
     <item>
@@ -591,6 +601,16 @@ postgres Tags: Databases, Computers</description>
       <guid>/posts/ddr/</guid>
       <description>Tags: militias
 Backlinks  integrated ddr standards next generation disarmament, demobilization, and reintegration maoist fighters in nepal  </description>
+    </item>
+    
+    <item>
+      <title>democritus</title>
+      <link>/posts/democritus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/democritus/</guid>
+      <description>Tags: epistime
+https://plato.stanford.edu/entries/democritus/</description>
     </item>
     
     <item>
@@ -1309,6 +1329,16 @@ Align heart rate zones with training periods.
     </item>
     
     <item>
+      <title>how to write a technical paper</title>
+      <link>/posts/how_to_write_a_technical_paper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/how_to_write_a_technical_paper/</guid>
+      <description>Tags: papers, writing
+Introduction  Two purposes:  Background and motivation Summary and outline   Background review should include:  trends open problems recent developments also introduce specific terminology   Summary:  Problem description Description of the solution Arguments about the imacpts   Close introduction with paper outline  Related Work  Gives a list of works that show what has happened in the field Provides a critque to the approaches in the literature, establishes the importance of the paper Show sthat the &amp;ldquo;homework&amp;rdquo; has been done Distinguish and describe all the different approaches to the problem  System Model  Describe all the hypothesis and assumptions of the environment for which the problem will be solved  Problem Statement  Often merged with the system model State the problem clearly, be exact in stating the question  Solution  Provide overview of solution Thorough description of the solution and its functionality  Analysis  Qualitative and quantitative Qualitative shows some properties of the solution  Profess of correctness   Quantitive shows some performance aspects of the solution  Performance analysis, which metrics?</description>
+    </item>
+    
+    <item>
       <title>http</title>
       <link>/posts/http/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1502,8 +1532,7 @@ Grammar خل + فعل  Let (imperative) + فعل Example:  Let us go: خل نر�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/post_ottoman_iraq_egypt_irrigation_essay_draft/</guid>
-      <description>Tags: Post-Ottoman Near East, Paper Topics for Post Ottoman Near East, post-ottoman iraq/egypt irrigation essay research, post-ottoman iraq/egypt irrigation paper proposal
-Abstract The opening of the Aswan Low Dam in 1902, as well as the Aswan High Dam in 1960 in Egypt has drawn significant scholarship in modernization theory and environmental history. Notions of modernity within Egyptian society were debated about within the context of both the Low and High dams.</description>
+      <description>Outline :no-export: Intro  Dams tell us a lot Aswan Low Dam and Hindiya Barrage tell us about state power and primordialism  British influenced Both primordialist in standing Aswan Low Dam bad  Caused famine   Hindiya Barrage Good  Cured malaria   Why?  Hindiya barrage was based off of a real need and considered the inhabitiants.     Aswan High Dam and Kut Barrage tell us about how states dealt with urbanization  Both american influenced Both tell us about how countries interpret urbanization Both tell us about how countries look to the past?</description>
     </item>
     
     <item>
@@ -2479,6 +2508,26 @@ Talks about the dujayla land project</description>
     </item>
     
     <item>
+      <title>python</title>
+      <link>/posts/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/python/</guid>
+      <description>Tags: computers
+Backlinks  python objective c bindings  </description>
+    </item>
+    
+    <item>
+      <title>python objective c bindings</title>
+      <link>/posts/python_objective_c_bindings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/python_objective_c_bindings/</guid>
+      <description>Tags: python
+https://pyobjc.readthedocs.io/en/latest/tutorials/firstapp.html</description>
+    </item>
+    
+    <item>
       <title>quantization/discretization</title>
       <link>/posts/quantization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2812,6 +2861,16 @@ Backlinks  kelly criterion  </description>
       <guid>/posts/stochastic_process/</guid>
       <description>Tags: statistics
 Backlinks  ensemble average vs time average  </description>
+    </item>
+    
+    <item>
+      <title>summer 2020</title>
+      <link>/posts/summer_2020/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/summer_2020/</guid>
+      <description>Tags: personal
+Minimum Viable Summer  Computers  Read https://nostarch.com/Effective%5FC Read https://www.manning.com/books/modern-c Read http://www.brendangregg.com/bpf-performance-tools-book.html Contribute to some BPF project   Iraqi arabic  Be able to hold 15min convo with Iraqi arabic Summer language learning:  https://www.mei.columbia.edu/news-spring-2020/remote-opportunities-summer-language-learning     Start writing an Iraqi news roundup  Round up of news about Iraq that I&amp;rsquo;ve read   (Re)read:  I am a Strange Loop GEB Quantum Computing since Democritus   Fitness  Half marathon training Yoga   Finish readings for next semester  Additional Goals, Given Time  Learn Erlang LLVM CRIU Finance  </description>
     </item>
     
     <item>

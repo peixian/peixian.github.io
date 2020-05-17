@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Tags: Databases, Computers
-Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    "><meta property="og:title" content="Cassandra" />
+Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    concurrent_compactors  Sets the number of IO threads dedicated to compaction If too high, can cause IO starvation and not servicing requests  Depends on NVME drives   set by the concurrenct_compactors string in yaml  can also use nodetool setconcurrent_compactors in C* &gt; 3    "><meta property="og:title" content="Cassandra" />
 <meta property="og:description" content="Tags: Databases, Computers
-Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    " />
+Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    concurrent_compactors  Sets the number of IO threads dedicated to compaction If too high, can cause IO starvation and not servicing requests  Depends on NVME drives   set by the concurrenct_compactors string in yaml  can also use nodetool setconcurrent_compactors in C* &gt; 3    " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/20200415152613-cassandra/" />
 
 <title>Cassandra | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.0e6142467802980fb8096786d7285649fb095185e144965b05f33745b764e533.js" integrity="sha256-DmFCRngCmA&#43;4CWeG1yhWSfsJUYXhRJZbBfM3Rbdk5TM="></script>
+<script defer src="/en.search.min.7e7ea83a913d2a07980903fda9618877b1126553d109be22806e9abc0225112e.js" integrity="sha256-fn6oOpE9KgeYCQP9qWGId7ESZVPRCb4igG6avAIlES4="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -104,6 +104,7 @@ https://github.com/alex-shpak/hugo-book
   <nav id="TableOfContents">
   <ul>
     <li><a href="#internals">Internals</a></li>
+    <li><a href="#concurrent-compactors"><code>concurrent_compactors</code></a></li>
   </ul>
 </nav>
 
@@ -134,6 +135,20 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li>No purpose other than bootstrapping the gossip process</li>
 <li>DO NOT MAKE ALL NODES SEED NODES</li>
+</ul>
+</li>
+</ul>
+<h2 id="concurrent-compactors"><code>concurrent_compactors</code></h2>
+<ul>
+<li>Sets the number of IO threads dedicated to compaction</li>
+<li>If too high, can cause IO starvation and not servicing requests
+<ul>
+<li>Depends on NVME drives</li>
+</ul>
+</li>
+<li>set by the <code>concurrenct_compactors</code> string in yaml
+<ul>
+<li>can also use <code>nodetool setconcurrent_compactors</code> in C* &gt; 3</li>
 </ul>
 </li>
 </ul>
@@ -174,6 +189,7 @@ https://github.com/alex-shpak/hugo-book
   <nav id="TableOfContents">
   <ul>
     <li><a href="#internals">Internals</a></li>
+    <li><a href="#concurrent-compactors"><code>concurrent_compactors</code></a></li>
   </ul>
 </nav>
 

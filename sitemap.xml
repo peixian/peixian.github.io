@@ -87,6 +87,10 @@
   </url>
   
   <url>
+    <loc>/posts/bash/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200416090936-basra/</loc>
   </url>
   
@@ -228,6 +232,10 @@
   
   <url>
     <loc>/posts/ddr/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/democritus/</loc>
   </url>
   
   <url>
@@ -496,6 +504,10 @@
   
   <url>
     <loc>/posts/how_to_make_a_complete_map_of_every_thought_you_think/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/how_to_write_a_technical_paper/</loc>
   </url>
   
   <url>
@@ -959,6 +971,14 @@
   </url>
   
   <url>
+    <loc>/posts/python/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/python_objective_c_bindings/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/quantization/</loc>
   </url>
   
@@ -1084,6 +1104,10 @@
   
   <url>
     <loc>/posts/stochastic_process/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/summer_2020/</loc>
   </url>
   
   <url>
