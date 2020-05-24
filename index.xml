@@ -472,7 +472,7 @@ Chapter one  Goes against Anderson - Imagined Communities by stating that the co
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/climate_change/</guid>
-      <description>Tags: root recipes
+      <description>Tags: root
 Backlinks  Kolbert - Field Notes from a Catastrophe  </description>
     </item>
     
@@ -534,7 +534,7 @@ US  The Senate’s consent to ratify the CTBT requires the acknowledgement of a 
       <guid>/posts/computers/</guid>
       <description>https://wiki.c2.com/?SufficientlySmartCompiler
 Tags: root
-Backlinks  ssh-notes Endianess networks postgres compilers algorithms crypto (for cryptography) Databases Domain Fronting in Signal Article fish gephi greedy search java kafka kernel linux macbook butterfly keyboard repair ml multicore ocaml obscure features of jpeg operating systems r ragel sdr Shannon - A Mathematical Theory of Communication shell syscalls tail call optimization usb web dma chips distributed systems http hugo kubernentes (k8s) rust hardware real time systems (rts) emacs fuzzing payment processors text boundary analysis ray tracing gpu sgx Cassandra bash python  </description>
+Backlinks  ssh-notes Endianess Cassandra networks postgres compilers algorithms bash chips crypto (for cryptography) Databases distributed systems dma Domain Fronting in Signal Article emacs fish fuzzing gephi gpu greedy search hardware http hugo java kafka kernel kubernentes (k8s) linux macbook butterfly keyboard repair ml multicore ocaml obscure features of jpeg operating systems payment processors python r ragel ray tracing rust sdr sgx Shannon - A Mathematical Theory of Communication shell syscalls tail call optimization text boundary analysis usb web string matching zotero Gregg - BFP Performance Tools real time systems (rts)  </description>
     </item>
     
     <item>
@@ -634,7 +634,7 @@ postgres Tags: Databases, Computers</description>
       
       <guid>/posts/ddr/</guid>
       <description>Tags: militias
-Backlinks  integrated ddr standards next generation disarmament, demobilization, and reintegration maoist fighters in nepal  </description>
+Backlinks  integrated ddr standards maoist fighters in nepal next generation disarmament, demobilization, and reintegration religious peacebuilding  </description>
     </item>
     
     <item>
@@ -1086,7 +1086,7 @@ Fuzzing Image IO   https://www.instapaper.com/read/1303612511
     </item>
     
     <item>
-      <title>Gambetta et al: Streetwise</title>
+      <title>Gambetta et al - Streetwise</title>
       <link>/posts/gambetta_et_al_streetwise/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1387,7 +1387,7 @@ Align heart rate zones with training periods.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/homogenous_time_blog_post/</guid>
-      <description>Tags: drafts
+      <description>Tags: drafts, ibn khaldun, Pursely - Familiar Futures, DiCapua - Gatekeepers of the Arab Past, Cassandra, distributed systems
 What is homogenous time? If you take Sara Pursely&amp;rsquo;s book Familiar Futures, homogenous time lies at the core of modern society today pursley_familiar_2019. She describes how by the standardization of homogenous time, capitalism, which is predicated upon &amp;ldquo;uniform duration and endless repetition&amp;rdquo;, has evolved. While her frame of analysis is the history of Iraq, I think it&amp;rsquo;s a bit more interesting if we push past a pure historical or even anthropological frame.</description>
     </item>
     
@@ -1535,7 +1535,7 @@ Backlinks  Secor - Children of Paradise  </description>
       
       <guid>/posts/20200413223156-iraq/</guid>
       <description>Tags: middle east
-Artifical State  Artificial state narratives  Modernity  Budget  Oil accounts for 90% of Baghdad&amp;rsquo;s revenue IS particularly active in Diyala province    Irrigation  http://documents.worldbank.org/curated/en/609671468049219564/Iraq-Integrated-National-Energy-Strategy-Technical-Assistance-Project  Backlinks  Oil Outputs in Iraq Makdisi - The Ecumenical Frame Pursely - Familiar Futures dujayla land project PMF&amp;rsquo;s in Iraq Simon - Imposition of Nationalism on Non-Nation State al-Husri basra Dodge - Rethinking Political Identities in Iraq After 2003 google fi iraq agricultural exports iraqi air strikes iraqi bonds iraqi constitutionalism shabak undersea fiber iraqi arabic irrigation in iraq mosul KRG/iraqi kurdistan conference on iraq - 20-02-28  </description>
+Artifical State  Artificial state narratives  Modernity  Budget  Oil accounts for 90% of Baghdad&amp;rsquo;s revenue IS particularly active in Diyala province    Irrigation  http://documents.worldbank.org/curated/en/609671468049219564/Iraq-Integrated-National-Energy-Strategy-Technical-Assistance-Project  Backlinks  Oil Outputs in Iraq Makdisi - The Ecumenical Frame dujayla land project PMF&amp;rsquo;s in Iraq Simon - Imposition of Nationalism on Non-Nation State al-Husri basra Dodge - Rethinking Political Identities in Iraq After 2003 KRG/iraqi kurdistan conference on iraq - 20-02-28 google fi iraq agricultural exports iraqi air strikes iraqi arabic iraqi bonds iraqi constitutionalism irrigation in iraq mosul shabak undersea fiber food security Pursely - Familiar Futures Akdedian et al: State atrophy and the reconfiguration of borderlands in Syria and Iraq baghdad qaim  </description>
     </item>
     
     <item>
@@ -1925,7 +1925,7 @@ Backlinks  Meeker - A Nation of Empire Adalet - Hotels and Highways dujayla land
       
       <guid>/posts/20200415154216-militias/</guid>
       <description>Tags: root
-Backlinks  FARC in Colombia PMF&amp;rsquo;s in Iraq Blumi - Ottoman Refugees, 1878-1939 next generation disarmament, demobilization, and reintegration ddr maoist fighters in nepal  </description>
+Backlinks  FARC in Colombia PMF&amp;rsquo;s in Iraq Blumi - Ottoman Refugees, 1878-1939 ddr maoist fighters in nepal next generation disarmament, demobilization, and reintegration Dayon et al: Career Foreign Fighters  </description>
     </item>
     
     <item>
@@ -2621,7 +2621,7 @@ https://pyobjc.readthedocs.io/en/latest/tutorials/firstapp.html</description>
     </item>
     
     <item>
-      <title>Qaim</title>
+      <title>qaim</title>
       <link>/posts/qaim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2725,6 +2725,16 @@ Mushrooms  https://cafedelites.com/roasted-mushrooms/  Backlinks  climate change
       <guid>/posts/recoll_from_emacs/</guid>
       <description>Tags: emacs
  https://oremacs.com/2015/07/27/counsel-recoll/ https://framagit.org/medoc92/recoll https://www.lesbonscomptes.com/recoll/download.html#macosx https://github.com/alraban/org-recoll  </description>
+    </item>
+    
+    <item>
+      <title>religious peacebuilding</title>
+      <link>/posts/religious_peacebuilding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/religious_peacebuilding/</guid>
+      <description>Tags: ddr
+ From Wiley-Blackwell Companions to Religion: The Blackwell Companion to Religion and Violence Grassroots activism is the interpretive locus of religious peacebuilding. According to Lederach, grassroots peacebuilding “means that the location of the actor and action is among the poor, the affected communities who … understand survival and change in terms of decades and generations, in terms of lifelong processes of transformation” (2003b: 262, 264). The introduction to the book Peacemakers in Action asserts that “today, it is widely accepted that religion is a cause-rather than a solution – to many of the world&amp;rsquo;s violent conflicts.</description>
     </item>
     
     <item>
