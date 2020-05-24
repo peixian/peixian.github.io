@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tags: computers, books, bpf
+Chapter 1 - Intro  Turned into a general purpose execution engine in 2014 VM  Tracing, Snooping, Sampling, Profiling, and Observability  Tracing: event based recording  Tracing and snooping are the same thing strace, tcp-dump, etc   Sampling: tools that take subsets of a measurements to paint a coarse picture  Only rough picture   Observability: understanding a system through observation  Includes tracing tools, sampling tools, and fixed counters Does not include benchmark tools    BCC/BFPTrace/IO Visor BCC: BFP Compiler Collection  First high levle tracing framework developed for BPF  Provides C, with interfaces for Python, lua, and C&#43;&#43; Much more complex than bfptrace Meant for complex tools    bfptrace  Newer frontend, special purpose high level programming langauge meant for one line scripts  IO Visor  Linux foundation project on GH Encompases both bcc and bpftrace  BCC execsnoop(8)  Traces execve(2) system call Output reveals which processes were executed while tracing this prints out per-event data, but other tools allow for summaries  biolatency(8)  Traces block io latency Displays an ASCII histogram of sizes  Visability  BPF tracing gives you visibility across the full software stack Supports:  Applications tracing with runtimes Application tracing with compiled code /lib/* information  same as ltrace   syscalls interface  same as strace or perf kernel scheduler, file systems, TCP/IP, etc  same as ftrace or perf     hardware tracing  perf, sar, /proc counters      Dynamic instrumentation: kprobes and uprobes  Dynamic instrumentation allows for probing of live running software Examples:    Probe Description     kprobe:vfs_read Beginning of vfs_read()   kretprobe:vfs_read End of vfs_read()   uprobe:/bin/bash:readline Beginning of readline() function in bash   uretprobe:/bin/bash:readline End of readline() function in bas      Static instrumentation: tracepoints and usdt  Function names change and dynamic instrumentation may not always be correct Can use tracepoints or user statically defined tracing:    Probe Description     tracepoint:syscalls:sys_enter_open instrument open(2) syscall   usdt:/usr/sbin/mysqld:mysql:query__start query__start probe      bpftrace  takes -e for execute -l for listing open tracepoints  "><meta property="og:title" content="Gregg - BFP Performance Tools" />
+<meta property="og:description" content="Tags: computers, books, bpf
+Chapter 1 - Intro  Turned into a general purpose execution engine in 2014 VM  Tracing, Snooping, Sampling, Profiling, and Observability  Tracing: event based recording  Tracing and snooping are the same thing strace, tcp-dump, etc   Sampling: tools that take subsets of a measurements to paint a coarse picture  Only rough picture   Observability: understanding a system through observation  Includes tracing tools, sampling tools, and fixed counters Does not include benchmark tools    BCC/BFPTrace/IO Visor BCC: BFP Compiler Collection  First high levle tracing framework developed for BPF  Provides C, with interfaces for Python, lua, and C&#43;&#43; Much more complex than bfptrace Meant for complex tools    bfptrace  Newer frontend, special purpose high level programming langauge meant for one line scripts  IO Visor  Linux foundation project on GH Encompases both bcc and bpftrace  BCC execsnoop(8)  Traces execve(2) system call Output reveals which processes were executed while tracing this prints out per-event data, but other tools allow for summaries  biolatency(8)  Traces block io latency Displays an ASCII histogram of sizes  Visability  BPF tracing gives you visibility across the full software stack Supports:  Applications tracing with runtimes Application tracing with compiled code /lib/* information  same as ltrace   syscalls interface  same as strace or perf kernel scheduler, file systems, TCP/IP, etc  same as ftrace or perf     hardware tracing  perf, sar, /proc counters      Dynamic instrumentation: kprobes and uprobes  Dynamic instrumentation allows for probing of live running software Examples:    Probe Description     kprobe:vfs_read Beginning of vfs_read()   kretprobe:vfs_read End of vfs_read()   uprobe:/bin/bash:readline Beginning of readline() function in bash   uretprobe:/bin/bash:readline End of readline() function in bas      Static instrumentation: tracepoints and usdt  Function names change and dynamic instrumentation may not always be correct Can use tracepoints or user statically defined tracing:    Probe Description     tracepoint:syscalls:sys_enter_open instrument open(2) syscall   usdt:/usr/sbin/mysqld:mysql:query__start query__start probe      bpftrace  takes -e for execute -l for listing open tracepoints  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/bfp/" />
+
+<title>Gregg - BFP Performance Tools | الـبـحـر الـزاخـر</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
+<script defer src="/en.search.min.cbbd4ad8e20b9ca8031d887c4f25deed9c7b4b054f62fe9181d7db6ebb6f8918.js" integrity="sha256-y71K2OILnKgDHYh8TyXe7Zx7SwVPYv6RgdfbbrtviRg="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+    <a href="/">
+        <img src="/svg/icon.svg" alt="icon" id="raccoon" />
+    <span>الـبـحـر الـزاخـر</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Gregg - BFP Performance Tools</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#chapter-1-intro">Chapter 1 - Intro</a>
+      <ul>
+        <li><a href="#tracing-snooping-sampling-profiling-and-observability">Tracing, Snooping, Sampling, Profiling, and Observability</a></li>
+        <li><a href="#bcc-bfptrace-io-visor">BCC/BFPTrace/IO Visor</a></li>
+        <li><a href="#bcc">BCC</a></li>
+        <li><a href="#visability">Visability</a></li>
+        <li><a href="#dynamic-instrumentation-kprobes-and-uprobes">Dynamic instrumentation: kprobes and uprobes</a></li>
+        <li><a href="#static-instrumentation-tracepoints-and-usdt">Static instrumentation: tracepoints and usdt</a></li>
+        <li><a href="#bpftrace"><code>bpftrace</code></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/bfp/">Gregg - BFP Performance Tools</a>
+  </h1>
+  
+
+
+  
+
+  
+
+
+  <p><p>Tags: <a href="/posts/computers/">computers</a>, <a href="/posts/20200414223410-books/">books</a>, <a href="/posts/bpf/">bpf</a></p>
+<h2 id="chapter-1-intro">Chapter 1 - Intro</h2>
+<ul>
+<li>Turned into a general purpose execution engine in 2014</li>
+<li>VM</li>
+</ul>
+<h3 id="tracing-snooping-sampling-profiling-and-observability">Tracing, Snooping, Sampling, Profiling, and Observability</h3>
+<ul>
+<li>Tracing: event based recording
+<ul>
+<li>Tracing and snooping are the same thing</li>
+<li><code>strace</code>, <code>tcp-dump</code>, etc</li>
+</ul>
+</li>
+<li>Sampling: tools that take subsets of a measurements to paint a coarse picture
+<ul>
+<li>Only rough picture</li>
+</ul>
+</li>
+<li>Observability: understanding a system through observation
+<ul>
+<li>Includes tracing tools, sampling tools, and fixed counters</li>
+<li>Does not include benchmark tools</li>
+</ul>
+</li>
+</ul>
+<h3 id="bcc-bfptrace-io-visor">BCC/BFPTrace/IO Visor</h3>
+<h4 id="bcc-bfp-compiler-collection">BCC: BFP Compiler Collection</h4>
+<ul>
+<li>First high levle tracing framework developed for BPF
+<ul>
+<li>Provides C, with interfaces for Python, lua, and C++</li>
+<li>Much more complex than bfptrace</li>
+<li>Meant for complex tools</li>
+</ul>
+</li>
+</ul>
+<h4 id="bfptrace">bfptrace</h4>
+<ul>
+<li>Newer frontend, special purpose high level programming langauge</li>
+<li>meant for one line scripts</li>
+</ul>
+<h4 id="io-visor">IO Visor</h4>
+<ul>
+<li>Linux foundation project on GH</li>
+<li>Encompases both bcc and bpftrace</li>
+</ul>
+<h3 id="bcc">BCC</h3>
+<h4 id="execsnoop--8"><code>execsnoop(8)</code></h4>
+<ul>
+<li>Traces <code>execve(2)</code> system call</li>
+<li>Output reveals which processes were executed while tracing</li>
+<li>this prints out per-event data, but other tools allow for summaries</li>
+</ul>
+<h4 id="biolatency--8"><code>biolatency(8)</code></h4>
+<ul>
+<li>Traces block io latency</li>
+<li>Displays an ASCII histogram of sizes</li>
+</ul>
+<h3 id="visability">Visability</h3>
+<ul>
+<li>BPF tracing gives you visibility across the full software stack</li>
+<li>Supports:
+<ul>
+<li>Applications tracing with runtimes</li>
+<li>Application tracing with compiled code</li>
+<li><code>/lib/*</code> information
+<ul>
+<li>same as <code>ltrace</code></li>
+</ul>
+</li>
+<li><a href="/posts/syscalls/">syscalls</a> interface
+<ul>
+<li>same as <code>strace</code> or <code>perf</code></li>
+<li><a href="/posts/kernel/">kernel</a> scheduler, file systems, TCP/IP, etc
+<ul>
+<li>same as <code>ftrace</code> or <code>perf</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/posts/hardware/">hardware</a> tracing
+<ul>
+<li><code>perf</code>, <code>sar</code>, <code>/proc</code> counters</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="dynamic-instrumentation-kprobes-and-uprobes">Dynamic instrumentation: kprobes and uprobes</h3>
+<ul>
+<li>Dynamic instrumentation allows for probing of live running software</li>
+<li>Examples:
+<table>
+<thead>
+<tr>
+<th>Probe</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kprobe:vfs_read</td>
+<td>Beginning of vfs_read()</td>
+</tr>
+<tr>
+<td>kretprobe:vfs_read</td>
+<td>End of vfs_read()</td>
+</tr>
+<tr>
+<td>uprobe:/bin/bash:readline</td>
+<td>Beginning of readline() function in bash</td>
+</tr>
+<tr>
+<td>uretprobe:/bin/bash:readline</td>
+<td>End of readline() function in bas</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h3 id="static-instrumentation-tracepoints-and-usdt">Static instrumentation: tracepoints and usdt</h3>
+<ul>
+<li>Function names change and dynamic instrumentation may not always be correct</li>
+<li>Can use tracepoints or user statically defined tracing:
+<table>
+<thead>
+<tr>
+<th>Probe</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tracepoint:syscalls:sys_enter_open</td>
+<td>instrument open(2) syscall</td>
+</tr>
+<tr>
+<td>usdt:/usr/sbin/mysqld:mysql:query__start</td>
+<td>query__start probe</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h3 id="bpftrace"><code>bpftrace</code></h3>
+<ul>
+<li>takes <code>-e</code> for execute</li>
+<li><code>-l</code> for listing open tracepoints</li>
+</ul>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#chapter-1-intro">Chapter 1 - Intro</a>
+      <ul>
+        <li><a href="#tracing-snooping-sampling-profiling-and-observability">Tracing, Snooping, Sampling, Profiling, and Observability</a></li>
+        <li><a href="#bcc-bfptrace-io-visor">BCC/BFPTrace/IO Visor</a></li>
+        <li><a href="#bcc">BCC</a></li>
+        <li><a href="#visability">Visability</a></li>
+        <li><a href="#dynamic-instrumentation-kprobes-and-uprobes">Dynamic instrumentation: kprobes and uprobes</a></li>
+        <li><a href="#static-instrumentation-tracepoints-and-usdt">Static instrumentation: tracepoints and usdt</a></li>
+        <li><a href="#bpftrace"><code>bpftrace</code></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

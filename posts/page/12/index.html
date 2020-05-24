@@ -12,7 +12,7 @@
 <title>Posts | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.7e7ea83a913d2a07980903fda9618877b1126553d109be22806e9abc0225112e.js" integrity="sha256-fn6oOpE9KgeYCQP9qWGId7ESZVPRCb4igG6avAIlES4="></script>
+<script defer src="/en.search.min.cbbd4ad8e20b9ca8031d887c4f25deed9c7b4b054f62fe9181d7db6ebb6f8918.js" integrity="sha256-y71K2OILnKgDHYh8TyXe7Zx7SwVPYv6RgdfbbrtviRg="></script>
 <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="الـبـحـر الـزاخـر" />
 <!--
 Made with Book Theme
@@ -135,6 +135,97 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
+      <a href="/posts/20200415130616-grad_school/">grad school</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: root
+ http://matt.might.net/articles/how-to-email/  Backlinks  classes Peters - Getting What You Came For Potential Advisors for Master&rsquo;s Thesis Potential Schools for Phd Phd Planning grad school fellowships fall 2020 classes Notes on Surviving Grad School Fiebelman - A PhD is Not Enough arabic disarmingly forthright mscs advice Higher Ed Readings master&rsquo;s thesis peer review professional development session with thanassis cambanis talks thesis proposals help Mumby - Graduate School Smith - How University Budgets Work  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/20200415132921-grad_school_fellowships/">grad school fellowships</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: grad school
+   Name Type Requirements Link     Boren Fellowship Language Matriculated https://www.borenawards.org/eligible-programs   CIS Language Matriculated https://clscholarship.org/   New York State ? ? www.hesc.org   Soros Fellowship Full Matriculated full time https://www.pdsoros.org/   Davis Putter ? ? https://davisputter.org/apply-for-scholarships/   Overseas Press Club ? Matriculated https://overseaspressclubfoundation.org/apply.html    Search Engines:  https://www.iefa.org https://grad.uchicago.edu/fellowships/  Strict Fellowships  Minority Fellowship - March 13 - https://www.
+        <a href="/posts/20200415132921-grad_school_fellowships/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/graph_based_approximate_nearest_neighbor_search/">graph based approximate nearest neighbor search (granne)</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: approximate nearest neighbor, algorithms
+  https://github.com/granne/granne
+  Stores adjacency lists with a variable number of neighbors per node
+ saves space on metadata size of index structure depends on the properties of the graph usable index of 4 bil vectors at 240GB can actually use mmap to map the index and the query vectors for lazy loading    Data locality can be increased on the SSD by ordering elements with closer HNSW nodes
+        <a href="/posts/graph_based_approximate_nearest_neighbor_search/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/graph_traversal/">graph traversal</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: algorithms
+Backlinks  hierarchical navigable small-world graph (HNSW)  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/gray_failures/">gray failures</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: distributed systems, papers
+https://www.microsoft.com/en-us/research/wp-content/uploads/2017/06/paper-1.pdf
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
       <a href="/posts/greece/">greece</a>
     </h2>
     
@@ -164,6 +255,23 @@ https://github.com/alex-shpak/hugo-book
 
     <p>Tags: Computers, algorithms
 Backlinks  hierarchical navigable small-world graph (HNSW)  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/bfp/">Gregg - BFP Performance Tools</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: computers, books, bpf
+Chapter 1 - Intro  Turned into a general purpose execution engine in 2014 VM  Tracing, Snooping, Sampling, Profiling, and Observability  Tracing: event based recording  Tracing and snooping are the same thing strace, tcp-dump, etc   Sampling: tools that take subsets of a measurements to paint a coarse picture  Only rough picture   Observability: understanding a system through observation  Includes tracing tools, sampling tools, and fixed counters Does not include benchmark tools    BCC/BFPTrace/IO Visor BCC: BFP Compiler Collection  First high levle tracing framework developed for BPF  Provides C, with interfaces for Python, lua, and C++ Much more complex than bfptrace Meant for complex tools    bfptrace  Newer frontend, special purpose high level programming langauge meant for one line scripts  IO Visor  Linux foundation project on GH Encompases both bcc and bpftrace  BCC execsnoop(8)  Traces execve(2) system call Output reveals which processes were executed while tracing this prints out per-event data, but other tools allow for summaries  biolatency(8)  Traces block io latency Displays an ASCII histogram of sizes  Visability  BPF tracing gives you visibility across the full software stack Supports:  Applications tracing with runtimes Application tracing with compiled code /lib/* information  same as ltrace   syscalls interface  same as strace or perf kernel scheduler, file systems, TCP/IP, etc  same as ftrace or perf     hardware tracing  perf, sar, /proc counters      Dynamic instrumentation: kprobes and uprobes  Dynamic instrumentation allows for probing of live running software Examples:    Probe Description     kprobe:vfs_read Beginning of vfs_read()   kretprobe:vfs_read End of vfs_read()   uprobe:/bin/bash:readline Beginning of readline() function in bash   uretprobe:/bin/bash:readline End of readline() function in bas      Static instrumentation: tracepoints and usdt  Function names change and dynamic instrumentation may not always be correct Can use tracepoints or user statically defined tracing:    Probe Description     tracepoint:syscalls:sys_enter_open instrument open(2) syscall   usdt:/usr/sbin/mysqld:mysql:query__start query__start probe      bpftrace  takes -e for execute -l for listing open tracepoints  
     </p>
   </article>
   
@@ -205,116 +313,6 @@ Talks about the nationalist power of Ottoman narratives, especially in light of 
 Concludes with that the idea of &lsquo;Ottoman ruins&rsquo; and &lsquo;countries emerging from the ruins&rsquo; is fundalmentally flawed, there is more for the past to teach us
  Making Ottoman synonmyous with Islamic or Turkish influences is a defining hallmark of the 19th century Balkan nationalist projects that perceived the Ottoman Empire as a &lsquo;religiously, socially, and institutionally alien imposition on autochthonous Christian medieval socities.
         <a href="/posts/hajdarpasic_reflections_on_the_ottoman_legacy_in_south_eastern_europe/">...</a>
-      
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/haplin_thirteen_ways_to_make_a_plural/">Haplin - Thirteen Ways to Make a Plural</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: books, arabic
- Aiming for timing passages Read for strict speed, without comphrension  Increase the speed the brain can process arabic script 200 words per day   Deconstructing sentences  Identifying subjects, objects, verbs, etc Underlining each pronoun and drawing a line linking it back to each noun   Don&rsquo;t reach for the dictionary unless necessary Try to study abroad away from the capital Eschew perfection in terms of realistic goals  Fully fluent MSA and dialect is unrealistic, focus on the aspects that matter to you  Holding a conversation, conducting interviews, etc   Strong study base over a long period of time is required   Reaching C1 requires extensive practical use of the language Post B1, progress slows until vocab base and weekly practice reveals itself Normal to blur the colloquial and formal registers  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/hardware/">hardware</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: computers
-Backlinks  chips  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/20200418230042-hart_why_don_t_we_learn_from_history/">Hart - Why Don&#39;t We Learn From History?</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: books
-  War is profitable only if victory is quickly gained. Only an aggressor can hope to gain a quick victory. If he is frustrated, the war is bound to be long, and mutually ruinous, unless it is brought to an end by mutual agreement. Simpson - War from the Ground Up    What is the object of history? I would answer, quite simply—“truth.”
-  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/hart_s_theory_of_law/">hart&#39;s theory of law</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: jurisprudence
- Hart considers the law as conferring powers and imposing duties Core focus on the soverign and soverign powers  States laws is a social rule   Counters austen&rsquo;s theory of law  Austen&rsquo;s theory of law has key issues  Duty imposing laws Continuity of laws Intelligbility of laws      3 Problems Addressed by Hart  Assume a pre-legal society where &ldquo;laws&rdquo; are social customs Problem of Uncertainty  What is a rule?
-        <a href="/posts/hart_s_theory_of_law/">...</a>
-      
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/20200414223819-hassan_longing_for_the_lost_caliphate/">Hassan - Longing for the Lost Caliphate</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: books, Post-Ottoman Near East
-Backlinks  Nationalism and Outsiders in the Middle East - Midterm Draft Saunders - The Ummah as a Nation: A reappraisal in the wake of the &lsquo;Cartoons Affair&rsquo;  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/20200415114157-heart_rate_zones/">heart rate zones</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: Workouts
-Align heart rate zones with training periods.
-4 Zones Zone 1 Basic endurance, 55-75% of max HR
- Low Speed. At low intensities, predominately using slow twitch (ST) muscle fibers, the rate of ATP production is modest.  Zone 2 No man&rsquo;s land, 75-80% of max HR
- Note that this can &ldquo;feel&rdquo; like training, but the gains are small here. Zone 1 is a safer bet.  Zone 3 Uppermost aerobic training, 80-90% of max HR
-        <a href="/posts/20200415114157-heart_rate_zones/">...</a>
       
     </p>
   </article>
@@ -628,7 +626,25 @@ Align heart rate zones with training periods.
         
     
     
-    <li class="page-item"><a class="page-link" href="/posts/page/31/">31</a></li>
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/posts/page/33/">33</a></li>
     
     
     <li class="page-item">
@@ -636,7 +652,7 @@ Align heart rate zones with training periods.
     </li>
     
     <li class="page-item">
-        <a href="/posts/page/31/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/posts/page/33/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
     </li>
     
 </ul>

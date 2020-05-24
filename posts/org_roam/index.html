@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Tags: org-mode
-Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download  Graphs   Groups - https://org-roam.discourse.group/t/analysing-the-semantic-network/56
+Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download https://github.com/org-roam/org-roam-server/blob/master/org-roam-server.el  Graphs   Groups - https://org-roam.discourse.group/t/analysing-the-semantic-network/56
   Example:
 ## Fetch data library(DBI) # Sqlite con &lt;- dbConnect(RSQLite::SQLite(), &#34;org-roam.db&#34;) dbListTables(con) links &lt;- dbSendQuery(con, &#34;SELECT [from], [to] FROM links&#34;) links &lt;- dbFetch(links) titles &lt;- dbSendQuery(con, &#34;SELECT * FROM titles&#34;) titles &lt;- dbFetch(titles) dbDisconnect(con) ## Create edge list [from - to] with clean labels library(dplyr) # Transformation library(stringr) # String manipulation edges &lt;- inner_join(links, titles, by = c(&#34;from&#34; = &#34;file&#34;)) %&gt;% inner_join(titles, by = c(&#34;to&#34; = &#34;file&#34;)) %&gt;% select(From = titles."><meta property="og:title" content="org-roam" />
 <meta property="og:description" content="Tags: org-mode
-Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download  Graphs   Groups - https://org-roam.discourse.group/t/analysing-the-semantic-network/56
+Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download https://github.com/org-roam/org-roam-server/blob/master/org-roam-server.el  Graphs   Groups - https://org-roam.discourse.group/t/analysing-the-semantic-network/56
   Example:
 ## Fetch data library(DBI) # Sqlite con &lt;- dbConnect(RSQLite::SQLite(), &#34;org-roam.db&#34;) dbListTables(con) links &lt;- dbSendQuery(con, &#34;SELECT [from], [to] FROM links&#34;) links &lt;- dbFetch(links) titles &lt;- dbSendQuery(con, &#34;SELECT * FROM titles&#34;) titles &lt;- dbFetch(titles) dbDisconnect(con) ## Create edge list [from - to] with clean labels library(dplyr) # Transformation library(stringr) # String manipulation edges &lt;- inner_join(links, titles, by = c(&#34;from&#34; = &#34;file&#34;)) %&gt;% inner_join(titles, by = c(&#34;to&#34; = &#34;file&#34;)) %&gt;% select(From = titles." />
 <meta property="og:type" content="article" />
@@ -18,7 +18,7 @@ Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.c
 <title>org-roam | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.7e7ea83a913d2a07980903fda9618877b1126553d109be22806e9abc0225112e.js" integrity="sha256-fn6oOpE9KgeYCQP9qWGId7ESZVPRCb4igG6avAIlES4="></script>
+<script defer src="/en.search.min.cbbd4ad8e20b9ca8031d887c4f25deed9c7b4b054f62fe9181d7db6ebb6f8918.js" integrity="sha256-y71K2OILnKgDHYh8TyXe7Zx7SwVPYv6RgdfbbrtviRg="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -109,6 +109,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#org-download">Org-Download</a></li>
     <li><a href="#graphs">Graphs</a></li>
+    <li><a href="#org-roam-bibtex">Org-roam-bibtex</a></li>
   </ul>
 </nav>
 
@@ -137,6 +138,7 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li><a href="https://github.com/syl20bnr/spacemacs/issues/8479">https://github.com/syl20bnr/spacemacs/issues/8479</a></li>
 <li><a href="https://github.com/abo-abo/org-download">https://github.com/abo-abo/org-download</a></li>
+<li><a href="https://github.com/org-roam/org-roam-server/blob/master/org-roam-server.el">https://github.com/org-roam/org-roam-server/blob/master/org-roam-server.el</a></li>
 </ul>
 <h2 id="graphs">Graphs</h2>
 <ul>
@@ -180,6 +182,8 @@ coms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">spingl
 
 </code></pre></div></li>
 </ul>
+<h2 id="org-roam-bibtex">Org-roam-bibtex</h2>
+<p><a href="https://github.com/zaeph/org-roam-bibtex">https://github.com/zaeph/org-roam-bibtex</a></p>
 </p>
 </article>
  
@@ -218,6 +222,7 @@ coms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">spingl
   <ul>
     <li><a href="#org-download">Org-Download</a></li>
     <li><a href="#graphs">Graphs</a></li>
+    <li><a href="#org-roam-bibtex">Org-roam-bibtex</a></li>
   </ul>
 </nav>
 
