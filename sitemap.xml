@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/abu_rish_lebanon_s_uprising_in_a_time_of_crisis/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200416083138-acehan_turkish_leatherworkers_in_peabody_massachusetts/</loc>
   </url>
   
@@ -51,7 +55,19 @@
   </url>
   
   <url>
+    <loc>/posts/al_qaeda/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/algorithms/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/amal/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/anbar/</loc>
   </url>
   
   <url>
@@ -88,6 +104,10 @@
   
   <url>
     <loc>/posts/baghdad/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/barber_et_al_trading_is_hazardous_to_your_wealth/</loc>
   </url>
   
   <url>
@@ -143,6 +163,10 @@
   </url>
   
   <url>
+    <loc>/posts/c_cpp/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200416092129-can_spiritual_subjects/</loc>
   </url>
   
@@ -175,7 +199,15 @@
   </url>
   
   <url>
+    <loc>/posts/china/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/chips/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/clang/</loc>
   </url>
   
   <url>
@@ -320,6 +352,10 @@
   
   <url>
     <loc>/posts/emerging_markets/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/emotional_intelligence/</loc>
   </url>
   
   <url>
@@ -479,6 +515,14 @@
   </url>
   
   <url>
+    <loc>/posts/gresham_s_law/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/gz_green_zone/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/habitus/</loc>
   </url>
   
@@ -587,7 +631,7 @@
   </url>
   
   <url>
-    <loc>/posts/iraq_barley_exports/</loc>
+    <loc>/posts/iraq_ag_exports/</loc>
   </url>
   
   <url>
@@ -607,7 +651,15 @@
   </url>
   
   <url>
+    <loc>/posts/iraqi_electricity/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200419130420-iraqi_ghost_militias/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/iraqi_political_parties/</loc>
   </url>
   
   <url>
@@ -703,6 +755,10 @@
   </url>
   
   <url>
+    <loc>/posts/linker_essay/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/linux/</loc>
   </url>
   
@@ -755,11 +811,19 @@
   </url>
   
   <url>
+    <loc>/posts/mortages/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/mosul/</loc>
   </url>
   
   <url>
     <loc>/posts/muhammad_abduh/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/muhammad_baqir_as_sadr/</loc>
   </url>
   
   <url>
@@ -775,6 +839,14 @@
   </url>
   
   <url>
+    <loc>/posts/muqtada_al_sadr/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/muslim_brotherhood/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/mustafa_kemal/</loc>
   </url>
   
@@ -784,6 +856,10 @@
   
   <url>
     <loc>/posts/nagel_ferran_politics_of_religion_and_nationalism/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/najaf/</loc>
   </url>
   
   <url>
@@ -880,6 +956,10 @@
   
   <url>
     <loc>/posts/20200414093947-org_mode/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/org_page/</loc>
   </url>
   
   <url>
@@ -1031,7 +1111,15 @@
   </url>
   
   <url>
+    <loc>/posts/raid/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/ray_tracing/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/rayburn_iraq_after_america/</loc>
   </url>
   
   <url>
@@ -1067,11 +1155,19 @@
   </url>
   
   <url>
+    <loc>/posts/sahwa_awakening/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/salqawia_canal/</loc>
   </url>
   
   <url>
     <loc>/posts/satellites/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/saudi_arabia/</loc>
   </url>
   
   <url>
@@ -1296,6 +1392,14 @@
   
   <url>
     <loc>/posts/yassine_jaber/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/yemen/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/yemen_bank_notes/</loc>
   </url>
   
   <url>
