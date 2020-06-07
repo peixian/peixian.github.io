@@ -906,7 +906,8 @@ Egypt has a demographics problem, with over 100 million Egyptians. Cairo birth r
       
       <guid>/posts/emacs/</guid>
       <description>Tags: computers
- https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bcompletion/auto-completion https://github.com/jwiegley/use-package Org tempo problems: https://github.com/syl20bnr/spacemacs/issues/11798#issuecomment-454941024  https://github.com/syl20bnr/spacemacs/issues/12003#issuecomment-465686129    Backlinks  r recoll from emacs org-mode  </description>
+ https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bcompletion/auto-completion https://github.com/jwiegley/use-package Org tempo problems: https://github.com/syl20bnr/spacemacs/issues/11798#issuecomment-454941024  https://github.com/syl20bnr/spacemacs/issues/12003#issuecomment-465686129    Tramp sudo: /ssh:bird@bastion|ssh:you@remotehost:/path
+Backlinks  r recoll from emacs org-mode  </description>
     </item>
     
     <item>
@@ -3349,6 +3350,20 @@ Academic Talks:  http://matt.might.net/articles/academic-presentation-tips/ Desc
       <description>Tags: ottoman
 Political reforms aimed at appeasing European Great Powers for equality of citizenship and abolishment of the millet system
  Announced in 1839 Promulgated in 1856 Reforms were run through a series of dragomans, described by Philliou: Interpreting the Ottoman Past through the National Present Reforms attemped to centralize all currencies into a single treasury issued currency Streamlining the Ottoman empire&amp;rsquo;s coercive abilites to command economic production - Blumi - Ottoman Refugees, 1878-1939  Backlinks  Blumi - Ottoman Refugees, 1878-1939  </description>
+    </item>
+    
+    <item>
+      <title>taskjuggler</title>
+      <link>/posts/task_juggler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/task_juggler/</guid>
+      <description>Tags: org-mode
+Open source project management tool:
+ https://taskjuggler.org/index.html Documentation: https://taskjuggler.org/tj3/manual/index.html  Integrates with org mode via properties:
+ https://orgmode.org/worg/org-tutorials/org-taskjuggler.html https://orgmode.org/worg/exporters/taskjuggler/ox-taskjuggler.html  Code:
+ https://github.com/emacsmirror/org/blob/master/contrib/lisp/ox-taskjuggler.el  Issues:
+ Parses the deadline from the org-deadline property, but uses :start: property to determine task start? Default project length is 280, this must be manually set at the top via the scheduled and deadline properties  </description>
     </item>
     
     <item>
