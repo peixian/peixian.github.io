@@ -7,22 +7,24 @@
 <meta name="description" content="Tags: org-mode
 Open source project management tool:
  https://taskjuggler.org/index.html Documentation: https://taskjuggler.org/tj3/manual/index.html  Integrates with org mode via properties:
- https://orgmode.org/worg/org-tutorials/org-taskjuggler.html https://orgmode.org/worg/exporters/taskjuggler/ox-taskjuggler.html  Code:
+ https://orgmode.org/worg/org-tutorials/org-taskjuggler.html https://orgmode.org/worg/exporters/taskjuggler/ox-taskjuggler.html  Mode: http://www.skamphausen.de/cgi-bin/ska/taskjuggler-mode Code:
  https://github.com/emacsmirror/org/blob/master/contrib/lisp/ox-taskjuggler.el  Issues:
- Parses the deadline from the org-deadline property, but uses :start: property to determine task start? Default project length is 280, this must be manually set at the top via the scheduled and deadline properties  "><meta property="og:title" content="taskjuggler" />
+ Parses the deadline from the org-deadline property, but uses :start: property to determine task start? Default project length is 280, this must be manually set at the top via the scheduled and deadline properties  http://www.skamphausen.de/cgi-bin/ska/taskjuggler-mode
+Post Draft  What is Taskjuggler?"><meta property="og:title" content="taskjuggler" />
 <meta property="og:description" content="Tags: org-mode
 Open source project management tool:
  https://taskjuggler.org/index.html Documentation: https://taskjuggler.org/tj3/manual/index.html  Integrates with org mode via properties:
- https://orgmode.org/worg/org-tutorials/org-taskjuggler.html https://orgmode.org/worg/exporters/taskjuggler/ox-taskjuggler.html  Code:
+ https://orgmode.org/worg/org-tutorials/org-taskjuggler.html https://orgmode.org/worg/exporters/taskjuggler/ox-taskjuggler.html  Mode: http://www.skamphausen.de/cgi-bin/ska/taskjuggler-mode Code:
  https://github.com/emacsmirror/org/blob/master/contrib/lisp/ox-taskjuggler.el  Issues:
- Parses the deadline from the org-deadline property, but uses :start: property to determine task start? Default project length is 280, this must be manually set at the top via the scheduled and deadline properties  " />
+ Parses the deadline from the org-deadline property, but uses :start: property to determine task start? Default project length is 280, this must be manually set at the top via the scheduled and deadline properties  http://www.skamphausen.de/cgi-bin/ska/taskjuggler-mode
+Post Draft  What is Taskjuggler?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/task_juggler/" />
 
 <title>taskjuggler | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.397df90af256d314483a1e51e1b80a531bdecd81b6bf358d26623067bc23de1b.js" integrity="sha256-OX35CvJW0xRIOh5R4bgKUxvezYG2vzWNJmIwZ7wj3hs="></script>
+<script defer src="/en.search.min.66d730f44799a53c49977d75d27f85029bd57a0fcaab33a8ba5e45a734784236.js" integrity="sha256-Ztcw9EeZpTxJl3110n&#43;FApvVeg/KqzOoul5FpzR4QjY="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -109,7 +111,11 @@ https://github.com/alex-shpak/hugo-book
     <input type="checkbox" class="hidden" id="toc-control" />
     <aside class="hidden clearfix">
       
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#post-draft">Post Draft</a></li>
+  </ul>
+</nav>
 
 
     </aside>
@@ -142,7 +148,9 @@ https://github.com/alex-shpak/hugo-book
 <li><a href="https://orgmode.org/worg/org-tutorials/org-taskjuggler.html">https://orgmode.org/worg/org-tutorials/org-taskjuggler.html</a></li>
 <li><a href="https://orgmode.org/worg/exporters/taskjuggler/ox-taskjuggler.html">https://orgmode.org/worg/exporters/taskjuggler/ox-taskjuggler.html</a></li>
 </ul>
-<p>Code:</p>
+<p>Mode:
+<a href="http://www.skamphausen.de/cgi-bin/ska/taskjuggler-mode">http://www.skamphausen.de/cgi-bin/ska/taskjuggler-mode</a>
+Code:</p>
 <ul>
 <li><a href="https://github.com/emacsmirror/org/blob/master/contrib/lisp/ox-taskjuggler.el">https://github.com/emacsmirror/org/blob/master/contrib/lisp/ox-taskjuggler.el</a></li>
 </ul>
@@ -150,6 +158,35 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li>Parses the deadline from the org-deadline property, but uses :start: property to determine task start?</li>
 <li>Default project length is 280, this must be manually set at the top via the scheduled and deadline properties</li>
+</ul>
+<p><a href="http://www.skamphausen.de/cgi-bin/ska/taskjuggler-mode">http://www.skamphausen.de/cgi-bin/ska/taskjuggler-mode</a></p>
+<h2 id="post-draft">Post Draft</h2>
+<ul>
+<li>What is Taskjuggler?</li>
+<li>Why use it?
+<ul>
+<li>Looking for a gantt chart to plan out grad school</li>
+<li>Didn&rsquo;t want to pay or use something like omnifocus
+<ul>
+<li>Not cross platform</li>
+</ul>
+</li>
+<li>Preferred a website or a local app</li>
+</ul>
+</li>
+<li>Installing
+<ul>
+<li>Ruby</li>
+<li>Included by default in emacs?</li>
+</ul>
+</li>
+<li>Quirks
+<ul>
+<li>Parses the deadline from the org-deadline property, uses the start property</li>
+<li>Default project length</li>
+<li>Consult the source for most things</li>
+</ul>
+</li>
 </ul>
 </p>
 </article>
@@ -185,7 +222,11 @@ https://github.com/alex-shpak/hugo-book
     
     <aside class="book-toc">
       
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#post-draft">Post Draft</a></li>
+  </ul>
+</nav>
 
  
     </aside>

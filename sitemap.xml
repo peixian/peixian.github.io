@@ -63,11 +63,19 @@
   </url>
   
   <url>
+    <loc>/posts/algeria/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/algorithms/</loc>
   </url>
   
   <url>
     <loc>/posts/amal/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/americas/</loc>
   </url>
   
   <url>
@@ -144,6 +152,10 @@
   
   <url>
     <loc>/posts/20200414223410-books/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/bosnia/</loc>
   </url>
   
   <url>
@@ -495,6 +507,10 @@
   </url>
   
   <url>
+    <loc>/posts/grafana_7_0/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/graph_based_approximate_nearest_neighbor_search/</loc>
   </url>
   
@@ -671,6 +687,10 @@
   </url>
   
   <url>
+    <loc>/posts/ireland/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/post_ottoman_iraq_egypt_irrigation_essay_draft/</loc>
   </url>
   
@@ -688,6 +708,10 @@
   
   <url>
     <loc>/posts/20200419123136-islamic_political_thought/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/israel/</loc>
   </url>
   
   <url>
@@ -776,6 +800,10 @@
   
   <url>
     <loc>/posts/20200414200012-makdisi_the_ecumenical_frame/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/malaysia/</loc>
   </url>
   
   <url>
@@ -1151,6 +1179,10 @@
   </url>
   
   <url>
+    <loc>/posts/religion/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/religious_peacebuilding/</loc>
   </url>
   
@@ -1231,11 +1263,19 @@
   </url>
   
   <url>
+    <loc>/posts/small_business_finance/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/university_budgeting/</loc>
   </url>
   
   <url>
     <loc>/posts/sociology/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/soper_fetzer_religion_and_nationalism_in_global_perspective/</loc>
   </url>
   
   <url>
@@ -1367,7 +1407,15 @@
   </url>
   
   <url>
+    <loc>/posts/united_states/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/urals/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/uruguay/</loc>
   </url>
   
   <url>
@@ -1380,6 +1428,10 @@
   
   <url>
     <loc>/posts/web/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/website_design_ideas/</loc>
   </url>
   
   <url>
