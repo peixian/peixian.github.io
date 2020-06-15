@@ -11,6 +11,10 @@
   </url>
   
   <url>
+    <loc>/posts/access_now/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200416083138-acehan_turkish_leatherworkers_in_peabody_massachusetts/</loc>
   </url>
   
@@ -483,6 +487,10 @@
   </url>
   
   <url>
+    <loc>/posts/golang/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/google_fi/</loc>
   </url>
   
@@ -516,6 +524,10 @@
   
   <url>
     <loc>/posts/graph_traversal/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/graphql/</loc>
   </url>
   
   <url>
@@ -1111,6 +1123,14 @@
   </url>
   
   <url>
+    <loc>/posts/pouligny_peace_operations_seen_from_below/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/pricing_software/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/probability/</loc>
   </url>
   
@@ -1348,6 +1368,10 @@
   
   <url>
     <loc>/posts/tcp_syn/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/territorality_of_data/</loc>
   </url>
   
   <url>

@@ -12,7 +12,7 @@
 <title>Posts | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.66d730f44799a53c49977d75d27f85029bd57a0fcaab33a8ba5e45a734784236.js" integrity="sha256-Ztcw9EeZpTxJl3110n&#43;FApvVeg/KqzOoul5FpzR4QjY="></script>
+<script defer src="/en.search.min.8f5a2222d5950a3c532335a9ef35fc8484eaf442b748395e4f2dd049c4ade765.js" integrity="sha256-j1oiItWVCjxTIzWp7zX8hITq9EK3SDleTy3QScSt52U="></script>
 <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="الـبـحـر الـزاخـر" />
 <!--
 Made with Book Theme
@@ -135,6 +135,67 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
+      <a href="/posts/20200414093947-org_mode/">org-mode</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: Taking Smart Notes, emacs
+ org deft: https://jblevins.org/projects/deft/ https://www.leonrische.me/ has org flashcards (https://www.leonrische.me/pages/org%5Fflashcards.html) and org zettelkasten (https://github.com/l3kn/org-zettelkasten) org roam appendix: https://org-roam.readthedocs.io/en/master/notetaking%5Fworkflow/ org roam HN thread: https://news.ycombinator.com/item?id=22767658 Org bullets: https://www.spacemacs.org/layers/+emacs/org/README.html  Org-ref  https://github.com/jkitchin/org-ref/blob/master/org-ref.org Example: https://raw.githubusercontent.com/jkitchin/org-ref/master/tests/test-1.org  setup need
+#+latex_header: \usepackage[citestyle=verbose,bibstyle=numeric, hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true] {biblatex} #+latex_header: \addbibresource{~/Dropbox/bib/refs.bib} #+EXCLUDE_TAGS: noexport at the start of every file. :noexport: marks headings to not export within the file also see https://tex.stackexchange.com/questions/21439/is-there-any-advantage-to-using-addbibresource-over-bibliography
+ Footcites: https://tex.stackexchange.com/questions/344116/setting-bibliography-style-in-footnotes-with-biblatex  Biblatex vs bibtex vs biber  https://tex.
+        <a href="/posts/20200414093947-org_mode/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/org_page/">org-page</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: org-mode
+ Hosting images:   Create &ldquo;assets&rdquo; folder at root
+  use file syntax:
+[[file:../assets/images/boost-bind2.png]]     
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/org_roam/">org-roam</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: org-mode
+Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download https://github.com/org-roam/org-roam-server/blob/master/org-roam-server.el  Graphs   Groups - https://org-roam.discourse.group/t/analysing-the-semantic-network/56
+  Example:
+## Fetch data library(DBI) # Sqlite con &lt;- dbConnect(RSQLite::SQLite(), &#34;org-roam.db&#34;) dbListTables(con) links &lt;- dbSendQuery(con, &#34;SELECT [from], [to] FROM links&#34;) links &lt;- dbFetch(links) titles &lt;- dbSendQuery(con, &#34;SELECT * FROM titles&#34;) titles &lt;- dbFetch(titles) dbDisconnect(con) ## Create edge list [from - to] with clean labels library(dplyr) # Transformation library(stringr) # String manipulation edges &lt;- inner_join(links, titles, by = c(&#34;from&#34; = &#34;file&#34;)) %&gt;% inner_join(titles, by = c(&#34;to&#34; = &#34;file&#34;)) %&gt;% select(From = titles.
+        <a href="/posts/org_roam/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
       <a href="/posts/20200419205801-organization_for_grad_school_blog_post/">organization for grad school blog post</a>
     </h2>
     
@@ -249,62 +310,6 @@ Resources  Timothy Mitchell, &ldquo;Rule of Experts&rdquo; Aaron Jakes - https:/
 
     <p>Tags: root
 Backlinks  Adar - Emotions and Nationalism: Armenian Genocide as a Case Study Aciksoz - Sacrificial Limbs of Soverignty Acehan - Turkish Leatherworkers in Peabody, Massachusetts Dodge - Rethinking Political Identities in Iraq After 2003 Saunders - The Ummah as a Nation: A reappraisal in the wake of the &lsquo;Cartoons Affair&rsquo; broadcasting and multicast cap theorm (brewer&rsquo;s conjecture and the feasibility of consistent, available, partition-tolerant web services Cook - The Aswan Low Dam and Modernizing the Nile Danforth: A Ottoman Empire from 1923 to Today gray failures Hajdarpasic: Reflections on the Ottoman Legacy in South-eastern Europe Hinnebusch - Identity and State Formation in Multi‐sectarian Societies impossibility of consensus with one faulty process Shannon - A Mathematical Theory of Communication timer lawn: low latency timer data structure Zadrozna: Reconstructing the past in a post-Ottoman Village  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/paris_club/">paris club</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: finance, ngo
- https://en.wikipedia.org/wiki/Paris%5FClub  Backlinks  emerging markets  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/20200419124610-parlimentarism_recidivus/">parlimentarism recidivus</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: articles
-Review of Parliamentarism: From Burke to Weber, by William Selinger, and Parliament the Mirror of the Nation: Representation, Deliberation, and Democracy in Victorian Britain, by Gregory Conti
- https://www.instapaper.com/read/1297320439  Claims that we&rsquo;ve missed the power of the parlimentarism machine. Power radiated from the purse, and the House of Commons controlled all bills.
-France refined parlimentarism in the wake of the French Revolution and theorized the concepts in the 18th century.
-        <a href="/posts/20200419124610-parlimentarism_recidivus/">...</a>
-      
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/payment_processors/">payment processors</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: computers, finance
- https://www.instapaper.com/read/1303705607  PayPal and Stripe usually advertise low transaction fees, but the actual fees are much higher
- Quoted fees are almost always only for domestic transactions within the same currency Almost always you need to convert through their system, which takes a very inflated currency conversion rate  
     </p>
   </article>
   
@@ -671,7 +676,16 @@ France refined parlimentarism in the wake of the French Revolution and theorized
         
     
     
-    <li class="page-item"><a class="page-link" href="/posts/page/37/">37</a></li>
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/posts/page/38/">38</a></li>
     
     
     <li class="page-item">
@@ -679,7 +693,7 @@ France refined parlimentarism in the wake of the French Revolution and theorized
     </li>
     
     <li class="page-item">
-        <a href="/posts/page/37/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/posts/page/38/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
     </li>
     
 </ul>
