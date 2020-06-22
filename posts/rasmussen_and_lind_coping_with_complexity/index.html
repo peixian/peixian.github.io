@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tags: papers, computers
+Talks about how people cope with complexity in power plants
+Decision models:  Take some data, integrate the data, evaluate and make a decision, and coordinate the acts with an intention in mind    Simple heuristics taken:  Thresholds - when a variable crosses an absolute threshold  Like a threshold in grafana - &ldquo;IO wait in CPU usage occupying more than 50%, I know that the CPU is spending time waiting on IO, resolution is involved with IO&rdquo;   Deviation from normal - when an experienced operator knows what is normal and what is not  Deviation from normal - &ldquo;current time is outside of p99&rdquo;    Abstraction Hierarchies   Physical form relates to the abstract function, which relates to the general understanding"><meta property="og:title" content="Rasmussen and Lind: Coping With Complexity" />
+<meta property="og:description" content="Tags: papers, computers
+Talks about how people cope with complexity in power plants
+Decision models:  Take some data, integrate the data, evaluate and make a decision, and coordinate the acts with an intention in mind    Simple heuristics taken:  Thresholds - when a variable crosses an absolute threshold  Like a threshold in grafana - &ldquo;IO wait in CPU usage occupying more than 50%, I know that the CPU is spending time waiting on IO, resolution is involved with IO&rdquo;   Deviation from normal - when an experienced operator knows what is normal and what is not  Deviation from normal - &ldquo;current time is outside of p99&rdquo;    Abstraction Hierarchies   Physical form relates to the abstract function, which relates to the general understanding" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/rasmussen_and_lind_coping_with_complexity/" />
+
+<title>Rasmussen and Lind: Coping With Complexity | الـبـحـر الـزاخـر</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
+<script defer src="/en.search.min.cf360c59058684682f97e417a181a3d313195e3eb9ecfb6a0461add514ea53df.js" integrity="sha256-zzYMWQWGhGgvl&#43;QXoYGj0xMZXj657PtqBGGt1RTqU98="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+    <a href="/">
+        <img src="/svg/icon.svg" alt="icon" id="raccoon" />
+    <span>الـبـحـر الـزاخـر</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Rasmussen and Lind: Coping With Complexity</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#decision-models">Decision models:</a></li>
+    <li><a href="#simple-heuristics-taken">Simple heuristics taken:</a></li>
+    <li><a href="#abstraction-hierarchies">Abstraction Hierarchies</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/rasmussen_and_lind_coping_with_complexity/">Rasmussen and Lind: Coping With Complexity</a>
+  </h1>
+  
+
+
+  
+
+  
+
+
+  <p><p>Tags: <a href="/posts/20200415203856-papers/">papers</a>, <a href="/posts/computers/">computers</a></p>
+<p>Talks about how people cope with complexity in power plants</p>
+<h2 id="decision-models">Decision models:</h2>
+<ul>
+<li>Take some data, integrate the data, evaluate and make a decision, and coordinate the acts with an intention in mind</li>
+</ul>
+<figure>
+    <img src="/ox-hugo/2020-06-21_22-25-32_screenshot.png"/> 
+</figure>
+
+<h2 id="simple-heuristics-taken">Simple heuristics taken:</h2>
+<ul>
+<li>Thresholds - when a variable crosses an absolute threshold
+<ul>
+<li>Like a threshold in grafana - &ldquo;IO wait in CPU usage occupying more than 50%, I know that the CPU is spending time waiting on IO, resolution is involved with IO&rdquo;</li>
+</ul>
+</li>
+<li>Deviation from normal - when an experienced operator knows what is normal and what is not
+<ul>
+<li>Deviation from normal - &ldquo;current time is outside of p99&rdquo;</li>
+</ul>
+</li>
+</ul>
+<h2 id="abstraction-hierarchies">Abstraction Hierarchies</h2>
+<figure>
+    <img src="/ox-hugo/2020-06-21_22-27-55_screenshot.png"/> 
+</figure>
+
+<p><img src="/ox-hugo/2020-06-21_22-28-16_screenshot.png" alt="" />
+Physical form relates to the abstract function, which relates to the general understanding</p>
+<ul>
+<li>Information is not necessarily removed removed, information at higher levels is added based on higher level principals. We &ldquo;remove&rdquo; infomration by asserting that there is some set of assumptions now on the lower level.
+<ul>
+<li>A struct is an abstraction over raw groups, it asserts that the memory will be laid out in a specific manner, that the members of the struct behave a certain way, etc</li>
+</ul>
+</li>
+</ul>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#decision-models">Decision models:</a></li>
+    <li><a href="#simple-heuristics-taken">Simple heuristics taken:</a></li>
+    <li><a href="#abstraction-hierarchies">Abstraction Hierarchies</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

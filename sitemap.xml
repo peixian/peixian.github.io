@@ -119,6 +119,10 @@
   </url>
   
   <url>
+    <loc>/posts/azure/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/baghdad/</loc>
   </url>
   
@@ -239,6 +243,10 @@
   </url>
   
   <url>
+    <loc>/posts/cloud/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/coffee/</loc>
   </url>
   
@@ -312,6 +320,10 @@
   
   <url>
     <loc>/posts/disarmingly_forthright_mscs_advice/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/disaster_response/</loc>
   </url>
   
   <url>
@@ -439,6 +451,10 @@
   </url>
   
   <url>
+    <loc>/posts/flask/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415114633-food_for_training/</loc>
   </url>
   
@@ -459,6 +475,10 @@
   </url>
   
   <url>
+    <loc>/posts/frontend/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/full_text_static_search/</loc>
   </url>
   
@@ -472,6 +492,10 @@
   
   <url>
     <loc>/posts/gambetta_et_al_streetwise/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/gatsbyjs/</loc>
   </url>
   
   <url>
@@ -639,6 +663,10 @@
   </url>
   
   <url>
+    <loc>/posts/ics_training/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/imf/</loc>
   </url>
   
@@ -724,6 +752,10 @@
   
   <url>
     <loc>/posts/israel/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/itdrc/</loc>
   </url>
   
   <url>
@@ -1003,6 +1035,10 @@
   </url>
   
   <url>
+    <loc>/posts/openapi/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/operating_systems/</loc>
   </url>
   
@@ -1172,6 +1208,10 @@
   
   <url>
     <loc>/posts/raid/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/rasmussen_and_lind_coping_with_complexity/</loc>
   </url>
   
   <url>
@@ -1347,6 +1387,10 @@
   </url>
   
   <url>
+    <loc>/posts/tailwind/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/tajikistan/</loc>
   </url>
   
@@ -1448,6 +1492,10 @@
   
   <url>
     <loc>/posts/uso_etf/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/volunteering/</loc>
   </url>
   
   <url>

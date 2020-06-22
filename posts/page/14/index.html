@@ -12,7 +12,7 @@
 <title>Posts | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.8f5a2222d5950a3c532335a9ef35fc8484eaf442b748395e4f2dd049c4ade765.js" integrity="sha256-j1oiItWVCjxTIzWp7zX8hITq9EK3SDleTy3QScSt52U="></script>
+<script defer src="/en.search.min.cf360c59058684682f97e417a181a3d313195e3eb9ecfb6a0461add514ea53df.js" integrity="sha256-zzYMWQWGhGgvl&#43;QXoYGj0xMZXj657PtqBGGt1RTqU98="></script>
 <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="الـبـحـر الـزاخـر" />
 <!--
 Made with Book Theme
@@ -135,6 +135,116 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
+      <a href="/posts/gpu/">gpu</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: computers
+History of NVIDIA GPU&rsquo;s  Until 2006 GPU design was correlated to the logical stages of the rendering API  DirectX pipeline made this untable   Stream Multiprocessor replaces this with Tesla release  Could run vertex, fragement, and geometry kernels without distinction   Ideas of a &ldquo;farm&rdquo; with a master renderer CUDA introduced as a superset of C99 Turing release gave dedicated cores for AI and ray tracing  Very reminiscent of pre-2006    
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/20200415130616-grad_school/">grad school</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: root
+ http://matt.might.net/articles/how-to-email/  Backlinks  classes Peters - Getting What You Came For Potential Advisors for Master&rsquo;s Thesis Potential Schools for Phd Phd Planning grad school fellowships fall 2020 classes Notes on Surviving Grad School Fiebelman - A PhD is Not Enough arabic disarmingly forthright mscs advice Higher Ed Readings master&rsquo;s thesis peer review professional development session with thanassis cambanis talks thesis proposals help Mumby - Graduate School Smith - How University Budgets Work  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/20200415132921-grad_school_fellowships/">grad school fellowships</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: grad school
+   Name Type Requirements Link     Boren Fellowship Language Matriculated https://www.borenawards.org/eligible-programs   CIS Language Matriculated https://clscholarship.org/   New York State ? ? www.hesc.org   Soros Fellowship Full Matriculated full time https://www.pdsoros.org/   Davis Putter ? ? https://davisputter.org/apply-for-scholarships/   Overseas Press Club ? Matriculated https://overseaspressclubfoundation.org/apply.html    Search Engines:  https://www.iefa.org https://grad.uchicago.edu/fellowships/  Strict Fellowships  Minority Fellowship - March 13 - https://www.
+        <a href="/posts/20200415132921-grad_school_fellowships/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/grafana_7_0/">grafana 7.0</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: computers
+New Panel Edit UI  6.0 made it easy to change visualization type  created a lot of dead space   7.0 wanted to make options more consistent and define override rules &ldquo;field&rdquo; tab impacts all the data  overrides bar guage   New transformations -&gt; joining of timeseries Cell styles, gauges Much more up to date, exposing new transformation pipeline  data source -&gt; panel defaults -&gt; panel overrides -&gt; visualization    Transformation  Single place where users can tweak the structure of data Takes effect for every visualization Shapes the data Not about doing complex arithmetic Panel can reuse same data from another query, piping the data into all sorts of panels Transform timeseries into columns  Look at Raw Data  You can now inspect and download raw with the &ldquo;inspector&rdquo; in the panel manager Exposes the underlying raw data  Issues and Debugging with Queries  Grafana comp presentation When zooming out, data no longer makes sense  Data rollup feature has been implemented  Rollup tells you when the data was being read from a rollup 8 days in metric tank, for example   As well as &ldquo;metadata&rdquo;   Plot lines as points to debug  Fetching multiple series will cause some optimization, triggers it to use rollup data   &ldquo;Stats&rdquo; panel tells you how long a query took  &ldquo;metricplan&rdquo; statistics tells you how long a query works   Grafana can hook up to a jaeger datasource and look at it directly from grafana Transforms and outer joins Timezone support features  Transforms all graphs into a single time zone   Plan to support per panel, per row?
+        <a href="/posts/grafana_7_0/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/graph_based_approximate_nearest_neighbor_search/">graph based approximate nearest neighbor search (granne)</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: approximate nearest neighbor, algorithms
+  https://github.com/granne/granne
+  Stores adjacency lists with a variable number of neighbors per node
+ saves space on metadata size of index structure depends on the properties of the graph usable index of 4 bil vectors at 240GB can actually use mmap to map the index and the query vectors for lazy loading    Data locality can be increased on the SSD by ordering elements with closer HNSW nodes
+        <a href="/posts/graph_based_approximate_nearest_neighbor_search/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/graph_traversal/">graph traversal</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: algorithms
+Backlinks  hierarchical navigable small-world graph (HNSW)  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
       <a href="/posts/graphql/">graphql</a>
     </h2>
     
@@ -198,116 +308,6 @@ https://www.microsoft.com/en-us/research/wp-content/uploads/2017/06/paper-1.pdf
 
     <p>Tags: Computers, algorithms
 Backlinks  hierarchical navigable small-world graph (HNSW)  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/bfp/">Gregg - BFP Performance Tools</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: computers, books, bpf
-Chapter 1 - Intro  Turned into a general purpose execution engine in 2014 VM  Tracing, Snooping, Sampling, Profiling, and Observability  Tracing: event based recording  Tracing and snooping are the same thing strace, tcp-dump, etc   Sampling: tools that take subsets of a measurements to paint a coarse picture  Only rough picture   Observability: understanding a system through observation  Includes tracing tools, sampling tools, and fixed counters Does not include benchmark tools    BCC/BFPTrace/IO Visor BCC: BFP Compiler Collection  First high levle tracing framework developed for BPF  Provides C, with interfaces for Python, lua, and C++ Much more complex than bfptrace Meant for complex tools    bfptrace  Newer frontend, special purpose high level programming langauge meant for one line scripts  IO Visor  Linux foundation project on GH Encompases both bcc and bpftrace  BCC execsnoop(8)  Traces execve(2) system call Output reveals which processes were executed while tracing this prints out per-event data, but other tools allow for summaries  biolatency(8)  Traces block io latency Displays an ASCII histogram of sizes  Visability  BPF tracing gives you visibility across the full software stack Supports:  Applications tracing with runtimes Application tracing with compiled code /lib/* information  same as ltrace   syscalls interface  same as strace or perf kernel scheduler, file systems, TCP/IP, etc  same as ftrace or perf     hardware tracing  perf, sar, /proc counters      Dynamic instrumentation: kprobes and uprobes  Dynamic instrumentation allows for probing of live running software Examples:    Probe Description     kprobe:vfs_read Beginning of vfs_read()   kretprobe:vfs_read End of vfs_read()   uprobe:/bin/bash:readline Beginning of readline() function in bash   uretprobe:/bin/bash:readline End of readline() function in bas      Static instrumentation: tracepoints and usdt  Function names change and dynamic instrumentation may not always be correct Can use tracepoints or user statically defined tracing:    Probe Description     tracepoint:syscalls:sys_enter_open instrument open(2) syscall   usdt:/usr/sbin/mysqld:mysql:query__start query__start probe      bpftrace  takes -e for execute -l for listing open tracepoints  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/gresham_s_law/">Gresham&#39;s Law</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: finance
- States that if the government has two payment instruments to circulate at the same rate, but one fundamentally worth more than the other, then &ldquo;bad&rdquo; currency drives out the &ldquo;good. Undervalued money will be hoarded or exported.  Backlinks  yemen bank notes  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/gz_green_zone/">gz (green zone)</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: iraq
-Backlinks  Rayburn - Iraq After America  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/habitus/">habitus</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: sociology
-  https://en.wikipedia.org/wiki/Habitus%5F(sociology)
-  Habitus is the socially ingrained habits, skills, and dispositions
-  Created by Pierre Bourdieu
-  Consists of the hexis and more abstract mental abits
-  Backlinks  Dodge - Rethinking Political Identities in Iraq After 2003 Blumi - Ottoman Refugees, 1878-1939  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/hajdarpasic_reflections_on_the_ottoman_legacy_in_south_eastern_europe/">Hajdarpasic: Reflections on the Ottoman Legacy in South-eastern Europe</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: papers, europe, Post-Ottoman Near East, bosnia
-Talks about the nationalist power of Ottoman narratives, especially in light of places like Albania, Macedonia, etc.
-Concludes with that the idea of &lsquo;Ottoman ruins&rsquo; and &lsquo;countries emerging from the ruins&rsquo; is fundalmentally flawed, there is more for the past to teach us
- Making Ottoman synonmyous with Islamic or Turkish influences is a defining hallmark of the 19th century Balkan nationalist projects that perceived the Ottoman Empire as a &lsquo;religiously, socially, and institutionally alien imposition on autochthonous Christian medieval socities.
-        <a href="/posts/hajdarpasic_reflections_on_the_ottoman_legacy_in_south_eastern_europe/">...</a>
-      
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/haplin_thirteen_ways_to_make_a_plural/">Haplin - Thirteen Ways to Make a Plural</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: books, arabic
- Aiming for timing passages Read for strict speed, without comphrension  Increase the speed the brain can process arabic script 200 words per day   Deconstructing sentences  Identifying subjects, objects, verbs, etc Underlining each pronoun and drawing a line linking it back to each noun   Don&rsquo;t reach for the dictionary unless necessary Try to study abroad away from the capital Eschew perfection in terms of realistic goals  Fully fluent MSA and dialect is unrealistic, focus on the aspects that matter to you  Holding a conversation, conducting interviews, etc   Strong study base over a long period of time is required   Reaching C1 requires extensive practical use of the language Post B1, progress slows until vocab base and weekly practice reveals itself Normal to blur the colloquial and formal registers  
     </p>
   </article>
   
@@ -683,7 +683,16 @@ Concludes with that the idea of &lsquo;Ottoman ruins&rsquo; and &lsquo;countries
         
     
     
-    <li class="page-item"><a class="page-link" href="/posts/page/38/">38</a></li>
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/posts/page/39/">39</a></li>
     
     
     <li class="page-item">
@@ -691,7 +700,7 @@ Concludes with that the idea of &lsquo;Ottoman ruins&rsquo; and &lsquo;countries
     </li>
     
     <li class="page-item">
-        <a href="/posts/page/38/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/posts/page/39/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
     </li>
     
 </ul>

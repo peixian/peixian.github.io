@@ -314,6 +314,16 @@ Backlinks  parlimentarism recidivus iraqi ghost militias airlines bailout - 2020
     </item>
     
     <item>
+      <title>azure</title>
+      <link>/posts/azure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/azure/</guid>
+      <description>Tags: cloud
+Azure App Services  Python services use gunicorn  https://docs.microsoft.com/en-us/azure/app-service/containers/how-to-configure-python Can use different production docker container if desired  https://github.com/Azure-Samples/djangoapp/tree/master/azuresite https://github.com/Azure-Samples/djangoapp/blob/master/azuresite/production.py     Containers can configure a custom port number:  https://docs.microsoft.com/en-us/azure/app-service/containers/configure-custom-container#configure-port-number    </description>
+    </item>
+    
+    <item>
       <title>baghdad</title>
       <link>/posts/baghdad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -611,6 +621,16 @@ Backlinks  Kolbert - Field Notes from a Catastrophe  </description>
     </item>
     
     <item>
+      <title>cloud</title>
+      <link>/posts/cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cloud/</guid>
+      <description>Tags: computers
+Backlinks  azure  </description>
+    </item>
+    
+    <item>
       <title>coffee</title>
       <link>/posts/coffee/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -811,6 +831,16 @@ Remarks about the nature of historiography within Egypt during the 20th century.
       <description>Tags: articles, grad school
 Read the man pages and check the return values!
  Join ACM and IEEE, compete and practice good opsec. Most code you read is broken, including:  open source stuff industry code textbook code   Bookmark, study, and seek out good code Learn the entire toolchain, details don&amp;rsquo;t need to memorized right away but should be understood Learn a scripting language, functional language, and a data retrival language, and learn C &amp;amp; C++ well.</description>
+    </item>
+    
+    <item>
+      <title>disaster response</title>
+      <link>/posts/disaster_response/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/disaster_response/</guid>
+      <description>Tags: root
+Backlinks  ICS Training  </description>
     </item>
     
     <item>
@@ -1146,6 +1176,16 @@ Backlinks  FED Powers airlines bailout - 2020 black scholes brady plan commoditi
     </item>
     
     <item>
+      <title>flask</title>
+      <link>/posts/flask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/flask/</guid>
+      <description>Tags: python
+Static Files  https://github.com/nickjj/flask-static-digest https://whitenoise.evans.io/en/stable/index.html https://hackersandslackers.com/flask-assets/  Jinja2 templates  https://flask.palletsprojects.com/en/1.1.x/patterns/templateinheritance/#template-inheritance  Message Flashing  https://flask.palletsprojects.com/en/1.1.x/patterns/flashing/#message-flashing-pattern https://github.com/flask-restful/flask-restful/issues/529  OpenAPI integration  openapi integration with:  https://github.com/python-restx/flask-restx http://michal.karzynski.pl/blog/2016/06/19/building-beautiful-restful-apis-using-flask-swagger-ui-flask-restplus/    </description>
+    </item>
+    
+    <item>
       <title>food for training</title>
       <link>/posts/20200415114633-food_for_training/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1194,6 +1234,16 @@ Backlinks  french archival science  </description>
     </item>
     
     <item>
+      <title>frontend</title>
+      <link>/posts/frontend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/frontend/</guid>
+      <description>Tags: computers
+Backlinks  tailwind gatsbyjs  </description>
+    </item>
+    
+    <item>
       <title>full text static search</title>
       <link>/posts/full_text_static_search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1234,6 +1284,16 @@ Fuzzing Image IO   https://www.instapaper.com/read/1303612511
       <guid>/posts/gambetta_et_al_streetwise/</guid>
       <description>Tags: books
  Gambetta, Diego, and Heather Hamill. Streetwise: How Taxi Drivers Establish Customer’s Trustworthiness, 2005. http://www.vlebooks.com/vleweb/product/openreader?id=none&amp;amp;isbn=9781610442350. Talks about how taxi drivers must adopt a very quick rate of understanding their clients  Signaling theory  how does a hailer signal they are trustworthy? How does a mimic attempting to rob a taxi driver signal they are trustworthy? Age, race, gender, dress, etc   &amp;ldquo;Gut feeling&amp;rdquo;  Taxi drivers develop some amount of gut feelings   Most taxi drivers acknowledge that they are not in a position of power  If mimics really want to decieve, they can Average take in a livery cab robbery is 75 dollars   Signs:  older over younger women over men &amp;ldquo;white&amp;rdquo; over &amp;ldquo;black: Spanish over other ethnic groups (iff driver is Spanish) Individuals over multiple passengers  Groups with one female is safer   Wealthier over poorer Known passengers over strangers  Most important!</description>
+    </item>
+    
+    <item>
+      <title>gatsbyjs</title>
+      <link>/posts/gatsbyjs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gatsbyjs/</guid>
+      <description>Tags: frontend
+Examples  https://github.com/WeOpenly/localgov.fyi  Tutorials  https://www.gatsbyjs.org/tutorial/  Plugins  https://www.gatsbyjs.org/plugins/  </description>
     </item>
     
     <item>
@@ -1666,6 +1726,17 @@ Discussion questions From Erin   Is the idea that to be post-ottoman in contempo
     </item>
     
     <item>
+      <title>ICS Training</title>
+      <link>/posts/ics_training/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ics_training/</guid>
+      <description>Tags: disaster response
+What is ICS?  Used for all kinds of incidents, applicable for all events, not only just for emergencies Establishes common processes for incident level planning Used to manage any type of incident  ICS (IS-100)   National Incident Management System
+      Gives a unified chain of command Managable span of control Establishes common terminology    Incident Action Planning Managable Span of Control  Refers to number of individuals that one supervisor can manage effectively during an incidient  Comprehensive Resource Management Entails:</description>
+    </item>
+    
+    <item>
       <title>imf</title>
       <link>/posts/imf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1888,6 +1959,16 @@ Backlinks  Saunders - The Ummah as a Nation: A reappraisal in the wake of the &a
       <guid>/posts/israel/</guid>
       <description>Tags: middle east
 Backlinks  Soper, Fetzer - Religion and Nationalism in Global Perspective Soper, Fetzer - Religion and Nationalism in Global Perspective  </description>
+    </item>
+    
+    <item>
+      <title>itdrc</title>
+      <link>/posts/itdrc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/itdrc/</guid>
+      <description>Tags: volunteering, ngo
+Similar groups:  http://drc-group.com/ https://www.cybrary.it/ https://portal.itdrcops.net/display/public/KB/Knowledge+Base+Dashboard https://portal.itdrcops.net/display/VP/Getting+Started https://portal.itdrcops.net/pages/viewpage.action?spaceKey=VP&amp;amp;title=Build+Your+Go-Bag#space-menu-link-content NetHope  Training  Many volunteers do not have experience with latest technologies Establish field ops base, logistics, expect chaos Be prepared for disorganization  Traffic jams and disaster tourists   Satellite dish dishes ICS Training  </description>
     </item>
     
     <item>
@@ -2147,7 +2228,7 @@ Backlinks  next generation disarmament, demobilization, and reintegration  </des
       
       <guid>/posts/math/</guid>
       <description>Tags:root
-Backlinks  ml Shannon - A Mathematical Theory of Communication statistics  </description>
+ Display on web with https://cindyjs.org/  Backlinks  ml linear algebra Shannon - A Mathematical Theory of Communication statistics navier-stokes  </description>
     </item>
     
     <item>
@@ -2590,6 +2671,16 @@ What is historiography good for?
     </item>
     
     <item>
+      <title>openapi</title>
+      <link>/posts/openapi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/openapi/</guid>
+      <description>Tags: computers
+ https://hackersandslackers.com/flask-assets/ https://swagger.io/docs/specification/basic-structure/  Backlinks  flask  </description>
+    </item>
+    
+    <item>
       <title>operating systems</title>
       <link>/posts/operating_systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2962,7 +3053,7 @@ Ottoman army officers like Yassine al-Hashimi shaped the Middle East.</descripti
       
       <guid>/posts/python/</guid>
       <description>Tags: computers
-Backlinks  python objective c bindings  </description>
+ CGI scripts:  https://www.tutorialspoint.com/python/python%5Fcgi%5Fprogramming.htm    Backlinks  python objective c bindings flask  </description>
     </item>
     
     <item>
@@ -3034,6 +3125,17 @@ https://pyobjc.readthedocs.io/en/latest/tutorials/firstapp.html</description>
       <guid>/posts/raid/</guid>
       <description>Tags: computers
  Hardware controller&amp;rsquo;s batteries will fail, and people often will not notice Kernel raid significantly outperforms hardware RAID  Kernel RAID is far better maintained than firmware on cards CPU and RAM more available on servers than hardware raid controllers    </description>
+    </item>
+    
+    <item>
+      <title>Rasmussen and Lind: Coping With Complexity</title>
+      <link>/posts/rasmussen_and_lind_coping_with_complexity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rasmussen_and_lind_coping_with_complexity/</guid>
+      <description>Tags: papers, computers
+Talks about how people cope with complexity in power plants
+Decision models:  Take some data, integrate the data, evaluate and make a decision, and coordinate the acts with an intention in mind    Simple heuristics taken:  Thresholds - when a variable crosses an absolute threshold  Like a threshold in grafana - &amp;ldquo;IO wait in CPU usage occupying more than 50%, I know that the CPU is spending time waiting on IO, resolution is involved with IO&amp;rdquo;   Deviation from normal - when an experienced operator knows what is normal and what is not  Deviation from normal - &amp;ldquo;current time is outside of p99&amp;rdquo;    Abstraction Hierarchies   Physical form relates to the abstract function, which relates to the general understanding</description>
     </item>
     
     <item>
@@ -3475,6 +3577,16 @@ Backlinks  java  </description>
     </item>
     
     <item>
+      <title>tailwind</title>
+      <link>/posts/tailwind/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tailwind/</guid>
+      <description>Tags: frontend
+Examples  https://tailwindcomponents.com/component/todo-list-app https://tailwindcomponents.com/component/clone-github-new-design https://github.com/tailwindcss/setup-examples/tree/master/examples/laravel-postcss-only  Setup  https://tailwindcss.com/course/setting-up-tailwind-and-postcss/ https://tailwindcss.com/docs/installation/ https://tailwindcss.com/docs/controlling-file-size/  Tools  https://github.com/postcss/postcss#usage  License  https://www.notion.so/Tailwind-UI-License-644418bb34ad4fa29aac9b82e956a867  </description>
+    </item>
+    
+    <item>
       <title>tajikistan</title>
       <link>/posts/tajikistan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3761,6 +3873,16 @@ HID 6 Key Rollover Most keyboards actually support more, but cheap keyboards onl
       <guid>/posts/uso_etf/</guid>
       <description>Tags: oil trading
  United States Oil Fund, derivatives based ETF for trading oil. Reflects the changes of the price of the west texas intermediate crude delivered to Cushing commodities pool estimated to account for 25%-30% of the futures commodity volume has text stating that oil funds &amp;ldquo;might be compulsively redeemed&amp;rdquo; aka closed  </description>
+    </item>
+    
+    <item>
+      <title>volunteering</title>
+      <link>/posts/volunteering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/volunteering/</guid>
+      <description>Tags: personal
+Backlinks  itdrc  </description>
     </item>
     
     <item>

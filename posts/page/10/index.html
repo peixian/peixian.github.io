@@ -12,7 +12,7 @@
 <title>Posts | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.8f5a2222d5950a3c532335a9ef35fc8484eaf442b748395e4f2dd049c4ade765.js" integrity="sha256-j1oiItWVCjxTIzWp7zX8hITq9EK3SDleTy3QScSt52U="></script>
+<script defer src="/en.search.min.cf360c59058684682f97e417a181a3d313195e3eb9ecfb6a0461add514ea53df.js" integrity="sha256-zzYMWQWGhGgvl&#43;QXoYGj0xMZXj657PtqBGGt1RTqU98="></script>
 <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="الـبـحـر الـزاخـر" />
 <!--
 Made with Book Theme
@@ -132,6 +132,59 @@ https://github.com/alex-shpak/hugo-book
 
       
       
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/20200414141140-egypt_steel_company/">Egypt Iron and Steel Company</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: egypt
+ Discovery of ore deposits in 1954 was the main reason for the Egyptian Iron and Steel companies Expanded capacity in 1970 with discovery of iron ore deposits in Bahairya Oasis in 1970&rsquo;s Currently saddled with debts  Meeting only 30% of production targets Moratorium on new hires   Formerly strong sense of organized labor, now less so after various rounds of state privitization  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/20200417222051-egyptian_demographics/">egyptian demographics</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: egypt
+Egypt has a demographics problem, with over 100 million Egyptians. Cairo birth rates remain at ~3.5 per women per Feb 2020, whereas MENA averages of 2.8. The Nile has failed to be protected, and children are seen as tools to take care of parents in the future.
+ https://data.worldbank.org/indicator/SP.DYN.TFRT.IN?locations=ZQ https://www.bloomberg.com/news/articles/2018-03-13/the-arab-spring-s-riskiest-legacy-may-be-egypt-s-baby-boom  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/emacs/">emacs</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: computers
+ https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bcompletion/auto-completion https://github.com/jwiegley/use-package Org tempo problems: https://github.com/syl20bnr/spacemacs/issues/11798#issuecomment-454941024  https://github.com/syl20bnr/spacemacs/issues/12003#issuecomment-465686129    Tramp sudo: /ssh:bird@bastion|ssh:you@remotehost:/path
+Backlinks  r recoll from emacs org-mode  
+    </p>
+  </article>
   
   <article class="markdown book-post">
     <h2>
@@ -265,63 +318,6 @@ Backlinks  mental models Taking Smart Notes
 
     <p>Tags: root
 Backlinks  france  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/exactly_once_semantics_in_kafka/">exactly once semantics in kafka (atomic broadcast)</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: Kafka, atomic broadcast
- https://www.instapaper.com/read/1298476349  Exactly once semantics in Kafka are defined in terms of atomic broadcast:
- Messages are published and they will be delivered one time exactly by one or more receiving applications.
- Design docs:
- https://cwiki.apache.org/confluence/display/KAFKA/KIP-98+-+Exactly+Once+Delivery+and+Transactional+Messaging https://cwiki.apache.org/confluence/display/KAFKA/KIP-129%3A+Streams+Exactly-Once+Semantics https://docs.google.com/document/d/11Jqy%5FGjUGtdXJK94XGsEIK7CP1SnQGdp2eF0wSw9ra8/edit#heading=h.xq0ee1vnpz4o  Notes  Original impossibility of consensus with one faulty process describes failures within extremely limited scenarios few main problems:  If the producer writes to the log but doesn&rsquo;t get an ack  solved by the idempotence of kafka, producer can write as much as it wants (and kafka will just drop duplicates)   consumer reads from the log but doesn&rsquo;t update its offset  Consumer ensures the dervied states it creates and the offsets in the upstream need to stay in sync so we can:  store offsets in the same db as derive state, and only update them as a transaction, restarting reads current offset from the db write both state updates and offsets in idempotent fashion   not technically &ldquo;exactly once&rdquo;, more like &ldquo;effectively once&rdquo;   leverages kafka streams  3 components:  log compaction in kafka allows it to be used for a journal and snapshot state changes reading data from kafka = advancing offsets writing to kafka   wrapping all 3 in a kafka stream as a whole transaction allows for the atomic broadcasts      
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/exarchia/">exarchia</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: greece
-Central part of Athens, home to militant leftists, radical politics, and intellectual activism, partly due to Athens Polytechnic
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/20200415133402-fall_2020_classes/">fall 2020 classes</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: grad school, classes
-Possible classes for fall 2020: @ NYU
- MEIS-GA 1770 Topics: Theorizing Mobility: 09/02/2020 - 12/13/2020 Tue 4.55 PM - 7.35 PM at BOBS 837 with Alatas, Ismail MEIS-GA 1609 Intro to The Qur’An: 09/02/2020 - 12/13/2020 Tue 4.55 PM - 7.35 PM at TISC LC4 with Katz, Marion MEIS-GA 1687 Prob &amp; Meth in Mideast Studies - 09/02/2020 - 12/13/2020 We 4:55PM - 7:35PM at Kevo Library  @ CUNY GC
-        <a href="/posts/20200415133402-fall_2020_classes/">...</a>
-      
     </p>
   </article>
   
@@ -697,7 +693,16 @@ Possible classes for fall 2020: @ NYU
         
     
     
-    <li class="page-item"><a class="page-link" href="/posts/page/38/">38</a></li>
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/posts/page/39/">39</a></li>
     
     
     <li class="page-item">
@@ -705,7 +710,7 @@ Possible classes for fall 2020: @ NYU
     </li>
     
     <li class="page-item">
-        <a href="/posts/page/38/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/posts/page/39/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
     </li>
     
 </ul>
