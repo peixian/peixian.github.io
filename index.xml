@@ -10,6 +10,17 @@
     
     
     <item>
+      <title>1-1 meetings</title>
+      <link>/posts/1_1_meetings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/1_1_meetings/</guid>
+      <description>Tags: personal
+1-1 meetings are useful for collecting and receiving feedback early.
+Avoid:  One sided convo All business MIA Distractions  Do:  Goal settings Consistency is key! Give and receieve feedback Get to known your intern and prioritize personal well-being Encourage brainstorming and problem solving Okay to skip once, never skip twice Ask about their goals  What&amp;rsquo;ve they been working on in the side? Use open ended questions   Dig deeper, ask them a lot of questions Guide, without just giving the answers and have people brainstorm with you Setup a time for the intern to meet with other team members  </description>
+    </item>
+    
+    <item>
       <title>aah: asa&#39;ib ahl al-haqq</title>
       <link>/posts/aah_asa_ib_ahl_al_haqq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -305,6 +316,16 @@ Backlinks  parlimentarism recidivus iraqi ghost militias airlines bailout - 2020
     </item>
     
     <item>
+      <title>audio detection</title>
+      <link>/posts/audio_detection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/audio_detection/</guid>
+      <description>Tags: computers
+ https://github.com/midas-research/audino  </description>
+    </item>
+    
+    <item>
       <title>austen&#39;s theory of law</title>
       <link>/posts/austen_s_theory_of_law/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -496,7 +517,7 @@ https://en.wikipedia.org/wiki/Bully%5Falgorithm</description>
       
       <guid>/posts/c_cpp/</guid>
       <description>Tags: computers
-Backlinks  clang  </description>
+CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf  Backlinks  clang  </description>
     </item>
     
     <item>
@@ -668,6 +689,16 @@ Backlinks  oil  </description>
       <description>Tags: Computers
 Stephen Yegge Compilers matter because it Compiler Construction is the first course that brings together everything you learned before. Many things can be generalized into a stream symbol problem.
  https://www.instapaper.com/read/1295231133 Gentle, yet insistent executive summary: If you don&amp;rsquo;t know how compilers work, then you don&amp;rsquo;t know how computers work. If you&amp;rsquo;re not 100% sure whether you know how compilers work, then you don&amp;rsquo;t know how they work.  </description>
+    </item>
+    
+    <item>
+      <title>complexity</title>
+      <link>/posts/complexity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/complexity/</guid>
+      <description>Tags: computers
+ https://www.taylorfrancis.com/books/e/9780429134845 https://books.openedition.org/pressesmines/1122?lang=en https://snafucatchers.github.io/#4%5F6%5F1%5FTechnical%5Fdebt  Highlights  “As more-complex solutions are brought to bear on ever more complex problems, we risk even-greater systemic problems being overlooked.” (James Bridle, New Dark Age) “”People … in the news are missing the way complex systems fail because they think of this as having a single root cause,” Woods tells Here &amp;amp; Now’s Jeremy Hobson. “Often they think of it as a system that works all the time, and then occasionally someone screwed it up — because they’re looking for someone to blame.</description>
     </item>
     
     <item>
@@ -871,6 +902,16 @@ Short Introduction  http://book.mixu.net/distsys/single-page.html http://citesee
       <guid>/posts/dma/</guid>
       <description>Tags: computers
  cloud apps domainted by packet processing https://www.usenix.org/sites/default/files/conference/protected-files/hotos15%5Fslides%5Fkaufmann.pdf  </description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>/posts/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/docker/</guid>
+      <description>Tags: computers
+Debian  https://knowledgepill.it/posts/docker%5Finstall%5Fupgrade/  </description>
     </item>
     
     <item>
@@ -1176,13 +1217,23 @@ Backlinks  FED Powers airlines bailout - 2020 black scholes brady plan commoditi
     </item>
     
     <item>
+      <title>flash storage</title>
+      <link>/posts/flash_storage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/flash_storage/</guid>
+      <description>Tags: hardware
+Journaled Flash Storage  http://ithare.com/journaled-flash-storage-emulating-eeprom-over-flash-acid-transactions-and-more-part-i-flash-vs-eeprom/  </description>
+    </item>
+    
+    <item>
       <title>flask</title>
       <link>/posts/flask/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/flask/</guid>
       <description>Tags: python
-Static Files  https://github.com/nickjj/flask-static-digest https://whitenoise.evans.io/en/stable/index.html https://hackersandslackers.com/flask-assets/  Jinja2 templates  https://flask.palletsprojects.com/en/1.1.x/patterns/templateinheritance/#template-inheritance  Message Flashing  https://flask.palletsprojects.com/en/1.1.x/patterns/flashing/#message-flashing-pattern https://github.com/flask-restful/flask-restful/issues/529  OpenAPI integration  openapi integration with:  https://github.com/python-restx/flask-restx http://michal.karzynski.pl/blog/2016/06/19/building-beautiful-restful-apis-using-flask-swagger-ui-flask-restplus/    </description>
+Static Files  https://github.com/nickjj/flask-static-digest https://whitenoise.evans.io/en/stable/index.html https://hackersandslackers.com/flask-assets/  Blueprints  https://hackersandslackers.com/flask-blueprints/  Jinja2 templates  https://flask.palletsprojects.com/en/1.1.x/patterns/templateinheritance/#template-inheritance  Message Flashing  https://flask.palletsprojects.com/en/1.1.x/patterns/flashing/#message-flashing-pattern https://github.com/flask-restful/flask-restful/issues/529  OpenAPI integration  openapi integration with:  https://github.com/python-restx/flask-restx http://michal.karzynski.pl/blog/2016/06/19/building-beautiful-restful-apis-using-flask-swagger-ui-flask-restplus/    Internationalization  https://flask-user.readthedocs.io/en/v0.6/internationalization.html  Pagination  https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ix-pagination  Routing  https://hackersandslackers.com/flask-routes/  </description>
     </item>
     
     <item>
@@ -1273,7 +1324,7 @@ Contago/Backwardation  Contago is when the futures 1st derivative is postive Bac
 Fuzzing Image IO   https://www.instapaper.com/read/1303612511
   No source code, large range of inptus is perfect for fuzzing
   Choosing type of fuzzing is more difficult
- Try https://github.com/google/honggfuzz Covered in https://arxiv.org/abs/1812.11875    </description>
+ Try https://github.com/google/honggfuzz Covered in https://arxiv.org/abs/1812.11875    Libfuzzing  https://github.com/Microsvuln/Awesome-Libfuzzer-Harness  Google  https://github.com/google/fuzzing/tree/master/dictionaries  </description>
     </item>
     
     <item>
@@ -1998,7 +2049,7 @@ Similar groups:  http://drc-group.com/ https://www.cybrary.it/ https://portal.it
       
       <guid>/posts/java/</guid>
       <description>Tags: computers
-tail call optimization  https://github.com/Sipkab/jvm-tail-recursion  </description>
+tail call optimization  https://github.com/Sipkab/jvm-tail-recursion  JVM profiling  https://blunders.io/ Java Flight  </description>
     </item>
     
     <item>
@@ -2094,6 +2145,19 @@ Backlinks  bpf (berkley packet filter)  </description>
     </item>
     
     <item>
+      <title>kyoto tycoon</title>
+      <link>/posts/kyoto_tycoon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/kyoto_tycoon/</guid>
+      <description>Tags: computers
+KV store like redis, except on disk, similar to LMDB
+Kyoto Cabinet is the frontend, Kyoto tycoon is the backend, kyoto tycoon is a follow up to tokyo tyrant
+ https://fallabs.com/kyototycoon/  Current usage can be found on http://charlesleifer.com/blog/kyoto-tycoon-in-2019/
+ Used by cloudflare back in the day https://github.com/cloudflarearchive/kyotocabinet  https://news.ycombinator.com/item?id=18892634   &amp;ldquo;Current&amp;rdquo; builds by Altice Labs: https://github.com/alticelabs/kyoto/releases vs leveldb: https://maxpert.tumblr.com/post/8330476086/leveldb-vs-kyoto-cabinet-my-findings https://news.ycombinator.com/item?id=18891764 Similar to Aerospike (https://www.aerospike.com/)? https://www.anchor.com.au/blog/2013/05/second-strike-with-lightning/ http://www.lmdb.tech/bench/microbench/benchmark.html http://www.</description>
+    </item>
+    
+    <item>
       <title>latam</title>
       <link>/posts/20200414224409-latam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2160,6 +2224,16 @@ Krylov Subspace  https://en.wikipedia.org/wiki/Krylov%5Fsubspace  Quantum Algori
       <guid>/posts/linker_essay/</guid>
       <description>Tags: compilers
  https://lwn.net/Articles/276782/  Intro What does a linker do?  Converts object files into executables and shared libraries  C/C++/Fortran (java uses a loader)    What&amp;rsquo;s a linker: Dynamic linking, linker data types, linker operation Shared libs  shared libs were invented as an op for virtual memory systems running many processes simultaneously  virtual memory system would map the same routine for each process first implementation in SVR3, based on COFF  assigned each shared library a fixed portion of virtual address space   SunOS4 introduced a more fleixbile version  programs would link shared librarys during runtime (dynamic linker) program linker are the linkers during compilation      Basic Linker Data Types  Linkers use symbols, relocations, and contents  Symbols  Name and a value usually represent static objects in the original source code  For C, a single symbol for each function and each global and static variable   used to indicate a reference to a name defined in another file  Relocation  Computation to perform on the contents Usually refers to a symbol and a offset Also provides an additional operand called addend Simple relocation is &amp;ldquo;set this location in the contents to the value of this symbol + addend&amp;rdquo;  Contents  What memory should look like during the execution of the program Have a size, array of bytes, and a type Contain machine code generated by the compiler and assembler (text) Also contain values of initialized variables (data) Also contain static unnamed data like string constants or switch varialbes (rdata) Empty uninitalized variables as well  Basic Linker Operation Linkers:</description>
+    </item>
+    
+    <item>
+      <title>linting</title>
+      <link>/posts/linting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linting/</guid>
+      <description>Tags: computers
+GH Super Linter  https://github.blog/2020-06-18-introducing-github-super-linter-one-linter-to-rule-them-all/  python  Black pyfmt pep8 autopep8  </description>
     </item>
     
     <item>
@@ -2687,7 +2761,7 @@ What is historiography good for?
       
       <guid>/posts/operating_systems/</guid>
       <description>Tags: computers
- https://dedis.cs.yale.edu/2010/det/ https://research.cs.wisc.edu/htcondor/description.html https://lwn.net/Articles/293575/  </description>
+ https://dedis.cs.yale.edu/2010/det/ https://research.cs.wisc.edu/htcondor/description.html https://lwn.net/Articles/293575/ https://www.dragonflybsd.org/cgi/web-man?command=sys%5Fcheckpoint&amp;amp;section=2 https://www.dragonflybsd.org/cgi/web-man?command=checkpoint&amp;amp;section=ANY http://ithare.com/bringing-architecture-of-operating-systems-to-xxi-century-part-iv-first-draft/  </description>
     </item>
     
     <item>
@@ -3133,7 +3207,7 @@ https://pyobjc.readthedocs.io/en/latest/tutorials/firstapp.html</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/rasmussen_and_lind_coping_with_complexity/</guid>
-      <description>Tags: papers, computers
+      <description>Tags: papers, complexity
 Talks about how people cope with complexity in power plants
 Decision models:  Take some data, integrate the data, evaluate and make a decision, and coordinate the acts with an intention in mind    Simple heuristics taken:  Thresholds - when a variable crosses an absolute threshold  Like a threshold in grafana - &amp;ldquo;IO wait in CPU usage occupying more than 50%, I know that the CPU is spending time waiting on IO, resolution is involved with IO&amp;rdquo;   Deviation from normal - when an experienced operator knows what is normal and what is not  Deviation from normal - &amp;ldquo;current time is outside of p99&amp;rdquo;    Abstraction Hierarchies   Physical form relates to the abstract function, which relates to the general understanding</description>
     </item>
@@ -3202,6 +3276,27 @@ Mushrooms  https://cafedelites.com/roasted-mushrooms/  Backlinks  climate change
       <guid>/posts/recoll_from_emacs/</guid>
       <description>Tags: emacs
  https://oremacs.com/2015/07/27/counsel-recoll/ https://framagit.org/medoc92/recoll https://www.lesbonscomptes.com/recoll/download.html#macosx https://github.com/alraban/org-recoll  </description>
+    </item>
+    
+    <item>
+      <title>red cross</title>
+      <link>/posts/red_cross/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/red_cross/</guid>
+      <description>Tags: ngo
+ Usage of symbols: https://www.redcross.ca/about-us/about-the-canadian-red-cross/red-cross-emblem/it-may-just-be-a-game-to-you-but-it-means-the-world-to-us  </description>
+    </item>
+    
+    <item>
+      <title>redis</title>
+      <link>/posts/redis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/redis/</guid>
+      <description>Tags: computers
+KV store
+Backlinks  kyoto tycoon  </description>
     </item>
     
     <item>
@@ -3505,6 +3600,16 @@ SSH Reverse Tunneling  ssh -L 9283:localhost:9283 space.af -&amp;gt; forward rem
     </item>
     
     <item>
+      <title>statistical methods</title>
+      <link>/posts/statistical_methods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/statistical_methods/</guid>
+      <description>Tags: statistics
+ https://mc-stan.org/  </description>
+    </item>
+    
+    <item>
       <title>statistics</title>
       <link>/posts/statistics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3532,6 +3637,16 @@ Backlinks  ensemble average vs time average  </description>
       <guid>/posts/string_matching/</guid>
       <description>Tags: computers
 Simstring  http://chokkan.org/software/simstring/ Cosine similarity, C++ but has python bindings  </description>
+    </item>
+    
+    <item>
+      <title>sufism</title>
+      <link>/posts/sufism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sufism/</guid>
+      <description>Tags: islam
+Before Sufism https://www.degruyter.com/view/title/540989?language=en#.XtOkcd7oquk.twitter</description>
     </item>
     
     <item>
@@ -3752,6 +3867,16 @@ Backlinks  heart rate zones  </description>
     </item>
     
     <item>
+      <title>travel</title>
+      <link>/posts/travel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/travel/</guid>
+      <description>Tags: personal
+Backlinks  visa&amp;rsquo;s  </description>
+    </item>
+    
+    <item>
       <title>trial/error vs theory/insight in work/academia</title>
       <link>/posts/trial_error_vs_theory_insight_in_work_academia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3873,6 +3998,16 @@ HID 6 Key Rollover Most keyboards actually support more, but cheap keyboards onl
       <guid>/posts/uso_etf/</guid>
       <description>Tags: oil trading
  United States Oil Fund, derivatives based ETF for trading oil. Reflects the changes of the price of the west texas intermediate crude delivered to Cushing commodities pool estimated to account for 25%-30% of the futures commodity volume has text stating that oil funds &amp;ldquo;might be compulsively redeemed&amp;rdquo; aka closed  </description>
+    </item>
+    
+    <item>
+      <title>visa&#39;s</title>
+      <link>/posts/visa_s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/visa_s/</guid>
+      <description>Tags: travel
+Portugal  https://www.portuguese-nationality.com/residency/the-d7-visa-portugal https://www.reddit.com/r/expats/comments/hdg36h/moving%5Fto%5Fportugal%5Fas%5Fa%5Fsoftware%5Fdeveloper/  </description>
     </item>
     
     <item>

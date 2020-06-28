@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/1_1_meetings/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/aah_asa_ib_ahl_al_haqq/</loc>
   </url>
   
@@ -112,6 +116,10 @@
   
   <url>
     <loc>/posts/20200419124622-articles/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/audio_detection/</loc>
   </url>
   
   <url>
@@ -263,6 +271,10 @@
   </url>
   
   <url>
+    <loc>/posts/complexity/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/comprehensive_test_ban_treaty/</loc>
   </url>
   
@@ -336,6 +348,10 @@
   
   <url>
     <loc>/posts/dma/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/docker/</loc>
   </url>
   
   <url>
@@ -448,6 +464,10 @@
   
   <url>
     <loc>/posts/fish/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/flash_storage/</loc>
   </url>
   
   <url>
@@ -807,6 +827,10 @@
   </url>
   
   <url>
+    <loc>/posts/kyoto_tycoon/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414224409-latam/</loc>
   </url>
   
@@ -832,6 +856,10 @@
   
   <url>
     <loc>/posts/linker_essay/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/linting/</loc>
   </url>
   
   <url>
@@ -1239,6 +1267,14 @@
   </url>
   
   <url>
+    <loc>/posts/red_cross/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/redis/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/religion/</loc>
   </url>
   
@@ -1355,6 +1391,10 @@
   </url>
   
   <url>
+    <loc>/posts/statistical_methods/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/statistics/</loc>
   </url>
   
@@ -1364,6 +1404,10 @@
   
   <url>
     <loc>/posts/string_matching/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/sufism/</loc>
   </url>
   
   <url>
@@ -1447,6 +1491,10 @@
   </url>
   
   <url>
+    <loc>/posts/travel/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/trial_error_vs_theory_insight_in_work_academia/</loc>
   </url>
   
@@ -1492,6 +1540,10 @@
   
   <url>
     <loc>/posts/uso_etf/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/visa_s/</loc>
   </url>
   
   <url>
