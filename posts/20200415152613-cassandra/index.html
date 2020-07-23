@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Tags: Databases, Computers
-Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    concurrent_compactors  Sets the number of IO threads dedicated to compaction If too high, can cause IO starvation and not servicing requests  Depends on NVME drives   set by the concurrenct_compactors string in yaml  can also use nodetool setconcurrent_compactors in C* &gt; 3    "><meta property="og:title" content="Cassandra" />
+Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    concurrent_compactors  Sets the number of IO threads dedicated to compaction If too high, can cause IO starvation and not servicing requests  Depends on NVME drives   set by the concurrenct_compactors string in yaml  can also use nodetool setconcurrent_compactors in C* &gt; 3    Counter Table TTL&rsquo;s  https://issues."><meta property="og:title" content="Cassandra" />
 <meta property="og:description" content="Tags: Databases, Computers
-Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    concurrent_compactors  Sets the number of IO threads dedicated to compaction If too high, can cause IO starvation and not servicing requests  Depends on NVME drives   set by the concurrenct_compactors string in yaml  can also use nodetool setconcurrent_compactors in C* &gt; 3    " />
+Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    concurrent_compactors  Sets the number of IO threads dedicated to compaction If too high, can cause IO starvation and not servicing requests  Depends on NVME drives   set by the concurrenct_compactors string in yaml  can also use nodetool setconcurrent_compactors in C* &gt; 3    Counter Table TTL&rsquo;s  https://issues." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/20200415152613-cassandra/" />
 
 <title>Cassandra | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.cb7d5c7949fcc41e5d34044433ca99d431de3d3edafaa553dd0ce83ee2b1d788.js" integrity="sha256-y31ceUn8xB5dNAREM8qZ1DHePT7a&#43;qVT3QzoPuKx14g="></script>
+<script defer src="/en.search.min.3b4d5ae8e835af5f362db1168f7f3c03960fc3f8ee6665588e569e038a6b4c92.js" integrity="sha256-O01a6Og1r182LbEWj388A5YPw/juZmVYjlaeA4prTJI="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -105,6 +105,9 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#internals">Internals</a></li>
     <li><a href="#concurrent-compactors"><code>concurrent_compactors</code></a></li>
+    <li><a href="#counter-table-ttl-s">Counter Table TTL&rsquo;s</a></li>
+    <li><a href="#jolokia-agent">Jolokia Agent</a></li>
+    <li><a href="#backlinks">Backlinks</a></li>
   </ul>
 </nav>
 
@@ -152,6 +155,26 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ul>
+<h2 id="counter-table-ttl-s">Counter Table TTL&rsquo;s</h2>
+<ul>
+<li><a href="https://issues.apache.org/jira/browse/CASSANDRA-2103">https://issues.apache.org/jira/browse/CASSANDRA-2103</a></li>
+<li><a href="https://blog.knoldus.com/cassandra-counter-column-and-table/">https://blog.knoldus.com/cassandra-counter-column-and-table/</a></li>
+<li><a href="https://docs.scylladb.com/using-scylla/counters/">https://docs.scylladb.com/using-scylla/counters/</a></li>
+<li><a href="https://docs.scylladb.com/getting-started/time%5Fto%5Flive/">https://docs.scylladb.com/getting-started/time%5Fto%5Flive/</a></li>
+<li><a href="https://stackoverflow.com/questions/29564744/data-modeling-with-counters-in-cassandra-expiring-columns">https://stackoverflow.com/questions/29564744/data-modeling-with-counters-in-cassandra-expiring-columns</a></li>
+<li><a href="https://github.com/Netflix/astyanax/wiki/Working-with-counter-columns">https://github.com/Netflix/astyanax/wiki/Working-with-counter-columns</a></li>
+<li><a href="https://dzone.com/articles/cassandra-counter-columns-and-tables">https://dzone.com/articles/cassandra-counter-columns-and-tables</a></li>
+<li><a href="https://stackoverflow.com/questions/24881957/what-is-the-way-for-counting-number-of-columns-in-row-in-cassandra">https://stackoverflow.com/questions/24881957/what-is-the-way-for-counting-number-of-columns-in-row-in-cassandra</a></li>
+</ul>
+<h2 id="jolokia-agent">Jolokia Agent</h2>
+<ul>
+<li><a href="https://stackoverflow.com/questions/35318593/jolokia-agent-for-cassandra">https://stackoverflow.com/questions/35318593/jolokia-agent-for-cassandra</a></li>
+<li><a href="https://stackoverflow.com/questions/35318593/jolokia-agent-for-cassandra">https://stackoverflow.com/questions/35318593/jolokia-agent-for-cassandra</a></li>
+</ul>
+<h2 id="backlinks">Backlinks</h2>
+<ul>
+<li><a href="/posts/homogenous_time_blog_post/">Homogenous Time: Ibn Khaldun and Transaction Logs</a></li>
+</ul>
 </p>
 </article>
  
@@ -190,6 +213,9 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#internals">Internals</a></li>
     <li><a href="#concurrent-compactors"><code>concurrent_compactors</code></a></li>
+    <li><a href="#counter-table-ttl-s">Counter Table TTL&rsquo;s</a></li>
+    <li><a href="#jolokia-agent">Jolokia Agent</a></li>
+    <li><a href="#backlinks">Backlinks</a></li>
   </ul>
 </nav>
 

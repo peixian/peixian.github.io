@@ -572,7 +572,7 @@ CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf  Backlinks  c
       
       <guid>/posts/20200415152613-cassandra/</guid>
       <description>Tags: Databases, Computers
-Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    concurrent_compactors  Sets the number of IO threads dedicated to compaction If too high, can cause IO starvation and not servicing requests  Depends on NVME drives   set by the concurrenct_compactors string in yaml  can also use nodetool setconcurrent_compactors in C* &amp;gt; 3    </description>
+Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    concurrent_compactors  Sets the number of IO threads dedicated to compaction If too high, can cause IO starvation and not servicing requests  Depends on NVME drives   set by the concurrenct_compactors string in yaml  can also use nodetool setconcurrent_compactors in C* &amp;gt; 3    Counter Table TTL&amp;rsquo;s  https://issues.</description>
     </item>
     
     <item>
@@ -744,6 +744,18 @@ Backlinks  ssh-notes Endianess Cassandra networks postgres compilers algorithms 
       <description>Tags: iraq, grad school
 Notes from the Iraqi conference: http://cih.columbia.edu/iraqi-studies-past-present-and-future/ Archive: https://pinboard.in/cached/38304eb62267/
  October Revolution - Davis  Definition of grpups that define themselves as &amp;ldquo;iraqi&amp;rdquo; Ultimiately a war of position emotional baggage generated from the post-2003   Reflections on Iraqi Studies - Pursely  Driven by post-invasion Shaping of modern iraqi scholars Oversimplication Destruction of 21st century iraq via imperialism Can we define iraq from post-colonial notions? How many states are built on necropolitics Have iraqi scholars engaged in a purely defensive study?</description>
+    </item>
+    
+    <item>
+      <title>conflict and violence</title>
+      <link>/posts/conflict_and_violence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/conflict_and_violence/</guid>
+      <description>Tags: classes
+Day 2 What drives violence? Why do people become violent?
+Shame: Emotions of Morality and Violence papers
+ Shame as a motivator  Desire to seek basic forms of dignity   Compares violence to a contagious diease (undetected)  Not very convincing tbh, the metaphor somewhat falls flat However, Bonnasse-Gahot et. al in 2005 had a study on how French riots followed a similar &amp;ldquo;contagion&amp;rdquo; model   Talks about how prisons have a cycle of punishment, harsh behaviors lead to harsh punishments Proposes 3 conditions of violence  Feel deeply ashamed of something Feel like they have no non-violent alternatives Lacks emotional capabilities at the time that inhibit the violent impulses   Fact note: before large scale woman&amp;rsquo;s shelters, the homicide rate between men/women were about the same.</description>
     </item>
     
     <item>
@@ -982,6 +994,16 @@ Adalet - Hotels and Highways Same for Iraq development like dujayla land project
     </item>
     
     <item>
+      <title>e-activity-2</title>
+      <link>/posts/e_activity_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/e_activity_2/</guid>
+      <description>Tags: conflict and violence
+In &amp;ldquo;Violence and History: A Response to Thandika Mkandawire&amp;rsquo;&amp;rsquo;, Stephen Ellis puts forth the notion that analysis of violence must be grounded in a historical context in order for proper analysis. Starting as a response to THandika Mkandawire, who originally criticized Ellis&amp;rsquo;s work, Ellis deconstructs Mkandawire&amp;rsquo;s theory of an urban/rural divide as the principal driver of violence within Africa. Going beyond this, Ellis pushes violence into a historical background, stating that the context of violence, mediated through symbols and modern habits, requires history to properly understand.</description>
+    </item>
+    
+    <item>
       <title>economics</title>
       <link>/posts/economics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1020,6 +1042,16 @@ Backlinks  Egypt Iron and Steel Company egyptian demographics nasser Cook - The 
       <description>Tags: egypt
 Egypt has a demographics problem, with over 100 million Egyptians. Cairo birth rates remain at ~3.5 per women per Feb 2020, whereas MENA averages of 2.8. The Nile has failed to be protected, and children are seen as tools to take care of parents in the future.
  https://data.worldbank.org/indicator/SP.DYN.TFRT.IN?locations=ZQ https://www.bloomberg.com/news/articles/2018-03-13/the-arab-spring-s-riskiest-legacy-may-be-egypt-s-baby-boom  </description>
+    </item>
+    
+    <item>
+      <title>eink</title>
+      <link>/posts/eink/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/eink/</guid>
+      <description>Tags: computers
+Function  https://twitter.com/sqfmi/status/1178018736684580865 Uses small liquids upon white fluid mechanically moves the liquid in order to generate display  Products  https://www.waveshare.com/product/displays/e-paper/eink-disp-103.htm?sku=17615  </description>
     </item>
     
     <item>
@@ -1408,6 +1440,16 @@ Examples  https://github.com/WeOpenly/localgov.fyi  Tutorials  https://www.gatsb
       <guid>/posts/gephi/</guid>
       <description>Tags: computers
  Open source graph exploration tool Reads dot files https://gephi.org/  </description>
+    </item>
+    
+    <item>
+      <title>Glick and Paluck: The Aftermath of Genocide</title>
+      <link>/posts/glick_and_paluck_the_aftermath_of_genocide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/glick_and_paluck_the_aftermath_of_genocide/</guid>
+      <description>Tags: papers, conflict and violence
+ Social psychologists tend to emphaizie proximal situational causes Talks about how victim groups experiece an ambivalent relationship to the past  Rememberence is often painful  Adar - Emotions and Nationalism: Armenian Genocide as a Case Study   Holocaust remeberance not only creates solidarity within the group but also strongly motivates the rejection of a continuing victim identity   Past recession leads to denial and distancing of colonialization, mass violence, and genocide.</description>
     </item>
     
     <item>
@@ -2013,7 +2055,7 @@ Grammar خل + فعل  Let (imperative) + فعل Example:  Let us go: خل نر�
       
       <guid>/posts/irrigation_in_iraq/</guid>
       <description>Tags: iraq
- The Euphrates does not receive water from permanent tributaries within Iraq territory and is fed only by seasonal runoff from wadis.  Backlinks  Cook - The Aswan Low Dam and Modernizing the Nile hindyia barrage salqawia canal mosul  </description>
+ The Euphrates does not receive water from permanent tributaries within Iraq territory and is fed only by seasonal runoff from wadis.  Water Levels Dropping on Tigris and Euphrates - July 18th 2020  https://apnews.com/9542368977c9ee0ae97fd2cc88933198 turkey&amp;rsquo;s Ilisu Dam sits on tigris and may be singlehandled reponsible   Backlinks  salqawia canal Cook - The Aswan Low Dam and Modernizing the Nile hindyia barrage mosul  </description>
     </item>
     
     <item>
@@ -3130,7 +3172,7 @@ Backlinks  Makdisi - The Ecumenical Frame Meeker - A Nation of Empire Pursely - 
       <description>Tags: Databases, Computers
 Postgres Issues  VACUUM   Proposals have been made to try to relocate rows on the fly, but it’s hard to do correctly and risks bloating the indexes, since each row moved requires a new entry in each index to point to the new location of the row.
   https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791
-    Performance  https://www.postgresql.org/docs/current/warm-standby.html#SYNCHRONOUS-REPLICATION-PERFORMANCE https://www.postgresql.org/docs/9.3/routine-vacuuming.html http://rhaas.blogspot.com/2018/01/do-or-undo-there-is-no-vacuum.html https://github.com/postgres/postgres/blob/master/src/backend/access/heap/README.HOT  Scalablity  https://blog.sentry.io/2015/07/23/transaction-id-wraparound-in-postgres  </description>
+    Performance  https://www.postgresql.org/docs/current/warm-standby.html#SYNCHRONOUS-REPLICATION-PERFORMANCE https://www.postgresql.org/docs/9.3/routine-vacuuming.html http://rhaas.blogspot.com/2018/01/do-or-undo-there-is-no-vacuum.html https://github.com/postgres/postgres/blob/master/src/backend/access/heap/README.HOT  Scalablity  https://blog.sentry.io/2015/07/23/transaction-id-wraparound-in-postgres  Queues  https://www.</description>
     </item>
     
     <item>

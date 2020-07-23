@@ -12,7 +12,7 @@
 <title>Posts | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.cb7d5c7949fcc41e5d34044433ca99d431de3d3edafaa553dd0ce83ee2b1d788.js" integrity="sha256-y31ceUn8xB5dNAREM8qZ1DHePT7a&#43;qVT3QzoPuKx14g="></script>
+<script defer src="/en.search.min.3b4d5ae8e835af5f362db1168f7f3c03960fc3f8ee6665588e569e038a6b4c92.js" integrity="sha256-O01a6Og1r182LbEWj388A5YPw/juZmVYjlaeA4prTJI="></script>
 <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="الـبـحـر الـزاخـر" />
 <!--
 Made with Book Theme
@@ -135,6 +135,88 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
+      <a href="/posts/tcp_syn/">TCP SYNs</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: networks
+What Are?   https://blog.cloudflare.com/syn-packet-handling-in-the-wild/
+  Two queues in TCP, one a SYN queue and one Accept Queue
+    Syn queue responsible for storing inbound syn packets
+ https://elixir.free-electrons.com/linux/v4.14.12/source/include/net/inet%5Fsock.h#L73    Blogs  https://www.snellman.net/blog/archive/2017-07-20-s3-mystery/ https://kognitio.com/blog/syn-cookies-ate-my-dog-breaking-tcp-on-linux/  Commits  https://github.com/freebsd/freebsd/commit/56ba0a68edde7b38323f81f9d56998b10668dd9e https://github.com/freebsd/freebsd/commit/fc2be30b217171175bae209edb4f697cc0cb542d  Research  https://link.springer.com/chapter/10.1007/978-3-642-36516-4%5F14  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/territorality_of_data/">territorality of data</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: drafts
+  Cloud act
+ https://www.congress.gov/bill/115th-congress/house-bill/4943    https://www.yalelawjournal.org/article/the-un-territoriality-of-data
+  GDPR
+ Ireland as a datahaven and tax haven    AWS/GCP Zones
+ AWS China Alibaba    Southeast Asia as cloud ground: https://www.ft.com/content/1e2b9cd9-f82e-4d3b-a2d8-f20c08bdc3aa
+ https://en.cifnews.com/southeast-asia-cloud-computing/    Links to the twin insurgency
+    
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/text_boundary_analysis/">text boundary analysis</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: computers
+Chrome V8 detects text boundaries with:
+ Specifically, v8 uses ICU to do a bunch of Unicode-related text processing things, including breaking text up into words. The ICU boundary-detection code includes a &ldquo;Dictionary-Based BreakIterator&rdquo; for languages that don&rsquo;t have spaces, including Japanese, Chinese, Thai, etc. https://www.instapaper.com/read/1303705767  Character boundary rules: http://www.unicode.org/reports/tr29/#Grapheme%5FCluster%5FBoundaries
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/the_danger_of_treating_ideas_from_finance_as_generalized_self_help/">the danger of treating ideas from finance as generalized self help</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: articles, personal
+Also see https://www.researchgate.net/publication/26798603%5FConditions%5Ffor%5FIntuitive%5FExpertise%5FA%5FFailure%5Fto%5FDisagree?enrichId=rgreq-7a806a35-ae6b-4eb6-ab51-89923c22b177&amp;enrichSource=Y292ZXJQYWdlOzI2Nzk4NjAzO0FTOjI5OTQ5MjcwMTE2MzUyMUAxNDQ4NDE2MDMyMTgz&amp;el=1%5Fx%5F2
+Takeaway: financial advice is generalized because finance is a weird field, software has much more acute learning signals. Finance models are generically not generalizable, no one would apply black-scholes towards their groceries.
+Advice should be taken on how easily something can be abstracted or whether the problem is domain specific. Some patterns applied in firmware and SDR cannot be applied to higher level programming, for example.
+        <a href="/posts/the_danger_of_treating_ideas_from_finance_as_generalized_self_help/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
       <a href="/posts/the_twin_insurgency/">the twin insurgency</a>
     </h2>
     
@@ -241,81 +323,6 @@ Multiple training periods, beginning with base period
  base period training is the longest of the year Have a tapering period before the trip Very easy to overdo climbing during the transition training Principal of gradualness  Always plan for a year&rsquo;s climbing as training.
 Also align with food for training
 Backlinks  heart rate zones  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/travel/">travel</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: personal
-Backlinks  visa&rsquo;s  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/trial_error_vs_theory_insight_in_work_academia/">trial/error vs theory/insight in work/academia</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: drafts
-  https://commoncog.com/blog/chinese-businessmen-let-reality-be-the-teacher/
-  fractals of trial/error theory/insight paradigm
-  programming is trial/error as a skill, but theory/insight as a worker
- That is, that trial &amp; error is a superior strategy when i) you have randomness and ii) when you have convexity: that is, for any given decision you make, your positive outcomes outweigh your negative outcomes. feedback loop is instantanous take a hit and leave the game?
-        <a href="/posts/trial_error_vs_theory_insight_in_work_academia/">...</a>
-      
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/tufekci_twitter_and_tear_gas/">Tufekci - Twitter and Tear Gas</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: books
- Reverse Streisand effect - deliberate information glut to hide the truth  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/turabian_a_manual_for_writers/">Turabian - A Manual for Writers</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: books, writing
-Interrogate your topic:  How does the topic fit into a larger context? Historical, social, cultural, geographic, functional, economic, etc  How do the topics fit into a larger story? How is the topic a functioning part of the system?   How does the topic compare and contrast to other topics like it? How has the topic changed through time? Why? What is its future? How does the part of your topic fit together as a system?
-        <a href="/posts/turabian_a_manual_for_writers/">...</a>
-      
     </p>
   </article>
   
