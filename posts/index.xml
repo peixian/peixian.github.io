@@ -382,7 +382,7 @@ Mountaineering objectives  2x max strength workout with Scott&amp;rsquo;s Killer
       
       <guid>/posts/bash/</guid>
       <description>Tags: computers
-If statements if [ -v ] # checks for the existance of a variable </description>
+If statements if [ -v ] # checks for the existance of a variable Entr  https://jvns.ca/blog/2020/06/28/entr/  </description>
     </item>
     
     <item>
@@ -453,7 +453,7 @@ Refugees and history are a two way street, internal refugees of the Ottoman empi
       
       <guid>/posts/20200414223410-books/</guid>
       <description>Tags: root
-Backlinks  Anderson - Imagined Communities Makdisi - The Ecumenical Frame Meeker - A Nation of Empire Ahmed - Afghanistan Rising Hassan - Longing for the Lost Caliphate Adalet - Hotels and Highways Mumby - Graduate School Peters - Getting What You Came For Simon - Imposition of Nationalism on Non-Nation State Provonce - The Last Ottoman Generation Anscombe - State, Faith, and Nation Blumi - Ottoman Refugees, 1878-1939 Can - Spiritual Subjects Chaterjee - The Nations and Its Fragments Simpson - War from the Ground Up Hart - Why Don&amp;rsquo;t We Learn From History?</description>
+Career Books  https://www.reddit.com/r/ExperiencedDevs/comments/hpgkvv/what%5Fare%5Fsome%5Fdeveloper%5Fcareergrowth%5Fbooks%5Fthat/  Backlinks  DiCapua - Gatekeepers of the Arab Past Newport - Deep Work Meeker - A Nation of Empire Pursely - Familiar Futures Peters - Getting What You Came For Anderson - Imagined Communities Makdisi - The Ecumenical Frame Anscombe - State, Faith, and Nation Ahmed - Afghanistan Rising Rayburn - Iraq After America Mitchel - Rule of Experts: Egypt, Techno-politics, Modernity Gambetta et al - Streetwise Haplin - Thirteen Ways to Make a Plural Soren - Taking Smart Notes Turabian - A Manual for Writers Fiebelman - A PhD is Not Enough Humanism in Ruins - Discussion Questions Soper, Fetzer - Religion and Nationalism in Global Perspective Mumby - Graduate School Blanch - Sabers of Paradise Toufic - Palestine Ltd: Neoliberalism and Nationalism Simpson - War from the Ground Up Tufekci - Twitter and Tear Gas Pouligny - Peace Operations Seen From Below Kolbert - Field Notes from a Catastrophe Gregg - BFP Performance Tools Can - Spiritual Subjects Provonce - The Last Ottoman Generation Chaterjee - The Nations and Its Fragments Young - Ultralearning Hassan - Longing for the Lost Caliphate Simon - Imposition of Nationalism on Non-Nation State Adalet - Hotels and Highways Nagel, Ferran - Politics of Religion and Nationalism Hart - Why Don&amp;rsquo;t We Learn From History?</description>
     </item>
     
     <item>
@@ -641,7 +641,9 @@ Resources:  https://macropolo.org/  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200414222241-classes/</guid>
-      <description>Tags: grad school</description>
+      <description>Tags: grad school
+MOOC&amp;rsquo;s https://news.ycombinator.com/item?id=23722680
+Backlinks  fall 2020 classes Post-Ottoman Near East post-ottoman iraq/egypt irrigation paper proposal Nationalism and Outsiders in the Middle East - Midterm Draft mooc conflict and violence Nationalism and Outsiders in the Middle East  </description>
     </item>
     
     <item>
@@ -770,6 +772,16 @@ The completion of the Aswan Low Dam was premised on orientialist perceptions tha
     </item>
     
     <item>
+      <title>correlation != causation</title>
+      <link>/posts/correlation_causation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/correlation_causation/</guid>
+      <description>Tags: probability
+ https://www.gwern.net/Correlation https://en.wikipedia.org/wiki/Berkson%27s%5Fparadox https://www.gwern.net/Everything   At large scales, everything is correlated Interrcorrelation implies causal networks  A correlates to B, B correlates to A, or A correlates to C + C correlates to B  This is most often wrong, since it&amp;rsquo;s actually:  A correlates to B B correlates to A A correlates to C1, B correlates to C1 A correlatees to C2, B correlates to C2, etc     Relationships are directly casual, or they can flow through a huge number of causal chains    </description>
+    </item>
+    
+    <item>
       <title>covid</title>
       <link>/posts/covid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -819,8 +831,7 @@ Turkish politics hold contradictory viewpoints of Ottomanism, esepcially with th
       
       <guid>/posts/databases/</guid>
       <description>Tags: Computers
-MariaDB  https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/  Backlinks 2 Backlinks Cassandra Tags: Databases, Computers
-postgres Tags: Databases, Computers</description>
+MariaDB  https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/  Calcite  https://calcite.apache.org  Backlinks  Cassandra postgres  </description>
     </item>
     
     <item>
@@ -1004,6 +1015,26 @@ In &amp;ldquo;Violence and History: A Response to Thandika Mkandawire&amp;rsquo;
     </item>
     
     <item>
+      <title>e-activity-3</title>
+      <link>/posts/e_activity_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/e_activity_3/</guid>
+      <description>Tags: conflict and violence
+Prompt: Where does responsibility for violence suffered by migrants lie?
+Draft Migrants suffer a litany of horrors on their path to their ultimate destination. Existing on the bounded continuum, migrants are labeled somewhere between &amp;ldquo;refugee&amp;rdquo; and &amp;ldquo;economic migrant&amp;rdquo;. This dual classification, with significant grey area in between, affords people different rights and treatment along the way. For example, the term refugee carries implies significant loss of agency, but garners international sympathy and affords access to certain institutions.</description>
+    </item>
+    
+    <item>
+      <title>e-activity-4: who bears responsibility for refugee violence - lebanon</title>
+      <link>/posts/e_activity_4_who_bears_responsibility_for_refugee_violence_lebanon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/e_activity_4_who_bears_responsibility_for_refugee_violence_lebanon/</guid>
+      <description>Tags: conflict and violence</description>
+    </item>
+    
+    <item>
       <title>economics</title>
       <link>/posts/economics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1132,7 +1163,30 @@ Modern economics tends to conflate these and use ensemble averages when a time a
       <guid>/posts/epistime/</guid>
       <description>Tags: root
 On thinking
-Backlinks  mental models Taking Smart Notes  </description>
+ https://kinopio.club  Backlinks  mental models on historiography democritus Soren - Taking Smart Notes ooda (observe orient decide act) Young - Ultralearning emotional intelligence raven paradox mass immersion approach  </description>
+    </item>
+    
+    <item>
+      <title>Epstine: Range</title>
+      <link>/posts/epstine_range/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/epstine_range/</guid>
+      <description>Tags: books
+ https://commoncog.com/blog/range-book-summary/ &amp;ldquo;Instead, the strongest predictor of success was a specialist who repeatedly took their expertise in one core domain and applied it to a different domain&amp;rdquo; Filled with anecdotes Takeways:  The idea that ‘slow’ learning is what is valuable when it comes to developing foundational skills. The whole notion of ‘match quality’ as a counterpoint to ‘grit’. The idea that analogical thinking is powerful, and that it depends on a large-enough set of experiences and ideas to perform well.</description>
+    </item>
+    
+    <item>
+      <title>ethnicity, nationalism, and conflict</title>
+      <link>/posts/ethnicity_nationalism_and_conflict/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ethnicity_nationalism_and_conflict/</guid>
+      <description>Tags: conflict and violence
+Hosbawn 1992:  Nationalism with political theory Ethnicity with socialism  Notes   Ethnic groups do not have a strict political order
+  Constructions typically emphasize the boundaries between them
+  Disaster Nationalism https://www.newstatesman.com/culture/observations/2020/03/rise-disaster-nationalism-why-authoritarian-right-resurgent
+  Pitfalls  There is a risk of not taking the violence of actors seriously  Difference between the categories of analysis and categories of practice   Extremely risky to dimiss the agencies of actual actors Mahmoud Mamdani - Political violence in africa is a continuation of colonial rule  </description>
     </item>
     
     <item>
@@ -1908,6 +1962,19 @@ Backlinks  Khalifat movement  </description>
     </item>
     
     <item>
+      <title>information paradox</title>
+      <link>/posts/information_paradox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/information_paradox/</guid>
+      <description>Tags: physics
+ https://arxiv.org/pdf/0707.3400.pdf  Maxwell&amp;rsquo;s demon is the basis for the information paradox.
+If the demon has sufficient information, he can manipulate entropy
+Refs:
+ https://en.wikipedia.org/wiki/Black%5Fhole%5Finformation%5Fparadox  </description>
+    </item>
+    
+    <item>
       <title>institute of international finance (iif)</title>
       <link>/posts/institute_of_international_finance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2392,6 +2459,19 @@ Backlinks  next generation disarmament, demobilization, and reintegration  </des
     </item>
     
     <item>
+      <title>mass immersion approach</title>
+      <link>/posts/mass_immersion_approach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mass_immersion_approach/</guid>
+      <description>Tags: epistime
+  https://massimmersionapproach.com/table-of-contents/stage-1/jp-quickstart-guide/#immersion
+  immersion is a necessity
+  watch everything, read everything, you can understand a show with surprsingly little contextgo
+  </description>
+    </item>
+    
+    <item>
       <title>master&#39;s thesis</title>
       <link>/posts/master_s_thesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2648,7 +2728,7 @@ Backlinks  Hinnebusch - Identity and State Formation in Multi‐sectarian Societ
       
       <guid>/posts/20200415213332-nationalism_and_outsiders_in_the_middle_east/</guid>
       <description>Tags: classes
-Memory  Does memory provide realness to a specific identity? Much of the historiography is written by Israeli authors The present is interpreted through the past Arab nationalis, palestinian nationalism, arab-palestinian nationalism, and the historical realities of this  Backlinks  Simon - Imposition of Nationalism on Non-Nation State Chaterjee - The Nations and Its Fragments Dodge - Rethinking Political Identities in Iraq After 2003 Saunders - The Ummah as a Nation: A reappraisal in the wake of the &amp;lsquo;Cartoons Affair&amp;rsquo; Hinnebusch - Identity and State Formation in Multi‐sectarian Societies nationalism and outsiders in the middle east - thesis proposal Nagel, Ferran - Politics of Religion and Nationalism Toufic - Palestine Ltd: Neoliberalism and Nationalism  </description>
+Memory  Does memory provide realness to a specific identity? Much of the historiography is written by Israeli authors The present is interpreted through the past Arab nationalis, palestinian nationalism, arab-palestinian nationalism, and the historical realities of this  Marxist and Modernist Views of Nationalism: Modernist  Nations and nationalism are products of modernity  Marxist  Nations and nationalism are products of capitalism  A bourgeoise is required    Instrumentalism  Since ethnicity and nationalism are results of circumstance  Can be wielded and used by elites In invoking this, they are evoked and given form    Backlinks  Dodge - Rethinking Political Identities in Iraq After 2003 nationalism and outsiders in the middle east - thesis proposal nationalism and outsiders in the middle east - thesis Hinnebusch - Identity and State Formation in Multi‐sectarian Societies Toufic - Palestine Ltd: Neoliberalism and Nationalism Chaterjee - The Nations and Its Fragments Saunders - The Ummah as a Nation: A reappraisal in the wake of the &amp;lsquo;Cartoons Affair&amp;rsquo; Simon - Imposition of Nationalism on Non-Nation State Nagel, Ferran - Politics of Religion and Nationalism  </description>
     </item>
     
     <item>
@@ -2872,6 +2952,17 @@ What is historiography good for?
     </item>
     
     <item>
+      <title>open data kit</title>
+      <link>/posts/open_data_kit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/open_data_kit/</guid>
+      <description>Tags: computers
+Way for researchers to collaborate and collect data
+ https://odkcentral.docs.apiary.io/#reference/forms-and-submissions/forms https://docs.getodk.org/central-api/ https://en.wikipedia.org/wiki/ODK%5F(software)  </description>
+    </item>
+    
+    <item>
       <title>openapi</title>
       <link>/posts/openapi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2985,6 +3076,16 @@ Matt Might stated that computer programmers tend to optimize for the discrete pa
       
       <guid>/posts/pandas/</guid>
       <description>Tags: ml</description>
+    </item>
+    
+    <item>
+      <title>paper mario orgami king</title>
+      <link>/posts/paper_mario_orgami_king/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/paper_mario_orgami_king/</guid>
+      <description>Tags: personal
+ Paper mario orgami king battles use &amp;ldquo;good&amp;rdquo; and &amp;ldquo;perfect&amp;rdquo; for when the battles in up properly How well can we solve this via SMT? Two main targets:  Hammer 2x2 Boots 1x4   N moves:  4 rings Up/down Left right   Possible board states:  12 ring spokes 4 ring slots per spoke 48 total positions   Via constraints  12x4 array  0 as the horizontal index rotating clockwise   solve s.</description>
     </item>
     
     <item>
@@ -3111,6 +3212,16 @@ Classes  https://www.linkedin.com/learning/photography-foundations-mobile-photog
       <guid>/posts/physalia_amazon_ebs/</guid>
       <description>Tags: algorithms, distributed systems
 https://www.usenix.org/conference/nsdi20/presentation/brooker</description>
+    </item>
+    
+    <item>
+      <title>physics</title>
+      <link>/posts/physics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/physics/</guid>
+      <description>Tags: root
+Backlinks  information paradox  </description>
     </item>
     
     <item>
@@ -3256,7 +3367,7 @@ Describes the case studies of El Salvador, Mozambique, Cambodia, bosnia, and Som
       <guid>/posts/project_ideas/</guid>
       <description>Tags: root
 Random project ideas, notes, etc:
- https://news.ycombinator.com/item?id=23735676  </description>
+ https://news.ycombinator.com/item?id=23735676 https://news.ycombinator.com/item?id=23592788  </description>
     </item>
     
     <item>
@@ -3382,6 +3493,17 @@ Decision models:  Take some data, integrate the data, evaluate and make a decisi
     </item>
     
     <item>
+      <title>raven paradox</title>
+      <link>/posts/raven_paradox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/raven_paradox/</guid>
+      <description>Tags: epistime
+ https://www.instapaper.com/read/1303612550  Logical paradox about the scientific method:
+ If a raven is black, and your hypothesis is that &amp;ldquo;ravens are black&amp;rdquo;, then every raven you see that is black supports the hypothesis However, the cohort of this is that &amp;ldquo;if a thing is a raven, then it is black&amp;rdquo;  This means that non-raven non-black things support the hypothesis, which is nuts So inherently there is a ranking of evidence, not non-raven non-black things are weaker evidence than a black raven  A la bayesian inference   However, baysesian inference requires you to know the rough % of non-black non-ravens to black ravens,  This number can be estimated, but where is it from?</description>
+    </item>
+    
+    <item>
       <title>ray tracing</title>
       <link>/posts/ray_tracing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3469,6 +3591,16 @@ Backlinks  kyoto tycoon  </description>
     </item>
     
     <item>
+      <title>refactoring</title>
+      <link>/posts/refactoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/refactoring/</guid>
+      <description>Tags: computers
+Books  https://martinfowler.com/books/refactoring.html  </description>
+    </item>
+    
+    <item>
       <title>religion</title>
       <link>/posts/religion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3535,6 +3667,18 @@ Example RFC: https://static1.squarespace.com/static/56ab961ecbced617ccd2461e/t/5
       <guid>/posts/s_curves/</guid>
       <description>Tags: finance
 Interest rate sensitive products are epxosed to market rates by different curves S (swap and basis spread curves) and bond curves (F and M) Definition  Swap curve built out of fixed coupon rates of market quoted interest rate swaps across different maturities in time. Consists of a fixed leg and a floating leg Swpa curves are constructed in segments from the market prices of various fixed income instruments Short end of swap curve (&amp;lt; 3 months) is calibrated on unsecurted deposit rates Middle area of the curve (3months - 2 years) isdervied from a combination of forward rate agreement congrats and interest rate futures Long end of the curve is constructed from observed quotes of swap rates (out to 10 years or more) Single currency basis spread curves are constructed from market quotes for basis swaps  Basis swap is a floating-floating interest rate swap under the floating rate payments are referenced to different bases   Used for  Pricing fixed income instruments such as corporate bonds, mortgage securities, and other securitized products Price cash flows, swaps, FX forwards, and other derivatives    </description>
+    </item>
+    
+    <item>
+      <title>safer oil tanker</title>
+      <link>/posts/safer_oil_tanker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/safer_oil_tanker/</guid>
+      <description>Tags: yemen
+Oil tanker in yemen, off the coast, stranded 5 nautical miles. Seawater entered the engine department in 2015. UN has been asking for access to move, but Houthi controlled.
+ Near Hoedida  Refs:
+ https://ceobs.org/is-an-ageing-oil-tanker-threatening-an-environmental-disaster-off-the-coast-of-yemen/ https://www.atlanticcouncil.org/blogs/energysource/gaming-out-the-disaster-what-could-go-wrong-with-the-fso-safer/ https://www.instapaper.com/read/1327991103  </description>
     </item>
     
     <item>
@@ -3637,6 +3781,17 @@ In the absence of the twelfth imam, the duty of guiding such a nation must fall 
       <guid>/posts/sematech/</guid>
       <description>Tags: computers, chips
  https://www.technologyreview.com/2011/07/25/192832/lessons-from-sematech/ Government/industry consortium that helped bring about semiconductor revival in the US  </description>
+    </item>
+    
+    <item>
+      <title>Senegal and Mauritania</title>
+      <link>/posts/senegal_and_mauritania/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/senegal_and_mauritania/</guid>
+      <description>Tags: ethnicity, nationalism, and conflict
+Large ethno national sentinent and conflict in 1989-1991, started with dispute of farmers, lead to large scale evictions of Mauritanians from Senegal and afro-Mauritanians from Mauritania
+Colonial Experience  Largely shifting borders before the French came in French created two states with the Senegal river as the dividing line Senegal considered &amp;ldquo;black&amp;rdquo; Mauritania considered for the &amp;ldquo;Moors&amp;rdquo; Created various ethnic regimes in Mauritania  Blacks in Mauritania were taxed as residents of Senegal   Post colonial state powers in Mauritania are mostly held in the Moors  Setup  Drought in the 70&amp;rsquo;s and 80&amp;rsquo;s pushed many into the Senegal river valley Resource scarcity and 1987 coup attempt in Mauritania lead to spreading tensions  Ethnopolitical Entrepneurs  Arab nationalists within Mauritania Political powers in Senegal Land ownership reformers  What does this indicate?</description>
     </item>
     
     <item>
@@ -3903,12 +4058,12 @@ Backlinks  java  </description>
     
     <item>
       <title>tailwind</title>
-      <link>/posts/tailwind/</link>
+      <link>/posts/tailwind%5C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/tailwind/</guid>
+      <guid>/posts/tailwind%5C/</guid>
       <description>Tags: frontend
-Examples  https://tailwindcomponents.com/component/todo-list-app https://tailwindcomponents.com/component/clone-github-new-design https://github.com/tailwindcss/setup-examples/tree/master/examples/laravel-postcss-only  Setup  https://tailwindcss.com/course/setting-up-tailwind-and-postcss/ https://tailwindcss.com/docs/installation/ https://tailwindcss.com/docs/controlling-file-size/  Tools  https://github.com/postcss/postcss#usage  License  https://www.notion.so/Tailwind-UI-License-644418bb34ad4fa29aac9b82e956a867  </description>
+Examples  https://tailwindcomponents.com/component/todo-list-app https://tailwindcomponents.com/component/clone-github-new-design https://github.com/tailwindcss/setup-examples/tree/master/examples/laravel-postcss-only  Setup  https://tailwindcss.com/course/setting-up-tailwind-and-postcss/ https://tailwindcss.com/docs/installation/ https://tailwindcss.com/docs/controlling-file-size/  Tools  https://github.com/postcss/postcss#usage https://tailzilla.app  License  https://www.notion.so/Tailwind-UI-License-644418bb34ad4fa29aac9b82e956a867  </description>
     </item>
     
     <item>
@@ -3928,7 +4083,7 @@ Backlinks  gorno-badakhasan  </description>
       
       <guid>/posts/talks/</guid>
       <description>Tags: grad school
-Academic Talks:  http://matt.might.net/articles/academic-presentation-tips/ Described in Fiebelman - A PhD is Not Enough  </description>
+Academic Talks:  http://matt.might.net/articles/academic-presentation-tips/ Described in Fiebelman - A PhD is Not Enough  Collectors  https://techyaks.com/all-year-tytop.html  Backlinks  Dayon et al: Career Foreign Fighters Navigating Islamic Interpretation During the Pandemic Abu-Rish: Lebanon&amp;rsquo;s Uprising in a Time of Crisis  </description>
     </item>
     
     <item>
@@ -4257,7 +4412,7 @@ Backlinks  full text static search  </description>
       
       <guid>/posts/website_design_ideas/</guid>
       <description>Tags: personal
- https://okomestudio.net/#/  Simple, small   https://hypha.coop/  Retro, bold   https://www.redclawtech.com/  Clear, to the point    </description>
+ https://okomestudio.net/#/  Simple, small   https://hypha.coop/  Retro, bold   https://www.redclawtech.com/  Clear, to the point   https://nodesign.dev  </description>
     </item>
     
     <item>

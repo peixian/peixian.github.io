@@ -12,7 +12,7 @@
 <title>Posts | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.3b4d5ae8e835af5f362db1168f7f3c03960fc3f8ee6665588e569e038a6b4c92.js" integrity="sha256-O01a6Og1r182LbEWj388A5YPw/juZmVYjlaeA4prTJI="></script>
+<script defer src="/en.search.min.e31120e8813951cb456d48f3ba15a15e86660f2f281ff7732d7a6b3e4892ac03.js" integrity="sha256-4xEg6IE5UctFbUjzuhWhXoZmDy8oH/dzLXprPkiSrAM="></script>
 <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="الـبـحـر الـزاخـر" />
 <!--
 Made with Book Theme
@@ -135,6 +135,99 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
+      <a href="/posts/epstine_range/">Epstine: Range</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: books
+ https://commoncog.com/blog/range-book-summary/ &ldquo;Instead, the strongest predictor of success was a specialist who repeatedly took their expertise in one core domain and applied it to a different domain&rdquo; Filled with anecdotes Takeways:  The idea that ‘slow’ learning is what is valuable when it comes to developing foundational skills. The whole notion of ‘match quality’ as a counterpoint to ‘grit’. The idea that analogical thinking is powerful, and that it depends on a large-enough set of experiences and ideas to perform well.
+        <a href="/posts/epstine_range/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/ethnicity_nationalism_and_conflict/">ethnicity, nationalism, and conflict</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: conflict and violence
+Hosbawn 1992:  Nationalism with political theory Ethnicity with socialism  Notes   Ethnic groups do not have a strict political order
+  Constructions typically emphasize the boundaries between them
+  Disaster Nationalism https://www.newstatesman.com/culture/observations/2020/03/rise-disaster-nationalism-why-authoritarian-right-resurgent
+  Pitfalls  There is a risk of not taking the violence of actors seriously  Difference between the categories of analysis and categories of practice   Extremely risky to dimiss the agencies of actual actors Mahmoud Mamdani - Political violence in africa is a continuation of colonial rule  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/europe/">europe</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: root
+Backlinks  france  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/exactly_once_semantics_in_kafka/">exactly once semantics in kafka (atomic broadcast)</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: Kafka, atomic broadcast
+ https://www.instapaper.com/read/1298476349  Exactly once semantics in Kafka are defined in terms of atomic broadcast:
+ Messages are published and they will be delivered one time exactly by one or more receiving applications.
+ Design docs:
+ https://cwiki.apache.org/confluence/display/KAFKA/KIP-98+-+Exactly+Once+Delivery+and+Transactional+Messaging https://cwiki.apache.org/confluence/display/KAFKA/KIP-129%3A+Streams+Exactly-Once+Semantics https://docs.google.com/document/d/11Jqy%5FGjUGtdXJK94XGsEIK7CP1SnQGdp2eF0wSw9ra8/edit#heading=h.xq0ee1vnpz4o  Notes  Original impossibility of consensus with one faulty process describes failures within extremely limited scenarios few main problems:  If the producer writes to the log but doesn&rsquo;t get an ack  solved by the idempotence of kafka, producer can write as much as it wants (and kafka will just drop duplicates)   consumer reads from the log but doesn&rsquo;t update its offset  Consumer ensures the dervied states it creates and the offsets in the upstream need to stay in sync so we can:  store offsets in the same db as derive state, and only update them as a transaction, restarting reads current offset from the db write both state updates and offsets in idempotent fashion   not technically &ldquo;exactly once&rdquo;, more like &ldquo;effectively once&rdquo;   leverages kafka streams  3 components:  log compaction in kafka allows it to be used for a journal and snapshot state changes reading data from kafka = advancing offsets writing to kafka   wrapping all 3 in a kafka stream as a whole transaction allows for the atomic broadcasts      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/exarchia/">exarchia</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: greece
+Central part of Athens, home to militant leftists, radical politics, and intellectual activism, partly due to Athens Polytechnic
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
       <a href="/posts/20200415133402-fall_2020_classes/">fall 2020 classes</a>
     </h2>
     
@@ -225,512 +318,48 @@ Possible classes for fall 2020: @ NYU
     </p>
   </article>
   
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/20200414140816-fed_powers/">FED Powers</a>
-    </h2>
-    
-
 
   
-
-  
-
-
-    <p>Tags: finance
- Current main street lending programs are new FED used to have powers to buy municipal bonds, but those were removed in 1958  https://www.instapaper.com/read/1295232505/12653295 Big change of monetary policy, loosening the financial constraints of state and local governments    
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/20200419212203-fiebelman_a_phd_is_not_enough/">Fiebelman - A PhD is Not Enough</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: books, grad school
- Always a place a theme to your work Postdoctoral advisors do not necessarily have your best interests in mind Aggressively try to find a mentor  Most professors take a darwinian approach because it is less work and they are not at fault Make sure the mentor teaches survival skills   Postdocs are cheap labor  Important notes:  Thesis presentation Not overtly long PhD time     If fields are being changed, start reading before the postdoc position starts Clocks start ticking the moment you leave grad school!
-        <a href="/posts/20200419212203-fiebelman_a_phd_is_not_enough/">...</a>
-      
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/file_systems/">file systems</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: computers
-http://www.nobius.org/dbg/practical-file-system-design.pdf
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/20200415154751-finance/">finance</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: root
-Backlinks  FED Powers airlines bailout - 2020 black scholes brady plan commodities emerging markets futures iraqi bonds oil paris club s curves special economic zones imf economics institute of international finance (iif)  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/fish/">fish</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: Computers
- Globbing  Redirection Bash diff &lt;(dig google.com) &lt;(dig www.google.com) Fish  https://fishshell.com/docs/current/cmds/psub.html  diff (dig google.com | psub) ( dig www.google.com | psub) 
-    </p>
-  </article>
-  
-
-  
-
 <ul class="pagination">
-    
-    <li class="page-item">
-        <a href="/posts/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li class="page-item">
+  <li class="page-item">
+    <a href="/posts/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+  </li>
+  <li class="page-item">
     <a href="/posts/page/11/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/posts/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/posts/page/2/">2</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/posts/page/3/">3</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/posts/page/11/">11</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item active"><a class="page-link" href="/posts/page/12/">12</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/posts/page/13/">13</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/posts/page/42/">42</a></li>
-    
-    
-    <li class="page-item">
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/posts/">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/posts/page/2/">2</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/posts/page/3/">3</a>
+  </li>
+  <li class="page-item disabled">
+    <span aria-hidden="true">&nbsp;&hellip;&nbsp;</span>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/posts/page/11/">11</a>
+  </li>
+  <li class="page-item active">
+    <a class="page-link" href="/posts/page/12/">12</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/posts/page/13/">13</a>
+  </li>
+  <li class="page-item disabled">
+    <span aria-hidden="true">&nbsp;&hellip;&nbsp;</span>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/posts/page/44/">44</a>
+  </li>
+  <li class="page-item">
     <a href="/posts/page/13/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-        <a href="/posts/page/42/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
+  </li>
+  <li class="page-item">
+    <a href="/posts/page/44/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+  </li>
 </ul>
 
 

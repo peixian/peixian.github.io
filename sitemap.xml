@@ -299,6 +299,10 @@
   </url>
   
   <url>
+    <loc>/posts/correlation_causation/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/covid/</loc>
   </url>
   
@@ -387,6 +391,14 @@
   </url>
   
   <url>
+    <loc>/posts/e_activity_3/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/e_activity_4_who_bears_responsibility_for_refugee_violence_lebanon/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/economics/</loc>
   </url>
   
@@ -432,6 +444,14 @@
   
   <url>
     <loc>/posts/epistime/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/epstine_range/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/ethnicity_nationalism_and_conflict/</loc>
   </url>
   
   <url>
@@ -731,6 +751,10 @@
   </url>
   
   <url>
+    <loc>/posts/information_paradox/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/institute_of_international_finance/</loc>
   </url>
   
@@ -923,6 +947,10 @@
   </url>
   
   <url>
+    <loc>/posts/mass_immersion_approach/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/master_s_thesis/</loc>
   </url>
   
@@ -1111,6 +1139,10 @@
   </url>
   
   <url>
+    <loc>/posts/open_data_kit/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/openapi/</loc>
   </url>
   
@@ -1152,6 +1184,10 @@
   
   <url>
     <loc>/posts/pandas/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/paper_mario_orgami_king/</loc>
   </url>
   
   <url>
@@ -1200,6 +1236,10 @@
   
   <url>
     <loc>/posts/physalia_amazon_ebs/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/physics/</loc>
   </url>
   
   <url>
@@ -1307,6 +1347,10 @@
   </url>
   
   <url>
+    <loc>/posts/raven_paradox/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/ray_tracing/</loc>
   </url>
   
@@ -1339,6 +1383,10 @@
   </url>
   
   <url>
+    <loc>/posts/refactoring/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/religion/</loc>
   </url>
   
@@ -1364,6 +1412,10 @@
   
   <url>
     <loc>/posts/s_curves/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/safer_oil_tanker/</loc>
   </url>
   
   <url>
@@ -1404,6 +1456,10 @@
   
   <url>
     <loc>/posts/sematech/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/senegal_and_mauritania/</loc>
   </url>
   
   <url>
@@ -1511,7 +1567,7 @@
   </url>
   
   <url>
-    <loc>/posts/tailwind/</loc>
+    <loc>/posts/tailwind%5C/</loc>
   </url>
   
   <url>
