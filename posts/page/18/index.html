@@ -12,7 +12,7 @@
 <title>Posts | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.d19fa3d5d7502868eaa6c5d9c342afbb50159166ff957c29a97877d71d17cb05.js" integrity="sha256-0Z&#43;j1ddQKGjqpsXZw0Kvu1AVkWb/lXwpqXh31x0XywU="></script>
+<script defer src="/en.search.min.0fd53c00d40b0939d18d64586c193ee16a8bec22bf115850c1414770c4adf9ff.js" integrity="sha256-D9U8ANQLCTnRjWRYbBk&#43;4WqL7CK/EVhQwUFHcMSt&#43;f8="></script>
 <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="الـبـحـر الـزاخـر" />
 <!--
 Made with Book Theme
@@ -135,7 +135,7 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
-      <a href="/posts/20200414223819-hassan_longing_for_the_lost_caliphate/">Hassan - Longing for the Lost Caliphate</a>
+      <a href="/posts/greedy_search/">greedy search</a>
     </h2>
     
 
@@ -145,14 +145,14 @@ https://github.com/alex-shpak/hugo-book
   
 
 
-    <p>Tags: books, Post-Ottoman Near East
-Backlinks  Nationalism and Outsiders in the Middle East - Midterm Draft Saunders - The Ummah as a Nation: A reappraisal in the wake of the &lsquo;Cartoons Affair&rsquo;  
+    <p>Tags: Computers, algorithms
+Backlinks  hierarchical navigable small-world graph (HNSW)  
     </p>
   </article>
   
   <article class="markdown book-post">
     <h2>
-      <a href="/posts/20200415114157-heart_rate_zones/">heart rate zones</a>
+      <a href="/posts/bfp/">Gregg - BFP Performance Tools</a>
     </h2>
     
 
@@ -162,19 +162,14 @@ Backlinks  Nationalism and Outsiders in the Middle East - Midterm Draft Saunders
   
 
 
-    <p>Tags: Workouts
-Align heart rate zones with training periods.
-4 Zones Zone 1 Basic endurance, 55-75% of max HR
- Low Speed. At low intensities, predominately using slow twitch (ST) muscle fibers, the rate of ATP production is modest.  Zone 2 No man&rsquo;s land, 75-80% of max HR
- Note that this can &ldquo;feel&rdquo; like training, but the gains are small here. Zone 1 is a safer bet.  Zone 3 Uppermost aerobic training, 80-90% of max HR
-        <a href="/posts/20200415114157-heart_rate_zones/">...</a>
-      
+    <p>Tags: computers, books, bpf
+Chapter 1 - Intro  Turned into a general purpose execution engine in 2014 VM  Tracing, Snooping, Sampling, Profiling, and Observability  Tracing: event based recording  Tracing and snooping are the same thing strace, tcp-dump, etc   Sampling: tools that take subsets of a measurements to paint a coarse picture  Only rough picture   Observability: understanding a system through observation  Includes tracing tools, sampling tools, and fixed counters Does not include benchmark tools    BCC/BFPTrace/IO Visor BCC: BFP Compiler Collection  First high levle tracing framework developed for BPF  Provides C, with interfaces for Python, lua, and C++ Much more complex than bfptrace Meant for complex tools    bfptrace  Newer frontend, special purpose high level programming langauge meant for one line scripts  IO Visor  Linux foundation project on GH Encompases both bcc and bpftrace  BCC execsnoop(8)  Traces execve(2) system call Output reveals which processes were executed while tracing this prints out per-event data, but other tools allow for summaries  biolatency(8)  Traces block io latency Displays an ASCII histogram of sizes  Visability  BPF tracing gives you visibility across the full software stack Supports:  Applications tracing with runtimes Application tracing with compiled code /lib/* information  same as ltrace   syscalls interface  same as strace or perf kernel scheduler, file systems, TCP/IP, etc  same as ftrace or perf     hardware tracing  perf, sar, /proc counters      Dynamic instrumentation: kprobes and uprobes  Dynamic instrumentation allows for probing of live running software Examples:    Probe Description     kprobe:vfs_read Beginning of vfs_read()   kretprobe:vfs_read End of vfs_read()   uprobe:/bin/bash:readline Beginning of readline() function in bash   uretprobe:/bin/bash:readline End of readline() function in bas      Static instrumentation: tracepoints and usdt  Function names change and dynamic instrumentation may not always be correct Can use tracepoints or user statically defined tracing:    Probe Description     tracepoint:syscalls:sys_enter_open instrument open(2) syscall   usdt:/usr/sbin/mysqld:mysql:query__start query__start probe      bpftrace  takes -e for execute -l for listing open tracepoints  
     </p>
   </article>
   
   <article class="markdown book-post">
     <h2>
-      <a href="/posts/hezbollah/">hezbollah</a>
+      <a href="/posts/gresham_s_law/">Gresham&#39;s Law</a>
     </h2>
     
 
@@ -184,14 +179,66 @@ Align heart rate zones with training periods.
   
 
 
-    <p>Tags: militias, lebanon
+    <p>Tags: finance
+ States that if the government has two payment instruments to circulate at the same rate, but one fundamentally worth more than the other, then &ldquo;bad&rdquo; currency drives out the &ldquo;good. Undervalued money will be hoarded or exported.  Backlinks  yemen bank notes  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/gui/">gui</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: computers
+Shoes:
+ http://shoesrb.com/ easy gui for very simple names  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/gulf_cooperation_council/">gulf cooperation council</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: middle east
+Backlinks  Ali Abudllah Saleh  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/gz_green_zone/">gz (green zone)</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: iraq
 Backlinks  Rayburn - Iraq After America  
     </p>
   </article>
   
   <article class="markdown book-post">
     <h2>
-      <a href="/posts/hierarchical_navigable_small_world_graph/">hierarchical navigable small-world graph (HNSW)</a>
+      <a href="/posts/habitus/">habitus</a>
     </h2>
     
 
@@ -201,18 +248,18 @@ Backlinks  Rayburn - Iraq After America
   
 
 
-    <p>Tags: ml, algorithms, approximate nearest neighbor
-  https://arxiv.org/abs/1603.09320
-  One of the fastest ANN&rsquo;s
-  uses a search index with multiple layers in a proximity graph
- each node in the graph corresponds to a query vector    Uses a zooming in approach
- start at entrypoint at the top layer and recursively perform a greedy search graph traversal until it reaches the local minimum      Backlinks  embedding text into vector spaces  
+    <p>Tags: sociology
+  https://en.wikipedia.org/wiki/Habitus%5F(sociology)
+  Habitus is the socially ingrained habits, skills, and dispositions
+  Created by Pierre Bourdieu
+  Consists of the hexis and more abstract mental abits
+  Backlinks  Dodge - Rethinking Political Identities in Iraq After 2003 Blumi - Ottoman Refugees, 1878-1939  
     </p>
   </article>
   
   <article class="markdown book-post">
     <h2>
-      <a href="/posts/higher-ed/">Higher Ed Readings</a>
+      <a href="/posts/hajdarpasic_reflections_on_the_ottoman_legacy_in_south_eastern_europe/">Hajdarpasic: Reflections on the Ottoman Legacy in South-eastern Europe</a>
     </h2>
     
 
@@ -222,50 +269,18 @@ Backlinks  Rayburn - Iraq After America
   
 
 
-    <p>Tags: grad school
- https://www.sup.org/books/title/?id=9404&amp;bottom%5Fref=recommended https://www.sup.org/books/title/?id=24607&amp;bottom%5Fref=recommended https://www.sup.org/books/title/?id=18531&amp;bottom%5Fref=recommended https://www.sup.org/books/title/?id=792&amp;bottom%5Fref=recommended  
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/hindyia_barrage/">hindyia barrage</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: irrigation in iraq
- 32°42'46.00&quot;N 44°16'1.00&quot;E     Constructed by Willcocks in 1911, finished in 1913 Constructed because the Euphrates splits into two channels south of Musayyib  Two braches, the Hilla and the Hindiya branch Closing of the salqawia canal diverted more water down the Euphrates  The lower-lying Hindiya branch took more water and started to slit up the Hilla branch Old, previously constructed barrage was not sufficient     Identified two terminal lakes for euphrates:  Lake Milh/بحيرة ملح‎/Lake Razzaz/Lake Abu Dilis Lake Habbaniya   Proposed to remove old Hindiya barrage after completion of the new, although Arabs objected to it as they had used the old barrage as a bridge    
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/hinnebusch_identity_and_state_formation_in_multi_sectarian_societies/">Hinnebusch - Identity and State Formation in Multi‐sectarian Societies</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: papers, Nationalism and Outsiders in the Middle East
- State formation and identity in MENA are not necessarily co-terminus  Sect and class are not necessarily orthonognal   Claims that the westphalian state was unnaturally applied to MENA 3 levels of identity  Supra-state  Islam, Ummah, Pan-Arabism, etc   State level  Nationalism, secularism, etc   Sub-state  Sectarian, tribal, etc     Hybrid states with multiple identities can exist for a surprisingly long time In the long run, strong, inclusive states and national identities work in tandem, alongside weak states and sectarianism.
-        <a href="/posts/hinnebusch_identity_and_state_formation_in_multi_sectarian_societies/">...</a>
+    <p>Tags: papers, europe, Post-Ottoman Near East, bosnia
+Talks about the nationalist power of Ottoman narratives, especially in light of places like Albania, Macedonia, etc.
+Concludes with that the idea of &lsquo;Ottoman ruins&rsquo; and &lsquo;countries emerging from the ruins&rsquo; is fundalmentally flawed, there is more for the past to teach us
+ Making Ottoman synonmyous with Islamic or Turkish influences is a defining hallmark of the 19th century Balkan nationalist projects that perceived the Ottoman Empire as a &lsquo;religiously, socially, and institutionally alien imposition on autochthonous Christian medieval socities.
+        <a href="/posts/hajdarpasic_reflections_on_the_ottoman_legacy_in_south_eastern_europe/">...</a>
       
     </p>
   </article>
   
   <article class="markdown book-post">
     <h2>
-      <a href="/posts/homogenous_time_blog_post/">Homogenous Time: Ibn Khaldun and Transaction Logs</a>
+      <a href="/posts/haplin_thirteen_ways_to_make_a_plural/">Haplin - Thirteen Ways to Make a Plural</a>
     </h2>
     
 
@@ -275,16 +290,14 @@ Backlinks  Rayburn - Iraq After America
   
 
 
-    <p>Tags: drafts, ibn khaldun, Pursely - Familiar Futures, DiCapua - Gatekeepers of the Arab Past, Cassandra, distributed systems
-What is homogenous time? If you take Sara Pursely&rsquo;s book Familiar Futures, homogenous time lies at the core of modern society today pursley_familiar_2019. She describes how by the standardization of homogenous time, capitalism, which is predicated upon &ldquo;uniform duration and endless repetition&rdquo;, has evolved. While her frame of analysis is the history of Iraq, I think it&rsquo;s a bit more interesting if we push past a pure historical or even anthropological frame.
-        <a href="/posts/homogenous_time_blog_post/">...</a>
-      
+    <p>Tags: books, arabic
+ Aiming for timing passages Read for strict speed, without comphrension  Increase the speed the brain can process arabic script 200 words per day   Deconstructing sentences  Identifying subjects, objects, verbs, etc Underlining each pronoun and drawing a line linking it back to each noun   Don&rsquo;t reach for the dictionary unless necessary Try to study abroad away from the capital Eschew perfection in terms of realistic goals  Fully fluent MSA and dialect is unrealistic, focus on the aspects that matter to you  Holding a conversation, conducting interviews, etc   Strong study base over a long period of time is required   Reaching C1 requires extensive practical use of the language Post B1, progress slows until vocab base and weekly practice reveals itself Normal to blur the colloquial and formal registers  
     </p>
   </article>
   
   <article class="markdown book-post">
     <h2>
-      <a href="/posts/how_to_make_a_complete_map_of_every_thought_you_think/">how to make a complete map of every thought you think</a>
+      <a href="/posts/hardware/">hardware</a>
     </h2>
     
 
@@ -294,27 +307,8 @@ What is homogenous time? If you take Sara Pursely&rsquo;s book Familiar Futures,
   
 
 
-    <p>Tags: articles
- Thoughts appear within a specific context, it&rsquo;s important to capture that context  Similar idea to the french archival science    
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/how_to_write_a_technical_paper/">how to write a technical paper</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: papers, writing
-Introduction  Two purposes:  Background and motivation Summary and outline   Background review should include:  trends open problems recent developments also introduce specific terminology   Summary:  Problem description Description of the solution Arguments about the imacpts   Close introduction with paper outline  Related Work  Gives a list of works that show what has happened in the field Provides a critque to the approaches in the literature, establishes the importance of the paper Show sthat the &ldquo;homework&rdquo; has been done Distinguish and describe all the different approaches to the problem  System Model  Describe all the hypothesis and assumptions of the environment for which the problem will be solved  Problem Statement  Often merged with the system model State the problem clearly, be exact in stating the question  Solution  Provide overview of solution Thorough description of the solution and its functionality  Analysis  Qualitative and quantitative Qualitative shows some properties of the solution  Profess of correctness   Quantitive shows some performance aspects of the solution  Performance analysis, which metrics?
-        <a href="/posts/how_to_write_a_technical_paper/">...</a>
-      
+    <p>Tags: computers
+Backlinks  chips  
     </p>
   </article>
   
@@ -352,13 +346,13 @@ Introduction  Two purposes:  Background and motivation Summary and outline   Bac
     <span aria-hidden="true">&nbsp;&hellip;&nbsp;</span>
   </li>
   <li class="page-item">
-    <a class="page-link" href="/posts/page/45/">45</a>
+    <a class="page-link" href="/posts/page/48/">48</a>
   </li>
   <li class="page-item">
     <a href="/posts/page/19/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
   </li>
   <li class="page-item">
-    <a href="/posts/page/45/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    <a href="/posts/page/48/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
   </li>
 </ul>
 
