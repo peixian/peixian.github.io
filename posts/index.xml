@@ -355,6 +355,16 @@ Outline  Archive intro Brief paragraph on each one of the people and themes   Th
     </item>
     
     <item>
+      <title>Archiving a Revolution: Smartphones, Social Media, &amp; Protest</title>
+      <link>/posts/archiving_a_revolution_smartphones_social_media_protest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/archiving_a_revolution_smartphones_social_media_protest/</guid>
+      <description>Tags: problems and methods
+Articles  https://www.middleeasteye.net/news/internet-interrupted-how-middle-east-countries-use-network-restrictions-clamp-down-dissent  many countries have similar network restrictions https://netblocks.org/reports/social-media-blocked-in-turkey-as-idlib-military-crisis-escalates-r8VWGXA5 signal&amp;rsquo;s DNS bypass -&amp;gt; open sooq turkey&amp;rsquo;s blocking of wikipedia earlier in the year sudanese resistance by organizing early    Thoughts  How are the current modes of archiving relating to photos captured by the protestors?  playing baby shark in iraq, lebanon music festival,   Privilaging of social media because that is what is accessible Does having images of Tahrir next to images of cats devalue Tahrir?</description>
+    </item>
+    
+    <item>
       <title>ariha</title>
       <link>/posts/ariha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -643,6 +653,16 @@ CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf  Backlinks  c
     </item>
     
     <item>
+      <title>capability trap blog post</title>
+      <link>/posts/capability_trap_blog_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/capability_trap_blog_post/</guid>
+      <description>Tags: writing
+ capability trap  fools managers working harder/working smarter/shortcuts/etc similarities to agile   software devs always have to balance between learning and working  https://embeddedartistry.com/blog/2020/11/16/what-is-the-proper-balance-between-working-and-learning/   software devs also have to balance working on technical debt vs new features  https://dev.to/developertea/maintainability-w-robby-russell-part-1 https://dev.to/developertea/maintainability-w-robby-russell-part-2   bottlenecks are the problem w/ capability  https://www.brookings.edu/series/bottlenecks-a-new-theory-of-equal-opportunity/ https://commoncog.com/blog/consume-what-you-can-do/ https://fortelabs.co/blog/theory-of-constraints-101/   In the past, job security came from not losing your job.</description>
+    </item>
+    
+    <item>
       <title>career advice</title>
       <link>/posts/career_advice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -847,6 +867,16 @@ Notes from the Iraqi conference: http://cih.columbia.edu/iraqi-studies-past-pres
 Day 2 What drives violence? Why do people become violent?
 Shame: Emotions of Morality and Violence papers
  Shame as a motivator  Desire to seek basic forms of dignity   Compares violence to a contagious diease (undetected)  Not very convincing tbh, the metaphor somewhat falls flat However, Bonnasse-Gahot et. al in 2005 had a study on how French riots followed a similar &amp;ldquo;contagion&amp;rdquo; model   Talks about how prisons have a cycle of punishment, harsh behaviors lead to harsh punishments Proposes 3 conditions of violence  Feel deeply ashamed of something Feel like they have no non-violent alternatives Lacks emotional capabilities at the time that inhibit the violent impulses   Fact note: before large scale woman&amp;rsquo;s shelters, the homicide rate between men/women were about the same.</description>
+    </item>
+    
+    <item>
+      <title>containerd</title>
+      <link>/posts/containerd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/containerd/</guid>
+      <description>Tags: kubernetes (k8s)
+ &amp;ldquo;Container runtime&amp;rdquo; below docker and kube above runc, Kata, Firecracker, gVisor Extensible resource manager originally built up alongisde docker new interface for managing containers and images most memory efficient and stable most stuff flows through the core communicates with grpc  CRI  Two grpc services image and runtime responsible for defining the pod and all cgroups invokes CNI after the first container is created  Resource management  current  CPU manager in kubelet strange, difficult to use   NRI  kubelet abstraction is too blurry hook into container lifecycle is the correct way dynamic topology and cpu pinning with NRI    Runtime  Starts up new runtime shims  OCI runtime shims  runc/kata/Firecracker      Plugin System  OCI spec outlines how to run a unpacked filesystem bundle  tar/gzip + overlayFS + runC   containerd makes external plugins as backend  Generic image layer support  OCI image layer described the media type  ShimV2 for runtime implementation  First class shim API  Arch  Shim has the most state API and client have the least state 1.</description>
     </item>
     
     <item>
@@ -2306,6 +2336,16 @@ Backlinks  Stoler: Colonial Archives and the Arts of Governance  </description>
     </item>
     
     <item>
+      <title>isa</title>
+      <link>/posts/isa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/isa/</guid>
+      <description>Tags: finance
+ https://www.instapaper.com/read/1362424487 https://careerkarma.com/[[blog/income-share-agreement-market-report-2019/#question_1  from market research firm   https://blog.edly.info/news/state-of-the-isa-market-2019-full-report  purdue&amp;rsquo;s isa  https://www.purdue.edu/dfa/types-of-aid/income-share-agreement/index.html https://www.purdue.edu/backaboiler/FAQ/index.html  senate bill 2114 of 116th congress  cosponored by chris coons, mark rubio, and mark warner  </description>
+    </item>
+    
+    <item>
       <title>islam</title>
       <link>/posts/islam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2488,13 +2528,13 @@ Backlinks  bpf (berkley packet filter)  </description>
     </item>
     
     <item>
-      <title>kubernentes (k8s)</title>
+      <title>kubernetes (k8s)</title>
       <link>/posts/kubernentes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/kubernentes/</guid>
       <description>Tags: computers
- https://github.com/ramitsurana/awesome-kubernetes https://k8s.af/ https://deploy.live/blog/kubernetes-networking-problems-due-to-the-conntrack/  </description>
+ https://github.com/ramitsurana/awesome-kubernetes https://k8s.af/ https://deploy.live/blog/kubernetes-networking-problems-due-to-the-conntrack/  Backlinks  pod lifecycles programming kubernetes  </description>
     </item>
     
     <item>
@@ -2610,6 +2650,17 @@ GH Super Linter  https://github.blog/2020-06-18-introducing-github-super-linter-
     </item>
     
     <item>
+      <title>lottie</title>
+      <link>/posts/lottie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/lottie/</guid>
+      <description>Tags: web
+http://airbnb.io/lottie/#/
+Tool that transforms After Effects animations into web and mobile animations</description>
+    </item>
+    
+    <item>
       <title>macbook butterfly keyboard repair</title>
       <link>/posts/macbook_butterfly_keyboard_repair/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2626,7 +2677,7 @@ GH Super Linter  https://github.blog/2020-06-18-introducing-github-super-linter-
       
       <guid>/posts/mahmoud_darwish/</guid>
       <description>Tags: people
-Palestinian poet
+Palestinian poet n
 Backlinks  palestine liberation organization (PLO)  </description>
     </item>
     
@@ -3516,6 +3567,16 @@ Backlinks  information paradox  </description>
     </item>
     
     <item>
+      <title>pod lifecycles</title>
+      <link>/posts/pod_lifecycles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pod_lifecycles/</guid>
+      <description>Tags: kubernetes (k8s)
+Three states  waiting running terminated  use kubectl describe    Terminating Gracefully  Cleanups? Resources? Forced termination? SIGTERM/SIGKILL Lifecycle  Set the grace period -&amp;gt; terminating state -&amp;gt; traffic preStop hook -&amp;gt; grace of 2 seconds send SIGTERM to pid 1 grace period sends SIGKILL API server deletes the pod&amp;rsquo;s API object    Health Probes  Kubelet brings up the containers and keeps them running, also responsible for restarts uses some Process Health Checks to check the status Stalls?</description>
+    </item>
+    
+    <item>
       <title>podcasts</title>
       <link>/posts/podcasts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3647,7 +3708,7 @@ Backlinks  Mamdani - Trans-African Slaveries Thinking Historically Problems and 
       <guid>/posts/problems_and_methods_archival_turn/</guid>
       <description>Tags: problems and methods
 Oct 7 - Archival Turn
-Papers  Stoler: Colonial Archives and the Arts of Governance Zaatari: History and Photographic Memory Azoulay: Archive  Questions  Archives hold unwritten context and not simply just document deposits. What about archives created for a specific purpose (like nationalist archives)?   Backlinks  Stoler: Colonial Archives and the Arts of Governance Zaatari: History and Photographic Memory Azoulay: Archive  </description>
+Papers  Stoler: Colonial Archives and the Arts of Governance Zaatari: History and Photographic Memory Azoulay: Archive  Questions  Archives hold unwritten context and not simply just document deposits. What about archives created for a specific purpose (like nationalist archives)?   Backlinks  Stoler: Colonial Archives and the Arts of Governance Zaatari: History and Photographic Memory Azoulay: Archive archives-introduction.org  </description>
     </item>
     
     <item>
@@ -3679,6 +3740,16 @@ Books  Bayat - Revolution without Revolutionaries  Questions  He makes the neoli
       <guid>/posts/professional_development_session_with_thanassis_cambanis/</guid>
       <description>Tags: grad school
  Viability and impact are two different things  Viability is whether you can get funded   Think tank millieuis mostly funder driven now started out as journo, then decided to get a masters spent 5 years not getting paid writing knowledge economy is hyper capitalized now Why do a phd?  Only for personal development Carefully weigh the fulfillment of the labor of a phd    </description>
+    </item>
+    
+    <item>
+      <title>programming kubernetes</title>
+      <link>/posts/programming_kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/programming_kubernetes/</guid>
+      <description>Tags: kubernetes (k8s)
+Chapter 1  Building native apps that speak to both the kubelet and the API server Extension points  cloud-controller-manager integrates w/ the cloud kubelet binary lets network/devices/storage and container runtimes kubectl has plugins extensions on API server custom resources and controllers custom API servers scheduler extensions    Controller and Operators  Controllers implement a control loop, watching the shared state of the cluster through the API server and making changes in an attempt to move the current state towards the desired state  Controllers act on core resources Operators are controllers that encode some operational knowledge    The control loop  Read state (hopefully event driven) Change state Update status via API server in etcd repeat    Data structures used by the controller</description>
     </item>
     
     <item>
@@ -3721,6 +3792,16 @@ Ottoman army officers like Yassine al-Hashimi shaped the Middle East.</descripti
       <guid>/posts/20200414223655-pursely_familiar_futures/</guid>
       <description>Tags: iraq, books, Post-Ottoman Near East
  Talks about the dujayla land project Mutltiple &amp;ldquo;times&amp;rdquo;  Such as ibn khaldun    Backlinks  Simon - Imposition of Nationalism on Non-Nation State al-Husri Humanism in Ruins - Discussion Questions  </description>
+    </item>
+    
+    <item>
+      <title>Pyretic</title>
+      <link>/posts/pyretic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pyretic/</guid>
+      <description>Tags: python
+ http://frenetic-lang.org/pyretic/ http://frenetic-lang.org/  Allows people to use frenetic for software defined networks</description>
     </item>
     
     <item>
@@ -4611,6 +4692,16 @@ Backlinks  heart rate zones  </description>
       <guid>/posts/travel/</guid>
       <description>Tags: personal
 Backlinks  visa&amp;rsquo;s  </description>
+    </item>
+    
+    <item>
+      <title>trench warfare problems blog post</title>
+      <link>/posts/trench_warfare_problems_blog_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/trench_warfare_problems_blog_post/</guid>
+      <description>Tags: writing
+ most problems are trench warfare problems now  lots of fighting for little gain long and laborous leads to people consistently searching for new markets leads to building of &amp;ldquo;career moats&amp;rdquo; and &amp;ldquo;the dip&amp;rdquo; physicists elide this problem via being blinded by math   recongize when a problem is a trench warfare problem low hanging fruit is gone benefits of problems being in trench warfare  no beginner&amp;rsquo;s path is new  well tread, any amount of info is out there   largely shifted to discoverability and learning to rank style problems    </description>
     </item>
     
     <item>

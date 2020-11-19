@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tags: kubernetes (k8s)
+Chapter 1  Building native apps that speak to both the kubelet and the API server Extension points  cloud-controller-manager integrates w/ the cloud kubelet binary lets network/devices/storage and container runtimes kubectl has plugins extensions on API server custom resources and controllers custom API servers scheduler extensions    Controller and Operators  Controllers implement a control loop, watching the shared state of the cluster through the API server and making changes in an attempt to move the current state towards the desired state  Controllers act on core resources Operators are controllers that encode some operational knowledge    The control loop  Read state (hopefully event driven) Change state Update status via API server in etcd repeat    Data structures used by the controller"><meta property="og:title" content="programming kubernetes" />
+<meta property="og:description" content="Tags: kubernetes (k8s)
+Chapter 1  Building native apps that speak to both the kubelet and the API server Extension points  cloud-controller-manager integrates w/ the cloud kubelet binary lets network/devices/storage and container runtimes kubectl has plugins extensions on API server custom resources and controllers custom API servers scheduler extensions    Controller and Operators  Controllers implement a control loop, watching the shared state of the cluster through the API server and making changes in an attempt to move the current state towards the desired state  Controllers act on core resources Operators are controllers that encode some operational knowledge    The control loop  Read state (hopefully event driven) Change state Update status via API server in etcd repeat    Data structures used by the controller" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/programming_kubernetes/" />
+
+<title>programming kubernetes | الـبـحـر الـزاخـر</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
+<script defer src="/en.search.min.5525a6e89c0852fd5d6265b99eabd200fe1127b55d898be6c232a9e46a4e9752.js" integrity="sha256-VSWm6JwIUv1dYmW5nqvSAP4RJ7VdiYvmwjKp5GpOl1I="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+    <a href="/">
+        <img src="/svg/icon.svg" alt="icon" id="raccoon" />
+    <span>الـبـحـر الـزاخـر</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>programming kubernetes</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#chapter-1">Chapter 1</a>
+      <ul>
+        <li><a href="#controller-and-operators">Controller and Operators</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/programming_kubernetes/">programming kubernetes</a>
+  </h1>
+  
+
+
+  
+
+  
+
+
+  <p><p>Tags: <a href="/posts/kubernentes/">kubernetes (k8s)</a></p>
+<h2 id="chapter-1">Chapter 1</h2>
+<ul>
+<li>Building native apps that speak to both the kubelet and the API server</li>
+<li>Extension points
+<ul>
+<li><code>cloud-controller-manager</code> integrates w/ the cloud</li>
+<li><code>kubelet</code> binary lets network/devices/storage and container runtimes</li>
+<li><code>kubectl</code> has plugins</li>
+<li>extensions on API server</li>
+<li>custom resources and controllers</li>
+<li>custom API servers</li>
+<li>scheduler extensions</li>
+</ul>
+</li>
+</ul>
+<h3 id="controller-and-operators">Controller and Operators</h3>
+<ul>
+<li>Controllers implement a control loop, watching the shared state of the cluster through the API server and making changes in an attempt to move the current state towards the desired state
+<ul>
+<li>Controllers act on core resources</li>
+<li>Operators are controllers that encode some operational knowledge</li>
+</ul>
+</li>
+</ul>
+<h4 id="the-control-loop">The control loop</h4>
+<ul>
+<li>Read state (hopefully event driven)</li>
+<li>Change state</li>
+<li>Update status via API server in etcd</li>
+<li>repeat</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Data structures used by the controller</p>
+<ul>
+<li>Informers
+<ul>
+<li>Obtains the state of a cluster, often with a resync mechanism</li>
+</ul>
+</li>
+<li>Work queues
+<ul>
+<li>used for event handler that handles the queuing of state changes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>State transitions</p>
+<ul>
+<li>k8s iteratively determines what is the next command to run, when no commands can be run, cluster is in <em>steady state</em></li>
+<li>Kubernetes objects
+<ul>
+<li>kube object store is a set of kube objects
+<ul>
+<li>kube objects are data records that come in <code>kinds</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>controller transitions can cascade into one another, state transition from one controller can cause another to happen</li>
+<li>therefore kube objects are records of intent, not records of fact</li>
+<li>ultimately kube does not make coordinated efforts to transition into a desired state</li>
+</ul>
+</li>
+</ul>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#chapter-1">Chapter 1</a>
+      <ul>
+        <li><a href="#controller-and-operators">Controller and Operators</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
