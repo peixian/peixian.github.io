@@ -950,7 +950,17 @@ Turkish politics hold contradictory viewpoints of Ottomanism, esepcially with th
       
       <guid>/posts/databases/</guid>
       <description>Tags: Computers
-MariaDB  https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/  Calcite  https://calcite.apache.org  Backlinks  Cassandra postgres  </description>
+Class  https://15721.courses.cs.cmu.edu/spring2019/schedule.html  MariaDB  https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/  Calcite  https://calcite.apache.org  Backlinks  Cassandra postgres dataflow  </description>
+    </item>
+    
+    <item>
+      <title>dataflow</title>
+      <link>/posts/dataflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dataflow/</guid>
+      <description>Tags: Databases, distributed systems
+ https://github.com/TimelyDataflow/timely-dataflow  </description>
     </item>
     
     <item>
@@ -1471,7 +1481,7 @@ http://www.nobius.org/dbg/practical-file-system-design.pdf</description>
       
       <guid>/posts/20200415154751-finance/</guid>
       <description>Tags: root
-Backlinks  FED Powers airlines bailout - 2020 black scholes brady plan commodities emerging markets futures iraqi bonds oil paris club s curves special economic zones imf economics institute of international finance (iif)  </description>
+ https://en.wikipedia.org/wiki/Bucket%5Fshop%5F(stock%5Fmarket) https://en.wikipedia.org/wiki/Secular%5Fstagnation  Backlinks  special economic zones Gresham&amp;rsquo;s Law futures s curves FED Powers black scholes economics iraqi bonds emerging markets airlines bailout - 2020 fed helicopter money march-april 2020 commodities imf yemen bank notes brady plan oil mortages Barber et al: Trading is Hazardous to Your Wealth institute of international finance (iif) payment processors paris club isa  </description>
     </item>
     
     <item>
@@ -2115,6 +2125,16 @@ Discussion questions From Erin   Is the idea that to be post-ottoman in contempo
       <description>Tags: disaster response
 What is ICS?  Used for all kinds of incidents, applicable for all events, not only just for emergencies Establishes common processes for incident level planning Used to manage any type of incident  ICS (IS-100)   National Incident Management System
       Gives a unified chain of command Managable span of control Establishes common terminology    Incident Action Planning Managable Span of Control  Refers to number of individuals that one supervisor can manage effectively during an incidient  Comprehensive Resource Management Entails:</description>
+    </item>
+    
+    <item>
+      <title>images</title>
+      <link>/posts/images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/images/</guid>
+      <description>Tags: computers
+ Raster library: https://gdal.org/ satellites imagery: https://github.com/plant99/felicette  </description>
     </item>
     
     <item>
@@ -3671,6 +3691,16 @@ Describes the case studies of El Salvador, Mozambique, Cambodia, bosnia, and Som
     </item>
     
     <item>
+      <title>presentation tools</title>
+      <link>/posts/presentation_tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/presentation_tools/</guid>
+      <description>Tags: computers
+ https://www.deckset.com/ https://github.com/marp-team/marp https://github.com/jaspervdj/patat https://github.com/vinayak-mehta/present  https://github.com/vinayak-mehta/present/issues/43   https://github.com/connorferster/handcalcs  </description>
+    </item>
+    
+    <item>
       <title>pricing software</title>
       <link>/posts/pricing_software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4356,6 +4386,16 @@ Backlinks  india  </description>
       <guid>/posts/south_korea/</guid>
       <description>Tags: east asia
 Backlinks  1997 asian financial crisis  </description>
+    </item>
+    
+    <item>
+      <title>spacetime</title>
+      <link>/posts/spacetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/spacetime/</guid>
+      <description>Tags: physics
+ https://timhutton.github.io/GravityIsNotAForce/ https://news.ycombinator.com/item?id=24821141  </description>
     </item>
     
     <item>

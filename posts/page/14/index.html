@@ -12,7 +12,7 @@
 <title>Posts | الـبـحـر الـزاخـر</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
-<script defer src="/en.search.min.5525a6e89c0852fd5d6265b99eabd200fe1127b55d898be6c232a9e46a4e9752.js" integrity="sha256-VSWm6JwIUv1dYmW5nqvSAP4RJ7VdiYvmwjKp5GpOl1I="></script>
+<script defer src="/en.search.min.ed00b8047371b817b5c20188b1b5ad01ef4edec345907995d9794fffc708712c.js" integrity="sha256-7QC4BHNxuBe1wgGIsbWtAe9O3sNFkHmV2XlP/8cIcSw="></script>
 <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="الـبـحـر الـزاخـر" />
 <!--
 Made with Book Theme
@@ -132,6 +132,26 @@ https://github.com/alex-shpak/hugo-book
 
       
       
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/exactly_once_semantics_in_kafka/">exactly once semantics in kafka (atomic broadcast)</a>
+    </h2>
+    
+
+
+  
+
+  
+
+
+    <p>Tags: Kafka, atomic broadcast
+ https://www.instapaper.com/read/1298476349  Exactly once semantics in Kafka are defined in terms of atomic broadcast:
+ Messages are published and they will be delivered one time exactly by one or more receiving applications.
+ Design docs:
+ https://cwiki.apache.org/confluence/display/KAFKA/KIP-98+-+Exactly+Once+Delivery+and+Transactional+Messaging https://cwiki.apache.org/confluence/display/KAFKA/KIP-129%3A+Streams+Exactly-Once+Semantics https://docs.google.com/document/d/11Jqy%5FGjUGtdXJK94XGsEIK7CP1SnQGdp2eF0wSw9ra8/edit#heading=h.xq0ee1vnpz4o  Notes  Original impossibility of consensus with one faulty process describes failures within extremely limited scenarios few main problems:  If the producer writes to the log but doesn&rsquo;t get an ack  solved by the idempotence of kafka, producer can write as much as it wants (and kafka will just drop duplicates)   consumer reads from the log but doesn&rsquo;t update its offset  Consumer ensures the dervied states it creates and the offsets in the upstream need to stay in sync so we can:  store offsets in the same db as derive state, and only update them as a transaction, restarting reads current offset from the db write both state updates and offsets in idempotent fashion   not technically &ldquo;exactly once&rdquo;, more like &ldquo;effectively once&rdquo;   leverages kafka streams  3 components:  log compaction in kafka allows it to be used for a journal and snapshot state changes reading data from kafka = advancing offsets writing to kafka   wrapping all 3 in a kafka stream as a whole transaction allows for the atomic broadcasts      
+    </p>
+  </article>
   
   <article class="markdown book-post">
     <h2>
@@ -292,23 +312,6 @@ Possible classes for fall 2020: @ NYU
 
     <p>Tags: computers
 http://www.nobius.org/dbg/practical-file-system-design.pdf
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/20200415154751-finance/">finance</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-    <p>Tags: root
-Backlinks  FED Powers airlines bailout - 2020 black scholes brady plan commodities emerging markets futures iraqi bonds oil paris club s curves special economic zones imf economics institute of international finance (iif)  
     </p>
   </article>
   
