@@ -994,6 +994,16 @@ https://plato.stanford.edu/entries/democritus/</description>
     </item>
     
     <item>
+      <title>derivatives</title>
+      <link>/posts/derivatives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/derivatives/</guid>
+      <description>Tags: finance
+Backlinks  Mitchel: Economentality  </description>
+    </item>
+    
+    <item>
       <title>Derrida - Archive Fever</title>
       <link>/posts/derrida_archive_fever/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1848,6 +1858,16 @@ Chapter 1 - Intro  Turned into a general purpose execution engine in 2014 VM  Tr
     </item>
     
     <item>
+      <title>grpc</title>
+      <link>/posts/grpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/grpc/</guid>
+      <description>Tags: kubernetes (k8s)
+gRPC communication patterns  contract first, protobuf IDL, binary messaging on the wire w/ HTTP2, duplex  rpc flow  take message encode message add message headers send message across network  http2 level  once the HTTP 2 connection has been created, this is a grpc channel  each rpc call is a single stream   message frames  headers and data frames   request messages  contains  header frame framed message that spans one or more data frames eos flag in the last data frame     response emssages  same structure, except with trailers    rpc types  simple rpc  single request/single response the stub sends to the server, one block of headers, message, and eos (end of stream) for request   server streaming  one request, multiple response multiple data frames being sent back   client streaming  multiple request, single response   bidirectional streaming  each request is length prefixed!</description>
+    </item>
+    
+    <item>
       <title>gui</title>
       <link>/posts/gui/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2426,6 +2446,16 @@ Similar groups:  http://drc-group.com/ https://www.cybrary.it/ https://portal.it
     </item>
     
     <item>
+      <title>jaeger deep dive</title>
+      <link>/posts/jaeger_deep_dive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/jaeger_deep_dive/</guid>
+      <description>Tags: kubernetes (k8s)
+ https://github.com/jaegertracing Mastering distributed tracing book  https://www.shkuro.com/books/2019-mastering-distributed-tracing/   Transative service graphs  Services with the request originating from the service is highlighted   Trace diffs in jaeger latest version Jaeger  From dapper and openzipkin  Created at Uber in 2015     Jaeger inside now uses Kafka  Sampling  sampling is to reduce costs of sampling trace data is usually very repetitive sampling -&amp;gt; consistent (all or nothing), no missing parts of the trace head based sampling  easy to implement spread out configuration since there may be multiple   remote sampling  reads configuration from central tier in the backend   tail based sampling  can be much more advanced can catch anomalies requires temp storage of all tarces applications constantly incur performance    opentracing  opentelemetry implementation of the opentracing api allows you to change tracing systems jaeger components in opentelemetry  opentelemetry sdk&amp;rsquo;s have jaeger grpc exporter and jaeger propagation this means anything exporting with open telemetry can use jaeger   opentracing shim  all existing opentracing libs with opentelemtry sdk   jaeger client libs support w3c trace context deploying jaeger onto kubernetes (k8s)  helm charts jaeger operator -&amp;gt; most advanced, allInOne and production deployment  auto provision with Kafka   plain kube manifest    </description>
+    </item>
+    
+    <item>
       <title>janus v ASFCME</title>
       <link>/posts/janus_v_asfcme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2831,6 +2861,19 @@ Backlinks  FARC in Colombia PMF&amp;rsquo;s in Iraq Blumi - Ottoman Refugees, 18
       <guid>/posts/mitchel_rule_of_experts_egypt_techno_politics_modernity/</guid>
       <description>Tags: books, egypt
 Backlinks  Cook - The Aswan Low Dam and Modernizing the Nile  </description>
+    </item>
+    
+    <item>
+      <title>Mitchel: Economentality</title>
+      <link>/posts/mitchel_economentality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mitchel_economentality/</guid>
+      <description>Tags: papers
+ Mitchell, Timothy. “Economentality: How the Future Entered Government.” Critical Inquiry 40, no. 4 (June 2014): 479–507. https://doi.org/10.1086/676417.  Summary   focused on 1948
+  Talks about how initially, economics was focused on tangible land
+  FDR gives a speech about no more space, and the remaining work was to be stewards of the land
+ Our industrial plant is built; the problem just now is whether under existing conditions it is not overbuilt.</description>
     </item>
     
     <item>

@@ -387,6 +387,10 @@
   </url>
   
   <url>
+    <loc>/posts/derivatives/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/derrida_archive_fever/</loc>
   </url>
   
@@ -715,6 +719,10 @@
   </url>
   
   <url>
+    <loc>/posts/grpc/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/gui/</loc>
   </url>
   
@@ -935,6 +943,10 @@
   </url>
   
   <url>
+    <loc>/posts/jaeger_deep_dive/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/janus_v_asfcme/</loc>
   </url>
   
@@ -1092,6 +1104,10 @@
   
   <url>
     <loc>/posts/mitchel_rule_of_experts_egypt_techno_politics_modernity/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/mitchel_economentality/</loc>
   </url>
   
   <url>
