@@ -219,6 +219,10 @@
   </url>
   
   <url>
+    <loc>/posts/boogaloo_boys_blog_post/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414223410-books/</loc>
   </url>
   
@@ -276,6 +280,10 @@
   
   <url>
     <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/caustics/</loc>
   </url>
   
   <url>
@@ -375,6 +383,10 @@
   </url>
   
   <url>
+    <loc>/posts/covolutional_neural_networks/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/criu_kernal_checkpointing/</loc>
   </url>
   
@@ -412,6 +424,10 @@
   
   <url>
     <loc>/posts/derrida_archive_fever/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/dev_jargon_blog_post/</loc>
   </url>
   
   <url>
@@ -711,6 +727,10 @@
   </url>
   
   <url>
+    <loc>/posts/gradient_descent/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/grafana_7_0/</loc>
   </url>
   
@@ -788,6 +808,10 @@
   
   <url>
     <loc>/posts/20200414223819-hassan_longing_for_the_lost_caliphate/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/hci/</loc>
   </url>
   
   <url>
@@ -1047,6 +1071,14 @@
   </url>
   
   <url>
+    <loc>/posts/lecun_bengio_hinton_deep_learning/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/li_the_universal_enemy/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/libya/</loc>
   </url>
   
@@ -1088,6 +1120,10 @@
   
   <url>
     <loc>/posts/mahmoud_darwish/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/mahsan_et_al_the_role_domain_expertise_in_user_trust_and_the_impact_of_first_impressions_with_intelligent_systems/</loc>
   </url>
   
   <url>
@@ -1463,6 +1499,10 @@
   </url>
   
   <url>
+    <loc>/posts/post_conflict_statebuilding_organization/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/post_ottoman_iraq_egypt_irrigation_essay_research/</loc>
   </url>
   
@@ -1612,6 +1652,10 @@
   
   <url>
     <loc>/posts/recoll_from_emacs/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/recurrent_neural_networks/</loc>
   </url>
   
   <url>
@@ -1871,6 +1915,10 @@
   </url>
   
   <url>
+    <loc>/posts/tawke_and_peshkabir_oil_fields/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/taxi_driver_sectarianism/</loc>
   </url>
   
@@ -2008,6 +2056,14 @@
   
   <url>
     <loc>/posts/wti/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/wfr/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/williams_research_handbook_on_post_conflict_statebuilding/</loc>
   </url>
   
   <url>

@@ -566,6 +566,16 @@ Refugees and history are a two way street, internal refugees of the Ottoman empi
     </item>
     
     <item>
+      <title>boogaloo boys blog post</title>
+      <link>/posts/boogaloo_boys_blog_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/boogaloo_boys_blog_post/</guid>
+      <description>Tags: militias
+ Question: do the boogaloo boys fight for the right to move on? priors  boogaloo boys is not merely a &amp;ldquo;far right&amp;rdquo; movement  many different groups, not simply far right &amp;ldquo;facists&amp;rdquo; or racists   they struggle for the american ideal, which is not necessarily a white genoicde (although can certainly encompass it) america explicit avoids totalization  https://www.amazon.com/Shadow-Garrison-State-Aaron-Friedberg/dp/0691048908/ref=sr%5F1%5F4?keywords=Aaron+Friedberg&amp;amp;qid=1570393858&amp;amp;s=books&amp;amp;sr=1-4 this country operates largely in decentralized components  https://apps.</description>
+    </item>
+    
+    <item>
       <title>books</title>
       <link>/posts/20200414223410-books/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -701,7 +711,7 @@ CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf  Backlinks  c
       
       <guid>/posts/cash_based_incentives_for_ddr/</guid>
       <description>Tags: ddr
- Implemented in sierra leone, cote d&amp;rsquo;ivore, and nepal Found in sierra leone and cote d&amp;rsquo;ivore that this created weapons zones  </description>
+ Implemented in sierra leone, cote d&amp;rsquo;ivore, and nepal Found in sierra leone and cote d&amp;rsquo;ivore that this created weapons zones In Nepal, cash can be attractive, but using it in liue of an actual reintegration process does not meet the needs of effective peacebuilding - Subedi - Combatants to Civilians  can cause some procyclical effects wrt to gender and subgroups, cash handouts may exaserbate this    Backlinks  Subedi - Combatants to Civilians Subedi - Combatants to Civilians  </description>
     </item>
     
     <item>
@@ -712,6 +722,16 @@ CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf  Backlinks  c
       <guid>/posts/20200415152613-cassandra/</guid>
       <description>Tags: Databases, Computers
 Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    concurrent_compactors  Sets the number of IO threads dedicated to compaction If too high, can cause IO starvation and not servicing requests  Depends on NVME drives   set by the concurrenct_compactors string in yaml  can also use nodetool setconcurrent_compactors in C* &amp;gt; 3    Counter Table TTL&amp;rsquo;s  https://issues.</description>
+    </item>
+    
+    <item>
+      <title>caustics</title>
+      <link>/posts/caustics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/caustics/</guid>
+      <description>Tags: math
+ https://lgg.epfl.ch/publications/2012/caustics/ArchitecturalCaustics%5FAAG.pdf Renderer: http://rgl.epfl.ch/publications/NimierDavidVicini2019Mitsuba2  </description>
     </item>
     
     <item>
@@ -761,7 +781,7 @@ Resources:  https://macropolo.org/  </description>
       
       <guid>/posts/chips/</guid>
       <description>Tags: computers, hardware
- Die die interconnects are mostly constrained on power https://en.wikichip.org/wiki/amd/infinity%5Ffabric  </description>
+ Die die interconnects are mostly constrained on power https://en.wikichip.org/wiki/amd/infinity%5Ffabric https://siliconpr0n.org/wiki/doku.php?id=starting  Backlinks  sematech  </description>
     </item>
     
     <item>
@@ -961,6 +981,19 @@ Damascus, syria  https://www.instapaper.com/read/1299358661 Despite the justific
     </item>
     
     <item>
+      <title>covolutional neural networks (CNN)</title>
+      <link>/posts/covolutional_neural_networks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/covolutional_neural_networks/</guid>
+      <description>Tags: ml
+  designed to process data that come in the form of multiple arrays
+ colour images, 1d signals, 2d for langauges, 3 for audio    takes advantage of:
+ local connections shared weights pooling many layers    structured in stages
+    Backlinks  LeCun, Bengio, Hinton - Deep Learning  </description>
+    </item>
+    
+    <item>
       <title>criu/kernal checkpointing</title>
       <link>/posts/criu_kernal_checkpointing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1030,7 +1063,7 @@ Talk  Career FF&amp;rsquo;s have an outside impact on the conflicts they go to T
       
       <guid>/posts/ddr/</guid>
       <description>Tags: militias
-Backlinks  integrated ddr standards maoist fighters in nepal next generation disarmament, demobilization, and reintegration religious peacebuilding  </description>
+Backlinks  religious peacebuilding Pouligny - Peace Operations Seen From Below maoist fighters in nepal problems and methods - final integrated ddr standards stockholm initatives in ddr cash based incentives for ddr next generation disarmament, demobilization, and reintegration Subedi - Combatants to Civilians security sector reform (ssr) post-conflict statebuilding organization Williams - Research Handbook on Post-Conflict Statebuilding Williams - Research Handbook on Post-Conflict Statebuilding  </description>
     </item>
     
     <item>
@@ -1061,6 +1094,17 @@ Backlinks  Mitchel: Economentality  </description>
       <guid>/posts/derrida_archive_fever/</guid>
       <description>Tags: books
  Book about the &amp;ldquo;archon&amp;rdquo; as a guardian of the documents, with 3 pillars: the archon, the place, and the law   Backlinks  Azoulay: Archive  </description>
+    </item>
+    
+    <item>
+      <title>dev jargon blog post</title>
+      <link>/posts/dev_jargon_blog_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dev_jargon_blog_post/</guid>
+      <description>Tags: writing
+ Break down: https://eng.lyft.com/envoy-7-months-later-41986c2fd443  First Section  On September 14, 2016 we announced Envoy, our L7 proxy and communication bus. In a nutshell, Envoy is a “service mesh” substrate that provides common utilities such as service discovery, load balancing, rate limiting, circuit breaking, stats, logging, tracing, etc. to polyglot (heterogeneous) application architectures.
+We knew that we had built a compelling product that was central to Lyft’s ability to scale its service-oriented architecture; however, we were surprised by the industry wide interest in Envoy following its launch.</description>
     </item>
     
     <item>
@@ -1836,6 +1880,16 @@ History of NVIDIA GPU&amp;rsquo;s  Until 2006 GPU design was correlated to the l
     </item>
     
     <item>
+      <title>gradient descent</title>
+      <link>/posts/gradient_descent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gradient_descent/</guid>
+      <description>Tags: ml
+Backlinks  LeCun, Bengio, Hinton - Deep Learning LeCun, Bengio, Hinton - Deep Learning  </description>
+    </item>
+    
+    <item>
       <title>grafana 7.0</title>
       <link>/posts/grafana_7_0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2043,6 +2097,17 @@ Backlinks  chips  </description>
       <guid>/posts/20200414223819-hassan_longing_for_the_lost_caliphate/</guid>
       <description>Tags: books, Post-Ottoman Near East
 Backlinks  Nationalism and Outsiders in the Middle East - Midterm Draft Saunders - The Ummah as a Nation: A reappraisal in the wake of the &amp;lsquo;Cartoons Affair&amp;rsquo;  </description>
+    </item>
+    
+    <item>
+      <title>hci</title>
+      <link>/posts/hci/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hci/</guid>
+      <description>Tags: computers
+human computer interaction
+Backlinks  Mahsan et al: The Role Domain Expertise in User Trust and the Impact of First Impressions with Intelligent Systems  </description>
     </item>
     
     <item>
@@ -2712,6 +2777,32 @@ General Amnesty  Lebanese Politics Podcast 78 Amnesty opposed by christian parti
     </item>
     
     <item>
+      <title>LeCun, Bengio, Hinton - Deep Learning</title>
+      <link>/posts/lecun_bengio_hinton_deep_learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/lecun_bengio_hinton_deep_learning/</guid>
+      <description>Tags: nlp, papers
+LeCun, Yann, Yoshua Bengio, and Geoffrey Hinton. “Deep Learning.” Nature 521, no. 7553 (May 2015): 436–44. https://doi.org/10.1038/nature14539.
+Summary Deep learning uses multiple layers to learn representations of data with multiple levels of abstraction
+Supervised Learning   most common
+  show inputs and annotations
+  create an objective function that measures errors
+  most people use stochastic gradient descent
+    known since 1960 that linear classifers only carve their input space into very simple regions (half spaces separated by a hyperplane)</description>
+    </item>
+    
+    <item>
+      <title>Li - The Universal Enemy</title>
+      <link>/posts/li_the_universal_enemy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/li_the_universal_enemy/</guid>
+      <description>Tags: books
+Backlinks  post-conflict statebuilding organization  </description>
+    </item>
+    
+    <item>
       <title>libya</title>
       <link>/posts/libya/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2820,6 +2911,19 @@ Tool that transforms After Effects animations into web and mobile animations</de
       <description>Tags: people
 Palestinian poet n
 Backlinks  palestine liberation organization (PLO)  </description>
+    </item>
+    
+    <item>
+      <title>Mahsan et al: The Role Domain Expertise in User Trust and the Impact of First Impressions with Intelligent Systems</title>
+      <link>/posts/mahsan_et_al_the_role_domain_expertise_in_user_trust_and_the_impact_of_first_impressions_with_intelligent_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mahsan_et_al_the_role_domain_expertise_in_user_trust_and_the_impact_of_first_impressions_with_intelligent_systems/</guid>
+      <description>Tags: papers, computers, hci
+Summary Talks about how people are influenced on their views of intelligent systems based on their first impressions and their familiartiy with the topic.
+Notably, domain experts fail to regain trust in the system, even if the system gets better over time. Consistently achieve automation bias and believe in the system, even if it is wrong.
+Domain expertise plays an important role.
+Implications  &amp;ldquo;Rather than allowing users to use a system with zero understanding or a poor mental model of how the system works, designers can incorporate introductory sessions to alert users about system strengths and shortcomings so that users can decide whether and when they should trust the system&amp;rsquo;s outputs.</description>
     </item>
     
     <item>
@@ -3782,6 +3886,16 @@ Three states  waiting running terminated  use kubectl describe    Terminating Gr
     </item>
     
     <item>
+      <title>post-conflict statebuilding organization</title>
+      <link>/posts/post_conflict_statebuilding_organization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/post_conflict_statebuilding_organization/</guid>
+      <description>Tags: root
+ Borrowing organization from Williams - Research Handbook on Post-Conflict Statebuilding  Political Infrastructure  Setting new guidelines for institutions to succeed constitution writing  iraqi constitutionalism   electoral law reform vetting the public sector  Social Infrastructure  Rebuilding partipatory networks of civic engagement Akdedian et al: State atrophy and the reconfiguration of borderlands in Syria and Iraq  Security Infrastructure  ddr security sector reform (ssr)  Legacies of Conflict  implementing mechanisms to heal civic trust and accountability Dodge - Rethinking Political Identities in Iraq After 2003 Rayburn - Iraq After America Pouligny - Peace Operations Seen From Below Glick and Paluck: The Aftermath of Genocide Adar - Emotions and Nationalism: Armenian Genocide as a Case Study Li - The Universal Enemy  Rule of Law  Shifting from rule of force to rule of law  Simpson - War from the Ground Up   jurisprudence  Development  Socioeconomic growth Humanitarian assistance Fiscal arrangement Economic reform  Toufic - Palestine Ltd: Neoliberalism and Nationalism    </description>
+    </item>
+    
+    <item>
       <title>post-ottoman iraq/egypt irrigation essay research</title>
       <link>/posts/post_ottoman_iraq_egypt_irrigation_essay_research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3966,7 +4080,7 @@ Chapter 1  Building native apps that speak to both the kubelet and the API serve
       <guid>/posts/project_ideas/</guid>
       <description>Tags: root
 Random project ideas, notes, etc:
- https://news.ycombinator.com/item?id=23735676 https://news.ycombinator.com/item?id=23592788  </description>
+ https://news.ycombinator.com/item?id=23735676 https://news.ycombinator.com/item?id=23592788 robot36 compatible bootloader - boot over audio  </description>
     </item>
     
     <item>
@@ -4179,6 +4293,16 @@ Mushrooms  https://cafedelites.com/roasted-mushrooms/  Backlinks  climate change
     </item>
     
     <item>
+      <title>recurrent neural networks (rnn)</title>
+      <link>/posts/recurrent_neural_networks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/recurrent_neural_networks/</guid>
+      <description>Tags: ml
+ good for tasks that require sequential input processes and input sequence one element at a time, maintaining a hidden &amp;ldquo;state vector&amp;rdquo; has a vanishing problem since backpropagated gardients grow or shrink at each time step very good at predicting the next character in the text or the next word in a sequence    Backlinks  LeCun, Bengio, Hinton - Deep Learning  </description>
+    </item>
+    
+    <item>
       <title>red cross</title>
       <link>/posts/red_cross/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4266,7 +4390,7 @@ Backlinks  audio detection  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/root/</guid>
-      <description>Backlinks  latam central asia south asia americas articles sociology religion grad school un middle east computers papers ngo drafts recipes europe africa personal militias china jurisprudence climate change math disaster response epistime project ideas books covid physics writing east asia events people podcasts finance education ships  </description>
+      <description>Backlinks  latam central asia south asia americas articles sociology religion grad school un middle east computers papers ngo drafts recipes europe africa personal militias china jurisprudence climate change math disaster response epistime books covid physics writing east asia events people podcasts finance ships literature languages/lingustics education project ideas post-conflict statebuilding organization  </description>
     </item>
     
     <item>
@@ -4421,7 +4545,7 @@ In the absence of the twelfth imam, the duty of guiding such a nation must fall 
       
       <guid>/posts/security_sector_reform_ssr/</guid>
       <description>Tags: ddr
-Backlinks  Subedi - Combatants to Civilians  </description>
+Backlinks  Subedi - Combatants to Civilians post-conflict statebuilding organization Williams - Research Handbook on Post-Conflict Statebuilding  </description>
     </item>
     
     <item>
@@ -4834,6 +4958,17 @@ Post Draft  What is Taskjuggler?</description>
     </item>
     
     <item>
+      <title>tawke and peshkabir oil fields</title>
+      <link>/posts/tawke_and_peshkabir_oil_fields/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tawke_and_peshkabir_oil_fields/</guid>
+      <description>Tags: KRG/iraqi kurdistan
+Oil fields in the KRG, jointly owned by DNO and UK Genel Energy
+ https://www.nsenergybusiness.com/projects/peshkabir-oil-field-kurdistan/  </description>
+    </item>
+    
+    <item>
       <title>taxi driver sectarianism</title>
       <link>/posts/taxi_driver_sectarianism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5050,7 +5185,8 @@ Backlinks  Meeker - A Nation of Empire Adalet - Hotels and Highways Adar - Emoti
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/two_sigma_problem/</guid>
-      <description>Tags:education</description>
+      <description>Tags: education
+ https://en.wikipedia.org/wiki/Bloom%27s%5F2%5Fsigma%5Fproblem Average tutored student is two standard deviations away from the mean  </description>
     </item>
     
     <item>
@@ -5203,6 +5339,28 @@ Backlinks  full text static search  </description>
       <guid>/posts/wti/</guid>
       <description>Tags: oil
  typically &amp;ldquo;sweeter&amp;rdquo; than brent, used to trade at a ~$2 premium  spreads (as of April 2020), are as wide as ~$20 now far sweeter than urals   from Permian Basin Traded out of Cushing, OK {IGPV} for function  Backlinks  uso etf  </description>
+    </item>
+    
+    <item>
+      <title>wfr</title>
+      <link>/posts/wfr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wfr/</guid>
+      <description>Tags: nols wilderness first aid
+ 10 days in the woods hands on, even with covid (although people started to lean away from the covid precautions) very interesting dynamics, interesting age spread  old people &amp;gt;50, many kids, only a few in the middle age range definitely more variety too, from camp councilors to EMT&amp;rsquo;s   group dynamics were interesting as well, people tended to partner up night sessions were interesting learning was not that hard, college course level  </description>
+    </item>
+    
+    <item>
+      <title>Williams - Research Handbook on Post-Conflict Statebuilding</title>
+      <link>/posts/williams_research_handbook_on_post_conflict_statebuilding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/williams_research_handbook_on_post_conflict_statebuilding/</guid>
+      <description>Tags: books
+Part 1: Political Infrastructure  Consists of public sector institutions that facilitate governance  vital for statebuilding allows the state to exert authority    Part 2: Social Infrastructure   Defined as
+ The nexus of horizontal and verticle society relations is the foundation for social reconcilation
+  From Putnam  Horizontal - norms, valjues, and social relations within communities Verticle - Communal groups, civic society, and state      How do states rebuild interpersonal bonds and intercommunal bridges?</description>
     </item>
     
     <item>

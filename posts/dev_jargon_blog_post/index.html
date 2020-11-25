@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tags: writing
+ Break down: https://eng.lyft.com/envoy-7-months-later-41986c2fd443  First Section  On September 14, 2016 we announced Envoy, our L7 proxy and communication bus. In a nutshell, Envoy is a “service mesh” substrate that provides common utilities such as service discovery, load balancing, rate limiting, circuit breaking, stats, logging, tracing, etc. to polyglot (heterogeneous) application architectures.
+We knew that we had built a compelling product that was central to Lyft’s ability to scale its service-oriented architecture; however, we were surprised by the industry wide interest in Envoy following its launch."><meta property="og:title" content="dev jargon blog post" />
+<meta property="og:description" content="Tags: writing
+ Break down: https://eng.lyft.com/envoy-7-months-later-41986c2fd443  First Section  On September 14, 2016 we announced Envoy, our L7 proxy and communication bus. In a nutshell, Envoy is a “service mesh” substrate that provides common utilities such as service discovery, load balancing, rate limiting, circuit breaking, stats, logging, tracing, etc. to polyglot (heterogeneous) application architectures.
+We knew that we had built a compelling product that was central to Lyft’s ability to scale its service-oriented architecture; however, we were surprised by the industry wide interest in Envoy following its launch." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/dev_jargon_blog_post/" />
+
+<title>dev jargon blog post | الـبـحـر الـزاخـر</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.603805b2ddfee504c26fd91d0e76cc5eb6c9038880b4c2d777e505646ae298e0.css" integrity="sha256-YDgFst3&#43;5QTCb9kdDnbMXrbJA4iAtMLXd&#43;UFZGrimOA=">
+<script defer src="/en.search.min.78179c4ebaeb695e2128ffbf91110b8cfc3927b87893b52c546793c124ce2cbb.js" integrity="sha256-eBecTrrraV4hKP&#43;/kRELjPw5J7h4k7UsVGeTwSTOLLs="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+    <a href="/">
+        <img src="/svg/icon.svg" alt="icon" id="raccoon" />
+    <span>الـبـحـر الـزاخـر</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>dev jargon blog post</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#first-section">First Section</a></li>
+    <li><a href="#second-section">Second section</a></li>
+    <li><a href="#third-section">Third section</a></li>
+    <li><a href="#fourth-section">Fourth section</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/dev_jargon_blog_post/">dev jargon blog post</a>
+  </h1>
+  
+
+
+  
+
+  
+
+
+  <p><p>Tags: <a href="/posts/20200419205815-writing/">writing</a></p>
+<ul>
+<li>Break down: <a href="https://eng.lyft.com/envoy-7-months-later-41986c2fd443">https://eng.lyft.com/envoy-7-months-later-41986c2fd443</a></li>
+</ul>
+<h2 id="first-section">First Section</h2>
+<blockquote>
+<p>On September 14, 2016 we announced Envoy, our L7 proxy and communication bus. In a nutshell, Envoy is a “service mesh” substrate that provides common utilities such as service discovery, load balancing, rate limiting, circuit breaking, stats, logging, tracing, etc. to polyglot (heterogeneous) application architectures.</p>
+<p>We knew that we had built a compelling product that was central to Lyft’s ability to scale its service-oriented architecture; however, we were surprised by the industry wide interest in Envoy following its launch. It’s been an exciting (and overwhelming) 7 months! We are thrilled by the positive reception and wide uptake Envoy has since received.</p>
+</blockquote>
+<p>Jargon terms</p>
+<ul>
+<li>L7</li>
+<li>proxy</li>
+<li>communication bus</li>
+<li>&ldquo;service mesh&rdquo; substrace</li>
+<li>common utilities
+<ul>
+<li>service discovery</li>
+<li>load balancing</li>
+<li>rate limiting</li>
+<li>circuit breaking</li>
+<li>stats</li>
+<li>logging</li>
+<li>tracing</li>
+</ul>
+</li>
+<li>heterogenous application archiectures</li>
+<li>service oriented archiecture</li>
+<li>industry -&gt; which industry?</li>
+</ul>
+<h2 id="second-section">Second section</h2>
+<ul>
+<li>moderately sized soa
+<ul>
+<li>what is moderately sized?</li>
+</ul>
+</li>
+<li>RPC library
+<ul>
+<li>similar to above</li>
+</ul>
+</li>
+<li>ELB</li>
+<li>decompositional scaling benefits</li>
+<li>network substrace</li>
+<li>native code
+<ul>
+<li>cpu usage, memory usage, tail latency properties</li>
+<li>HaProxy</li>
+<li>nginx</li>
+<li>opaque development process -&gt; what does this mean?</li>
+</ul>
+</li>
+<li>eventually consistent
+<ul>
+<li>lossy</li>
+<li>high reliability</li>
+<li>etcd</li>
+<li>zookeeper</li>
+</ul>
+</li>
+<li>api
+<ul>
+<li>control plane</li>
+<li>opinionated -&gt; what does this mean in this context</li>
+<li>TLS authentication</li>
+<li>grpc</li>
+<li>REST</li>
+</ul>
+</li>
+<li>filter based l4 core
+<ul>
+<li>mongodb</li>
+<li>redis</li>
+<li>http</li>
+</ul>
+</li>
+<li>http/2 and http/1</li>
+</ul>
+<h2 id="third-section">Third section</h2>
+<ul>
+<li>multi-organizational project -&gt; what does this mean</li>
+</ul>
+<h2 id="fourth-section">Fourth section</h2>
+<ul>
+<li>skipping roadmap because I don&rsquo;t expect normal people to understand</li>
+</ul>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#first-section">First Section</a></li>
+    <li><a href="#second-section">Second section</a></li>
+    <li><a href="#third-section">Third section</a></li>
+    <li><a href="#fourth-section">Fourth section</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
