@@ -556,6 +556,16 @@ Collective punishment heightens group identities, such as the case of:
     </item>
     
     <item>
+      <title>bleu score</title>
+      <link>/posts/bleu_score/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bleu_score/</guid>
+      <description>Tags: nlp
+ https://en.wikipedia.org/wiki/BLEU evaluating the quality of text that&amp;rsquo;s been machine translated from one language to another  </description>
+    </item>
+    
+    <item>
       <title>Blumi - Ottoman Refugees, 1878-1939</title>
       <link>/posts/20200416084831-blumi_ottoman_refugees_1878_1939/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -619,6 +629,16 @@ Backlinks  Hajdarpasic: Reflections on the Ottoman Legacy in South-eastern Europ
       <description>Tags: finance
 Plan implemented in 1989 for Latin America, Eastern Europe, and African countries, US lead debt restructuring program that created by Brady bonds backed by zero-coupon US treasury bonds or funds from IMF or World Bank.
  Transformed commerial bank loans into collateralized bonds https://www.emta.org/em-background/the-brady-plan/  Backlinks  emerging markets  </description>
+    </item>
+    
+    <item>
+      <title>brazil</title>
+      <link>/posts/brazil/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/brazil/</guid>
+      <description>Tags: south america
+Backlinks  Williams - Research Handbook on Post-Conflict Statebuilding  </description>
     </item>
     
     <item>
@@ -720,7 +740,7 @@ CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf  Backlinks  c
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200415152613-cassandra/</guid>
-      <description>Tags: Databases, Computers
+      <description>Tags: Databases, distributed systems
 Internals  Seed nodes:  No purpose other than bootstrapping the gossip process DO NOT MAKE ALL NODES SEED NODES    concurrent_compactors  Sets the number of IO threads dedicated to compaction If too high, can cause IO starvation and not servicing requests  Depends on NVME drives   set by the concurrenct_compactors string in yaml  can also use nodetool setconcurrent_compactors in C* &amp;gt; 3    Counter Table TTL&amp;rsquo;s  https://issues.</description>
     </item>
     
@@ -948,6 +968,19 @@ Shame: Emotions of Morality and Violence papers
       <description>Tags: egypt, papers
 The completion of the Aswan Low Dam was premised on orientialist perceptions that the British would &amp;lsquo;modernize&amp;rsquo; the Egyptians.
  Ended up miscalculating  Did not respect the environmental impacts of this  British engineers saw this as a time to experiment as well as a time to dig into their &amp;ldquo;Christian&amp;rdquo; past for relics   Did not respect the cyclic abundance of the Nile  Farmers now needed to use more fertilizer Mitchell notes that by 1933 due to the Aswan Low Dam project only, “one-fifth of the Nile valley was now irrigated by the river’s annual flood, which in the past had fertilized the soil by depositing a layer of silt and nutrients…By the end of the 1930s Egyptian farmers were using 600,000 tons of fertilizer a year - pg 7, from Mitchel - Rule of Experts: Egypt, Techno-politics, Modernity     Attempts at the regulating the Nile had been done before Persistent belief from the British that the Egyptians were somehow &amp;ldquo;squandering&amp;rdquo; the Nile Dam did not account for salination like in irrigation in iraq with the dujayla land project  </description>
+    </item>
+    
+    <item>
+      <title>Coppercock - Invitation into Formal Semantics</title>
+      <link>/posts/coppercock_invitation_into_formal_semantics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/coppercock_invitation_into_formal_semantics/</guid>
+      <description>Tags: books, nlp
+ \(\) Introduction Entailment  When A entails B -&amp;gt; when A happens, B happens
+ To reason correct, it is not enough if the presmises and conclusion is true, it needs to also be true if things happen differently.
+Arguments whose premises entail the conclusion are \(\texttt{valid}\), others \(\texttt{invalid}\).
+An argument is valid iff: under all circumstances in which the presmises would be true, the conclusion is also true.</description>
     </item>
     
     <item>
@@ -1463,6 +1496,16 @@ Hosbawn 1992:  Nationalism with political theory Ethnicity with socialism  Notes
     </item>
     
     <item>
+      <title>ethopia</title>
+      <link>/posts/ethopia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ethopia/</guid>
+      <description>Tags: africa
+Backlinks  Williams - Research Handbook on Post-Conflict Statebuilding Williams - Research Handbook on Post-Conflict Statebuilding  </description>
+    </item>
+    
+    <item>
       <title>europe</title>
       <link>/posts/europe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1513,6 +1556,21 @@ Backlinks  Subedi - Combatants to Civilians Subedi - Combatants to Civilians Sub
       <guid>/posts/exarchia/</guid>
       <description>Tags: greece
 Central part of Athens, home to militant leftists, radical politics, and intellectual activism, partly due to Athens Polytechnic</description>
+    </item>
+    
+    <item>
+      <title>explaining away</title>
+      <link>/posts/explaining_away/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/explaining_away/</guid>
+      <description>Tags: ml
+ https://www.nature.com/articles/srep17531 https://github.com/seansaito/Explaining-Away-Attacks-Against-Neural-Networks Explaining away is a pattern of reasoning that the confirmation of one cause of an obsereved event reduces the need to invoke other causes.  Example:
+  A causes C
+  B causes C
+  C happened, A is observed
+ Implies B did not happen However, B and A can happen at the same time.    Sources
+ “The Notion of ‘explaining Away’ Evidence.</description>
     </item>
     
     <item>
@@ -2675,6 +2733,16 @@ Backlinks  exactly once semantics in kafka (atomic broadcast)  </description>
     </item>
     
     <item>
+      <title>kenya</title>
+      <link>/posts/kenya/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/kenya/</guid>
+      <description>Tags: africa
+Backlinks  Williams - Research Handbook on Post-Conflict Statebuilding  </description>
+    </item>
+    
+    <item>
       <title>kernel</title>
       <link>/posts/kernel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2704,6 +2772,16 @@ Backlinks  bpf (berkley packet filter)  </description>
     </item>
     
     <item>
+      <title>kosovo</title>
+      <link>/posts/kosovo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/kosovo/</guid>
+      <description>Tags: europe
+Backlinks  Williams - Research Handbook on Post-Conflict Statebuilding  </description>
+    </item>
+    
+    <item>
       <title>KRG/iraqi kurdistan</title>
       <link>/posts/20200419204045-iraqi_kurdistan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2719,8 +2797,8 @@ Backlinks  bpf (berkley packet filter)  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/kubernentes/</guid>
-      <description>Tags: computers
- https://github.com/ramitsurana/awesome-kubernetes https://k8s.af/ https://deploy.live/blog/kubernetes-networking-problems-due-to-the-conntrack/  Backlinks  pod lifecycles programming kubernetes  </description>
+      <description>Tags: computers, distributed systems
+ https://github.com/ramitsurana/awesome-kubernetes https://k8s.af/ https://deploy.live/blog/kubernetes-networking-problems-due-to-the-conntrack/  Backlinks  pod lifecycles programming kubernetes containerd jaeger deep dive jaeger deep dive grpc  </description>
     </item>
     
     <item>
@@ -3168,8 +3246,8 @@ Mosul Dam - irrigation in iraq  https://en.wikipedia.org/wiki/Mosul%5FDam  </des
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/muhammad_abduh/</guid>
-      <description>Tags: islamic political thought
- Egyptian, acknowledged the loss of reilgious authorities Wrote Risalat al-Tawhid, emphasizing the role of free will and reason His version of tawhid rejected the possibility with Allah Relegitimized the expansive usage of rational tools and strengthened the prevalent forms of ijtihad Refuted the &amp;ldquo;inherent&amp;rdquo; incompatbility of Islamic revelation and reason Made a case for the plurality of religious interpretation Had a millieu described in DiCapua - Gatekeepers of the Arab Past pg 25  Backlinks  DiCapua - Gatekeepers of the Arab Past  </description>
+      <description>Tags: islamic political thought, people
+ Egyptian, acknowledged the loss of reilgious authorities Wrote Risalat al-Tawhid, emphasizing the role of free will and reason His version of tawhid rejected the possibility with Allah Relegitimized the expansive usage of rational tools and strengthened the prevalent forms of ijtihad Refuted the &amp;ldquo;inherent&amp;rdquo; incompatbility of Islamic revelation and reason Made a case for the plurality of religious interpretation Had a millieu described in DiCapua - Gatekeepers of the Arab Past pg 25  Backlinks  DiCapua - Gatekeepers of the Arab Past islamic modernism  </description>
     </item>
     
     <item>
@@ -3435,8 +3513,8 @@ Nicaraguan electricty is expensive due to inefficiency and US sanctions. Transpa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/nlp/</guid>
-      <description>Tags: ml
-Backlinks  fasttext gpt2 word2vec embedding text into vector spaces  </description>
+      <description>Tags: ml, languages/lingustics
+Backlinks  gpt2 embedding text into vector spaces word2vec fasttext bleu score LeCun, Bengio, Hinton - Deep Learning  </description>
     </item>
     
     <item>
@@ -3717,6 +3795,16 @@ Resources  Timothy Mitchell, &amp;ldquo;Rule of Experts&amp;rdquo; Aaron Jakes -
       <guid>/posts/20200415203856-papers/</guid>
       <description>Tags: root
 Backlinks  Adar - Emotions and Nationalism: Armenian Genocide as a Case Study Aciksoz - Sacrificial Limbs of Soverignty Acehan - Turkish Leatherworkers in Peabody, Massachusetts Dodge - Rethinking Political Identities in Iraq After 2003 Saunders - The Ummah as a Nation: A reappraisal in the wake of the &amp;lsquo;Cartoons Affair&amp;rsquo; broadcasting and multicast cap theorm (brewer&amp;rsquo;s conjecture and the feasibility of consistent, available, partition-tolerant web services Cook - The Aswan Low Dam and Modernizing the Nile Danforth: A Ottoman Empire from 1923 to Today gray failures Hajdarpasic: Reflections on the Ottoman Legacy in South-eastern Europe Hinnebusch - Identity and State Formation in Multi‐sectarian Societies impossibility of consensus with one faulty process Shannon - A Mathematical Theory of Communication timer lawn: low latency timer data structure Zadrozna: Reconstructing the past in a post-Ottoman Village  </description>
+    </item>
+    
+    <item>
+      <title>papua new guinea</title>
+      <link>/posts/papua_new_guinea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/papua_new_guinea/</guid>
+      <description>Tags: south asia
+Backlinks  Williams - Research Handbook on Post-Conflict Statebuilding  </description>
     </item>
     
     <item>
@@ -4390,7 +4478,7 @@ Backlinks  audio detection  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/root/</guid>
-      <description>Backlinks  latam central asia south asia americas articles sociology religion grad school un middle east computers papers ngo drafts recipes europe africa personal militias china jurisprudence climate change math disaster response epistime books covid physics writing east asia events people podcasts finance ships literature languages/lingustics education project ideas post-conflict statebuilding organization  </description>
+      <description>Backlinks  latam central asia south asia americas articles sociology religion grad school un middle east computers papers ngo drafts recipes europe africa personal militias china jurisprudence climate change math disaster response epistime books covid physics writing east asia events people podcasts finance ships literature languages/lingustics education project ideas post-conflict statebuilding organization south america  </description>
     </item>
     
     <item>
@@ -4422,6 +4510,16 @@ Here&amp;rsquo;s a list of infrastructure technologies I&amp;rsquo;ve worked wit
       <guid>/posts/s_curves/</guid>
       <description>Tags: finance
 Interest rate sensitive products are epxosed to market rates by different curves S (swap and basis spread curves) and bond curves (F and M) Definition  Swap curve built out of fixed coupon rates of market quoted interest rate swaps across different maturities in time. Consists of a fixed leg and a floating leg Swpa curves are constructed in segments from the market prices of various fixed income instruments Short end of swap curve (&amp;lt; 3 months) is calibrated on unsecurted deposit rates Middle area of the curve (3months - 2 years) isdervied from a combination of forward rate agreement congrats and interest rate futures Long end of the curve is constructed from observed quotes of swap rates (out to 10 years or more) Single currency basis spread curves are constructed from market quotes for basis swaps  Basis swap is a floating-floating interest rate swap under the floating rate payments are referenced to different bases   Used for  Pricing fixed income instruments such as corporate bonds, mortgage securities, and other securitized products Price cash flows, swaps, FX forwards, and other derivatives    </description>
+    </item>
+    
+    <item>
+      <title>sacred</title>
+      <link>/posts/sacred/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sacred/</guid>
+      <description>Tags: nlp,ml
+ https://github.com/IDSIA/sacred tool that helps configure, organize, log, and reproduce experiments similar to tensorboard  </description>
     </item>
     
     <item>
@@ -4720,6 +4818,26 @@ Introduction    Model Religion-state ideological links Religion-state institutio
     </item>
     
     <item>
+      <title>south africa</title>
+      <link>/posts/south_africa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/south_africa/</guid>
+      <description>Tags: africa
+Backlinks  Williams - Research Handbook on Post-Conflict Statebuilding Williams - Research Handbook on Post-Conflict Statebuilding  </description>
+    </item>
+    
+    <item>
+      <title>south america</title>
+      <link>/posts/south_america/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/south_america/</guid>
+      <description>Tags: root
+Backlinks  brazil  </description>
+    </item>
+    
+    <item>
       <title>south asia</title>
       <link>/posts/south_asia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4727,6 +4845,17 @@ Introduction    Model Religion-state ideological links Religion-state institutio
       <guid>/posts/south_asia/</guid>
       <description>Tags: root
 Backlinks  india  </description>
+    </item>
+    
+    <item>
+      <title>south Hiraak movement</title>
+      <link>/posts/south_hiraak_movement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/south_hiraak_movement/</guid>
+      <description>Tags: yemen
+South yemen indendepence movement
+Backlinks  Williams - Research Handbook on Post-Conflict Statebuilding  </description>
     </item>
     
     <item>
@@ -5190,6 +5319,16 @@ Backlinks  Meeker - A Nation of Empire Adalet - Hotels and Highways Adar - Emoti
     </item>
     
     <item>
+      <title>uganda</title>
+      <link>/posts/uganda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/uganda/</guid>
+      <description>Tags: africa
+Backlinks  Williams - Research Handbook on Post-Conflict Statebuilding  </description>
+    </item>
+    
+    <item>
       <title>ummah</title>
       <link>/posts/ummah/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5358,9 +5497,7 @@ Backlinks  full text static search  </description>
       
       <guid>/posts/williams_research_handbook_on_post_conflict_statebuilding/</guid>
       <description>Tags: books
-Part 1: Political Infrastructure  Consists of public sector institutions that facilitate governance  vital for statebuilding allows the state to exert authority    Part 2: Social Infrastructure   Defined as
- The nexus of horizontal and verticle society relations is the foundation for social reconcilation
-  From Putnam  Horizontal - norms, valjues, and social relations within communities Verticle - Communal groups, civic society, and state      How do states rebuild interpersonal bonds and intercommunal bridges?</description>
+Part 1: Political Infrastructure  Consists of public sector institutions that facilitate governance  vital for statebuilding allows the state to exert authority    Consitution Making  iraqi constitutionalism tunisia consitution writing was transparent egyptian constituion writing was not constitution making now largely emphasizes citizen involvement  ex tunisia, kenya, south africa, thailand, papua new guinea, uganda, brazil   debates about the inclusiveness of the process vs inclusiveness of the adoption  Constitution Writing in Egypt  2 constitutions: 2012 and 2014 both lead by the intermim military government (SCAZ)  low legitimacy   2012 -&amp;gt; egyptian parliment selected members to assembly 2014 -&amp;gt; rewrite due to problems of 2012, 2014 did not include islamists in parliment  Consitution Writing in Tunisia  Written by the National Constituiant Assembly  Body had the power to adopt public could vote on the members first draft was adoped by a 2/3rds vote   More inclusive over multiple drafts that were relased to the public  Constitution Writing in Conflict Zones  How to permit public engagement with security issues?</description>
     </item>
     
     <item>
