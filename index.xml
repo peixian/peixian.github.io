@@ -4751,7 +4751,9 @@ Backlinks  audio detection  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/root/</guid>
-      <description>Backlinks  central asia americas articles sociology religion grad school un middle east computers papers ngo drafts recipes europe africa personal militias china jurisprudence climate change math disaster response epistime books covid physics writing east asia events people podcasts finance ships literature languages/lingustics education project ideas post-conflict statebuilding organization south asia south america latam  </description>
+      <description>Hi! This website is a collection of my notes are largely a collection in Zettelkasten style, with the ethos of working with the garage door up, inspired by https://braindump.jethro.dev/.
+It&amp;rsquo;s built with:
+ org-roam ox-hugo hugo hugo theme forked from https://github.com/alex-shpak/hugo-book.  </description>
     </item>
     
     <item>
@@ -5880,6 +5882,18 @@ Part 1: Political Infrastructure  Consists of public sector institutions that fa
       <guid>/posts/word2vec/</guid>
       <description>Tags: ml, nlp
  https://fasttext.cc/docs/en/supervised-tutorial.html https://en.wikipedia.org/wiki/Word2vec  Backlinks  embedding text into vector spaces  </description>
+    </item>
+    
+    <item>
+      <title>work with the garage door up</title>
+      <link>/posts/work_with_the_garage_door_up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/work_with_the_garage_door_up/</guid>
+      <description>Tags: personal
+This website is a collection of my notes are largely a collection in Zettelkasten style, with the ethos of working with the garage door up, inspired by https://braindump.jethro.dev/.
+It&amp;rsquo;s built with:
+ org-roam ox-hugo hugo hugo theme forked from https://github.com/alex-shpak/hugo-book.  </description>
     </item>
     
     <item>
