@@ -207,6 +207,10 @@
   </url>
   
   <url>
+    <loc>/posts/baltic_states/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/barber_et_al_trading_is_hazardous_to_your_wealth/</loc>
   </url>
   
@@ -304,6 +308,10 @@
   
   <url>
     <loc>/posts/c_cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/cache/</loc>
   </url>
   
   <url>
@@ -611,7 +619,15 @@
   </url>
   
   <url>
+    <loc>/posts/elixir/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/emacs/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/email/</loc>
   </url>
   
   <url>
@@ -699,6 +715,10 @@
   </url>
   
   <url>
+    <loc>/posts/fedach/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200419212203-fiebelman_a_phd_is_not_enough/</loc>
   </url>
   
@@ -752,6 +772,10 @@
   
   <url>
     <loc>/posts/frontend/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/fulbright/</loc>
   </url>
   
   <url>
@@ -903,11 +927,19 @@
   </url>
   
   <url>
+    <loc>/posts/haskell/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414223819-hassan_longing_for_the_lost_caliphate/</loc>
   </url>
   
   <url>
     <loc>/posts/hci/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/heaps/</loc>
   </url>
   
   <url>
@@ -1112,6 +1144,10 @@
   
   <url>
     <loc>/posts/java/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/job_sites/</loc>
   </url>
   
   <url>
@@ -1747,6 +1783,10 @@
   </url>
   
   <url>
+    <loc>/posts/protobuf/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415200432-provonce_the_last_ottoman_generation/</loc>
   </url>
   
@@ -2071,6 +2111,10 @@
   </url>
   
   <url>
+    <loc>/posts/streaming_sql/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/string_matching/</loc>
   </url>
   
@@ -2096,6 +2140,14 @@
   
   <url>
     <loc>/posts/summer_2021/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/private-2020-04-19/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/syracuse_satellite/</loc>
   </url>
   
   <url>
@@ -2155,6 +2207,14 @@
   </url>
   
   <url>
+    <loc>/posts/tech_working/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/tensorboard/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/territorality_of_data/</loc>
   </url>
   
@@ -2179,7 +2239,15 @@
   </url>
   
   <url>
+    <loc>/posts/think_tanks/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/thinkpads/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/thread_building_blocks/</loc>
   </url>
   
   <url>
@@ -2324,6 +2392,14 @@
   
   <url>
     <loc>/posts/20200419205815-writing/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/writing_tools/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/wwan_x1_carbon/</loc>
   </url>
   
   <url>
