@@ -287,6 +287,16 @@ Preface  Conventional western models of DDR and SSR appear irrelevant or unenfor
     </item>
     
     <item>
+      <title>alsaree3</title>
+      <link>/posts/alsaree3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/alsaree3/</guid>
+      <description>Tags: iraqi tech community
+https://alsaree3.com/</description>
+    </item>
+    
+    <item>
       <title>amal</title>
       <link>/posts/amal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1595,6 +1605,16 @@ Memes, alongside their production and consumption change banal reality into a fi
     </item>
     
     <item>
+      <title>electoral systems</title>
+      <link>/posts/electoral_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/electoral_systems/</guid>
+      <description>Tags: post-conflict statebuilding organization
+https://aceproject.org/main/english/es/esg03.htm</description>
+    </item>
+    
+    <item>
       <title>Elias Khoury</title>
       <link>/posts/elias_khoury/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1711,6 +1731,15 @@ On thinking
       <guid>/posts/epstine_range/</guid>
       <description>Tags: books
  https://commoncog.com/blog/range-book-summary/ &amp;ldquo;Instead, the strongest predictor of success was a specialist who repeatedly took their expertise in one core domain and applied it to a different domain&amp;rdquo; Filled with anecdotes Takeways:  The idea that ‘slow’ learning is what is valuable when it comes to developing foundational skills. The whole notion of ‘match quality’ as a counterpoint to ‘grit’. The idea that analogical thinking is powerful, and that it depends on a large-enough set of experiences and ideas to perform well.</description>
+    </item>
+    
+    <item>
+      <title>erlang</title>
+      <link>/posts/erlang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/erlang/</guid>
+      <description>Tags: programming languages</description>
     </item>
     
     <item>
@@ -2725,8 +2754,8 @@ Refs:
       
       <guid>/posts/integrated_ddr_standards/</guid>
       <description>Tags: ddr
- http://un.org.np/node/11787 United Nations. “Disarmament, Demobilization and Reintegration : Report of the Secretary-General,” 2006. https://digitallibrary.un.org/record/571084?ln=en. Followed up by the stockholm initatives in ddr  Advises everything from collection of data to ensuring the national ownership of the DDR.
-Specific Definitions Disarmament Disarmament is the collection, documentation, control and disposal of small arms, ammunition, explosives and light and heavy weapons of combatants and often also of the civilian population. Disarmament also includes the development of responsible arms management programmes.</description>
+ http://un.org.np/node/11787 https://www.unddr.org/the-iddrs/level-1/ United Nations. “Disarmament, Demobilization and Reintegration : Report of the Secretary-General,” 2006. https://digitallibrary.un.org/record/571084?ln=en. Followed up by the stockholm initatives in ddr  Advises everything from collection of data to ensuring the national ownership of the DDR.
+Specific Definitions Disarmament Disarmament is the collection, documentation, control and disposal of small arms, ammunition, explosives and light and heavy weapons of combatants and often also of the civilian population.</description>
     </item>
     
     <item>
@@ -2866,6 +2895,15 @@ Grammar خل + فعل  Let (imperative) + فعل Example:  Let us go: خل نر�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/iraqi_shia/</guid>
+      <description>Tags: iraq</description>
+    </item>
+    
+    <item>
+      <title>iraqi tech community</title>
+      <link>/posts/iraqi_tech_community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/iraqi_tech_community/</guid>
       <description>Tags: iraq</description>
     </item>
     
@@ -3261,7 +3299,8 @@ Supervised Learning   most common
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/libya/</guid>
-      <description>Tags: middle east</description>
+      <description>Tags: middle east
+https://www.researchgate.net/publication/332719042%5FConflict%5Fresolution%5Fin%5FLibya%5FWhat%5Fworks</description>
     </item>
     
     <item>
@@ -4647,6 +4686,15 @@ Chapter 1  Building native apps that speak to both the kubelet and the API serve
     </item>
     
     <item>
+      <title>programming languages</title>
+      <link>/posts/programming_languages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/programming_languages/</guid>
+      <description>Tags: computers</description>
+    </item>
+    
+    <item>
       <title>progressive socialist party (lebanon)</title>
       <link>/posts/progressive_socialist_party_lebanon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5521,6 +5569,16 @@ State org that manages the sale of oil</description>
       
       <guid>/posts/statistics/</guid>
       <description>Tags: math</description>
+    </item>
+    
+    <item>
+      <title>stats from org roam</title>
+      <link>/posts/stats_from_org_roam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/stats_from_org_roam/</guid>
+      <description>Tags: org-roam
+https://notes.alexkehayias.com/querying-stats-from-org-roam/</description>
     </item>
     
     <item>
