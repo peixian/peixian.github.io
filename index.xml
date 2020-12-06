@@ -50,6 +50,19 @@ Porter - Military Orientalism</description>
     </item>
     
     <item>
+      <title>a conflict time forgot</title>
+      <link>/posts/a_conflict_time_forgot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a_conflict_time_forgot/</guid>
+      <description>Tags: articles
+https://carnegie-mec.org/diwan/83304
+Talks about the Guergarat border between western sahara and mauritania
+Fought between the rabat and polisario front
+Small skirmish on Nov 13, 2020, violates the morocco/western sahara ceasefire</description>
+    </item>
+    
+    <item>
       <title>aah: asa&#39;ib ahl al-haqq</title>
       <link>/posts/aah_asa_ib_ahl_al_haqq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -619,6 +632,15 @@ If statements if [ -v ] # checks for the existance of a variable Entr  https://j
       <guid>/posts/bayat_revolution_without_revolutionaries/</guid>
       <description>Tags: books
 Introduction  Most people expect revolutions to &amp;ldquo;simply&amp;rdquo; happen Revolution without &amp;ldquo;revolutionary ideas&amp;rdquo;  No shariati, Rousseau, etc    Revolutions of Wrong Times  Marxist-Lenist liberation front in PDRY and Oman Why did the meaning of &amp;ldquo;revolution&amp;rdquo; become &amp;ldquo;refolution&amp;rdquo;? 1970 Revolutions  Reza Shah  Ali Shariati Moderate Clerics and Islamic figures like Mehdi Bazagarn became leaders and evening lecturers Oil refinery workers and nationwide strike brought down the regime   Arab World  Nasserite anti-Imperialism Maxism-Lenism  Victory for NLF in yemen opened the door for a People&amp;rsquo;s Front for the Liberation of Oman in mid 1960&amp;rsquo;s palestine liberation organization (PLO)       Arab Spring  Mohamed Bouazizi tunisia  Trade unionists played pivotal role   egypt  Largely related to Tunisia the &amp;ldquo;We are all Khaled Said&amp;rdquo; movement (April 6 Youth Movement) Toppled Mubarak   yemen brought down Ali Abudllah Saleh bahrain - thousands of Sunni and Shia occupied Pearl Roundable in Manama, three month Emergency law in response   Big differences between Arab Spring and 1970 Revolutions  &amp;ldquo;Lacked any associated intellectual anchor&amp;rdquo; - pg 11 &amp;ldquo;Unlike the revolutions of the 1970&amp;rsquo;s that espoused a powerful socialist, anti-imperialist, anticapitalist, and social justice implulse, Arab revolutionaries were preoccupied more with the borad issues oif human rights, political accountability, and legal reform&amp;rdquo; - pg 11  How much of this is due to peripherialization?</description>
+    </item>
+    
+    <item>
+      <title>beirut trash riots</title>
+      <link>/posts/beirut_trash_riots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/beirut_trash_riots/</guid>
+      <description>Tags: lebanon</description>
     </item>
     
     <item>
@@ -1707,6 +1729,17 @@ IMAP/JMAP support  https://github.com/josephg/mime-to-jmap https://github.com/fo
       <guid>/posts/20200414135839-endianness/</guid>
       <description>Computers
  Intel is little endian SPARC/Sun is big endian &amp;lt;endian.h&amp;gt; on linux allows for conversion between big endian and little endian  Nonstandard, BSD&amp;rsquo;s have their own version    </description>
+    </item>
+    
+    <item>
+      <title>engineers don&#39;t solve problems</title>
+      <link>/posts/engineers_don_t_solve_problems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/engineers_don_t_solve_problems/</guid>
+      <description>Tags: articles
+https://logicmag.io/failure/engineers-dont-solve-problems/
+ Talks about mexico city drainage issues environmental engineering does not solve problems, but rather transforms them for a later generation to deal with major problem is that they appear to work for the groups whose voices count engineers play whack-a-mole with problems, but these are just pushing stuff back, like tech debt there is no grand solution to be had, engineers transform problems instead of solving them  </description>
     </item>
     
     <item>
@@ -3528,6 +3561,15 @@ Implications  &amp;ldquo;Rather than allowing users to use a system with zero un
     </item>
     
     <item>
+      <title>mauritania</title>
+      <link>/posts/mauritania/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mauritania/</guid>
+      <description>Tags: africa</description>
+    </item>
+    
+    <item>
       <title>mechanized proofs</title>
       <link>/posts/mechanized_proofs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3555,6 +3597,28 @@ Ottoman era power circuits were maintained in Trapzon Despite issues with Trapzo
       <guid>/posts/mental_models/</guid>
       <description>Tags: epistime
 What is a mental model?  Originally traced back to Jean Piaget&amp;rsquo;s Theory of Cognitive Development  https://www.simplypsychology.org/piaget.html   Modern usage covers:  Frameworks  Frameworks for decision making and for life   Thinking tools  Tools and techniques for thinking, sometimes &amp;ldquo;rationality&amp;rdquo; research  i.e. &amp;lsquo;reasoning from first principles&amp;rsquo;, &amp;lsquo;avoiding cognitive bias&amp;rsquo;, etc     Mental representations  Piaget&amp;rsquo;s orginal theory, internal representations of some problem domain  &amp;lsquo;tacit knowledge&amp;rsquo; vs &amp;lsquo;explicit knowledge&amp;rsquo;, or technê vs epistêmê   Made through experience     https://fs.</description>
+    </item>
+    
+    <item>
+      <title>mexico</title>
+      <link>/posts/mexico/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mexico/</guid>
+      <description>Tags: latam</description>
+    </item>
+    
+    <item>
+      <title>mexico city drainage issues</title>
+      <link>/posts/mexico_city_drainage_issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mexico_city_drainage_issues/</guid>
+      <description>Tags: mexico
+Mexico city is sinking and having floods
+Engineers like Nabor Carillo understood the sinking was not natural, the rapidly growing city had extracted so much groundwater using mechanical pumps and delpleted the groundwater
+Clay shrunk and the city sunk, in spite of the Grand Canal that drained the city&amp;rsquo;s lakes and allowed for expansion
+Engineers after 1951 moved the groundwater wells out of the city center and towards urban periphery + deep drainage tunnels called Deep Drainage System (Sistema del Drenaje Profundo)</description>
     </item>
     
     <item>
@@ -3664,6 +3728,25 @@ Riemann  http://riemann.io/ made by the guy who made jepsen guide in https://art
       <guid>/posts/mooc/</guid>
       <description>Tags: classes
 Mooc list: https://news.ycombinator.com/item?id=23722680</description>
+    </item>
+    
+    <item>
+      <title>morocco</title>
+      <link>/posts/morocco/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/morocco/</guid>
+      <description>Tags: africa, middle east</description>
+    </item>
+    
+    <item>
+      <title>morocco/western sahara ceasefire</title>
+      <link>/posts/morocco_western_sahara_ceasefire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/morocco_western_sahara_ceasefire/</guid>
+      <description>Tags: morocco, western sahara
+morocco and polisario front engaged in armed conflict between 1976 and 1991 when the un brokered a peace agreement, with a promise of political process to follow</description>
     </item>
     
     <item>
@@ -4523,6 +4606,16 @@ Three states  waiting running terminated  use kubectl describe    Terminating Gr
     </item>
     
     <item>
+      <title>polisario front</title>
+      <link>/posts/polisario_front/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/polisario_front/</guid>
+      <description>Tags: western sahara
+Western sahara aligned group, largely support by algeria</description>
+    </item>
+    
+    <item>
       <title>political risk career</title>
       <link>/posts/political_risk_career/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4867,6 +4960,15 @@ https://pyobjc.readthedocs.io/en/latest/tutorials/firstapp.html</description>
     </item>
     
     <item>
+      <title>rabat</title>
+      <link>/posts/rabat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rabat/</guid>
+      <description>Tags: morocco</description>
+    </item>
+    
+    <item>
       <title>ragel</title>
       <link>/posts/ragel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5105,6 +5207,16 @@ Here&amp;rsquo;s a list of infrastructure technologies I&amp;rsquo;ve worked wit
     </item>
     
     <item>
+      <title>rules for writing</title>
+      <link>/posts/rules_for_writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rules_for_writing/</guid>
+      <description>Tags: writing https://youtu.be/aFwVf5a3pZM
+ don&amp;rsquo;t really exist except for spelling large chunks of rules aren&amp;rsquo;t errors languges is not rule following, it&amp;rsquo;s controlling the process of the readers language as a technique to control the reader&amp;rsquo;s reading process sentence stress and importance how to create value for the readers? creating value for the reading process -&amp;gt; how? &amp;ldquo;tells what the paper will be about&amp;rdquo; -&amp;gt; this is not a source of value, because they should be reading the entire article writing is not about something do you describe something when writing a paper?</description>
+    </item>
+    
+    <item>
       <title>russia</title>
       <link>/posts/russia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5310,6 +5422,17 @@ from Idris - Lessons from DDR Programs
       
       <guid>/posts/senegal_and_mauritania/</guid>
       <description>Tags: ethnicity, nationalism, and conflict
+Large ethno national sentinent and conflict in 1989-1991, started with dispute of farmers, lead to large scale evictions of Mauritanians from Senegal and afro-Mauritanians from Mauritania
+Colonial Experience  Largely shifting borders before the French came in French created two states with the Senegal river as the dividing line Senegal considered &amp;ldquo;black&amp;rdquo; Mauritania considered for the &amp;ldquo;Moors&amp;rdquo; Created various ethnic regimes in Mauritania  Blacks in Mauritania were taxed as residents of Senegal   Post colonial state powers in Mauritania are mostly held in the Moors  Setup  Drought in the 70&amp;rsquo;s and 80&amp;rsquo;s pushed many into the Senegal river valley Resource scarcity and 1987 coup attempt in Mauritania lead to spreading tensions  Ethnopolitical Entrepneurs  Arab nationalists within Mauritania Political powers in Senegal Land ownership reformers  What does this indicate?</description>
+    </item>
+    
+    <item>
+      <title>Senegal and Mauritania ethnic conflicts</title>
+      <link>/posts/senegal_and_mauritania/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/senegal_and_mauritania/</guid>
+      <description>Tags: ethnicity, nationalism, and conflict, mauritania
 Large ethno national sentinent and conflict in 1989-1991, started with dispute of farmers, lead to large scale evictions of Mauritanians from Senegal and afro-Mauritanians from Mauritania
 Colonial Experience  Largely shifting borders before the French came in French created two states with the Senegal river as the dividing line Senegal considered &amp;ldquo;black&amp;rdquo; Mauritania considered for the &amp;ldquo;Moors&amp;rdquo; Created various ethnic regimes in Mauritania  Blacks in Mauritania were taxed as residents of Senegal   Post colonial state powers in Mauritania are mostly held in the Moors  Setup  Drought in the 70&amp;rsquo;s and 80&amp;rsquo;s pushed many into the Senegal river valley Resource scarcity and 1987 coup attempt in Mauritania lead to spreading tensions  Ethnopolitical Entrepneurs  Arab nationalists within Mauritania Political powers in Senegal Land ownership reformers  What does this indicate?</description>
     </item>
@@ -6329,6 +6452,15 @@ Lebanese Druze leader</description>
       <guid>/posts/wti/</guid>
       <description>Tags: oil
  typically &amp;ldquo;sweeter&amp;rdquo; than brent, used to trade at a ~$2 premium  spreads (as of April 2020), are as wide as ~$20 now far sweeter than urals   from Permian Basin Traded out of Cushing, OK {IGPV} for function  </description>
+    </item>
+    
+    <item>
+      <title>western sahara</title>
+      <link>/posts/western_sahara/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/western_sahara/</guid>
+      <description>Tags: morocco, africa</description>
     </item>
     
     <item>
