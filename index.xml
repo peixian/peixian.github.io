@@ -490,6 +490,17 @@ Syrian town within the Idlib governate, sits at the center of Jisr al-Shughur, M
     </item>
     
     <item>
+      <title>atlantic meridional overturning circulation</title>
+      <link>/posts/atlantic_meridional_overturning_circulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/atlantic_meridional_overturning_circulation/</guid>
+      <description>Tags: climate change
+Surface and deep current driver in the atlantic ocean, responsible for much of the warm weather in the UK
+https://en.wikipedia.org/wiki/Atlantic%5Fmeridional%5Foverturning%5Fcirculation</description>
+    </item>
+    
+    <item>
       <title>audio detection</title>
       <link>/posts/audio_detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1035,6 +1046,16 @@ MOOC&amp;rsquo;s https://news.ycombinator.com/item?id=23722680</description>
     </item>
     
     <item>
+      <title>climate change tech</title>
+      <link>/posts/climate_change_tech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/climate_change_tech/</guid>
+      <description>Tags: climate change
+ https://upstream.tech/ http://worrydream.com/ClimateChange/ https://sarahendren.com/2020/11/19/amcs-the-wringing-of-hands-and-the-courage-to-seek-first-principles/  </description>
+    </item>
+    
+    <item>
       <title>cloud</title>
       <link>/posts/cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1540,15 +1561,6 @@ In &amp;ldquo;Violence and History: A Response to Thandika Mkandawire&#39;&#39;,
       <guid>/posts/e_activity_3/</guid>
       <description>Prompt: Where does responsibility for violence suffered by migrants lie?
 Draft Migrants suffer a litany of horrors on their path to their ultimate destination. Existing on the bounded continuum, migrants are labeled somewhere between &amp;ldquo;refugee&amp;rdquo; and &amp;ldquo;economic migrant&amp;rdquo;. This dual classification, with significant grey area in between, affords people different rights and treatment along the way. For example, the term refugee carries implies significant loss of agency, but garners international sympathy and affords access to certain institutions.</description>
-    </item>
-    
-    <item>
-      <title>e-activity-4: who bears responsibility for refugee violence - lebanon</title>
-      <link>/posts/e_activity_4_who_bears_responsibility_for_refugee_violence_lebanon/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/e_activity_4_who_bears_responsibility_for_refugee_violence_lebanon/</guid>
-      <description>Tags: conflict and violence</description>
     </item>
     
     <item>
@@ -2265,6 +2277,16 @@ Examples  https://github.com/WeOpenly/localgov.fyi  Tutorials  https://www.gatsb
     </item>
     
     <item>
+      <title>google ngrams for historians</title>
+      <link>/posts/google_ngrams_for_historians/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/google_ngrams_for_historians/</guid>
+      <description>Tags: articles
+https://hazine.info/google-ngram-for-historians/</description>
+    </item>
+    
+    <item>
       <title>gorno-badakhasan</title>
       <link>/posts/gorno_badakhasan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2755,6 +2777,17 @@ Discussion questions From Erin   Is the idea that to be post-ottoman in contempo
     </item>
     
     <item>
+      <title>hystersis loop</title>
+      <link>/posts/hystersis_loop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hystersis_loop/</guid>
+      <description>Tags: physics, economics
+https://en.wikipedia.org/wiki/Hysteresis
+https://en.wikipedia.org/wiki/Preisach%5Fmodel%5Fof%5Fhysteresis</description>
+    </item>
+    
+    <item>
       <title>ibn khaldun</title>
       <link>/posts/ibn_khaldun/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2859,6 +2892,18 @@ Refs:
       <description>Tags: kubernetes (k8s)
 https://kubernetes.io/docs/concepts/workloads/pods/init-containers/
 Containers that run before app containers in a pod, can be used to setup some stuff without having it be in the app image</description>
+    </item>
+    
+    <item>
+      <title>inodes</title>
+      <link>/posts/inodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/inodes/</guid>
+      <description>Tags: linux
+What is an inode? A way to address a group of blocks on disk, each inode contains some metadata, but does not include the name.
+Each name can either be a hard link or a symlink. The inode keeps track of how many hard links there are to it. If there are 0 hard links, the inode is slated to be overwritten in the future.
+blocks [1,2,3,4] &amp;lt;- inode &amp;lt;- hardlink &amp;lt;- symlink</description>
     </item>
     
     <item>
@@ -4572,6 +4617,18 @@ France refined parlimentarism in the wake of the French Revolution and theorized
     </item>
     
     <item>
+      <title>path dependency</title>
+      <link>/posts/path_dependency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/path_dependency/</guid>
+      <description>Tags: physics
+A system can have multiple states of equilibrium. Which equilibrium it reaches is a function of how it got there.
+hystersis loop -&amp;gt; dependence on the state of a system with memory, the state of a system does not merely depend on the external fcators, but rather also depends on how it got there. This implies there are multiple equilibrium states.
+Is this related to ddr? Are reintegration a function of only external actors, or does the implementation matter?</description>
+    </item>
+    
+    <item>
       <title>patriotic union of kurdistan (PUK)</title>
       <link>/posts/patriotic_union_of_kurdistan_puk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6263,7 +6320,7 @@ Advice should be taken on how easily something can be abstracted or whether the 
       
       <guid>/posts/thesis_proposals_help/</guid>
       <description>Tags: grad school, Potential Advisors for Master&amp;rsquo;s Thesis
- http://matt.might.net/articles/advice-for-phd-thesis-proposals/  </description>
+ http://matt.might.net/articles/advice-for-phd-thesis-proposals/ https://sarahendren.com/2020/11/16/thesis-advice/  </description>
     </item>
     
     <item>
@@ -6667,6 +6724,15 @@ Lebanese Druze leader</description>
       <guid>/posts/wfr/</guid>
       <description>Tags: nols wilderness first aid
  10 days in the woods hands on, even with covid (although people started to lean away from the covid precautions) very interesting dynamics, interesting age spread  old people &amp;gt;50, many kids, only a few in the middle age range definitely more variety too, from camp councilors to EMT&amp;rsquo;s   group dynamics were interesting as well, people tended to partner up night sessions were interesting learning was not that hard, college course level  </description>
+    </item>
+    
+    <item>
+      <title>Where does responsibility for violence suffered by migrants lie?</title>
+      <link>/posts/e_activity_4_who_bears_responsibility_for_refugee_violence_lebanon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/e_activity_4_who_bears_responsibility_for_refugee_violence_lebanon/</guid>
+      <description>Lebanon Many migrants suffer violence in a multitude of forms on their path to their ultimate destination. Along the way, observers categorize migrants between two poles: either the migrant as &amp;ldquo;refugee&amp;rdquo; or a migrant as an &amp;ldquo;economic migrant&amp;rdquo;. This dual classification, with significant grey area in between, affords people different rights and treatment along the way. The term &amp;ldquo;refugee&amp;rdquo; has legal standing in some countries and carries certain rights and access to international institutions, but implies a loss of agency.</description>
     </item>
     
     <item>
