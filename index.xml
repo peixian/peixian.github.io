@@ -347,6 +347,16 @@ https://alsaree3.com/</description>
     </item>
     
     <item>
+      <title>american reverie</title>
+      <link>/posts/american_reverie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/american_reverie/</guid>
+      <description>Tags: drafts
+I recently read an article by Patrick Wyman on how empires in decline have their wars reverberate back on them. The gist of it is this: empires typically have their domestic affairs shielded away from their foreign actions. It&amp;rsquo;s only when empires are in decline that you see the actions of empires in foreign lands affect their domestic affairs. In the case of the US, we see the failed wars of Iraq and Afghanistan contribute to the militarization of the police and erosion of the rights of domestic citizens, such as the case of Portland and federal paramilitary snatching up protestors.</description>
+    </item>
+    
+    <item>
       <title>americas</title>
       <link>/posts/americas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -496,6 +506,15 @@ Articles  https://www.middleeasteye.net/news/internet-interrupted-how-middle-eas
       <guid>/posts/ariha/</guid>
       <description>Tags: syria
 Syrian town within the Idlib governate, sits at the center of Jisr al-Shughur, Ma&amp;rsquo;arrat al-Nu&amp;rsquo;man, Saraqeb, and Idlib</description>
+    </item>
+    
+    <item>
+      <title>arthur young</title>
+      <link>/posts/arthur_young/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/arthur_young/</guid>
+      <description>Tags: people, economics</description>
     </item>
     
     <item>
@@ -1312,6 +1331,15 @@ Turkish politics hold contradictory viewpoints of Ottomanism, esepcially with th
     </item>
     
     <item>
+      <title>data</title>
+      <link>/posts/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/data/</guid>
+      <description>Tags: root</description>
+    </item>
+    
+    <item>
       <title>Databases</title>
       <link>/posts/databases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1329,6 +1357,16 @@ Class  https://15721.courses.cs.cmu.edu/spring2019/schedule.html  MariaDB  https
       <guid>/posts/dataflow/</guid>
       <description>Tags: Databases, distributed systems
  https://github.com/TimelyDataflow/timely-dataflow  </description>
+    </item>
+    
+    <item>
+      <title>david ricardo</title>
+      <link>/posts/david_ricardo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/david_ricardo/</guid>
+      <description>Tags: people, economics
+Pioneered the understanding of &amp;ldquo;scarcity economy&amp;rdquo; with Principals of Political Economy</description>
     </item>
     
     <item>
@@ -3474,6 +3512,16 @@ Leftist urban intellectuals</description>
     </item>
     
     <item>
+      <title>kuznets curve</title>
+      <link>/posts/kuznets_curve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/kuznets_curve/</guid>
+      <description>Tags: economics
+Stated that all economies go through a &amp;ldquo;bell shaped&amp;rdquo; curve of inequality expanding at first with only a portion able to capture productive output to reducing at later points</description>
+    </item>
+    
+    <item>
       <title>kyoto tycoon</title>
       <link>/posts/kyoto_tycoon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3502,6 +3550,25 @@ Kyoto Cabinet is the frontend, Kyoto tycoon is the backend, kyoto tycoon is a fo
       
       <guid>/posts/20200414224409-latam/</guid>
       <description>Tags: root, south america</description>
+    </item>
+    
+    <item>
+      <title>latex</title>
+      <link>/posts/latex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/latex/</guid>
+      <description>Tags: computers</description>
+    </item>
+    
+    <item>
+      <title>latex flavors (luatex, contex, xetex)</title>
+      <link>/posts/latex_flavors_luatex_contex_xetex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/latex_flavors_luatex_contex_xetex/</guid>
+      <description>Tags: latex
+ https://tex.stackexchange.com/questions/36/differences-between-luatex-context-and-xetex https://www.overleaf.com/learn/latex/Articles/The%5FTeX%5Ffamily%5Ftree:%5FLaTeX,%5FpdfTeX,%5FXeTeX,%5FLuaTeX%5Fand%5FConTeXt https://www.overleaf.com/learn/latex/Articles/What&#39;s%5Fin%5Fa%5FName:%5FA%5FGuide%5Fto%5Fthe%5FMany%5FFlavours%5Fof%5FTeX http://www.tug.org/texlive//devsrc/Master/texmf-dist/doc/context/documents/general/manuals/luatex.pdf https://news.ycombinator.com/item?id=25328874  </description>
     </item>
     
     <item>
@@ -3720,6 +3787,15 @@ Implications  &amp;ldquo;Rather than allowing users to use a system with zero un
     </item>
     
     <item>
+      <title>malthus</title>
+      <link>/posts/malthus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/malthus/</guid>
+      <description>Tags: people, economics</description>
+    </item>
+    
+    <item>
       <title>Mamdani - Trans-African Slaveries Thinking Historically</title>
       <link>/posts/mamdani_trans_african_slaveries_thinking_historically/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3747,6 +3823,25 @@ Implications  &amp;ldquo;Rather than allowing users to use a system with zero un
       <guid>/posts/maoist_fighters_in_nepal/</guid>
       <description>Tags: ddr, militias
  1996-2006 conflict formed because of enduring social divisions from the caste system 13k+ dead displaced between 100k-200k people  </description>
+    </item>
+    
+    <item>
+      <title>mapping</title>
+      <link>/posts/mapping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mapping/</guid>
+      <description>Tags: computers
+https://news.ycombinator.com/item?id=25349195</description>
+    </item>
+    
+    <item>
+      <title>marx</title>
+      <link>/posts/marx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/marx/</guid>
+      <description>Tags: people, economics</description>
     </item>
     
     <item>
@@ -4079,7 +4174,7 @@ Iraqi landowner and religious figure</description>
       
       <guid>/posts/multi_country_demobilisation_and_reintegration_programme_mdrp/</guid>
       <description>Tags: un, ddr
-Largest ever DDR program, involved Great Lakes region of africa between 2002 and 2009.
+ https://reliefweb.int/report/angola/multi-country-demobilization-and-reintegration-program-end-program-evaluation-final  Largest ever DDR program, involved Great Lakes region of africa between 2002 and 2009.
 Included angola, burundi, central african republic, republic of the congo (RoC), democratic republic of the congo (drc), rwanda, and uganda
 Successfully demobilized around 300,000 ex-combatnats, but results varied significantly from one country to the next</description>
     </item>
@@ -4524,6 +4619,25 @@ Way for researchers to collaborate and collect data
     </item>
     
     <item>
+      <title>open source</title>
+      <link>/posts/open_source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/open_source/</guid>
+      <description>Tags: computers</description>
+    </item>
+    
+    <item>
+      <title>open source commerialization</title>
+      <link>/posts/open_source_commerialization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/open_source_commerialization/</guid>
+      <description>Tags:open source
+ https://joemorrison.medium.com/three-models-for-commercializing-open-source-software-84d3130c82cd https://d2iq.com/ https://medium.com/open-consensus/2-open-core-definition-examples-tradeoffs-e4d0c044da7c https://jaxenter.com/redis-commons-clause-open-source-148558.html https://stratechery.com/2019/aws-mongodb-and-the-economic-realities-of-open-source/ https://www.zdnet.com/article/redis-labs-drops-commons-clause-for-a-new-license/ https://www.zdnet.com/article/its-mongodbs-turn-to-change-its-open-source-license/ https://joemorrison.medium.com/death-of-an-open-source-business-model-62bc227a7e9b https://techcrunch.com/2014/02/13/please-dont-tell-me-you-want-to-be-the-next-red-hat/ https://news.ycombinator.com/item?id=25359897 https://www.hashicorp.com/resources/google-provider-new-terraform  </description>
+    </item>
+    
+    <item>
       <title>openapi</title>
       <link>/posts/openapi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4571,6 +4685,16 @@ invasion of gaza in nov 2012 by israel</description>
       <guid>/posts/operation_protective_edge/</guid>
       <description>Tags: palestine
 invasion of gaza by israel in july 2014</description>
+    </item>
+    
+    <item>
+      <title>org-latex-export</title>
+      <link>/posts/org_latex_export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/org_latex_export/</guid>
+      <description>Tags: org-mode, latex
+ https://github.com/schnorr/acmorg https://github.com/novoid/orgmode-ACM-template https://orgmode.org/worg/org-tutorials/org-latex-export.html  </description>
     </item>
     
     <item>
@@ -4780,6 +4904,17 @@ Started by Ibrahim Ahmad and Jalal Talabani</description>
     </item>
     
     <item>
+      <title>peace studies blog post</title>
+      <link>/posts/peace_studies_blog_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/peace_studies_blog_post/</guid>
+      <description>Tags: drafts
+This post is intended to help out any other students who are trying to get a grasp on the field of disarmament, demobilization, and reintegration (DDR) and security sector reform (SSR). I&amp;rsquo;ve found it quite difficult to get a good orientation on the field, especially coming into it barefaced.
+Starting Out  https://www.unddr.org/ - UN DDR guidelines  Basically the center of this, the UN truly lies at the center of DDR and SSR efforts.</description>
+    </item>
+    
+    <item>
       <title>peer review</title>
       <link>/posts/peer_review/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4877,6 +5012,17 @@ https://www.usenix.org/conference/nsdi20/presentation/brooker</description>
       
       <guid>/posts/physics/</guid>
       <description>Tags: root</description>
+    </item>
+    
+    <item>
+      <title>Piketty - Capital in the Twenty-First Century</title>
+      <link>/posts/piketty_capital_in_the_twenty_first_century/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/piketty_capital_in_the_twenty_first_century/</guid>
+      <description>Tags: books, finance, economics
+Introduction  Frames the discussion around wealth issues Attempts to pull together data  world top incomes database    History  Talks about malthus and his consideration of too many peasants arthur young david ricardo marx and the prediction of industrial aggregate wealth simon kuznets  Conclusions   Piketty states that inequality is not necessarily an unstable state
+ path dependency exists, inequality can reduce over time or increase over time    also states that modern american economists are too infatuated with mathematics and physics</description>
     </item>
     
     <item>
@@ -5869,6 +6015,16 @@ Summary  Shi&amp;rsquo;is desired a state independent from foreign rule Kurds of
     </item>
     
     <item>
+      <title>simon kuznets</title>
+      <link>/posts/simon_kuznets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/simon_kuznets/</guid>
+      <description>Tags: people, economics
+Pioneered the kuznets curve</description>
+    </item>
+    
+    <item>
       <title>Simpson - War from the Ground Up</title>
       <link>/posts/20200418225926-simpson_war_from_the_ground_up/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6454,6 +6610,18 @@ Advice should be taken on how easily something can be abstracted or whether the 
     </item>
     
     <item>
+      <title>the frontier, settler colonialism, the united states</title>
+      <link>/posts/the_frontier_settler_colonialism_the_united_states/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the_frontier_settler_colonialism_the_united_states/</guid>
+      <description>Tags: drafts
+ https://patrickwyman.substack.com/p/imperial-wars-always-come-home  settler colonialism, imperial wars, patrick wolfe
+Macaes - History has Begun, rooted in fantasies of a &amp;ldquo;frontier&amp;rdquo;
+ boogaloo boys blog post previous imperial wars?  vietnam, george kennan &amp;ldquo;complete withdraw, followed by complete silence&amp;rdquo;   it&amp;rsquo;s not rome, it&amp;rsquo;s not the hundred years war, it&amp;rsquo;s not even really institutional rot the core of american settler colonialism upholds the midwest as an unique american ideal  native americans slavery and blacks   lack of transitional justice selling of frontier culture, merging of american frontier culture onto the wars  television and technology made wars simultatnously more real and more livable  @tactikurd     settler colonialism has always been alive in america, &amp;ldquo;blank slate&amp;rdquo; of iraq, &amp;ldquo;blank slate of the afghanistan&amp;rdquo;, &amp;ldquo;blank slate of westward expansion&amp;rdquo;, even as it was blind to the remarkable human suffering slaves were imported instead of using native americans as labor sources because the natives had no plausible claim to the land american amnesia  thesis: it&amp;rsquo;s not imperial wars that come home, technology and social media + failures of the US have activated a latent libertarianism/strain</description>
+    </item>
+    
+    <item>
       <title>the twin insurgency</title>
       <link>/posts/the_twin_insurgency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6976,6 +7144,15 @@ It&amp;rsquo;s built with:
     </item>
     
     <item>
+      <title>world top incomes database</title>
+      <link>/posts/world_top_incomes_database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/world_top_incomes_database/</guid>
+      <description>Tags: data, economics</description>
+    </item>
+    
+    <item>
       <title>worldwide food production</title>
       <link>/posts/food_production/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7108,7 +7285,8 @@ Talks about the &amp;ldquo;Memory House of Ataturk&amp;rdquo; (mustafa kemal) as
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/zettlekasten/</guid>
-      <description>Tags: writing, epistime</description>
+      <description>Tags: writing, epistime
+ https://notes.andymatuschak.org/z4AX7pHAu5uUfmrq4K4zig9x8jmmF62XgaMXm?stackedNotes=z4KZ9973AoHhvM9Pj5Qrds48JXNbMEwVJmVRw&amp;amp;stackedNotes=z8RTzukqNLKFXzqLwx25HrUrg5E5jiziGznWB&amp;amp;stackedNotes=z6UDDkom8Aifg6mLdjT1sPtbMBweCmpyTwmJT http://luhmann.surge.sh/communicating-with-slip-boxes https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C?stackedNotes=z3SjnvsB5aR2ddsycyXofbYR7fCxo7RmKW2be&amp;amp;stackedNotes=z3PBVkZ2SvsAgFXkjHsycBeyS6Cw1QXf7kcD8  </description>
     </item>
     
     <item>

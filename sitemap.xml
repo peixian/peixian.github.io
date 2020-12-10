@@ -135,6 +135,10 @@
   </url>
   
   <url>
+    <loc>/posts/american_reverie/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/americas/</loc>
   </url>
   
@@ -192,6 +196,10 @@
   
   <url>
     <loc>/posts/ariha/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/arthur_young/</loc>
   </url>
   
   <url>
@@ -523,11 +531,19 @@
   </url>
   
   <url>
+    <loc>/posts/data/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/databases/</loc>
   </url>
   
   <url>
     <loc>/posts/dataflow/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/david_ricardo/</loc>
   </url>
   
   <url>
@@ -1379,6 +1395,10 @@
   </url>
   
   <url>
+    <loc>/posts/kuznets_curve/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/kyoto_tycoon/</loc>
   </url>
   
@@ -1388,6 +1408,14 @@
   
   <url>
     <loc>/posts/20200414224409-latam/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/latex/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/latex_flavors_luatex_contex_xetex/</loc>
   </url>
   
   <url>
@@ -1475,6 +1503,10 @@
   </url>
   
   <url>
+    <loc>/posts/malthus/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/mamdani_trans_african_slaveries_thinking_historically/</loc>
   </url>
   
@@ -1484,6 +1516,14 @@
   
   <url>
     <loc>/posts/maoist_fighters_in_nepal/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/mapping/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/marx/</loc>
   </url>
   
   <url>
@@ -1795,6 +1835,14 @@
   </url>
   
   <url>
+    <loc>/posts/open_source/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/open_source_commerialization/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/openapi/</loc>
   </url>
   
@@ -1812,6 +1860,10 @@
   
   <url>
     <loc>/posts/operation_protective_edge/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/org_latex_export/</loc>
   </url>
   
   <url>
@@ -1895,6 +1947,10 @@
   </url>
   
   <url>
+    <loc>/posts/peace_studies_blog_post/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/peer_review/</loc>
   </url>
   
@@ -1932,6 +1988,10 @@
   
   <url>
     <loc>/posts/physics/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/piketty_capital_in_the_twenty_first_century/</loc>
   </url>
   
   <url>
@@ -2327,6 +2387,10 @@
   </url>
   
   <url>
+    <loc>/posts/simon_kuznets/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200418225926-simpson_war_from_the_ground_up/</loc>
   </url>
   
@@ -2559,6 +2623,10 @@
   </url>
   
   <url>
+    <loc>/posts/the_frontier_settler_colonialism_the_united_states/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/the_twin_insurgency/</loc>
   </url>
   
@@ -2768,6 +2836,10 @@
   
   <url>
     <loc>/posts/world_bank/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/world_top_incomes_database/</loc>
   </url>
   
   <url>
