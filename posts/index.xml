@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on الـبـحـر الـزاخـر</title>
+    <title>Posts on ʿAjfat al-Gūr</title>
     <link>/posts/</link>
-    <description>Recent content in Posts on الـبـحـر الـزاخـر</description>
+    <description>Recent content in Posts on ʿAjfat al-Gūr</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1-1 meetings</title>
@@ -1649,6 +1649,15 @@ Draft Migrants suffer a litany of horrors on their path to their ultimate destin
     </item>
     
     <item>
+      <title>ebooks</title>
+      <link>/posts/ebooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ebooks/</guid>
+      <description>Tags: computers</description>
+    </item>
+    
+    <item>
       <title>economics</title>
       <link>/posts/economics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2084,6 +2093,16 @@ http://www.nobius.org/dbg/practical-file-system-design.pdf</description>
       <guid>/posts/20200415154751-finance/</guid>
       <description>Tags: root
  https://en.wikipedia.org/wiki/Bucket%5Fshop%5F(stock%5Fmarket) https://en.wikipedia.org/wiki/Secular%5Fstagnation  </description>
+    </item>
+    
+    <item>
+      <title>finite state machines</title>
+      <link>/posts/finite_state_machines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/finite_state_machines/</guid>
+      <description>Tags: state machines
+Tools https://www.fsmpro.io/#feature-area</description>
     </item>
     
     <item>
@@ -4608,6 +4627,17 @@ What is historiography good for?
     </item>
     
     <item>
+      <title>opds</title>
+      <link>/posts/opds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/opds/</guid>
+      <description>Tags: ebooks
+Open Publication Distribution System
+ https://en.wikipedia.org/wiki/Open%5FPublication%5FDistribution%5FSystem  Similar to Atom, can be used in https://johnfactotum.github.io/foliate/</description>
+    </item>
+    
+    <item>
       <title>open data kit</title>
       <link>/posts/open_data_kit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5615,6 +5645,16 @@ Books  https://martinfowler.com/books/refactoring.html  </description>
     </item>
     
     <item>
+      <title>remarkable</title>
+      <link>/posts/remarkable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/remarkable/</guid>
+      <description>Tags: computers
+https://github.com/ddvk/remarkable-stylus https://github.com/ddvk/remarkable-hacks</description>
+    </item>
+    
+    <item>
       <title>republic of the congo (RoC)</title>
       <link>/posts/republic_of_the_congo_roc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6208,6 +6248,15 @@ Four types of insurgent models:
     </item>
     
     <item>
+      <title>state machines</title>
+      <link>/posts/state_machines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/state_machines/</guid>
+      <description>Tags: computers</description>
+    </item>
+    
+    <item>
       <title>state oil marketing organization (somo)</title>
       <link>/posts/state_oil_marketing_organization_somo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6324,6 +6373,16 @@ Simstring  http://chokkan.org/software/simstring/ Cosine similarity, C++ but has
       <guid>/posts/subedi_combatants_to_civilians/</guid>
       <description>Tags: books, ddr
 Summary  Talks about DDR within the context of nepal Specifically about the maoist fighters in nepal  Chapter 1  Nepal followed unconventional DDR Mixed model of combining disarmament and demobilization with cash based incentives for ddr  questionable how useful this was can cash based incentives for ddr depolitize DDR?  What are the risks     Talks about how DDR is a social, economic, and political process ex-combatants do not form a homogenous social category, depends on their ability to forge social networks and social capital, particularly in roles of the &amp;ldquo;war family&amp;rdquo; next generation disarmament, demobilization, and reintegration, national governmeents taking the lead talks about DDR in terms of minimalist vs maximalist terms  minimalist  security focused   maximalist  socioeconomic development agenda     talks about family as a concept Lessons learned  nepal was a typical enivronment where politics and political veiews are influenced by economic influence b/c the management of ex-combatants was seen as a political process rather than a social end economic process, maoists used their commitment to as a power bargin in politics not all ex-combatants reintegrate in the same way, especially when the DDR is cash based   Further research  army integration was on the central agenda with security sector reform (ssr) reconciliation and reintegration    </description>
+    </item>
+    
+    <item>
+      <title>submarine cable map</title>
+      <link>/posts/submarine_cable_map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/submarine_cable_map/</guid>
+      <description>Tags: computers
+ https://www.submarinecablemap.com/ https://kis-orca.eu/map/  compared to the telegraph cables</description>
     </item>
     
     <item>
@@ -6549,6 +6608,16 @@ What Are?   https://blog.cloudflare.com/syn-packet-handling-in-the-wild/
       <guid>/posts/tech_working/</guid>
       <description>Tags: personal
 Organizing  https://journals.sagepub.com/doi/full/10.1177/1095796020916201?fbclid=IwAR3CWxeV6jMJ2-vyHm-0YP7dQdvP5wM3W5zJiRQXJTyxPn2VhP-9Fvp8NuE&amp;amp;  </description>
+    </item>
+    
+    <item>
+      <title>telegraph cables</title>
+      <link>/posts/telegraph_cables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/telegraph_cables/</guid>
+      <description>Tags: computers
+https://en.m.wikipedia.org/wiki/Electrical%5Ftelegraphy%5Fin%5Fthe%5FUnited%5FKingdom https://en.m.wikipedia.org/wiki/Transatlantic%5Ftelegraph%5Fcable</description>
     </item>
     
     <item>
@@ -6894,7 +6963,7 @@ three pronged approach
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/undersea_fiber/</guid>
-      <description>Tags: Networks
+      <description>Tags: Networks -submarine cable map
  balancing act  budget physical constraints  ocean beds are often weird   usage growth estimates  up to next decade   repeater placement  extremely expensive   sharks  https://www.independent.co.uk/life-style/gadgets-and-tech/news/sharks-are-eating-the-internet-in-vietnam-9962747.html      iraq internet fiber  https://pinboard.in/cached/7fdc6a769248/ fiber backhaul is owned by Baghdad and KRG politicans very little room for new companies most backhauls are via the sea to EU and US servers shortest path to europe is from Iraq-Turkey pipe, but owned by https://en.</description>
     </item>
     
