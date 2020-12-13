@@ -900,7 +900,7 @@ https://en.wikipedia.org/wiki/Bully%5Falgorithm</description>
       
       <guid>/posts/c_cpp/</guid>
       <description>Tags: computers
-CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf  </description>
+CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646  </description>
     </item>
     
     <item>
@@ -1040,6 +1040,16 @@ Chapter one  Goes against Anderson - Imagined Communities by stating that the co
       <guid>/posts/china/</guid>
       <description>Tags: root
 Resources:  https://macropolo.org/  </description>
+    </item>
+    
+    <item>
+      <title>chinese science statistics</title>
+      <link>/posts/chinese_science_statistics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/chinese_science_statistics/</guid>
+      <description>Tags: epistime
+ how do citiations differ?  https://akjournals.com/view/journals/11192/60/3/article-p385.xml https://asistdl.onlinelibrary.wiley.com/doi/abs/10.1002/asi.20475?casa%5Ftoken=NUrJGeSZhBsAAAAA:tWGtPWw9y661wlCtOYCipgtxS%5FAJszkQqyzOpFqipPzwpk%5FRqYpHA34No1E53p1bl4Ggr1QxqX3%5FcGw   raw satistics  http://www.stats.gov.cn/tjsj/ndsj/2020/indexeh.htm   young scientists:  https://www-cambridge-org.proxy.library.nyu.edu/core/journals/china-quarterly/article/chinas-new-scientific-elite-distinguished-young-scientists-the-research-environment-and-hopes-for-chinese-science/23EB23562E28C9A1A2AE1963EA32581C   changes in biomedical research as a result  https://link-springer-com.proxy.library.nyu.edu/article/10.1186/1742-7622-5-19    </description>
     </item>
     
     <item>
@@ -1588,6 +1598,17 @@ Domain Fronting in Signal  What is domain fronting?  History  Cozy Bear in 2017 
       
       <guid>/posts/dominican_republic/</guid>
       <description>Tags: latam</description>
+    </item>
+    
+    <item>
+      <title>double buffering</title>
+      <link>/posts/double_buffering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/double_buffering/</guid>
+      <description>Tags: computers
+https://en.wikipedia.org/wiki/Multiple%5Fbuffering#Software%5Fdouble%5Fbuffering
+ Allocate two buffers Swap the two buffers once the back buffer is ready, saves you from doing any more allocations  </description>
     </item>
     
     <item>
@@ -5689,7 +5710,7 @@ https://github.com/xdsopl/robot36</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/root/</guid>
-      <description>Notes in Zettelkasten style, with the ethos of working with the garage door up.
+      <description>Notes in Zettelkasten.
 Main site and more complete thoughts are at http://space.af.
 It&amp;rsquo;s built with:
  org-roam ox-hugo hugo hugo theme  </description>
