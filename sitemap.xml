@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/1_1_meetings/</loc>
   </url>
   
@@ -2936,10 +2940,6 @@
   
   <url>
     <loc>/posts/zotero/</loc>
-  </url>
-  
-  <url>
-    <loc>/</loc>
   </url>
   
 </urlset>
