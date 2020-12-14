@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <style>
+    body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
+  </style>
+</head>
+
+<body>
+    <script>
+     // Feel free to change or delete any of the code you see in this editor!
+     var svg = d3.select("body").append("svg")
+                 .attr("width", 960)
+                 .attr("height", 500);
+
+     var graph = {
+         "nodes": [
+             {
+                 "id": "18362286",
+                 "lotid": "TEST",
+                 "epoch": 1511295513000,
+                 "group": "TEST",
+                 "sourceOnly": true
+             },
+             {
+                 "id": "18362287",
+                 "lotid": "TEST",
+                 "epoch": 1511324313000,
+                 "group": "TEST",
+                 "sourceOnly": false
+             },
+             {
+                 "id": "18362246",
+                 "lotid": "TEST",
+                 "epoch": 1511324259000,
+                 "group": "TEST",
+                 "sourceOnly": false
+             },
+             {
+                 "id": "18420997",
+                 "lotid": "TEST",
+                 "epoch": 1511349867000,
+                 "group": "TEST",
+                 "sourceOnly": false
+             },
+             {
+                 "id": "18420998",
+                 "lotid": "TEST",
+                 "epoch": 1511378667000,
+                 "group": "TEST",
+                 "sourceOnly": false
+             },
+             {
+                 "id": "18511008",
+                 "lotid": "TEST",
+                 "epoch": 1511427258000,
+                 "group": "TEST",
+                 "sourceOnly": false
+             },
+             {
+                 "id": "18511009",
+                 "lotid": "TEST",
+                 "epoch": 1511456058000,
+                 "group": "TEST",
+                 "sourceOnly": false
+             },
+             {
+                 "id": "19137521",
+                 "lotid": "TEST",
+                 "epoch": 1511984004000,
+                 "group": "TEST",
+                 "sourceOnly": false
+             },
+             {
+                 "id": "19137522",
+                 "lotid": "TEST",
+                 "epoch": 1512012804000,
+                 "group": "TEST",
+                 "sourceOnly": false
+             },
+             {
+                 "id": "19147080",
+                 "lotid": "TEST",
+                 "epoch": 1511993189000,
+                 "group": "TEST",
+                 "sourceOnly": false
+             },
+             {
+                 "id": "19147081",
+                 "lotid": "TEST",
+                 "epoch": 1512021989000,
+                 "group": "TEST",
+                 "sourceOnly": false
+             },
+             {
+                 "id": "19179457",
+                 "lotid": "TEST",
+                 "epoch": 1512023091000,
+                 "group": "TEST",
+                 "sourceOnly": false
+             },
+             {
+                 "id": "19179458",
+                 "lotid": "TEST",
+                 "epoch": 1512051891000,
+                 "group": "TEST",
+                 "sourceOnly": false
+             }
+         ],
+         "links": [
+             {
+                 "source": "18362286",
+                 "target": "18362287",
+                 "reltype": "GENEALOGY"
+             },
+             {
+                 "source": "18362286",
+                 "target": "18362246",
+                 "reltype": "GENEALOGYNEXT"
+             },
+             {
+                 "source": "18362246",
+                 "target": "18420997",
+                 "reltype": "GENEALOGYNEXT"
+             },
+             {
+                 "source": "18420997",
+                 "target": "18420998",
+                 "reltype": "GENEALOGY"
+             },
+             {
+                 "source": "18420997",
+                 "target": "18511008",
+                 "reltype": "GENEALOGYNEXT"
+             },
+             {
+                 "source": "18511008",
+                 "target": "18511009",
+                 "reltype": "GENEALOGY"
+             },
+             {
+                 "source": "18511008",
+                 "target": "19137521",
+                 "reltype": "GENEALOGYNEXT"
+             },
+             {
+                 "source": "19137521",
+                 "target": "19137522",
+                 "reltype": "GENEALOGY"
+             },
+             {
+                 "source": "19137521",
+                 "target": "19147080",
+                 "reltype": "GENEALOGYNEXT"
+             },
+             {
+                 "source": "19147080",
+                 "target": "19147081",
+                 "reltype": "GENEALOGY"
+             },
+             {
+                 "source": "19147080",
+                 "target": "19179457",
+                 "reltype": "GENEALOGYNEXT"
+             },
+             {
+                 "source": "19179457",
+                 "target": "19179458",
+                 "reltype": "GENEALOGY"
+             }
+         ]
+     };
+
+     var width = 960,
+         height = 500;
+
+	 var simulation = d3.forceSimulation()
+                        .nodes(graph.nodes);
+
+     simulation
+         .force("charge_force", d3.forceManyBody().strength(-100))
+         .force("center_force", d3.forceCenter(width / 2, height / 2))
+         .force("links", d3.forceLink(graph.links).id(function (d) { return d.id; }))
+         .force("collide", d3.forceCollide().radius(2))
+     ;
+
+     simulation
+         .on("tick", ticked);
+
+     //add encompassing group for the zoom
+     var g = svg.append("g")
+                .attr("class", "everything");
+
+     //Create deffinition for the arrow markers showing relationship directions
+     g.append("defs").append("marker")
+      .attr("id", "arrow")
+      .attr("viewBox", "0 -3 10 10")
+      .attr("refX", 20)
+      .attr("refY", 0)
+      .attr("markerWidth", 8)
+      .attr("markerHeight", 8)
+      .attr("orient", "auto")
+      .append("svg:path")
+      .attr("d", "M0,-5L10,0L0,5");
+
+     var link = g.append("g")
+                 .attr("class", "links")
+                 .selectAll("line")
+                 .data(graph.links)
+                 .enter().append("line")
+                 .attr("stroke", function(d) { return d3.color("#000000"); })
+                 .attr("marker-end", "url(#arrow)");
+
+     var node = g.append("g")
+                 .attr("class", "nodes")
+                 .selectAll("circle")
+                 .data(graph.nodes)
+                 .enter()
+                 .append("circle")
+                 .attr("r", 10)
+                 .attr("fill", function(d) {
+                     if (d.sourceOnly) return d3.color("#0000FF");
+
+                     return d3.color("#FFFF2F"); })
+                 .style("stroke", function(d) {
+                     if (d.sourceOnly) return d3.color("#000080");
+
+                     return d3.color("#FF8D2F");
+                 });
+
+     //add drag capabilities
+     var drag_handler = d3.drag()
+                          .on("start", drag_start)
+                          .on("drag", drag_drag)
+                          .on("end", drag_end);
+
+     drag_handler(node);
+
+     var text = g.append("g").attr("class", "labels").selectAll("g")
+                 .data(graph.nodes)
+                 .enter().append("g")
+                 .append("text")
+                 .attr("x", 14)
+                 .attr("y", ".31em")
+                 .style("font-family", "sans-serif")
+                 .style("font-size", "0.7em")
+                 .text(function (d) { return d.lotid; });
+
+     node.on("click", function (d) {
+         d3.event.stopImmediatePropagation();
+         self.onNodeClicked.emit(d.id);
+     });
+
+     node.append("title")
+         .text(function (d) { return d.lotid; });
+
+     //add zoom capabilities
+     var zoom_handler = d3.zoom()
+                          .on("zoom", zoom_actions);
+
+     zoom_handler(svg);
+
+     //Drag functions
+     //d is the node
+     function drag_start(d) {
+         if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+         d.fx = d.x;
+         d.fy = d.y;
+     }
+
+     //make sure you can't drag the circle outside the box
+     function drag_drag(d) {
+         d.fx = d3.event.x;
+         d.fy = d3.event.y;
+     }
+
+     function drag_end(d) {
+         if (!d3.event.active) simulation.alphaTarget(0);
+         d.fx = null;
+         d.fy = null;
+     }
+
+     //Zoom functions
+     function zoom_actions(){
+         g.attr("transform", d3.event.transform)
+     }
+
+     function ticked() {
+         //update circle positions each tick of the simulation
+         node
+             .attr("cx", function(d) { return d.x; })
+             .attr("cy", function(d) { return d.y; });
+
+         //update link positions
+         link
+             .attr("x1", function(d) { return d.source.x; })
+             .attr("y1", function(d) { return d.source.y; })
+             .attr("x2", function(d) { return d.target.x; })
+             .attr("y2", function(d) { return d.target.y; });
+
+         text
+             .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")"; });
+     }
+    </script>
+</body>

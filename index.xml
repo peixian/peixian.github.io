@@ -527,6 +527,15 @@ Syrian town within the Idlib governate, sits at the center of Jisr al-Shughur, M
     </item>
     
     <item>
+      <title>asian development bank</title>
+      <link>/posts/asian_development_bank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/asian_development_bank/</guid>
+      <description>Tags: finance</description>
+    </item>
+    
+    <item>
       <title>atlantic meridional overturning circulation</title>
       <link>/posts/atlantic_meridional_overturning_circulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1049,7 +1058,7 @@ Resources:  https://macropolo.org/  </description>
       
       <guid>/posts/chinese_science_statistics/</guid>
       <description>Tags: epistime
- how do citiations differ?  https://akjournals.com/view/journals/11192/60/3/article-p385.xml https://asistdl.onlinelibrary.wiley.com/doi/abs/10.1002/asi.20475?casa%5Ftoken=NUrJGeSZhBsAAAAA:tWGtPWw9y661wlCtOYCipgtxS%5FAJszkQqyzOpFqipPzwpk%5FRqYpHA34No1E53p1bl4Ggr1QxqX3%5FcGw   raw satistics  http://www.stats.gov.cn/tjsj/ndsj/2020/indexeh.htm   young scientists:  https://www-cambridge-org.proxy.library.nyu.edu/core/journals/china-quarterly/article/chinas-new-scientific-elite-distinguished-young-scientists-the-research-environment-and-hopes-for-chinese-science/23EB23562E28C9A1A2AE1963EA32581C   changes in biomedical research as a result  https://link-springer-com.proxy.library.nyu.edu/article/10.1186/1742-7622-5-19    </description>
+ how do citiations differ?  https://akjournals.com/view/journals/11192/60/3/article-p385.xml https://asistdl.onlinelibrary.wiley.com/doi/abs/10.1002/asi.20475?casa%5Ftoken=NUrJGeSZhBsAAAAA:tWGtPWw9y661wlCtOYCipgtxS%5FAJszkQqyzOpFqipPzwpk%5FRqYpHA34No1E53p1bl4Ggr1QxqX3%5FcGw   raw satistics  http://www.stats.gov.cn/tjsj/ndsj/2020/indexeh.htm   young scientists:  https://www-cambridge-org.proxy.library.nyu.edu/core/journals/china-quarterly/article/chinas-new-scientific-elite-distinguished-young-scientists-the-research-environment-and-hopes-for-chinese-science/23EB23562E28C9A1A2AE1963EA32581C   changes in biomedical research as a result  https://link-springer-com.proxy.library.nyu.edu/article/10.1186/1742-7622-5-19    thoughts  does different utilization of citation metrics matter? asian development bank  https://www.adb.org/publications/asian-development-outlook-2020-innovation-asia   pig in python approach, is there a bulge bracket of young scientists? higher ed  https://play.google.com/store/books/details?id=TuEZBAAAQBAJ&amp;amp;rdid=book-TuEZBAAAQBAJ&amp;amp;rdot=1&amp;amp;source=gbs%5Fvpt%5Fread&amp;amp;pcampaignid=books%5Fbooksearch%5Fviewport   g20  https://nces.</description>
     </item>
     
     <item>
@@ -2283,6 +2292,15 @@ Fuzzing Image IO   https://www.instapaper.com/read/1303612511
   No source code, large range of inptus is perfect for fuzzing
   Choosing type of fuzzing is more difficult
  Try https://github.com/google/honggfuzz Covered in https://arxiv.org/abs/1812.11875    Libfuzzing  https://github.com/Microsvuln/Awesome-Libfuzzer-Harness  Google  https://github.com/google/fuzzing/tree/master/dictionaries  </description>
+    </item>
+    
+    <item>
+      <title>g20</title>
+      <link>/posts/g20/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/g20/</guid>
+      <description>Tags: political science</description>
     </item>
     
     <item>
@@ -4549,6 +4567,16 @@ Track  Wilderness First Responder  https://www.nols.edu/en/coursefinder/courses/
     </item>
     
     <item>
+      <title>notes graph</title>
+      <link>/posts/notes_graph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notes_graph/</guid>
+      <description>Tags: epistime
+ https://observablehq.com/@mbostock/hello-cola https://observablehq.com/@d3/force-directed-graph https://stackoverflow.com/questions/20575026/how-to-make-labels-and-nodes-in-d3-forced-layout-clickable-to-navigate-to-a-url  Notes  DB Structure https://org-roam.discourse.group/t/thoughts-on-db-structure/63 link can be constructed with the last chunk of the &amp;lsquo;titles&amp;rsquo; table, filename == slug |to|from|type| in links gives you the type  building json  grab all the links for each link get the type for each link resolve the to/from, swap out with the titles for specialized things with the root, color these differently  http://plnkr.co/edit/3fv3IR3S3Kp86rAummnz?p=preview&amp;amp;preview   iterate through json, generate a nodes and a list  for each node, add the # of links -&amp;gt; color based on links?</description>
+    </item>
+    
+    <item>
       <title>Notes on Surviving Grad School</title>
       <link>/posts/20200418205453-notes_on_surviving_grad_school/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5124,6 +5152,16 @@ Western sahara aligned group, largely support by algeria</description>
       <guid>/posts/political_risk_career/</guid>
       <description>Tags: career advice
  https://www.lawsonchase.com/news/how-to-get-a-job-in-political-risk-190211/  </description>
+    </item>
+    
+    <item>
+      <title>political science</title>
+      <link>/posts/political_science/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/political_science/</guid>
+      <description>Tags: root
+ https://politicalscienceguide.com/research/concepts-and-measurements/ for the epistime  </description>
     </item>
     
     <item>
