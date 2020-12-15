@@ -23,6 +23,10 @@
   </url>
   
   <url>
+    <loc>/posts/5g_marketing/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/a_conflict_time_forgot/</loc>
   </url>
   
@@ -275,6 +279,10 @@
   </url>
   
   <url>
+    <loc>/posts/bateson_steps_to_an_ecology_of_mind/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/bayat_revolution_without_revolutionaries/</loc>
   </url>
   
@@ -288,6 +296,10 @@
   
   <url>
     <loc>/posts/bildungsroman/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/black_axe_nigeria/</loc>
   </url>
   
   <url>
@@ -400,6 +412,10 @@
   
   <url>
     <loc>/posts/caustics/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/cellular_networks/</loc>
   </url>
   
   <url>
@@ -2171,6 +2187,14 @@
   </url>
   
   <url>
+    <loc>/posts/pytorch/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/pytorch_torchtext_incompatibility_issues/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/qaim/</loc>
   </url>
   
@@ -2704,6 +2728,10 @@
   
   <url>
     <loc>/posts/timer_lawn_low_latency_timer_data_structure/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/torchtext/</loc>
   </url>
   
   <url>

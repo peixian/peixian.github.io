@@ -60,6 +60,16 @@ Porter - Military Orientalism</description>
     </item>
     
     <item>
+      <title>5g marketing</title>
+      <link>/posts/5g_marketing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/5g_marketing/</guid>
+      <description>Tags: cellular networks
+ https://tech.slashdot.org/story/20/12/14/2124229/heres-the-5g-glossary-every-american-is-apparently-going-to-need   T-Mobile last week introduced the market&amp;rsquo;s newest 5G moniker: &amp;ldquo;Ultra Capacity.&amp;rdquo; The label, writes blog LightReading, will stew alongside &amp;ldquo;5G Ultra Wideband,&amp;rdquo; &amp;ldquo;Extended Range 5G,&amp;rdquo; &amp;ldquo;5G+,&amp;rdquo; &amp;ldquo;5Ge,&amp;rdquo; &amp;ldquo;5GTF,&amp;rdquo; &amp;ldquo;5G Nationwide&amp;rdquo; and plain-old &amp;ldquo;5G&amp;rdquo; in the US wireless industry, ensuring that if American mobile customers aren&amp;rsquo;t confused yet, it&amp;rsquo;s only a matter of time before they&amp;rsquo;re hopelessly bewildered by operators&#39; thesaurus-toting marketing executives. So here&amp;rsquo;s that 5G lexicon everyone is apparently going to need, the blog reports:</description>
+    </item>
+    
+    <item>
       <title>a conflict time forgot</title>
       <link>/posts/a_conflict_time_forgot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -692,6 +702,16 @@ If statements if [ -v ] # checks for the existance of a variable Entr  https://j
     </item>
     
     <item>
+      <title>Bateson - Steps to an Ecology of Mind</title>
+      <link>/posts/bateson_steps_to_an_ecology_of_mind/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bateson_steps_to_an_ecology_of_mind/</guid>
+      <description>Tags: books, epistime
+Introduction  Asks &amp;ldquo;how do ideas interact? Why do some ideas survive while others fail?&amp;rdquo; How to distinguish between the trivial and the profound? What is the difference between the trivial and the profound? Notion of the context and the meaning carves out into three separations  The data is not the event itself, but rather the recording of it  no data can ever truly be &amp;ldquo;raw&amp;rdquo;   the imperfectly defined heuristic concepts  &amp;ldquo;ego&amp;rdquo;, &amp;ldquo;anxiety&amp;rdquo;, &amp;ldquo;instinct&amp;rdquo;, etc   the fundalmentals  laws of thermodynamics, law of large numbers, etc     Explanation, therefore, is the mapping of data onto fundalmentals, but the ultimate goal of science is to increase fundalmental knowledge  states that the social sciences continue to stay within the field of heuristic concepts, inductively testing it against the data in hopes of moving it into the fundalmentals asks us to abandon total induction obeservations cannot be denied, fundalmentals must be fitted   prediction is a poor tool for testing a hyposthesis - https://backreaction.</description>
+    </item>
+    
+    <item>
       <title>Bayat - Revolution without Revolutionaries</title>
       <link>/posts/bayat_revolution_without_revolutionaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -728,6 +748,16 @@ Introduction  Most people expect revolutions to &amp;ldquo;simply&amp;rdquo; hap
       <guid>/posts/bildungsroman/</guid>
       <description>Tags: literature
  https://en.wikipedia.org/wiki/Bildungsroman German word for coming of age story  </description>
+    </item>
+    
+    <item>
+      <title>black axe (nigeria)</title>
+      <link>/posts/black_axe_nigeria/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/black_axe_nigeria/</guid>
+      <description>Tags: nigeria, militias
+ https://www.bbc.com/news/world-africa-52488922  </description>
     </item>
     
     <item>
@@ -1001,6 +1031,15 @@ Internals  Seed nodes:  No purpose other than bootstrapping the gossip process D
       <guid>/posts/caustics/</guid>
       <description>Tags: math
  https://lgg.epfl.ch/publications/2012/caustics/ArchitecturalCaustics%5FAAG.pdf Renderer: http://rgl.epfl.ch/publications/NimierDavidVicini2019Mitsuba2  </description>
+    </item>
+    
+    <item>
+      <title>cellular networks</title>
+      <link>/posts/cellular_networks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cellular_networks/</guid>
+      <description>Tags: computers</description>
     </item>
     
     <item>
@@ -5458,6 +5497,26 @@ https://pyobjc.readthedocs.io/en/latest/tutorials/firstapp.html</description>
     </item>
     
     <item>
+      <title>pytorch</title>
+      <link>/posts/pytorch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pytorch/</guid>
+      <description>Tags: ml, python</description>
+    </item>
+    
+    <item>
+      <title>pytorch/torchtext incompatibility issues</title>
+      <link>/posts/pytorch_torchtext_incompatibility_issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pytorch_torchtext_incompatibility_issues/</guid>
+      <description>Tags: pytorch, torchtext
+Torchtext has a few incompatibilites:
+ torchtext.data.dataset and torchtext.data.iterator are wrappers around pytorch.utils.data.Dataset and pytorch.utils.DataLoader notably the torchtext.data.iterator is not compatible with the pytorch subset or the torch.utils.data.sampler  https://pytorch.org/docs/stable/data.html https://pytorch.org/docs/stable/data.html#iterable-style-datasets   highlighted in: https://github.com/pytorch/text/issues/664 possible to get https://discuss.pytorch.org/t/out-of-vocabulary-keyerror-on-vocab-stoi-in-torchtext/65910  or https://github.com/pytorch/text/issues/618 or https://discuss.pytorch.org/t/typeerror-dataloader-object-is-not-callable/74979    </description>
+    </item>
+    
+    <item>
       <title>qaim</title>
       <link>/posts/qaim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6818,6 +6877,15 @@ Book: https://www.apress.com/gp/book/9781484243978 Wiki: https://en.wikipedia.or
       <guid>/posts/timer_lawn_low_latency_timer_data_structure/</guid>
       <description>Tags: papers, real time systems (rts)
 https://arxiv.org/pdf/1906.10860.pdf</description>
+    </item>
+    
+    <item>
+      <title>torchtext</title>
+      <link>/posts/torchtext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/torchtext/</guid>
+      <description>Tags: nlp, torchtext</description>
     </item>
     
     <item>
