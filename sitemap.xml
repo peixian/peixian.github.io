@@ -23,6 +23,10 @@
   </url>
   
   <url>
+    <loc>/posts/2021_goals/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/5g_marketing/</loc>
   </url>
   
@@ -464,6 +468,10 @@
   
   <url>
     <loc>/posts/climate_change_tech/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/clocks_distributed_systems/</loc>
   </url>
   
   <url>
@@ -1207,6 +1215,10 @@
   </url>
   
   <url>
+    <loc>/posts/increasing_violence_in_afghanistan_2020_12_15/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415200613-india/</loc>
   </url>
   
@@ -1371,6 +1383,10 @@
   </url>
   
   <url>
+    <loc>/posts/kabul/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/kafka/</loc>
   </url>
   
@@ -1443,6 +1459,14 @@
   </url>
   
   <url>
+    <loc>/posts/time_clock_and_the_ordering_of_distributed_systems/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/langlands_program/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/languages_lingustics/</loc>
   </url>
   
@@ -1456,6 +1480,14 @@
   
   <url>
     <loc>/posts/latex_flavors_luatex_contex_xetex/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/lean_proofs/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/leap_smearing/</loc>
   </url>
   
   <url>
@@ -1975,6 +2007,10 @@
   </url>
   
   <url>
+    <loc>/posts/pareto_optimal/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/paris_club/</loc>
   </url>
   
@@ -2471,6 +2507,10 @@
   </url>
   
   <url>
+    <loc>/posts/software_is_eating_the_world/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/somalia/</loc>
   </url>
   
@@ -2508,6 +2548,10 @@
   
   <url>
     <loc>/posts/sez_s/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/spengler_and_the_search_for_a_science_of_human_culture/</loc>
   </url>
   
   <url>
@@ -2756,6 +2800,10 @@
   
   <url>
     <loc>/posts/trial_error_vs_theory_insight_in_work_academia/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/truetime/</loc>
   </url>
   
   <url>

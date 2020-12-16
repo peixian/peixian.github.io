@@ -60,6 +60,17 @@ Porter - Military Orientalism</description>
     </item>
     
     <item>
+      <title>2021 goals</title>
+      <link>/posts/2021_goals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2021_goals/</guid>
+      <description>Tags: personal
+Taking off of pareto optimal
+Actively need prioritization  statistics ml/nlp raw lingusitics  In Progress  ddr, post-conflict writing iraqi arabic running climbing epistime  Opportunistic learning  distributed systems low level programming (definitely need to read more c++ books)  Need to pick up at some point in the future  queuing theory (have holbacher&amp;rsquo;s book, but still need to actually do it) math (maybe set a specific aim?</description>
+    </item>
+    
+    <item>
       <title>5g marketing</title>
       <link>/posts/5g_marketing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1162,6 +1173,16 @@ Climate change writers:
     </item>
     
     <item>
+      <title>clocks (distributed systems)</title>
+      <link>/posts/clocks_distributed_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/clocks_distributed_systems/</guid>
+      <description>Tags: distributed systems
+https://www.fsmtime.com/blog/article/clock-synchronization-and-technology/</description>
+    </item>
+    
+    <item>
       <title>cloud</title>
       <link>/posts/cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1946,7 +1967,7 @@ On thinking
     </item>
     
     <item>
-      <title>Epstine: Range</title>
+      <title>Epstine - Range</title>
       <link>/posts/epstine_range/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3045,6 +3066,22 @@ talks about ddr and gives a broad overview of three generations
     </item>
     
     <item>
+      <title>increasing violence in afghanistan - 2020-12-15</title>
+      <link>/posts/increasing_violence_in_afghanistan_2020_12_15/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/increasing_violence_in_afghanistan_2020_12_15/</guid>
+      <description>Tags: afghanistan
+  https://www.instapaper.com/read/1369807124
+  https://www.instapaper.com/read/1370244169
+  https://www.instapaper.com/read/1368945228
+  Taliban continue to be more responsible for deaths of civs
+  Abdul Rashid Dostom (https://www.youtube.com/watch?v=E7LLPc8nXyw) and Atta MOhammad Noor (https://www.youtube.com/watch?v=--U4TvfuIvs) have gone back to their consitituancies in the northern front
+  taliban continue to kill the intellectual class in kabul
+  </description>
+    </item>
+    
+    <item>
       <title>india</title>
       <link>/posts/20200415200613-india/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3453,6 +3490,15 @@ tail call optimization  https://github.com/Sipkab/jvm-tail-recursion  JVM profil
     </item>
     
     <item>
+      <title>kabul</title>
+      <link>/posts/kabul/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/kabul/</guid>
+      <description>Tags: afghanistan</description>
+    </item>
+    
+    <item>
       <title>kafka</title>
       <link>/posts/kafka/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3632,6 +3678,31 @@ Kyoto Cabinet is the frontend, Kyoto tycoon is the backend, kyoto tycoon is a fo
     </item>
     
     <item>
+      <title>Lamport: Time Clock and the Ordering of Distributed Systems</title>
+      <link>/posts/time_clock_and_the_ordering_of_distributed_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/time_clock_and_the_ordering_of_distributed_systems/</guid>
+      <description>Tags: papers, computers
+  https://lamport.azurewebsites.net/pubs/time-clocks.pdf
+  Uses &amp;ldquo;happens before&amp;rdquo; - partial ordering of events
+ Introduces a way to sync the total ordering provides for clocks, how to translate it to actual clocks    is time subjective? is it independent of observers?
+  is there a way to capture &amp;ldquo;happen before&amp;rdquo; without clocks?
+ can we determine if a single event preceded another without the measurement of objective time?</description>
+    </item>
+    
+    <item>
+      <title>langlands program</title>
+      <link>/posts/langlands_program/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/langlands_program/</guid>
+      <description>Tags: math
+ https://en.wikipedia.org/wiki/Langlands%5Fprogram  conjectures about number theory and geometry
+References  https://math.stackexchange.com/questions/48981/the-langlands-program-for-beginners Knapp, A W. “Prerequisites for the Langlands Program,” n.d., 9.  </description>
+    </item>
+    
+    <item>
       <title>languages/lingustics</title>
       <link>/posts/languages_lingustics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3666,6 +3737,28 @@ Kyoto Cabinet is the frontend, Kyoto tycoon is the backend, kyoto tycoon is a fo
       <guid>/posts/latex_flavors_luatex_contex_xetex/</guid>
       <description>Tags: latex
  https://tex.stackexchange.com/questions/36/differences-between-luatex-context-and-xetex https://www.overleaf.com/learn/latex/Articles/The%5FTeX%5Ffamily%5Ftree:%5FLaTeX,%5FpdfTeX,%5FXeTeX,%5FLuaTeX%5Fand%5FConTeXt https://www.overleaf.com/learn/latex/Articles/What&#39;s%5Fin%5Fa%5FName:%5FA%5FGuide%5Fto%5Fthe%5FMany%5FFlavours%5Fof%5FTeX http://www.tug.org/texlive//devsrc/Master/texmf-dist/doc/context/documents/general/manuals/luatex.pdf https://news.ycombinator.com/item?id=25328874  </description>
+    </item>
+    
+    <item>
+      <title>lean (proofs)</title>
+      <link>/posts/lean_proofs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/lean_proofs/</guid>
+      <description>Tags: mechanized proofs
+ https://xenaproject.wordpress.com/what-is-the-xena-project/  </description>
+    </item>
+    
+    <item>
+      <title>leap smearing</title>
+      <link>/posts/leap_smearing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/leap_smearing/</guid>
+      <description>Tags: clocks (distributed systems)
+https://developers.google.com/time/smear
+ google smears the leap second before and after each leap  https://googleblog.blogspot.com/2011/09/time-technology-and-leaping-seconds.html https://docs.ntpsec.org/latest/leapsmear.html https://packetpushers.net/ntp-leap-smearing-what-is-it/ https://developers.redhat.com/blog/2015/06/01/five-different-ways-handle-leap-seconds-ntp/ https://xkcd.com/2266/ Burnicki, “Leap Second Smearing with NTP.”
+Questions  do emergency alert systems (EAS) use internet timing? what systems failover to internet timing? what services actually rely directly on gps?  https://ilrs.gsfc.nasa.gov/docs/timing/gpsrole.pdf    </description>
     </item>
     
     <item>
@@ -4967,6 +5060,16 @@ Resources  Timothy Mitchell, &amp;ldquo;Rule of Experts&amp;rdquo; Aaron Jakes -
     </item>
     
     <item>
+      <title>pareto optimal</title>
+      <link>/posts/pareto_optimal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pareto_optimal/</guid>
+      <description>Tags: personal
+Goal  Statistics optimal, nlp specialization between arabic/mandarin/english, able to understand peacebuilding topics passable knowledge at math/physics/soft stuff  Status  good at statistics &amp;lt;- not doing anything for this currently good at ddr, post-conflict &amp;lt;- reading and learning good at ml/NLP &amp;lt;- work adjacent good at mandarin/arabic &amp;lt;- working on it good- at writing &amp;lt;- getting better by osmosis, no deliberate practice good- at linguistics &amp;lt;- nothing currently good- at iraqi culture/history &amp;lt;- occasional reading, no deliberate practice good- on climbing &amp;lt;- going to the gym 2-3 times a week good- on running &amp;lt;- running 2 times a week good- on epistime &amp;lt;- reading, thinking, joining ii good- on kubernentes &amp;lt;- nothing specific fluent in queuing theory &amp;lt;- nothing deliberate fluent in math &amp;lt;- nothing deliberate fluent in Islamic theory &amp;lt;- nothing deliberate fluent in physics &amp;lt;- nothing deliberate fluent in distributed systems &amp;lt;- reading, but no active usage fluent in low level programming &amp;lt;- nothing deliberate fluent in leadership &amp;lt;- very occasional reading fluent in project management &amp;lt;- very occasional reading fluent in mentoring and teaching &amp;lt;- nothing deliberate fluent at data visualization/soft big science stuff/js &amp;lt;- occassionally building thing fluent in middle east history and its methods &amp;lt;- nothing deliberate  </description>
+    </item>
+    
+    <item>
       <title>paris club</title>
       <link>/posts/paris_club/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6227,6 +6330,16 @@ Finance Essentials for Small Businesses  All businesses start small Often killed
     </item>
     
     <item>
+      <title>software is eating the world</title>
+      <link>/posts/software_is_eating_the_world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/software_is_eating_the_world/</guid>
+      <description>Tags: drafts
+ do things become more like software if &amp;ldquo;software is eating the world&amp;rdquo;? how many more markets are feast/famine? metrics lead to harmonization -&amp;gt; more people being added on papers focus on efficiency? big data insights are often counter intuitive secondary effects of making things legible? roles of consensus? network effects shift towards platforms? https://stratechery.com/2019/shopify-and-the-power-of-platforms/ two track in tech: Tech’s Two Philosophies highlighted how Facebook and Google want to do things for you; Microsoft and Apple were about helping you do things better.</description>
+    </item>
+    
+    <item>
       <title>somalia</title>
       <link>/posts/somalia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6322,6 +6435,18 @@ South yemen indendepence movement</description>
       
       <guid>/posts/sez_s/</guid>
       <description>Tags: finance</description>
+    </item>
+    
+    <item>
+      <title>Spengler and the Search for a Science of Human Culture</title>
+      <link>/posts/spengler_and_the_search_for_a_science_of_human_culture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/spengler_and_the_search_for_a_science_of_human_culture/</guid>
+      <description>Tags: articles
+https://www.instapaper.com/read/1370117850 - By T Greer
+ Talks about how Oswald Spengler&amp;rsquo;s Decline of the West ibn khaldunian understand of civilization: civilization rises and falls going through the birth cycles like a human/organism greer talks about how this is a fundalmentally pop culture idea   coporations as people, states as people, etc
+ Corporate personhood” is simply folk sociology encoded in law. It is not hard to jump from treating a collective as an agent to treating a collective as a living agent, possessing all the attributes of animals and people, the living agents we are most familiar with.</description>
     </item>
     
     <item>
@@ -6953,6 +7078,16 @@ Also align with food for training</description>
     </item>
     
     <item>
+      <title>truetime</title>
+      <link>/posts/truetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/truetime/</guid>
+      <description>Tags: [clocks (distributed systems), [[file:cloud.org]cloud]]
+https://cloud.google.com/spanner/docs/true-time-external-consistency</description>
+    </item>
+    
+    <item>
       <title>tuareg</title>
       <link>/posts/tuareg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6968,7 +7103,7 @@ Also align with food for training</description>
       
       <guid>/posts/tufekci_twitter_and_tear_gas/</guid>
       <description>Tags: books
- Reverse Streisand effect - deliberate information glut to hide the truth  </description>
+ Reverse Streisand effect - deliberate information glut to hide the truth  Review (https://www.instapaper.com/read/1368619081)  Talks about how Tufeki focuses on the structuring power of technology Also asks which mechanism does a social movement lead to change, and how to we assess the impact of social movements?  Tufeki&amp;rsquo;s idea of capacity signaling as a means to study capabilities and possible impacts of movements    </description>
     </item>
     
     <item>
