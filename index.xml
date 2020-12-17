@@ -1033,6 +1033,15 @@ https://en.wikipedia.org/wiki/Bully%5Falgorithm</description>
     </item>
     
     <item>
+      <title>buy side</title>
+      <link>/posts/buy_side/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/buy_side/</guid>
+      <description>Tags: finance</description>
+    </item>
+    
+    <item>
       <title>c/cpp</title>
       <link>/posts/c_cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1330,6 +1339,16 @@ https://www.fsmtime.com/blog/article/clock-synchronization-and-technology/</desc
     </item>
     
     <item>
+      <title>community detection with org-roam library</title>
+      <link>/posts/community_detection_with_org_roam_library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/community_detection_with_org_roam_library/</guid>
+      <description>Tags: org-roam, python, d3
+ build tool ipynb export and build tool picks it up automatically dump it out into a html file and json file  </description>
+    </item>
+    
+    <item>
       <title>compile time regex</title>
       <link>/posts/compile_time_regex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1517,6 +1536,15 @@ Provides checkpointing and snapshotting of applications and containers to disk
       
       <guid>/posts/crypto/</guid>
       <description>Tags: Computers</description>
+    </item>
+    
+    <item>
+      <title>d3</title>
+      <link>/posts/d3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/d3/</guid>
+      <description>Tags: javascript, data</description>
     </item>
     
     <item>
@@ -2371,6 +2399,16 @@ http://www.nobius.org/dbg/practical-file-system-design.pdf</description>
     </item>
     
     <item>
+      <title>financial discourse</title>
+      <link>/posts/financial_discourse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/financial_discourse/</guid>
+      <description>Tags: finance, languages/lingustics
+ buy side can say whatever they want, and the discourse has to follow it sell side sees way more messages chinese wall - private non-public information, people who trade cannot have leading advantage  sell-side players must be separate from buy side ones   financial discourse has become less informal, no formal standard way to make a market  </description>
+    </item>
+    
+    <item>
       <title>finite state machines</title>
       <link>/posts/finite_state_machines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2505,15 +2543,6 @@ Static Files  https://github.com/nickjj/flask-static-digest https://whitenoise.e
       
       <guid>/posts/french_revolution/</guid>
       <description>Tags: france</description>
-    </item>
-    
-    <item>
-      <title>Friday, 17 April 2020</title>
-      <link>/posts/private-2020-04-17/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/private-2020-04-17/</guid>
-      <description>22:16 Got the news today that I&amp;rsquo;m being recommended to Kevo to matriculate as a student! Hopefully everything works out well inshallah. Played a ton of Ixalan today, got a decent amount of work done too! Handled some more silly xapq WP&amp;rsquo;s Went for a walk, my ankles still hurt a little Had arabic lessons in the mornings, for some reason I still cannot get the past tense endings down. Maybe I need to make anki cards for them.</description>
     </item>
     
     <item>
@@ -3740,6 +3769,15 @@ Similar groups:  http://drc-group.com/ https://www.cybrary.it/ https://portal.it
       <guid>/posts/java/</guid>
       <description>Tags: computers
 tail call optimization  https://github.com/Sipkab/jvm-tail-recursion  JVM profiling  https://blunders.io/ Java Flight  </description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>/posts/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/javascript/</guid>
+      <description>Tags: computers</description>
     </item>
     
     <item>
@@ -5906,15 +5944,6 @@ Describes the case studies of el salvador, mozambique, cambodia, bosnia, and som
     </item>
     
     <item>
-      <title>Private Tuesday, 14 April 2020</title>
-      <link>/posts/private-2020-04-14/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/private-2020-04-14/</guid>
-      <description>08:30 First day planning, I think it&amp;rsquo;s like day 37 or something now Kinda bizarre how many pills I ingest in the morning&amp;hellip; Haven&amp;rsquo;t pooped for like&amp;hellip;3 days now Fixed org-mode non-expansion after org 9.2 with org-tempo Turned my phone back to english because I felt like the arabic wasn&amp;rsquo;t really helping me out 21:50 Finish Isa Blumi&amp;rsquo;s book, it was actually really boring Did some work for the Nationalism midterm Started aggressively using org roam a bit more </description>
-    </item>
-    
-    <item>
       <title>probability</title>
       <link>/posts/probability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6682,6 +6711,15 @@ from Idris - Lessons from DDR Programs
     </item>
     
     <item>
+      <title>sell side</title>
+      <link>/posts/sell_side/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sell_side/</guid>
+      <description>Tags: finance</description>
+    </item>
+    
+    <item>
       <title>sematech</title>
       <link>/posts/sematech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7220,15 +7258,6 @@ Summer FLAS:  Letter of rec: https://docs.google.com/document/d/1wLwNCglIpKSksGB
     </item>
     
     <item>
-      <title>Sunday, 19 April 2020</title>
-      <link>/posts/private-2020-04-19/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/private-2020-04-19/</guid>
-      <description>21:02 Spent today being somewhat productive at arabic Finished the wilayat batih scene, will go over that tomorrow Kareem apparently was very tired so we skipped the lesson Did yoga, napped for a few hours, finished the midterm and powered through some readings for nationalism Also read a good 3rd of &amp;ldquo;deep work&amp;rdquo; Also finished reading &amp;ldquo;A Phd is not enough&amp;rdquo; Actually really productive today! </description>
-    </item>
-    
-    <item>
       <title>survey papers</title>
       <link>/posts/survey_papers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7246,6 +7275,16 @@ Summer FLAS:  Letter of rec: https://docs.google.com/document/d/1wLwNCglIpKSksGB
       <guid>/posts/svg/</guid>
       <description>Tags: computers
 https://observablehq.com/@makio135/creative-coding</description>
+    </item>
+    
+    <item>
+      <title>symphony chat platform</title>
+      <link>/posts/symphony_chat_platform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/symphony_chat_platform/</guid>
+      <description>Tags: finance
+Slow adoption, sell side is slowing adopting it</description>
     </item>
     
     <item>
@@ -7592,15 +7631,6 @@ Book: https://www.apress.com/gp/book/9781484243978 Wiki: https://en.wikipedia.or
       
       <guid>/posts/thubactics_battlion/</guid>
       <description>Tags: libya</description>
-    </item>
-    
-    <item>
-      <title>Thursday, 16 April 2020</title>
-      <link>/posts/private-2020-04-16/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/private-2020-04-16/</guid>
-      <description>14:19 Class  Cultural capital  Habitus A particular person accrues in a specific setting The world around you and the world you live in, as well as the world you habit What did an ottoman laborer bring in from the ottoman habitus?  What kinds of cultural capital did they bring with them?     Revolt against the hamidian regime was secret activity, happened outside a social context, not as broad as culture and sources believe Drita and intellectual centers show us&amp;hellip;what?</description>
     </item>
     
     <item>
@@ -8014,15 +8044,6 @@ Lebanese Druze leader</description>
       <guid>/posts/website_design_ideas/</guid>
       <description>Tags: personal
  https://okomestudio.net/#/  Simple, small   https://hypha.coop/  Retro, bold   https://www.redclawtech.com/  Clear, to the point   https://nodesign.dev  </description>
-    </item>
-    
-    <item>
-      <title>Wednesday, 15 April 2020</title>
-      <link>/posts/private-2020-04-15/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/private-2020-04-15/</guid>
-      <description>21:03 randomly productive today, although I think I need to block out any time until 7:15 to be personal time. Stayed being unproductive until 7:45 Parents sent me a bunch of food, I ate a bunch of the fried pork and now I feel slightly sick. Might actually go for a walk instead of doing Iraqi arabic Not going to accomplish all that I set out to do today, although I did finally get around to doing dishes Ate a whole fucking cake too, now I feel really fat and I need to work off some of this extra food Read some instapaper, I&amp;rsquo;m really getting into org-roam!</description>
     </item>
     
     <item>

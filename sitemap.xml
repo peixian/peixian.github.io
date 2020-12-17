@@ -411,6 +411,10 @@
   </url>
   
   <url>
+    <loc>/posts/buy_side/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/c_cpp/</loc>
   </url>
   
@@ -535,6 +539,10 @@
   </url>
   
   <url>
+    <loc>/posts/community_detection_with_org_roam_library/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/compile_time_regex/</loc>
   </url>
   
@@ -604,6 +612,10 @@
   
   <url>
     <loc>/posts/crypto/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/d3/</loc>
   </url>
   
   <url>
@@ -943,6 +955,10 @@
   </url>
   
   <url>
+    <loc>/posts/financial_discourse/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/finite_state_machines/</loc>
   </url>
   
@@ -996,10 +1012,6 @@
   
   <url>
     <loc>/posts/french_revolution/</loc>
-  </url>
-  
-  <url>
-    <loc>/posts/private-2020-04-17/</loc>
   </url>
   
   <url>
@@ -1484,6 +1496,10 @@
   
   <url>
     <loc>/posts/java/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/javascript/</loc>
   </url>
   
   <url>
@@ -2351,10 +2367,6 @@
   </url>
   
   <url>
-    <loc>/posts/private-2020-04-14/</loc>
-  </url>
-  
-  <url>
     <loc>/posts/probability/</loc>
   </url>
   
@@ -2655,6 +2667,10 @@
   </url>
   
   <url>
+    <loc>/posts/sell_side/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/sematech/</loc>
   </url>
   
@@ -2871,15 +2887,15 @@
   </url>
   
   <url>
-    <loc>/posts/private-2020-04-19/</loc>
-  </url>
-  
-  <url>
     <loc>/posts/survey_papers/</loc>
   </url>
   
   <url>
     <loc>/posts/svg/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/symphony_chat_platform/</loc>
   </url>
   
   <url>
@@ -3016,10 +3032,6 @@
   
   <url>
     <loc>/posts/thubactics_battlion/</loc>
-  </url>
-  
-  <url>
-    <loc>/posts/private-2020-04-16/</loc>
   </url>
   
   <url>
@@ -3188,10 +3200,6 @@
   
   <url>
     <loc>/posts/website_design_ideas/</loc>
-  </url>
-  
-  <url>
-    <loc>/posts/private-2020-04-15/</loc>
   </url>
   
   <url>
