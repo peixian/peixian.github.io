@@ -31,17 +31,20 @@
 <body>
 
 </body>
-<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://d3js.org/d3.v6.min.js"></script>
 <script>
+ const simulationDurationInMs = 20000; // 20 seconds
+
+
+ let startTime = Date.now();
+ let endTime = startTime + simulationDurationInMs;
+
  var div = d3.select("body").append("div")
              .attr("class", "tooltip")
              .style("opacity", 0);
-
- const scale = d3.scaleOrdinal(d3.schemeCategory10);
-
+ var scale = d3.scaleOrdinal(d3.schemeCategory10);
  d3.json("org-data.json")
    .then(function(data) {
-       console.log(data)
 
        function color(d) {
            return scale(d.group);
@@ -56,7 +59,7 @@
        const nodes = data.nodes.map(d => Object.create(d));
 
        let simulation = d3.forceSimulation(nodes)
-                          .force("link", d3.forceLink(links).id(d => d.id).distance(0).strength(.5))
+                          .force("link", d3.forceLink(links).id(d => d.id).distance(0).strength(.25))
                           .force("charge", d3.forceManyBody().strength(-100))
                           .force("x", d3.forceX())
                           .force("y", d3.forceY());
@@ -117,11 +120,11 @@
            .attr("r", 5)
            .attr("fill", color)
            .on("click", clicked)
-           .on("mouseover", function(d) {
+           .on("mouseover", function(event, d) {
                div.html(`<div style='float: right'>${d.id}</div>`)
                   .style("opacity", .9)
-                  .style('left', d3.event.pageX + 'px')
-                  .style('top', (d3.event.pageY - 28) + 'px')
+                  .style('left', event.pageX + 'px')
+                  .style('top', (event.pageY - 28) + 'px')
                   .style('border', 'solid 3px black')
                   .style('background-color', 'white')
                   .style('border-radius', '10px')
@@ -135,15 +138,20 @@
 
 
        simulation.on("tick", () => {
-           link
-               .attr("x1", d => d.source.x)
-               .attr("y1", d => d.source.y)
-               .attr("x2", d => d.target.x)
-               .attr("y2", d => d.target.y);
+           if (Date.now() < endTime) {
+               link
+                   .attr("x1", d => d.source.x)
+                   .attr("y1", d => d.source.y)
+                   .attr("x2", d => d.target.x)
+                   .attr("y2", d => d.target.y);
 
-           node
-               .attr("cx", d => d.x)
-               .attr("cy", d => d.y);
+               node
+                   .attr("cx", d => d.x)
+                   .attr("cy", d => d.y);
+           } else {
+               simulation.stop();
+           }
+
        });
 
 
@@ -152,8 +160,8 @@
                            .on("zoom", zoomAction);
 
        //Zoom functions
-       function zoomAction() {
-           g.attr("transform", `translate(${width / 2+ d3.event.transform.x}, ${height / 2+ d3.event.transform.y })` + "scale(" + d3.event.transform.k + ")");
+       function zoomAction(event, d) {
+           g.attr("transform", `translate(${width / 2+ event.transform.x}, ${height / 2+ event.transform.y })` + "scale(" + event.transform.k + ")");
        }
        zoomHandler(svg);
    })
