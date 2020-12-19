@@ -53,6 +53,20 @@
        function clicked(event, d) {
            window.open(d.url);
        }
+
+              function fade(nodeOpacity, linkOpacity) {
+                  return (event, d) => {
+               node.style('stroke-opacity', function (o) {
+                   const thisOpacity = isConnected(d, o) ? 1 : nodeOpacity;
+                   this.setAttribute('fill-opacity', thisOpacity);
+                   return thisOpacity;
+               });
+
+               link.style('stroke-opacity', o => (o.source === d || o.target === d ? 1 : linkOpacity));
+
+           };
+       }
+
        var width = window.innerWidth,
            height = window.innerHeight;
        const links = data.links.map(d => Object.create(d));
@@ -64,6 +78,8 @@
                           .force("x", d3.forceX())
                           .force("y", d3.forceY());
 
+       simulation.force('link')
+                 .links(data.links);
        let drag = function(simulation) {
            function dragstarted(event, d) {
                if (!event.active) simulation.alphaTarget(0.3).restart();
@@ -88,6 +104,15 @@
                     .on("end", dragended);
        };
 
+
+       const linkedByIndex = {};
+       data.links.forEach(d => {
+           linkedByIndex[`${d.source.index},${d.target.index}`] = 1;
+       });
+
+       function isConnected(a, b) {
+           return linkedByIndex[`${a.index},${b.index}`] || linkedByIndex[`${b.index},${a.index}`] || a.index === b.index;
+       }
 
        // Building svg
        let svg = d3.select("body")
@@ -131,10 +156,12 @@
                   .style('float', 'left')
                   .style('font-family', 'monospace');
            })
-           .on("mouseout", function(d) {
+           .on('mouseover.fade', fade(0.1, 0.1))
+           .on("mouseout", function(event, d) {
                div.style("opacity", 0);
            })
-           .call(drag(simulation));
+           .on('mouseout.fade', fade(1, 0.6));
+           //.call(drag(simulation));
 
 
        simulation.on("tick", () => {

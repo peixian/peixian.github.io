@@ -1162,6 +1162,16 @@ Internals  Seed nodes:  No purpose other than bootstrapping the gossip process D
     </item>
     
     <item>
+      <title>cbs independent review</title>
+      <link>/posts/cbs_independent_review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cbs_independent_review/</guid>
+      <description>Tags: news
+ http://wwwimage.cbsnews.com/htdocs/pdf/complete%5Freport/CBS%5FReport.pdf  </description>
+    </item>
+    
+    <item>
       <title>cellular networks</title>
       <link>/posts/cellular_networks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1374,7 +1384,7 @@ https://www.fsmtime.com/blog/article/clock-synchronization-and-technology/</desc
       
       <guid>/posts/community_detection_with_org_roam_library/</guid>
       <description>Tags: org-roam, python, d3, community detection
- build tool ipynb export and build tool picks it up automatically dump it out into a html file and json file  </description>
+ build tool ipynb export and build tool picks it up automatically dump it out into a html file and json file https://www.d3-graph-gallery.com/graph/arc%5Fhighlight.html  blog post  2d right now  physical space reveals link proximity coloring reveals communities among the links   3d with colors  colors reveal something else leiden within communities   future plans:  automated zone detection? better choices of    </description>
     </item>
     
     <item>
@@ -5202,6 +5212,15 @@ https://www.aljazeera.com/opinions/2020/11/25/there-can-be-no-going-back-to-norm
     </item>
     
     <item>
+      <title>news</title>
+      <link>/posts/news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/news/</guid>
+      <description>Tags: episteme</description>
+    </item>
+    
+    <item>
       <title>next generation disarmament, demobilization, and reintegration</title>
       <link>/posts/next_generation_disarmament_demobilization_and_reintegration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7899,6 +7918,24 @@ https://trukker.com/</description>
     
     <item>
       <title>trust in media</title>
+      <link>/posts/trust_in_media/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/trust_in_media/</guid>
+      <description>Tags: drafts
+  https://twitter.com/cd%5Fhooks/status/1340002175607599106
+  caliphate
+ https://www.jadaliyya.com/Details/42095    coinbase
+ https://www.jadaliyya.com/Details/42095    trust of masks
+ https://aelkus.github.io/problem/2020/03/18/collective https://aelkus.github.io/theory/2020/12/03/solu.html    opinion pages
+ laundering of journalistic trust    https://nymag.com/intelligencer/2020/11/inside-the-new-york-times-heated-reckoning-with-itself.html
+  solutionism in journalistic trust
+  diversity problems
+ https://twitter.com/Seamus%5FMalek/status/1340003951811260416    tech journalists rehash blog posts or write cultural critques that fail to understand the underlying technology</description>
+    </item>
+    
+    <item>
+      <title>trust in media blog post</title>
       <link>/posts/trust_in_media/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
