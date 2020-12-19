@@ -437,6 +437,15 @@ Summary  All nations are imagined because not everyone will meet every other com
     </item>
     
     <item>
+      <title>andrei kolmogorov</title>
+      <link>/posts/andrei_kolmogorov/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/andrei_kolmogorov/</guid>
+      <description>Tags: people, math, computers</description>
+    </item>
+    
+    <item>
       <title>anfal campaign</title>
       <link>/posts/anfal_campaign/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1339,12 +1348,22 @@ https://www.fsmtime.com/blog/article/clock-synchronization-and-technology/</desc
     </item>
     
     <item>
+      <title>community detection</title>
+      <link>/posts/community_detection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/community_detection/</guid>
+      <description>Tags: statistics
+ https://arxiv.org/abs/0906.0612  </description>
+    </item>
+    
+    <item>
       <title>community detection with org-roam library</title>
       <link>/posts/community_detection_with_org_roam_library/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/community_detection_with_org_roam_library/</guid>
-      <description>Tags: org-roam, python, d3
+      <description>Tags: org-roam, python, d3, community detection
  build tool ipynb export and build tool picks it up automatically dump it out into a html file and json file  </description>
     </item>
     
@@ -1902,6 +1921,16 @@ Draft Migrants suffer a litany of horrors on their path to their ultimate destin
       
       <guid>/posts/ebooks/</guid>
       <description>Tags: computers</description>
+    </item>
+    
+    <item>
+      <title>ebpf</title>
+      <link>/posts/ebpf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ebpf/</guid>
+      <description>Tags: networks, linux
+ https://blog.pixielabs.ai/ebpf https://docs.cilium.io/en/v1.9/  </description>
     </item>
     
     <item>
@@ -2469,6 +2498,16 @@ Static Files  https://github.com/nickjj/flask-static-digest https://whitenoise.e
     </item>
     
     <item>
+      <title>footnotes in webpages</title>
+      <link>/posts/footnotes_in_webpages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/footnotes_in_webpages/</guid>
+      <description>Tags: web
+ https://www.gwern.net/Sidenotes https://edwardtufte.github.io/tufte-css/  </description>
+    </item>
+    
+    <item>
       <title>foreign fighter returnees in iraq</title>
       <link>/posts/foreign_fighter_returnees_in_iraq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2506,6 +2545,16 @@ Static Files  https://github.com/nickjj/flask-static-digest https://whitenoise.e
       <guid>/posts/forward_oil_sales_iraq/</guid>
       <description>Tags: finance, iraq
  nov 28th, 2020  state oil marketing organization (somo) is proposing a 5 year forward, where 4MM bbl/month from basra, with downpayment of 1 year of oil</description>
+    </item>
+    
+    <item>
+      <title>fpga</title>
+      <link>/posts/fpga/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/fpga/</guid>
+      <description>Tags: chips
+ https://github.com/litex-hub/fpga%5F101  </description>
     </item>
     
     <item>
@@ -5421,6 +5470,17 @@ invasion of gaza by israel in july 2014</description>
     </item>
     
     <item>
+      <title>optuna</title>
+      <link>/posts/optuna/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/optuna/</guid>
+      <description>Tags: ml
+ https://optuna.org/  open source hyperparameter optimization framework
+works with pytorch</description>
+    </item>
+    
+    <item>
       <title>org-latex-export</title>
       <link>/posts/org_latex_export/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5599,6 +5659,20 @@ Goal  Statistics optimal, nlp specialization between arabic/mandarin/english, ab
       <guid>/posts/paris_club/</guid>
       <description>Tags: finance, ngo
  https://en.wikipedia.org/wiki/Paris%5FClub  </description>
+    </item>
+    
+    <item>
+      <title>Parks - Stuff You Can Kick</title>
+      <link>/posts/parks_stuff_you_can_kick/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/parks_stuff_you_can_kick/</guid>
+      <description>Tags: problems and methods, books https://www.academia.edu/16426095/Stuff%5FYou%5FCan%5FKick%5FToward%5Fa%5FTheory%5Fof%5FMedia%5FInfrastructures
+Infrastructure as a medium for understanding things
+ explores &amp;ldquo;media infrastrucutres&amp;rdquo;   actual signals, which cables are private, etc
+  what is the stuff you can see, what is the stuff you can kick?
+ &amp;ldquo;integrated ciruits&amp;rdquo; or as part of the biotechnical or technosocial formations
+  what does this even mean    asks us to think about what infrastructure is made of and how they arrived</description>
     </item>
     
     <item>
@@ -7723,6 +7797,16 @@ Splits the data up into what the model is fit, what it is validated against, and
     </item>
     
     <item>
+      <title>transformers</title>
+      <link>/posts/transformers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/transformers/</guid>
+      <description>Tags: nlp
+https://huggingface.co/transformers/</description>
+    </item>
+    
+    <item>
       <title>transitional justice</title>
       <link>/posts/transitional_justice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7791,6 +7875,24 @@ https://trukker.com/</description>
       <guid>/posts/trust_blog_post/</guid>
       <description>Tags: drafts
  results of user trust novices and experts distinction trust gap for tech experts trust in post-conflict statebuilding organization what does this mean for products? models need to be correct at first pass users are less willing to trust after the first impressions what does this mean for post-conflict situations? do people trust faceless bureacracies less if the initial assessment is bad? what about banking and the underbanked?  </description>
+    </item>
+    
+    <item>
+      <title>trust in media</title>
+      <link>/posts/trust_in_media/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/trust_in_media/</guid>
+      <description>Tags: drafts
+  https://twitter.com/cd%5Fhooks/status/1340002175607599106
+  caliphate
+ https://www.jadaliyya.com/Details/42095    coinbase
+ https://www.jadaliyya.com/Details/42095    trust of masks
+ https://aelkus.github.io/problem/2020/03/18/collective https://aelkus.github.io/theory/2020/12/03/solu.html    opinion pages
+ laundering of journalistic trust    https://nymag.com/intelligencer/2020/11/inside-the-new-york-times-heated-reckoning-with-itself.html
+  solutionism in journalistic trust
+  diversity problems
+ https://twitter.com/Seamus%5FMalek/status/1340003951811260416    tech journalists rehash blog posts or write cultural critques that fail to understand the underlying technology</description>
     </item>
     
     <item>
