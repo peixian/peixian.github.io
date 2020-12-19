@@ -1358,6 +1358,16 @@ https://www.fsmtime.com/blog/article/clock-synchronization-and-technology/</desc
     </item>
     
     <item>
+      <title>community detection libraries</title>
+      <link>/posts/community_detection_libraries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/community_detection_libraries/</guid>
+      <description>Tags: community detection
+ https://appliednetsci.springeropen.com/articles/10.1007/s41109-019-0165-9  https://colab.research.google.com/github/KDDComplexNetworkAnalysis/CNA%5FTutorials/blob/master/CDlib.ipynb#scrollTo=DpvjRPKbnUvc https://github.com/GiulioRossetti/CDlib   https://github.com/taynaud/python-louvain  </description>
+    </item>
+    
+    <item>
       <title>community detection with org-roam library</title>
       <link>/posts/community_detection_with_org_roam_library/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2887,6 +2897,16 @@ New Panel Edit UI  6.0 made it easy to change visualization type  created a lot 
       
       <guid>/posts/graph_traversal/</guid>
       <description>Tags: algorithms</description>
+    </item>
+    
+    <item>
+      <title>graph-tool (python)</title>
+      <link>/posts/graph_tool_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/graph_tool_python/</guid>
+      <description>Tags: python, community detection libraries
+ https://git.skewed.de/count0/graph-tool similar to networkx  </description>
     </item>
     
     <item>

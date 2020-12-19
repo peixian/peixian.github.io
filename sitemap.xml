@@ -547,6 +547,10 @@
   </url>
   
   <url>
+    <loc>/posts/community_detection_libraries/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/community_detection_with_org_roam_library/</loc>
   </url>
   
@@ -1152,6 +1156,10 @@
   
   <url>
     <loc>/posts/graph_traversal/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/graph_tool_python/</loc>
   </url>
   
   <url>
