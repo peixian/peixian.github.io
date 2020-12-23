@@ -322,6 +322,16 @@ Preface  Conventional western models of DDR and SSR appear irrelevant or unenfor
     </item>
     
     <item>
+      <title>alfred north whitehead</title>
+      <link>/posts/alfred_north_whitehead/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/alfred_north_whitehead/</guid>
+      <description>Tags: people, math
+Co-author of principa mathmatica</description>
+    </item>
+    
+    <item>
       <title>algeria</title>
       <link>/posts/algeria/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -733,6 +743,15 @@ Ideaology largely constructed by Michel Aflaq and Salah ud-Din al-Bitar</descrip
     </item>
     
     <item>
+      <title>balkans</title>
+      <link>/posts/balkans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/balkans/</guid>
+      <description>Tags: europe</description>
+    </item>
+    
+    <item>
       <title>baltic states</title>
       <link>/posts/baltic_states/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -740,6 +759,15 @@ Ideaology largely constructed by Michel Aflaq and Salah ud-Din al-Bitar</descrip
       <guid>/posts/baltic_states/</guid>
       <description>Tags: europe
 Changing frequency of electricity  https://www.instapaper.com/read/1338283216 Electrical frequency controlled largely from Moscow  </description>
+    </item>
+    
+    <item>
+      <title>bangladesh</title>
+      <link>/posts/bangladesh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bangladesh/</guid>
+      <description>Tags: south asia</description>
     </item>
     
     <item>
@@ -819,6 +847,16 @@ Beath, Andrew, Fotini Christia, and Ruben Enikolopov. The National Solidarity Pr
       
       <guid>/posts/beirut_trash_riots/</guid>
       <description>Tags: lebanon</description>
+    </item>
+    
+    <item>
+      <title>bertrand russel</title>
+      <link>/posts/bertrand_russel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bertrand_russel/</guid>
+      <description>Tags: people, math
+Author of the principa mathmatica</description>
     </item>
     
     <item>
@@ -938,7 +976,7 @@ Career Books  https://www.reddit.com/r/ExperiencedDevs/comments/hpgkvv/what%5Far
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/bosnia/</guid>
-      <description>Tags: europe</description>
+      <description>Tags: balkans</description>
     </item>
     
     <item>
@@ -1439,6 +1477,15 @@ US  The Senate’s consent to ratify the CTBT requires the acknowledgement of a 
     </item>
     
     <item>
+      <title>computational social science</title>
+      <link>/posts/computational_social_science/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/computational_social_science/</guid>
+      <description>Tags: root, sociology</description>
+    </item>
+    
+    <item>
       <title>computers</title>
       <link>/posts/computers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1479,6 +1526,15 @@ Shame: Emotions of Morality and Violence papers
       <guid>/posts/containerd/</guid>
       <description>Tags: kubernetes (k8s)
  &amp;ldquo;Container runtime&amp;rdquo; below docker and kube above runc, Kata, Firecracker, gVisor Extensible resource manager originally built up alongisde docker new interface for managing containers and images most memory efficient and stable most stuff flows through the core communicates with grpc  CRI  Two grpc services image and runtime responsible for defining the pod and all cgroups invokes CNI after the first container is created  Resource management  current  CPU manager in kubelet strange, difficult to use   NRI  kubelet abstraction is too blurry hook into container lifecycle is the correct way dynamic topology and cpu pinning with NRI    Runtime  Starts up new runtime shims  OCI runtime shims  runc/kata/Firecracker      Plugin System  OCI spec outlines how to run a unpacked filesystem bundle  tar/gzip + overlayFS + runC   containerd makes external plugins as backend  Generic image layer support  OCI image layer described the media type  ShimV2 for runtime implementation  First class shim API  Arch  Shim has the most state API and client have the least state 1.</description>
+    </item>
+    
+    <item>
+      <title>continental philosphy</title>
+      <link>/posts/continental_philosphy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/continental_philosphy/</guid>
+      <description>Tags: episteme</description>
     </item>
     
     <item>
@@ -2188,7 +2244,8 @@ See also: https://eng.lyft.com/envoy-7-months-later-41986c2fd443</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/erlang/</guid>
-      <description>Tags: programming languages</description>
+      <description>Tags: programming languages
+-https://erlangexplained.com/index.php/about</description>
     </item>
     
     <item>
@@ -2733,6 +2790,17 @@ Examples  https://github.com/WeOpenly/localgov.fyi  Tutorials  https://www.gatsb
     </item>
     
     <item>
+      <title>geb, ecology of mind, psychosis and islam blog post</title>
+      <link>/posts/geb_ecology_of_mind_psychosis_and_islam_blog_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/geb_ecology_of_mind_psychosis_and_islam_blog_post/</guid>
+      <description>Tags: drafts
+Hofstadter - Godel, Escher, Bach Bateson - Steps to an Ecology of Mind Knot of the Soul?
+ Focaultian psychoanalysis in conjunction with self referential Godel? jacques lacan  </description>
+    </item>
+    
+    <item>
       <title>georgia</title>
       <link>/posts/georgia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2769,6 +2837,15 @@ Examples  https://github.com/WeOpenly/localgov.fyi  Tutorials  https://www.gatsb
       <guid>/posts/glick_and_paluck_the_aftermath_of_genocide/</guid>
       <description>Tags: papers, conflict and violence
  Social psychologists tend to emphaizie proximal situational causes Talks about how victim groups experiece an ambivalent relationship to the past  Rememberence is often painful  Adar - Emotions and Nationalism: Armenian Genocide as a Case Study   Holocaust remeberance not only creates solidarity within the group but also strongly motivates the rejection of a continuing victim identity   Past recession leads to denial and distancing of colonialization, mass violence, and genocide.</description>
+    </item>
+    
+    <item>
+      <title>godel&#39;s incompleteness theorem</title>
+      <link>/posts/godel_s_incompleteness_theorem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/godel_s_incompleteness_theorem/</guid>
+      <description>Tags: math, Kurt Godel</description>
     </item>
     
     <item>
@@ -2996,6 +3073,15 @@ https://github.com/tomnomnom/gron</description>
       <guid>/posts/grpc/</guid>
       <description>Tags: kubernetes (k8s)
 gRPC communication patterns  contract first, protobuf IDL, binary messaging on the wire w/ HTTP2, duplex  rpc flow  take message encode message add message headers send message across network  http2 level  once the HTTP 2 connection has been created, this is a grpc channel  each rpc call is a single stream   message frames  headers and data frames   request messages  contains  header frame framed message that spans one or more data frames eos flag in the last data frame     response emssages  same structure, except with trailers    rpc types  simple rpc  single request/single response the stub sends to the server, one block of headers, message, and eos (end of stream) for request   server streaming  one request, multiple response multiple data frames being sent back   client streaming  multiple request, single response   bidirectional streaming  each request is length prefixed!</description>
+    </item>
+    
+    <item>
+      <title>guatemala</title>
+      <link>/posts/guatemala/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/guatemala/</guid>
+      <description>Tags: latam</description>
     </item>
     
     <item>
@@ -3282,6 +3368,19 @@ https://www.it.uu.se/research/group/hipe/</description>
       <guid>/posts/hiring_an_editor/</guid>
       <description>Tags: writing
 https://mtlynch.io/editor/</description>
+    </item>
+    
+    <item>
+      <title>Hofstadter - Godel, Escher, Bach</title>
+      <link>/posts/hofstadter_godel_escher_bach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hofstadter_godel_escher_bach/</guid>
+      <description>Tags: books
+Preface   Book is not about math, art, and music relations
+  Book is about patterns, the more abstract layer on top of the raw information in the brain
+  Describes the self-referential &amp;ldquo;I&amp;rdquo;
+ godel&amp;rsquo;s incompleteness theorem showed that it is impossible to construct a set of axioms that exist outside mathematics, all axioms are &amp;ldquo;incomplete&amp;rdquo;    Kurt Godel vs bertrand russel and alfred north whitehead in principa mathmatica</description>
     </item>
     
     <item>
@@ -3721,7 +3820,7 @@ Grammar خل + فعل  Let (imperative) + فعل Example:  Let us go: خل نر�
       
       <guid>/posts/irrigation_in_iraq/</guid>
       <description>Tags: iraq
- The Euphrates does not receive water from permanent tributaries within Iraq territory and is fed only by seasonal runoff from wadis.  Water Levels Dropping on Tigris and Euphrates - July 18th 2020  https://apnews.com/9542368977c9ee0ae97fd2cc88933198 turkey&amp;rsquo;s Ilisu Dam sits on tigris and may be singlehandled reponsible   </description>
+ iraq is very rarely metering water supplies The Euphrates does not receive water from permanent tributaries within Iraq territory and is fed only by seasonal runoff from wadis.  Water Levels Dropping on Tigris and Euphrates - July 18th 2020  https://apnews.com/9542368977c9ee0ae97fd2cc88933198 turkey&amp;rsquo;s Ilisu Dam sits on tigris and may be singlehandled reponsible   </description>
     </item>
     
     <item>
@@ -3809,6 +3908,16 @@ Similar groups:  http://drc-group.com/ https://www.cybrary.it/ https://portal.it
       <guid>/posts/ivory_coast/</guid>
       <description>Tags: africa
  https://www.jstor.org/stable/24589131?seq=10#metadata%5Finfo%5Ftab%5Fcontents  </description>
+    </item>
+    
+    <item>
+      <title>jacques lacan</title>
+      <link>/posts/jacques_lacan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/jacques_lacan/</guid>
+      <description>Tags: people
+ ideas have contributed to continental philosphy  </description>
     </item>
     
     <item>
@@ -4085,7 +4194,7 @@ Preface Three main types of hashd units
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/kosovo/</guid>
-      <description>Tags: europe</description>
+      <description>Tags: balkans</description>
     </item>
     
     <item>
@@ -4116,6 +4225,15 @@ Preface Three main types of hashd units
       <guid>/posts/kurdistan_democratic_party/</guid>
       <description>Tags: iraq
 Leftist urban intellectuals</description>
+    </item>
+    
+    <item>
+      <title>kurt godel</title>
+      <link>/posts/kurt_godel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/kurt_godel/</guid>
+      <description>Tags: people, math</description>
     </item>
     
     <item>
@@ -5727,6 +5845,16 @@ France refined parlimentarism in the wake of the French Revolution and theorized
     </item>
     
     <item>
+      <title>parlimentary delays as a tool for sectarianism</title>
+      <link>/posts/parlimentary_delays_as_a_tool_for_sectarianism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/parlimentary_delays_as_a_tool_for_sectarianism/</guid>
+      <description>Tags: project ideas, sectarianism
+How are parlimentary procedures used for sectarianism? lebanon politicians are brilliant at delays. Is this the same for iraq?</description>
+    </item>
+    
+    <item>
       <title>path dependency</title>
       <link>/posts/path_dependency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5850,6 +5978,16 @@ Adapter based framework that provides high portability for cross lingual transfe
       <description>Tags: turkey, europe, ottoman, Post-Ottoman Near East
 Talks about the Ottoman legacy of the Balkans and the Middle East via Mursus Pasha and his patron
  booming business of land deeds of families in Greece written in Ottoman Talks about the status of dragomans - a translater/interpreter/political analyst all combined into one  Concludes talking about how the legacy of Ottoman Turkish archives has only just begun to be researched, does recent neo-Ottoman and Turkey/Greek detant revolve around parallel national imaginations?</description>
+    </item>
+    
+    <item>
+      <title>phoenix live view</title>
+      <link>/posts/phoenix_live_view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/phoenix_live_view/</guid>
+      <description>Tags: elixir
+https://hexdocs.pm/phoenix%5Flive%5Fview/Phoenix.LiveView.html</description>
     </item>
     
     <item>
@@ -6062,6 +6200,16 @@ Describes the case studies of el salvador, mozambique, cambodia, bosnia, and som
       <guid>/posts/pricing_software/</guid>
       <description>Tags: computers, economics
  https://neildavidson.com/downloads/dont-just-roll-the-dice-2.0.0.pdf Typical follow the demand curve Differentiate with marketing  Differentiate with personality Link a product to yourself Make people love the brand People are more likely to pay for time Sell the experience - make the process of buying things good for people   Objective value tends to trump all Find signposts for your work Competing on price means minimizing price war Versioning segements the software and gives people different features  Even shifting the top end encourages people to move up their consumption Too many versions push people toward the extreme   Bundling  Giving customers better value, persuading them to buy more Bundling also makes it harder for customers to understand what they&amp;rsquo;re paying for Multi-user licesnes are an example of this   Free trials  Possible, but unclear if its actually a good way to make money Potentially cannibalizes paid model   Bargins  Discounting software works   Quantities  Extremely difficult to see large quantities of software   SaaS  Paying small amounts easier psychologically Recurring payments promote regular usage However requires more metrics, and more understanding of customer lifetime and acquisition   Yearly plans and contracts  Contracts are generally not good Discounting on a fixed range is good   Pricing models  Freemium Per user Per processor Per server/box Per usage Consulting   Most businesses end with a mixed model Make the pricing model boring Prices send signals!</description>
+    </item>
+    
+    <item>
+      <title>principa mathmatica</title>
+      <link>/posts/principa_mathmatica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/principa_mathmatica/</guid>
+      <description>Tags: books
+Book in 1913 describing how to construct axioms for a mathmatical symbol without being self-referential</description>
     </item>
     
     <item>
@@ -6817,6 +6965,15 @@ Web software for smalltalk: https://en.wikipedia.org/wiki/Seaside%5F(software)</
       <guid>/posts/secor_children_of_paradise/</guid>
       <description>Tags: books, iran
 In the absence of the twelfth imam, the duty of guiding such a nation must fall to its most esteemed Islamic scholar, or faqih, who would be uniquely qualified to interpret the divine texts.</description>
+    </item>
+    
+    <item>
+      <title>sectarianism</title>
+      <link>/posts/sectarianism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sectarianism/</guid>
+      <description>Tags: political science</description>
     </item>
     
     <item>
@@ -7803,6 +7960,16 @@ https://arxiv.org/pdf/1906.10860.pdf</description>
     </item>
     
     <item>
+      <title>toby dodge/bassel salloukh talk (2020-12-22)</title>
+      <link>/posts/toby_dodge_bassel_salloukh_talk_2020_12_22/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/toby_dodge_bassel_salloukh_talk_2020_12_22/</guid>
+      <description>Tags: grad school, sectarianism
+Salloukh - lebanon  sectarian order was not guarenteed sectarianism was never the dominant mode of affilication, neither before 1861 or after created in 1920 as a country for sects intra-maronite debates dominated the early discussions of lebanon post-1960 demands of sectarian identities came as a result of the post-war pheonom constructs around sectarianism?  coexistience without association hourani&amp;rsquo;s &amp;ldquo;views of lebanon&amp;rdquo; lebanon&amp;rsquo;s sectarianism as a result of convience the understanding of sectarianism (even if it does have power) does not imply that it holds historical value   elites depend on violence and growing army as a result of a weak tax base, weak institutional capacity based on the british empire focused on extraction, and a new ruling elite without legitimacy mobilization of people among socialeconomic lines to challenge the system (students and labor)  pre-war economy dominated by the christians   labor movements after pax-syriana (1990&amp;rsquo;s)  literally colonized by the sectarian parties   &amp;ldquo;bureacrry of the state becomes an archipeligo of clientalist networks&amp;rdquo;  financing of the bloated public sector and reconstruction how to finance the debt?</description>
+    </item>
+    
+    <item>
       <title>torchtext</title>
       <link>/posts/torchtext/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7960,6 +8127,15 @@ https://trukker.com/</description>
   solutionism in journalistic trust
   diversity problems
  https://twitter.com/Seamus%5FMalek/status/1340003951811260416    tech journalists rehash blog posts or write cultural critques that fail to understand the underlying technology</description>
+    </item>
+    
+    <item>
+      <title>truth and reconciliation program</title>
+      <link>/posts/truth_and_reconciliation_program/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/truth_and_reconciliation_program/</guid>
+      <description>Tags: sierra leone, ddr</description>
     </item>
     
     <item>
@@ -8531,7 +8707,7 @@ Talks about the &amp;ldquo;Memory House of Ataturk&amp;rdquo; (mustafa kemal) as
       
       <guid>/posts/zotero/</guid>
       <description>Tags: grad school, computers
-Extensions  betterbibtex: https://retorque.re/zotero-better-bibtex/  Autogeneration of .bib files   Zotfile: http://zotfile.com/  Automatic renaming and file management   Zotxt: https://github.com/egh/zotxt  Supports random text files   Zutilo: https://github.com/willsALMANJ/Zutilo  Tagging support Notably also allows to to create sections from a book    </description>
+Extensions  betterbibtex: https://retorque.re/zotero-better-bibtex/  Autogeneration of .bib files   Zotfile: http://zotfile.com/  Automatic renaming and file management   Zotxt: https://github.com/egh/zotxt  Supports random text files https://github.com/egh/zotxt-emacs   Zutilo: https://github.com/willsALMANJ/Zutilo  Tagging support Notably also allows to to create sections from a book    emacs  http://www.mkbehr.com/posts/a-research-workflow-with-zotero-and-org-mode/  </description>
     </item>
     
   </channel>

@@ -123,6 +123,10 @@
   </url>
   
   <url>
+    <loc>/posts/alfred_north_whitehead/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/algeria/</loc>
   </url>
   
@@ -291,7 +295,15 @@
   </url>
   
   <url>
+    <loc>/posts/balkans/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/baltic_states/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/bangladesh/</loc>
   </url>
   
   <url>
@@ -324,6 +336,10 @@
   
   <url>
     <loc>/posts/beirut_trash_riots/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/bertrand_russel/</loc>
   </url>
   
   <url>
@@ -579,6 +595,10 @@
   </url>
   
   <url>
+    <loc>/posts/computational_social_science/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/computers/</loc>
   </url>
   
@@ -592,6 +612,10 @@
   
   <url>
     <loc>/posts/containerd/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/continental_philosphy/</loc>
   </url>
   
   <url>
@@ -1091,6 +1115,10 @@
   </url>
   
   <url>
+    <loc>/posts/geb_ecology_of_mind_psychosis_and_islam_blog_post/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/georgia/</loc>
   </url>
   
@@ -1104,6 +1132,10 @@
   
   <url>
     <loc>/posts/glick_and_paluck_the_aftermath_of_genocide/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/godel_s_incompleteness_theorem/</loc>
   </url>
   
   <url>
@@ -1196,6 +1228,10 @@
   
   <url>
     <loc>/posts/grpc/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/guatemala/</loc>
   </url>
   
   <url>
@@ -1308,6 +1344,10 @@
   
   <url>
     <loc>/posts/hiring_an_editor/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/hofstadter_godel_escher_bach/</loc>
   </url>
   
   <url>
@@ -1515,6 +1555,10 @@
   </url>
   
   <url>
+    <loc>/posts/jacques_lacan/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/jaeger_deep_dive/</loc>
   </url>
   
@@ -1640,6 +1684,10 @@
   
   <url>
     <loc>/posts/kurdistan_democratic_party/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/kurt_godel/</loc>
   </url>
   
   <url>
@@ -2279,6 +2327,10 @@
   </url>
   
   <url>
+    <loc>/posts/parlimentary_delays_as_a_tool_for_sectarianism/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/path_dependency/</loc>
   </url>
   
@@ -2324,6 +2376,10 @@
   
   <url>
     <loc>/posts/philliou_interpreting_the_ottoman_past_through_the_national_present/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/phoenix_live_view/</loc>
   </url>
   
   <url>
@@ -2412,6 +2468,10 @@
   
   <url>
     <loc>/posts/pricing_software/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/principa_mathmatica/</loc>
   </url>
   
   <url>
@@ -2708,6 +2768,10 @@
   
   <url>
     <loc>/posts/secor_children_of_paradise/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/sectarianism/</loc>
   </url>
   
   <url>
@@ -3103,6 +3167,10 @@
   </url>
   
   <url>
+    <loc>/posts/toby_dodge_bassel_salloukh_talk_2020_12_22/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/torchtext/</loc>
   </url>
   
@@ -3156,6 +3224,10 @@
   
   <url>
     <loc>/posts/trust_in_media/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/truth_and_reconciliation_program/</loc>
   </url>
   
   <url>
