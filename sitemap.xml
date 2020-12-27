@@ -39,11 +39,23 @@
   </url>
   
   <url>
+    <loc>/posts/abdul_hadi_al_darraji/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/abdul_karim_qasim/</loc>
   </url>
   
   <url>
+    <loc>/posts/abu_ali_al_basri_adnan_ibrahim_al_najjar/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/abu_mahdi_al_muhandis/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/abu_zainab_al_lami_hussein_falal_aziz_al_lami/</loc>
   </url>
   
   <url>
@@ -68,6 +80,10 @@
   
   <url>
     <loc>/posts/20200415203841-adar_emotions_and_nationalism_armenian_genocide_as_a_case_study/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/adil_abdul_mahdi/</loc>
   </url>
   
   <url>
@@ -136,6 +152,10 @@
   
   <url>
     <loc>/posts/ali_abudllah_saleh/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/ali_shakir_al_khafaf/</loc>
   </url>
   
   <url>
@@ -243,6 +263,10 @@
   </url>
   
   <url>
+    <loc>/posts/assembly/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/async_cpp/</loc>
   </url>
   
@@ -284,6 +308,10 @@
   
   <url>
     <loc>/posts/baath/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/badr/</loc>
   </url>
   
   <url>
@@ -436,6 +464,10 @@
   
   <url>
     <loc>/posts/buy_side/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/bytecode/</loc>
   </url>
   
   <url>
@@ -636,6 +668,10 @@
   
   <url>
     <loc>/posts/cote_d_ivore/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/counter_terrorism_service_iraq/</loc>
   </url>
   
   <url>
@@ -951,7 +987,19 @@
   </url>
   
   <url>
+    <loc>/posts/executive_order_328_2019/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/executive_order_331_2019/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/executive_order_85_2018/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/executive_order_91_2016/</loc>
   </url>
   
   <url>
@@ -960,6 +1008,10 @@
   
   <url>
     <loc>/posts/explicit_knowledge/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/faleh_al_fayyad/</loc>
   </url>
   
   <url>
@@ -1131,6 +1183,10 @@
   </url>
   
   <url>
+    <loc>/posts/geometry/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/georgia/</loc>
   </url>
   
@@ -1144,6 +1200,10 @@
   
   <url>
     <loc>/posts/giorgio_agamben/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/gleitman_et_al_the_impossibility_of_language_acquisition_and_how_they_do_it/</loc>
   </url>
   
   <url>
@@ -1275,11 +1335,19 @@
   </url>
   
   <url>
+    <loc>/posts/haider_al_furaiji/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/hajdarpasic_reflections_on_the_ottoman_legacy_in_south_eastern_europe/</loc>
   </url>
   
   <url>
     <loc>/posts/hamas/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/hamid_al_shatri/</loc>
   </url>
   
   <url>
@@ -1304,6 +1372,10 @@
   
   <url>
     <loc>/posts/20200415154513-hashd_al_shaabi_pmf/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/hashd_commission/</loc>
   </url>
   
   <url>
@@ -1371,6 +1443,10 @@
   </url>
   
   <url>
+    <loc>/posts/how_jit_compilers_are_implemented_and_fast_pypy_luajit_graal_and_more/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/how_to_write_a_technical_paper/</loc>
   </url>
   
@@ -1384,6 +1460,10 @@
   
   <url>
     <loc>/posts/humanism-in-ruins/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/hussein_ismail_khalil/</loc>
   </url>
   
   <url>
@@ -1523,7 +1603,15 @@
   </url>
   
   <url>
+    <loc>/posts/iraqi_prime_minister/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/iraqi_shia/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/iraqi_sunni/</loc>
   </url>
   
   <url>
@@ -1559,6 +1647,10 @@
   </url>
   
   <url>
+    <loc>/posts/islamic_supreme_council_of_iraq_isci/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/ismail_haniyeh/</loc>
   </url>
   
@@ -1583,6 +1675,10 @@
   </url>
   
   <url>
+    <loc>/posts/jaish_al_mahdi/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/janus_v_asfcme/</loc>
   </url>
   
@@ -1596,6 +1692,10 @@
   
   <url>
     <loc>/posts/javascript/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/jit/</loc>
   </url>
   
   <url>
@@ -1632,6 +1732,10 @@
   
   <url>
     <loc>/posts/kapstein_aid_and_stabilization_in_afghanistan/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/karbala/</loc>
   </url>
   
   <url>
@@ -1688,6 +1792,10 @@
   
   <url>
     <loc>/posts/kolbert_field_notes_from_a_catastrophe/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/kosek_et_al_must_should_don_t_care_tcp_conformance_in_the_wild/</loc>
   </url>
   
   <url>
@@ -1775,6 +1883,10 @@
   </url>
   
   <url>
+    <loc>/posts/legal_basis_of_the_hashd/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/li_the_universal_enemy/</loc>
   </url>
   
@@ -1812,6 +1924,14 @@
   
   <url>
     <loc>/posts/literature/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/liwa_ali_al_akbar_brigade_11/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/llvm/</loc>
   </url>
   
   <url>
@@ -1943,6 +2063,10 @@
   </url>
   
   <url>
+    <loc>/posts/ministry_of_defense_iraq/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/mishasha/</loc>
   </url>
   
@@ -2019,11 +2143,19 @@
   </url>
   
   <url>
+    <loc>/posts/muhammad_al_haidari/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/muhammad_baqir_as_sadr/</loc>
   </url>
   
   <url>
     <loc>/posts/muhammad_sadiq_al_sadr/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/muhannad_al_aqabi/</loc>
   </url>
   
   <url>
@@ -2187,6 +2319,10 @@
   </url>
   
   <url>
+    <loc>/posts/notation_as_a_tool_of_thought/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/notes_graph/</loc>
   </url>
   
@@ -2292,6 +2428,10 @@
   
   <url>
     <loc>/posts/20200419205801-organization_for_grad_school_blog_post/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/organizational_structure_of_the_hashd/</loc>
   </url>
   
   <url>
@@ -2448,6 +2588,10 @@
   
   <url>
     <loc>/posts/political_science/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/popular_mobilization_comission_law_2016/</loc>
   </url>
   
   <url>
@@ -2631,6 +2775,10 @@
   </url>
   
   <url>
+    <loc>/posts/rational_maps/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/raven_paradox/</loc>
   </url>
   
@@ -2692,6 +2840,10 @@
   
   <url>
     <loc>/posts/republic_of_the_congo_roc/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/responsbility_shared_is_responsbility_denied_blog_post/</loc>
   </url>
   
   <url>
@@ -2851,6 +3003,10 @@
   </url>
   
   <url>
+    <loc>/posts/sheikh_abdul_rahman_al_kakhimi/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/shell/</loc>
   </url>
   
@@ -2880,6 +3036,14 @@
   
   <url>
     <loc>/posts/sistani/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/sistaniyun_bridages/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/sistaniyun_brigades/</loc>
   </url>
   
   <url>
@@ -3035,6 +3199,10 @@
   </url>
   
   <url>
+    <loc>/posts/sultan_al_musawi/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/summer_2020/</loc>
   </url>
   
@@ -3159,6 +3327,10 @@
   </url>
   
   <url>
+    <loc>/posts/thamir_al_tamimi/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/the_danger_of_treating_ideas_from_finance_as_generalized_self_help/</loc>
   </url>
   
@@ -3232,6 +3404,10 @@
   
   <url>
     <loc>/posts/trial_error_vs_theory_insight_in_work_academia/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/tropical_geometry/</loc>
   </url>
   
   <url>
