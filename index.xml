@@ -1067,6 +1067,18 @@ Career Books  https://www.reddit.com/r/ExperiencedDevs/comments/hpgkvv/what%5Far
     </item>
     
     <item>
+      <title>bowes: level triggering and reconciliation</title>
+      <link>/posts/bowes_level_triggering_and_reconciliation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bowes_level_triggering_and_reconciliation/</guid>
+      <description>Tags: articles
+Introduces the concepts of edge triggering and level triggering, derived from the idea of an interrupt, talks about how systems should respond to the shape of an electrical signal over time.
+Should the system care about when the signal changes from low &amp;lt;- high or high -&amp;gt; low, or if the signal is high? Thresholds vs state changes
+Abstractly, there&amp;rsquo;s no differences between edge and level triggering, the only difference is the sample rate, if a system doesn&amp;rsquo;t sample fast enough, we may miss a trigger</description>
+    </item>
+    
+    <item>
       <title>bpf</title>
       <link>/posts/bpf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1644,6 +1656,16 @@ Consitution Making  iraqi constitutionalism tunisia consitution writing was tran
     </item>
     
     <item>
+      <title>controllers (k8s)</title>
+      <link>/posts/controllers_k8s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/controllers_k8s/</guid>
+      <description>Tags: kubernetes (k8s)
+Core component that implements a control loop and optimistically transitions state</description>
+    </item>
+    
+    <item>
       <title>Cook - The Aswan Low Dam and Modernizing the Nile</title>
       <link>/posts/cook_the_aswan_low_dam_and_modernizing_the_nile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1746,6 +1768,15 @@ Provides checkpointing and snapshotting of applications and containers to disk
       
       <guid>/posts/crypto/</guid>
       <description>Tags: Computers</description>
+    </item>
+    
+    <item>
+      <title>custom resource definitions (crds)</title>
+      <link>/posts/custom_resource_definitions_crds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/custom_resource_definitions_crds/</guid>
+      <description>Tags: kubernetes (k8s)</description>
     </item>
     
     <item>
@@ -2416,6 +2447,16 @@ http://blog.erlang.org/the-road-to-the-jit/</description>
     </item>
     
     <item>
+      <title>etcd</title>
+      <link>/posts/etcd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/etcd/</guid>
+      <description>Tags: computers, k/v stores
+Fast k/v used in kubernetes (k8s)</description>
+    </item>
+    
+    <item>
       <title>etherium</title>
       <link>/posts/etherium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2962,6 +3003,17 @@ Fuzzing Image IO   https://www.instapaper.com/read/1303612511
       <guid>/posts/gambetta_et_al_streetwise/</guid>
       <description>Tags: books
  Gambetta, Diego, and Heather Hamill. Streetwise: How Taxi Drivers Establish Customer’s Trustworthiness, 2005. http://www.vlebooks.com/vleweb/product/openreader?id=none&amp;amp;isbn=9781610442350. Talks about how taxi drivers must adopt a very quick rate of understanding their clients  Signaling theory  how does a hailer signal they are trustworthy? How does a mimic attempting to rob a taxi driver signal they are trustworthy? Age, race, gender, dress, etc   &amp;ldquo;Gut feeling&amp;rdquo;  Taxi drivers develop some amount of gut feelings   Most taxi drivers acknowledge that they are not in a position of power  If mimics really want to decieve, they can Average take in a livery cab robbery is 75 dollars   Signs:  older over younger women over men &amp;ldquo;white&amp;rdquo; over &amp;ldquo;black: Spanish over other ethnic groups (iff driver is Spanish) Individuals over multiple passengers  Groups with one female is safer   Wealthier over poorer Known passengers over strangers  Most important!</description>
+    </item>
+    
+    <item>
+      <title>gasch: events, the dna of kubernetes</title>
+      <link>/posts/gasch_events_the_dna_of_kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gasch_events_the_dna_of_kubernetes/</guid>
+      <description>Tags: articles, kubernetes (k8s)
+Talks about how the Kube API server is the fundalmental broker with multiple replicated logs or queues. Events are causually related, and every controllers (k8s) can be understood to be a producer and/or consumer of events from these logs.
+ ListWatch in k8s, which lists all events from the API server when the consumer starts, then switches to &amp;ldquo;watch mode&amp;rdquo; to reduce the load queue is fundalmentally decoupling both the consumer and producer (with a queue)    No guarentee that things will ever reach the desired state, but it is optimistically trying, which makes controllers stateless even when they handle state operations, and do not require persistency!</description>
     </item>
     
     <item>
@@ -3528,6 +3580,16 @@ https://kowainik.github.io/posts/haskell-mini-patterns</description>
     </item>
     
     <item>
+      <title>hausenblas - programming kubernetes</title>
+      <link>/posts/programming_kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/programming_kubernetes/</guid>
+      <description>Tags: kubernetes (k8s), books
+Chapter 1  Building native apps that speak to both the kubelet and the API server Extension points  cloud-controller-manager integrates w/ the cloud kubelet binary lets network/devices/storage and container runtimes kubectl has plugins extensions on API server custom resources and controllers custom API servers scheduler extensions    controllers (k8s) and Operators  Controllers implement a control loop, watching the shared state of the cluster through the API server and making changes in an attempt to move the current state towards the desired state  Controllers act on core resources Operators are controllers that encode some operational knowledge   the controllers pull info, computes the difference between the desired state and the current state, and updates accordingly  somewhat similar to loss function    The control loop  Read state (hopefully event driven) Change state Update status via API server in etcd repeat    Data structures used by the controller</description>
+    </item>
+    
+    <item>
       <title>hci</title>
       <link>/posts/hci/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3958,6 +4020,16 @@ Supporing security force from nato in afghanistan</description>
     </item>
     
     <item>
+      <title>interrupt</title>
+      <link>/posts/interrupt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/interrupt/</guid>
+      <description>Tags: computers
+ https://en.wikipedia.org/wiki/Interrupt  </description>
+    </item>
+    
+    <item>
       <title>iran</title>
       <link>/posts/iran/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4359,6 +4431,15 @@ tail call optimization  https://github.com/Sipkab/jvm-tail-recursion  JVM profil
     </item>
     
     <item>
+      <title>k/v stores</title>
+      <link>/posts/k_v_stores/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/k_v_stores/</guid>
+      <description>Tags: computers</description>
+    </item>
+    
+    <item>
       <title>kabul</title>
       <link>/posts/kabul/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4577,6 +4658,19 @@ Most servers abide by TCP standards for SHOULD and MUST. A significant subset do
       <guid>/posts/20200419204045-iraqi_kurdistan/</guid>
       <description>Tags: iraq
  https://twitter.com/baxtiyargoran/status/1251954218589663235?s=12  Joint investment with the KRG in terms of natural gas, end goal is for the KRG to export natural gas to the rest of Iraq   &amp;ldquo;The revolt of Sheikh Ubeydullah in the 1870s, which is sometimes known as the first nationalist uprising of the Kurds, aimed to establish a state for the Kurds on the territories occupied by Ottomans and Iranian&amp;rdquo; (Yeğen 1996:220) Kurdistan Region of Iraq (KRI), where as much as 300 million scf/d of surplus gas can potentially be secured from the Khor Mor gas field in one year.</description>
+    </item>
+    
+    <item>
+      <title>kube/ooda loop blog post</title>
+      <link>/posts/kube_ooda_loop_blog_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/kube_ooda_loop_blog_post/</guid>
+      <description>Tags: drafts, kubernetes (k8s), ooda (observe orient decide act)
+working title: ooda&amp;rsquo;s in Kubernetes
+Kubernetes control plane is like the ooda (observe orient decide act), combines two main factors:
+ how kubernetes controllers respond to external stimuli  duration/frequency of external stimuli? intensity aka amplitude of external stimuli?   when this stimuli comes in, how do we reconcile this with what we want? statelessness  sources:
+ https://commoncog.com/blog/much-ado-about-the-ooda-loop/ gasch: events, the dna of kubernetes bowes: level triggering and reconciliation  Draft: The fundalmental building block in the Kubernetes (k8s) lego box is the concept of a k8s controller, a program that implements a control loop that is responsible for moving k8s towards the desired state.</description>
     </item>
     
     <item>
@@ -4924,6 +5018,16 @@ Part of sistaniyun brigades</description>
       <description>Tags: sierra leone
 One of the talks for the warring factions to be brokered in a peace agreement with the un
 Notably, the UN rejected attempts by both sides to give themselves amnesty</description>
+    </item>
+    
+    <item>
+      <title>loss function</title>
+      <link>/posts/loss_function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/loss_function/</guid>
+      <description>Tags: ml
+Calculates the vector difference between the desired state and the current state</description>
     </item>
     
     <item>
@@ -5756,7 +5860,8 @@ Mohammad Fadel  No explicit islamic jurisprudence on contagions questions about 
       
       <guid>/posts/20200415154022-networks/</guid>
       <description>Tags: Computers
- Wireless networks  https://cse.sc.edu/~sur/papers/UbiG%5FMobiCom18.pdf</description>
+ Wireless networks  https://cse.sc.edu/~sur/papers/UbiG%5FMobiCom18.pdf
+Outages  https://cybersquirrel1.com/  </description>
     </item>
     
     <item>
@@ -6098,6 +6203,18 @@ invasion of gaza in nov 2012 by israel</description>
       <guid>/posts/operation_protective_edge/</guid>
       <description>Tags: palestine
 invasion of gaza by israel in july 2014</description>
+    </item>
+    
+    <item>
+      <title>operators (k8s)</title>
+      <link>/posts/operators_k8s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/operators_k8s/</guid>
+      <description>Tags: kubernetes (k8s)
+Builds on top of controllers (k8s) and adds sets of knowledge or configuration to allow it to manage common application tasks
+Example: etcd backup
+  </description>
     </item>
     
     <item>
@@ -7373,6 +7490,16 @@ Oil tanker in yemen, off the coast, stranded 5 nautical miles. Seawater entered 
       <guid>/posts/salqawia_canal/</guid>
       <description>Tags: irrigation in iraq
  33°23&#39;28.65&amp;quot;N 43°36&#39;34.69&amp;quot;E Closed in 1875 by Midhat Pasha, only carries water during flood season  </description>
+    </item>
+    
+    <item>
+      <title>sample rate</title>
+      <link>/posts/sample_rate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sample_rate/</guid>
+      <description>Tags: computers
+https://en.wikipedia.org/wiki/Sampling%5F%28signal%5Fprocessing%29?ref=hackernoon.com#Sampling%5Frate</description>
     </item>
     
     <item>
