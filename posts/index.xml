@@ -1682,7 +1682,7 @@ The completion of the Aswan Low Dam was premised on orientialist perceptions tha
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/coppercock_invitation_into_formal_semantics/</guid>
-      <description>Tags: books, nlp
+      <description>Tags: books, nlp, formal semantics
  \(\) Introduction Entailment  When A entails B -&amp;gt; when A happens, B happens
  To reason correct, it is not enough if the presmises and conclusion is true, it needs to also be true if things happen differently.
 Arguments whose premises entail the conclusion are \(\texttt{valid}\), others \(\texttt{invalid}\).
