@@ -722,6 +722,28 @@ https://en.wikipedia.org/wiki/Atlantic%5Fmeridional%5Foverturning%5Fcirculation<
     </item>
     
     <item>
+      <title>autograd (pytorch)</title>
+      <link>/posts/autograd_pytorch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/autograd_pytorch/</guid>
+      <description>Tags: pytorch
+Implements automatic differentiation
+https://towardsdatascience.com/pytorch-autograd-understanding-the-heart-of-pytorchs-magic-2686cd94ec95</description>
+    </item>
+    
+    <item>
+      <title>automatic differentiation</title>
+      <link>/posts/automatic_differentiation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/automatic_differentiation/</guid>
+      <description>Tags: ml
+Mathemtical principals to implement backprop
+https://www.cs.toronto.edu/~rgrosse/courses/csc321%5F2018/slides/lec10.pdf</description>
+    </item>
+    
+    <item>
       <title>Average is Over</title>
       <link>/posts/average_is_over/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -780,6 +802,15 @@ Azure App Services  Python services use gunicorn  https://docs.microsoft.com/en-
       <guid>/posts/baath/</guid>
       <description>Tags: iraq
 Ideaology largely constructed by Michel Aflaq and Salah ud-Din al-Bitar</description>
+    </item>
+    
+    <item>
+      <title>backprop</title>
+      <link>/posts/backprop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/backprop/</guid>
+      <description>Tags: ml</description>
     </item>
     
     <item>
@@ -954,6 +985,18 @@ Author of the principa mathmatica</description>
       <guid>/posts/bharatiya_janata_party_bjp/</guid>
       <description>Tags: india
 Modi&amp;rsquo;s party</description>
+    </item>
+    
+    <item>
+      <title>biking in nyc website</title>
+      <link>/posts/biking_in_nyc_website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/biking_in_nyc_website/</guid>
+      <description>Tags: project ideas, mapping
+Use weather api&amp;rsquo;s, pull twice a day, accumulate information about the current weather, the windchill, and preciptation
+Use a cron thing that pushes to netifly
+API&amp;rsquo;s  https://openweathermap.org/price https://agromonitoring.com/api/accumulated-precipitation https://agromonitoring.com/price https://www.weather.gov/documentation/services-web-api  </description>
     </item>
     
     <item>
@@ -1577,6 +1620,18 @@ https://www.cs.cornell.edu/courses/cs6120/2020fa/self-guided/</description>
     </item>
     
     <item>
+      <title>complexity is not a vice</title>
+      <link>/posts/complexity_is_not_a_vice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/complexity_is_not_a_vice/</guid>
+      <description>Tags: drafts
+Why post-structuralism matters?
+We can&amp;rsquo;t reduce everything into small platidutes, you can&amp;rsquo;t build a single system that works for everyone, and you just need to embrace the bespoke models
+People dont &amp;ldquo;hate change&amp;rdquo; -&amp;gt; there&amp;rsquo;s meaning in what we do You can&amp;rsquo;t airlift transitional justice systems in the case of libya War is complex, and resists the same style of interpreation</description>
+    </item>
+    
+    <item>
       <title>comprehensive test ban treaty (CTBT)</title>
       <link>/posts/comprehensive_test_ban_treaty/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1662,7 +1717,8 @@ Consitution Making  iraqi constitutionalism tunisia consitution writing was tran
       
       <guid>/posts/controllers_k8s/</guid>
       <description>Tags: kubernetes (k8s)
-Core component that implements a control loop and optimistically transitions state</description>
+Core component that implements a control loop and optimistically transitions state
+Docs: https://kubernetes.io/docs/concepts/architecture/controller/</description>
     </item>
     
     <item>
@@ -2498,6 +2554,16 @@ Hosbawn 1992:  Nationalism with political theory Ethnicity with socialism  Notes
     </item>
     
     <item>
+      <title>euclid&#39;s theorem</title>
+      <link>/posts/euclid_s_theorem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/euclid_s_theorem/</guid>
+      <description>Tags: math
+Reasoning provides proof of numbers</description>
+    </item>
+    
+    <item>
       <title>europe</title>
       <link>/posts/europe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3012,6 +3078,7 @@ Fuzzing Image IO   https://www.instapaper.com/read/1303612511
       
       <guid>/posts/gasch_events_the_dna_of_kubernetes/</guid>
       <description>Tags: articles, kubernetes (k8s)
+https://www.mgasch.com/post/k8sevents/
 Talks about how the Kube API server is the fundalmental broker with multiple replicated logs or queues. Events are causually related, and every controllers (k8s) can be understood to be a producer and/or consumer of events from these logs.
  ListWatch in k8s, which lists all events from the API server when the consumer starts, then switches to &amp;ldquo;watch mode&amp;rdquo; to reduce the load queue is fundalmentally decoupling both the consumer and producer (with a queue)    No guarentee that things will ever reach the desired state, but it is optimistically trying, which makes controllers stateless even when they handle state operations, and do not require persistency!</description>
     </item>
@@ -3053,6 +3120,27 @@ Examples  https://github.com/WeOpenly/localgov.fyi  Tutorials  https://www.gatsb
       <guid>/posts/gear_blog_post/</guid>
       <description>Tags: drafts
  Emacs  Org mode Org roam Org page Deft Spacemacs   Reeder  Reeder ios Feedbin   Instapaper Pinboard Zotero Readwise Fantastical Things Pdfexpert Anki Overcast Remarkable Tweetbot/Twitter Goodreads Spotify Alfred Contextual Bartender iStat Menus Keepingyouawake Little Snitch Arq Dropbox Alacritty Tmux Mailmate GCP  GCE GCS   Kaleidoscope Dash Monodraw Paw Sketch Transmit Authy  </description>
+    </item>
+    
+    <item>
+      <title>geb chapter 2</title>
+      <link>/posts/geb_chapter_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/geb_chapter_2/</guid>
+      <description>Tags: Hofstadter - Godel, Escher, Bach
+ Axiom schema are the framework for axioms Any formal system that lets you make longer theorems from shorter ones requires a decision procedure, which leads to halting problem any constructions of an isomorphism induces meaning, because if there is a way to transform the information without losing it, then there is inherent meaning in the information interpretation vs meaning  intepretation - what the symbol represents meaning - the underlying thing   systems can take on multipl;e passive meanings do formal systems always need to map onto reality?</description>
+    </item>
+    
+    <item>
+      <title>geb chapter 3 (figure and ground)</title>
+      <link>/posts/geb_chapter_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/geb_chapter_3/</guid>
+      <description>Tags: Hofstadter - Godel, Escher, Bach
+  What is a typographical system?
+ Reading &amp;amp; recongizing any set of finite symbols Writing down any symbols that belong to that set Copying any of those symbols from one place to another Erasing any of those symbols Checking to see if symbols are the same Keeping a list of the symbols already made    We can define primes by defining the negative of the composite, but this comes with a problem</description>
     </item>
     
     <item>
@@ -3464,6 +3552,15 @@ Concludes with that the idea of &amp;lsquo;Ottoman ruins&amp;rsquo; and &amp;lsq
     </item>
     
     <item>
+      <title>halting problem</title>
+      <link>/posts/halting_problem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/halting_problem/</guid>
+      <description>Tags: computers</description>
+    </item>
+    
+    <item>
       <title>hamas</title>
       <link>/posts/hamas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3675,6 +3772,15 @@ https://www.it.uu.se/research/group/hipe/</description>
     </item>
     
     <item>
+      <title>hilbert</title>
+      <link>/posts/hilbert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hilbert/</guid>
+      <description>Tags: math, people</description>
+    </item>
+    
+    <item>
       <title>hindyia barrage</title>
       <link>/posts/hindyia_barrage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3756,6 +3862,17 @@ Introduction  Two purposes:  Background and motivation Summary and outline   Bac
       <guid>/posts/http/</guid>
       <description>Tags: computers
 Servers  http://canonical.org/~kragen/sw/dev3/httpdito-readme  </description>
+    </item>
+    
+    <item>
+      <title>http/2</title>
+      <link>/posts/http_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/http_2/</guid>
+      <description>Tags: http
+HTTP/2 is rarely deployed e2e, it aims to solve problems at happen on the public internet with:
+ high latencies one HTTP can delay subsequent requests  </description>
     </item>
     
     <item>
@@ -5354,6 +5471,19 @@ Engineers after 1951 moved the groundwater wells out of the city center and towa
     </item>
     
     <item>
+      <title>misinterpretations of what ai is</title>
+      <link>/posts/misinterpretations_of_what_ai_is/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/misinterpretations_of_what_ai_is/</guid>
+      <description>Tags: ml
+ https://nostalgebraist.tumblr.com/post/636924589769998336/talk-about-ai-in-the-press-these-days-tends-to https://news.ycombinator.com/item?id=25395742 https://www.csee.umbc.edu/courses/graduate/691/fall19/07/papers/AI%5FMeets%5FNatural%5FStupidity.pdf  &amp;ldquo;AI&amp;rdquo; as a term conflates machine intellgience (Isaac Asimov bullshit) and specific bundles of technologies
+The former is weird sci-fi theories about what happens if machines are smarter than you.
+The latter requires you to know what a &amp;ldquo;convolutional neural network is&amp;rdquo;, but it&amp;rsquo;s tons of spam. OpenAI serves the former, but people using the latter glom onto it.
+ As a field, artificial intelligence has always been on the border of respectability, and therefore on the border of crackpottery</description>
+    </item>
+    
+    <item>
       <title>misrata</title>
       <link>/posts/misrata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6084,6 +6214,18 @@ What is historiography good for?
     </item>
     
     <item>
+      <title>on taking ideas slowly</title>
+      <link>/posts/on_taking_ideas_slowly/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/on_taking_ideas_slowly/</guid>
+      <description>Tags: drafts, episteme
+Benefit of college is not the content, but the free space to let your ideas ruminate Slowness without burnout polymath without dilettante
+Draft this post is far more rambling than my regular ones
+It&amp;rsquo;s been a year. Normally I&amp;rsquo;d write up something wrapping up about my goals and how far I accomplished, but I think for me this year was one long lesson in understanding the difference between being a dilettante and a polymath.</description>
+    </item>
+    
+    <item>
       <title>one belt one road</title>
       <link>/posts/one_belt_one_road/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6479,6 +6621,16 @@ Started by Ibrahim Ahmad and Jalal Talabani</description>
     </item>
     
     <item>
+      <title>paul feyerabend</title>
+      <link>/posts/paul_feyerabend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/paul_feyerabend/</guid>
+      <description>Tags: philosophy of science, people
+https://plato.stanford.edu/entries/feyerabend/</description>
+    </item>
+    
+    <item>
       <title>payment processors</title>
       <link>/posts/payment_processors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6580,6 +6732,15 @@ Adapter based framework that provides high portability for cross lingual transfe
       <description>Tags: turkey, europe, ottoman, Post-Ottoman Near East
 Talks about the Ottoman legacy of the Balkans and the Middle East via Mursus Pasha and his patron
  booming business of land deeds of families in Greece written in Ottoman Talks about the status of dragomans - a translater/interpreter/political analyst all combined into one  Concludes talking about how the legacy of Ottoman Turkish archives has only just begun to be researched, does recent neo-Ottoman and Turkey/Greek detant revolve around parallel national imaginations?</description>
+    </item>
+    
+    <item>
+      <title>philosophy of science</title>
+      <link>/posts/philosophy_of_science/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/philosophy_of_science/</guid>
+      <description>Tags: physics</description>
     </item>
     
     <item>
@@ -6926,12 +7087,45 @@ Chapter 1  Building native apps that speak to both the kubelet and the API serve
     </item>
     
     <item>
+      <title>programming kubernetes chapter 1</title>
+      <link>/posts/programming_kubernetes_chapter_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/programming_kubernetes_chapter_1/</guid>
+      <description>Tags: hausenblas - programming kubernetes
+ Building native apps that speak to both the kubelet and the API server Extension points  cloud-controller-manager integrates w/ the cloud kubelet binary lets network/devices/storage and container runtimes kubectl has plugins extensions on API server custom resources and controllers custom API servers scheduler extensions    controllers (k8s) and Operators  Controllers implement a control loop, watching the shared state of the cluster through the API server and making changes in an attempt to move the current state towards the desired state  Controllers act on core resources Operators are controllers that encode some operational knowledge   the controllers pull info, computes the difference between the desired state and the current state, and updates accordingly  somewhat similar to loss function    The control loop  Read state (hopefully event driven) Change state Update status via API server in etcd repeat    Data structures used by the controller</description>
+    </item>
+    
+    <item>
+      <title>programming kubernetes chapter 1 - intro</title>
+      <link>/posts/programming_kubernetes_chapter_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/programming_kubernetes_chapter_1/</guid>
+      <description>Tags: hausenblas - programming kubernetes
+ Building native apps that speak to both the kubelet and the API server Extension points  cloud-controller-manager integrates w/ the cloud kubelet binary lets network/devices/storage and container runtimes kubectl has plugins extensions on API server custom resources and controllers custom API servers scheduler extensions    controllers (k8s) and Operators  Controllers implement a control loop, watching the shared state of the cluster through the API server and making changes in an attempt to move the current state towards the desired state  Controllers act on core resources Operators are controllers that encode some operational knowledge   the controllers pull info, computes the difference between the desired state and the current state, and updates accordingly  somewhat similar to loss function    The control loop  Read state (hopefully event driven) Change state Update status via API server in etcd repeat    Data structures used by the controller</description>
+    </item>
+    
+    <item>
+      <title>programming kubernetes chapter 2 - kube api server</title>
+      <link>/posts/programming_kubernetes_chapter_2_kube_api_server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/programming_kubernetes_chapter_2_kube_api_server/</guid>
+      <description>Tags: hausenblas - programming kubernetes
+Kube API basics
+ Core responsbilities  serve the Kube API -&amp;gt; reading/manipluating state, usually in etcd proxy cluster components    HTTP Interface http interface provides 4 structures:
+ Kinds  Type of entity, each object has a kind usually 3 categories of kinds  objects -&amp;gt; a persistent entity within the system lists -&amp;gt; 1 or more kinds special purpose -&amp;gt; for special actions, like status     API Group  collection of kinds that are logically related like /apis/core   Version  each API group can (and likely does) exist as multiple versions All objects are either in one API version or none   Resource  lowercase, plural word that identifies a set of HTTP endpoints  usually sends and receives a single kind can have subrouses, usually implemented with custom HTTP protocols like websockets   always corresponds to an HTTP path    GVR and GVK  Group Version Resource (GVR)  Uniquely identifies a HTTP path   Group Version Kind (GVK)  what a GVR returns    Special Notes  api/v1 exists outside of apis as a legacy holdover, should be apis/core/v1 cluster wide entities have different values, such as /metrics, /logs, and /healthz specs vs status  specifications - desired state for a resource status - observed state for a resource    API server internals Each API group has a specific handler, and there are 6 different phases internally</description>
+    </item>
+    
+    <item>
       <title>programming languages</title>
       <link>/posts/programming_languages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/programming_languages/</guid>
-      <description>Tags: computers</description>
+      <description>Tags: computers
+What programming langauges are used mostly on weekends?  https://stackoverflow.blog/2017/02/07/what-programming-languages-weekends/?cb=1  </description>
     </item>
     
     <item>
@@ -7317,7 +7511,17 @@ Books  https://martinfowler.com/books/refactoring.html  </description>
       
       <guid>/posts/remarkable/</guid>
       <description>Tags: computers
-https://github.com/ddvk/remarkable-stylus https://github.com/ddvk/remarkable-hacks</description>
+https://github.com/ddvk/remarkable-stylus https://github.com/ddvk/remarkable-hacks http://www.davisr.me/projects/rcu/ https://github.com/bruot/pyrmexplorer/wiki https://gitlab.com/wrobell/remt</description>
+    </item>
+    
+    <item>
+      <title>replicaset</title>
+      <link>/posts/replicaset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/replicaset/</guid>
+      <description>Tags: controllers (k8s)
+Specific kube controller that encodes the ability to startup and stop identical pods https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/ Source: https://github.com/kubernetes/kubernetes/blob/master/pkg/controller/replicaset/replica%5Fset.go#L540-L641</description>
     </item>
     
     <item>
@@ -7401,6 +7605,16 @@ Here&amp;rsquo;s a list of infrastructure technologies I&amp;rsquo;ve worked wit
       <guid>/posts/rules_for_writing/</guid>
       <description>Tags: writing https://youtu.be/aFwVf5a3pZM
  don&amp;rsquo;t really exist except for spelling large chunks of rules aren&amp;rsquo;t errors languges is not rule following, it&amp;rsquo;s controlling the process of the readers language as a technique to control the reader&amp;rsquo;s reading process sentence stress and importance how to create value for the readers? creating value for the reading process -&amp;gt; how? &amp;ldquo;tells what the paper will be about&amp;rdquo; -&amp;gt; this is not a source of value, because they should be reading the entire article writing is not about something do you describe something when writing a paper?</description>
+    </item>
+    
+    <item>
+      <title>russel&#39;s paradox</title>
+      <link>/posts/russel_s_paradox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/russel_s_paradox/</guid>
+      <description>Tags: bertrand russel
+Most sets are not sets of themselves, but some sets are self-swallowing. For example, a set of {1,2,3} is not a set of itself, but a set of everything NOT {1,2,3} is self-swalloing</description>
     </item>
     
     <item>
@@ -8156,7 +8370,7 @@ Colonial Archives and the Arts of Goverance - Ann Stoler  Complains that the arc
       
       <guid>/posts/strategies_for_implementing_braben_s_ideas/</guid>
       <description>Tags: Braben - Scientific Freedom: The Elixir of Civilization
- https://www.scitech-strategies.com/ https://researchintegrityjournal.biomedcentral.com/articles/10.1186/s41073-019-0089-z  </description>
+ https://www.scitech-strategies.com/ https://researchintegrityjournal.biomedcentral.com/articles/10.1186/s41073-019-0089-z R21&amp;rsquo;s in NIH Funding in humanities vs funding in hard sciences?  </description>
     </item>
     
     <item>
@@ -9137,6 +9351,15 @@ Lebanese Druze leader</description>
       <guid>/posts/website_design_ideas/</guid>
       <description>Tags: personal
  https://okomestudio.net/#/  Simple, small   https://hypha.coop/  Retro, bold   https://www.redclawtech.com/  Clear, to the point   https://nodesign.dev  </description>
+    </item>
+    
+    <item>
+      <title>websockets</title>
+      <link>/posts/websockets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/websockets/</guid>
+      <description>Tags: http</description>
     </item>
     
     <item>

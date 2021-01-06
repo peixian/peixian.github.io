@@ -287,6 +287,14 @@
   </url>
   
   <url>
+    <loc>/posts/autograd_pytorch/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/automatic_differentiation/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/average_is_over/</loc>
   </url>
   
@@ -308,6 +316,10 @@
   
   <url>
     <loc>/posts/baath/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/backprop/</loc>
   </url>
   
   <url>
@@ -380,6 +392,10 @@
   
   <url>
     <loc>/posts/bharatiya_janata_party_bjp/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/biking_in_nyc_website/</loc>
   </url>
   
   <url>
@@ -632,6 +648,10 @@
   
   <url>
     <loc>/posts/complexity/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/complexity_is_not_a_vice/</loc>
   </url>
   
   <url>
@@ -999,6 +1019,10 @@
   </url>
   
   <url>
+    <loc>/posts/euclid_s_theorem/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/europe/</loc>
   </url>
   
@@ -1219,6 +1243,14 @@
   </url>
   
   <url>
+    <loc>/posts/geb_chapter_2/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/geb_chapter_3/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/geb_ecology_of_mind_psychosis_and_islam_blog_post/</loc>
   </url>
   
@@ -1383,6 +1415,10 @@
   </url>
   
   <url>
+    <loc>/posts/halting_problem/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/hamas/</loc>
   </url>
   
@@ -1467,6 +1503,10 @@
   </url>
   
   <url>
+    <loc>/posts/hilbert/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/hindyia_barrage/</loc>
   </url>
   
@@ -1496,6 +1536,10 @@
   
   <url>
     <loc>/posts/http/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/http_2/</loc>
   </url>
   
   <url>
@@ -2131,6 +2175,10 @@
   </url>
   
   <url>
+    <loc>/posts/misinterpretations_of_what_ai_is/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/misrata/</loc>
   </url>
   
@@ -2423,6 +2471,10 @@
   </url>
   
   <url>
+    <loc>/posts/on_taking_ideas_slowly/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/one_belt_one_road/</loc>
   </url>
   
@@ -2571,6 +2623,10 @@
   </url>
   
   <url>
+    <loc>/posts/paul_feyerabend/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/payment_processors/</loc>
   </url>
   
@@ -2608,6 +2664,10 @@
   
   <url>
     <loc>/posts/philliou_interpreting_the_ottoman_past_through_the_national_present/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/philosophy_of_science/</loc>
   </url>
   
   <url>
@@ -2748,6 +2808,18 @@
   
   <url>
     <loc>/posts/programming_kubernetes/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/programming_kubernetes_chapter_1/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/programming_kubernetes_chapter_1/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/programming_kubernetes_chapter_2_kube_api_server/</loc>
   </url>
   
   <url>
@@ -2903,6 +2975,10 @@
   </url>
   
   <url>
+    <loc>/posts/replicaset/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/republic_of_the_congo_roc/</loc>
   </url>
   
@@ -2932,6 +3008,10 @@
   
   <url>
     <loc>/posts/rules_for_writing/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/russel_s_paradox/</loc>
   </url>
   
   <url>
@@ -3624,6 +3704,10 @@
   
   <url>
     <loc>/posts/website_design_ideas/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/websockets/</loc>
   </url>
   
   <url>
