@@ -738,9 +738,10 @@ https://towardsdatascience.com/pytorch-autograd-understanding-the-heart-of-pytor
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/automatic_differentiation/</guid>
-      <description>Tags: ml
+      <description>Tags: ml, math
 Mathemtical principals to implement backprop
-https://www.cs.toronto.edu/~rgrosse/courses/csc321%5F2018/slides/lec10.pdf</description>
+https://www.cs.toronto.edu/~rgrosse/courses/csc321%5F2018/slides/lec10.pdf
+https://j-towns.github.io/2017/06/12/A-new-trick.html</description>
     </item>
     
     <item>
@@ -3683,7 +3684,7 @@ https://kowainik.github.io/posts/haskell-mini-patterns</description>
       
       <guid>/posts/programming_kubernetes/</guid>
       <description>Tags: kubernetes (k8s), books
-Chapter 1  Building native apps that speak to both the kubelet and the API server Extension points  cloud-controller-manager integrates w/ the cloud kubelet binary lets network/devices/storage and container runtimes kubectl has plugins extensions on API server custom resources and controllers custom API servers scheduler extensions    controllers (k8s) and Operators  Controllers implement a control loop, watching the shared state of the cluster through the API server and making changes in an attempt to move the current state towards the desired state  Controllers act on core resources Operators are controllers that encode some operational knowledge   the controllers pull info, computes the difference between the desired state and the current state, and updates accordingly  somewhat similar to loss function    The control loop  Read state (hopefully event driven) Change state Update status via API server in etcd repeat    Data structures used by the controller</description>
+ programming kubernetes chapter 1 programming kubernetes chapter 2 - kube api server  </description>
     </item>
     
     <item>
@@ -3808,6 +3809,16 @@ https://www.it.uu.se/research/group/hipe/</description>
       <guid>/posts/hiring_an_editor/</guid>
       <description>Tags: writing
 https://mtlynch.io/editor/</description>
+    </item>
+    
+    <item>
+      <title>hisham al-hashimi</title>
+      <link>/posts/hisham_al_hashimi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hisham_al_hashimi/</guid>
+      <description>Tags: people, iraq
+iraqi analyst</description>
     </item>
     
     <item>
@@ -4134,6 +4145,16 @@ Specific Definitions Disarmament Disarmament is the collection, documentation, c
       <guid>/posts/international_security_assistance_force/</guid>
       <description>Tags: afghanistan
 Supporing security force from nato in afghanistan</description>
+    </item>
+    
+    <item>
+      <title>International Smart Card</title>
+      <link>/posts/international_smart_card/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/international_smart_card/</guid>
+      <description>Tags: iraq, finance
+Company owned by Iraq&amp;rsquo;s two largest state-owned banks Rafidain Bank and rasheed bank</description>
     </item>
     
     <item>
@@ -4536,6 +4557,16 @@ tail call optimization  https://github.com/Sipkab/jvm-tail-recursion  JVM profil
       
       <guid>/posts/json/</guid>
       <description>Tags: computers</description>
+    </item>
+    
+    <item>
+      <title>julia</title>
+      <link>/posts/julia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/julia/</guid>
+      <description>Tags: programming languages
+Font https://cormullion.github.io/pages/2020-07-26-JuliaMono/</description>
     </item>
     
     <item>
@@ -4999,7 +5030,7 @@ Supervised Learning   most common
       
       <guid>/posts/legal_basis_of_the_hashd/</guid>
       <description>Tags: Knight et al - Honored, Not Contained, hashd al-shaabi (PMF)
- Formally part of Iraqi and and also arising from the fatwa of Sistani  Continuing to propose a parallel legislation is silly, pmf is already regulated by the same military laws Started from nouri al-maliki&amp;rsquo;s popular army  Sons of Iraq framework sahwa (awakening) movement existing fasail in Iraq  asa&amp;rsquo;ib ahl al-haqq (aah) kataib hezbollah (kh) kataib sayyid al-shuhada harakat hezbollah al-nujaba kataib al-imam ali kataib jund al-imam     After Fallujah, nouri al-maliki aimed to raise the Popular Defense Brigades (Saraya al-Difa al-Shaabi)  also driven by abu mahdi al-muhandis and kataib hezbollah (kh)   Post mosul  After June 11, 2014, cabinet degree 301 (2014) On June 13, 2014 sistani issues his famous fatwa  notably sistani has never used the term &amp;ldquo;hashd&amp;rdquo; and prefers to use mutataween (volunteers)     &amp;ldquo;Defense&amp;rdquo; hashd  Multiple minor groups deployed primarily in baghdad and nominally affiliated with the ministry of defense (iraq) recieve around 2,000 billets and around 15k people have rotated through 56 platoon size checkpoints unit under Baghdad Operations Command chronic lack of payroll hashd commission   national guard law (2015) executive order 91 (2016) popular mobilization comission law (2016) executive order 85 (2018) adil abdul-mahdi issued 4 &amp;ldquo;orders&amp;rdquo;  Foreign forces not allowed to act on soil without permission State from the provcine or outside prevented from exercising Actions of Iraqi or non-Iraqi armed forces outside the armed forces and commander-in-chief is prohibited Any action of military should be known by the military   Aimed at rocket attacks against US executive order 237 (2019) executive order 328 (2019) executive order 331 (2019)    Observations  Shia-led army has been growing for some time widely conceived of needing a &amp;ldquo;separate but equal&amp;rdquo; status many advocates do not want it to be folded within an established ministry  comfort at the fact that it answers directly to PM   successive iraqi prime ministers have felt like it was necessary to assert their authority  abu mahdi al-muhandis&amp;rsquo;s meddeling   roles and missions have the hashd have not been defined anywhere  </description>
+ Formally part of Iraqi and and also arising from the fatwa of Sistani  Continuing to propose a parallel legislation is silly, pmf is already regulated by the same military laws Started from nouri al-maliki&amp;rsquo;s popular army  sons of iraq framework sahwa (awakening) movement existing fasail in Iraq  asa&amp;rsquo;ib ahl al-haqq (aah) kataib hezbollah (kh) kataib sayyid al-shuhada harakat hezbollah al-nujaba kataib al-imam ali kataib jund al-imam     After Fallujah, nouri al-maliki aimed to raise the Popular Defense Brigades (Saraya al-Difa al-Shaabi)  also driven by abu mahdi al-muhandis and kataib hezbollah (kh)   Post mosul  After June 11, 2014, cabinet degree 301 (2014) On June 13, 2014 sistani issues his famous fatwa  notably sistani has never used the term &amp;ldquo;hashd&amp;rdquo; and prefers to use mutataween (volunteers)     &amp;ldquo;Defense&amp;rdquo; hashd  Multiple minor groups deployed primarily in baghdad and nominally affiliated with the ministry of defense (iraq) recieve around 2,000 billets and around 15k people have rotated through 56 platoon size checkpoints unit under Baghdad Operations Command chronic lack of payroll hashd commission   national guard law (2015) executive order 91 (2016) popular mobilization comission law (2016) executive order 85 (2018) adil abdul-mahdi issued 4 &amp;ldquo;orders&amp;rdquo;  Foreign forces not allowed to act on soil without permission State from the provcine or outside prevented from exercising Actions of Iraqi or non-Iraqi armed forces outside the armed forces and commander-in-chief is prohibited Any action of military should be known by the military   Aimed at rocket attacks against US executive order 237 (2019) executive order 328 (2019) executive order 331 (2019)    Observations  Shia-led army has been growing for some time widely conceived of needing a &amp;ldquo;separate but equal&amp;rdquo; status many advocates do not want it to be folded within an established ministry  comfort at the fact that it answers directly to PM   successive iraqi prime ministers have felt like it was necessary to assert their authority  abu mahdi al-muhandis&amp;rsquo;s meddeling   roles and missions have the hashd have not been defined anywhere  </description>
     </item>
     
     <item>
@@ -7206,7 +7237,7 @@ Ottoman army officers like Yassine al-Hashimi shaped the Middle East.</descripti
       
       <guid>/posts/python/</guid>
       <description>Tags: computers
- CGI scripts:  https://www.tutorialspoint.com/python/python%5Fcgi%5Fprogramming.htm    </description>
+ CGI scripts:  https://www.tutorialspoint.com/python/python%5Fcgi%5Fprogramming.htm    Context sensitivity: https://groups.google.com/g/comp.theory/c/nJzOyRnAP3k/m/AInZxo48FNIJ?pli=1</description>
     </item>
     
     <item>
@@ -7255,6 +7286,27 @@ Torchtext has a few incompatibilites:
     </item>
     
     <item>
+      <title>qassim dahif al-zubaidi</title>
+      <link>/posts/qassim_dahif_al_zubaidi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/qassim_dahif_al_zubaidi/</guid>
+      <description>Tags: people, hashd al-shaabi (PMF)
+Former hashd finance minister, assassinated in 2018</description>
+    </item>
+    
+    <item>
+      <title>qi cards</title>
+      <link>/posts/qi_cards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/qi_cards/</guid>
+      <description>Tags: iraq, finance
+Electronic payment system by International Smart Card
+Each month, take card to bank, verify with fingerprint,. and receive payment in cash or bank account</description>
+    </item>
+    
+    <item>
       <title>quantization/discretization</title>
       <link>/posts/quantization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7300,6 +7352,16 @@ Torchtext has a few incompatibilites:
     </item>
     
     <item>
+      <title>Rafidain Bank</title>
+      <link>/posts/rafidain_bank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rafidain_bank/</guid>
+      <description>Tags: iraq, finance
+State owned bank</description>
+    </item>
+    
+    <item>
       <title>raft</title>
       <link>/posts/raft/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7327,6 +7389,16 @@ Torchtext has a few incompatibilites:
       <guid>/posts/raid/</guid>
       <description>Tags: computers
  Hardware controller&amp;rsquo;s batteries will fail, and people often will not notice Kernel raid significantly outperforms hardware RAID  Kernel RAID is far better maintained than firmware on cards CPU and RAM more available on servers than hardware raid controllers    </description>
+    </item>
+    
+    <item>
+      <title>rasheed bank</title>
+      <link>/posts/rasheed_bank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rasheed_bank/</guid>
+      <description>Tags: iraq, finance
+State owned bank</description>
     </item>
     
     <item>
@@ -7552,6 +7624,16 @@ Responsbility shared is responsbility denied
       <guid>/posts/rfc_s/</guid>
       <description>Tags: computers
 Example RFC: https://static1.squarespace.com/static/56ab961ecbced617ccd2461e/t/5d792e5a4dac4074658ce64b/1568222810968/Squarespace+RFC+Template.pdf</description>
+    </item>
+    
+    <item>
+      <title>rights of hashd members</title>
+      <link>/posts/rights_of_hashd_members/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rights_of_hashd_members/</guid>
+      <description>Tags: Knight et al - Honored, Not Contained
+ Large part of historical problems - cannot tell who is formally enrolled as a hashd member  Some people claim to be under hashd, not formally authorized by the hashd comission   patchwork entry process and unification lead to this ambigious membership  asa&amp;rsquo;ib ahl al-haqq (aah) and kataib hezbollah (kh) were already active, along with sons of iraq   Jan 2020 - &amp;gt;160,000 members of the hashd according to abu ali al-basri/adnan ibrahim al-najjar  Fighter Registration  Initial registration started in late 2014 and was on temporary rolling contracts Hashd fighters had no clear expectation of permanent employments Volunteers were haphazardly placed into units, with little influence, units would take new volunteers  Initially 90 day contracts no ID cards or biometrics - iraqi ghost militias   registration windows swapped constantly between reigstered and unregistered  salaries were often distributed and redistrubted between registered and unregistered fighters   unit commanders had almost complete discretion on how to disburse the money with few accountability  often 30% skimmed on salaries as &amp;ldquo;unit funds&amp;rdquo;    Right-sizing and Auditing  2016 - ~122k registered with maybe 40-50k unregistered haider al-abadi wanted to audit all claimed registered individuals and record names and personal identification  hawiyah shahadat al-jinsiya bataqat al-sakan al-tamwiniya also biometrics (photos and fingerprints) abadi ended up failing twice   2018 - hashd finance director qassim dahif al-zubaidi assassinated  may 12, 2018 - iraqi election law actually requires security forces to vote before the public does (so that they can be on site to preotect the elections), but the hashd voted the same time as the public in theri own bases    Biometrics  Iraqi gov slowly moving towards a tawtin al-rawatib (&amp;ldquo;settling of salaries&amp;rdquo; -&amp;gt; automated payment system)  idea was to distrupt the commander based disembursement model   March 25, 2019 - hussein ismail khalil announces fingerprinting and enrolled 80k/160k by March 2019  many hashd still paid with cash, those with widows and disabilities are testing electronic payment system  qi cards     payments are still authorized by the hashd commission  Registered and Unregistered  Large gulf between units in terms of registered/unregistered #&amp;rsquo;s kataib hezbollah (kh) and badr control the key administrative posts hisham al-hashimi states that around 24k unregistered people were serving in the hashd, or ~17.</description>
     </item>
     
     <item>
@@ -8119,6 +8201,16 @@ Finance Essentials for Small Businesses  All businesses start small Often killed
     </item>
     
     <item>
+      <title>sons of iraq</title>
+      <link>/posts/sons_of_iraq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sons_of_iraq/</guid>
+      <description>Tags: militias
+nouri al-maliki&amp;rsquo;s inital PMF beginnings</description>
+    </item>
+    
+    <item>
       <title>Soper, Fetzer - Religion and Nationalism in Global Perspective</title>
       <link>/posts/soper_fetzer_religion_and_nationalism_in_global_perspective/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8391,6 +8483,16 @@ Colonial Archives and the Arts of Goverance - Ann Stoler  Complains that the arc
       <guid>/posts/string_matching/</guid>
       <description>Tags: computers
 Simstring  http://chokkan.org/software/simstring/ Cosine similarity, C++ but has python bindings  </description>
+    </item>
+    
+    <item>
+      <title>string theory</title>
+      <link>/posts/string_theory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/string_theory/</guid>
+      <description>Tags: physics
+Criticisms of string theory  https://www.math.columbia.edu/~woit/wordpress/?p=12069 https://arxiv.org/pdf/physics/0102051.pdf  </description>
     </item>
     
     <item>
@@ -8843,6 +8945,16 @@ Macaes - History has Begun, rooted in fantasies of a &amp;ldquo;frontier&amp;rdq
       <guid>/posts/thinkpads/</guid>
       <description>Tags: computers
  https://geoff.greer.fm/2019/03/04/thinkpad-x210/  </description>
+    </item>
+    
+    <item>
+      <title>thomas kuhn</title>
+      <link>/posts/thomas_kuhn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/thomas_kuhn/</guid>
+      <description>Tags: people, philosophy of science
+https://en.wikipedia.org/wiki/Thomas%5FKuhn</description>
     </item>
     
     <item>
