@@ -327,6 +327,10 @@
   </url>
   
   <url>
+    <loc>/posts/awk/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/ayatollah_al_khoei/</loc>
   </url>
   
@@ -2767,6 +2771,10 @@
   </url>
   
   <url>
+    <loc>/posts/pcre/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/peace_studies_blog_post/</loc>
   </url>
   
@@ -3464,6 +3472,10 @@
   
   <url>
     <loc>/posts/sql/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/sqlite/</loc>
   </url>
   
   <url>

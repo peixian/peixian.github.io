@@ -829,6 +829,19 @@ Identifies largely 3 winners:
     </item>
     
     <item>
+      <title>awk</title>
+      <link>/posts/awk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/awk/</guid>
+      <description>Tags: computers
+https://ferd.ca/awk-in-20-minutes.html
+Structure   Everything in awk is a pattern -&amp;gt; action
+Pattern1 { ACTIONS; } Pattern2 { ACTIONS; }   Each line will go through each of the patterns, one at a time
+  Data Types  awk only has strings and numbers strings can be cast into numbers both can be assigned to variables in ACTIONS with the = operator variables can be declared anywhere, uninitialized variables have &amp;quot;&amp;quot; empty string value awk has unidimensional associative arrays  var[key] = value   can simulate multidimensional arrays, but not very good  Patterns Regular and Boolean Expressions  supports non-pcre regex (gawk might) patterns can&amp;rsquo;t capture specific groups, only to match boolean expressions have &amp;amp;&amp;amp; || and !</description>
+    </item>
+    
+    <item>
       <title>Ayatollah al-Khoei</title>
       <link>/posts/ayatollah_al_khoei/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6981,6 +6994,15 @@ https://plato.stanford.edu/entries/feyerabend/</description>
     </item>
     
     <item>
+      <title>pcre</title>
+      <link>/posts/pcre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pcre/</guid>
+      <description>Tags: computers</description>
+    </item>
+    
+    <item>
       <title>peace studies blog post</title>
       <link>/posts/peace_studies_blog_post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8736,6 +8758,17 @@ SQL engines have a compilation layer, that then gets translated into code for th
     </item>
     
     <item>
+      <title>sqlite</title>
+      <link>/posts/sqlite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sqlite/</guid>
+      <description>Tags: sql
+Basic usage:
+sqlite&amp;gt; .tables; # show tables sqlite&amp;gt; .mode column; # sets to column mode sqlite&amp;gt; .header on; # turns on the table headers </description>
+    </item>
+    
+    <item>
       <title>sri lanka</title>
       <link>/posts/sri_lanka/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10219,7 +10252,7 @@ Talks about the &amp;ldquo;Memory House of Ataturk&amp;rdquo; (mustafa kemal) as
       
       <guid>/posts/zotero/</guid>
       <description>Tags: grad school, computers
-Extensions  betterbibtex: https://retorque.re/zotero-better-bibtex/  Autogeneration of .bib files   Zotfile: http://zotfile.com/  Automatic renaming and file management   Zotxt: https://github.com/egh/zotxt  Supports random text files https://github.com/egh/zotxt-emacs   Zutilo: https://github.com/willsALMANJ/Zutilo  Tagging support Notably also allows to to create sections from a book    emacs  http://www.mkbehr.com/posts/a-research-workflow-with-zotero-and-org-mode/  </description>
+Extensions  betterbibtex: https://retorque.re/zotero-better-bibtex/  Autogeneration of .bib files   Zotfile: http://zotfile.com/  Automatic renaming and file management   Zotxt: https://github.com/egh/zotxt  Supports random text files https://github.com/egh/zotxt-emacs   Zutilo: https://github.com/willsALMANJ/Zutilo  Tagging support Notably also allows to to create sections from a book    emacs  http://www.mkbehr.com/posts/a-research-workflow-with-zotero-and-org-mode/  Sqlitedb  https://www.zotero.org/support/dev/client%5Fcoding/direct%5Fsqlite%5Fdatabase%5Faccess schema: https://github.com/zotero/zotero-schema/tree/master  </description>
     </item>
     
   </channel>
