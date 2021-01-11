@@ -175,6 +175,14 @@
   </url>
   
   <url>
+    <loc>/posts/algorithms_for_decision_making/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/algorithms_for_optimization/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/ali_abudllah_saleh/</loc>
   </url>
   
@@ -583,6 +591,10 @@
   </url>
   
   <url>
+    <loc>/posts/carse_finite_and_infinite_games/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/cash_based_incentives_for_ddr/</loc>
   </url>
   
@@ -744,6 +756,10 @@
   
   <url>
     <loc>/posts/continental_philosphy/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/control_theory/</loc>
   </url>
   
   <url>
@@ -1452,6 +1468,10 @@
   
   <url>
     <loc>/posts/grpc/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/gtk/</loc>
   </url>
   
   <url>

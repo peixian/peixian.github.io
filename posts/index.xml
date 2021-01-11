@@ -450,6 +450,26 @@ Co-author of principa mathmatica</description>
     </item>
     
     <item>
+      <title>algorithms for decision making</title>
+      <link>/posts/algorithms_for_decision_making/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/algorithms_for_decision_making/</guid>
+      <description>Tags: books, algorithms
+ https://github.com/sisl/algorithmsbook/  </description>
+    </item>
+    
+    <item>
+      <title>algorithms for optimization</title>
+      <link>/posts/algorithms_for_optimization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/algorithms_for_optimization/</guid>
+      <description>Tags: algorithms, books
+ https://github.com/sisl/algforopt-notebooks https://mitpress.mit.edu/books/algorithms-optimization  </description>
+    </item>
+    
+    <item>
       <title>Ali Abudllah Saleh</title>
       <link>/posts/ali_abudllah_saleh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -835,8 +855,7 @@ Identifies largely 3 winners:
       
       <guid>/posts/awk/</guid>
       <description>Tags: computers
-https://ferd.ca/awk-in-20-minutes.html
-Structure   Everything in awk is a pattern -&amp;gt; action
+ https://ferd.ca/awk-in-20-minutes.html example: https://github.com/ferd/recon/blob/master/script/queue%5Ffun.awk another: http://c2.com/doc/expense/ https://www.youtube.com/watch?v=43BNFcOdBlY https://www.youtube.com/watch?v=4UGLsRYDfo8  Structure   Everything in awk is a pattern -&amp;gt; action
 Pattern1 { ACTIONS; } Pattern2 { ACTIONS; }   Each line will go through each of the patterns, one at a time
   Data Types  awk only has strings and numbers strings can be cast into numbers both can be assigned to variables in ACTIONS with the = operator variables can be declared anywhere, uninitialized variables have &amp;quot;&amp;quot; empty string value awk has unidimensional associative arrays  var[key] = value   can simulate multidimensional arrays, but not very good  Patterns Regular and Boolean Expressions  supports non-pcre regex (gawk might) patterns can&amp;rsquo;t capture specific groups, only to match boolean expressions have &amp;amp;&amp;amp; || and !</description>
     </item>
@@ -1467,6 +1486,17 @@ liwa al-muntazier once held a course here</description>
     </item>
     
     <item>
+      <title>Carse - Finite and Infinite Games</title>
+      <link>/posts/carse_finite_and_infinite_games/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/carse_finite_and_infinite_games/</guid>
+      <description>Tags: books, sociology, episteme
+Ideas
+ Finite and infinite games vs war and counter insurgency -&amp;gt; Simpson - War from the Ground Up Names and Titles -&amp;gt; titles as a reward for finite games, names as a beginning for an infinite one  kunyas and titles?  https://www.sid.ir/en/journal/ViewPaper.aspx?ID=13322   Schimmel, Annemarie. “The Structure of a ‘Name.’” In Islamic Names, 1–13. An Introduction. Edinburgh University Press, 1989. https://doi.org/10.3366/j.ctvxcrrhx.4. Hekmat Dirbas. “Who Has More Names than Me?</description>
+    </item>
+    
+    <item>
       <title>cash based incentives for ddr</title>
       <link>/posts/cash_based_incentives_for_ddr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1861,6 +1891,16 @@ Consitution Making  iraqi constitutionalism tunisia consitution writing was tran
       
       <guid>/posts/continental_philosphy/</guid>
       <description>Tags: episteme</description>
+    </item>
+    
+    <item>
+      <title>control theory</title>
+      <link>/posts/control_theory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/control_theory/</guid>
+      <description>Tags: computers, sociology
+ https://smile.amazon.com/Modern-Control-Systems-13th-Richard-dp-0134407628/dp/0134407628/ https://people.eecs.berkeley.edu/~brecht/ https://www.argmin.net/2020/06/29/tour-revisited/ https://arxiv.org/abs/1806.09460 https://web.stanford.edu/class/aa228/cgi-bin/wp/  algorithms for decision making    </description>
     </item>
     
     <item>
@@ -2660,7 +2700,8 @@ See also: https://eng.lyft.com/envoy-7-months-later-41986c2fd443</description>
       
       <guid>/posts/erlang/</guid>
       <description>Tags: programming languages
--https://erlangexplained.com/index.php/about</description>
+-https://erlangexplained.com/index.php/about
+ https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/  </description>
     </item>
     
     <item>
@@ -3651,6 +3692,15 @@ https://github.com/tomnomnom/gron</description>
       <guid>/posts/grpc/</guid>
       <description>Tags: kubernetes (k8s)
 gRPC communication patterns  contract first, protobuf IDL, binary messaging on the wire w/ HTTP2, duplex  rpc flow  take message encode message add message headers send message across network  http2 level  once the HTTP 2 connection has been created, this is a grpc channel  each rpc call is a single stream   message frames  headers and data frames   request messages  contains  header frame framed message that spans one or more data frames eos flag in the last data frame     response emssages  same structure, except with trailers    rpc types  simple rpc  single request/single response the stub sends to the server, one block of headers, message, and eos (end of stream) for request   server streaming  one request, multiple response multiple data frames being sent back   client streaming  multiple request, single response   bidirectional streaming  each request is length prefixed!</description>
+    </item>
+    
+    <item>
+      <title>gtk</title>
+      <link>/posts/gtk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gtk/</guid>
+      <description>Tags: computers</description>
     </item>
     
     <item>
