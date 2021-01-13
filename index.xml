@@ -1474,6 +1474,16 @@ liwa al-muntazier once held a course here</description>
     </item>
     
     <item>
+      <title>Card and DiNardo: Skill-Biased Technological Change and Rising Wage Inequality</title>
+      <link>/posts/card_and_dinardo_skill_biased_technological_change_and_rising_wage_inequality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/card_and_dinardo_skill_biased_technological_change_and_rising_wage_inequality/</guid>
+      <description>Tags: papers, inequality
+Draws a correlation between skill-based technological change associated with new computers.</description>
+    </item>
+    
+    <item>
       <title>career advice</title>
       <link>/posts/career_advice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2026,6 +2036,16 @@ Provides checkpointing and snapshotting of applications and containers to disk
       
       <guid>/posts/crypto/</guid>
       <description>Tags: Computers</description>
+    </item>
+    
+    <item>
+      <title>Culicover and Rochemont: Stress and Focus in English</title>
+      <link>/posts/culicover_and_rochemont_stress_and_focus_in_english/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/culicover_and_rochemont_stress_and_focus_in_english/</guid>
+      <description>Tags: writing, papers, languages/lingustics
+Attempts to generalize some forms of grammatical theory by looking at sentence stress</description>
     </item>
     
     <item>
@@ -4332,6 +4352,15 @@ talks about ddr and gives a broad overview of three generations
     </item>
     
     <item>
+      <title>inequality</title>
+      <link>/posts/inequality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/inequality/</guid>
+      <description>Tags: economics</description>
+    </item>
+    
+    <item>
       <title>information paradox</title>
       <link>/posts/information_paradox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4957,6 +4986,17 @@ API on top of producer and consumer that allows for defining transformations on 
     </item>
     
     <item>
+      <title>Karp et al: The Organization of Computations for Uniform Recurrence Equations</title>
+      <link>/posts/karp_et_al_the_organization_of_computations_for_uniform_recurrence_equations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/karp_et_al_the_organization_of_computations_for_uniform_recurrence_equations/</guid>
+      <description>Tags: papers, computers
+Raymond, Richard M Karp, E Miller, and Shmuel Winograd. “The Organization of Computations for Uniform Recurrence Equations.” Journal of the Association for Computing Machinery 14, no. 3 (1967): 28.
+Talks about how to organize processes in parallel, depending on iterative decomposition into subgraphs</description>
+    </item>
+    
+    <item>
       <title>kataib al-imam ali</title>
       <link>/posts/kataib_al_imam_ali/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5178,6 +5218,15 @@ Kubernetes control plane is like the ooda (observe orient decide act), combines 
       <guid>/posts/kurdistan_democratic_party/</guid>
       <description>Tags: iraq
 Leftist urban intellectuals</description>
+    </item>
+    
+    <item>
+      <title>kurdistan worker&#39;s party (pkk)</title>
+      <link>/posts/pkk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pkk/</guid>
+      <description>Tags: middle east</description>
     </item>
     
     <item>
@@ -7050,6 +7099,17 @@ Is this related to ddr? Are reintegration a function of only external actors, or
     </item>
     
     <item>
+      <title>patriotic revolutionary youth movement (YDG-H)</title>
+      <link>/posts/patriotic_revolutionary_youth_movement_ydg_h/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/patriotic_revolutionary_youth_movement_ydg_h/</guid>
+      <description>Tags: militias
+Militant youth wing trained by the kurdistan worker&amp;rsquo;s party (pkk)
+https://en.m.wikipedia.org/wiki/YDG-H</description>
+    </item>
+    
+    <item>
       <title>patriotic union of kurdistan (PUK)</title>
       <link>/posts/patriotic_union_of_kurdistan_puk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7249,6 +7309,15 @@ https://www.usenix.org/conference/nsdi20/presentation/brooker</description>
       <description>Tags: books, finance, economics
 Introduction  Frames the discussion around wealth issues Attempts to pull together data  world top incomes database    History  Talks about malthus and his consideration of too many peasants arthur young david ricardo marx and the prediction of industrial aggregate wealth simon kuznets  Conclusions   Piketty states that inequality is not necessarily an unstable state
  path dependency exists, inequality can reduce over time or increase over time    also states that modern american economists are too infatuated with mathematics and physics</description>
+    </item>
+    
+    <item>
+      <title>pkk</title>
+      <link>/posts/pkk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pkk/</guid>
+      <description>Tags: middle east</description>
     </item>
     
     <item>
@@ -9062,7 +9131,7 @@ Criticisms of string theory  https://www.math.columbia.edu/~woit/wordpress/?p=12
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/structural_adjustment_and_neoliberalism/</guid>
-      <description>Tags: problems and methods
+      <description>Tags: problems and methods, economics
 Neoliberalism and neoliberalization are two topics that barely need introduction. Neoliberal policies affect everday lives of most people across the world. Neoliberalization the process, broadly identified to be coincident with the rise of the Bretton Woods institutions and the dominance of a globalized financial system, has faced dramatic upheaval since the fall of the Soviet Union. No introduction to these topics is possible without mentioning Francis Fukyama&amp;rsquo;s &amp;ldquo;The End of History?</description>
     </item>
     
@@ -9611,7 +9680,7 @@ Salloukh - lebanon  sectarian order was not guarenteed sectarianism was never th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/toufic_palestine_ltd_neoliberalism_and_nationalism/</guid>
-      <description>Tags: books, Nationalism and Outsiders in the Middle East
+      <description>Tags: books, Nationalism and Outsiders in the Middle East,finance
 Explores the economic, political and social realities as a consequence of the Oslo process
  Driven by:  EU US IMF and World Bank (International Financial Instiutions/IFIs)   Palestinian National Authority Zachary Lockman&amp;rsquo;s form of relational history throws in Westerners Belief of the neoliberal reforms of neoclassical economics would solve all problems  Western actors engage only on economic terms   pg 4:   This has ultimately led to a particular isolation of the Palestinian question within critical studies of development, peacebuilding, statebuilding and neoliberalism itself, despite the fact that the legacy of these policies has been so large and destructive in regards to Palestinian economic wellbeing, political freedoms, democratic norms and the overall claim to self-determination and national liberation.</description>
     </item>
@@ -9840,7 +9909,8 @@ Interrogate your topic:  How does the topic fit into a larger context? Historica
       <guid>/posts/tuz_khormatu/</guid>
       <description>Tags: hashd al-shaabi (PMF)
 badr-lead camp (&amp;ldquo;Martyrs&#39; Training Camp&amp;rdquo;) outside of kirkuk
-Run by quwat al-turkmen (brigade 16)</description>
+Run by quwat al-turkmen (brigade 16)
+Also sometimes spelled &amp;ldquo;Tuz Khurmatu&amp;rdquo; - https://en.wikipedia.org/wiki/Tuz%5FKhurmatu</description>
     </item>
     
     <item>
