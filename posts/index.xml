@@ -1056,7 +1056,7 @@ If statements if [ -v ] # checks for the existance of a variable Entr  https://j
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/bateson_steps_to_an_ecology_of_mind/</guid>
-      <description>Tags: books, episteme
+      <description>Tags: books, episteme, cognition
 Introduction  Asks &amp;ldquo;how do ideas interact? Why do some ideas survive while others fail?&amp;rdquo; How to distinguish between the trivial and the profound? What is the difference between the trivial and the profound? Notion of the context and the meaning carves out into three separations  The data is not the event itself, but rather the recording of it  no data can ever truly be &amp;ldquo;raw&amp;rdquo;   the imperfectly defined heuristic concepts  &amp;ldquo;ego&amp;rdquo;, &amp;ldquo;anxiety&amp;rdquo;, &amp;ldquo;instinct&amp;rdquo;, etc   the fundalmentals  laws of thermodynamics, law of large numbers, etc     Explanation, therefore, is the mapping of data onto fundalmentals, but the ultimate goal of science is to increase fundalmental knowledge  states that the social sciences continue to stay within the field of heuristic concepts, inductively testing it against the data in hopes of moving it into the fundalmentals asks us to abandon total induction obeservations cannot be denied, fundalmentals must be fitted   prediction is a poor tool for testing a hyposthesis - https://backreaction.</description>
     </item>
     
@@ -1711,6 +1711,15 @@ https://www.fsmtime.com/blog/article/clock-synchronization-and-technology/</desc
       <guid>/posts/coffee/</guid>
       <description>Tags: personal
  Decaf turkish coffee: https://www.hashems.com/store/coffee/decaffeinated-turkish-coffee-16oz  </description>
+    </item>
+    
+    <item>
+      <title>cognition</title>
+      <link>/posts/cognition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cognition/</guid>
+      <description>Tags: root</description>
     </item>
     
     <item>
@@ -3438,6 +3447,15 @@ Wrote homo sacer</description>
     </item>
     
     <item>
+      <title>giulio tononi</title>
+      <link>/posts/giulio_tononi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/giulio_tononi/</guid>
+      <description>Tags: people, cognition</description>
+    </item>
+    
+    <item>
       <title>Gleitman et al: The Impossibility of Language Acquisition (and How They Do It)</title>
       <link>/posts/gleitman_et_al_the_impossibility_of_language_acquisition_and_how_they_do_it/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4381,6 +4399,16 @@ Specific Definitions Disarmament Disarmament is the collection, documentation, c
     </item>
     
     <item>
+      <title>integrated information theory</title>
+      <link>/posts/integrated_information_theory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/integrated_information_theory/</guid>
+      <description>Tags: math, episteme
+Field put forward by giulio tononi, assigns each system a number (phi) that is the measure of &amp;ldquo;integrated information&amp;rdquo; that is supposedly a measure of conciousness</description>
+    </item>
+    
+    <item>
       <title>international security assistance force (ISAF)</title>
       <link>/posts/international_security_assistance_force/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4801,6 +4829,15 @@ tail call optimization  https://github.com/Sipkab/jvm-tail-recursion  JVM profil
       <guid>/posts/job_sites/</guid>
       <description>Tags: personal
  https://techjobsforgood.com  </description>
+    </item>
+    
+    <item>
+      <title>jonathan mason</title>
+      <link>/posts/jonathan_mason/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/jonathan_mason/</guid>
+      <description>Tags: people, math</description>
     </item>
     
     <item>
@@ -7819,6 +7856,15 @@ State owned bank</description>
     </item>
     
     <item>
+      <title>ramon erra</title>
+      <link>/posts/ramon_erra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ramon_erra/</guid>
+      <description>Tags: people, cognition</description>
+    </item>
+    
+    <item>
       <title>rasheed bank</title>
       <link>/posts/rasheed_bank/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8081,6 +8127,15 @@ https://github.com/Azeirah/tokiwa-roam-theme</description>
       <guid>/posts/robot36/</guid>
       <description>Tags: computers
 https://github.com/xdsopl/robot36</description>
+    </item>
+    
+    <item>
+      <title>roger penrose</title>
+      <link>/posts/roger_penrose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/roger_penrose/</guid>
+      <description>Tags: people, physics</description>
     </item>
     
     <item>
@@ -8603,6 +8658,16 @@ Summary  There is no logical spatial, or chronological, limit to the ‘War on T
     </item>
     
     <item>
+      <title>small arms stockpiling</title>
+      <link>/posts/small_arms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/small_arms/</guid>
+      <description>Tags: ddr
+ http://www.smallarmssurvey.org/about-us/highlights/2016/highlight-ib18.html http://www.smallarmssurvey.org/regulations-and-controls/control-measures/pssm.html http://www.peaceau.org/uploads/au-pssm-ogn-english.pdf https://www.seesac.org/Stockpile-Security/Increased-Security-of-Stockpiles-through-Infrastructure-Improvements-and-Capacity-Development/ https://www.seesac.org/  </description>
+    </item>
+    
+    <item>
       <title>small business finance</title>
       <link>/posts/small_business_finance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -9008,6 +9073,15 @@ Neoliberalism and neoliberalization are two topics that barely need introduction
       
       <guid>/posts/problems_and_methods_final_draft/</guid>
       <description>Introduction \doublespacing The rise of the self-declared &amp;ldquo;Islamic State&amp;rdquo; (IS) in Iraq, and the humiliating defeat of the Iraqi Security Forces (ISF) in Mosul in 2014 acted as a forcing function for the formation of the Hashd al-Shaabi, or the Popular Mobilization Forces (PMF). With over 100,000 mobilized and 40 different armed groups of all stripes united under this banner, the PMF played a pivotal role in countering the offensive by IS, ultimately leading to the liberation of Mosul in 2017 and its declared defeat in 2018.</description>
+    </item>
+    
+    <item>
+      <title>stuart hamaroff</title>
+      <link>/posts/stuart_hamaroff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/stuart_hamaroff/</guid>
+      <description>Tags: people, physics</description>
     </item>
     
     <item>
@@ -9424,6 +9498,16 @@ Macaes - History has Begun, rooted in fantasies of a &amp;ldquo;frontier&amp;rdq
     </item>
     
     <item>
+      <title>theories of conciousness from physists</title>
+      <link>/posts/theories_of_conciousness_from_physists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/theories_of_conciousness_from_physists/</guid>
+      <description>Tags: physics, episteme, cognition
+ https://www.youtube.com/watch?v=efVBUDnD%5Fno talks about integrated information theory also talks about how conciousness from quantum effects in the brain due to microtubules  put forward by roger penrose and stuart hamaroff tim palmer also thinks quantum fluctuations has something to do with it, but thinks that noise created in quantum fluctations is what gives rise to conciousness   ramon erra talks about how watching people&amp;rsquo;s brain in seizures to understand conciousness jonathan mason talks about seeing conciousness like reading from a CD  </description>
+    </item>
+    
+    <item>
       <title>thesis proposals help</title>
       <link>/posts/thesis_proposals_help/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -9481,6 +9565,15 @@ Book: https://www.apress.com/gp/book/9781484243978 Wiki: https://en.wikipedia.or
       
       <guid>/posts/thubactics_battlion/</guid>
       <description>Tags: libya</description>
+    </item>
+    
+    <item>
+      <title>tim palmer</title>
+      <link>/posts/tim_palmer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tim_palmer/</guid>
+      <description>Tags: people, physics</description>
     </item>
     
     <item>
@@ -10054,8 +10147,7 @@ Lebanese Druze leader</description>
       
       <guid>/posts/wilderness_alpine_personal_statement/</guid>
       <description>Tags: grad school fellowships
-Wilderness
- intellectual wilderness with philosophy of science? philosphy of programming? continental philosphy? the new dark age? &amp;ldquo;mathematics is the key to reliable programming &amp;ndash; not so much on the mathematical results, but on the processes by which mathematics is done&amp;rdquo; - Braben - Scientific Freedom: The Elixir of Civilization godel&amp;rsquo;s incompleteness theorem -&amp;gt; shows that truth is weaker than formal systems same with transitions from statistical AI to inference AI same with warfare and ddr -&amp;gt; io&amp;rsquo;s attempt to build formal systems, but the bespoke systems are always what&amp;rsquo;s needed  the formal system of IO&amp;rsquo;s breaks down against the truth on the ground   novel&amp;rsquo;s about the hashd logic and violence in civil war chomsky lingusitics and computer science collective problem solving from ants -&amp;gt; applicable to computer science  might this be applicable to humans as well?</description>
+Draft The development of French archival science, born in the wake of the French Revolution, was the first conceptualization on the public status of documents di-capua_gatekeepers_2009. This new line of thought, that documents contribute to a nation&amp;rsquo;s heritage, and that access to that heritage should be publicly aligned with the Revolution&amp;rsquo;s rebuttal of the ruling class. The &amp;lsquo;holy&amp;rsquo; King and divine rule were no longer sufficient, and the French Revolution began a process that &amp;ldquo;brought Christianity down from Heaven to Earth&amp;rdquo; requejo_coll_1_2015, from the King to the people.</description>
     </item>
     
     <item>
