@@ -679,7 +679,7 @@ Anti-narcotics policy goal in afghanistan was poor, large populations were asked
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/arabic/</guid>
-      <description>Tags: grad school
+      <description>Tags: grad school, languages/lingustics
   el hayba and djinn for Netflix shows
   https://www.dailymotion.com/video/x6486w2?playlist=x51so7
  Pokemon season 1 in MSA    </description>
@@ -876,6 +876,16 @@ Pattern1 { ACTIONS; } Pattern2 { ACTIONS; }   Each line will go through each of 
       
       <guid>/posts/ayn_al_asad_air_base/</guid>
       <description>Tags: iraq</description>
+    </item>
+    
+    <item>
+      <title>aynas naji al-maksusi</title>
+      <link>/posts/aynas_naji_al_maksusi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/aynas_naji_al_maksusi/</guid>
+      <description>Tags: people
+member of sairun (sadr political party)</description>
     </item>
     
     <item>
@@ -1329,6 +1339,15 @@ Plan implemented in 1989 for Latin America, Eastern Europe, and African countrie
     </item>
     
     <item>
+      <title>brigade 80</title>
+      <link>/posts/brigade_80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/brigade_80/</guid>
+      <description>Tags: brigades</description>
+    </item>
+    
+    <item>
       <title>brigades</title>
       <link>/posts/brigades/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1453,6 +1472,15 @@ liwa al-muntazier once held a course here</description>
     </item>
     
     <item>
+      <title>cantor set</title>
+      <link>/posts/cantor_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cantor_set/</guid>
+      <description>Tags: math</description>
+    </item>
+    
+    <item>
       <title>cap theorm (brewer&#39;s conjecture and the feasibility of consistent, available, partition-tolerant web services</title>
       <link>/posts/cap_theorm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1503,7 +1531,7 @@ Draws a correlation between skill-based technological change associated with new
       <guid>/posts/carse_finite_and_infinite_games/</guid>
       <description>Tags: books, sociology, episteme
 Ideas
- Finite and infinite games vs war and counter insurgency -&amp;gt; Simpson - War from the Ground Up Names and Titles -&amp;gt; titles as a reward for finite games, names as a beginning for an infinite one  kunyas and titles?  https://www.sid.ir/en/journal/ViewPaper.aspx?ID=13322   Schimmel, Annemarie. “The Structure of a ‘Name.’” In Islamic Names, 1–13. An Introduction. Edinburgh University Press, 1989. https://doi.org/10.3366/j.ctvxcrrhx.4. Hekmat Dirbas. “Who Has More Names than Me?</description>
+ Finite and infinite games vs war and counter insurgency -&amp;gt; Simpson - War from the Ground Up  counter insurgency as an infinite game     Names and Titles -&amp;gt; titles as a reward for finite games, names as a beginning for an infinite one  kunyas  https://www.sid.ir/en/journal/ViewPaper.aspx?ID=13322   Schimmel, Annemarie. “The Structure of a ‘Name.’” In Islamic Names, 1–13. An Introduction.</description>
     </item>
     
     <item>
@@ -1642,6 +1670,16 @@ Resources:  https://macropolo.org/  </description>
       <guid>/posts/chomsky_grammar/</guid>
       <description>Tags: computers, languages/lingustics
 Relationships to linguistics and algebra? Finite state machines? Links  https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0077 https://courses.engr.illinois.edu/cs373/sp2009/lectures/old/lect%5F15.pdf https://jeffe.cs.illinois.edu/teaching/algorithms/ https://en.wikipedia.org/wiki/Complexity%5Fclass http://jeffe.cs.illinois.edu/teaching/algorithms/models/05-context-free.pdf https://en.wikipedia.org/wiki/Decision%5Fproblem https://en.wikipedia.org/wiki/Formal%5Flanguage https://en.wikipedia.org/wiki/Chomsky%5Fhierarchy#Formal%5Fgrammars https://news.ycombinator.com/item?id=25167468  </description>
+    </item>
+    
+    <item>
+      <title>civil engineering</title>
+      <link>/posts/civil_engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/civil_engineering/</guid>
+      <description>Tags: grad school
+ https://www.gradengineering.columbia.edu/admissions https://www.civil.columbia.edu/graduate-program https://www.civil.columbia.edu/concentrations  </description>
     </item>
     
     <item>
@@ -1934,6 +1972,49 @@ Docs: https://kubernetes.io/docs/concepts/architecture/controller/</description>
     </item>
     
     <item>
+      <title>conv2d</title>
+      <link>/posts/conv2d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/conv2d/</guid>
+      <description>Tags: pytorch
+https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html</description>
+    </item>
+    
+    <item>
+      <title>convolutional neural network (cnn)</title>
+      <link>/posts/convolutional_neural_network_cnn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/convolutional_neural_network_cnn/</guid>
+      <description>Tags: ml</description>
+    </item>
+    
+    <item>
+      <title>convolutional neural networks (cnn)</title>
+      <link>/posts/covolutional_neural_networks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/covolutional_neural_networks/</guid>
+      <description>Tags: ml A CNN is designed for working with two dimensional image data, but can be used with one or three dimensions
+The &amp;ldquo;convolution&amp;rdquo; part of it is where it mixes the input signals to maximize the training on the ones where all the input features overlap, these summarize the image input, but are sensitive to the location of the features in the input
+ \((f*g)(t) = \int_{-\infty}^{\infty}\)  Pooling portions come in by down sampling the feature maps, which summarizes the presence of features in patches of the feature map</description>
+    </item>
+    
+    <item>
+      <title>convolutions</title>
+      <link>/posts/convolutions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/convolutions/</guid>
+      <description>Tags: math, ml
+Convolutions is applying a filter to an input that results in an activation, such as with convolutional neural network (cnn)
+For ml, a convolution is a linear operation that involves the multiplation of a set of weights with the input
+ https://www.youtube.com/watch?v=N-zd-T17uiE    for convolutional neural networks (cnn)
+ the filter is smaller than the input data and is mulitplied by the dot product  smaller is intentional, allows the filter to be reused across multiple places in the image   if we design the filter to detect a specific type of feature, then this can be discovered anywhere in the image (aka translation invariance, checking if the feature is present rather than where it was present)      pytorch implements this with conv2d</description>
+    </item>
+    
+    <item>
       <title>Cook - The Aswan Low Dam and Modernizing the Nile</title>
       <link>/posts/cook_the_aswan_low_dam_and_modernizing_the_nile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1977,6 +2058,16 @@ An argument is valid iff: under all circumstances in which the presmises would b
     </item>
     
     <item>
+      <title>counter insurgency as an infinite game</title>
+      <link>/posts/counter_insurgency_as_an_infinite_game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/counter_insurgency_as_an_infinite_game/</guid>
+      <description>Tags: drafts
+ War has largely two strategic audiences, exists for the sake of closing the game, both sides seek to reach an ending counter insurgency has groups who seek to prolong the infinite game infinite games as those games with multiple stragetic audiences does this mean one side can play an infinite game and its successful?  </description>
+    </item>
+    
+    <item>
       <title>counter terrorism service (iraq)</title>
       <link>/posts/counter_terrorism_service_iraq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1993,19 +2084,6 @@ An argument is valid iff: under all circumstances in which the presmises would b
       <guid>/posts/covid/</guid>
       <description>Tags: root
 Damascus, syria  https://www.instapaper.com/read/1299358661 Despite the justification given for this, on grounds of enforcing “social distancing,” I can’t help being reminded of the notion of the urban-rural binary, and the degrading treatment of people from rural areas whenever they pass through the cities. Fear of the pandemic prompted Bashar al-Assad to issue a general amnesty for crimes committed before 22 March of this year, but this amnesty did not cover political detainees held in security branches, whom the regime does not recognize at all.</description>
-    </item>
-    
-    <item>
-      <title>covolutional neural networks (CNN)</title>
-      <link>/posts/covolutional_neural_networks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/covolutional_neural_networks/</guid>
-      <description>Tags: ml
-  designed to process data that come in the form of multiple arrays
- colour images, 1d signals, 2d for langauges, 3 for audio    takes advantage of:
- local connections shared weights pooling many layers    structured in stages
-    </description>
     </item>
     
     <item>
@@ -2344,6 +2422,16 @@ Short Introduction  http://book.mixu.net/distsys/single-page.html http://citesee
     </item>
     
     <item>
+      <title>dns</title>
+      <link>/posts/dns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dns/</guid>
+      <description>Tags: web
+Using it as a key/value  dnskv.com  </description>
+    </item>
+    
+    <item>
       <title>docker</title>
       <link>/posts/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2581,6 +2669,16 @@ https://aceproject.org/main/english/es/esg03.htm</description>
     </item>
     
     <item>
+      <title>electrical engineering</title>
+      <link>/posts/electrical_engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/electrical_engineering/</guid>
+      <description>Tags: grad school
+ https://www.ee.columbia.edu/ms-program-ee https://www.sfs.columbia.edu/content/graduate-10 https://www.ee.columbia.edu/files/seasdepts/electrical-engineering/pdf-files/CommunicationsFlowchart2018.pdf https://bulletin.engineering.columbia.edu/master-science-degree-0 https://www.ee.columbia.edu/ms-program-ee https://study.com/articles/How%5FLong%5Fis%5Fa%5FMasters%5FDegree%5Fin%5FElectrical%5FEngineering.html https://www.ee.columbia.edu/files/seasdepts/electrical-engineering/pdf-files/MSCheckList2015.pdf https://www.ee.columbia.edu/course-flowcharts-0 https://www.eecs.mit.edu/academics-admissions/graduate-program/faqs  </description>
+    </item>
+    
+    <item>
       <title>Elias Khoury</title>
       <link>/posts/elias_khoury/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2699,6 +2797,18 @@ Modern economics tends to conflate these and use ensemble averages when a time a
 https://www.envoyproxy.io/
 Servish mesh substrate
 See also: https://eng.lyft.com/envoy-7-months-later-41986c2fd443</description>
+    </item>
+    
+    <item>
+      <title>epimenides paradox</title>
+      <link>/posts/epimenides_paradox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/epimenides_paradox/</guid>
+      <description>Tags: episteme
+Self referantial paradox on
+ Epimenides was a Cretan who made one immortal statement: &amp;ldquo;All Cretans are liars&amp;rdquo;
+ did Epinmenides speak the truth?</description>
     </item>
     
     <item>
@@ -2907,7 +3017,7 @@ Elements  President of the hashd commission  split from the vice chair and place
       <guid>/posts/executive_order_91_2016/</guid>
       <description>Tags: hashd al-shaabi (PMF)
 Issued by haider al-abadi, later followed by popular mobilization comission law (2016)
-Elements  Independent command of Iraqi armed forces - article 1, article 2, similar to counter terrorism service (iraq) under military regulations - article 4, article 5 notionally depolitized - ordered to break ties with political parties, although this now contradicts fatah  </description>
+Elements  Independent command of Iraqi armed forces - article 1, article 2, similar to counter terrorism service (iraq) under military regulations - article 4, article 5 notionally depolitized - ordered to break ties with political parties, although this now contradicts fatah (political party)  </description>
     </item>
     
     <item>
@@ -2942,6 +3052,16 @@ Elements  Independent command of Iraqi armed forces - article 1, article 2, simi
       <guid>/posts/faleh_al_fayyad/</guid>
       <description>Tags: hashd commission, people
 Chairman of the hashd commision in 2019</description>
+    </item>
+    
+    <item>
+      <title>falih al-khazali</title>
+      <link>/posts/falih_al_khazali/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/falih_al_khazali/</guid>
+      <description>Tags: fatah (political party), people
+called for the impeachment of the mustafa al-kadhimi government</description>
     </item>
     
     <item>
@@ -2993,6 +3113,16 @@ Possible classes for fall 2020: @ NYU
       <guid>/posts/fatah/</guid>
       <description>Tags: iraq
 iraqi political parties for hashd al-shaabi (PMF) run by hadi al-ameri</description>
+    </item>
+    
+    <item>
+      <title>fatah (political party)</title>
+      <link>/posts/fatah/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/fatah/</guid>
+      <description>Tags: iraqi political parties
+for hashd al-shaabi (PMF), run by hadi al-ameri</description>
     </item>
     
     <item>
@@ -3184,6 +3314,16 @@ Static Files  https://github.com/nickjj/flask-static-digest https://whitenoise.e
       <guid>/posts/forward_oil_sales_iraq/</guid>
       <description>Tags: finance, iraq
  nov 28th, 2020  state oil marketing organization (somo) is proposing a 5 year forward, where 4MM bbl/month from basra, with downpayment of 1 year of oil</description>
+    </item>
+    
+    <item>
+      <title>fourier transform</title>
+      <link>/posts/fourier_transform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/fourier_transform/</guid>
+      <description>Tags: math
+ usefulness in sound and probability allows the mapping of a regular function into a space where signals can be decomposed https://www.youtube.com/watch?v=spUNpyF58BY  </description>
     </item>
     
     <item>
@@ -3405,6 +3545,26 @@ level two depends on a chain of isomorphisms</description>
       <description>Tags: Hofstadter - Godel, Escher, Bach
   What is a typographical system?
  Reading &amp;amp; recongizing any set of finite symbols Writing down any symbols that belong to that set Copying any of those symbols from one place to another Erasing any of those symbols Checking to see if symbols are the same Keeping a list of the symbols already made    We can define primes by defining the negative of the composite, but this comes with a problem</description>
+    </item>
+    
+    <item>
+      <title>geb chapter 5 (recursive structures)</title>
+      <link>/posts/geb_chapter_5_recursive_structures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/geb_chapter_5_recursive_structures/</guid>
+      <description>Tags: Hofstadter - Godel, Escher, Bach
+ Treats music as a shallow stack with two keys Talks about recursion in a langauge, verb-at-the-end requires a stack (german) arabic verb at the start, is this a queue? return address -&amp;gt; where the recursion in loops swing back to retrival - stored procedures epimenides paradox  </description>
+    </item>
+    
+    <item>
+      <title>geb chapter 6 (the location of meaning)</title>
+      <link>/posts/geb_chapter_6_the_location_of_meaning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/geb_chapter_6_the_location_of_meaning/</guid>
+      <description>Tags: Hofstadter - Godel, Escher, Bach
+ deconstruct langauge down to syntax, alphabet, grammar, sounds  where does meaning reside in this?   like how one note in music cannot be identified to have emotional resonance decoding a message -&amp;gt; linguists and astromers inutition of the location of meaning  we expect things to hold meaning such as a newspaper in russian, even when we can&amp;rsquo;t read russian meaning exists independently of text   framing/out/inner vs /scope/medium/meaning can we give information that is context free?</description>
     </item>
     
     <item>
@@ -3917,7 +4077,7 @@ Factions  internal leadership (gaza, west bank, prisons) external leadership (pa
       
       <guid>/posts/20200415154513-hashd_al_shaabi_pmf/</guid>
       <description>Tags: iraq, militias
-  4 Brigades Loyal to Sistani Fall Under PM Command  April 22, 2020 https://www.instapaper.com/read/1299149009 A letter published on Iraqi state media, addressed to the head of the PMF, a predominantly Shiite network of around 60 paramilitaries, says that four brigades will fall under the “command and management” of the commander-in-chief of the armed forces– a role Abdul-Mahdi currently occupies as caretaker prime minister – and not under the direct command of the PMF board.</description>
+   flags: https://www.crwflags.com/fotw/flags/iq%7Dpmf.html  4 Brigades Loyal to Sistani Fall Under PM Command  April 22, 2020 https://www.instapaper.com/read/1299149009 A letter published on Iraqi state media, addressed to the head of the PMF, a predominantly Shiite network of around 60 paramilitaries, says that four brigades will fall under the “command and management” of the commander-in-chief of the armed forces– a role Abdul-Mahdi currently occupies as caretaker prime minister – and not under the direct command of the PMF board.</description>
     </item>
     
     <item>
@@ -3928,6 +4088,20 @@ Factions  internal leadership (gaza, west bank, prisons) external leadership (pa
       <guid>/posts/hashd_commission/</guid>
       <description>Tags: iraq
 Semi-ministry responsible for the hashd al-shaabi (PMF)</description>
+    </item>
+    
+    <item>
+      <title>hashd in sinjar</title>
+      <link>/posts/hashd_in_sinjar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hashd_in_sinjar/</guid>
+      <description>Tags: articles, hashd al-shaabi (PMF)
+  https://www.aymennjawad.org/2021/01/the-hashd-in-sinjar-interview
+  Talks about the &amp;ldquo;sinjar force&amp;rdquo;, possibly brigade 80
+  also spoilers of the sinjar agreement (2020)
+  also claims that the armed forces are not political
+    </description>
     </item>
     
     <item>
@@ -3959,6 +4133,16 @@ https://kowainik.github.io/posts/haskell-mini-patterns</description>
     </item>
     
     <item>
+      <title>hassan shakir al-kaabi</title>
+      <link>/posts/hassan_shakir_al_kaabi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hassan_shakir_al_kaabi/</guid>
+      <description>Tags: people
+fatah (political party) MP</description>
+    </item>
+    
+    <item>
       <title>hausenblas - programming kubernetes</title>
       <link>/posts/programming_kubernetes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3966,6 +4150,16 @@ https://kowainik.github.io/posts/haskell-mini-patterns</description>
       <guid>/posts/programming_kubernetes/</guid>
       <description>Tags: kubernetes (k8s), books
  programming kubernetes chapter 1 programming kubernetes chapter 2 - kube api server  </description>
+    </item>
+    
+    <item>
+      <title>hayam al-hayderi</title>
+      <link>/posts/hayam_al_hayderi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hayam_al_hayderi/</guid>
+      <description>Tags: iraqi parliment
+turkmen state minister appointed by mustafa al-kadhimi, confirmed on dec 15, 2020</description>
     </item>
     
     <item>
@@ -4407,6 +4601,19 @@ blocks [1,2,3,4] &amp;lt;- inode &amp;lt;- hardlink &amp;lt;- symlink</descripti
     </item>
     
     <item>
+      <title>inside iraqi politics issue 219 notes</title>
+      <link>/posts/inside_iraqi_politics_issue_219_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/inside_iraqi_politics_issue_219_notes/</guid>
+      <description>Tags: papers, iraq
+  devaluation of dinar, mostly due to the refusal of cutting public salaries
+ dec. 24, 2020 - muhammad al-halbusi posted a statement about needing to increase non-oil revenues dec 31st, 2020 - majida al-tamimi rejects the overtures jamal kawjar also rejected it iraqi 2021 draft budget    parlimentary report
+  health ministry is poor
+  sinjar agreement (2020) is in a standoff in the ninawa</description>
+    </item>
+    
+    <item>
       <title>institute of international finance (iif)</title>
       <link>/posts/institute_of_international_finance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4478,6 +4685,17 @@ Defense contracting  Largely limited to copying 1950&amp;rsquo;s era tech Heavy 
     </item>
     
     <item>
+      <title>iran&#39;s kidney market</title>
+      <link>/posts/iran_s_kidney_market/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/iran_s_kidney_market/</guid>
+      <description>Tags: iran, economics
+Iran has the world&amp;rsquo;s only regulated kidney market
+ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2322914/ demand for organs has always exceeded supply, especially due to diabetes and hypertension already appears to be booming in turkey, russia, and south africa Iran used to pay for its citizens to have transplants (mostly in united kingdom), but the costs balloooned for people with end stage renal diease illegal for anyone to have &amp;ldquo;middle men&amp;rdquo; in iran anecdotal stories of people &amp;ldquo;touring&amp;rdquo; their kidneys in iran  </description>
+    </item>
+    
+    <item>
       <title>iraq</title>
       <link>/posts/20200413223156-iraq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4505,6 +4723,17 @@ April 23rd  Agricultural ministry empowered to export barley @ $125/ton first ti
       <guid>/posts/iraq_tech_ventures/</guid>
       <description>Tags: iraqi tech community
 https://iraqtechventures.com/companies</description>
+    </item>
+    
+    <item>
+      <title>iraqi 2021 draft budget</title>
+      <link>/posts/iraqi_2021_draft_budget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/iraqi_2021_draft_budget/</guid>
+      <description>Tags: iraqi parliment
+Largest in absolute dinar terms, but cuts taxes on higher-income epmployees and sparse allocations
+Total spending is 164.2 trillion IQD with 120.6 tr IQD for operations, 15 tr for debt, and 1tr for special programs</description>
     </item>
     
     <item>
@@ -4578,6 +4807,15 @@ Grammar خل + فعل  Let (imperative) + فعل Example:  Let us go: خل نر�
     </item>
     
     <item>
+      <title>iraqi finance committee</title>
+      <link>/posts/iraqi_finance_committee/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/iraqi_finance_committee/</guid>
+      <description>Tags: iraqi parliment</description>
+    </item>
+    
+    <item>
       <title>iraqi ghost militias</title>
       <link>/posts/20200419130420-iraqi_ghost_militias/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4589,12 +4827,21 @@ Grammar خل + فعل  Let (imperative) + فعل Example:  Let us go: خل نر�
     </item>
     
     <item>
+      <title>iraqi parliment</title>
+      <link>/posts/iraqi_parliment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/iraqi_parliment/</guid>
+      <description>Tags: iraq</description>
+    </item>
+    
+    <item>
       <title>iraqi political parties</title>
       <link>/posts/iraqi_political_parties/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/iraqi_political_parties/</guid>
-      <description>Tags: iraq
+      <description>Tags: iraqi parliment
 2019 Legislative results al-Tahaluf Minaj al-Dimuqratyiat wa al-Eadala (Alliance for Democracy and Justice)  2 seats  al-Anbar Huiatna (Anbar is Our Identity)  6 seats  al-Tahaluf al-Arabiyu fi Kirkuk (Arab Coalition of Kirkuk)  3 seats  Tajmae Rijal al-Iraq (Assembly of the Men of Iraq)  1 seat  Harakat Babylon (Babylon Movement)  2 seats  al-Tahaluf Baghdad (Baghdad Alliance)  4 seats  al-Majlis al-Shaabi al-Kildania al-Ushuri as-Suriania (Chaldean Syriac Assyrian Popular Council)  0 seats  al-Tahaluf al-Kuldan (Chaldean Coalition)  1 seat  al-Majlis al-Kuldaniu al-Surianiu al-Ashuriu (Chaldean Syriac Assyrian Council)  1 seat  al-Taghiu (Change)  0 seats  al-Hizb al-Mudabu (Civic Party)  1 party  Tamdun (Civilisation)  0 seats  al-Tahaluf al-Madaniu al-Dimuqratiya (Civil Democratic Coalition)  1 seat  al-Tahaluf al-Qarar al-Iraqi (Coalition of Iraqi Decision)  14 seats  al-Tahaluf al-Rafidayn (Coalition of Mesopotamia)  1 seat  al-Tilaf Kaffa&amp;rsquo;at Liltaghyir (Coalition of Competencies for Change)  2 seats  al-Tahaluf al-Fateh (Conquest Alliance)  47 seats lead by Hadi al-Amiri and includes parties previously in state of law  al-Nahj al-Dimuqrayt (Democratic Approach)  1 seat  al-Jamaeat al-Islamiya al-Kurdistan (Kurdistan Islamic Group)  2 seats  al-Itihad al-Islamiya al-Kurdistan (Kurdistan Islamic Union)  2 seats  al-Hizb al-Dimuqratiya al-Kurdistan (Kurdistan Democratic Party)  25 seats  al-Kurdistan al-Itihad al-Wat (Kurdistan Patriotic Union)  18 seats  Sayirun (Forward)  54 seats Muqtada al-Sadr&amp;rsquo;s party  Harakat Irada (Movement of the Will)  3 seats  al-Litaf al-Watania (National Coalition)  21 seats Ayad Allawi&amp;rsquo;s party, called the Iraqi National Alliance in 2014  al-Litaf al-Qaleat al-Watania (National Fortress Coalition)  3 seats  al-Hizb al-Jamahiah al-Watania (National Party of the Masses)  0 seats  Harak al-Jil al-Jadid (New Generation Movement)  4 seats  Ninawa Huitana (Nineveh is Our Identity)  3 seats  Tayar al-Hikmat al-Wataniu (National Wisdom Movement)  19 seats successor to the Ammar al-Hakim&amp;rsquo;s Citizen Alliance Party  Salah-ad-Din Huiatna (Saladin is Our Identity)  1 seat  al-Litaf Dawlat al-Qanun (State of Law Coalition)  25 seats Dawa&amp;rsquo;s, Maliki&amp;rsquo;s party  Eabirun (The Passing)  2 seats  Jabhat Turkoman Kirkuk (Turkoman Front of Kirkuk)  0 seats  al-Litaf al-Nasr (Victory Coalition)  42 seats Haider al-Abadi&amp;rsquo;s party  al-Hizb al-Taqadum al-Yazidi (Yazidi Progress Party)  ?</description>
     </item>
     
@@ -4631,7 +4878,8 @@ Grammar خل + فعل  Let (imperative) + فعل Example:  Let us go: خل نر�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/iraqi_tech_community/</guid>
-      <description>Tags: iraq</description>
+      <description>Tags: iraq
+ https://medium.com/iraqi-innovators/10-tech-startups-in-iraq-you-need-to-know-about-de2feb91c98e  </description>
     </item>
     
     <item>
@@ -4718,7 +4966,7 @@ Grammar خل + فعل  Let (imperative) + فعل Example:  Let us go: خل نر�
       
       <guid>/posts/islamic_supreme_council_of_iraq_isci/</guid>
       <description>Tags: iraqi political parties, iraqi shia
-Friendly with kataib hezbollah (kh) and harakat hezbollah al-nujaba, affilated with fatah
+Friendly with kataib hezbollah (kh) and harakat hezbollah al-nujaba, affilated with fatah (political party)
 Previously known as Supreme Council for the Islamic Revolution in Iraq, SCIRI
 Former military wing was badr corps
 Predominatant shia party until the rise of nouri al-maliki</description>
@@ -4804,6 +5052,16 @@ Pop of around 30k</description>
     </item>
     
     <item>
+      <title>jamal kawjar</title>
+      <link>/posts/jamal_kawjar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/jamal_kawjar/</guid>
+      <description>Tags: people, iraq
+member of the iraqi finance committee</description>
+    </item>
+    
+    <item>
       <title>janus v ASFCME</title>
       <link>/posts/janus_v_asfcme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4885,7 +5143,8 @@ tail call optimization  https://github.com/Sipkab/jvm-tail-recursion  JVM profil
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/json/</guid>
-      <description>Tags: computers</description>
+      <description>Tags: computers
+ https://radar.io/blog/open-source-api-diff-library  </description>
     </item>
     
     <item>
@@ -5211,6 +5470,15 @@ Kubernetes control plane is like the ooda (observe orient decide act), combines 
     </item>
     
     <item>
+      <title>kunyas</title>
+      <link>/posts/kunyas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/kunyas/</guid>
+      <description>Tags: arabic</description>
+    </item>
+    
+    <item>
       <title>kurdistan democratic party</title>
       <link>/posts/kurdistan_democratic_party/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5312,7 +5580,7 @@ Kyoto Cabinet is the frontend, Kyoto tycoon is the backend, kyoto tycoon is a fo
       <guid>/posts/langlands_program/</guid>
       <description>Tags: math
  https://en.wikipedia.org/wiki/Langlands%5Fprogram  conjectures about number theory and geometry
-References  https://math.stackexchange.com/questions/48981/the-langlands-program-for-beginners Knapp, A W. “Prerequisites for the Langlands Program,” n.d., 9.  </description>
+References  https://math.stackexchange.com/questions/48981/the-langlands-program-for-beginners Knapp, A W. “Prerequisites for the Langlands Program,” n.d., 9. https://www.ias.edu/video/The-Practice-of-Mathematics https://news.ycombinator.com/item?id=16786018 https://www.abelprize.no/artikkel/vis.html?tid=73176 https://thewalrus.ca/the-greatest-mathematician-youve-never-heard-of/ https://news.ycombinator.com/item?id=18508780  </description>
     </item>
     
     <item>
@@ -5382,6 +5650,16 @@ Libya passed a law (https://justiceinconflict.org/2012/05/08/impunity-rules-liby
 https://developers.google.com/time/smear
  google smears the leap second before and after each leap  https://googleblog.blogspot.com/2011/09/time-technology-and-leaping-seconds.html https://docs.ntpsec.org/latest/leapsmear.html https://packetpushers.net/ntp-leap-smearing-what-is-it/ https://developers.redhat.com/blog/2015/06/01/five-different-ways-handle-leap-seconds-ntp/ https://xkcd.com/2266/ Burnicki, “Leap Second Smearing with NTP.”
 Questions  do emergency alert systems (EAS) use internet timing? what systems failover to internet timing? what services actually rely directly on gps?  https://ilrs.gsfc.nasa.gov/docs/timing/gpsrole.pdf    </description>
+    </item>
+    
+    <item>
+      <title>learning to learn and learning to teach</title>
+      <link>/posts/learning_to_learn_and_learning_to_teach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/learning_to_learn_and_learning_to_teach/</guid>
+      <description>Tags: drafts
+ being a developer is about learning to learn teaching tech together being a developer is also about learning to teach being a developer is learning to ask questions not just being curious but knowing what questions to ask being a developer is not recall from clean code or kent beck but rather understanding the structure and system in which something is laid out software design philsophy more than just teaching to engs, you need to teach to product people convey the limitations of technology every software team is absolutely insnae note taking differences in global markets (SEA everyone is a consultant)  </description>
     </item>
     
     <item>
@@ -5657,6 +5935,16 @@ Summary Talks about how people are influenced on their views of intelligent syst
 Notably, domain experts fail to regain trust in the system, even if the system gets better over time. Consistently achieve automation bias and believe in the system, even if it is wrong.
 Domain expertise plays an important role.
 Implications  &amp;ldquo;Rather than allowing users to use a system with zero understanding or a poor mental model of how the system works, designers can incorporate introductory sessions to alert users about system strengths and shortcomings so that users can decide whether and when they should trust the system&amp;rsquo;s outputs.</description>
+    </item>
+    
+    <item>
+      <title>majida al-tamimi</title>
+      <link>/posts/majida_al_tamimi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/majida_al_tamimi/</guid>
+      <description>Tags: people
+Leading sairun (sadr political party) on the iraqi finance committee</description>
     </item>
     
     <item>
@@ -6012,6 +6300,17 @@ http://www.eecs.harvard.edu/~michaelm/NEWWORK/postscripts/twosurvey.pdf https://
     </item>
     
     <item>
+      <title>ml on satellite imagery</title>
+      <link>/posts/ml_on_satellite_imagery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ml_on_satellite_imagery/</guid>
+      <description>Tags: project ideas
+Can we apply deep learning on satellites?
+Companies  wyvern.space  </description>
+    </item>
+    
+    <item>
       <title>mmap</title>
       <link>/posts/mmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6142,6 +6441,16 @@ Member of the islamic supreme council of iraq (isci)</description>
     </item>
     
     <item>
+      <title>muhammad al-halbusi</title>
+      <link>/posts/muhammad_al_halbusi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/muhammad_al_halbusi/</guid>
+      <description>Tags: people, iraq
+Current speaker of iraqi parliment as of dec 24th, 2020</description>
+    </item>
+    
+    <item>
       <title>Muhammad Baqir as-Sadr</title>
       <link>/posts/muhammad_baqir_as_sadr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6262,6 +6571,15 @@ Leader of badr</description>
       
       <guid>/posts/muslim_brotherhood/</guid>
       <description>Tags: islam, islamic political thought</description>
+    </item>
+    
+    <item>
+      <title>mustafa al-kadhimi</title>
+      <link>/posts/mustafa_al_kadhimi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mustafa_al_kadhimi/</guid>
+      <description>Tags: iraqi prime minister</description>
     </item>
     
     <item>
@@ -6563,6 +6881,15 @@ Nicaraguan electricty is expensive due to inefficiency and US sanctions. Transpa
     </item>
     
     <item>
+      <title>ninawa</title>
+      <link>/posts/ninawa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ninawa/</guid>
+      <description>Tags: iraq</description>
+    </item>
+    
+    <item>
       <title>nlp</title>
       <link>/posts/nlp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6699,6 +7026,16 @@ Former iraqi PM, Dawa affilated</description>
       <description>Tags: episteme, drafts
 What is historiography good for?
  Reveals lacuna in the thinking of history  History shapes nationalism egypt particularly has had history held in stasis since the 50&amp;rsquo;s - DiCapua - Gatekeepers of the Arab Past    </description>
+    </item>
+    
+    <item>
+      <title>on new york</title>
+      <link>/posts/on_new_york/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/on_new_york/</guid>
+      <description>Tags: drafts
+ why nyc? bad amenities, expensive, quarantine makes all cities the same nyc offers the rare coin of possability proust - see the same thing with a thousand eyes, not a thousand things with one eye find voices that are not similar to yours, but resound and cancel with yours think about the friends i&amp;rsquo;ve made: journalists, fruit vendors, tech workers, musicians, artists, activsts, grad students, researchers, video people, actors, refugees, etc friend&amp;rsquo;s stories about drinking rose at 9am, attending orthodox christmas while car repairs, hopping on motor bikes while coming back from city island, it&amp;rsquo;s not that new york&amp;rsquo;s stories are more diverse, but rather new york&amp;rsquo;s stories are more accessible nyc&amp;rsquo;s &amp;ldquo;cultural&amp;rdquo; experiences are not super unique, one could probably find facsination with any museum or art location, any place&amp;rsquo;s history can be plumbed infinitely for facsination (also the food) nyc both offers what you can do right now, but always offers the ability to one thing for me to tell the story of muhammad, another to tell the story of your telling of the story of muhammad nyc is not just a catalogue of what you have done, but also what other people have done  finding flavored arak on the street nyc is not great because of these experiences, but it is great because it so readily offers up the choice to see these resources nyc invites you to its drama that contains an entire history of voices  look beyond what it sells (pizza, bec, andrew yang, etc etc)   not the raw number of people, but the density + variety of people not just the product of things produced, but also the the people producing it incompleteness, hard for you to take yourself out of it more than notions of chutzpah and &amp;ldquo;making it&amp;rdquo; and &amp;ldquo;hustling&amp;rdquo;  people orginate what they cannot finish, and the uniqueness of this city is that it builds upon it      Draft Quarantine has a weird way of making you apprechiate New York City.</description>
     </item>
     
     <item>
@@ -7848,7 +8185,8 @@ Each month, take card to bank, verify with fingerprint,. and receive payment in 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/quwat_al_turkmen_brigade_16/</guid>
-      <description>Tags: brigades</description>
+      <description>Tags: brigades
+formed of turkmen</description>
     </item>
     
     <item>
@@ -8289,6 +8627,16 @@ Interest rate sensitive products are epxosed to market rates by different curves
     </item>
     
     <item>
+      <title>sabah al-saadi</title>
+      <link>/posts/sabah_al_saadi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sabah_al_saadi/</guid>
+      <description>Tags: sairun (sadr political party), people
+Bloc leader for sairun</description>
+    </item>
+    
+    <item>
       <title>sacred</title>
       <link>/posts/sacred/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8327,6 +8675,15 @@ Oil tanker in yemen, off the coast, stranded 5 nautical miles. Seawater entered 
       <guid>/posts/sahwa_awakening/</guid>
       <description>Tags: iraq
  Started in 2006, spread in 2007 Largely tribal Sunni affair in anbar Fought against al-Qaeda with american support  </description>
+    </item>
+    
+    <item>
+      <title>sairun (sadr political party)</title>
+      <link>/posts/sadr_politics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sadr_politics/</guid>
+      <description>Tags: iraqi political parties</description>
     </item>
     
     <item>
@@ -8700,6 +9057,35 @@ Summary  There is no logical spatial, or chronological, limit to the ‘War on T
     </item>
     
     <item>
+      <title>sinjar</title>
+      <link>/posts/sinjar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sinjar/</guid>
+      <description>Tags: iraq</description>
+    </item>
+    
+    <item>
+      <title>sinjar agreement (2020)</title>
+      <link>/posts/sinjar_agreement_2020/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sinjar_agreement_2020/</guid>
+      <description>Tags: iraq, sinjar</description>
+    </item>
+    
+    <item>
+      <title>sinjar resistance units</title>
+      <link>/posts/sinjar_resistance_units/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sinjar_resistance_units/</guid>
+      <description>Tags: hashd al-shaabi (PMF), articles
+ http://www.aymennjawad.org/2021/01/the-sinjar-resistance-units-interview  Established in the wake of the Yezidi genocide, unclear if they are related to brigade 80
+ ranges between 4000-4500 fighters supports the sinjar agreement (2020)  </description>
+    </item>
+    
+    <item>
       <title>sistani</title>
       <link>/posts/sistani/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8989,6 +9375,16 @@ Four types of insurgent models:
       
       <guid>/posts/state_machines/</guid>
       <description>Tags: computers</description>
+    </item>
+    
+    <item>
+      <title>state minister</title>
+      <link>/posts/state_minister/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/state_minister/</guid>
+      <description>Tags: iraqi parliment
+minister without a portfolio position</description>
     </item>
     
     <item>
@@ -9473,7 +9869,16 @@ https://en.m.wikipedia.org/wiki/Electrical%5Ftelegraphy%5Fin%5Fthe%5FUnited%5FKi
       
       <guid>/posts/tensorboard/</guid>
       <description>Tags: ml
- https://www.tensorflow.org/tensorboard/ helps to visualize tensorflow issues  </description>
+ https://www.tensorflow.org/tensorboard/ helps to visualize neural networks, works with both tensorflow and pytorch https://pytorch.org/tutorials/intermediate/tensorboard%5Ftutorial.html  </description>
+    </item>
+    
+    <item>
+      <title>tensorflow</title>
+      <link>/posts/tensorflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tensorflow/</guid>
+      <description>Tags: ml</description>
     </item>
     
     <item>
@@ -9902,6 +10307,15 @@ Interrogate your topic:  How does the topic fit into a larger context? Historica
     </item>
     
     <item>
+      <title>turkmen</title>
+      <link>/posts/turkmen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/turkmen/</guid>
+      <description>Tags: iraq</description>
+    </item>
+    
+    <item>
       <title>tuz khormatu</title>
       <link>/posts/tuz_khormatu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10006,6 +10420,15 @@ three pronged approach
       <guid>/posts/undersea_fiber/</guid>
       <description>Tags: Networks -submarine cable map
  balancing act  budget physical constraints  ocean beds are often weird   usage growth estimates  up to next decade   repeater placement  extremely expensive   sharks  https://www.independent.co.uk/life-style/gadgets-and-tech/news/sharks-are-eating-the-internet-in-vietnam-9962747.html      iraq internet fiber  https://pinboard.in/cached/7fdc6a769248/ fiber backhaul is owned by Baghdad and KRG politicans very little room for new companies most backhauls are via the sea to EU and US servers shortest path to europe is from Iraq-Turkey pipe, but owned by https://en.</description>
+    </item>
+    
+    <item>
+      <title>united kingdom</title>
+      <link>/posts/united_kingdom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/united_kingdom/</guid>
+      <description>Tags: europe</description>
     </item>
     
     <item>
@@ -10311,7 +10734,7 @@ It&amp;rsquo;s built with:
       
       <guid>/posts/20200419205815-writing/</guid>
       <description>Tags: root
- node for the actual act of writing  4 parts of writing  __Valuable__ Recongizable Organized Clear  Avoid &amp;ldquo;Text based rules&amp;rdquo;  Avoid rules like &amp;ldquo;don&amp;rsquo;t do passive writing&amp;rdquo;, or &amp;ldquo;avoid jargon&amp;rdquo; Avoid writing in a way that shapes the text For every rule, ask &amp;ldquo;which reader&amp;rdquo; and &amp;ldquo;which purpose&amp;rdquo;  Ex: &amp;ldquo;use short sentences&amp;rdquo;  For which reader? For what purpose?      Expert based writing  Writing and thinking are usually entwined, writing helps out the thinking process In the real world, the function of the text you write is to cause readers to change what they think about the world  NOT HOW YOU THINK What makes text valuable is how the readers percieve how they changed how they think    </description>
+ node for the actual act of writing  4 parts of writing  __Valuable__ Recongizable Organized Clear  Avoid &amp;ldquo;Text based rules&amp;rdquo;  Avoid rules like &amp;ldquo;don&amp;rsquo;t do passive writing&amp;rdquo;, or &amp;ldquo;avoid jargon&amp;rdquo; Avoid writing in a way that shapes the text For every rule, ask &amp;ldquo;which reader&amp;rdquo; and &amp;ldquo;which purpose&amp;rdquo;  Ex: &amp;ldquo;use short sentences&amp;rdquo;  For which reader? For what purpose?      Expert based writing  Writing and thinking are usually entwined, writing helps out the thinking process In the real world, the function of the text you write is to cause readers to change what they think about the world  NOT HOW YOU THINK What makes text valuable is how the readers percieve how they changed how they think    Fellowships  https://www.</description>
     </item>
     
     <item>

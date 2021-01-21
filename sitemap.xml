@@ -347,6 +347,10 @@
   </url>
   
   <url>
+    <loc>/posts/aynas_naji_al_maksusi/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/azimuth_thrusters/</loc>
   </url>
   
@@ -527,6 +531,10 @@
   </url>
   
   <url>
+    <loc>/posts/brigade_80/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/brigades/</loc>
   </url>
   
@@ -576,6 +584,10 @@
   
   <url>
     <loc>/posts/20200416092129-can_spiritual_subjects/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/cantor_set/</loc>
   </url>
   
   <url>
@@ -656,6 +668,10 @@
   
   <url>
     <loc>/posts/chomsky_grammar/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/civil_engineering/</loc>
   </url>
   
   <url>
@@ -775,6 +791,22 @@
   </url>
   
   <url>
+    <loc>/posts/conv2d/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/convolutional_neural_network_cnn/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/covolutional_neural_networks/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/convolutions/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/cook_the_aswan_low_dam_and_modernizing_the_nile/</loc>
   </url>
   
@@ -791,15 +823,15 @@
   </url>
   
   <url>
+    <loc>/posts/counter_insurgency_as_an_infinite_game/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/counter_terrorism_service_iraq/</loc>
   </url>
   
   <url>
     <loc>/posts/covid/</loc>
-  </url>
-  
-  <url>
-    <loc>/posts/covolutional_neural_networks/</loc>
   </url>
   
   <url>
@@ -939,6 +971,10 @@
   </url>
   
   <url>
+    <loc>/posts/dns/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/docker/</loc>
   </url>
   
@@ -1035,6 +1071,10 @@
   </url>
   
   <url>
+    <loc>/posts/electrical_engineering/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/elias_khoury/</loc>
   </url>
   
@@ -1076,6 +1116,10 @@
   
   <url>
     <loc>/posts/envoy/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/epimenides_paradox/</loc>
   </url>
   
   <url>
@@ -1171,6 +1215,10 @@
   </url>
   
   <url>
+    <loc>/posts/falih_al_khazali/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415133402-fall_2020_classes/</loc>
   </url>
   
@@ -1184,6 +1232,10 @@
   
   <url>
     <loc>/posts/fasttext/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/fatah/</loc>
   </url>
   
   <url>
@@ -1264,6 +1316,10 @@
   
   <url>
     <loc>/posts/forward_oil_sales_iraq/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/fourier_transform/</loc>
   </url>
   
   <url>
@@ -1352,6 +1408,14 @@
   
   <url>
     <loc>/posts/geb_chapter_3/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/geb_chapter_5_recursive_structures/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/geb_chapter_6_the_location_of_meaning/</loc>
   </url>
   
   <url>
@@ -1567,6 +1631,10 @@
   </url>
   
   <url>
+    <loc>/posts/hashd_in_sinjar/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/haskell/</loc>
   </url>
   
@@ -1579,7 +1647,15 @@
   </url>
   
   <url>
+    <loc>/posts/hassan_shakir_al_kaabi/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/programming_kubernetes/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/hayam_al_hayderi/</loc>
   </url>
   
   <url>
@@ -1747,6 +1823,10 @@
   </url>
   
   <url>
+    <loc>/posts/inside_iraqi_politics_issue_219_notes/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/institute_of_international_finance/</loc>
   </url>
   
@@ -1775,6 +1855,10 @@
   </url>
   
   <url>
+    <loc>/posts/iran_s_kidney_market/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200413223156-iraq/</loc>
   </url>
   
@@ -1784,6 +1868,10 @@
   
   <url>
     <loc>/posts/iraq_tech_ventures/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/iraqi_2021_draft_budget/</loc>
   </url>
   
   <url>
@@ -1815,7 +1903,15 @@
   </url>
   
   <url>
+    <loc>/posts/iraqi_finance_committee/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200419130420-iraqi_ghost_militias/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/iraqi_parliment/</loc>
   </url>
   
   <url>
@@ -1904,6 +2000,10 @@
   
   <url>
     <loc>/posts/jalula/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/jamal_kawjar/</loc>
   </url>
   
   <url>
@@ -2075,6 +2175,10 @@
   </url>
   
   <url>
+    <loc>/posts/kunyas/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/kurdistan_democratic_party/</loc>
   </url>
   
@@ -2140,6 +2244,10 @@
   
   <url>
     <loc>/posts/leap_smearing/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/learning_to_learn_and_learning_to_teach/</loc>
   </url>
   
   <url>
@@ -2248,6 +2356,10 @@
   
   <url>
     <loc>/posts/mahsan_et_al_the_role_domain_expertise_in_user_trust_and_the_impact_of_first_impressions_with_intelligent_systems/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/majida_al_tamimi/</loc>
   </url>
   
   <url>
@@ -2391,6 +2503,10 @@
   </url>
   
   <url>
+    <loc>/posts/ml_on_satellite_imagery/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/mmap/</loc>
   </url>
   
@@ -2443,6 +2559,10 @@
   </url>
   
   <url>
+    <loc>/posts/muhammad_al_halbusi/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/muhammad_baqir_as_sadr/</loc>
   </url>
   
@@ -2488,6 +2608,10 @@
   
   <url>
     <loc>/posts/muslim_brotherhood/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/mustafa_al_kadhimi/</loc>
   </url>
   
   <url>
@@ -2611,6 +2735,10 @@
   </url>
   
   <url>
+    <loc>/posts/ninawa/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/nlp/</loc>
   </url>
   
@@ -2664,6 +2792,10 @@
   
   <url>
     <loc>/posts/historiography/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/on_new_york/</loc>
   </url>
   
   <url>
@@ -3287,6 +3419,10 @@
   </url>
   
   <url>
+    <loc>/posts/sabah_al_saadi/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/sacred/</loc>
   </url>
   
@@ -3300,6 +3436,10 @@
   
   <url>
     <loc>/posts/sahwa_awakening/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/sadr_politics/</loc>
   </url>
   
   <url>
@@ -3455,6 +3595,18 @@
   </url>
   
   <url>
+    <loc>/posts/sinjar/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/sinjar_agreement_2020/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/sinjar_resistance_units/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/sistani/</loc>
   </url>
   
@@ -3568,6 +3720,10 @@
   
   <url>
     <loc>/posts/state_machines/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/state_minister/</loc>
   </url>
   
   <url>
@@ -3767,6 +3923,10 @@
   </url>
   
   <url>
+    <loc>/posts/tensorflow/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/territorality_of_data/</loc>
   </url>
   
@@ -3927,6 +4087,10 @@
   </url>
   
   <url>
+    <loc>/posts/turkmen/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/tuz_khormatu/</loc>
   </url>
   
@@ -3968,6 +4132,10 @@
   
   <url>
     <loc>/posts/undersea_fiber/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/united_kingdom/</loc>
   </url>
   
   <url>
