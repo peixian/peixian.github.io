@@ -51,6 +51,10 @@
   </url>
   
   <url>
+    <loc>/posts/abu_hamid_al_ghazali/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/abu_mahdi_al_muhandis/</loc>
   </url>
   
@@ -131,11 +135,23 @@
   </url>
   
   <url>
+    <loc>/posts/al_fadl_discussion/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/al_fadl_what_type_of_law_is_islamic_law/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/al_hamza/</loc>
   </url>
   
   <url>
     <loc>/posts/20200415200858-al_husri/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/al_juwayni/</loc>
   </url>
   
   <url>
@@ -152,6 +168,10 @@
   
   <url>
     <loc>/posts/al_qassem_brigades/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/al_shafi_i/</loc>
   </url>
   
   <url>
@@ -255,6 +275,10 @@
   </url>
   
   <url>
+    <loc>/posts/api_machinery_k8s/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/approximate_nearest_neighbor/</loc>
   </url>
   
@@ -276,6 +300,10 @@
   
   <url>
     <loc>/posts/archiving_a_revolution_smartphones_social_media_protest/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/are_experts_real/</loc>
   </url>
   
   <url>
@@ -319,6 +347,14 @@
   </url>
   
   <url>
+    <loc>/posts/austin_s_theory_of_law/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/authoritarian_problems_with_humantiarian_aid/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/autodefensas_unidas_de_colombia_auc/</loc>
   </url>
   
@@ -332,6 +368,10 @@
   
   <url>
     <loc>/posts/average_is_over/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/average_pooling/</loc>
   </url>
   
   <url>
@@ -411,7 +451,15 @@
   </url>
   
   <url>
+    <loc>/posts/barnett_et_al_international_organizations_and_the_diffusions_of_power/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415115031-base_period_training/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/basel_committee_on_banking_supervision/</loc>
   </url>
   
   <url>
@@ -755,7 +803,15 @@
   </url>
   
   <url>
+    <loc>/posts/computational_linguistics/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/computational_social_science/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/computational_syntax/</loc>
   </url>
   
   <url>
@@ -1271,11 +1327,19 @@
   </url>
   
   <url>
+    <loc>/posts/financial_action_task_force_fatf/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/financial_discourse/</loc>
   </url>
   
   <url>
     <loc>/posts/finite_state_machines/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/fiqh/</loc>
   </url>
   
   <url>
@@ -1379,6 +1443,10 @@
   </url>
   
   <url>
+    <loc>/posts/ganto_s_axe/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/gasch_events_the_dna_of_kubernetes/</loc>
   </url>
   
@@ -1416,6 +1484,10 @@
   
   <url>
     <loc>/posts/geb_chapter_6_the_location_of_meaning/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/geb_chapter_8_typographical_number_theory/</loc>
   </url>
   
   <url>
@@ -1603,6 +1675,14 @@
   </url>
   
   <url>
+    <loc>/posts/hanafi/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/hanbali/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/haplin_thirteen_ways_to_make_a_plural/</loc>
   </url>
   
@@ -1668,6 +1748,10 @@
   
   <url>
     <loc>/posts/20200415114157-heart_rate_zones/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/held_the_diffusion_of_authority/</loc>
   </url>
   
   <url>
@@ -1743,6 +1827,10 @@
   </url>
   
   <url>
+    <loc>/posts/humanitarian_aid/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/hussein_ismail_khalil/</loc>
   </url>
   
@@ -1811,6 +1899,10 @@
   </url>
   
   <url>
+    <loc>/posts/informers_k8s/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/inifiband/</loc>
   </url>
   
@@ -1836,6 +1928,10 @@
   
   <url>
     <loc>/posts/integrated_information_theory/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/international_criminal_court/</loc>
   </url>
   
   <url>
@@ -1955,6 +2051,10 @@
   </url>
   
   <url>
+    <loc>/posts/islamic_jurisprudence/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/islamic_modernism/</loc>
   </url>
   
@@ -1975,6 +2075,10 @@
   </url>
   
   <url>
+    <loc>/posts/ismaili/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/israel/</loc>
   </url>
   
@@ -1984,6 +2088,10 @@
   
   <url>
     <loc>/posts/ivory_coast/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/ja_fari/</loc>
   </url>
   
   <url>
@@ -2223,6 +2331,10 @@
   </url>
   
   <url>
+    <loc>/posts/languages_lingustics/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200414224409-latam/</loc>
   </url>
   
@@ -2284,6 +2396,14 @@
   
   <url>
     <loc>/posts/linear_algebra/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/lecture_1_introduction_and_scope/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/ling_ga_1012/</loc>
   </url>
   
   <url>
@@ -2375,6 +2495,10 @@
   </url>
   
   <url>
+    <loc>/posts/maliki/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/malthus/</loc>
   </url>
   
@@ -2420,6 +2544,10 @@
   
   <url>
     <loc>/posts/mauritania/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/max_pooling/</loc>
   </url>
   
   <url>
@@ -2740,6 +2868,10 @@
   
   <url>
     <loc>/posts/nlp/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/nlu/</loc>
   </url>
   
   <url>
@@ -3167,6 +3299,10 @@
   </url>
   
   <url>
+    <loc>/posts/programming_kubernetes_chapter_3_client_go/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/programming_languages/</loc>
   </url>
   
@@ -3240,6 +3376,10 @@
   
   <url>
     <loc>/posts/query_optimizers/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/quick_history_of_nlp/</loc>
   </url>
   
   <url>
@@ -3336,6 +3476,10 @@
   
   <url>
     <loc>/posts/refactoring/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/refugees/</loc>
   </url>
   
   <url>
@@ -3931,6 +4075,10 @@
   </url>
   
   <url>
+    <loc>/posts/terrorism/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/text_boundary_analysis/</loc>
   </url>
   
@@ -4119,6 +4267,14 @@
   </url>
   
   <url>
+    <loc>/posts/un_and_global_governance/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/un_and_global_governance_lecture_1/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/un_development_program_undp/</loc>
   </url>
   
@@ -4131,7 +4287,15 @@
   </url>
   
   <url>
+    <loc>/posts/un_sustainable_development_goals/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/undersea_fiber/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/unhcr/</loc>
   </url>
   
   <url>
@@ -4140,6 +4304,10 @@
   
   <url>
     <loc>/posts/united_states/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/unrwa/</loc>
   </url>
   
   <url>
@@ -4308,6 +4476,10 @@
   
   <url>
     <loc>/posts/zadrozna_reconstructing_the_past_in_a_post_ottoman_village/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/zaydi/</loc>
   </url>
   
   <url>

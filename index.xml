@@ -67,7 +67,7 @@ Porter - Military Orientalism</description>
       <guid>/posts/2021_goals/</guid>
       <description>Tags: personal
 Taking off of pareto optimal
-Actively need prioritization  statistics nlp (specifically pytorch) raw languages/lingustics kubernetes (k8s) erlang  In Progress  ddr, post-conflict writing iraqi arabic running climbing episteme  Opportunistic learning  distributed systems kernel bypass golang low level programming (definitely need to read more c/cpp books)  Need to pick up at some point in the future  queuing theory (have holbacher&amp;rsquo;s book, but still need to actually do it) math (maybe set a specific aim?</description>
+Actively need prioritization  statistics nlp (specifically pytorch) raw languages/linguistics kubernetes (k8s) erlang  In Progress  ddr, post-conflict writing iraqi arabic running climbing episteme  Opportunistic learning  distributed systems kernel bypass golang low level programming (definitely need to read more c/cpp books)  Need to pick up at some point in the future  queuing theory (have holbacher&amp;rsquo;s book, but still need to actually do it) math (maybe set a specific aim?</description>
     </item>
     
     <item>
@@ -133,6 +133,17 @@ Tentatively aligned with iraqi communist party</description>
       <guid>/posts/abu_ali_al_basri_adnan_ibrahim_al_najjar/</guid>
       <description>Tags: people, iraq
 Senior badr</description>
+    </item>
+    
+    <item>
+      <title>abu hamid al-ghazali</title>
+      <link>/posts/abu_hamid_al_ghazali/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/abu_hamid_al_ghazali/</guid>
+      <description>Tags: people, islam
+philospher from persia that considered fiqh to be temporal, competence over deliberative and reasoned methods of law does not necessarily imply competence in spiritual matters of personal piety
+aruged that the role of the jurist is to resolve and negotiate conflicts among disputants who fight over material earthly things, just because the jurist is skilled in earthly things does not mean they are skilled in the affairs of the Hereafter.</description>
     </item>
     
     <item>
@@ -343,6 +354,29 @@ kataib al-imam ali maintains a training camp here</description>
     </item>
     
     <item>
+      <title>al-fadl discussion</title>
+      <link>/posts/al_fadl_discussion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/al_fadl_discussion/</guid>
+      <description>Tags: al-Fadl: What Type of Law is Islamic Law
+  What questions are being asked?
+ How do we concieve of jursiprudence? How are shariah and fiqh used to mediate between the state and the masses? Is the current viewing of shariah as a condified set of rules a direct desendant of colonial times? Are modern state law and shariah law incompatible? Was the encoding of sharia into strict Western jurisprudence a product of colonial practices, or of modernity?</description>
+    </item>
+    
+    <item>
+      <title>al-Fadl: What Type of Law is Islamic Law</title>
+      <link>/posts/al_fadl_what_type_of_law_is_islamic_law/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/al_fadl_what_type_of_law_is_islamic_law/</guid>
+      <description>Tags: papers, islamic jurisprudence
+Fadl, Khaled Abou El. “What Type of Law Is Islamic Law?” In Routledge Handbook of Islamic Law, edited by Khaled Abou El Fadl, Ahmad Atif Ahmad, and Said Fares Hassan, 1st ed., 11–39. New York, NY : Routledge, 2019.: Routledge, 2019. https://doi.org/10.4324/9781315753881-2.
+Notes - sharia law as not a &amp;ldquo;law&amp;rdquo; but as a result of islamic normativity
+  sharia as a practised disipline of deliverative and purposeful practical reasoning</description>
+    </item>
+    
+    <item>
       <title>al-hamza</title>
       <link>/posts/al_hamza/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -361,6 +395,16 @@ City in qadisiyah governate</description>
       <description>Tags: iraq
 al-Husri directed education in Iraq, promoted pan Arabism, butted heads with the Columbia teacher&amp;rsquo;s college
 Simon - Imposition of Nationalism on Non-Nation State says:  Husri cited german &amp;ldquo;volk&amp;rdquo; type of primordialism, extolled the idea of pre-Islamic Arabs Decided that history of Arab nation was the history of the Arabs, not of Islam Bypassing of religious unity via langauge, similar to Anderson - Imagined Communities  Arabism could then transcend religion and be accepted by Sunni, Shia, Christian, and Jew  Notably no Kurds     left in 1936 due to disagreements with teacher&amp;rsquo;s college, but Muhammad Fadil al-Jamali and Sami Shawkat continued his work History was used as a tool  Cited in Makdisi - The Ecumenical Frame, Pursely - Familiar Futures,</description>
+    </item>
+    
+    <item>
+      <title>al-Juwayni</title>
+      <link>/posts/al_juwayni/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/al_juwayni/</guid>
+      <description>Tags: people, islam
+early al-shafi&amp;rsquo;i jurist</description>
     </item>
     
     <item>
@@ -398,6 +442,15 @@ Town 140km southeast of baghdad</description>
       
       <guid>/posts/al_qassem_brigades/</guid>
       <description>Tags: militias</description>
+    </item>
+    
+    <item>
+      <title>al-shafi&#39;i</title>
+      <link>/posts/al_shafi_i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/al_shafi_i/</guid>
+      <description>Tags: islamic jurisprudence</description>
     </item>
     
     <item>
@@ -645,6 +698,17 @@ Anti-narcotics policy goal in afghanistan was poor, large populations were asked
     </item>
     
     <item>
+      <title>api machinery (k8s)</title>
+      <link>/posts/api_machinery_k8s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/api_machinery_k8s/</guid>
+      <description>Tags: kubernetes (k8s)
+https://github.com/kubernetes/apimachinery
+ IMplements the basics of the type system  Kinds  Divided into API groups and versioned, leading to GroupVersionKind (GVK) Each GVK maps to a single Go type, while a Go type can map to multiple GVK&amp;rsquo;s Do not formally map to 1-1 HTTP paths Many kinds have HTTP rest endpoints used to access objects of the given kind  some do not    </description>
+    </item>
+    
+    <item>
       <title>approximate nearest neighbor</title>
       <link>/posts/approximate_nearest_neighbor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -679,7 +743,7 @@ Anti-narcotics policy goal in afghanistan was poor, large populations were asked
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/arabic/</guid>
-      <description>Tags: grad school, languages/lingustics
+      <description>Tags: grad school, languages/linguistics
   el hayba and djinn for Netflix shows
   https://www.dailymotion.com/video/x6486w2?playlist=x51so7
  Pokemon season 1 in MSA    </description>
@@ -706,6 +770,16 @@ Outline  Archive intro Brief paragraph on each one of the people and themes   Th
       <guid>/posts/archiving_a_revolution_smartphones_social_media_protest/</guid>
       <description>Tags: problems and methods
 Articles  https://www.middleeasteye.net/news/internet-interrupted-how-middle-east-countries-use-network-restrictions-clamp-down-dissent  many countries have similar network restrictions https://netblocks.org/reports/social-media-blocked-in-turkey-as-idlib-military-crisis-escalates-r8VWGXA5 signal&amp;rsquo;s DNS bypass -&amp;gt; open sooq turkey&amp;rsquo;s blocking of wikipedia earlier in the year sudanese resistance by organizing early    Thoughts  How are the current modes of archiving relating to photos captured by the protestors?  playing baby shark in iraq, lebanon music festival,   Privilaging of social media because that is what is accessible Does having images of Tahrir next to images of cats devalue Tahrir?</description>
+    </item>
+    
+    <item>
+      <title>are experts real?</title>
+      <link>/posts/are_experts_real/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/are_experts_real/</guid>
+      <description>Tags: articles
+https://fantasticanachronism.com/2021/01/11/are-experts-real/</description>
     </item>
     
     <item>
@@ -805,6 +879,26 @@ https://en.wikipedia.org/wiki/Atlantic%5Fmeridional%5Foverturning%5Fcirculation<
     </item>
     
     <item>
+      <title>austin&#39;s theory of law</title>
+      <link>/posts/austin_s_theory_of_law/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/austin_s_theory_of_law/</guid>
+      <description>Tags: jurisprudence</description>
+    </item>
+    
+    <item>
+      <title>authoritarian problems with humantiarian aid</title>
+      <link>/posts/authoritarian_problems_with_humantiarian_aid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/authoritarian_problems_with_humantiarian_aid/</guid>
+      <description>Tags: humanitarian aid
+Aid is often authortiarian, it is a top down approach that classifies people, and presents problems of gender
+Images of women and children are priortized</description>
+    </item>
+    
+    <item>
       <title>autodefensas unidas de colombia (AUC)</title>
       <link>/posts/autodefensas_unidas_de_colombia_auc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -846,6 +940,16 @@ https://j-towns.github.io/2017/06/12/A-new-trick.html</description>
  https://www.instapaper.com/read/1370386323  Talks about the book Average is Over by Tyler Cowen
 Identifies largely 3 winners:
  Cognitive elite Service class to cognitive elite  Bifurcation of class, globalization, labor transfer from less productive regions, etc</description>
+    </item>
+    
+    <item>
+      <title>average pooling</title>
+      <link>/posts/average_pooling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/average_pooling/</guid>
+      <description>Tags: convolutional neural networks (cnn)
+Summarizes the average presence of a feature</description>
     </item>
     
     <item>
@@ -1032,6 +1136,19 @@ Changing frequency of electricity  https://www.instapaper.com/read/1338283216 El
     </item>
     
     <item>
+      <title>Barnett et al: International Organizations and the Diffusions of Power</title>
+      <link>/posts/barnett_et_al_international_organizations_and_the_diffusions_of_power/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/barnett_et_al_international_organizations_and_the_diffusions_of_power/</guid>
+      <description>Tags: papers, un and global governance lecture 1, political science
+Two schools of thought when it comes to IO&amp;rsquo;s
+ Do IO&amp;rsquo;s freeze existing configurations of power? Do IO&amp;rsquo;s pluralize power  IO&amp;rsquo;s are defenders and agents of reform, with the ability to provide compulsory powers and insitutional powers
+Compulsory powers: taking direct action, such as un peacekeeping, naming and shaming, etc
+Insitutional powers: setting the agenda, declaring people persona non-grata, classifiation</description>
+    </item>
+    
+    <item>
       <title>base period training</title>
       <link>/posts/20200415115031-base_period_training/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1039,6 +1156,15 @@ Changing frequency of electricity  https://www.instapaper.com/read/1338283216 El
       <guid>/posts/20200415115031-base_period_training/</guid>
       <description>Tags: Workouts
 Mountaineering objectives  2x max strength workout with Scott&amp;rsquo;s Killer Core Routine 1 long zone 1 workout with 25-30% of the weekly volume 1 zone 1-2 workout with 20% of the weekly volume on steep terrain Rest in zone 1 or recovery aerobic  Focus on</description>
+    </item>
+    
+    <item>
+      <title>basel committee on banking supervision</title>
+      <link>/posts/basel_committee_on_banking_supervision/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/basel_committee_on_banking_supervision/</guid>
+      <description>Tags: finance, terrorism</description>
     </item>
     
     <item>
@@ -1668,7 +1794,7 @@ Resources:  https://macropolo.org/  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/chomsky_grammar/</guid>
-      <description>Tags: computers, languages/lingustics
+      <description>Tags: computers, languages/linguistics
 Relationships to linguistics and algebra? Finite state machines? Links  https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0077 https://courses.engr.illinois.edu/cs373/sp2009/lectures/old/lect%5F15.pdf https://jeffe.cs.illinois.edu/teaching/algorithms/ https://en.wikipedia.org/wiki/Complexity%5Fclass http://jeffe.cs.illinois.edu/teaching/algorithms/models/05-context-free.pdf https://en.wikipedia.org/wiki/Decision%5Fproblem https://en.wikipedia.org/wiki/Formal%5Flanguage https://en.wikipedia.org/wiki/Chomsky%5Fhierarchy#Formal%5Fgrammars https://news.ycombinator.com/item?id=25167468  </description>
     </item>
     
@@ -1882,12 +2008,33 @@ US  The Senate’s consent to ratify the CTBT requires the acknowledgement of a 
     </item>
     
     <item>
+      <title>computational linguistics</title>
+      <link>/posts/computational_linguistics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/computational_linguistics/</guid>
+      <description>Tags: languages/linguistics
+ two possible motivations for research  technological: best performance on some applied task cognitive: single model with human-like performance across a broad range of abilities, plus biological/cognitive plausibility   what does success look like?  most nlu takes a behavioral approach, a modelis assumed to learn/understand iff  can perform the task on data that wasn&amp;rsquo;t used to build/train it (possibly) makes errors and uses resources similarily to humans   note that this sets aside the question of &amp;ldquo;what is understanding&amp;rdquo;, &amp;ldquo;what/when does conciousness emerge&amp;rdquo;, etc   what is the background for nlu need?</description>
+    </item>
+    
+    <item>
       <title>computational social science</title>
       <link>/posts/computational_social_science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/computational_social_science/</guid>
       <description>Tags: root, sociology</description>
+    </item>
+    
+    <item>
+      <title>computational syntax</title>
+      <link>/posts/computational_syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/computational_syntax/</guid>
+      <description>Tags: nlp, languages/linguistics
+Computational syntax is concerned about the questions of the structures of natural language sentences (grammar):
+ what kinds of representations allow you best to describe what sentences are grammatical/possible in a langauge? what kidns of sentence structure are and are not possible in any given human languages? to what extent are these grammatical rules langauge-specific and learnbed, and to what extend to they represent something universal about human cognition?</description>
     </item>
     
     <item>
@@ -2122,7 +2269,7 @@ Provides checkpointing and snapshotting of applications and containers to disk
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/culicover_and_rochemont_stress_and_focus_in_english/</guid>
-      <description>Tags: writing, papers, languages/lingustics
+      <description>Tags: writing, papers, languages/linguistics
 Attempts to generalize some forms of grammatical theory by looking at sentence stress</description>
     </item>
     
@@ -3197,12 +3344,21 @@ http://www.nobius.org/dbg/practical-file-system-design.pdf</description>
     </item>
     
     <item>
+      <title>financial action task force (FATF)</title>
+      <link>/posts/financial_action_task_force_fatf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/financial_action_task_force_fatf/</guid>
+      <description>Tags: finance, terrorism</description>
+    </item>
+    
+    <item>
       <title>financial discourse</title>
       <link>/posts/financial_discourse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/financial_discourse/</guid>
-      <description>Tags: finance, languages/lingustics
+      <description>Tags: finance, languages/linguistics
  buy side can say whatever they want, and the discourse has to follow it sell side sees way more messages chinese wall - private non-public information, people who trade cannot have leading advantage  sell-side players must be separate from buy side ones   financial discourse has become less informal, no formal standard way to make a market  </description>
     </item>
     
@@ -3214,6 +3370,15 @@ http://www.nobius.org/dbg/practical-file-system-design.pdf</description>
       <guid>/posts/finite_state_machines/</guid>
       <description>Tags: state machines
 Tools https://www.fsmpro.io/#feature-area</description>
+    </item>
+    
+    <item>
+      <title>fiqh</title>
+      <link>/posts/fiqh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/fiqh/</guid>
+      <description>Tags: islamic jurisprudence</description>
     </item>
     
     <item>
@@ -3293,7 +3458,7 @@ Static Files  https://github.com/nickjj/flask-static-digest https://whitenoise.e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/foreign_langugages_vs_programming_languages/</guid>
-      <description>Tags: articles, languages/lingustics, computers
+      <description>Tags: articles, languages/linguistics, computers
  https://news.mit.edu/2020/brain-reading-computer-code-1215 https://elifesciences.org/articles/58906 different parts of the brain are activated when reading computer code vs foreign languages  related links  http://web.mit.edu/9.s915/www/classes/duncan.pdf    https://arxiv.org/pdf/2011.07966.pdf https://en.wikipedia.org/wiki/Default%5Flogic https://en.wikipedia.org/wiki/Non-monotonic%5Flogic https://en.wikipedia.org/wiki/Abductive%5Freasoning https://en.wikipedia.org/wiki/John%5FHenry%5FWigmore https://news.ycombinator.com/item?id=25434854  </description>
     </item>
     
@@ -3303,7 +3468,8 @@ Static Files  https://github.com/nickjj/flask-static-digest https://whitenoise.e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/formal_semantics/</guid>
-      <description>Tags: computers</description>
+      <description>Tags: computers
+Computational Semantics  how do we represent meanings of words and sentences how do we derive the meanigs of words? how do we evaluate whether a sentence is true in a situation? how do we evaluate whether a sentence follows from another sentence? relationships to computational syntax  </description>
     </item>
     
     <item>
@@ -3462,6 +3628,16 @@ Fuzzing Image IO   https://www.instapaper.com/read/1303612511
     </item>
     
     <item>
+      <title>ganto&#39;s axe</title>
+      <link>/posts/ganto_s_axe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ganto_s_axe/</guid>
+      <description>Tags: episteme
+ One day Tokusan told his student Ganto, I have two monks who have been here for many years. Go and examine them. Ganto picked up an axe and went to the hut where the two monks were meditating. He raised the axe, saying, If you say a word I will cut off your heads; and if you do not say a word, I will also cut off your heads.</description>
+    </item>
+    
+    <item>
       <title>gasch: events, the dna of kubernetes</title>
       <link>/posts/gasch_events_the_dna_of_kubernetes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3568,6 +3744,17 @@ level two depends on a chain of isomorphisms</description>
     </item>
     
     <item>
+      <title>geb chapter 8 (typographical number theory)</title>
+      <link>/posts/geb_chapter_8_typographical_number_theory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/geb_chapter_8_typographical_number_theory/</guid>
+      <description>Tags: Hofstadter - Godel, Escher, Bach
+Begins confirming the godel&amp;rsquo;s incompleteness theorem, by creating a communicative type system that cannot describe itself
+Argues that if a system could describe itself, all number theory would become symbol shunting, a la hilbert</description>
+    </item>
+    
+    <item>
       <title>geb, ecology of mind, psychosis and islam blog post</title>
       <link>/posts/geb_ecology_of_mind_psychosis_and_islam_blog_post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3641,7 +3828,7 @@ Wrote homo sacer</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/gleitman_et_al_the_impossibility_of_language_acquisition_and_how_they_do_it/</guid>
-      <description>Tags: papers, languages/lingustics
+      <description>Tags: papers, languages/linguistics
 Major question to answer: when langauge input to the child is restricted, what is left to explain language acquisition?
 Thesis: Argument structure is encoded within syntax and children learn word meanings in epiphanies</description>
     </item>
@@ -4022,6 +4209,24 @@ Factions  internal leadership (gaza, west bank, prisons) external leadership (pa
     </item>
     
     <item>
+      <title>hanafi</title>
+      <link>/posts/hanafi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hanafi/</guid>
+      <description>Tags: islamic jurisprudence</description>
+    </item>
+    
+    <item>
+      <title>hanbali</title>
+      <link>/posts/hanbali/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hanbali/</guid>
+      <description>Tags: islamic jurisprudence</description>
+    </item>
+    
+    <item>
       <title>Haplin - Thirteen Ways to Make a Plural</title>
       <link>/posts/haplin_thirteen_ways_to_make_a_plural/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4067,7 +4272,7 @@ Factions  internal leadership (gaza, west bank, prisons) external leadership (pa
       
       <guid>/posts/hart_s_theory_of_law/</guid>
       <description>Tags: jurisprudence
- Hart considers the law as conferring powers and imposing duties Core focus on the soverign and soverign powers  States laws is a social rule   Counters austen&amp;rsquo;s theory of law  Austen&amp;rsquo;s theory of law has key issues  Duty imposing laws Continuity of laws Intelligbility of laws      3 Problems Addressed by Hart  Assume a pre-legal society where &amp;ldquo;laws&amp;rdquo; are social customs Problem of Uncertainty  What is a rule?</description>
+ Hart considers the law as conferring powers and imposing duties Core focus on the soverign and soverign powers  States laws is a social rule   Counters austin&amp;rsquo;s theory of law  Austen&amp;rsquo;s theory of law has key issues  Duty imposing laws Continuity of laws Intelligbility of laws      3 Problems Addressed by Hart  Assume a pre-legal society where &amp;ldquo;laws&amp;rdquo; are social customs Problem of Uncertainty  What is a rule?</description>
     </item>
     
     <item>
@@ -4193,6 +4398,18 @@ Align heart rate zones with training periods.
 4 Zones Zone 1 Basic endurance, 55-75% of max HR
  Low Speed. At low intensities, predominately using slow twitch (ST) muscle fibers, the rate of ATP production is modest.  Zone 2 No man&amp;rsquo;s land, 75-80% of max HR
  Note that this can &amp;ldquo;feel&amp;rdquo; like training, but the gains are small here. Zone 1 is a safer bet.  Zone 3 Uppermost aerobic training, 80-90% of max HR</description>
+    </item>
+    
+    <item>
+      <title>Held: The Diffusion of Authority</title>
+      <link>/posts/held_the_diffusion_of_authority/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/held_the_diffusion_of_authority/</guid>
+      <description>Tags: papers, un and global governance lecture 1
+Held, David. “The Diffusion of Authority.” In International Organization and Global Governance, 2018. http://search.ebscohost.com/login.aspx?direct=true&amp;amp;scope=site&amp;amp;db=nlebk&amp;amp;db=nlabk&amp;amp;AN=1692424.
+Talks about the rise of civil society and private organizations, especially in the sphere of finance, climate change, and security. Focuses on how in the vacuum of UN level organization, fracturing and regional level agreements have arisen
+ Rise of linkages of &amp;ldquo;domestic&amp;rdquo; organizations across sister states rise of private tribunals nonstate actors have gained their own powers, distinct from lobbying groups global governeance is not monolithic, but rather fractured  un sustainable development goals    security  why are states willing to diffuse authority?</description>
     </item>
     
     <item>
@@ -4386,6 +4603,15 @@ Discussion questions From Erin   Is the idea that to be post-ottoman in contempo
     </item>
     
     <item>
+      <title>humanitarian aid</title>
+      <link>/posts/humanitarian_aid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/humanitarian_aid/</guid>
+      <description>Tags: refugees, root</description>
+    </item>
+    
+    <item>
       <title>hussein ismail khalil</title>
       <link>/posts/hussein_ismail_khalil/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4568,6 +4794,16 @@ Refs:
     </item>
     
     <item>
+      <title>informers (k8s)</title>
+      <link>/posts/informers_k8s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/informers_k8s/</guid>
+      <description>Tags: kubernetes (k8s)
+ Gives higher level programming interface for most common use case of watches: in memory caching and fast lookup of objects by name or other properties basically an in-mem cache that sits between watch events and the user code has advanced error behaviors, such as correcting for when long-running watch connections break one of the main concepts of k8s design preferred over polling, but creates load on the API server, each binary should only instantiate one informer per GVR generated from a code generator and shipped as part of client-go register handlers, and then start the shared informer factory note: there is a lag between when the api server updates something and when the informer updates something note: never mutate objects from informers, always deep copy  </description>
+    </item>
+    
+    <item>
       <title>inifiband</title>
       <link>/posts/inifiband/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4642,6 +4878,15 @@ Specific Definitions Disarmament Disarmament is the collection, documentation, c
       <guid>/posts/integrated_information_theory/</guid>
       <description>Tags: math, episteme
 Field put forward by giulio tononi, assigns each system a number (phi) that is the measure of &amp;ldquo;integrated information&amp;rdquo; that is supposedly a measure of conciousness</description>
+    </item>
+    
+    <item>
+      <title>international criminal court</title>
+      <link>/posts/international_criminal_court/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/international_criminal_court/</guid>
+      <description>Tags: un</description>
     </item>
     
     <item>
@@ -4932,6 +5177,15 @@ Grammar خل + فعل  Let (imperative) + فعل Example:  Let us go: خل نر�
     </item>
     
     <item>
+      <title>islamic jurisprudence</title>
+      <link>/posts/islamic_jurisprudence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/islamic_jurisprudence/</guid>
+      <description>Tags: jurisprudence, islam</description>
+    </item>
+    
+    <item>
       <title>islamic modernism</title>
       <link>/posts/islamic_modernism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4983,6 +5237,15 @@ Chair of the exiled political office in damascus</description>
     </item>
     
     <item>
+      <title>ismaili</title>
+      <link>/posts/ismaili/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ismaili/</guid>
+      <description>Tags: islamic jurisprudence</description>
+    </item>
+    
+    <item>
       <title>israel</title>
       <link>/posts/israel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5009,6 +5272,15 @@ Similar groups:  http://drc-group.com/ https://www.cybrary.it/ https://portal.it
       <guid>/posts/ivory_coast/</guid>
       <description>Tags: africa
  https://www.jstor.org/stable/24589131?seq=10#metadata%5Finfo%5Ftab%5Fcontents  </description>
+    </item>
+    
+    <item>
+      <title>ja&#39;fari</title>
+      <link>/posts/ja_fari/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ja_fari/</guid>
+      <description>Tags: islamic jurisprudence</description>
     </item>
     
     <item>
@@ -5584,6 +5856,15 @@ References  https://math.stackexchange.com/questions/48981/the-langlands-program
     </item>
     
     <item>
+      <title>languages/linguistics</title>
+      <link>/posts/languages_lingustics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/languages_lingustics/</guid>
+      <description>Tags: root</description>
+    </item>
+    
+    <item>
       <title>languages/lingustics</title>
       <link>/posts/languages_lingustics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5753,6 +6034,25 @@ https://www.researchgate.net/publication/332719042%5FConflict%5Fresolution%5Fin%
       <guid>/posts/linear_algebra/</guid>
       <description>Tags: math
 Krylov Subspace  https://en.wikipedia.org/wiki/Krylov%5Fsubspace  Quantum Algorithms Via Linear Algebra  https://rjlipton.wordpress.com/2014/12/06/quantum-algorithms-via-linear-algebra-2/ Our saving grace is that although the linear algebraic objects—that is, the vectors and matrices—are so huge as to make “our computations” with them unscalable, the linear algebraic formulas do scale when put in succinct functional form.  </description>
+    </item>
+    
+    <item>
+      <title>ling 1012 lecture 1 - introduction and scope</title>
+      <link>/posts/lecture_1_introduction_and_scope/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/lecture_1_introduction_and_scope/</guid>
+      <description>Tags: ling-ga 1012 (nlp and semantics)
+ goal: conduct original research worthy of a top tier conference  do research on nlu drawining on ideas from linguistics, especially syntax and semantics  will be covered     what is nlu? formal semantics computational syntax quick history of nlp computational linguistics  </description>
+    </item>
+    
+    <item>
+      <title>ling-ga 1012 (nlp and semantics)</title>
+      <link>/posts/ling_ga_1012/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ling_ga_1012/</guid>
+      <description>Tags: classes, nlp</description>
     </item>
     
     <item>
@@ -5975,6 +6275,15 @@ Leading sairun (sadr political party) on the iraqi finance committee</descriptio
     </item>
     
     <item>
+      <title>maliki</title>
+      <link>/posts/maliki/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/maliki/</guid>
+      <description>Tags: islamic jurisprudence</description>
+    </item>
+    
+    <item>
       <title>malthus</title>
       <link>/posts/malthus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6092,6 +6401,16 @@ Nations are a product of capitalism, requires the bourgeoise</description>
       
       <guid>/posts/mauritania/</guid>
       <description>Tags: africa</description>
+    </item>
+    
+    <item>
+      <title>max pooling</title>
+      <link>/posts/max_pooling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/max_pooling/</guid>
+      <description>Tags: convolutional neural networks (cnn)
+finds the most activated feature</description>
     </item>
     
     <item>
@@ -6895,7 +7214,18 @@ Nicaraguan electricty is expensive due to inefficiency and US sanctions. Transpa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/nlp/</guid>
-      <description>Tags: ml, languages/lingustics</description>
+      <description>Tags: ml, languages/linguistics</description>
+    </item>
+    
+    <item>
+      <title>nlu</title>
+      <link>/posts/nlu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/nlu/</guid>
+      <description>Tags: nlp
+Natural langauge understanding
+ QA answering Semantic analysis Summarizationn Intent analysis Dialogue and digital assistants Semantic parsing Inference Paraphrase detection  </description>
     </item>
     
     <item>
@@ -7983,6 +8313,20 @@ Kube API basics
     </item>
     
     <item>
+      <title>programming kubernetes chapter 3 - client-go</title>
+      <link>/posts/programming_kubernetes_chapter_3_client_go/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/programming_kubernetes_chapter_3_client_go/</guid>
+      <description>Tags: hausenblas - programming kubernetes
+  Overview: controllers can be constructed by calling the client-go library, which provides a set of sensible defaults such as work queues and informers
+  https://github.com/kubernetes/client-go
+ most api types can be found under https://github.com/kubernetes/client-go/tree/master/listers    api definitions: https://github.com/kubernetes/api
+  https://github.com/kubernetes/apimachinery - generic building blocks to kube-like API, not restricted to container management
+ most of the generic API types (ObjectMeta, TypeMeta, GetOptions, ListOptions) are in https://github.</description>
+    </item>
+    
+    <item>
       <title>programming languages</title>
       <link>/posts/programming_languages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8177,6 +8521,20 @@ Each month, take card to bank, verify with fingerprint,. and receive payment in 
       <guid>/posts/query_optimizers/</guid>
       <description>Tags: sql
  https://www.vldb.org/pvldb/vol9/p204-leis.pdf  </description>
+    </item>
+    
+    <item>
+      <title>quick history of nlp</title>
+      <link>/posts/quick_history_of_nlp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/quick_history_of_nlp/</guid>
+      <description>Tags: nlp
+  1960&amp;rsquo;s - pattern matching and rules, unrealistic expectations
+ very large systems attempting symbolic representations    1970&amp;rsquo;s-80&amp;rsquo;s - linguistically rich, logic-driven systems, labor-intensive successes on few narrow tasks
+ working dialogue systems heavily engineered for specific domains    90&amp;rsquo;s-20&amp;rsquo;s - statistical revolution, machine learning becomes a central part of nlp
+  2010&amp;rsquo;s - deep learning takes off and accelerates progress
+ 2018-2019 - new surge of progress on unlabled data    result, progress is very fast, months to one year on lead times</description>
     </item>
     
     <item>
@@ -8425,6 +8783,15 @@ KV store</description>
       <guid>/posts/refactoring/</guid>
       <description>Tags: computers
 Books  https://martinfowler.com/books/refactoring.html  </description>
+    </item>
+    
+    <item>
+      <title>refugees</title>
+      <link>/posts/refugees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/refugees/</guid>
+      <description>Tags: political science</description>
     </item>
     
     <item>
@@ -9898,6 +10265,15 @@ https://en.m.wikipedia.org/wiki/Electrical%5Ftelegraphy%5Fin%5Fthe%5FUnited%5FKi
     </item>
     
     <item>
+      <title>terrorism</title>
+      <link>/posts/terrorism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/terrorism/</guid>
+      <description>Tags: political science</description>
+    </item>
+    
+    <item>
       <title>text boundary analysis</title>
       <link>/posts/text_boundary_analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10384,6 +10760,25 @@ R2P  Responsbility to protect  </description>
     </item>
     
     <item>
+      <title>UN and Global Governance</title>
+      <link>/posts/un_and_global_governance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/un_and_global_governance/</guid>
+      <description>Tags: classes, un
+un and global governance lecture 1 </description>
+    </item>
+    
+    <item>
+      <title>un and global governance lecture 1</title>
+      <link>/posts/un_and_global_governance_lecture_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/un_and_global_governance_lecture_1/</guid>
+      <description>Tags: UN and Global Governance</description>
+    </item>
+    
+    <item>
       <title>un development program (UNDP)</title>
       <link>/posts/un_development_program_undp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10413,6 +10808,15 @@ three pronged approach
     </item>
     
     <item>
+      <title>un sustainable development goals</title>
+      <link>/posts/un_sustainable_development_goals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/un_sustainable_development_goals/</guid>
+      <description>Tags: un</description>
+    </item>
+    
+    <item>
       <title>undersea fiber</title>
       <link>/posts/undersea_fiber/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10420,6 +10824,15 @@ three pronged approach
       <guid>/posts/undersea_fiber/</guid>
       <description>Tags: Networks -submarine cable map
  balancing act  budget physical constraints  ocean beds are often weird   usage growth estimates  up to next decade   repeater placement  extremely expensive   sharks  https://www.independent.co.uk/life-style/gadgets-and-tech/news/sharks-are-eating-the-internet-in-vietnam-9962747.html      iraq internet fiber  https://pinboard.in/cached/7fdc6a769248/ fiber backhaul is owned by Baghdad and KRG politicans very little room for new companies most backhauls are via the sea to EU and US servers shortest path to europe is from Iraq-Turkey pipe, but owned by https://en.</description>
+    </item>
+    
+    <item>
+      <title>unhcr</title>
+      <link>/posts/unhcr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/unhcr/</guid>
+      <description>Tags: un, refugees</description>
     </item>
     
     <item>
@@ -10438,6 +10851,15 @@ three pronged approach
       
       <guid>/posts/united_states/</guid>
       <description>Tags: americas</description>
+    </item>
+    
+    <item>
+      <title>unrwa</title>
+      <link>/posts/unrwa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/unrwa/</guid>
+      <description>Tags: un</description>
     </item>
     
     <item>
@@ -10859,6 +11281,15 @@ General secretary of of the iraqi communist party from 1941 to 1947</description
       <description>Tags: papers, Post-Ottoman Near East, europe, turkey
 Talks about the &amp;ldquo;Memory House of Ataturk&amp;rdquo; (mustafa kemal) as a focal point for macedonian ethnic identities, utilization of Ataturk as a symbol and claiming him (either through his lineage or pan-Turkishness) to be a rallying point.
  historical consciousness is not a homogenous but rather a multilayered and complex process which can encompass apparently contradicting narratives of the past, not only within one nation-state - pg 12</description>
+    </item>
+    
+    <item>
+      <title>zaydi</title>
+      <link>/posts/zaydi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/zaydi/</guid>
+      <description>Tags: islamic jurisprudence</description>
     </item>
     
     <item>
