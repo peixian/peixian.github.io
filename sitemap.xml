@@ -295,6 +295,10 @@
   </url>
   
   <url>
+    <loc>/posts/arabic_nlp/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/archives_introduction_org/</loc>
   </url>
   
@@ -304,6 +308,10 @@
   
   <url>
     <loc>/posts/are_experts_real/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/argentina/</loc>
   </url>
   
   <url>
@@ -491,6 +499,14 @@
   </url>
   
   <url>
+    <loc>/posts/berdal_what_are_the_limits_to_the_use_of_force_in_un_peacekeeping/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/bert/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/bertrand_russel/</loc>
   </url>
   
@@ -627,6 +643,10 @@
   </url>
   
   <url>
+    <loc>/posts/camel/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/camp_ashraf/</loc>
   </url>
   
@@ -703,6 +723,10 @@
   </url>
   
   <url>
+    <loc>/posts/chile/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/china/</loc>
   </url>
   
@@ -728,6 +752,10 @@
   
   <url>
     <loc>/posts/20200414222241-classes/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/claude_collective_security_as_an_approach_to_peace/</loc>
   </url>
   
   <url>
@@ -815,6 +843,10 @@
   </url>
   
   <url>
+    <loc>/posts/computer_graphics/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/computers/</loc>
   </url>
   
@@ -896,6 +928,10 @@
   
   <url>
     <loc>/posts/criu_kernal_checkpointing/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/cross_lingual/</loc>
   </url>
   
   <url>
@@ -1367,6 +1403,10 @@
   </url>
   
   <url>
+    <loc>/posts/force_intervention_brigade_fib/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/foreign_fighter_returnees_in_iraq/</loc>
   </url>
   
@@ -1548,6 +1588,10 @@
   
   <url>
     <loc>/posts/gorno_badakhasan/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/goulding_the_evolution_of_united_nations_peacekeeping/</loc>
   </url>
   
   <url>
@@ -1831,6 +1875,10 @@
   </url>
   
   <url>
+    <loc>/posts/hunt_all_necessary_means_to_what_ends/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/hussein_ismail_khalil/</loc>
   </url>
   
@@ -1928,6 +1976,10 @@
   
   <url>
     <loc>/posts/integrated_information_theory/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/interest_rates/</loc>
   </url>
   
   <url>
@@ -2052,6 +2104,10 @@
   
   <url>
     <loc>/posts/islamic_jurisprudence/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/islamic_jurisprudence_lecture_3/</loc>
   </url>
   
   <url>
@@ -2471,6 +2527,10 @@
   </url>
   
   <url>
+    <loc>/posts/macedonia/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/mahmoud_darwish/</loc>
   </url>
   
@@ -2768,6 +2828,10 @@
   
   <url>
     <loc>/posts/najaf/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/namibia/</loc>
   </url>
   
   <url>
@@ -3379,6 +3443,10 @@
   </url>
   
   <url>
+    <loc>/posts/question_answering/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/quick_history_of_nlp/</loc>
   </url>
   
@@ -3415,6 +3483,14 @@
   </url>
   
   <url>
+    <loc>/posts/ram_computer_memory/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/ramandan/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/ramon_erra/</loc>
   </url>
   
@@ -3428,6 +3504,14 @@
   
   <url>
     <loc>/posts/rasmussen_and_lind_coping_with_complexity/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/raspberry_pi_kubernetes_clusters/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/rasterization/</loc>
   </url>
   
   <url>
@@ -3520,6 +3604,10 @@
   
   <url>
     <loc>/posts/roam_themes/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/roberta/</loc>
   </url>
   
   <url>
@@ -3763,6 +3851,10 @@
   </url>
   
   <url>
+    <loc>/posts/sloan_white_corporate_islam/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/small_arms/</loc>
   </url>
   
@@ -3824,6 +3916,10 @@
   
   <url>
     <loc>/posts/south_korea/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/spac/</loc>
   </url>
   
   <url>
@@ -4083,6 +4179,10 @@
   </url>
   
   <url>
+    <loc>/posts/text_generation/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/textbooks/</loc>
   </url>
   
@@ -4211,6 +4311,10 @@
   </url>
   
   <url>
+    <loc>/posts/tsagourias_consent_neutrality_impartiality_and_the_use_of_force_in_peacekeeping/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/tsne/</loc>
   </url>
   
@@ -4275,6 +4379,18 @@
   </url>
   
   <url>
+    <loc>/posts/un_and_global_governance_lecture_2/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/un_and_governance_lecture_3/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/un_department_of_peacekeeping_dpko/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/un_development_program_undp/</loc>
   </url>
   
@@ -4299,7 +4415,27 @@
   </url>
   
   <url>
+    <loc>/posts/unifil/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/united_kingdom/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/united_nations_assistance_mission_to_iraq_unami/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/united_nations_multidimensional_integrated_stabilization_mission_in_mali_minusma/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/united_nations_multidimensional_integrated_stabilization_mission_in_the_central_african_republic_minusca/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/united_nations_stabilization_mission_in_the_democratic_republic_of_the_congo_monusco/</loc>
   </url>
   
   <url>
@@ -4312,6 +4448,10 @@
   
   <url>
     <loc>/posts/unsmear/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/uprisings_against_the_left/</loc>
   </url>
   
   <url>
@@ -4451,6 +4591,10 @@
   </url>
   
   <url>
+    <loc>/posts/xml_roberta/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/yassine_jaber/</loc>
   </url>
   
@@ -4476,6 +4620,18 @@
   
   <url>
     <loc>/posts/zadrozna_reconstructing_the_past_in_a_post_ottoman_village/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/zakat/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/zakat_al_fitrah/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/zakat_al_mal/</loc>
   </url>
   
   <url>

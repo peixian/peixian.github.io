@@ -750,6 +750,17 @@ https://github.com/kubernetes/apimachinery
     </item>
     
     <item>
+      <title>arabic nlp</title>
+      <link>/posts/arabic_nlp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/arabic_nlp/</guid>
+      <description>Tags: nlp
+Camel tools -&amp;gt; result of previous efforts, from madimira
+ https://colab.research.google.com/drive/1Y3qCbD6Gw1KEw-lixQx1rI6WlyWnrnDS?usp=sharing#scrollTo=aYsFJl0A5mua https://wti.kaust.edu.sa/upcoming-events/Machine-Learning-Arabic-NLP-Webinar/ml-webinar-2020-keynote-1  </description>
+    </item>
+    
+    <item>
       <title>archives-introduction.org</title>
       <link>/posts/archives_introduction_org/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -780,6 +791,15 @@ Articles  https://www.middleeasteye.net/news/internet-interrupted-how-middle-eas
       <guid>/posts/are_experts_real/</guid>
       <description>Tags: articles
 https://fantasticanachronism.com/2021/01/11/are-experts-real/</description>
+    </item>
+    
+    <item>
+      <title>argentina</title>
+      <link>/posts/argentina/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/argentina/</guid>
+      <description>Tags: latam</description>
     </item>
     
     <item>
@@ -1236,6 +1256,26 @@ Beath, Andrew, Fotini Christia, and Ruben Enikolopov. The National Solidarity Pr
     </item>
     
     <item>
+      <title>Berdal: What Are the Limits to the Use of Force in UN Peacekeeping?</title>
+      <link>/posts/berdal_what_are_the_limits_to_the_use_of_force_in_un_peacekeeping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/berdal_what_are_the_limits_to_the_use_of_force_in_un_peacekeeping/</guid>
+      <description>Tags: papers, un and governance lecture 3
+ Force does not solve all problems, and force and peacekeeping are two different things  We must understand that this means peacekeeping is only one part of it force only works in conjunction with the political ends, much like counterterrorism Simpson - War from the Ground Up     &amp;ldquo;For all its finely balanced and properly justified criticism of UN actions in Bosnia, that conclusion was also at the heart of the Srebrenica Report issued in 1999: &amp;ldquo;peacekeeping and war fighting are distinct activities and should not be mixed&amp;rdquo; (UN 1999a, 107).</description>
+    </item>
+    
+    <item>
+      <title>bert</title>
+      <link>/posts/bert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bert/</guid>
+      <description>Tags: nlp
+ https://huggingface.co/transformers/bertology.html\ https://github.com/huggingface/transformers/blob/master/examples/research%5Fprojects/bertology/run%5Fbertology.py  </description>
+    </item>
+    
+    <item>
       <title>bertrand russel</title>
       <link>/posts/bertrand_russel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1578,6 +1618,15 @@ Gave the prime minister power to organize the volunteers and provide them with n
     </item>
     
     <item>
+      <title>camel</title>
+      <link>/posts/camel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/camel/</guid>
+      <description>Tags: arabic nlp https://colab.research.google.com/drive/1Y3qCbD6Gw1KEw-lixQx1rI6WlyWnrnDS?usp=sharing#scrollTo=xsR9wuFT088o</description>
+    </item>
+    
+    <item>
       <title>camp ashraf</title>
       <link>/posts/camp_ashraf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1759,6 +1808,15 @@ Cheating as an indicator of stakes, not cheating as an indicator of respect
     </item>
     
     <item>
+      <title>chile</title>
+      <link>/posts/chile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/chile/</guid>
+      <description>Tags: latam</description>
+    </item>
+    
+    <item>
       <title>china</title>
       <link>/posts/china/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1826,6 +1884,18 @@ Relationships to linguistics and algebra? Finite state machines? Links  https://
       <guid>/posts/20200414222241-classes/</guid>
       <description>Tags: grad school
 MOOC&amp;rsquo;s https://news.ycombinator.com/item?id=23722680</description>
+    </item>
+    
+    <item>
+      <title>Claude: Collective Security as an Approach to Peace</title>
+      <link>/posts/claude_collective_security_as_an_approach_to_peace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/claude_collective_security_as_an_approach_to_peace/</guid>
+      <description>Tags: papers, un and global governance lecture 1
+Inis L. Claude Jr. “Collective Security as an Approach to Peace.” Accessed February 2, 2021.
+ Collective security is a halfway point between anarchy and world governement talks about how collective security has become a bandied about term, but means something completely different   The achievement of orthodox status is very often fatal to the integreity of a concept
+ </description>
     </item>
     
     <item>
@@ -2035,6 +2105,16 @@ US  The Senate’s consent to ratify the CTBT requires the acknowledgement of a 
       <description>Tags: nlp, languages/linguistics
 Computational syntax is concerned about the questions of the structures of natural language sentences (grammar):
  what kinds of representations allow you best to describe what sentences are grammatical/possible in a langauge? what kidns of sentence structure are and are not possible in any given human languages? to what extent are these grammatical rules langauge-specific and learnbed, and to what extend to they represent something universal about human cognition?</description>
+    </item>
+    
+    <item>
+      <title>computer graphics</title>
+      <link>/posts/computer_graphics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/computer_graphics/</guid>
+      <description>Tags: computers
+ https://gabrielgambetta.com/computer-graphics-from-scratch/  </description>
     </item>
     
     <item>
@@ -2255,6 +2335,15 @@ Provides checkpointing and snapshotting of applications and containers to disk
     </item>
     
     <item>
+      <title>cross-lingual</title>
+      <link>/posts/cross_lingual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cross_lingual/</guid>
+      <description>Tags: languages/linguistics, nlp</description>
+    </item>
+    
+    <item>
       <title>crypto (for cryptography)</title>
       <link>/posts/crypto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2407,7 +2496,7 @@ Talk  Career FF&amp;rsquo;s have an outside impact on the conflicts they go to T
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/ddr/</guid>
-      <description>Tags: militias l</description>
+      <description>Tags: militias</description>
     </item>
     
     <item>
@@ -3442,6 +3531,16 @@ Static Files  https://github.com/nickjj/flask-static-digest https://whitenoise.e
     </item>
     
     <item>
+      <title>force intervention brigade (FIB)</title>
+      <link>/posts/force_intervention_brigade_fib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/force_intervention_brigade_fib/</guid>
+      <description>Tags: un
+UN force deployed to united nations stabilization mission in the democratic republic of the congo (MONUSCO)</description>
+    </item>
+    
+    <item>
       <title>foreign fighter returnees in iraq</title>
       <link>/posts/foreign_fighter_returnees_in_iraq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3899,6 +3998,19 @@ https://hazine.info/google-ngram-for-historians/</description>
       <guid>/posts/gorno_badakhasan/</guid>
       <description>Tags: tajikistan
 Integration of Ismaili Pamiris  https://www.instapaper.com/read/1301237992 Resistance to Dushabe in middle of 1990&amp;rsquo;s  Gov has alternated between military crackdown and expanded assistence   Central government has not achieved much in promoting a common Taijik identity Lack of strong central Islamic law means intermarriage and burial within same cemeteries is allowed  </description>
+    </item>
+    
+    <item>
+      <title>Goulding: The Evolution of United Nations Peacekeeping</title>
+      <link>/posts/goulding_the_evolution_of_united_nations_peacekeeping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/goulding_the_evolution_of_united_nations_peacekeeping/</guid>
+      <description>Tags: un and global governance lecture 2, papers
+Questions  what if we created a reserve fund for peacekeepers instead of a reserve troop list? how does the six types goulding identifies prevent the reemergence of a state?  Summary 1990&amp;rsquo;s article that talks about how peacekeeping has evolved
+  originally peacekeeping was loosely derived from post-WW1 siutations
+  remarks that legitimacy is the UN&amp;rsquo;s key identifer
+  notes how unifil became a quasi-permanent force due to its ineffectiveness</description>
     </item>
     
     <item>
@@ -4612,6 +4724,17 @@ Discussion questions From Erin   Is the idea that to be post-ottoman in contempo
     </item>
     
     <item>
+      <title>Hunt: All Necessary Means to What ends?</title>
+      <link>/posts/hunt_all_necessary_means_to_what_ends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hunt_all_necessary_means_to_what_ends/</guid>
+      <description>Tags: papers, un, un and governance lecture 3
+Talks about how the transformation to a more forceful regime for UN peacekeepers has impaired neutrality and possibly foreclosed the humanitarian space
+Robustness on paper was only self-defense, but un department of peacekeeping (DPKO) has used it when force was necessary for the mandate of the mission, has therefore become the defacto case that peace enforcement becomes the business of the multinational coalitions authorized by the security council, and not the un</description>
+    </item>
+    
+    <item>
       <title>hussein ismail khalil</title>
       <link>/posts/hussein_ismail_khalil/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4701,7 +4824,7 @@ talks about ddr and gives a broad overview of three generations
       
       <guid>/posts/images/</guid>
       <description>Tags: computers
- Raster library: https://gdal.org/ satellites imagery: https://github.com/plant99/felicette  </description>
+ Raster library: https://gdal.org/ - rasterization satellites imagery: https://github.com/plant99/felicette  </description>
     </item>
     
     <item>
@@ -4878,6 +5001,15 @@ Specific Definitions Disarmament Disarmament is the collection, documentation, c
       <guid>/posts/integrated_information_theory/</guid>
       <description>Tags: math, episteme
 Field put forward by giulio tononi, assigns each system a number (phi) that is the measure of &amp;ldquo;integrated information&amp;rdquo; that is supposedly a measure of conciousness</description>
+    </item>
+    
+    <item>
+      <title>interest rates</title>
+      <link>/posts/interest_rates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/interest_rates/</guid>
+      <description>Tags: finance</description>
     </item>
     
     <item>
@@ -5186,6 +5318,15 @@ Grammar خل + فعل  Let (imperative) + فعل Example:  Let us go: خل نر�
     </item>
     
     <item>
+      <title>islamic jurisprudence lecture 3</title>
+      <link>/posts/islamic_jurisprudence_lecture_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/islamic_jurisprudence_lecture_3/</guid>
+      <description>Tags: islamic jurisprudence</description>
+    </item>
+    
+    <item>
       <title>islamic modernism</title>
       <link>/posts/islamic_modernism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5446,7 +5587,8 @@ Has a kataib hezbollah (kh) training camp</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/jurisprudence/</guid>
-      <description>Tags: root</description>
+      <description>Tags: root
+ https://en.wikipedia.org/wiki/Pure%5FTheory%5Fof%5FLaw#V.%5FThe%5FDynamic%5FAspect%5Fof%5FLaw https://en.wikipedia.org/wiki/The%5FConcept%5Fof%5FLaw  </description>
     </item>
     
     <item>
@@ -6215,6 +6357,15 @@ Covers 4 years, covers the 13in 2019 macbook air
     </item>
     
     <item>
+      <title>macedonia</title>
+      <link>/posts/macedonia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/macedonia/</guid>
+      <description>Tags: europe</description>
+    </item>
+    
+    <item>
       <title>Mahmoud Darwish</title>
       <link>/posts/mahmoud_darwish/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6969,6 +7120,15 @@ https://www.google.com/maps/place/Nahrawan,+Iraq/@33.3781296,44.6951887,15.16z/d
     </item>
     
     <item>
+      <title>namibia</title>
+      <link>/posts/namibia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/namibia/</guid>
+      <description>Tags: africa</description>
+    </item>
+    
+    <item>
       <title>nasiriyah</title>
       <link>/posts/nasiriyah/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7116,7 +7276,7 @@ Mohammad Fadel  No explicit islamic jurisprudence on contagions questions about 
       <guid>/posts/20200415154022-networks/</guid>
       <description>Tags: Computers
  Wireless networks  https://cse.sc.edu/~sur/papers/UbiG%5FMobiCom18.pdf
-Outages  https://cybersquirrel1.com/  </description>
+ https://gafferongames.com/  https://gafferongames.com/post/why%5Fcant%5Fi%5Fsend%5Fudp%5Fpackets%5Ffrom%5Fa%5Fbrowser/    Outages  https://cybersquirrel1.com/  </description>
     </item>
     
     <item>
@@ -7214,7 +7374,8 @@ Nicaraguan electricty is expensive due to inefficiency and US sanctions. Transpa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/nlp/</guid>
-      <description>Tags: ml, languages/linguistics</description>
+      <description>Tags: ml, languages/linguistics
+ http://nlpprogress.com/english/word%5Fsense%5Fdisambiguation.html https://huggingface.co/transformers/perplexity.html  </description>
     </item>
     
     <item>
@@ -8157,7 +8318,7 @@ Describes the case studies of el salvador, mozambique, cambodia, bosnia, and som
       
       <guid>/posts/presentation_tools/</guid>
       <description>Tags: computers
- https://www.deckset.com/ https://github.com/marp-team/marp https://github.com/jaspervdj/patat https://github.com/vinayak-mehta/present  https://github.com/vinayak-mehta/present/issues/43   https://github.com/connorferster/handcalcs  </description>
+ https://www.deckset.com/ https://github.com/marp-team/marp https://github.com/jaspervdj/patat https://github.com/vinayak-mehta/present  https://github.com/vinayak-mehta/present/issues/43   https://github.com/connorferster/handcalcs https://github.com/hiroppy/fusuma  </description>
     </item>
     
     <item>
@@ -8524,6 +8685,16 @@ Each month, take card to bank, verify with fingerprint,. and receive payment in 
     </item>
     
     <item>
+      <title>question answering</title>
+      <link>/posts/question_answering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/question_answering/</guid>
+      <description>Tags: nlp
+ https://huggingface.co/transformers/custom%5Fdatasets.html#qa-squad  </description>
+    </item>
+    
+    <item>
       <title>quick history of nlp</title>
       <link>/posts/quick_history_of_nlp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8621,6 +8792,25 @@ State owned bank</description>
     </item>
     
     <item>
+      <title>ram (computer memory)</title>
+      <link>/posts/ram_computer_memory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ram_computer_memory/</guid>
+      <description>Tags: computers
+ http://landley.net/writing/memory-faq.txt  </description>
+    </item>
+    
+    <item>
+      <title>ramandan</title>
+      <link>/posts/ramandan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ramandan/</guid>
+      <description>Tags: islam</description>
+    </item>
+    
+    <item>
       <title>ramon erra</title>
       <link>/posts/ramon_erra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8657,6 +8847,27 @@ State owned bank</description>
       <description>Tags: papers, complexity
 Talks about how people cope with complexity in power plants
 Decision models:  Take some data, integrate the data, evaluate and make a decision, and coordinate the acts with an intention in mind    Simple heuristics taken:  Thresholds - when a variable crosses an absolute threshold  Like a threshold in grafana - &amp;ldquo;IO wait in CPU usage occupying more than 50%, I know that the CPU is spending time waiting on IO, resolution is involved with IO&amp;rdquo;   Deviation from normal - when an experienced operator knows what is normal and what is not  Deviation from normal - &amp;ldquo;current time is outside of p99&amp;rdquo;    Abstraction Hierarchies   Physical form relates to the abstract function, which relates to the general understanding</description>
+    </item>
+    
+    <item>
+      <title>raspberry pi kubernetes clusters</title>
+      <link>/posts/raspberry_pi_kubernetes_clusters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/raspberry_pi_kubernetes_clusters/</guid>
+      <description>Tags: kubernetes (k8s)
+https://ubuntu.com/tutorials/how-to-kubernetes-cluster-on-raspberry-pi#4-installing-microk8s https://thepihut.com/blogs/raspberry-pi-tutorials/cluster-case-assembly-instructions https://opensource.com/article/20/6/kubernetes-raspberry-pi
+ https://github.com/FD-/RPiPlay  </description>
+    </item>
+    
+    <item>
+      <title>rasterization</title>
+      <link>/posts/rasterization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rasterization/</guid>
+      <description>Tags: computer graphics
+ https://web.archive.org/web/20120212184251/http://devmaster.net/forums/topic/1145-advanced-rasterization/  </description>
     </item>
     
     <item>
@@ -8891,6 +9102,16 @@ Example RFC: https://static1.squarespace.com/static/56ab961ecbced617ccd2461e/t/5
       <guid>/posts/roam_themes/</guid>
       <description>Tags: org-roam
 https://github.com/Azeirah/tokiwa-roam-theme</description>
+    </item>
+    
+    <item>
+      <title>roberta</title>
+      <link>/posts/roberta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/roberta/</guid>
+      <description>Tags: bert
+ https://arxiv.org/pdf/1907.11692.pdf https://ai.facebook.com/blog/roberta-an-optimized-method-for-pretraining-self-supervised-nlp-systems/  </description>
     </item>
     
     <item>
@@ -9480,6 +9701,17 @@ Summary  There is no logical spatial, or chronological, limit to the ‘War on T
     </item>
     
     <item>
+      <title>Sloan-White: Corporate Islam</title>
+      <link>/posts/sloan_white_corporate_islam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sloan_white_corporate_islam/</guid>
+      <description>Tags: books, islamic jurisprudence, islamic jurisprudence lecture 3
+Sloane-White, Patricia. Corporate Islam: Sharia and the Modern Workplace. Cambridge: Cambridge University Press, 2017. https://doi.org/10.1017/9781316875605.
+ Distinguishes zakat between zakat al-mal and zakat al-fitrah what are the possibilities of corruption in zakat based insitutions? strange interpretaion of zakat on income taxes? using human capital accumulation as the safety valve for capitalism instead of wealth accumluation? zakat as an economic motivator - banks can&amp;rsquo;t hold onto large cash reserves since zakat eats away at it are there interest rates in malaysia?</description>
+    </item>
+    
+    <item>
       <title>small arms stockpiling</title>
       <link>/posts/small_arms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -9642,6 +9874,17 @@ South yemen indendepence movement</description>
     </item>
     
     <item>
+      <title>spac</title>
+      <link>/posts/spac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/spac/</guid>
+      <description>Tags: finance
+special purpose acquisition company
+ https://www.nasdaq.com/articles/best-spac-stocks-to-buy-in-the-stock-market-today-4-for-your-list-2021-02-16  </description>
+    </item>
+    
+    <item>
       <title>spacetime</title>
       <link>/posts/spacetime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -9792,7 +10035,8 @@ Has a concept of a state price vector, which means any derivatives contrct can b
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/statistics/</guid>
-      <description>Tags: math</description>
+      <description>Tags: math
+ https://en.wikipedia.org/wiki/F-score  </description>
     </item>
     
     <item>
@@ -10285,6 +10529,16 @@ Chrome V8 detects text boundaries with:
     </item>
     
     <item>
+      <title>text generation</title>
+      <link>/posts/text_generation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/text_generation/</guid>
+      <description>Tags: nlp
+ https://paperswithcode.com/task/text-generation  </description>
+    </item>
+    
+    <item>
       <title>textbooks</title>
       <link>/posts/textbooks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10626,6 +10880,19 @@ https://trukker.com/</description>
     </item>
     
     <item>
+      <title>Tsagourias: Consent, Neutrality/Impartiality and the Use of Force in Peacekeeping</title>
+      <link>/posts/tsagourias_consent_neutrality_impartiality_and_the_use_of_force_in_peacekeeping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tsagourias_consent_neutrality_impartiality_and_the_use_of_force_in_peacekeeping/</guid>
+      <description>Tags: papers,un and governance lecture 3
+ Peacekeeping is based on the trinity of consent, neutrality/impartiality and the use of force in self-defence.
+ Talks about how neutrality has been abandoned, but the impartailty of force should make up for it
+Makes a clear distinction between a peacekeeping operation and a coercive peace enforcement action
+However, the UN must mediate between actors, and in selecting the actors it inherently legitimizes by making them a party to the negotiations</description>
+    </item>
+    
+    <item>
       <title>tsne</title>
       <link>/posts/tsne/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10766,7 +11033,7 @@ R2P  Responsbility to protect  </description>
       
       <guid>/posts/un_and_global_governance/</guid>
       <description>Tags: classes, un
-un and global governance lecture 1 </description>
+un and global governance lecture 1 un and global governance lecture 2 Final Paper Topics    </description>
     </item>
     
     <item>
@@ -10776,6 +11043,33 @@ un and global governance lecture 1 </description>
       
       <guid>/posts/un_and_global_governance_lecture_1/</guid>
       <description>Tags: UN and Global Governance</description>
+    </item>
+    
+    <item>
+      <title>un and global governance lecture 2</title>
+      <link>/posts/un_and_global_governance_lecture_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/un_and_global_governance_lecture_2/</guid>
+      <description>Tags: UN and Global Governance</description>
+    </item>
+    
+    <item>
+      <title>un and governance lecture 3</title>
+      <link>/posts/un_and_governance_lecture_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/un_and_governance_lecture_3/</guid>
+      <description>Tags: UN and Global Governance</description>
+    </item>
+    
+    <item>
+      <title>un department of peacekeeping (DPKO)</title>
+      <link>/posts/un_department_of_peacekeeping_dpko/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/un_department_of_peacekeeping_dpko/</guid>
+      <description>Tags: un</description>
     </item>
     
     <item>
@@ -10836,12 +11130,59 @@ three pronged approach
     </item>
     
     <item>
+      <title>unifil</title>
+      <link>/posts/unifil/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/unifil/</guid>
+      <description>Tags: un, lebanon, israel</description>
+    </item>
+    
+    <item>
       <title>united kingdom</title>
       <link>/posts/united_kingdom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/united_kingdom/</guid>
       <description>Tags: europe</description>
+    </item>
+    
+    <item>
+      <title>united nations assistance mission to iraq (unami)</title>
+      <link>/posts/united_nations_assistance_mission_to_iraq_unami/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/united_nations_assistance_mission_to_iraq_unami/</guid>
+      <description>Tags: un, iraq
+ https://dppa.un.org/en/mission/unami https://digitallibrary.un.org/search?ln=en&amp;amp;p=unami&amp;amp;f=&amp;amp;rm=&amp;amp;ln=en&amp;amp;sf=latest+first&amp;amp;so=d&amp;amp;rg=50&amp;amp;c=United+Nations+Digital+Library+System&amp;amp;of=hb&amp;amp;fti=0&amp;amp;fti=0  </description>
+    </item>
+    
+    <item>
+      <title>united nations multidimensional integrated stabilization mission in mali (MINUSMA)</title>
+      <link>/posts/united_nations_multidimensional_integrated_stabilization_mission_in_mali_minusma/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/united_nations_multidimensional_integrated_stabilization_mission_in_mali_minusma/</guid>
+      <description>Tags: mali</description>
+    </item>
+    
+    <item>
+      <title>united nations multidimensional integrated stabilization mission in the central african republic (MINUSCA)</title>
+      <link>/posts/united_nations_multidimensional_integrated_stabilization_mission_in_the_central_african_republic_minusca/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/united_nations_multidimensional_integrated_stabilization_mission_in_the_central_african_republic_minusca/</guid>
+      <description>Tags: un, central african republic (CAR)</description>
+    </item>
+    
+    <item>
+      <title>united nations stabilization mission in the democratic republic of the congo (MONUSCO)</title>
+      <link>/posts/united_nations_stabilization_mission_in_the_democratic_republic_of_the_congo_monusco/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/united_nations_stabilization_mission_in_the_democratic_republic_of_the_congo_monusco/</guid>
+      <description>Tags: democratic republic of the congo (DRC)
+ https://peacekeeping.un.org/en/mission/monusco  </description>
     </item>
     
     <item>
@@ -10870,6 +11211,17 @@ three pronged approach
       <guid>/posts/unsmear/</guid>
       <description>Tags: leap smearing
 lbirary for converting between unsmeared TAI and GPS timescales: https://github.com/google/unsmear</description>
+    </item>
+    
+    <item>
+      <title>uprisings against the left</title>
+      <link>/posts/uprisings_against_the_left/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/uprisings_against_the_left/</guid>
+      <description>Tags: talks
+Anthony Alessandrini
+ end of &amp;ldquo;white populism&amp;rdquo; as a fever dream https://jps.library.utoronto.ca/index.php/des/article/view/18630 white working class fails to achieve a class conciousness  engagement and move towards white elites   is it a violence indentended to maintain the current state of violence constellation of alternatives - angela davis right using BLM and antifa, by terming these over and over, have really set the stage for discussion  Cubukcu Ayca</description>
     </item>
     
     <item>
@@ -11208,6 +11560,16 @@ ProvisionQL for looking at ipas and provisions  https://github.com/ealeksandrov/
     </item>
     
     <item>
+      <title>xml-roberta</title>
+      <link>/posts/xml_roberta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/xml_roberta/</guid>
+      <description>Tags: bert, cross-lingual, roberta
+ https://huggingface.co/transformers/model%5Fdoc/xlmroberta.html  </description>
+    </item>
+    
+    <item>
       <title>yassine jaber</title>
       <link>/posts/yassine_jaber/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -11281,6 +11643,35 @@ General secretary of of the iraqi communist party from 1941 to 1947</description
       <description>Tags: papers, Post-Ottoman Near East, europe, turkey
 Talks about the &amp;ldquo;Memory House of Ataturk&amp;rdquo; (mustafa kemal) as a focal point for macedonian ethnic identities, utilization of Ataturk as a symbol and claiming him (either through his lineage or pan-Turkishness) to be a rallying point.
  historical consciousness is not a homogenous but rather a multilayered and complex process which can encompass apparently contradicting narratives of the past, not only within one nation-state - pg 12</description>
+    </item>
+    
+    <item>
+      <title>zakat</title>
+      <link>/posts/zakat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/zakat/</guid>
+      <description>Tags: islam</description>
+    </item>
+    
+    <item>
+      <title>zakat al-fitrah</title>
+      <link>/posts/zakat_al_fitrah/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/zakat_al_fitrah/</guid>
+      <description>Tags: zakat
+zakat done at the end of ramandan</description>
+    </item>
+    
+    <item>
+      <title>zakat al-mal</title>
+      <link>/posts/zakat_al_mal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/zakat_al_mal/</guid>
+      <description>Tags: zakat
+ordinary zakat given during any time</description>
     </item>
     
     <item>
