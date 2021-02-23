@@ -33,11 +33,13 @@
 <h1>
     Graph of all notes. Drag/pan/zoom, and click to navigate to a specific note.
 </h1>
+<h2 id="loading">Loading...</h2>
     <a id="help" href="http://space.af/blog/2020/12/19/community-detection-on-notes-with-org-roam-and-d3/">What is this?</a>
 <body>
 
 </body>
 <script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="force-building.js"></script>
 <script>
  const simulationDurationInMs = 30000; // 30 seconds
 
@@ -82,7 +84,8 @@
                           .force("link", d3.forceLink(links).id(d => d.id).distance(0).strength(.25))
                           .force("charge", d3.forceManyBody().strength(-100))
                           .force("x", d3.forceX())
-                          .force("y", d3.forceY());
+                          .force("y", d3.forceY())
+                          .stop();
 
        simulation.force('link')
                  .links(data.links);
@@ -142,6 +145,7 @@
                      .attr("stroke-width", d => Math.sqrt(d.value));
 
 
+
        const node = g
            .attr("stroke", "#fff")
            .attr("stroke-width", 1.5)
@@ -167,25 +171,49 @@
                div.style("opacity", 0);
            })
            .on('mouseout.fade', fade(1, 0.6));
-           //.call(drag(simulation));
+       //.call(drag(simulation));
 
-
-       simulation.on("tick", () => {
-           if (Date.now() < endTime) {
-               link
-                   .attr("x1", d => d.source.x)
-                   .attr("y1", d => d.source.y)
-                   .attr("x2", d => d.target.x)
-                   .attr("y2", d => d.target.y);
-
-               node
-                   .attr("cx", d => d.x)
-                   .attr("cy", d => d.y);
-           } else {
-               simulation.stop();
-           }
-
+       simulation.tick(300);
+       document.querySelector('#loading').style.display = 'none';
+       let nlinks = links.map(function(l) {
+           return {"target": l.target.id, "source": l.source.id}
        });
+       let nnodes = nodes.reduce(function(acc, cur, i) {
+           acc[cur.id] = cur;
+           return acc;
+       }, {});
+
+       /* console.log(nnodes);
+        * console.log(nlinks); */
+       /* var fbundling = d3.ForceEdgeBundling().nodes(nnodes).edges(nlinks);
+	      var results   = fbundling();
+        */
+
+
+       node.attr("cx", function(d) { return d.x; })
+           .attr("cy", function(d) { return d.y; })
+       link
+           .attr("x1", d => d.source.x)
+           .attr("y1", d => d.source.y)
+           .attr("x2", d => d.target.x)
+           .attr("y2", d => d.target.y);
+       /*
+        *        simulation.on("tick", () => {
+        *            if (Date.now() < endTime) {
+        *                link
+        *                    .attr("x1", d => d.source.x)
+        *                    .attr("y1", d => d.source.y)
+        *                    .attr("x2", d => d.target.x)
+        *                    .attr("y2", d => d.target.y);
+        *
+        *                node
+        *                    .attr("cx", d => d.x)
+        *                    .attr("cy", d => d.y);
+        *            } else {
+        *                simulation.stop();
+        *            }
+        *
+        *        }); */
 
 
        //add zoom capabilities

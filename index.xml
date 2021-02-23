@@ -755,7 +755,7 @@ https://github.com/kubernetes/apimachinery
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/arabic_nlp/</guid>
-      <description>Tags: nlp
+      <description>Tags: nlp, arabic
 Camel tools -&amp;gt; result of previous efforts, from madimira
  https://colab.research.google.com/drive/1Y3qCbD6Gw1KEw-lixQx1rI6WlyWnrnDS?usp=sharing#scrollTo=aYsFJl0A5mua https://wti.kaust.edu.sa/upcoming-events/Machine-Learning-Arabic-NLP-Webinar/ml-webinar-2020-keynote-1  </description>
     </item>
@@ -1261,7 +1261,7 @@ Beath, Andrew, Fotini Christia, and Ruben Enikolopov. The National Solidarity Pr
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/berdal_what_are_the_limits_to_the_use_of_force_in_un_peacekeeping/</guid>
-      <description>Tags: papers, un and governance lecture 3
+      <description>Tags: papers, un and global governance lecture 3
  Force does not solve all problems, and force and peacekeeping are two different things  We must understand that this means peacekeeping is only one part of it force only works in conjunction with the political ends, much like counterterrorism Simpson - War from the Ground Up     &amp;ldquo;For all its finely balanced and properly justified criticism of UN actions in Bosnia, that conclusion was also at the heart of the Srebrenica Report issued in 1999: &amp;ldquo;peacekeeping and war fighting are distinct activities and should not be mixed&amp;rdquo; (UN 1999a, 107).</description>
     </item>
     
@@ -1303,6 +1303,26 @@ Author of the principa mathmatica</description>
       <guid>/posts/bharatiya_janata_party_bjp/</guid>
       <description>Tags: india
 Modi&amp;rsquo;s party</description>
+    </item>
+    
+    <item>
+      <title>bias nlp project</title>
+      <link>/posts/bias_nlp_project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bias_nlp_project/</guid>
+      <description>Tags: ling-ga 1012 (nlp and semantics), nlp
+ https://huggingface.co/datasets/md%5Fgender%5Fbias#dataset-description https://docs.google.com/document/d/1ELNs90-7rrgUcoRsRVjvjsp%5FN7siBTGWpvl9v5e8KKU/edit#heading=h.npe3cfgliatb https://docs.google.com/document/d/1MQ2GfjKVbE3NNZid3ZmKm8q3EMVCYabAEPEvyTQnnkI/edit  </description>
+    </item>
+    
+    <item>
+      <title>bikepacking</title>
+      <link>/posts/bikepacking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bikepacking/</guid>
+      <description>Tags: personal
+ https://bikepacking.com/bikepacking-routes/ https://bicycles.stackexchange.com/questions/2658/how-bad-is-road-salt-for-my-bike https://bikepacking.com/bikepacking-101/ https://www.rei.com/learn/expert-advice/how-to-plan-a-bikepacking-route.html?series=intro-to-bikepacking https://www.rei.com/learn/expert-advice/bikepacking.html  maintence  https://www.rei.com/learn/expert-advice/bike-maintenance.html https://www.nytimes.com/wirecutter/reviews/best-rain-gear-for-biking/ https://www.nytimes.com/wirecutter/reviews/best-bike-patch-kit/ https://www.nytimes.com/wirecutter/reviews/cheap-bike-accessories/#a-spare-tire-tube https://www.rei.com/learn/expert-advice/how-to-clean-a-bike.html https://www.nytimes.com/wirecutter/reviews/best-bike-rack-basket-panniers/ https://www.amazon.com/dp/B01CLVRRL0/?tag=thewire06-20&amp;amp;linkCode=xm2&amp;amp;ascsubtag=AwEAAAAAAAAAAXLm https://www.rei.com/product/149696/ortlieb-twin-city-pannier-single https://surlybikes.com/bikes/pack%5Frat https://www.rei.com/blog/cycle/whats-the-difference-between-rim-brakes-and-disc-brakes  </description>
     </item>
     
     <item>
@@ -1399,6 +1419,17 @@ Collective punishment heightens group identities, such as the case of:
     </item>
     
     <item>
+      <title>Blocq: The Fog of UN Peacekeeping</title>
+      <link>/posts/blocq_the_fog_of_un_peacekeeping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blocq_the_fog_of_un_peacekeeping/</guid>
+      <description>Tags: un and global governance lecture 4, papers
+Blocq, Daniel S. “The Fog of UN Peacekeeping: Ethical Issues Regarding the Use of Force to Protect Civilians in UN Operations.” Journal of Military Ethics 5, no. 3 (November 2006): 201–13. https://doi.org/10.1080/15027570600911928.
+ Argues that UN peacekeepers need to determine a moralistic and new approach post-Brahimi report Asks that the rules of engagement be reconsidered, that modern day peacekeepers must take on a moralistic, and not only legalistic, perspective to this Peacekeepers must be prepared to operate in a &amp;ldquo;fog&amp;rdquo;  Highlights  democratic republic of the congo (DRC), sierra leone, and cote d&amp;rsquo;ivore were the ones explicitly allowed in 2006 to use force Hammarskjold developed the peacekeeping model following the Suez crisis   </description>
+    </item>
+    
+    <item>
       <title>Blumi - Ottoman Refugees, 1878-1939</title>
       <link>/posts/20200416084831-blumi_ottoman_refugees_1878_1939/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1484,6 +1515,17 @@ Discussion  Richard Hamming - Everything starts with fluids or dyanmics Brett Vi
       <description>Tags: finance
 Plan implemented in 1989 for Latin America, Eastern Europe, and African countries, US lead debt restructuring program that created by Brady bonds backed by zero-coupon US treasury bonds or funds from IMF or World Bank.
  Transformed commerial bank loans into collateralized bonds https://www.emta.org/em-background/the-brady-plan/  </description>
+    </item>
+    
+    <item>
+      <title>Brahimi report</title>
+      <link>/posts/brahimi_report/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/brahimi_report/</guid>
+      <description>Tags: un
+Large report on how the UN un department of peacekeeping (DPKO) operations need to be changed in light of recent conflicts
+&amp;ldquo;In 2000, the Brahimi Report proposed important doctrinal changes. The document suggested a cautious move from the narrow, Cold War inspired objectives of national security to the broader, post Cold War inspired ambitions of collective human security (Peou 2002: 51). Rather than perceiving people as citizens of particular states, the philosophy underlying human security regards all human beings as part of a global, state-transcending, community.</description>
     </item>
     
     <item>
@@ -1623,7 +1665,8 @@ Gave the prime minister power to organize the volunteers and provide them with n
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/camel/</guid>
-      <description>Tags: arabic nlp https://colab.research.google.com/drive/1Y3qCbD6Gw1KEw-lixQx1rI6WlyWnrnDS?usp=sharing#scrollTo=xsR9wuFT088o</description>
+      <description>Tags: arabic nlp
+https://colab.research.google.com/drive/1Y3qCbD6Gw1KEw-lixQx1rI6WlyWnrnDS?usp=sharing#scrollTo=xsR9wuFT088o</description>
     </item>
     
     <item>
@@ -2281,7 +2324,8 @@ An argument is valid iff: under all circumstances in which the presmises would b
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/cote_d_ivore/</guid>
-      <description>Tags: africa</description>
+      <description>Tags: africa
+ https://www.jstor.org/stable/24589131?seq=10#metadata%5Finfo%5Ftab%5Fcontents  </description>
     </item>
     
     <item>
@@ -2716,6 +2760,16 @@ Domain Fronting in Signal  What is domain fronting?  History  Cozy Bear in 2017 
       
       <guid>/posts/dominican_republic/</guid>
       <description>Tags: latam</description>
+    </item>
+    
+    <item>
+      <title>dos Santos et al: Improving Security of United Nations Peacekeepers</title>
+      <link>/posts/dos_santos_et_al_improving_security_of_united_nations_peacekeepers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dos_santos_et_al_improving_security_of_united_nations_peacekeepers/</guid>
+      <description>Tags: un and global governance lecture 3, papers
+ since 2013, 195 have died Non-state actors create new dangers lack of pre-deployment training exposes problems spikes in casualities starting in 2011, continues until today claims that people plan peacekeeping missions w/o being aware of the risks combination of defensive posture, risk-adverse usage of force, and unwise risk taking leads to deaths poor combination of lack of intelligence, poor information sharing, and bad training makes for unmeshed peacekeeping operations missions are large, various bureacratic turf wars for operations and logistics  key problems  organization level of the UN has not adapted leadership is lacking, especially @ sector commander level missions have unmmaned, undermanned, and ill-equipped troops failure to have strong response after serious attacks lets criminals operate with inpunity pre-deployment readiness must be followed, no more caveats in mission training, less cycling of troops (most troops leave every 6 months) poor infrastructure in country threatens all IED detection and attacks on camps/bases lacking intelligence field health care also lacking mission footprint needs to be oriented mutual accountability by all  </description>
     </item>
     
     <item>
@@ -3531,6 +3585,17 @@ Static Files  https://github.com/nickjj/flask-static-digest https://whitenoise.e
     </item>
     
     <item>
+      <title>force bundling for graphs</title>
+      <link>/posts/force_bundling_for_graphs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/force_bundling_for_graphs/</guid>
+      <description>Tags: notes graph
+ use https://github.com/synesenom/fdeb for faster graph bundling use offline d3 for generating the x and y positions use http://bl.ocks.org/upphiminn/6515478 and https://github.com/upphiminn/d3.ForceBundle for graphs  source:
+ https://www.data-to-viz.com/graph/edge%5Fbundling.html https://notes.andymatuschak.org/Approaches%5Ffor%5Fvisualizing%5Flarge%5Fgraphs  </description>
+    </item>
+    
+    <item>
       <title>force intervention brigade (FIB)</title>
       <link>/posts/force_intervention_brigade_fib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3998,6 +4063,16 @@ https://hazine.info/google-ngram-for-historians/</description>
       <guid>/posts/gorno_badakhasan/</guid>
       <description>Tags: tajikistan
 Integration of Ismaili Pamiris  https://www.instapaper.com/read/1301237992 Resistance to Dushabe in middle of 1990&amp;rsquo;s  Gov has alternated between military crackdown and expanded assistence   Central government has not achieved much in promoting a common Taijik identity Lack of strong central Islamic law means intermarriage and burial within same cemeteries is allowed  </description>
+    </item>
+    
+    <item>
+      <title>Gorur and Sharland: Prioritizing the Protection of Civilians in UN Peace Operations</title>
+      <link>/posts/gorur_and_sharland_prioritizing_the_protection_of_civilians_in_un_peace_operations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gorur_and_sharland_prioritizing_the_protection_of_civilians_in_un_peace_operations/</guid>
+      <description>Tags: un and global governance lecture 4, papers
+ Identifies that most mandates, when it comes to choosing between some objectives and the protection of civilians objective, due to the ambiguity of the protection of civilians, has not been able to accomplish as much in POC Post-2015 High-Level Independent Panel on UN Peace Operations (HIPPO) suggested the &amp;ldquo;sequenced mandates&amp;rdquo; idea  mitigates the &amp;ldquo;cookie-cutter&amp;rdquo; mandates that are bloated also allows the inclusion of activities that may be necessary, and the exclusion of activities that may be the wrong time argues that mission specific objetives set out by the security council may be harmful, might be best to do a phased mandate where the mandate reevaluates its objectives within 2/6 months   risks of phased mandates  adjustment too frequently leaves missions unable to plan successfully political attention to a crisis may decline over time, so mandate revisions may be problematic conditions on the ground change rapidly, conditions may change from a recently-adjusted madate.</description>
     </item>
     
     <item>
@@ -4567,6 +4642,16 @@ https://www.it.uu.se/research/group/hipe/</description>
     </item>
     
     <item>
+      <title>High-Level Independent Panel on UN Peace Operations (HIPPO)</title>
+      <link>/posts/high_level_independent_panel_on_un_peace_operations_hippo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/high_level_independent_panel_on_un_peace_operations_hippo/</guid>
+      <description>Tags: un peacekeeping
+2015 panel that described the growing gap between the mandate&amp;rsquo;s role to protect civilians and their inability to</description>
+    </item>
+    
+    <item>
       <title>Higher Ed Readings</title>
       <link>/posts/higher-ed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4729,7 +4814,7 @@ Discussion questions From Erin   Is the idea that to be post-ottoman in contempo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/hunt_all_necessary_means_to_what_ends/</guid>
-      <description>Tags: papers, un, un and governance lecture 3
+      <description>Tags: papers, un, un and global governance lecture 3
 Talks about how the transformation to a more forceful regime for UN peacekeepers has impaired neutrality and possibly foreclosed the humanitarian space
 Robustness on paper was only self-defense, but un department of peacekeeping (DPKO) has used it when force was necessary for the mandate of the mission, has therefore become the defacto case that peace enforcement becomes the business of the multinational coalitions authorized by the security council, and not the un</description>
     </item>
@@ -5411,8 +5496,7 @@ Similar groups:  http://drc-group.com/ https://www.cybrary.it/ https://portal.it
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/ivory_coast/</guid>
-      <description>Tags: africa
- https://www.jstor.org/stable/24589131?seq=10#metadata%5Finfo%5Ftab%5Fcontents  </description>
+      <description>Tags: africa</description>
     </item>
     
     <item>
@@ -7410,6 +7494,19 @@ https://en.wikipedia.org/wiki/Normal%5Ftype</description>
     </item>
     
     <item>
+      <title>normalization and capitalization in nlp blog post</title>
+      <link>/posts/normalization_and_capitalization_in_nlp_blog_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/normalization_and_capitalization_in_nlp_blog_post/</guid>
+      <description>Tags: drafts, nlp, arabic nlp
+Capitalization affects how models perform (we&amp;rsquo;ve seen this at work)
+Normalization definitely affects how models perform, but most arabic models already normalize (camel, Zampieri et al: SemEval-2020 Task 12: Multilingual Offensive Language Identiﬁcation in Social Media (OffensEval 2020)), etc.
+What are we losing with normalizing? What are we losing with case folding?
+ https://nlp.stanford.edu/IR-book/html/htmledition/capitalizationcase-folding-1.html NER and entity linking Preprocessing is normalizing and reducing casing without much thought  increases the consistency of the output by reducing the search space, but has the problem of losing potential context example: spongbob text encodes sentiment this becomes more problematic with arabic, since diacritziation actually has meaning  arabizi et al      Draft Currently, most natural langauge processing models have a pre-processing stage, where the text itself is cleaned up, before feeding into the model.</description>
+    </item>
+    
+    <item>
       <title>notation as a tool of thought</title>
       <link>/posts/notation_as_a_tool_of_thought/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7864,7 +7961,7 @@ Resources  Timothy Mitchell, &amp;ldquo;Rule of Experts&amp;rdquo; Aaron Jakes -
       
       <guid>/posts/pareto_optimal/</guid>
       <description>Tags: personal
-Goal  Statistics optimal, nlp specialization between arabic/mandarin/english, able to construct reintegration programs for post-conflict passable knowledge at math/physics/soft stuff declining this in favor of focus on others  Status   good at statistics &amp;lt;- not doing anything for this currently
+ https://en.wikipedia.org/wiki/Pareto%5Fefficiency  Goal  Statistics optimal, nlp specialization between arabic/mandarin/english, able to construct reintegration programs for post-conflict passable knowledge at math/physics/soft stuff declining this in favor of focus on others  Status   good at statistics &amp;lt;- not doing anything for this currently
  Doing probability theory first and starting from the bottom again Possibily statistics for programmers?    good at ddr, post-conflict &amp;lt;- reading and learning</description>
     </item>
     
@@ -10885,7 +10982,7 @@ https://trukker.com/</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/tsagourias_consent_neutrality_impartiality_and_the_use_of_force_in_peacekeeping/</guid>
-      <description>Tags: papers,un and governance lecture 3
+      <description>Tags: papers,un and global governance lecture 3
  Peacekeeping is based on the trinity of consent, neutrality/impartiality and the use of force in self-defence.
  Talks about how neutrality has been abandoned, but the impartailty of force should make up for it
 Makes a clear distinction between a peacekeeping operation and a coercive peace enforcement action
@@ -11033,7 +11130,7 @@ R2P  Responsbility to protect  </description>
       
       <guid>/posts/un_and_global_governance/</guid>
       <description>Tags: classes, un
-un and global governance lecture 1 un and global governance lecture 2 Final Paper Topics    </description>
+un and global governance lecture 1 un and global governance lecture 2 un and global governance lecture 3 un and global governance lecture 4 Final Paper Topics    </description>
     </item>
     
     <item>
@@ -11051,6 +11148,24 @@ un and global governance lecture 1 un and global governance lecture 2 Final Pape
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/un_and_global_governance_lecture_2/</guid>
+      <description>Tags: UN and Global Governance</description>
+    </item>
+    
+    <item>
+      <title>un and global governance lecture 3</title>
+      <link>/posts/un_and_global_governance_lecture_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/un_and_global_governance_lecture_3/</guid>
+      <description>Tags: UN and Global Governance</description>
+    </item>
+    
+    <item>
+      <title>un and global governance lecture 4</title>
+      <link>/posts/un_and_global_governance_lecture_4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/un_and_global_governance_lecture_4/</guid>
       <description>Tags: UN and Global Governance</description>
     </item>
     
@@ -11321,6 +11436,16 @@ VPS Hosting providers:
       <guid>/posts/walid_jumblatt/</guid>
       <description>Tags: lebanon, people
 Lebanese Druze leader</description>
+    </item>
+    
+    <item>
+      <title>war diary nlp project</title>
+      <link>/posts/war_diary_nlp_project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/war_diary_nlp_project/</guid>
+      <description>Tags: project ideas, nlp
+ https://wikileaks.org/afg/ - afghanistan  https://www.wikileaks.org/wiki/Afghan%5FWar%5FDiary,%5F2004-2010   https://wardiaries.wikileaks.org/search/ https://www.iraqbodycount.org/database/incidents/k4724 https://airwars.org/civilian-casualties/?belligerent=coalition&amp;amp;country=iraq https://wikileaks.org/irq/event/2007/03/IRQ20070315n8.html https://www.iraqbodycount.org/database/ - iraq  https://www.iraqbodycount.org/analysis/numbers/warlogs/ https://www.iraqbodycount.org/analysis/beyond/warlogs/   https://www.nber.org/papers/w16152 https://www.iraqbodycount.org/analysis/beyond/warlogs/ https://www.iraqbodycount.org/database/incidents/k4724  </description>
     </item>
     
     <item>
@@ -11672,6 +11797,17 @@ zakat done at the end of ramandan</description>
       <guid>/posts/zakat_al_mal/</guid>
       <description>Tags: zakat
 ordinary zakat given during any time</description>
+    </item>
+    
+    <item>
+      <title>Zampieri et al: SemEval-2020 Task 12: Multilingual Offensive Language Identiﬁcation in Social Media (OffensEval 2020)</title>
+      <link>/posts/zampieri_et_al_semeval_2020_task_12_multilingual_offensive_language_identi%EF%AC%81cation_in_social_media_offenseval_2020/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/zampieri_et_al_semeval_2020_task_12_multilingual_offensive_language_identi%EF%AC%81cation_in_social_media_offenseval_2020/</guid>
+      <description>Tags: papers, nlp, bias nlp project, arabic nlp
+Summary   Set up a set of classification tasks for offensive language across multiple languages
+ Identification of offensive languages (y/n on whether something is offensive) Automatic categorization of offensive types (targeted or not targeted?)  targeted - insults towards a group or individual not targeted - profanity or swearing   Target identification (invidual, group, other)  other category includes organizations, events, issues      Used the Offensive Language Identification Dataset (OLID), a 14k+ english tweets with the three types of identification labeled\</description>
     </item>
     
     <item>
