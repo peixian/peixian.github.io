@@ -678,6 +678,15 @@ Gas attacks under Baath that killed over 200,000 Kurds</description>
     </item>
     
     <item>
+      <title>annotations</title>
+      <link>/posts/annotations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/annotations/</guid>
+      <description>Tags: ml</description>
+    </item>
+    
+    <item>
       <title>Anscombe - State, Faith, and Nation</title>
       <link>/posts/20200415213157-anscombe_state_faith_and_nation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1272,7 +1281,11 @@ Beath, Andrew, Fotini Christia, and Ruben Enikolopov. The National Solidarity Pr
       
       <guid>/posts/bert/</guid>
       <description>Tags: nlp
- https://huggingface.co/transformers/bertology.html\ https://github.com/huggingface/transformers/blob/master/examples/research%5Fprojects/bertology/run%5Fbertology.py  </description>
+  https://huggingface.co/transformers/bertology.html\
+  https://github.com/huggingface/transformers/blob/master/examples/research%5Fprojects/bertology/run%5Fbertology.py
+  attention vs self-attention
+  attention is an operator that lets you collapse a sequence of vectors into a single vector
+  self attention is used when the vectors you&amp;rsquo;re attending over were produced by a nn with the same params and the same input sequence     distilled bert  https://arxiv.org/abs/1910.01108  </description>
     </item>
     
     <item>
@@ -1312,7 +1325,11 @@ Modi&amp;rsquo;s party</description>
       
       <guid>/posts/bias_nlp_project/</guid>
       <description>Tags: ling-ga 1012 (nlp and semantics), nlp
- https://huggingface.co/datasets/md%5Fgender%5Fbias#dataset-description https://docs.google.com/document/d/1ELNs90-7rrgUcoRsRVjvjsp%5FN7siBTGWpvl9v5e8KKU/edit#heading=h.npe3cfgliatb https://docs.google.com/document/d/1MQ2GfjKVbE3NNZid3ZmKm8q3EMVCYabAEPEvyTQnnkI/edit  </description>
+  https://huggingface.co/datasets/md%5Fgender%5Fbias#dataset-description
+  https://docs.google.com/document/d/1ELNs90-7rrgUcoRsRVjvjsp%5FN7siBTGWpvl9v5e8KKU/edit#heading=h.npe3cfgliatb
+  https://docs.google.com/document/d/1MQ2GfjKVbE3NNZid3ZmKm8q3EMVCYabAEPEvyTQnnkI/edit
+  https://huggingface.co/datasets/md%5Fgender%5Fbias
+  </description>
     </item>
     
     <item>
@@ -1426,7 +1443,7 @@ Collective punishment heightens group identities, such as the case of:
       <guid>/posts/blocq_the_fog_of_un_peacekeeping/</guid>
       <description>Tags: un and global governance lecture 4, papers
 Blocq, Daniel S. “The Fog of UN Peacekeeping: Ethical Issues Regarding the Use of Force to Protect Civilians in UN Operations.” Journal of Military Ethics 5, no. 3 (November 2006): 201–13. https://doi.org/10.1080/15027570600911928.
- Argues that UN peacekeepers need to determine a moralistic and new approach post-Brahimi report Asks that the rules of engagement be reconsidered, that modern day peacekeepers must take on a moralistic, and not only legalistic, perspective to this Peacekeepers must be prepared to operate in a &amp;ldquo;fog&amp;rdquo;  Highlights  democratic republic of the congo (DRC), sierra leone, and cote d&amp;rsquo;ivore were the ones explicitly allowed in 2006 to use force Hammarskjold developed the peacekeeping model following the Suez crisis   </description>
+ Argues that UN peacekeepers need to determine a moralistic and new approach post-Brahimi report Asks that the rules of engagement be reconsidered, that modern day peacekeepers must take on a moralistic, and not only legalistic, perspective to this Peacekeepers must be prepared to operate in a &amp;ldquo;fog&amp;rdquo;  Highlights  democratic republic of the congo (DRC), sierra leone, and cote d&amp;rsquo;ivore were the ones explicitly allowed in 2006 to use force Hammarskjold developed the peacekeeping model following the Suez crisis  </description>
     </item>
     
     <item>
@@ -2407,6 +2424,17 @@ Attempts to generalize some forms of grammatical theory by looking at sentence s
     </item>
     
     <item>
+      <title>Curran and Hunt: Stabilization at the Expense of Peacekeeping in UN Operations</title>
+      <link>/posts/curran_and_hunt_stabilization_at_the_expense_of_peacekeeping_in_un_operations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/curran_and_hunt_stabilization_at_the_expense_of_peacekeeping_in_un_operations/</guid>
+      <description>Tags: un and global governance lecture 6, papers
+Curran, David, and Charles T. Hunt. “Stabilization at the Expense of Peacebuilding in UN Peacekeeping Operations: More Than Just a Phase?” Global Governance: A Review of Multilateralism and International Organizations 26, no. 1 (April 9, 2020): 46–68. https://doi.org/10.1163/19426720-02601001.
+ Makes the case that stabilization has largely come at the cost of peacekeeping Stabilization has focused on propping up state authority, but this may not necessarily be the best move  diversion of funds accusations that stabilization is &amp;ldquo;liddism&amp;rdquo;, or just keeping the lid stable enough but is not moving towards durable peacekeeping   first forms of stabilization were in yugoslavia, but kosovo, iraq, afghanistan were all apart of this united nations multidimensional integrated stabilization mission in mali (MINUSMA) is one of the biggest offenders, alongside united nations multidimensional integrated stabilization mission in the central african republic (MINUSCA), and united nations stabilization mission in the democratic republic of the congo (MONUSCO) stabilization is largely never brought up in UN documents, but is heavily invested in by operations in the case of united nations stabilization mission in the democratic republic of the congo (MONUSCO), almost entirely about propping up the government, even human rights violations happen with the national army UN may be stepping back from cases of deep inclusivity  </description>
+    </item>
+    
+    <item>
       <title>custom resource definitions (crds)</title>
       <link>/posts/custom_resource_definitions_crds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2763,6 +2791,17 @@ Domain Fronting in Signal  What is domain fronting?  History  Cozy Bear in 2017 
     </item>
     
     <item>
+      <title>Dorn: Intelligence Lead Peacekeeping - The United Nations Stabilization Mission in Haiti</title>
+      <link>/posts/dorn_intelligence_lead_peacekeeping_the_united_nations_stabilization_mission_in_haiti/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dorn_intelligence_lead_peacekeeping_the_united_nations_stabilization_mission_in_haiti/</guid>
+      <description>Tags: un and global governance lecture 6, papers, haiti
+Dorn, A. Walter. “Intelligence-Led Peacekeeping: The United Nations Stabilization Mission in Haiti (MINUSTAH), 2006–07.” Intelligence and National Security 24, no. 6 (December 2009): 805–35. https://doi.org/10.1080/02684520903320410.
+ the PKO in haiti adopted a joint mission analysis center that allowed them to synthesize information one of the first pioneers of &amp;ldquo;intelligence led&amp;rdquo; UN operations largest slums were in the Cite Soleil slum of Port au Prince, flushed out through expert recon and intelligence gathering carefully monitored &amp;ldquo;Blue House&amp;rdquo;, the central location of the gang lord Noted that intelligence capability came and left with different contingents Setup a tip hotline, although it wasn&amp;rsquo;t that useful in the end first operation to use a UAV  </description>
+    </item>
+    
+    <item>
       <title>dos Santos et al: Improving Security of United Nations Peacekeepers</title>
       <link>/posts/dos_santos_et_al_improving_security_of_united_nations_peacekeepers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2781,6 +2820,17 @@ Domain Fronting in Signal  What is domain fronting?  History  Cozy Bear in 2017 
       <description>Tags: computers
 https://en.wikipedia.org/wiki/Multiple%5Fbuffering#Software%5Fdouble%5Fbuffering
  Allocate two buffers Swap the two buffers once the back buffer is ready, saves you from doing any more allocations http://www.richelbilderbeek.nl/CppDoubleBuffering.htm https://www.khronos.org/opengl/wiki/Default%5FFramebuffer https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646  </description>
+    </item>
+    
+    <item>
+      <title>double loop learning</title>
+      <link>/posts/double_loop_learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/double_loop_learning/</guid>
+      <description>Tags: personal
+The steps for double-loop learning are the following:
+ Decide to carry out an action. Make a prediction for the outcome. Observe the actual outcome. Plan future adjustments based on feedback.  </description>
     </item>
     
     <item>
@@ -3130,7 +3180,7 @@ Self referantial paradox on
       <guid>/posts/erlang/</guid>
       <description>Tags: programming languages
 -https://erlangexplained.com/index.php/about
- https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/  </description>
+ https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference%5Fmanual/introduction.html  </description>
     </item>
     
     <item>
@@ -3457,6 +3507,16 @@ FED Automated Clearing House</description>
     </item>
     
     <item>
+      <title>fetishization of doctrine</title>
+      <link>/posts/fetishization_of_doctrine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/fetishization_of_doctrine/</guid>
+      <description>Tags: drafts
+ Jihad/security studies tends to fetishize doctrine  we take these orientialist views because we view these things as foriegn these people adopt a different universalism, therefore we view it from first principals rather than viewing as a social element why do we adopt a sociological view of ourselves but doctrine based of others?   is fiqh the correct mode of analysis? can everything be read through fiqh?</description>
+    </item>
+    
+    <item>
       <title>Fiebelman - A PhD is Not Enough</title>
       <link>/posts/20200419212203-fiebelman_a_phd_is_not_enough/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3592,7 +3652,7 @@ Static Files  https://github.com/nickjj/flask-static-digest https://whitenoise.e
       <guid>/posts/force_bundling_for_graphs/</guid>
       <description>Tags: notes graph
  use https://github.com/synesenom/fdeb for faster graph bundling use offline d3 for generating the x and y positions use http://bl.ocks.org/upphiminn/6515478 and https://github.com/upphiminn/d3.ForceBundle for graphs  source:
- https://www.data-to-viz.com/graph/edge%5Fbundling.html https://notes.andymatuschak.org/Approaches%5Ffor%5Fvisualizing%5Flarge%5Fgraphs  </description>
+ https://www.data-to-viz.com/graph/edge%5Fbundling.html https://notes.andymatuschak.org/Approaches%5Ffor%5Fvisualizing%5Flarge%5Fgraphs https://github.com/gephi/gephi  </description>
     </item>
     
     <item>
@@ -3821,6 +3881,24 @@ Talks about how the Kube API server is the fundalmental broker with multiple rep
       <guid>/posts/gatsbyjs/</guid>
       <description>Tags: frontend
 Examples  https://github.com/WeOpenly/localgov.fyi  Tutorials  https://www.gatsbyjs.org/tutorial/  Plugins  https://www.gatsbyjs.org/plugins/  </description>
+    </item>
+    
+    <item>
+      <title>gaussian distribution</title>
+      <link>/posts/gaussian_distribution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gaussian_distribution/</guid>
+      <description>Tags: statistics</description>
+    </item>
+    
+    <item>
+      <title>gaussian mixture model</title>
+      <link>/posts/gaussian_mixture_model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gaussian_mixture_model/</guid>
+      <description>Tags: gaussian distribution</description>
     </item>
     
     <item>
@@ -4356,6 +4434,15 @@ Former iraqi prime minister</description>
     </item>
     
     <item>
+      <title>haiti</title>
+      <link>/posts/haiti/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/haiti/</guid>
+      <description>Tags: latam</description>
+    </item>
+    
+    <item>
       <title>Hajdarpasic: Reflections on the Ottoman Legacy in South-eastern Europe</title>
       <link>/posts/hajdarpasic_reflections_on_the_ottoman_legacy_in_south_eastern_europe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4438,7 +4525,8 @@ Factions  internal leadership (gaza, west bank, prisons) external leadership (pa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/hardware/</guid>
-      <description>Tags: computers</description>
+      <description>Tags: computers
+ https://www.crowdsupply.com/diodes-delight/piunora https://www.crowdsupply.com/stereopi/stereopi-v2 https://www.crowdsupply.com/soniktech/e-paper-shield-kit  </description>
     </item>
     
     <item>
@@ -5137,6 +5225,17 @@ Company owned by Iraq&amp;rsquo;s two largest state-owned banks Rafidain Bank an
     </item>
     
     <item>
+      <title>IOM: If We Leave We Are Killed</title>
+      <link>/posts/iom_if_we_leave_we_are_killed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/iom_if_we_leave_we_are_killed/</guid>
+      <description>Tags: papers, un and global governance lecture 4
+IOM. “If We Leave We Are Killed.” Accessed February 20, 2021. https://newclasses.nyu.edu/access/content/group/e0e3accc-6b4d-4bc0-81c5-17c9c398eec9/IOM%5FIf%20we%20leave%20we%20are%20killed%20%5F2016%5F.pdf.
+ Report on protection of civilians for south sudan Identifies several key problems, such as:  failure to prepare for long term PoC camps failure for humantiarians and UN to demarcate what is military lines and what is humanitarian space    </description>
+    </item>
+    
+    <item>
       <title>iran</title>
       <link>/posts/iran/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5409,6 +5508,16 @@ Grammar خل + فعل  Let (imperative) + فعل Example:  Let us go: خل نر�
       
       <guid>/posts/islamic_jurisprudence_lecture_3/</guid>
       <description>Tags: islamic jurisprudence</description>
+    </item>
+    
+    <item>
+      <title>islamic jurisprudence lecture 5</title>
+      <link>/posts/islamic_jurisprudence_lecture_5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/islamic_jurisprudence_lecture_5/</guid>
+      <description>Tags: islamic jurisprudence
+ Setup: how does capitalism break apart society and how does it move within anthropology Focuses on how capitalism does play a role in subjectivities shariah-compliance arguments for Hiyla and darurat reducing the islamic economics to fiqh, there&amp;rsquo;s a richer selection of discourse and institutions that might&amp;rsquo;ve been in play during the colonial period relationship to contract law? mughal empire and pre-modern islamic contract law? what did we try to learn from pre-modern normative texts?</description>
     </item>
     
     <item>
@@ -5740,6 +5849,17 @@ API on top of producer and consumer that allows for defining transformations on 
       
       <guid>/posts/karbala/</guid>
       <description>Tags: iraq</description>
+    </item>
+    
+    <item>
+      <title>Karlstrud: The UN at War</title>
+      <link>/posts/karlstrud_the_un_at_war/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/karlstrud_the_un_at_war/</guid>
+      <description>Tags: articles, un and global governance lecture 6
+Karlsrud, John. “The UN at War: Examining the Consequences of Peace-Enforcement Mandates for the UN Peacekeeping Operations in the CAR, the DRC and Mali.” Third World Quarterly 36, no. 1 (January 2, 2015): 40–54. https://doi.org/10.1080/01436597.2015.976016.
+ The force intervention brigade in united nations stabilization mission in the democratic republic of the congo (MONUSCO) has manadated &amp;ldquo;all necessary measures&amp;rdquo;, which includes force Renewed without substantial changes UN is moving more towards as counterterrorism/war fighting stance at the cost of reduction in peacekeeping united nations multidimensional integrated stabilization mission in mali (MINUSMA) also represents this doctrinal change new tech is entering, such as drones, were deployed in mali in 2013 norwegians have sent an intel group wariness in the security council about having the force intervention brigade, although seems like it&amp;rsquo;s happening anyways  </description>
     </item>
     
     <item>
@@ -7119,6 +7239,16 @@ Leader of badr</description>
     </item>
     
     <item>
+      <title>Murphy: United Nations Peacekeeping in Lebanon and Somalia, and the Use of Force</title>
+      <link>/posts/murphy_united_nations_peacekeeping_in_lebanon_and_somalia_and_the_use_of_force/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/murphy_united_nations_peacekeeping_in_lebanon_and_somalia_and_the_use_of_force/</guid>
+      <description>Tags: lebanon, somalia, papers, un and global governance lecture 5
+ Examines unifil and UN operations in somalia, especially wrt to the rule of engagement Two aspects of the use of force in peacekeeping  Minimum use of force  This was used (and crossed) by the somilia missions  going after a specific actor placed the UN as &amp;ldquo;one actor among many&amp;rdquo;     Force for self defense only  UNFIL&amp;rsquo;s stand and holding villages has allowed them to maintain a pretense of neutrality     somalia as a testing ground for new use of force rules (chapter VII) UNIFIL has been awkward since the lebanese gov has depended upon it for various enforcement activities  UNIFIL ROE has been modified to become less restricive over time, as compared to the UNPROFOR (somalia) ones, where they were very restrictive after May 1993, the UNOSOM II ROE was changed to become a &amp;ldquo;blank check&amp;rdquo;  UNOSOM II ROE was largely confused and no effort was made to integrate (especially with the italians)  incoherence of Italians, where the italians knew how to negotiate whereas the rest of the UN forces did not       UNIFIL not confronting the PLO meant that they couldn&amp;rsquo;t confront the Israeli de facto forces either UNIFIL stand at At-Tiri lead to the creation of Force Mobile Reserve  </description>
+    </item>
+    
+    <item>
       <title>muslim brotherhood</title>
       <link>/posts/muslim_brotherhood/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7450,6 +7580,15 @@ Nicaraguan electricty is expensive due to inefficiency and US sanctions. Transpa
       
       <guid>/posts/ninawa/</guid>
       <description>Tags: iraq</description>
+    </item>
+    
+    <item>
+      <title>nli</title>
+      <link>/posts/nli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/nli/</guid>
+      <description>Tags: nlp</description>
     </item>
     
     <item>
@@ -7962,7 +8101,7 @@ Resources  Timothy Mitchell, &amp;ldquo;Rule of Experts&amp;rdquo; Aaron Jakes -
       <guid>/posts/pareto_optimal/</guid>
       <description>Tags: personal
  https://en.wikipedia.org/wiki/Pareto%5Fefficiency  Goal  Statistics optimal, nlp specialization between arabic/mandarin/english, able to construct reintegration programs for post-conflict passable knowledge at math/physics/soft stuff declining this in favor of focus on others  Status   good at statistics &amp;lt;- not doing anything for this currently
- Doing probability theory first and starting from the bottom again Possibily statistics for programmers?    good at ddr, post-conflict &amp;lt;- reading and learning</description>
+ Doing probability theory first and starting from the bottom again Possibily statistics for programmers?    good at ddr, post-conflict &amp;lt;- reading and learning &amp;lt;- working on it</description>
     </item>
     
     <item>
@@ -8052,6 +8191,18 @@ Started by Ibrahim Ahmad and Jalal Talabani</description>
       <guid>/posts/paul_feyerabend/</guid>
       <description>Tags: philosophy of science, people
 https://plato.stanford.edu/entries/feyerabend/</description>
+    </item>
+    
+    <item>
+      <title>Pavlick and Kwiatkowski: Inherent Disagreements in Human Textual Inferences</title>
+      <link>/posts/pavlick_and_kwiatkowski_inherent_disagreements_in_human_textual_inferences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pavlick_and_kwiatkowski_inherent_disagreements_in_human_textual_inferences/</guid>
+      <description>Tags: nlu, papers
+  Pavlick, Ellie, and Tom Kwiatkowski. “Inherent Disagreements in Human Textual Inferences.” Transactions of the Association for Computational Linguistics 7 (November 2019): 677–94. https://doi.org/10.1162/tacl%5Fa%5F00293.
+  https://github.com/epavlick/NLI-variation-data
+  Summary  Talks about how human annotations and disagreements from those are not derived from statistical noise More context does not necessarily mean more agreement, once the input reaches sentence/passage, disagreements hold relatively steady We assume what people write is what they mean, but actually there&amp;rsquo;s a pretty big gap between what people mean &amp;lt;-&amp;gt; what they write &amp;lt;-&amp;gt; what they interpret &amp;lt;-&amp;gt; what they infer.</description>
     </item>
     
     <item>
@@ -9289,7 +9440,7 @@ Most sets are not sets of themselves, but some sets are self-swallowing. For exa
       
       <guid>/posts/rust/</guid>
       <description>Tags: computers
- https://rust-analyzer.github.io/blog/2020/04/20/first-release.html  </description>
+ https://rust-analyzer.github.io/blog/2020/04/20/first-release.html https://rust-unofficial.github.io/too-many-lists/ https://leetcode.com/problemset/all/ https://towardsdatascience.com/you-want-to-learn-rust-but-you-dont-know-where-to-start-fc826402d5ba  tools  serde: https://serde.rs/  </description>
     </item>
     
     <item>
@@ -9664,6 +9815,17 @@ Population Demographics in Northern Iraq  https://www.instapaper.com/read/130008
     </item>
     
     <item>
+      <title>Sheeran and Case: The Intervention Brigade</title>
+      <link>/posts/sheeran_and_case_the_intervention_brigade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sheeran_and_case_the_intervention_brigade/</guid>
+      <description>Tags: un and global governance lecture 6, papers, jurisprudence
+Sheeran, Scott, and Stephanie Case. “The Intervention Brigade: Legal Issues for the UN in the Democratic Republic of the Congo,” n.d., 28.
+ Talks about how the formation of the Intervention Brigade in united nations stabilization mission in the democratic republic of the congo (MONUSCO) was highly controversial and bold UN had not really considered the legal implications of having the entire brigade be partial to international humanitarian law Therefore the intervention brigade is a legal target, but leaves open the question about &amp;ldquo;regular&amp;rdquo; peacekeepers and UN staff Also does not elaborate on the right of the UN to hold prisoners, MONUSCO operates on some interim rules No longer impartial, as regularly required for peacekeeping operations unclear legal issues, the UN sees the intervention brigade as the only parts of MONUSCO subject ot legitimate targeting, but the ICRC does not  </description>
+    </item>
+    
+    <item>
       <title>sheikh abdul rahman al-kakhimi</title>
       <link>/posts/sheikh_abdul_rahman_al_kakhimi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -9859,6 +10021,15 @@ Finance Essentials for Small Businesses  All businesses start small Often killed
       
       <guid>/posts/sociology/</guid>
       <description>Tags: root</description>
+    </item>
+    
+    <item>
+      <title>softmax</title>
+      <link>/posts/softmax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/softmax/</guid>
+      <description>Tags: ml</description>
     </item>
     
     <item>
@@ -10664,6 +10835,16 @@ Chrome V8 detects text boundaries with:
     </item>
     
     <item>
+      <title>the chicago plan</title>
+      <link>/posts/the_chicago_plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the_chicago_plan/</guid>
+      <description>Tags: economics
+ https://www.imf.org/en/Publications/WP/Issues/2016/12/31/The-Chicago-Plan-Revisited-26178 https://blogs.lse.ac.uk/usappblog/2013/11/25/chicago-plan-revisited/  </description>
+    </item>
+    
+    <item>
       <title>the danger of treating ideas from finance as generalized self help</title>
       <link>/posts/the_danger_of_treating_ideas_from_finance_as_generalized_self_help/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10685,6 +10866,16 @@ Advice should be taken on how easily something can be abstracted or whether the 
  https://patrickwyman.substack.com/p/imperial-wars-always-come-home  settler colonialism, imperial wars, patrick wolfe
 Macaes - History has Begun, rooted in fantasies of a &amp;ldquo;frontier&amp;rdquo;
  boogaloo boys blog post previous imperial wars?  vietnam, george kennan &amp;ldquo;complete withdraw, followed by complete silence&amp;rdquo;   it&amp;rsquo;s not rome, it&amp;rsquo;s not the hundred years war, it&amp;rsquo;s not even really institutional rot the core of american settler colonialism upholds the midwest as an unique american ideal  native americans slavery and blacks   lack of transitional justice selling of frontier culture, merging of american frontier culture onto the wars  television and technology made wars simultatnously more real and more livable  @tactikurd     settler colonialism has always been alive in america, &amp;ldquo;blank slate&amp;rdquo; of iraq, &amp;ldquo;blank slate of the afghanistan&amp;rdquo;, &amp;ldquo;blank slate of westward expansion&amp;rdquo;, even as it was blind to the remarkable human suffering slaves were imported instead of using native americans as labor sources because the natives had no plausible claim to the land american amnesia  thesis: it&amp;rsquo;s not imperial wars that come home, technology and social media + failures of the US have activated a latent libertarianism/strain</description>
+    </item>
+    
+    <item>
+      <title>the metaphysics of bullshit</title>
+      <link>/posts/the_metaphysics_of_bullshit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the_metaphysics_of_bullshit/</guid>
+      <description>Tags: drafts
+ frankfurtian bullshit fashionable nonsense french metaphysics and psychoanalysis too much bullshit coins, ml, etc  money free and unfree   semi-religious stature of algorithms semi-religious stature of counteterrorism  noah smith (religious violence is tied to counterterrorism?)  the culture war and the forever war   nassim nicolas taleb   are experts real? is science done by a small elite? and the rest bullshit? fake news -&amp;gt; bullshit about fake news (the cry over deepfakes and all) capital -&amp;gt; economists should stop pretending they know very much bad curve fitting -&amp;gt; https://www.</description>
     </item>
     
     <item>
@@ -11166,6 +11357,25 @@ un and global governance lecture 1 un and global governance lecture 2 un and glo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/un_and_global_governance_lecture_4/</guid>
+      <description>Tags: UN and Global Governance
+ Operational uncertainty Overambitious mandates and underresourced  Brahimi and HIPPO  similar roles   long leads on budgeting process  inflexibilty of budgeting process     Adamczyk - view of poc mandates wrt to force differ between UNSC and TCC  penholder roles and uncertainty?   IOM - UNMISS were poorly coordinated Gorur and Sharland: Prioritizing the Protection of Civilians in UN Peace Operations  phaesd mandates   Blocq: The Fog of UN Peacekeeping is it possible to write a mandate process that is the actually aligned with the situation on the ground?</description>
+    </item>
+    
+    <item>
+      <title>un and global governance lecture 5</title>
+      <link>/posts/un_and_global_governance_lecture_5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/un_and_global_governance_lecture_5/</guid>
+      <description>Tags: UN and Global Governance</description>
+    </item>
+    
+    <item>
+      <title>un and global governance lecture 6</title>
+      <link>/posts/un_and_global_governance_lecture_6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/un_and_global_governance_lecture_6/</guid>
       <description>Tags: UN and Global Governance</description>
     </item>
     
@@ -11710,7 +11920,8 @@ ProvisionQL for looking at ipas and provisions  https://github.com/ealeksandrov/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/yemen/</guid>
-      <description>Tags: middle east</description>
+      <description>Tags: middle east
+ http://www.eternal-yemen.com/visa-for-yemen/ https://www.wanderingearl.com/is-yemen-safe-for-travelers/ https://en.wikipedia.org/wiki/Yemen%5FGate https://en.wikipedia.org/wiki/Socotra  </description>
     </item>
     
     <item>
@@ -11736,6 +11947,15 @@ Sources  https://www.instapaper.com/read/1308681693 https://www.instapaper.com/r
   Notions of memory:
  3 types:  Degredation  Memory degrades as time goes on   Lock and Key  Memory stays, but the key to it disappears, which is why it requires certain cues   Overwritten  Memory stays, but is overwritten by others        Carefully design drills
  Choose for direct practice    Take notes as questions instead of answers to practice retrival</description>
+    </item>
+    
+    <item>
+      <title>yugoslavia</title>
+      <link>/posts/yugoslavia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/yugoslavia/</guid>
+      <description>Tags: europe</description>
     </item>
     
     <item>

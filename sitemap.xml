@@ -267,6 +267,10 @@
   </url>
   
   <url>
+    <loc>/posts/annotations/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200415213157-anscombe_state_faith_and_nation/</loc>
   </url>
   
@@ -959,6 +963,10 @@
   </url>
   
   <url>
+    <loc>/posts/curran_and_hunt_stabilization_at_the_expense_of_peacekeeping_in_un_operations/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/custom_resource_definitions_crds/</loc>
   </url>
   
@@ -1103,11 +1111,19 @@
   </url>
   
   <url>
+    <loc>/posts/dorn_intelligence_lead_peacekeeping_the_united_nations_stabilization_mission_in_haiti/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/dos_santos_et_al_improving_security_of_united_nations_peacekeepers/</loc>
   </url>
   
   <url>
     <loc>/posts/double_buffering/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/double_loop_learning/</loc>
   </url>
   
   <url>
@@ -1371,6 +1387,10 @@
   </url>
   
   <url>
+    <loc>/posts/fetishization_of_doctrine/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/20200419212203-fiebelman_a_phd_is_not_enough/</loc>
   </url>
   
@@ -1516,6 +1536,14 @@
   
   <url>
     <loc>/posts/gatsbyjs/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/gaussian_distribution/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/gaussian_mixture_model/</loc>
   </url>
   
   <url>
@@ -1728,6 +1756,10 @@
   
   <url>
     <loc>/posts/haider_al_furaiji/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/haiti/</loc>
   </url>
   
   <url>
@@ -2031,6 +2063,10 @@
   </url>
   
   <url>
+    <loc>/posts/iom_if_we_leave_we_are_killed/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/iran/</loc>
   </url>
   
@@ -2140,6 +2176,10 @@
   
   <url>
     <loc>/posts/islamic_jurisprudence_lecture_3/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/islamic_jurisprudence_lecture_5/</loc>
   </url>
   
   <url>
@@ -2276,6 +2316,10 @@
   
   <url>
     <loc>/posts/karbala/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/karlstrud_the_un_at_war/</loc>
   </url>
   
   <url>
@@ -2827,6 +2871,10 @@
   </url>
   
   <url>
+    <loc>/posts/murphy_united_nations_peacekeeping_in_lebanon_and_somalia_and_the_use_of_force/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/muslim_brotherhood/</loc>
   </url>
   
@@ -2960,6 +3008,10 @@
   
   <url>
     <loc>/posts/ninawa/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/nli/</loc>
   </url>
   
   <url>
@@ -3188,6 +3240,10 @@
   
   <url>
     <loc>/posts/paul_feyerabend/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/pavlick_and_kwiatkowski_inherent_disagreements_in_human_textual_inferences/</loc>
   </url>
   
   <url>
@@ -3831,6 +3887,10 @@
   </url>
   
   <url>
+    <loc>/posts/sheeran_and_case_the_intervention_brigade/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/sheikh_abdul_rahman_al_kakhimi/</loc>
   </url>
   
@@ -3908,6 +3968,10 @@
   
   <url>
     <loc>/posts/sociology/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/softmax/</loc>
   </url>
   
   <url>
@@ -4231,11 +4295,19 @@
   </url>
   
   <url>
+    <loc>/posts/the_chicago_plan/</loc>
+  </url>
+  
+  <url>
     <loc>/posts/the_danger_of_treating_ideas_from_finance_as_generalized_self_help/</loc>
   </url>
   
   <url>
     <loc>/posts/the_frontier_settler_colonialism_the_united_states/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/the_metaphysics_of_bullshit/</loc>
   </url>
   
   <url>
@@ -4424,6 +4496,14 @@
   
   <url>
     <loc>/posts/un_and_global_governance_lecture_4/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/un_and_global_governance_lecture_5/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/un_and_global_governance_lecture_6/</loc>
   </url>
   
   <url>
@@ -4656,6 +4736,10 @@
   
   <url>
     <loc>/posts/young_ultralearning/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/yugoslavia/</loc>
   </url>
   
   <url>
