@@ -250,6 +250,26 @@ Little attention has been paid to relationship between meotions and nationalism.
     </item>
     
     <item>
+      <title>Adversarial NLI</title>
+      <link>/posts/adversarial_nli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/adversarial_nli/</guid>
+      <description>Tags: nli, datasets
+ Attempts to explicitly difficult to guess based on only the hypothesis Same creation as Multi-Genre NLI (MNLI), but annotators can only submit an example if a bert-style model gets it wrong  </description>
+    </item>
+    
+    <item>
+      <title>Adversarial NLI (ANLI)</title>
+      <link>/posts/adversarial_nli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/adversarial_nli/</guid>
+      <description>Tags: nli, datasets
+ Attempts to explicitly difficult to guess based on only the hypothesis Same creation as Multi-Genre NLI (MNLI), but annotators can only submit an example if a bert-style model gets it wrong BERT actually does pretty well as NLI, so the dataset is largely with tricky cases  </description>
+    </item>
+    
+    <item>
       <title>aerobic capacity</title>
       <link>/posts/20200415115345-aerobic_capacity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -886,6 +906,16 @@ Syrian town within the Idlib governate, sits at the center of Jisr al-Shughur, M
       <description>Tags: climate change
 Surface and deep current driver in the atlantic ocean, responsible for much of the warm weather in the UK
 https://en.wikipedia.org/wiki/Atlantic%5Fmeridional%5Foverturning%5Fcirculation</description>
+    </item>
+    
+    <item>
+      <title>atomic</title>
+      <link>/posts/atomic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/atomic/</guid>
+      <description>Tags: ml, datasets
+ dataset that attempts to link one event with others crowdsourced attempt to catalogue common sense inferences about situations some use for pretraining, much more use in constructing more focused evaluation datasets  </description>
     </item>
     
     <item>
@@ -2405,6 +2435,16 @@ Provides checkpointing and snapshotting of applications and containers to disk
     </item>
     
     <item>
+      <title>Crosslingual NLI (XNLI)</title>
+      <link>/posts/crosslingual_nli_xnli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/crosslingual_nli_xnli/</guid>
+      <description>Tags: nli, datasets
+ Cross lingual 7.5k per language Meant to evaluate cross-lingual transfer slightlier noiser because the sentences were translated one-by-one  premise was translated by possibly a different person than a hypothesis    </description>
+    </item>
+    
+    <item>
       <title>crypto (for cryptography)</title>
       <link>/posts/crypto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2441,6 +2481,16 @@ Curran, David, and Charles T. Hunt. “Stabilization at the Expense of Peacebuil
       
       <guid>/posts/custom_resource_definitions_crds/</guid>
       <description>Tags: kubernetes (k8s)</description>
+    </item>
+    
+    <item>
+      <title>cyc</title>
+      <link>/posts/cyc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cyc/</guid>
+      <description>Tags: datasets, ml
+ industrial attempt to catalogue all human knowledge that is common to children uses a language like structure representations - some historical tie-ins controversial, but not widely used in modern NLP, often cited as a failure of symbolic AI  </description>
     </item>
     
     <item>
@@ -2509,6 +2559,15 @@ Class  https://15721.courses.cs.cmu.edu/spring2019/schedule.html  MariaDB  https
       <guid>/posts/dataflow/</guid>
       <description>Tags: Databases, distributed systems
  https://github.com/TimelyDataflow/timely-dataflow  </description>
+    </item>
+    
+    <item>
+      <title>datasets</title>
+      <link>/posts/datasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/datasets/</guid>
+      <description>Tags: ml</description>
     </item>
     
     <item>
@@ -2688,7 +2747,7 @@ Read the man pages and check the return values!
       
       <guid>/posts/distributed_systems/</guid>
       <description>Tags: computers
-Short Introduction  http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628  Theory  https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/  Fallacies  https://en.wikipedia.org/wiki/Fallacies%5Fof%5Fdistributed%5Fcomputing https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf  </description>
+ http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html  Short Introduction  http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628  Theory  https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/  Fallacies  https://en.wikipedia.org/wiki/Fallacies%5Fof%5Fdistributed%5Fcomputing https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf  </description>
     </item>
     
     <item>
@@ -3194,6 +3253,15 @@ http://blog.erlang.org/the-road-to-the-jit/</description>
     </item>
     
     <item>
+      <title>ESIM model</title>
+      <link>/posts/esim_model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/esim_model/</guid>
+      <description>Tags: ml</description>
+    </item>
+    
+    <item>
       <title>etcd</title>
       <link>/posts/etcd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3382,6 +3450,16 @@ Elements  Independent command of Iraqi armed forces - article 1, article 2, simi
       
       <guid>/posts/explicit_knowledge/</guid>
       <description>Tags: episteme</description>
+    </item>
+    
+    <item>
+      <title>Fact Extraction and Verification (2018)</title>
+      <link>/posts/fact_extraction_and_verification_2018/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/fact_extraction_and_verification_2018/</guid>
+      <description>Tags: ml
+ml competition</description>
     </item>
     
     <item>
@@ -3724,6 +3802,16 @@ Computational Semantics  how do we represent meanings of words and sentences how
       <guid>/posts/fpga/</guid>
       <description>Tags: chips
  https://github.com/litex-hub/fpga%5F101  </description>
+    </item>
+    
+    <item>
+      <title>FraCas Test Suite</title>
+      <link>/posts/fracas_test_suite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/fracas_test_suite/</guid>
+      <description>Tags: nli, datasets
+ 346 examples, constructed by experts, targets strict logical entailment  </description>
     </item>
     
     <item>
@@ -4083,6 +4171,15 @@ Thesis: Argument structure is encoded within syntax and children learn word mean
       <guid>/posts/glick_and_paluck_the_aftermath_of_genocide/</guid>
       <description>Tags: papers, conflict and violence
  Social psychologists tend to emphaizie proximal situational causes Talks about how victim groups experiece an ambivalent relationship to the past  Rememberence is often painful  Adar - Emotions and Nationalism: Armenian Genocide as a Case Study   Holocaust remeberance not only creates solidarity within the group but also strongly motivates the rejection of a continuing victim identity   Past recession leads to denial and distancing of colonialization, mass violence, and genocide.</description>
+    </item>
+    
+    <item>
+      <title>glue</title>
+      <link>/posts/glue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/glue/</guid>
+      <description>Tags: ml</description>
     </item>
     
     <item>
@@ -4849,7 +4946,7 @@ Introduction  Two purposes:  Background and motivation Summary and outline   Bac
       
       <guid>/posts/http/</guid>
       <description>Tags: computers
-Servers  http://canonical.org/~kragen/sw/dev3/httpdito-readme  </description>
+Servers  http://canonical.org/~kragen/sw/dev3/httpdito-readme  Debugging  https://httptoolkit.tech/blog/http-wtf/  </description>
     </item>
     
     <item>
@@ -4936,6 +5033,16 @@ Replaced Qassim Dhaif al-Zubaidi, also the head of the hashd office in karbala a
       <description>Tags: physics, economics
 https://en.wikipedia.org/wiki/Hysteresis
 https://en.wikipedia.org/wiki/Preisach%5Fmodel%5Fof%5Fhysteresis</description>
+    </item>
+    
+    <item>
+      <title>ibn al-hajj</title>
+      <link>/posts/ibn_al_hajj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ibn_al_hajj/</guid>
+      <description>Tags: islamic jurisprudence
+ percieves women as out of control isolated, misanthropic polemist  </description>
     </item>
     
     <item>
@@ -5521,6 +5628,16 @@ Grammar خل + فعل  Let (imperative) + فعل Example:  Let us go: خل نر�
     </item>
     
     <item>
+      <title>islamic jurisprudence lecture 7</title>
+      <link>/posts/islamic_jurisprudence_lecture_7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/islamic_jurisprudence_lecture_7/</guid>
+      <description>Tags: islamic jurisprudence
+Kecia Ali - Marriage and Slavery in Early Islam  coherent understanding of marriage  building on Layla Ahmed - &amp;ldquo;women and gender in Islam&amp;rdquo; looking at devise of analogy, and reasoning through analogy  specifically the quran   using slaves was an important analytic for the scholar and jurst, and cannot understand marriage without understanding legal theorization of slavery and commercial practices when does the analogy not match up with women and slavery?</description>
+    </item>
+    
+    <item>
       <title>islamic modernism</title>
       <link>/posts/islamic_modernism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5760,7 +5877,8 @@ tail call optimization  https://github.com/Sipkab/jvm-tail-recursion  JVM profil
       
       <guid>/posts/julia/</guid>
       <description>Tags: programming languages
-Font https://cormullion.github.io/pages/2020-07-26-JuliaMono/</description>
+Font https://cormullion.github.io/pages/2020-07-26-JuliaMono/
+Learning  https://github.com/chrisvoncsefalvay/learn-julia-the-hard-way  </description>
     </item>
     
     <item>
@@ -6407,8 +6525,18 @@ Krylov Subspace  https://en.wikipedia.org/wiki/Krylov%5Fsubspace  Quantum Algori
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/linker_essay/</guid>
-      <description>Tags: compilers
+      <description>Tags: linkers
  https://lwn.net/Articles/276782/  Intro What does a linker do?  Converts object files into executables and shared libraries  C/C++/Fortran (java uses a loader)    What&amp;rsquo;s a linker: Dynamic linking, linker data types, linker operation Shared libs  shared libs were invented as an op for virtual memory systems running many processes simultaneously  virtual memory system would map the same routine for each process first implementation in SVR3, based on COFF  assigned each shared library a fixed portion of virtual address space   SunOS4 introduced a more fleixbile version  programs would link shared librarys during runtime (dynamic linker) program linker are the linkers during compilation      Basic Linker Data Types  Linkers use symbols, relocations, and contents  Symbols  Name and a value usually represent static objects in the original source code  For C, a single symbol for each function and each global and static variable   used to indicate a reference to a name defined in another file  Relocation  Computation to perform on the contents Usually refers to a symbol and a offset Also provides an additional operand called addend Simple relocation is &amp;ldquo;set this location in the contents to the value of this symbol + addend&amp;rdquo;  Contents  What memory should look like during the execution of the program Have a size, array of bytes, and a type Contain machine code generated by the compiler and assembler (text) Also contain values of initialized variables (data) Also contain static unnamed data like string constants or switch varialbes (rdata) Empty uninitalized variables as well  Basic Linker Operation Linkers:</description>
+    </item>
+    
+    <item>
+      <title>linkers</title>
+      <link>/posts/linkers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linkers/</guid>
+      <description>Tags: compilers
+ https://blog.thea.codes/the-most-thoroughly-commented-linker-script/  </description>
     </item>
     
     <item>
@@ -7177,6 +7305,16 @@ Successfully demobilized around 300,000 ex-combatnats, but results varied signif
     </item>
     
     <item>
+      <title>Multi-Genre NLI (MNLI)</title>
+      <link>/posts/multi_genre_nli_mnli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/multi_genre_nli_mnli/</guid>
+      <description>Tags: nli, datasets
+ 400k examples Written and spoken languages  </description>
+    </item>
+    
+    <item>
       <title>multiateration</title>
       <link>/posts/multiateration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7204,6 +7342,15 @@ https://www.instapaper.com/read/1297636718</description>
       <guid>/posts/multidimensional_integrated_stabilisation_mission_in_the_central_african_republic_minusca/</guid>
       <description>Tags: un
  part of the un peacekeeping mission in central african republic (car), implementing a pre-DDR project  </description>
+    </item>
+    
+    <item>
+      <title>MultiRC</title>
+      <link>/posts/multirc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/multirc/</guid>
+      <description>Tags: ml</description>
     </item>
     
     <item>
@@ -7444,6 +7591,30 @@ Idea: Balkan nationalism constrasted to others?
     </item>
     
     <item>
+      <title>natural language inference lecture</title>
+      <link>/posts/natural_language_inference_lecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/natural_language_inference_lecture/</guid>
+      <description>Tags: ling-ga 1012 (nlp and semantics)
+intro   Motivating question: can neural network methods do anything that resembles compositional semantics?
+ What&amp;rsquo;s our metric? How do we know we&amp;rsquo;ve accomplished a goal?    also sometimes called recongizing textual entailment (rte) - same as nli
+  example: premise -&amp;gt; hypothesis, does the premise entail the hypothesis?
+  Ido Dagan 05
+ We say that T entails H, if typically, a human reading T would infer that H is most likely true</description>
+    </item>
+    
+    <item>
+      <title>natural logic</title>
+      <link>/posts/natural_logic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/natural_logic/</guid>
+      <description>Tags: nlp
+monotonicity  key phoneoma that natural logic attempts to capture substituting a phrase has predictable entailment relationships  example:  a reptile moved -&amp;gt; upward monotone  if we replace a superset with a subset, it&amp;rsquo;s entailed a reptile moved -&amp;gt; a turtle moved   no reptile moved -&amp;gt; downward monotone  no turtle moved -&amp;gt; replacing a superset with a subset, negation has flipped the monotone   non-montone: do no preserve entailment in either direction      langauge  upward monotone is sort of the default for lexical items i.</description>
+    </item>
+    
+    <item>
       <title>navier-stokes</title>
       <link>/posts/navier_stokes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7598,7 +7769,7 @@ Nicaraguan electricty is expensive due to inefficiency and US sanctions. Transpa
       
       <guid>/posts/nlp/</guid>
       <description>Tags: ml, languages/linguistics
- http://nlpprogress.com/english/word%5Fsense%5Fdisambiguation.html https://huggingface.co/transformers/perplexity.html  </description>
+ http://nlpprogress.com/english/word%5Fsense%5Fdisambiguation.html https://huggingface.co/transformers/perplexity.html https://github.com/jshin49/deep-nlp-reading-list  </description>
     </item>
     
     <item>
@@ -7857,6 +8028,15 @@ Way for researchers to collaborate and collect data
       <guid>/posts/openapi/</guid>
       <description>Tags: computers
  https://hackersandslackers.com/flask-assets/ https://swagger.io/docs/specification/basic-structure/  </description>
+    </item>
+    
+    <item>
+      <title>OpenBook</title>
+      <link>/posts/openbook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/openbook/</guid>
+      <description>Tags: ml</description>
     </item>
     
     <item>
@@ -9206,6 +9386,16 @@ Mushrooms  https://cafedelites.com/roasted-mushrooms/  </description>
     </item>
     
     <item>
+      <title>Recongizing Textual Entailment (RTE)</title>
+      <link>/posts/recongnizing_textual_entailment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/recongnizing_textual_entailment/</guid>
+      <description>Tags: nli, datasets
+ seven annual competitions around 5000 examples in total, premises drawn from naturally occuring text, expert constructed  </description>
+    </item>
+    
+    <item>
       <title>recurrent neural networks (rnn)</title>
       <link>/posts/recurrent_neural_networks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -9309,6 +9499,15 @@ Specific kube controller that encodes the ability to startup and stop identical 
       
       <guid>/posts/republic_of_the_congo_roc/</guid>
       <description>Tags: africa</description>
+    </item>
+    
+    <item>
+      <title>resource curse</title>
+      <link>/posts/resource_curse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/resource_curse/</guid>
+      <description>Tags: political science</description>
     </item>
     
     <item>
@@ -9440,7 +9639,7 @@ Most sets are not sets of themselves, but some sets are self-swallowing. For exa
       
       <guid>/posts/rust/</guid>
       <description>Tags: computers
- https://rust-analyzer.github.io/blog/2020/04/20/first-release.html https://rust-unofficial.github.io/too-many-lists/ https://leetcode.com/problemset/all/ https://towardsdatascience.com/you-want-to-learn-rust-but-you-dont-know-where-to-start-fc826402d5ba  tools  serde: https://serde.rs/  </description>
+ https://rust-analyzer.github.io/blog/2020/04/20/first-release.html https://rust-unofficial.github.io/too-many-lists/ https://leetcode.com/problemset/all/ https://towardsdatascience.com/you-want-to-learn-rust-but-you-dont-know-where-to-start-fc826402d5ba https://doc.rust-lang.org/book/ch19-06-macros.html  tools  serde: https://serde.rs/  </description>
     </item>
     
     <item>
@@ -9640,6 +9839,16 @@ Iraqi political party run by Muqtada al-Sadr</description>
     </item>
     
     <item>
+      <title>SciTail</title>
+      <link>/posts/scitail/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/scitail/</guid>
+      <description>Tags: nli, datasets
+ Created by pairing statements from science tests with information from the web First NLI set built entirely on existing text (middle school level exams) 27k  </description>
+    </item>
+    
+    <item>
       <title>sdr</title>
       <link>/posts/sdr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -9764,6 +9973,16 @@ from Idris - Lessons from DDR Programs
       <description>Tags: ethnicity, nationalism, and conflict, mauritania, senegal
 Large ethno national sentinent and conflict in 1989-1991, started with dispute of farmers, lead to large scale evictions of Mauritanians from Senegal and afro-Mauritanians from Mauritania
 Colonial Experience  Largely shifting borders before the French came in French created two states with the Senegal river as the dividing line Senegal considered &amp;ldquo;black&amp;rdquo; Mauritania considered for the &amp;ldquo;Moors&amp;rdquo; Created various ethnic regimes in Mauritania  Blacks in Mauritania were taxed as residents of Senegal   Post colonial state powers in Mauritania are mostly held in the Moors  Setup  Drought in the 70&amp;rsquo;s and 80&amp;rsquo;s pushed many into the Senegal river valley Resource scarcity and 1987 coup attempt in Mauritania lead to spreading tensions  Ethnopolitical Entrepneurs  Arab nationalists within Mauritania Political powers in Senegal Land ownership reformers  What does this indicate?</description>
+    </item>
+    
+    <item>
+      <title>Sentences Involving Compositional Knowledge (SICK-E)</title>
+      <link>/posts/sentences_involving_compositional_knowledge_sick_e/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sentences_involving_compositional_knowledge_sick_e/</guid>
+      <description>Tags: nli, datasets
+ Corpus for 2014 SemEval Deliberately restricted tasks, no named entities, idioms, etc around 10k examples  </description>
     </item>
     
     <item>
@@ -10213,7 +10432,7 @@ SQL engines have a compilation layer, that then gets translated into code for th
       <guid>/posts/sqlite/</guid>
       <description>Tags: sql
 Basic usage:
-sqlite&amp;gt; .tables; # show tables sqlite&amp;gt; .mode column; # sets to column mode sqlite&amp;gt; .header on; # turns on the table headers </description>
+sqlite&amp;gt; .tables; # show tables sqlite&amp;gt; .mode column; # sets to column mode sqlite&amp;gt; .header on; # turns on the table headers R*Tree Module  https://www.sqlite.org/rtree.html  </description>
     </item>
     
     <item>
@@ -10233,6 +10452,15 @@ sqlite&amp;gt; .tables; # show tables sqlite&amp;gt; .mode column; # sets to col
       <guid>/posts/20200404075512-ssh_notes/</guid>
       <description>Tags: computers
 SSH Reverse Tunneling  ssh -L 9283:localhost:9283 space.af -&amp;gt; forward remote port 9283 to local port 9283  </description>
+    </item>
+    
+    <item>
+      <title>Stanford NLI Corpus (SNLI)</title>
+      <link>/posts/stanford_nli_corpus_snli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/stanford_nli_corpus_snli/</guid>
+      <description> caption-based  </description>
     </item>
     
     <item>
@@ -10315,6 +10543,18 @@ Has a concept of a state price vector, which means any derivatives contrct can b
       <guid>/posts/stats_from_org_roam/</guid>
       <description>Tags: org-roam
 https://notes.alexkehayias.com/querying-stats-from-org-roam/</description>
+    </item>
+    
+    <item>
+      <title>Stedman and Downs: Evaluating Issues in Peace Implementation</title>
+      <link>/posts/stedman_and_downs_evaluating_issues_in_peace_implementation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/stedman_and_downs_evaluating_issues_in_peace_implementation/</guid>
+      <description>Tags: papers, un and global governance lecture 7
+  Stedman, Stephen John, and George Downs, eds. “Evaluating Issues in Peace Implementation.” In Ending Civil Wars: The Implementation of Peace Agreements. Boulder, Colo: Lynne Rienner, 2002.
+  Peace implementation differs based on peace environment, including three major factors
+ Presence of spoilers Hostile neighboring states Resources available for extraction (resource curse)    UN has only succeeded in the least challenging environments</description>
     </item>
     
     <item>
@@ -11321,7 +11561,7 @@ R2P  Responsbility to protect  </description>
       
       <guid>/posts/un_and_global_governance/</guid>
       <description>Tags: classes, un
-un and global governance lecture 1 un and global governance lecture 2 un and global governance lecture 3 un and global governance lecture 4 Final Paper Topics    </description>
+un and global governance lecture 1 un and global governance lecture 2 un and global governance lecture 3 un and global governance lecture 4 un and global governance lecture 5 un and global governance lecture 6 un and global governance lecture 7 Final Paper Topics    </description>
     </item>
     
     <item>
@@ -11376,7 +11616,33 @@ un and global governance lecture 1 un and global governance lecture 2 un and glo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/un_and_global_governance_lecture_6/</guid>
+      <description>Tags: UN and Global Governance
+ Stabilization vs peacebuilding  readings put forward the binary of stabilization vs peacebuilding  what does &amp;ldquo;success&amp;rdquo; look like for stabilizing and peacebuilding long term strategy for peacebuilding -&amp;gt; ends in procedural democracy? long term strategy for stabilization -&amp;gt; restore state soverignty  developing human intelligence &amp;ldquo;quick impact projects&amp;rdquo; -&amp;gt; UN country team       &amp;ldquo;What is stabilization&amp;rdquo;?  SIPRI -&amp;gt; general trends for peace operations dodgy doctrinal status in UN missions Dorn: Intelligence Lead Peacekeeping - The United Nations Stabilization Mission in Haiti, united nations stabilization mission in the democratic republic of the congo (MONUSCO), united nations multidimensional integrated stabilization mission in mali (MINUSMA)   penholders in sc practice stabilization in their own interventions create a space for political solution and reconstruction  military actions are politized, and the boundary between military and political activity is blurred   peacebuilding and statebuilding are the same in stabilization stabilization goes beyond counter-insurgency by being interagency     united nations multidimensional integrated stabilization mission in mali (MINUSMA) - does not fight terrorism, but the french and the sahel forces are established with counter-insurgency MINUSCA -&amp;gt; rebels taking on local governance roles  </description>
+    </item>
+    
+    <item>
+      <title>un and global governance lecture 7</title>
+      <link>/posts/un_and_global_governance_lecture_7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/un_and_global_governance_lecture_7/</guid>
       <description>Tags: UN and Global Governance</description>
+    </item>
+    
+    <item>
+      <title>un and global governance lit review</title>
+      <link>/posts/un_and_global_governance_lit_review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/un_and_global_governance_lit_review/</guid>
+      <description>Tags: UN and Global Governance
+Outline Peacekeeping operations has changed dramatically with time
+  pre-cold war, cold war, post cold war, armed non state actors
+  peacekeeping has changed as well
+  the universalism of chapter 5 vs chapter 7 peacekeeping
+  from the formations of intl orgs and the diffusion of power and the concepts of collective security
+  evolution of peacekeeping operations
+  use of force, protection of civilians, more complex peace operations</description>
     </item>
     
     <item>
@@ -11762,6 +12028,16 @@ Lebanese Druze leader</description>
 Part 1: Political Infrastructure  Consists of public sector institutions that facilitate governance  vital for statebuilding allows the state to exert authority   constitution making (research handbook)  Part 2: Social Infrastructure   Defined as
  The nexus of horizontal and verticle society relations is the foundation for social reconcilation
   From Putnam  Horizontal - norms, valjues, and social relations within communities Verticle - Communal groups, civic society, and state      How do states rebuild interpersonal bonds and intercommunal bridges?</description>
+    </item>
+    
+    <item>
+      <title>winograd schemas</title>
+      <link>/posts/winograd_schemas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/winograd_schemas/</guid>
+      <description>Tags: ml
+ many different formats rely on tricky sentences (ambigious sentences where pronous are difficult) repeatedly proposed as an nlu-oriented alternative to the turing test no single standard dataset, but many small collections, each with a different format  </description>
     </item>
     
     <item>
