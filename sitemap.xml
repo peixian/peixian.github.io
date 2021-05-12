@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/posts/un_and_global_governance_final_paper/</loc>
+    <lastmod>2021-05-11T00:00:00-04:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2021-05-11T00:00:00-04:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-05-11T00:00:00-04:00</lastmod>
+  </url><url>
     <loc>/posts/un_and_global_governance_paper_proposal/</loc>
   </url><url>
     <loc>/posts/1_1_meetings/</loc>
@@ -1824,8 +1833,6 @@
   </url><url>
     <loc>/posts/20200415211012-postgres/</loc>
   </url><url>
-    <loc>/posts/</loc>
-  </url><url>
     <loc>/posts/20200415132207-potential_masters_advisors/</loc>
   </url><url>
     <loc>/posts/20200415132651-potential_schools_for_phd/</loc>
@@ -2597,7 +2604,5 @@
     <loc>/posts/zintan/</loc>
   </url><url>
     <loc>/posts/zotero/</loc>
-  </url><url>
-    <loc>/</loc>
   </url>
 </urlset>
