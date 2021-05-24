@@ -123,6 +123,16 @@ Small skirmish on Nov 13, 2020, violates the morocco/western sahara ceasefire</d
     </item>
     
     <item>
+      <title>abd al-karim al-uzri</title>
+      <link>/posts/abd_al_karim_al_uzri/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/abd_al_karim_al_uzri/</guid>
+      <description>Tags: people, iraq
+ former minister of iraq  </description>
+    </item>
+    
+    <item>
       <title>abdul hadi al-darraji</title>
       <link>/posts/abdul_hadi_al_darraji/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -678,6 +688,17 @@ Run by quwat al-turkmen (brigade 16)</description>
     </item>
     
     <item>
+      <title>amman message (2005)</title>
+      <link>/posts/amman_message_2005/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/amman_message_2005/</guid>
+      <description>Tags: events, islam
+Declaration of what Islam is and is not
+ https://ammanmessage.com/  </description>
+    </item>
+    
+    <item>
       <title>analogy and cognition</title>
       <link>/posts/analogy_and_cognition/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -916,6 +937,16 @@ Syrian town within the Idlib governate, sits at the center of Jisr al-Shughur, M
       
       <guid>/posts/arthur_young/</guid>
       <description>Tags: people, economics</description>
+    </item>
+    
+    <item>
+      <title>article 140</title>
+      <link>/posts/article_140/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/article_140/</guid>
+      <description>Tags: iraqi constitutionalism
+ Constitutional time bomb, three step process for determining the status of kirkuk, postponed indefinitely https://en.wikipedia.org/wiki/Kirkuk%5Fstatus%5Freferendum  </description>
     </item>
     
     <item>
@@ -1602,6 +1633,15 @@ Career Books  https://www.reddit.com/r/ExperiencedDevs/comments/hpgkvv/what%5Far
     </item>
     
     <item>
+      <title>Bouillion et al - Iraq: Preventing Another Generation of Conflict</title>
+      <link>/posts/bouillion_et_al_iraq_preventing_another_generation_of_conflict/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bouillion_et_al_iraq_preventing_another_generation_of_conflict/</guid>
+      <description>Tags: books</description>
+    </item>
+    
+    <item>
       <title>Bovcon: France&#39;s Conflict Resolution Strategy in Côte d&#39;Ivoire and its Ethical Implications</title>
       <link>/posts/bovcon_france_s_conflict_resolution_strategy_in_cote_d_ivoire_and_its_ethical_implications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1715,6 +1755,15 @@ Large report on how the UN un department of peacekeeping (DPKO) operations need 
       <guid>/posts/broadcasting_and_multi_cast/</guid>
       <description>Tags: algorithms, distributed systems, papers
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.3.4709&amp;amp;rep=rep1&amp;amp;type=pdf</description>
+    </item>
+    
+    <item>
+      <title>Brubaker: Religious Dimensions of Political Conflict and Violence</title>
+      <link>/posts/brubaker_religious_dimensions_of_political_conflict_and_violence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/brubaker_religious_dimensions_of_political_conflict_and_violence/</guid>
+      <description>Tags: papers, religion</description>
     </item>
     
     <item>
@@ -2677,6 +2726,16 @@ Turkish politics hold contradictory viewpoints of Ottomanism, esepcially with th
     </item>
     
     <item>
+      <title>dask</title>
+      <link>/posts/dask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dask/</guid>
+      <description>Tags: pandas, numpy
+ https://dask.org/  Flow order  Graph, scheduling, execution  constructs a flow order as a graph inside a python dict assumptions: data is not modified in place, tasks do not hold the gil  python bindings for native interfaces may lock, these must be made sure to be released      Dask vs Spark  similar to spark spark has a higher level data representation dask uses numpy/pandas/sklear, spark is more mature and has sql support dask allows to compute arbitrary graphs spark allows computations from compositions of high level primitives or extending to rdd  </description>
+    </item>
+    
+    <item>
       <title>data</title>
       <link>/posts/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2792,6 +2851,16 @@ Talk  Career FF&amp;rsquo;s have an outside impact on the conflicts they go to T
       <guid>/posts/de_soto_del_castillo_implementation_of_comphrensive_peace_accords/</guid>
       <description>Tags: el salvador, un and global governance lecture 5
  UN proclaims success in el salvador, but it&amp;rsquo;s highly likely this wasn&amp;rsquo;t possible problems  national civil police in el salvador transfer of land to former combatants   UN peace accords started from 1990 to 1991, a &amp;ldquo;negotiated revolution&amp;rdquo; appearance of armed bands following the peace accords ONUSAL was asked to be extended by the salvadoreans  extremely intrusive, basically UN &amp;ldquo;omnipresence&amp;rdquo;   el salvador was largely broken due to income inequality, which then had the landed class nurture a powerful armed forces to protect themselves constant external financing problems, especially in light of the problems caused by the collapse in coffee prices, lead to need for more external financing international negotiating effor was developed and maintained by the sec gen makes the case that el salvador&amp;rsquo;s gains are not irreversible, and the various assinations and killings presents a difficult problem to solve &amp;ldquo;race towards elections&amp;rdquo; - lulls the international community into thinking that the problem is finished questions of &amp;ldquo;exit scenario&amp;rdquo;, what consitutes a proper exit scenario?</description>
+    </item>
+    
+    <item>
+      <title>declaration of the shia in iraq</title>
+      <link>/posts/declaration_of_the_shia_in_iraq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/declaration_of_the_shia_in_iraq/</guid>
+      <description>Tags: events, iraq
+ https://al-bab.com/documents-section/declaration-shia-iraq  paper describing who and who isn&amp;rsquo;t the shia</description>
     </item>
     
     <item>
@@ -3567,6 +3636,16 @@ Reasoning provides proof of numbers</description>
     </item>
     
     <item>
+      <title>everything is correlated</title>
+      <link>/posts/everything_is_correlated/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/everything_is_correlated/</guid>
+      <description>Tags: statistics
+ Ties into replication crisis https://www.gwern.net/Everything  </description>
+    </item>
+    
+    <item>
       <title>ex-combatants</title>
       <link>/posts/ex_combatants/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3717,6 +3796,16 @@ called for the impeachment of the mustafa al-kadhimi government</description>
       <description>Tags: grad school, classes
 Possible classes for fall 2020: @ NYU
  MEIS-GA 1770 Topics: Theorizing Mobility: 09/02/2020 - 12/13/2020 Tue 4.55 PM - 7.35 PM at BOBS 837 with Alatas, Ismail MEIS-GA 1609 Intro to The Qur’An: 09/02/2020 - 12/13/2020 Tue 4.55 PM - 7.35 PM at TISC LC4 with Katz, Marion MEIS-GA 1687 Prob &amp;amp; Meth in Mideast Studies - 09/02/2020 - 12/13/2020 We 4:55PM - 7:35PM at Kevo Library  @ CUNY GC</description>
+    </item>
+    
+    <item>
+      <title>fall 2021 classes</title>
+      <link>/posts/fall_2021_classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/fall_2021_classes/</guid>
+      <description>Tags: grad school
+ LING-GA 48 - Linguistics as a Cognitive Science  9:30-10:45AM Monday/Wednesday 25 min bike time (30 min)   MEIS-GA 1860 - Religion and Modernity  4:55pm-7:40pm Tuesdays 25 min bike time (30 min)   NEST-GA 2999  4:55-7:35pm Thursdays 25 min bike time (30 min)    </description>
     </item>
     
     <item>
@@ -4084,6 +4173,15 @@ Computational Semantics  how do we represent meanings of words and sentences how
       
       <guid>/posts/french_archival_science/</guid>
       <description> Spearheaded in the wake of the french revolution Including conceptualization of public status of documents and the state&amp;rsquo;s responsbilities to guard both the nation&amp;rsquo;s heritage, and most important, to make that heritage widely accessible- DiCapua - Gatekeepers of the Arab Past pg 100  Principals  respect des fonds - Reliance on Provenance  Assumes that records have orginalized from purposeful organized activity and have relationship to one another Records should be kept within the same order they arrived, allowing sets to be reviewed in totality Unique quality of documents arise from the relation to their source   respect pour l&amp;rsquo;ordre primitif - Respect for the Primitive Order  Documents should not be reordered A series was constructed with reason, and the series order itself is a document Each record is a part of an organic whole    </description>
+    </item>
+    
+    <item>
+      <title>french mandate</title>
+      <link>/posts/french_mandate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/french_mandate/</guid>
+      <description>Tags: france,</description>
     </item>
     
     <item>
@@ -4800,6 +4898,16 @@ Shoes:
     </item>
     
     <item>
+      <title>Haddad - Understanding Sectarianism</title>
+      <link>/posts/haddad_understanding_sectarianism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/haddad_understanding_sectarianism/</guid>
+      <description>Tags: books, sectarianism
+Overview  &amp;lsquo;sectarianism&amp;rsquo; as a term is too broad and doesn&amp;rsquo;t mean anything he suggests a 4 pillar approach, building on top of Hinnebusch - Identity and State Formation in Multi‐sectarian Societies  doctrinal substate state suprastate   Brubaker: Religious Dimensions of Political Conflict and Violence Religion is a necessary but not sufficient event for the formation of sectarian identities Skip past the fetishization doctrine and the pervasive binary of Sunni/Shia Also poor debates that unity is a manichean good that opposes sectarianism  coexistence, intermarriage, and kinship are not a bar to the outbreak of hostilities   context, flebility, and salience  enough for raw symbolisism for everything to be framed everything is correlated - the context, flexibility, and salience make religious markers easy to adapt   we cannot view things as a dichmoety of above/below, for elites are also the product of their own systems, so the cynical view of elites manipulating their system is false  Formations of Sectarian identities  Identity is a difference between contest vs contestation  Weiss - In the Shadows of Sectarianism   amman message (2005) and mecca declaration (2006) were doctrinal and had clerical buy in, but did bridge sectarian divisions religion is often times not the main driver but can fan the flames, schisms can create legitimacy for divisions   &amp;ldquo;To ask if sectarian dynamics are driven by religion or politics is to ask the wrong question.</description>
+    </item>
+    
+    <item>
       <title>hadi al-ameri</title>
       <link>/posts/hadi_al_ameri/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4895,6 +5003,16 @@ Factions  internal leadership (gaza, west bank, prisons) external leadership (pa
     </item>
     
     <item>
+      <title>Hanf - Coexistence in Wartime Lebanon</title>
+      <link>/posts/hanf_coexistence_in_wartime_lebanon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hanf_coexistence_in_wartime_lebanon/</guid>
+      <description>Tags: books, lebanon
+ Argues that the various approaches to multicommunalism can be condensed to:  Jacobinistic approach that levels communal differences one that explicitly seeks to mobilized communal identities &amp;ldquo;syncretistic nationalism&amp;rdquo; - using communal groups as the building blocks of a transcendent nation    </description>
+    </item>
+    
+    <item>
       <title>Haplin - Thirteen Ways to Make a Plural</title>
       <link>/posts/haplin_thirteen_ways_to_make_a_plural/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4921,6 +5039,15 @@ Factions  internal leadership (gaza, west bank, prisons) external leadership (pa
       <guid>/posts/hardware/</guid>
       <description>Tags: computers
  https://www.crowdsupply.com/diodes-delight/piunora https://www.crowdsupply.com/stereopi/stereopi-v2 https://www.crowdsupply.com/soniktech/e-paper-shield-kit  </description>
+    </item>
+    
+    <item>
+      <title>Harmes: Political Marketing in Post Conflict Elections</title>
+      <link>/posts/harmes_political_marketing_in_post_conflict_elections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/harmes_political_marketing_in_post_conflict_elections/</guid>
+      <description>Tags: papers, electoral systems</description>
     </item>
     
     <item>
@@ -5203,6 +5330,15 @@ Preface   Book is not about math, art, and music relations
   Book is about patterns, the more abstract layer on top of the raw information in the brain
   Describes the self-referential &amp;ldquo;I&amp;rdquo;
  godel&amp;rsquo;s incompleteness theorem showed that it is impossible to construct a set of axioms that exist outside mathematics, all axioms are &amp;ldquo;incomplete&amp;rdquo;    Kurt Godel vs bertrand russel and alfred north whitehead in principa mathmatica</description>
+    </item>
+    
+    <item>
+      <title>Hooker - The Hardware Lottery</title>
+      <link>/posts/hooker_the_hardware_lottery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hooker_the_hardware_lottery/</guid>
+      <description>Tags: papers, hardware</description>
     </item>
     
     <item>
@@ -6492,6 +6628,26 @@ town 15km northwest of baqubah</description>
     </item>
     
     <item>
+      <title>khamis al-khajar</title>
+      <link>/posts/khamis_al_khajar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/khamis_al_khajar/</guid>
+      <description>Tags: iraq, people
+iraqi politician</description>
+    </item>
+    
+    <item>
+      <title>Khan - The Great Partition</title>
+      <link>/posts/khan_the_great_partition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/khan_the_great_partition/</guid>
+      <description>Tags: books, pakistan, india
+ sect-coded environments disincenvtives political moderation  </description>
+    </item>
+    
+    <item>
       <title>khmer rouge</title>
       <link>/posts/khmer_rouge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6516,7 +6672,8 @@ Genocidal regime that killed over 2MM</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/kirkuk/</guid>
-      <description>Tags: iraq</description>
+      <description>Tags: iraq
+-article 140</description>
     </item>
     
     <item>
@@ -7105,6 +7262,25 @@ Covers 4 years, covers the 13in 2019 macbook air
     </item>
     
     <item>
+      <title>Maher - Salafi-Jihadism: The History of an Idea</title>
+      <link>/posts/maher_salafi_jihadism_the_history_of_an_idea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/maher_salafi_jihadism_the_history_of_an_idea/</guid>
+      <description>Tags: islam, books
+ theorization of terms such as rawafidh or rafidha with terms like nawsib  </description>
+    </item>
+    
+    <item>
+      <title>Mahmood - Religious Difference in a Secular Age</title>
+      <link>/posts/mahmood_religious_difference_in_a_secular_age/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mahmood_religious_difference_in_a_secular_age/</guid>
+      <description>Tags: books</description>
+    </item>
+    
+    <item>
       <title>Mahmoud Darwish</title>
       <link>/posts/mahmoud_darwish/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7144,6 +7320,16 @@ Leading sairun (sadr political party) on the iraqi finance committee</descriptio
       
       <guid>/posts/20200414200012-makdisi_the_ecumenical_frame/</guid>
       <description>Tags: books, Post-Ottoman Near East, iraq, lebanon,syria</description>
+    </item>
+    
+    <item>
+      <title>Makram Ebeid</title>
+      <link>/posts/makram_ebeid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/makram_ebeid/</guid>
+      <description>Tags: people
+ Egyptian Coptic leader made a statement that he was &amp;ldquo;Muslim by country and Christian by religion&amp;rdquo;  quoted in Mahmood - Religious Difference in a Secular Age    </description>
     </item>
     
     <item>
@@ -7337,6 +7523,16 @@ Links to Kalyvas - The Logic of Violence in Civil War and</description>
     </item>
     
     <item>
+      <title>mecca declaration (2006)</title>
+      <link>/posts/mecca_declaration_2006/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mecca_declaration_2006/</guid>
+      <description>Tags: events, islam, iraq
+demanded an end to sectarian violence in iraq</description>
+    </item>
+    
+    <item>
       <title>mechanized proofs</title>
       <link>/posts/mechanized_proofs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7364,6 +7560,15 @@ Ottoman era power circuits were maintained in Trapzon Despite issues with Trapzo
       <guid>/posts/mental_models/</guid>
       <description>Tags: episteme
 What is a mental model?  Originally traced back to Jean Piaget&amp;rsquo;s Theory of Cognitive Development  https://www.simplypsychology.org/piaget.html   Modern usage covers:  Frameworks  Frameworks for decision making and for life   Thinking tools  Tools and techniques for thinking, sometimes &amp;ldquo;rationality&amp;rdquo; research  i.e. &amp;lsquo;reasoning from first principles&amp;rsquo;, &amp;lsquo;avoiding cognitive bias&amp;rsquo;, etc     Mental representations  Piaget&amp;rsquo;s orginal theory, internal representations of some problem domain  &amp;lsquo;tacit knowledge&amp;rsquo; vs &amp;lsquo;explicit knowledge&amp;rsquo;, or technê vs epistêmê   Made through experience     https://fs.</description>
+    </item>
+    
+    <item>
+      <title>Mervin - The Shi&#39;a worlds and Iran</title>
+      <link>/posts/mervin_the_shi_a_worlds_and_iran/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mervin_the_shi_a_worlds_and_iran/</guid>
+      <description>Tags: books, islam</description>
     </item>
     
     <item>
@@ -7526,6 +7731,16 @@ http://www.eecs.harvard.edu/~michaelm/NEWWORK/postscripts/twosurvey.pdf https://
       
       <guid>/posts/ml/</guid>
       <description>Tags: Computers, math</description>
+    </item>
+    
+    <item>
+      <title>ml conferences</title>
+      <link>/posts/ml_conferences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ml_conferences/</guid>
+      <description>Tags: ml
+ https://iclr.cc/virtual%5F2020/poster%5FHyxnMyBKwB.html https://iclr.cc/virtual%5F2020/papers.html?filter=keywords  NeurIPS Impact Statement  https://medium.com/@GovAI/a-guide-to-writing-the-neurips-impact-statement-4293b723f832  </description>
     </item>
     
     <item>
@@ -7716,6 +7931,26 @@ Assassinated by the Baath in Feb 1999</description>
       
       <guid>/posts/muhannad_al_aqabi/</guid>
       <description>Tags: people, iraq</description>
+    </item>
+    
+    <item>
+      <title>muhasasa</title>
+      <link>/posts/muhasasa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/muhasasa/</guid>
+      <description>Tags: iraq
+ started as sectarian appointment but also a party appointment system elites have shifted from calcifying their own groups to a shift in the system against the populace  </description>
+    </item>
+    
+    <item>
+      <title>muhsin abu-tbikh</title>
+      <link>/posts/muhsin_abu_tbikh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/muhsin_abu_tbikh/</guid>
+      <description>Tags: people, iraq
+ iraqi nationalist figure and stateman in the 1930&amp;rsquo;s  </description>
     </item>
     
     <item>
@@ -8329,6 +8564,15 @@ Former iraqi PM, Dawa affilated</description>
       <guid>/posts/number_theory_book_club/</guid>
       <description>Tags: number theory
  https://spxy.github.io/bc/  </description>
+    </item>
+    
+    <item>
+      <title>numpy</title>
+      <link>/posts/numpy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/numpy/</guid>
+      <description>Tags: python</description>
     </item>
     
     <item>
@@ -9362,6 +9606,15 @@ https://en.wikipedia.org/wiki/Procyclical%5Fand%5Fcountercyclical%5Fvariables</d
     </item>
     
     <item>
+      <title>programming frameworks</title>
+      <link>/posts/programming_frameworks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/programming_frameworks/</guid>
+      <description>Tags: computers</description>
+    </item>
+    
+    <item>
       <title>programming kubernetes</title>
       <link>/posts/programming_kubernetes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10034,6 +10287,16 @@ Specific kube controller that encodes the ability to startup and stop identical 
     </item>
     
     <item>
+      <title>replication crisis</title>
+      <link>/posts/replication_crisis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/replication_crisis/</guid>
+      <description>Tags: philosophy of science
+ https://twitter.com/eigenrobot/status/1334273043590340608 https://arxiv.org/abs/2009.09440 http://www.erikdrysdale.com/winners%5Fcurse/#mjx-eqn-eqpower https://en.wikipedia.org/wiki/Researcher%5Fdegrees%5Fof%5Ffreedom https://en.wikipedia.org/wiki/Publication%5Fbias http://www.erikdrysdale.com/ https://en.wikipedia.org/wiki/Power%5Fof%5Fa%5Ftest https://en.wikipedia.org/wiki/Bayesian%5Finference https://en.wikipedia.org/wiki/Proteus%5Fphenomenon http://www.stat.columbia.edu/~gelman/research/published/retropower%5Ffinal.pdf  What&amp;rsquo;s Wrong with Social Science?  https://fantasticanachronism.com/2020/09/11/whats-wrong-with-social-science-and-how-to-fix-it/ Paper tackling replication rates: https://royalsocietypublishing.org/doi/10.1098/rsos.200566 HTTLPR: https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/ https://www.gwern.net/Scanners#citogenesis-how-often-do-researchers-not-read-the-papers-they-cite https://www.frontiersin.org/articles/10.3389/fnhum.2018.00037/full https://www.nature.com/articles/s41562-018-0522-1 https://www.compare-trials.org/  </description>
+    </item>
+    
+    <item>
       <title>republic of the congo (RoC)</title>
       <link>/posts/republic_of_the_congo_roc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10244,6 +10507,15 @@ Oil tanker in yemen, off the coast, stranded 5 nautical miles. Seawater entered 
     </item>
     
     <item>
+      <title>Safouan - Why are the Arabs Not Free?</title>
+      <link>/posts/safouan_why_are_the_arabs_not_free/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/safouan_why_are_the_arabs_not_free/</guid>
+      <description>Tags: books</description>
+    </item>
+    
+    <item>
       <title>sahwa (awakening)</title>
       <link>/posts/sahwa_awakening/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10377,6 +10649,15 @@ visualization and tracking: http://celestrak.com/ examples:
       <guid>/posts/sayroon/</guid>
       <description>Tags: iraq
 Iraqi political party run by Muqtada al-Sadr</description>
+    </item>
+    
+    <item>
+      <title>scala</title>
+      <link>/posts/scala/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/scala/</guid>
+      <description>Tags: programming languages</description>
     </item>
     
     <item>
@@ -10602,6 +10883,15 @@ Sheeran, Scott, and Stephanie Case. “The Intervention Brigade: Legal Issues fo
       <guid>/posts/shell/</guid>
       <description>Tags: computers
  shell uses the readline2 lib ^string1^string2 does word replace  Note that this doesn&amp;rsquo;t work in fish   !^ and !$ map to the first and last arguments of the latest command, respectively  </description>
+    </item>
+    
+    <item>
+      <title>shia</title>
+      <link>/posts/shia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/shia/</guid>
+      <description>Tags: islam</description>
     </item>
     
     <item>
@@ -10942,6 +11232,15 @@ special purpose acquisition company
     </item>
     
     <item>
+      <title>spark</title>
+      <link>/posts/spark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/spark/</guid>
+      <description>Tags: scala</description>
+    </item>
+    
+    <item>
       <title>special economic zones</title>
       <link>/posts/sez_s/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10971,6 +11270,17 @@ lebanon hezbollah members have been spotted here as recently as July 12, 2019</d
 https://www.instapaper.com/read/1370117850 - By T Greer
  Talks about how Oswald Spengler&amp;rsquo;s Decline of the West ibn khaldunian understand of civilization: civilization rises and falls going through the birth cycles like a human/organism greer talks about how this is a fundalmentally pop culture idea   coporations as people, states as people, etc
  Corporate personhood” is simply folk sociology encoded in law. It is not hard to jump from treating a collective as an agent to treating a collective as a living agent, possessing all the attributes of animals and people, the living agents we are most familiar with.</description>
+    </item>
+    
+    <item>
+      <title>spring</title>
+      <link>/posts/spring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/spring/</guid>
+      <description>Tags: java,
+application framework for java
+Spring Boot  https://spring.io/projects/spring-boot/ inclusive framework for starting new projects  </description>
     </item>
     
     <item>
@@ -11297,6 +11607,15 @@ Summer FLAS:  Letter of rec: https://docs.google.com/document/d/1wLwNCglIpKSksGB
     </item>
     
     <item>
+      <title>sunni</title>
+      <link>/posts/sunni/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sunni/</guid>
+      <description>Tags: islam</description>
+    </item>
+    
+    <item>
       <title>survey papers</title>
       <link>/posts/survey_papers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -11304,6 +11623,16 @@ Summer FLAS:  Letter of rec: https://docs.google.com/document/d/1wLwNCglIpKSksGB
       <guid>/posts/survey_papers/</guid>
       <description>Tags: writing, grad school
  https://www.journals.elsevier.com/computers-and-operations-research/what-makes-a-good-survey/ http://www.cs.ucf.edu/~lboloni/Teaching/EEL6788%5F2008/slides/SurveyTutorial.pdf  </description>
+    </item>
+    
+    <item>
+      <title>Sutton: The Bitter Lesson</title>
+      <link>/posts/sutton_the_bitter_lesson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sutton_the_bitter_lesson/</guid>
+      <description>Tags: articles, hardware, ml
+ http://www.incompleteideas.net/IncIdeas/BitterLesson.html Similar to Hooker - The Hardware Lottery makes the point that &amp;ldquo;compute &amp;raquo; clever&amp;rdquo; https://papers.nips.cc/paper/1999/file/464d828b85b0bed98e80ade0a5c43b0f-Paper.pdf  Responses  https://staff.fnwi.uva.nl/m.welling/wp-content/uploads/Model-versus-Data-AI-1.pdf https://rodneybrooks.com/a-better-lesson/  Discussion  Role of open source Rise of intermediate representation  abstract interpretation?   active learning and weak supervision malloc and fpga  performance constraints of cache misses? cache analysis?   compilers  text/stack/heap isa maps to blocks of code profile guided optimizations to burn in your hot spots   what other types of machine learning are being foreclosed because we don&amp;rsquo;t have the hardware?</description>
     </item>
     
     <item>
@@ -12629,6 +12958,15 @@ VPS Hosting providers:
     </item>
     
     <item>
+      <title>Wahhabi</title>
+      <link>/posts/wahhabi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wahhabi/</guid>
+      <description>Tags: sunni</description>
+    </item>
+    
+    <item>
       <title>Walid Jumblatt</title>
       <link>/posts/walid_jumblatt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -12683,6 +13021,16 @@ Lebanese Druze leader</description>
       
       <guid>/posts/weinstein_resources_and_the_information_problem_in_rebel_recruitment/</guid>
       <description>Tags: papers, militias Argues with the model of seeing rebel recruitment through &amp;lsquo;resource-wealthy&amp;rsquo; and &amp;lsquo;resource-poor&amp;rsquo;</description>
+    </item>
+    
+    <item>
+      <title>Weiss - In the Shadows of Sectarianism</title>
+      <link>/posts/weiss_in_the_shadows_of_sectarianism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weiss_in_the_shadows_of_sectarianism/</guid>
+      <description>Tags: books, sectarianism
+ Puts forward a different typology of &amp;ldquo;sectarianism&amp;rdquo; that doesn&amp;rsquo;t restrict it to one identity Underlying understanding of sectarianism is that it is the polar opposite of state building Argues that sectarianization of the Lebanese Shi&amp;rsquo;a communities during the french mandate in lebanon was pushed both  above: form of elite and colonial divide and rule below: sect-specific rights and religious recongition   argues that we cannot blame sectarianism as a pure product of colonialism  </description>
     </item>
     
     <item>
@@ -12915,6 +13263,16 @@ ProvisionQL for looking at ipas and provisions  https://github.com/ealeksandrov/
     </item>
     
     <item>
+      <title>Yasser al-Habib</title>
+      <link>/posts/yasser_al_habib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/yasser_al_habib/</guid>
+      <description>Tags: people
+Outspoken Shia cleric</description>
+    </item>
+    
+    <item>
       <title>yassine jaber</title>
       <link>/posts/yassine_jaber/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -12998,6 +13356,15 @@ General secretary of of the iraqi communist party from 1941 to 1947</description
       <description>Tags: papers, Post-Ottoman Near East, europe, turkey
 Talks about the &amp;ldquo;Memory House of Ataturk&amp;rdquo; (mustafa kemal) as a focal point for macedonian ethnic identities, utilization of Ataturk as a symbol and claiming him (either through his lineage or pan-Turkishness) to be a rallying point.
  historical consciousness is not a homogenous but rather a multilayered and complex process which can encompass apparently contradicting narratives of the past, not only within one nation-state - pg 12</description>
+    </item>
+    
+    <item>
+      <title>zaidi</title>
+      <link>/posts/zaidi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/zaidi/</guid>
+      <description>Tags: islam</description>
     </item>
     
     <item>
