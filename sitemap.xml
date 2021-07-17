@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/posts/un_and_global_governance_final_paper/</loc>
-    <lastmod>2021-05-11T00:00:00-04:00</lastmod>
+    <lastmod>2021-05-11T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2021-05-11T00:00:00-04:00</lastmod>
+    <lastmod>2021-05-11T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2021-05-11T00:00:00-04:00</lastmod>
+    <lastmod>2021-05-11T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/posts/un_and_global_governance_paper_proposal/</loc>
   </url><url>
@@ -43,6 +43,8 @@
   </url><url>
     <loc>/posts/abu_mahdi_al_muhandis/</loc>
   </url><url>
+    <loc>/posts/abu_ubyad/</loc>
+  </url><url>
     <loc>/posts/abu_zainab_al_lami_hussein_falal_aziz_al_lami/</loc>
   </url><url>
     <loc>/posts/abu_rish_lebanon_s_uprising_in_a_time_of_crisis/</loc>
@@ -55,6 +57,8 @@
   </url><url>
     <loc>/posts/20200415113056-adalet_hotels_and_highways/</loc>
   </url><url>
+    <loc>/posts/adam_optimizer/</loc>
+  </url><url>
     <loc>/posts/adamcyzk_twenty_years_of_protection_of_civilians_at_the_un_security_council/</loc>
   </url><url>
     <loc>/posts/20200415203841-adar_emotions_and_nationalism_armenian_genocide_as_a_case_study/</loc>
@@ -62,6 +66,10 @@
     <loc>/posts/adil_abdul_mahdi/</loc>
   </url><url>
     <loc>/posts/adjacency_lists/</loc>
+  </url><url>
+    <loc>/posts/adnan_al_asadi/</loc>
+  </url><url>
+    <loc>/posts/ads_cft/</loc>
   </url><url>
     <loc>/posts/adversarial_nli/</loc>
   </url><url>
@@ -73,13 +81,23 @@
   </url><url>
     <loc>/posts/20200415213718-afghanistan/</loc>
   </url><url>
+    <loc>/posts/afghanistan_visa/</loc>
+  </url><url>
+    <loc>/posts/afl_american_fuzzy_lop/</loc>
+  </url><url>
     <loc>/posts/africa/</loc>
   </url><url>
     <loc>/posts/african_union_au/</loc>
   </url><url>
     <loc>/posts/20200414223749-ahmed_afghanistan_rising/</loc>
   </url><url>
+    <loc>/posts/aiken_et_al_deconstructing_process_isolation/</loc>
+  </url><url>
     <loc>/posts/ain_al_tamur/</loc>
+  </url><url>
+    <loc>/posts/air_traffic/</loc>
+  </url><url>
+    <loc>/posts/airbus_350_servers/</loc>
   </url><url>
     <loc>/posts/20200419131044-airlines_bailout_2020/</loc>
   </url><url>
@@ -115,6 +133,8 @@
   </url><url>
     <loc>/posts/alaaldin_et_al_the_rise_and_the_future_of_militias_in_the_mena_region/</loc>
   </url><url>
+    <loc>/posts/albania/</loc>
+  </url><url>
     <loc>/posts/alfred_north_whitehead/</loc>
   </url><url>
     <loc>/posts/algeria/</loc>
@@ -144,6 +164,8 @@
     <loc>/posts/amerli/</loc>
   </url><url>
     <loc>/posts/amman_message_2005/</loc>
+  </url><url>
+    <loc>/posts/amnesty_and_post_conflict/</loc>
   </url><url>
     <loc>/posts/analogy_and_cognition/</loc>
   </url><url>
@@ -181,6 +203,8 @@
   </url><url>
     <loc>/posts/arabic_nlp/</loc>
   </url><url>
+    <loc>/posts/arbaeen/</loc>
+  </url><url>
     <loc>/posts/archives_introduction_org/</loc>
   </url><url>
     <loc>/posts/archiving_a_revolution_smartphones_social_media_protest/</loc>
@@ -191,6 +215,10 @@
   </url><url>
     <loc>/posts/ariha/</loc>
   </url><url>
+    <loc>/posts/arista/</loc>
+  </url><url>
+    <loc>/posts/arms_management_and_destruction/</loc>
+  </url><url>
     <loc>/posts/arthur_young/</loc>
   </url><url>
     <loc>/posts/article_140/</loc>
@@ -199,9 +227,17 @@
   </url><url>
     <loc>/posts/aah_asa_ib_ahl_al_haqq/</loc>
   </url><url>
+    <loc>/posts/asad_formations_of_the_secular/</loc>
+  </url><url>
+    <loc>/posts/ashraf_qazi/</loc>
+  </url><url>
     <loc>/posts/asian_development_bank/</loc>
   </url><url>
     <loc>/posts/assembly/</loc>
+  </url><url>
+    <loc>/posts/astronomy/</loc>
+  </url><url>
+    <loc>/posts/astronomy_in_iraq/</loc>
   </url><url>
     <loc>/posts/async_cpp/</loc>
   </url><url>
@@ -215,6 +251,8 @@
   </url><url>
     <loc>/posts/austin_s_theory_of_law/</loc>
   </url><url>
+    <loc>/posts/authoritarial_intent_and_fixing_things_when_they_re_generating_profit/</loc>
+  </url><url>
     <loc>/posts/authoritarian_problems_with_humantiarian_aid/</loc>
   </url><url>
     <loc>/posts/autodefensas_unidas_de_colombia_auc/</loc>
@@ -227,7 +265,13 @@
   </url><url>
     <loc>/posts/average_pooling/</loc>
   </url><url>
+    <loc>/posts/avionics/</loc>
+  </url><url>
+    <loc>/posts/avocados_in_the_middle_east/</loc>
+  </url><url>
     <loc>/posts/awk/</loc>
+  </url><url>
+    <loc>/posts/aws/</loc>
   </url><url>
     <loc>/posts/ayatollah_al_khoei/</loc>
   </url><url>
@@ -273,6 +317,8 @@
   </url><url>
     <loc>/posts/basel_committee_on_banking_supervision/</loc>
   </url><url>
+    <loc>/posts/baseyian_optimization/</loc>
+  </url><url>
     <loc>/posts/bash/</loc>
   </url><url>
     <loc>/posts/20200416090936-basra/</loc>
@@ -282,6 +328,10 @@
     <loc>/posts/battle_of_solfernio/</loc>
   </url><url>
     <loc>/posts/bayat_revolution_without_revolutionaries/</loc>
+  </url><url>
+    <loc>/posts/bayesian/</loc>
+  </url><url>
+    <loc>/posts/beam_vm/</loc>
   </url><url>
     <loc>/posts/beath_et_al_the_national_solidarity_program_in_afghanistan/</loc>
   </url><url>
@@ -295,6 +345,8 @@
   </url><url>
     <loc>/posts/bgc_vaccine/</loc>
   </url><url>
+    <loc>/posts/bgp/</loc>
+  </url><url>
     <loc>/posts/bharatiya_janata_party_bjp/</loc>
   </url><url>
     <loc>/posts/bias_nlp_project/</loc>
@@ -304,6 +356,8 @@
     <loc>/posts/biking_in_nyc_website/</loc>
   </url><url>
     <loc>/posts/bildungsroman/</loc>
+  </url><url>
+    <loc>/posts/binary_decision_diagrams/</loc>
   </url><url>
     <loc>/posts/bismayah/</loc>
   </url><url>
@@ -321,7 +375,11 @@
   </url><url>
     <loc>/posts/blocq_the_fog_of_un_peacekeeping/</loc>
   </url><url>
+    <loc>/posts/blogging_platforms/</loc>
+  </url><url>
     <loc>/posts/20200416084831-blumi_ottoman_refugees_1878_1939/</loc>
+  </url><url>
+    <loc>/posts/blumi_the_albania_question_looms_over_the_balkans_again/</loc>
   </url><url>
     <loc>/posts/bolivia/</loc>
   </url><url>
@@ -330,6 +388,10 @@
     <loc>/posts/20200414223410-books/</loc>
   </url><url>
     <loc>/posts/bosnia/</loc>
+  </url><url>
+    <loc>/posts/botorch/</loc>
+  </url><url>
+    <loc>/posts/bottle_sorters_blog_post/</loc>
   </url><url>
     <loc>/posts/bouillion_et_al_iraq_preventing_another_generation_of_conflict/</loc>
   </url><url>
@@ -359,6 +421,8 @@
   </url><url>
     <loc>/posts/brunei/</loc>
   </url><url>
+    <loc>/posts/btr_50/</loc>
+  </url><url>
     <loc>/posts/bully_algorithm/</loc>
   </url><url>
     <loc>/posts/burundi/</loc>
@@ -367,11 +431,17 @@
   </url><url>
     <loc>/posts/bytecode/</loc>
   </url><url>
+    <loc>/posts/c_language/</loc>
+  </url><url>
+    <loc>/posts/c_preprocessor/</loc>
+  </url><url>
     <loc>/posts/c_cpp/</loc>
   </url><url>
     <loc>/posts/cabinet_degree_301_2014/</loc>
   </url><url>
     <loc>/posts/cache/</loc>
+  </url><url>
+    <loc>/posts/caliskan_et_al_semantics_derived_automatically_from_language_corpora_contain_human_like_biases/</loc>
   </url><url>
     <loc>/posts/cambodia/</loc>
   </url><url>
@@ -387,6 +457,8 @@
   </url><url>
     <loc>/posts/capability_trap_blog_post/</loc>
   </url><url>
+    <loc>/posts/captum/</loc>
+  </url><url>
     <loc>/posts/card_and_dinardo_skill_biased_technological_change_and_rising_wage_inequality/</loc>
   </url><url>
     <loc>/posts/career_advice/</loc>
@@ -399,11 +471,15 @@
   </url><url>
     <loc>/categories/</loc>
   </url><url>
+    <loc>/posts/category_theory/</loc>
+  </url><url>
     <loc>/posts/caustics/</loc>
   </url><url>
     <loc>/posts/cbs_independent_review/</loc>
   </url><url>
     <loc>/posts/cellular_networks/</loc>
+  </url><url>
+    <loc>/posts/centos/</loc>
   </url><url>
     <loc>/posts/central_african_republic/</loc>
   </url><url>
@@ -419,7 +495,13 @@
   </url><url>
     <loc>/posts/china/</loc>
   </url><url>
+    <loc>/posts/china_and_the_middle_income_trap/</loc>
+  </url><url>
     <loc>/posts/chinese_science_statistics/</loc>
+  </url><url>
+    <loc>/posts/chinese_urban_rural_divide/</loc>
+  </url><url>
+    <loc>/posts/chinese_wall/</loc>
   </url><url>
     <loc>/posts/chips/</loc>
   </url><url>
@@ -437,6 +519,8 @@
   </url><url>
     <loc>/posts/claude_collective_security_as_an_approach_to_peace/</loc>
   </url><url>
+    <loc>/posts/cli_s/</loc>
+  </url><url>
     <loc>/posts/cliffe_un_peace_and_security_reform/</loc>
   </url><url>
     <loc>/posts/climate_change/</loc>
@@ -445,13 +529,21 @@
   </url><url>
     <loc>/posts/clocks_distributed_systems/</loc>
   </url><url>
+    <loc>/posts/close_calls_and_near_misses_in_programming/</loc>
+  </url><url>
     <loc>/posts/cloud/</loc>
   </url><url>
     <loc>/posts/coalition_against_is/</loc>
   </url><url>
+    <loc>/posts/code_generation/</loc>
+  </url><url>
+    <loc>/posts/coding_tools/</loc>
+  </url><url>
     <loc>/posts/coffee/</loc>
   </url><url>
     <loc>/posts/cognition/</loc>
+  </url><url>
+    <loc>/posts/collusion_rings/</loc>
   </url><url>
     <loc>/posts/20200415154222-colombia/</loc>
   </url><url>
@@ -464,6 +556,8 @@
     <loc>/posts/community_detection_libraries/</loc>
   </url><url>
     <loc>/posts/community_detection_with_org_roam_library/</loc>
+  </url><url>
+    <loc>/posts/companies/</loc>
   </url><url>
     <loc>/posts/comphrensive_agreement_on_the_bangsamoro/</loc>
   </url><url>
@@ -486,6 +580,8 @@
     <loc>/posts/computational_syntax/</loc>
   </url><url>
     <loc>/posts/computer_graphics/</loc>
+  </url><url>
+    <loc>/posts/computer_science_testability/</loc>
   </url><url>
     <loc>/posts/computers/</loc>
   </url><url>
@@ -519,6 +615,8 @@
   </url><url>
     <loc>/posts/correlation_causation/</loc>
   </url><url>
+    <loc>/posts/correlation_coefficients/</loc>
+  </url><url>
     <loc>/posts/cote_d_ivore/</loc>
   </url><url>
     <loc>/posts/counter_insurgency_as_an_infinite_game/</loc>
@@ -526,6 +624,10 @@
     <loc>/posts/counter_terrorism_service_iraq/</loc>
   </url><url>
     <loc>/posts/covid/</loc>
+  </url><url>
+    <loc>/posts/cpp_this/</loc>
+  </url><url>
+    <loc>/posts/cpu/</loc>
   </url><url>
     <loc>/posts/cramer_civil_war_is_not_a_stupid_thing/</loc>
   </url><url>
@@ -563,6 +665,8 @@
   </url><url>
     <loc>/posts/datasets/</loc>
   </url><url>
+    <loc>/posts/date_parsing/</loc>
+  </url><url>
     <loc>/posts/david_ricardo/</loc>
   </url><url>
     <loc>/posts/dawa/</loc>
@@ -577,6 +681,8 @@
   </url><url>
     <loc>/posts/de_soto_del_castillo_implementation_of_comphrensive_peace_accords/</loc>
   </url><url>
+    <loc>/posts/debuggers/</loc>
+  </url><url>
     <loc>/posts/declaration_of_the_shia_in_iraq/</loc>
   </url><url>
     <loc>/posts/deep_learning/</loc>
@@ -584,6 +690,8 @@
     <loc>/posts/democratic_republic_of_the_congo/</loc>
   </url><url>
     <loc>/posts/democritus/</loc>
+  </url><url>
+    <loc>/posts/dennard_scaling/</loc>
   </url><url>
     <loc>/posts/derivatives/</loc>
   </url><url>
@@ -600,6 +708,8 @@
     <loc>/posts/diehl_and_druckman_not_the_same_old_way_trends_in_peace_operations/</loc>
   </url><url>
     <loc>/posts/disarmingly_forthright_mscs_advice/</loc>
+  </url><url>
+    <loc>/posts/disaster_nationalism/</loc>
   </url><url>
     <loc>/posts/disaster_response/</loc>
   </url><url>
@@ -637,9 +747,13 @@
   </url><url>
     <loc>/posts/drafts/</loc>
   </url><url>
+    <loc>/posts/dram_issues/</loc>
+  </url><url>
     <loc>/posts/dual_circulation_program/</loc>
   </url><url>
     <loc>/posts/duffield_development_security_and_unending_war/</loc>
+  </url><url>
+    <loc>/posts/duhok/</loc>
   </url><url>
     <loc>/posts/20200415113415-dujayla_land_project/</loc>
   </url><url>
@@ -695,9 +809,13 @@
   </url><url>
     <loc>/posts/20200414135839-endianness/</loc>
   </url><url>
+    <loc>/posts/energy_based_models/</loc>
+  </url><url>
     <loc>/posts/engineers_don_t_solve_problems/</loc>
   </url><url>
     <loc>/posts/ensemble_average_vs_time_average/</loc>
+  </url><url>
+    <loc>/posts/ensemble_learning/</loc>
   </url><url>
     <loc>/posts/envoy/</loc>
   </url><url>
@@ -707,11 +825,27 @@
   </url><url>
     <loc>/posts/epstine_range/</loc>
   </url><url>
+    <loc>/posts/equal_cost_multipath_ecmp/</loc>
+  </url><url>
+    <loc>/posts/equity/</loc>
+  </url><url>
+    <loc>/posts/erbil/</loc>
+  </url><url>
+    <loc>/posts/erbil_agreement/</loc>
+  </url><url>
     <loc>/posts/erlang/</loc>
+  </url><url>
+    <loc>/posts/erlang_beam_vs_jvm/</loc>
+  </url><url>
+    <loc>/posts/erlang_in_kubernetes/</loc>
   </url><url>
     <loc>/posts/erlang_jit/</loc>
   </url><url>
+    <loc>/posts/erlang_live_market_parser_api_on_kubernetes/</loc>
+  </url><url>
     <loc>/posts/esim_model/</loc>
+  </url><url>
+    <loc>/posts/eta_sequence/</loc>
   </url><url>
     <loc>/posts/etcd/</loc>
   </url><url>
@@ -728,6 +862,8 @@
     <loc>/posts/euclid_s_theorem/</loc>
   </url><url>
     <loc>/posts/europe/</loc>
+  </url><url>
+    <loc>/posts/evans_cooperative_security_intrastate_conflict/</loc>
   </url><url>
     <loc>/posts/events/</loc>
   </url><url>
@@ -785,6 +921,8 @@
   </url><url>
     <loc>/posts/20200419212203-fiebelman_a_phd_is_not_enough/</loc>
   </url><url>
+    <loc>/posts/file_picker_meme/</loc>
+  </url><url>
     <loc>/posts/file_systems/</loc>
   </url><url>
     <loc>/posts/20200415154751-finance/</loc>
@@ -819,6 +957,8 @@
   </url><url>
     <loc>/posts/formal_semantics/</loc>
   </url><url>
+    <loc>/posts/fortna_does_peacekeeping_keep_peace/</loc>
+  </url><url>
     <loc>/posts/forward_oil_sales_iraq/</loc>
   </url><url>
     <loc>/posts/foucault/</loc>
@@ -841,7 +981,11 @@
   </url><url>
     <loc>/posts/french_revolution/</loc>
   </url><url>
+    <loc>/posts/private-2020-04-17/</loc>
+  </url><url>
     <loc>/posts/frontend/</loc>
+  </url><url>
+    <loc>/posts/fsf/</loc>
   </url><url>
     <loc>/posts/fulbright/</loc>
   </url><url>
@@ -855,11 +999,15 @@
   </url><url>
     <loc>/posts/fuzzing/</loc>
   </url><url>
+    <loc>/posts/g_2_muon/</loc>
+  </url><url>
     <loc>/posts/g20/</loc>
   </url><url>
     <loc>/posts/gaddafi/</loc>
   </url><url>
     <loc>/posts/gambetta_et_al_streetwise/</loc>
+  </url><url>
+    <loc>/posts/gambia/</loc>
   </url><url>
     <loc>/posts/ganto_s_axe/</loc>
   </url><url>
@@ -875,6 +1023,8 @@
   </url><url>
     <loc>/posts/gcc_policing/</loc>
   </url><url>
+    <loc>/posts/gdb/</loc>
+  </url><url>
     <loc>/posts/gear_blog_post/</loc>
   </url><url>
     <loc>/posts/geb_chaper_4_consistency_completeness_and_geometry/</loc>
@@ -886,6 +1036,8 @@
     <loc>/posts/geb_chapter_5_recursive_structures/</loc>
   </url><url>
     <loc>/posts/geb_chapter_6_the_location_of_meaning/</loc>
+  </url><url>
+    <loc>/posts/geb_chapter_7_the_propositional_calculus/</loc>
   </url><url>
     <loc>/posts/geb_chapter_8_typographical_number_theory/</loc>
   </url><url>
@@ -901,9 +1053,13 @@
   </url><url>
     <loc>/posts/ghassan_kanafani/</loc>
   </url><url>
+    <loc>/posts/gilligan_do_un_interventions_cause_peace_using_matching_to_improve_causal_inference/</loc>
+  </url><url>
     <loc>/posts/ginty_hybrid_peace_the_interaction_between_top_down_and_bottom_up_peace/</loc>
   </url><url>
     <loc>/posts/giorgio_agamben/</loc>
+  </url><url>
+    <loc>/posts/git/</loc>
   </url><url>
     <loc>/posts/giulio_tononi/</loc>
   </url><url>
@@ -913,13 +1069,19 @@
   </url><url>
     <loc>/posts/glue/</loc>
   </url><url>
+    <loc>/posts/gnu_coreutils/</loc>
+  </url><url>
     <loc>/posts/godel_s_incompleteness_theorem/</loc>
   </url><url>
     <loc>/posts/golang/</loc>
   </url><url>
     <loc>/posts/good_cpp_codebases_to_read/</loc>
   </url><url>
+    <loc>/posts/goode_artifical_intelligence_and_the_future_of_nationalism/</loc>
+  </url><url>
     <loc>/posts/google_fi/</loc>
+  </url><url>
+    <loc>/posts/google_maps/</loc>
   </url><url>
     <loc>/posts/google_ngrams_for_historians/</loc>
   </url><url>
@@ -933,6 +1095,8 @@
   </url><url>
     <loc>/posts/gpt2/</loc>
   </url><url>
+    <loc>/posts/gpt3_test_case_generation/</loc>
+  </url><url>
     <loc>/posts/gpu/</loc>
   </url><url>
     <loc>/posts/20200415130616-grad_school/</loc>
@@ -942,6 +1106,8 @@
     <loc>/posts/gradient_descent/</loc>
   </url><url>
     <loc>/posts/grafana_7_0/</loc>
+  </url><url>
+    <loc>/posts/grants/</loc>
   </url><url>
     <loc>/posts/graph_based_approximate_nearest_neighbor_search/</loc>
   </url><url>
@@ -962,6 +1128,10 @@
     <loc>/posts/gresham_s_law/</loc>
   </url><url>
     <loc>/posts/gron/</loc>
+  </url><url>
+    <loc>/posts/gross_national_income/</loc>
+  </url><url>
+    <loc>/posts/gross_national_income_gni/</loc>
   </url><url>
     <loc>/posts/grpc/</loc>
   </url><url>
@@ -1009,6 +1179,8 @@
   </url><url>
     <loc>/posts/harakat_hezbollah_al_nujaba/</loc>
   </url><url>
+    <loc>/posts/hard_drives/</loc>
+  </url><url>
     <loc>/posts/hardware/</loc>
   </url><url>
     <loc>/posts/harmes_political_marketing_in_post_conflict_elections/</loc>
@@ -1026,6 +1198,8 @@
     <loc>/posts/haskell/</loc>
   </url><url>
     <loc>/posts/20200414223819-hassan_longing_for_the_lost_caliphate/</loc>
+  </url><url>
+    <loc>/posts/hassan_al_kaabi/</loc>
   </url><url>
     <loc>/posts/hassan_nasrallah/</loc>
   </url><url>
@@ -1053,6 +1227,8 @@
   </url><url>
     <loc>/posts/high_level_independent_panel_on_un_peace_operations_hippo/</loc>
   </url><url>
+    <loc>/posts/higher_fb_library/</loc>
+  </url><url>
     <loc>/posts/higher-ed/</loc>
   </url><url>
     <loc>/posts/hilbert/</loc>
@@ -1067,11 +1243,17 @@
   </url><url>
     <loc>/posts/hofstadter_godel_escher_bach/</loc>
   </url><url>
+    <loc>/posts/homogenous_time_blog_post/</loc>
+  </url><url>
+    <loc>/posts/hong_kong/</loc>
+  </url><url>
     <loc>/posts/hooker_the_hardware_lottery/</loc>
   </url><url>
     <loc>/posts/houthis/</loc>
   </url><url>
     <loc>/posts/how_jit_compilers_are_implemented_and_fast_pypy_luajit_graal_and_more/</loc>
+  </url><url>
+    <loc>/posts/how_to_make_a_complete_map_of_every_thought_you_think/</loc>
   </url><url>
     <loc>/posts/how_to_write_a_technical_paper/</loc>
   </url><url>
@@ -1087,7 +1269,11 @@
   </url><url>
     <loc>/posts/humanitarian_aid/</loc>
   </url><url>
+    <loc>/posts/humanitarian_data_projects/</loc>
+  </url><url>
     <loc>/posts/hunt_all_necessary_means_to_what_ends/</loc>
+  </url><url>
+    <loc>/posts/huokou/</loc>
   </url><url>
     <loc>/posts/hussein_ismail_khalil/</loc>
   </url><url>
@@ -1099,9 +1285,13 @@
   </url><url>
     <loc>/posts/ibn_khaldun/</loc>
   </url><url>
+    <loc>/posts/ibrahim_khalil/</loc>
+  </url><url>
     <loc>/posts/icrc/</loc>
   </url><url>
     <loc>/posts/ics_training/</loc>
+  </url><url>
+    <loc>/posts/idea_ecology_blog_post/</loc>
   </url><url>
     <loc>/posts/ideal_pure_types/</loc>
   </url><url>
@@ -1123,7 +1313,13 @@
   </url><url>
     <loc>/posts/inequality/</loc>
   </url><url>
+    <loc>/posts/infiniband/</loc>
+  </url><url>
+    <loc>/posts/information_cascade/</loc>
+  </url><url>
     <loc>/posts/information_paradox/</loc>
+  </url><url>
+    <loc>/posts/information_theory/</loc>
   </url><url>
     <loc>/posts/informers_k8s/</loc>
   </url><url>
@@ -1161,11 +1357,17 @@
   </url><url>
     <loc>/posts/iraq_ag_exports/</loc>
   </url><url>
+    <loc>/posts/iraq_covid_19/</loc>
+  </url><url>
     <loc>/posts/iraq_tech_ventures/</loc>
   </url><url>
     <loc>/posts/iraq_un_reports/</loc>
   </url><url>
+    <loc>/posts/iraq_visa_on_arrival/</loc>
+  </url><url>
     <loc>/posts/iraqi_2021_draft_budget/</loc>
+  </url><url>
+    <loc>/posts/iraqi_agriculture/</loc>
   </url><url>
     <loc>/posts/iraqi_air_strikes/</loc>
   </url><url>
@@ -1243,6 +1445,8 @@
   </url><url>
     <loc>/posts/ivory_coast/</loc>
   </url><url>
+    <loc>/posts/j_programming_language/</loc>
+  </url><url>
     <loc>/posts/ja_fari/</loc>
   </url><url>
     <loc>/posts/jacques_lacan/</loc>
@@ -1258,6 +1462,8 @@
     <loc>/posts/janus_v_asfcme/</loc>
   </url><url>
     <loc>/posts/japan/</loc>
+  </url><url>
+    <loc>/posts/japanese_permanent_residency/</loc>
   </url><url>
     <loc>/posts/java/</loc>
   </url><url>
@@ -1277,9 +1483,13 @@
   </url><url>
     <loc>/posts/julia/</loc>
   </url><url>
+    <loc>/posts/juniper/</loc>
+  </url><url>
     <loc>/posts/jurf_al_sakhar/</loc>
   </url><url>
     <loc>/posts/jurisprudence/</loc>
+  </url><url>
+    <loc>/posts/jvm/</loc>
   </url><url>
     <loc>/posts/k_v_stores/</loc>
   </url><url>
@@ -1319,6 +1529,8 @@
   </url><url>
     <loc>/posts/kernel_bypass/</loc>
   </url><url>
+    <loc>/posts/kfserving/</loc>
+  </url><url>
     <loc>/posts/khalifa_haftar/</loc>
   </url><url>
     <loc>/posts/20200415200544-khalifat_movement/</loc>
@@ -1331,6 +1543,8 @@
   </url><url>
     <loc>/posts/khmer_rouge/</loc>
   </url><url>
+    <loc>/posts/khums/</loc>
+  </url><url>
     <loc>/posts/kilcullen_out_of_the_mountains/</loc>
   </url><url>
     <loc>/posts/kirkuk/</loc>
@@ -1338,6 +1552,8 @@
     <loc>/posts/knight_et_al_honored_not_contained/</loc>
   </url><url>
     <loc>/posts/kolbert_field_notes_from_a_catastrophe/</loc>
+  </url><url>
+    <loc>/posts/kolmogorov_complexity/</loc>
   </url><url>
     <loc>/posts/kosek_et_al_must_should_don_t_care_tcp_conformance_in_the_wild/</loc>
   </url><url>
@@ -1349,9 +1565,15 @@
   </url><url>
     <loc>/posts/kube_ooda_loop_blog_post/</loc>
   </url><url>
+    <loc>/posts/kubectl_trace/</loc>
+  </url><url>
+    <loc>/posts/kubeflow/</loc>
+  </url><url>
     <loc>/posts/kubernentes/</loc>
   </url><url>
     <loc>/posts/kunyas/</loc>
+  </url><url>
+    <loc>/posts/kurdish/</loc>
   </url><url>
     <loc>/posts/kurdistan_democratic_party/</loc>
   </url><url>
@@ -1387,6 +1609,8 @@
   </url><url>
     <loc>/posts/law_37_amnesty/</loc>
   </url><url>
+    <loc>/posts/leaf_and_spine/</loc>
+  </url><url>
     <loc>/posts/lean_proofs/</loc>
   </url><url>
     <loc>/posts/leap_smearing/</loc>
@@ -1400,6 +1624,8 @@
     <loc>/posts/lecun_bengio_hinton_deep_learning/</loc>
   </url><url>
     <loc>/posts/legal_basis_of_the_hashd/</loc>
+  </url><url>
+    <loc>/posts/lenin_was_a_mushroom/</loc>
   </url><url>
     <loc>/posts/li_the_universal_enemy/</loc>
   </url><url>
@@ -1427,6 +1653,8 @@
   </url><url>
     <loc>/posts/literature/</loc>
   </url><url>
+    <loc>/posts/literature_maps/</loc>
+  </url><url>
     <loc>/posts/liwa_al_muntazier/</loc>
   </url><url>
     <loc>/posts/liwa_al_tafuf_brigade_13/</loc>
@@ -1444,6 +1672,16 @@
     <loc>/posts/lottie/</loc>
   </url><url>
     <loc>/posts/low_interest_rates_and_marketing/</loc>
+  </url><url>
+    <loc>/posts/low_latency/</loc>
+  </url><url>
+    <loc>/posts/lu_et_al_influence_paths_for_characterizing_subject_verb_number_agreement_in_lstm_language_models/</loc>
+  </url><url>
+    <loc>/posts/lua/</loc>
+  </url><url>
+    <loc>/posts/m1_macs_feeling_faster_than_intel/</loc>
+  </url><url>
+    <loc>/posts/ma_ruf/</loc>
   </url><url>
     <loc>/posts/macaes_history_has_begun/</loc>
   </url><url>
@@ -1477,6 +1715,8 @@
   </url><url>
     <loc>/posts/mamdani_trans_african_slaveries_thinking_historically/</loc>
   </url><url>
+    <loc>/posts/mandarin/</loc>
+  </url><url>
     <loc>/posts/manim/</loc>
   </url><url>
     <loc>/posts/manufacturing/</loc>
@@ -1484,6 +1724,12 @@
     <loc>/posts/maoist_fighters_in_nepal/</loc>
   </url><url>
     <loc>/posts/mapping/</loc>
+  </url><url>
+    <loc>/posts/marjah/</loc>
+  </url><url>
+    <loc>/posts/market_apis/</loc>
+  </url><url>
+    <loc>/posts/market_multicast/</loc>
   </url><url>
     <loc>/posts/marx/</loc>
   </url><url>
@@ -1497,6 +1743,10 @@
   </url><url>
     <loc>/posts/math/</loc>
   </url><url>
+    <loc>/posts/math_cultures/</loc>
+  </url><url>
+    <loc>/posts/mattson_status_based_definitions_of_need_in_early_islamic_zakat_and_maintenance_laws/</loc>
+  </url><url>
     <loc>/posts/mauritania/</loc>
   </url><url>
     <loc>/posts/max_pooling/</loc>
@@ -1509,6 +1759,10 @@
   </url><url>
     <loc>/posts/20200414201002-meeker_a_nation_of_empire/</loc>
   </url><url>
+    <loc>/posts/megatron_lm/</loc>
+  </url><url>
+    <loc>/posts/mellanox/</loc>
+  </url><url>
     <loc>/posts/mental_models/</loc>
   </url><url>
     <loc>/posts/mervin_the_shi_a_worlds_and_iran/</loc>
@@ -1519,7 +1773,13 @@
   </url><url>
     <loc>/posts/michel_aflaq/</loc>
   </url><url>
+    <loc>/posts/microservices_and_counter_insurgency/</loc>
+  </url><url>
     <loc>/posts/20200414222840-middle_east/</loc>
+  </url><url>
+    <loc>/posts/middle_income_trap/</loc>
+  </url><url>
+    <loc>/posts/military_equipment/</loc>
   </url><url>
     <loc>/posts/military_service_and_retirement_law_no_3_2010/</loc>
   </url><url>
@@ -1528,6 +1788,8 @@
     <loc>/posts/ministry_of_defense_iraq/</loc>
   </url><url>
     <loc>/posts/ministry_of_interior_iraq/</loc>
+  </url><url>
+    <loc>/posts/private-minutes-from-meeting-with-jared/</loc>
   </url><url>
     <loc>/posts/mishasha/</loc>
   </url><url>
@@ -1561,6 +1823,8 @@
   </url><url>
     <loc>/posts/mooc/</loc>
   </url><url>
+    <loc>/posts/moore_s_law/</loc>
+  </url><url>
     <loc>/posts/moro_islamic_liberation_front_milf/</loc>
   </url><url>
     <loc>/posts/morocco/</loc>
@@ -1571,7 +1835,11 @@
   </url><url>
     <loc>/posts/mosul/</loc>
   </url><url>
+    <loc>/posts/mount_korek/</loc>
+  </url><url>
     <loc>/posts/mozambique/</loc>
+  </url><url>
+    <loc>/posts/mu_puzzle/</loc>
   </url><url>
     <loc>/posts/muhammad_abduh/</loc>
   </url><url>
@@ -1593,7 +1861,11 @@
   </url><url>
     <loc>/posts/multi_country_demobilisation_and_reintegration_programme_mdrp/</loc>
   </url><url>
+    <loc>/posts/multi_dialect_bert/</loc>
+  </url><url>
     <loc>/posts/multi_genre_nli_mnli/</loc>
+  </url><url>
+    <loc>/posts/multi_level_ir/</loc>
   </url><url>
     <loc>/posts/multiateration/</loc>
   </url><url>
@@ -1616,6 +1888,8 @@
     <loc>/posts/mustafa_al_kadhimi/</loc>
   </url><url>
     <loc>/posts/mustafa_kemal/</loc>
+  </url><url>
+    <loc>/posts/my_work_as_a_system_blog_post/</loc>
   </url><url>
     <loc>/posts/myanmar/</loc>
   </url><url>
@@ -1649,6 +1923,8 @@
   </url><url>
     <loc>/posts/20200418212315-nationalism_and_outsiders_in_the_middle_east_midterm_final/</loc>
   </url><url>
+    <loc>/posts/nationalism_and_outsiders_in_the_middle_east_thesis/</loc>
+  </url><url>
     <loc>/posts/nationalism_and_outsiders_in_the_middle_east_thesis_proposal/</loc>
   </url><url>
     <loc>/posts/nato/</loc>
@@ -1664,6 +1940,8 @@
     <loc>/posts/nearest_neighbor/</loc>
   </url><url>
     <loc>/posts/nepal/</loc>
+  </url><url>
+    <loc>/posts/network_printers/</loc>
   </url><url>
     <loc>/posts/20200415154022-networks/</loc>
   </url><url>
@@ -1693,6 +1971,8 @@
   </url><url>
     <loc>/posts/nlu/</loc>
   </url><url>
+    <loc>/posts/nlu_crowdsourcing_lab/</loc>
+  </url><url>
     <loc>/posts/nols_wilderness_first_aid/</loc>
   </url><url>
     <loc>/posts/normal_types/</loc>
@@ -1713,6 +1993,8 @@
   </url><url>
     <loc>/posts/numpy/</loc>
   </url><url>
+    <loc>/posts/nvmeof/</loc>
+  </url><url>
     <loc>/posts/obscure_features_of_jpeg/</loc>
   </url><url>
     <loc>/posts/occupy_movement/</loc>
@@ -1724,6 +2006,8 @@
     <loc>/posts/oil_trading/</loc>
   </url><url>
     <loc>/posts/oman/</loc>
+  </url><url>
+    <loc>/posts/on_digital_humanities_programs/</loc>
   </url><url>
     <loc>/posts/historiography/</loc>
   </url><url>
@@ -1741,6 +2025,8 @@
   </url><url>
     <loc>/posts/open_data_kit/</loc>
   </url><url>
+    <loc>/posts/open_graph_protocol/</loc>
+  </url><url>
     <loc>/posts/open_source/</loc>
   </url><url>
     <loc>/posts/open_source_commerialization/</loc>
@@ -1749,9 +2035,13 @@
   </url><url>
     <loc>/posts/openbook/</loc>
   </url><url>
+    <loc>/posts/opensfm/</loc>
+  </url><url>
     <loc>/posts/operating_systems/</loc>
   </url><url>
     <loc>/posts/operation_cast_lead/</loc>
+  </url><url>
+    <loc>/posts/operation_moshtarak/</loc>
   </url><url>
     <loc>/posts/operation_pillar_of_defense/</loc>
   </url><url>
@@ -1760,6 +2050,8 @@
     <loc>/posts/operators_k8s/</loc>
   </url><url>
     <loc>/posts/optuna/</loc>
+  </url><url>
+    <loc>/posts/org_roam_migration/</loc>
   </url><url>
     <loc>/posts/org_latex_export/</loc>
   </url><url>
@@ -1777,9 +2069,17 @@
   </url><url>
     <loc>/posts/os_x/</loc>
   </url><url>
+    <loc>/posts/ottaway_and_kaysi_the_state_of_iraq/</loc>
+  </url><url>
     <loc>/posts/20200416085817-ottoman/</loc>
   </url><url>
     <loc>/posts/20200419210105-overemphasis_of_the_discrete_blog_post/</loc>
+  </url><url>
+    <loc>/posts/overheating_car_engine/</loc>
+  </url><url>
+    <loc>/posts/p_adic_numbers/</loc>
+  </url><url>
+    <loc>/posts/p2p/</loc>
   </url><url>
     <loc>/posts/pakistan/</loc>
   </url><url>
@@ -1793,9 +2093,11 @@
   </url><url>
     <loc>/posts/paper-topics/</loc>
   </url><url>
-    <loc>/posts/20200415203856-papers/</loc>
+    <loc>/posts/papers/</loc>
   </url><url>
     <loc>/posts/papua_new_guinea/</loc>
+  </url><url>
+    <loc>/posts/parallelizing_shell_scripts/</loc>
   </url><url>
     <loc>/posts/pareto_optimal/</loc>
   </url><url>
@@ -1807,11 +2109,19 @@
   </url><url>
     <loc>/posts/parlimentary_delays_as_a_tool_for_sectarianism/</loc>
   </url><url>
+    <loc>/posts/parser_combinators/</loc>
+  </url><url>
+    <loc>/posts/paterson_strong_ai_vs_metadata_analysis/</loc>
+  </url><url>
     <loc>/posts/path_dependency/</loc>
   </url><url>
     <loc>/posts/patriotic_revolutionary_youth_movement_ydg_h/</loc>
   </url><url>
     <loc>/posts/patriotic_union_of_kurdistan_puk/</loc>
+  </url><url>
+    <loc>/posts/patterns_that_eventually_fail/</loc>
+  </url><url>
+    <loc>/posts/paul_dirac/</loc>
   </url><url>
     <loc>/posts/paul_feyerabend/</loc>
   </url><url>
@@ -1829,6 +2139,8 @@
   </url><url>
     <loc>/posts/peripheralization/</loc>
   </url><url>
+    <loc>/posts/perjorative_titles/</loc>
+  </url><url>
     <loc>/posts/20200415114142-personal/</loc>
   </url><url>
     <loc>/posts/20200415130548-peters_getting_what_you_came_for/</loc>
@@ -1838,6 +2150,8 @@
     <loc>/posts/20200415132740-phd_planning/</loc>
   </url><url>
     <loc>/posts/philippines/</loc>
+  </url><url>
+    <loc>/posts/philips_introducing_operators/</loc>
   </url><url>
     <loc>/posts/philliou_interpreting_the_ottoman_past_through_the_national_present/</loc>
   </url><url>
@@ -1859,7 +2173,11 @@
   </url><url>
     <loc>/posts/places_to_write_for/</loc>
   </url><url>
+    <loc>/posts/plywood/</loc>
+  </url><url>
     <loc>/posts/pod_lifecycles/</loc>
+  </url><url>
+    <loc>/posts/podcast_script_draft/</loc>
   </url><url>
     <loc>/posts/podcasts/</loc>
   </url><url>
@@ -1872,6 +2190,8 @@
     <loc>/posts/popular_mobilization_comission_law_2016/</loc>
   </url><url>
     <loc>/posts/porter_military_orientalism/</loc>
+  </url><url>
+    <loc>/posts/porting_jits_to_apple_silicon/</loc>
   </url><url>
     <loc>/posts/post_conflict_statebuilding_organization/</loc>
   </url><url>
@@ -1896,6 +2216,8 @@
     <loc>/posts/principa_mathmatica/</loc>
   </url><url>
     <loc>/posts/principal_component_analysis/</loc>
+  </url><url>
+    <loc>/posts/private-2020-04-14/</loc>
   </url><url>
     <loc>/posts/probability/</loc>
   </url><url>
@@ -1935,6 +2257,8 @@
   </url><url>
     <loc>/posts/protobuf/</loc>
   </url><url>
+    <loc>/posts/protocols/</loc>
+  </url><url>
     <loc>/posts/20200415200432-provonce_the_last_ottoman_generation/</loc>
   </url><url>
     <loc>/posts/psychoanalysis/</loc>
@@ -1943,13 +2267,19 @@
   </url><url>
     <loc>/posts/20200414223655-pursely_familiar_futures/</loc>
   </url><url>
+    <loc>/posts/pxe_boot/</loc>
+  </url><url>
     <loc>/posts/pyretic/</loc>
   </url><url>
     <loc>/posts/python/</loc>
   </url><url>
     <loc>/posts/python_objective_c_bindings/</loc>
   </url><url>
+    <loc>/posts/python_type_checking/</loc>
+  </url><url>
     <loc>/posts/pytorch/</loc>
+  </url><url>
+    <loc>/posts/pytorch_lightning/</loc>
   </url><url>
     <loc>/posts/pytorch_torchtext_incompatibility_issues/</loc>
   </url><url>
@@ -1959,6 +2289,8 @@
   </url><url>
     <loc>/posts/qassim_dahif_al_zubaidi/</loc>
   </url><url>
+    <loc>/posts/qat/</loc>
+  </url><url>
     <loc>/posts/qayyarah/</loc>
   </url><url>
     <loc>/posts/qi_cards/</loc>
@@ -1967,9 +2299,15 @@
   </url><url>
     <loc>/posts/quantization/</loc>
   </url><url>
+    <loc>/posts/quantum_computing_resource_list/</loc>
+  </url><url>
     <loc>/posts/query_optimizers/</loc>
   </url><url>
     <loc>/posts/question_answering/</loc>
+  </url><url>
+    <loc>/posts/queueing_theory/</loc>
+  </url><url>
+    <loc>/posts/queues_and_visibility/</loc>
   </url><url>
     <loc>/posts/quick_history_of_nlp/</loc>
   </url><url>
@@ -1980,6 +2318,8 @@
     <loc>/posts/r/</loc>
   </url><url>
     <loc>/posts/rabat/</loc>
+  </url><url>
+    <loc>/posts/radio_adiga/</loc>
   </url><url>
     <loc>/posts/rafidain_bank/</loc>
   </url><url>
@@ -1996,6 +2336,8 @@
     <loc>/posts/ramandan/</loc>
   </url><url>
     <loc>/posts/ramon_erra/</loc>
+  </url><url>
+    <loc>/posts/random_early_detection/</loc>
   </url><url>
     <loc>/posts/rasheed_bank/</loc>
   </url><url>
@@ -2037,13 +2379,19 @@
   </url><url>
     <loc>/posts/refugees/</loc>
   </url><url>
+    <loc>/posts/regex/</loc>
+  </url><url>
     <loc>/posts/religion/</loc>
   </url><url>
     <loc>/posts/religious_minorities_in_iraq/</loc>
   </url><url>
     <loc>/posts/religious_peacebuilding/</loc>
   </url><url>
+    <loc>/posts/relu/</loc>
+  </url><url>
     <loc>/posts/remarkable/</loc>
+  </url><url>
+    <loc>/posts/reparations/</loc>
   </url><url>
     <loc>/posts/replicaset/</loc>
   </url><url>
@@ -2054,6 +2402,8 @@
     <loc>/posts/resource_curse/</loc>
   </url><url>
     <loc>/posts/responsbility_shared_is_responsbility_denied_blog_post/</loc>
+  </url><url>
+    <loc>/posts/rfc_reader/</loc>
   </url><url>
     <loc>/posts/rfc_s/</loc>
   </url><url>
@@ -2071,6 +2421,8 @@
   </url><url>
     <loc>/posts/rpc_tools_blog_post/</loc>
   </url><url>
+    <loc>/posts/ruby/</loc>
+  </url><url>
     <loc>/posts/rules_for_writing/</loc>
   </url><url>
     <loc>/posts/russel_s_paradox/</loc>
@@ -2078,6 +2430,8 @@
     <loc>/posts/russia/</loc>
   </url><url>
     <loc>/posts/rust/</loc>
+  </url><url>
+    <loc>/posts/rust_guis/</loc>
   </url><url>
     <loc>/posts/rwanda/</loc>
   </url><url>
@@ -2133,6 +2487,8 @@
   </url><url>
     <loc>/posts/sec/</loc>
   </url><url>
+    <loc>/posts/second_order_effects_blog_post/</loc>
+  </url><url>
     <loc>/posts/secor_children_of_paradise/</loc>
   </url><url>
     <loc>/posts/sectarianism/</loc>
@@ -2185,6 +2541,8 @@
   </url><url>
     <loc>/posts/20200418225926-simpson_war_from_the_ground_up/</loc>
   </url><url>
+    <loc>/posts/simulation_spiral_of_death/</loc>
+  </url><url>
     <loc>/posts/sinjar/</loc>
   </url><url>
     <loc>/posts/sinjar_agreement_2020/</loc>
@@ -2201,11 +2559,15 @@
   </url><url>
     <loc>/posts/small_arms/</loc>
   </url><url>
+    <loc>/posts/small_arms_stockpiling_jobs/</loc>
+  </url><url>
     <loc>/posts/small_business_finance/</loc>
   </url><url>
     <loc>/posts/smalltalk/</loc>
   </url><url>
     <loc>/posts/university_budgeting/</loc>
+  </url><url>
+    <loc>/posts/snap_stanford_network_analysis_platform/</loc>
   </url><url>
     <loc>/posts/social_sciences/</loc>
   </url><url>
@@ -2214,6 +2576,8 @@
     <loc>/posts/softmax/</loc>
   </url><url>
     <loc>/posts/software_is_eating_the_world/</loc>
+  </url><url>
+    <loc>/posts/sokal_and_bricmont_fashional_nonsense/</loc>
   </url><url>
     <loc>/posts/soldier_life_support_fund/</loc>
   </url><url>
@@ -2283,6 +2647,8 @@
   </url><url>
     <loc>/posts/stockholm_initatives_in_ddr/</loc>
   </url><url>
+    <loc>/posts/stoica_et_al_chord_a_scalable_peer_to_peer_lookup_service_for_internet_applications/</loc>
+  </url><url>
     <loc>/posts/stoler_colonial_archives_and_the_arts_of_governance/</loc>
   </url><url>
     <loc>/posts/strategies_for_implementing_braben_s_ideas/</loc>
@@ -2296,6 +2662,8 @@
     <loc>/posts/structural_adjustment_and_neoliberalism/</loc>
   </url><url>
     <loc>/posts/problems_and_methods_final_draft/</loc>
+  </url><url>
+    <loc>/posts/structured_logs/</loc>
   </url><url>
     <loc>/posts/stuart_hamaroff/</loc>
   </url><url>
@@ -2313,7 +2681,13 @@
   </url><url>
     <loc>/posts/summer_2021/</loc>
   </url><url>
+    <loc>/posts/private-2020-04-19/</loc>
+  </url><url>
     <loc>/posts/sunni/</loc>
+  </url><url>
+    <loc>/posts/supply_chain_management/</loc>
+  </url><url>
+    <loc>/posts/supreme_council_for_the_islamic_revolution_in_iraq_sciri/</loc>
   </url><url>
     <loc>/posts/survey_papers/</loc>
   </url><url>
@@ -2329,6 +2703,8 @@
   </url><url>
     <loc>/posts/syscalls/</loc>
   </url><url>
+    <loc>/posts/systems_thinking/</loc>
+  </url><url>
     <loc>/posts/tacit_knowledge/</loc>
   </url><url>
     <loc>/tags/</loc>
@@ -2338,6 +2714,8 @@
     <loc>/posts/tail_call_optimization/</loc>
   </url><url>
     <loc>/posts/tailwind%5C/</loc>
+  </url><url>
+    <loc>/posts/taiwan/</loc>
   </url><url>
     <loc>/posts/taji/</loc>
   </url><url>
@@ -2351,6 +2729,8 @@
   </url><url>
     <loc>/posts/20200416085736-tanzimat/</loc>
   </url><url>
+    <loc>/posts/tariq_al_hashemi/</loc>
+  </url><url>
     <loc>/posts/task_juggler/</loc>
   </url><url>
     <loc>/posts/tawargha/</loc>
@@ -2360,6 +2740,8 @@
     <loc>/posts/taxi_driver_sectarianism/</loc>
   </url><url>
     <loc>/posts/tcp_syn/</loc>
+  </url><url>
+    <loc>/posts/teaching/</loc>
   </url><url>
     <loc>/posts/tebu/</loc>
   </url><url>
@@ -2371,9 +2753,15 @@
   </url><url>
     <loc>/posts/tensorflow/</loc>
   </url><url>
+    <loc>/posts/terra_lang/</loc>
+  </url><url>
     <loc>/posts/territorality_of_data/</loc>
   </url><url>
     <loc>/posts/terrorism/</loc>
+  </url><url>
+    <loc>/posts/testing/</loc>
+  </url><url>
+    <loc>/posts/testing_123/</loc>
   </url><url>
     <loc>/posts/text_boundary_analysis/</loc>
   </url><url>
@@ -2409,15 +2797,25 @@
   </url><url>
     <loc>/posts/thubactics_battlion/</loc>
   </url><url>
+    <loc>/posts/private-2020-04-16/</loc>
+  </url><url>
+    <loc>/posts/tilt_up_construction/</loc>
+  </url><url>
+    <loc>/posts/tim_mitchell_carbon_democracy_oil_and_uso/</loc>
+  </url><url>
     <loc>/posts/tim_palmer/</loc>
   </url><url>
     <loc>/posts/timer_lawn_low_latency_timer_data_structure/</loc>
   </url><url>
     <loc>/posts/toby_dodge_bassel_salloukh_talk_2020_12_22/</loc>
   </url><url>
+    <loc>/posts/tomassetti_et_al_reflections_on_the_lack_of_adoption_of_domain_specific_languages/</loc>
+  </url><url>
     <loc>/posts/torchtext/</loc>
   </url><url>
     <loc>/posts/toufic_palestine_ltd_neoliberalism_and_nationalism/</loc>
+  </url><url>
+    <loc>/posts/traffic_stats/</loc>
   </url><url>
     <loc>/posts/20200415114319-training_periods/</loc>
   </url><url>
@@ -2428,6 +2826,8 @@
     <loc>/posts/transitional_justice/</loc>
   </url><url>
     <loc>/posts/travel/</loc>
+  </url><url>
+    <loc>/posts/trees/</loc>
   </url><url>
     <loc>/posts/trench_warfare_problems_blog_post/</loc>
   </url><url>
@@ -2451,9 +2851,13 @@
   </url><url>
     <loc>/posts/tsne/</loc>
   </url><url>
+    <loc>/posts/tu_et_al_multi_hop_reading_comprehension_across_multiple_documents/</loc>
+  </url><url>
     <loc>/posts/tuareg/</loc>
   </url><url>
     <loc>/posts/tufekci_twitter_and_tear_gas/</loc>
+  </url><url>
+    <loc>/posts/tukey_sunset_salvo/</loc>
   </url><url>
     <loc>/posts/tunisia/</loc>
   </url><url>
@@ -2464,6 +2868,8 @@
     <loc>/posts/turkmen/</loc>
   </url><url>
     <loc>/posts/tuz_khormatu/</loc>
+  </url><url>
+    <loc>/posts/twitter_developer_api/</loc>
   </url><url>
     <loc>/posts/two_sigma_problem/</loc>
   </url><url>
@@ -2539,6 +2945,8 @@
   </url><url>
     <loc>/posts/unifil/</loc>
   </url><url>
+    <loc>/posts/uniformed_capabilities_support_division_ucsd/</loc>
+  </url><url>
     <loc>/posts/united_kingdom/</loc>
   </url><url>
     <loc>/posts/united_nations_assistance_mission_to_iraq_unami/</loc>
@@ -2565,6 +2973,8 @@
   </url><url>
     <loc>/posts/uruguay/</loc>
   </url><url>
+    <loc>/posts/usaid/</loc>
+  </url><url>
     <loc>/posts/usb/</loc>
   </url><url>
     <loc>/posts/usb_pogo_pins/</loc>
@@ -2573,11 +2983,19 @@
   </url><url>
     <loc>/posts/uwiano_platform_for_peace/</loc>
   </url><url>
+    <loc>/posts/vaccine_manufacturing/</loc>
+  </url><url>
+    <loc>/posts/vaswani_et_al_attention_is_all_you_need/</loc>
+  </url><url>
     <loc>/posts/vietnam/</loc>
+  </url><url>
+    <loc>/posts/virtualization/</loc>
   </url><url>
     <loc>/posts/visa_s/</loc>
   </url><url>
     <loc>/posts/visualization/</loc>
+  </url><url>
+    <loc>/posts/vitis_libraries/</loc>
   </url><url>
     <loc>/posts/volunteering/</loc>
   </url><url>
@@ -2587,13 +3005,19 @@
   </url><url>
     <loc>/posts/walid_jumblatt/</loc>
   </url><url>
+    <loc>/posts/waqf/</loc>
+  </url><url>
     <loc>/posts/war_diary_nlp_project/</loc>
   </url><url>
     <loc>/posts/web/</loc>
   </url><url>
+    <loc>/posts/web_apis/</loc>
+  </url><url>
     <loc>/posts/website_design_ideas/</loc>
   </url><url>
     <loc>/posts/websockets/</loc>
+  </url><url>
+    <loc>/posts/private-2020-04-15/</loc>
   </url><url>
     <loc>/posts/weinstein_resources_and_the_information_problem_in_rebel_recruitment/</loc>
   </url><url>
@@ -2620,6 +3044,8 @@
     <loc>/posts/word_embeddings/</loc>
   </url><url>
     <loc>/posts/word2vec/</loc>
+  </url><url>
+    <loc>/posts/wordpress/</loc>
   </url><url>
     <loc>/posts/work_with_the_garage_door_up/</loc>
   </url><url>
@@ -2655,6 +3081,8 @@
   </url><url>
     <loc>/posts/young_ultralearning/</loc>
   </url><url>
+    <loc>/posts/yt_and_computational_social_sciences/</loc>
+  </url><url>
     <loc>/posts/yugoslavia/</loc>
   </url><url>
     <loc>/posts/yusuf_salman_yusuf/</loc>
@@ -2671,16 +3099,24 @@
   </url><url>
     <loc>/posts/zakat_al_mal/</loc>
   </url><url>
+    <loc>/posts/zakho/</loc>
+  </url><url>
     <loc>/posts/zampieri_et_al_semeval_2020_task_12_multilingual_offensive_language_identi%EF%AC%81cation_in_social_media_offenseval_2020/</loc>
   </url><url>
     <loc>/posts/zaydi/</loc>
   </url><url>
+    <loc>/posts/zeno_s_paradoxes/</loc>
+  </url><url>
     <loc>/posts/zettlekasten/</loc>
+  </url><url>
+    <loc>/posts/zhang_et_al_tropical_geometry_of_deep_neural_networks/</loc>
   </url><url>
     <loc>/posts/zine_el_abidine_ben_ali/</loc>
   </url><url>
     <loc>/posts/zintan/</loc>
   </url><url>
     <loc>/posts/zotero/</loc>
+  </url><url>
+    <loc>/posts/zwet_and_cator_the_significance_filter_the_winner_s_curse_and_the_need_to_shrink/</loc>
   </url>
 </urlset>
