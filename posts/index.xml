@@ -25,6 +25,15 @@
     </item>
     
     <item>
+      <title>.net</title>
+      <link>/posts/net/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/net/</guid>
+      <description> programming languages for windows, uses c#  </description>
+    </item>
+    
+    <item>
       <title>1-1 meetings</title>
       <link>/posts/1_1_meetings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -592,6 +601,15 @@ Simon - Imposition of Nationalism on Non-Nation State says:  Husri cited german 
       <description>Tags: people, islam
 early al-shafi&amp;rsquo;i jurist
 Backlinks  al-Fadl: What Type of Law is Islamic Law  </description>
+    </item>
+    
+    <item>
+      <title>al-khoei foundation</title>
+      <link>/posts/al_khoei_foundation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/al_khoei_foundation/</guid>
+      <description> lineage of Ayatollah al-Khoei khoei foundation recieves around 80% of khums worldwide  al-Khoei in UK (charity # 802000)  https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/802000 financial records: https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/802000/accounts-and-annual-returns online form recording: https://www.shiachat.com/forum/topic/234973651-ayatullah-seestani-khums-account-located/  </description>
     </item>
     
     <item>
@@ -1996,6 +2014,15 @@ Career Books  https://www.reddit.com/r/ExperiencedDevs/comments/hpgkvv/what%5Far
     </item>
     
     <item>
+      <title>books</title>
+      <link>/posts/books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>bosnia</title>
       <link>/posts/bosnia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2244,6 +2271,24 @@ Backlinks  c preprocessor  </description>
       <guid>/posts/c_preprocessor/</guid>
       <description>Tags: c (language)
 https://en.wikipedia.org/wiki/C%5Fpreprocessor</description>
+    </item>
+    
+    <item>
+      <title>c#</title>
+      <link>/posts/c/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/c/</guid>
+      <description>programming languages</description>
+    </item>
+    
+    <item>
+      <title>c-sharp</title>
+      <link>/posts/c-sharp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/c-sharp/</guid>
+      <description>programming languages</description>
     </item>
     
     <item>
@@ -2616,6 +2661,16 @@ Talks about how east timor&amp;rsquo;s state building failure by the UN was larg
     </item>
     
     <item>
+      <title>citeproc-org</title>
+      <link>/posts/citeproc_org/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/citeproc_org/</guid>
+      <description>org-mode extension to allow for easy export of Org-ref
+ https://github.com/andras-simonyi/citeproc-org  </description>
+    </item>
+    
+    <item>
       <title>civil engineering</title>
       <link>/posts/civil_engineering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2654,7 +2709,7 @@ Backlinks  Ellerby: A Seat at the Table is not Enough: Understanding Women&amp;r
       <guid>/posts/20200414222241-classes/</guid>
       <description>Tags: grad school
 MOOC&amp;rsquo;s https://news.ycombinator.com/item?id=23722680
-Backlinks  ling-ga 1012 (nlp and semantics) conflict and violence fall 2020 classes UN and Global Governance problems and methods Post-Ottoman Near East post-ottoman iraq/egypt irrigation paper proposal Nationalism and Outsiders in the Middle East mooc Nationalism and Outsiders in the Middle East - Midterm Draft  </description>
+Backlinks  ling-ga 1012 (nlp and semantics) conflict and violence fall 2020 classes UN and Global Governance problems and methods Post-Ottoman Near East post-ottoman iraq/egypt irrigation paper proposal Nationalism and Outsiders in the Middle East mooc Nationalism and Outsiders in the Middle East - Midterm Draft fall 2021 classes  </description>
     </item>
     
     <item>
@@ -2718,7 +2773,7 @@ Climate change writers:
       <guid>/posts/clocks_distributed_systems/</guid>
       <description>Tags: distributed systems
 https://www.fsmtime.com/blog/article/clock-synchronization-and-technology/
-Backlinks  leap smearing truetime  </description>
+ https://signalsandthreads.com/clock-synchronization/  Backlinks  leap smearing truetime  </description>
     </item>
     
     <item>
@@ -2789,6 +2844,16 @@ Backlinks  rights of hashd members  </description>
       <guid>/posts/cognition/</guid>
       <description>Tags: root
 Backlinks  Bateson - Steps to an Ecology of Mind ramon erra giulio tononi theories of conciousness from physists  </description>
+    </item>
+    
+    <item>
+      <title>cold war</title>
+      <link>/posts/cold_war/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cold_war/</guid>
+      <description>events
+Backlinks  development theory  </description>
     </item>
     
     <item>
@@ -3338,7 +3403,7 @@ Backlinks  programming kubernetes chapter 1 - intro  </description>
       
       <guid>/posts/d3/</guid>
       <description>Tags: javascript, data
-Backlinks  community detection with org-roam library  </description>
+d3fc - https://github.com/d3fc/d3fc  smaller component of d3? some kind of tool boxing that adds together with d3 to generate charts https://blog.scottlogic.com/2018/09/21/d3-financial-chart.html  Backlinks  community detection with org-roam library  </description>
     </item>
     
     <item>
@@ -3604,7 +3669,7 @@ We knew that we had built a compelling product that was central to Lyft’s abil
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200415113437-development_theory/</guid>
-      <description>Backlinks  dujayla land project Mitchel: Economentality Adalet - Hotels and Highways  </description>
+      <description> put forward by sociologists such as Daniel Lerner argues about the appeal of development policies and decolonization as an introduction into modernity ties together capitalist development and cold war theory  Backlinks  dujayla land project Mitchel: Economentality Adalet - Hotels and Highways  </description>
     </item>
     
     <item>
@@ -4651,8 +4716,8 @@ Possible classes for fall 2020: @ NYU
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/fall_2021_classes/</guid>
-      <description>Tags: grad school
- LING-GA 48 - Linguistics as a Cognitive Science  9:30-10:45AM Monday/Wednesday 25 min bike time (30 min)   MEIS-GA 1860 - Religion and Modernity  4:55pm-7:40pm Tuesdays 25 min bike time (30 min)   NEST-GA 2999  4:55-7:35pm Thursdays 25 min bike time (30 min)    </description>
+      <description>Tags: grad school, classes
+ LING-GA 48 - Linguistics as a Cognitive Science (audit)  9:30-10:45AM Monday/Wednesday 25 min bike time (30 min)   MEIS-GA 1860 - Religion and Modernity (audit/take)  4:55pm-7:40pm Tuesdays 25 min bike time (30 min)   NEST-GA 2999 - Critical Theories of Power (audit/take)  4:55-7:35pm Thursdays 25 min bike time (30 min)   CSCI-GA.3033-090 - Deep Reinforcement Learning (audit)  05:10PM - 07:00PM Fridays    </description>
     </item>
     
     <item>
@@ -6652,7 +6717,8 @@ Backlinks  path dependency  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/ibn_khaldun/</guid>
-      <description>Backlinks  DiCapua - Gatekeepers of the Arab Past Pursely - Familiar Futures Spengler and the Search for a Science of Human Culture Homogenous Time: Ibn Khaldun and Transaction Logs Macaes - History has Begun  </description>
+      <description>people
+Backlinks  DiCapua - Gatekeepers of the Arab Past Pursely - Familiar Futures Spengler and the Search for a Science of Human Culture Macaes - History has Begun Homogenous Time: Ibn Khaldun and Transaction Logs  </description>
     </item>
     
     <item>
@@ -7615,6 +7681,16 @@ Backlinks  manim d3  </description>
     </item>
     
     <item>
+      <title>Jiries - Balkan Fighters in the Syrian War</title>
+      <link>/posts/jiries_balkan_fighters_in_the_syrian_war/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/jiries_balkan_fighters_in_the_syrian_war/</guid>
+      <description>books, syria, balkans
+Possible tie in to Li - The Universal Enemy</description>
+    </item>
+    
+    <item>
       <title>jit</title>
       <link>/posts/jit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8310,8 +8386,8 @@ References  https://math.stackexchange.com/questions/48981/the-langlands-program
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200414224409-latam/</guid>
-      <description>Tags: root, south america
-Backlinks  mexico chile south america haiti dominican republic bolivia guatemala argentina nicaragua electricity uprisings against the left colombia el salvador  </description>
+      <description>Tags: root, latam
+Backlinks  mexico chile south america haiti dominican republic bolivia guatemala argentina nicaragua electricity uprisings against the left colombia el salvador latam  </description>
     </item>
     
     <item>
@@ -10750,7 +10826,7 @@ Organization:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200416084438-organized_labor/</guid>
-      <description>Backlinks  the twin insurgency Egypt Iron and Steel Company Acehan - Turkish Leatherworkers in Peabody, Massachusetts  </description>
+      <description> self explanatory, this note is to anchor the others  Backlinks  the twin insurgency Egypt Iron and Steel Company Acehan - Turkish Leatherworkers in Peabody, Massachusetts  </description>
     </item>
     
     <item>
@@ -12592,7 +12668,7 @@ Backlinks  theories of conciousness from physists  </description>
       <description>Notes in Zettelkasten.
 Main site and more complete thoughts are at http://space.af.
 It&amp;rsquo;s built with:
- org-roam ox-hugo hugo hugo theme  Backlinks  latam central asia south asia americas articles education sociology religion books humanitarian aid people grad school un middle east computers post-conflict statebuilding organization papers avionics ngo data literature drafts covid settler colonialism south america ships companies east asia recipes finance europe events military equipment africa physics languages/linguistics personal writing cognition militias china disaster response project ideas episteme computational social science jurisprudence social sciences climate change podcasts political science math  </description>
+ org-roam ox-hugo hugo hugo theme  Backlinks  central asia south asia americas articles education sociology religion books humanitarian aid people grad school un middle east computers post-conflict statebuilding organization papers avionics ngo data literature drafts covid settler colonialism south america ships companies east asia recipes finance europe events military equipment africa physics languages/linguistics personal writing cognition militias china disaster response project ideas episteme computational social science jurisprudence social sciences climate change podcasts political science math latam  </description>
     </item>
     
     <item>
@@ -12757,6 +12833,16 @@ Backlinks  Haddad - Understanding Sectarianism  </description>
       <guid>/posts/sadr_politics/</guid>
       <description>Tags: iraqi political parties
 Backlinks  majida al-tamimi hassan al-kaabi aynas naji al-maksusi sabah al-saadi  </description>
+    </item>
+    
+    <item>
+      <title>salah ad din governate</title>
+      <link>/posts/salah_ad_din_governate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/salah_ad_din_governate/</guid>
+      <description>iraq governate
+Backlinks  yathrib  </description>
     </item>
     
     <item>
@@ -15800,6 +15886,26 @@ Part 1: Political Infrastructure  Consists of public sector institutions that fa
     </item>
     
     <item>
+      <title>windows</title>
+      <link>/posts/windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/windows/</guid>
+      <description>computers
+Backlinks  windows failover clusters (hci) .net  </description>
+    </item>
+    
+    <item>
+      <title>windows failover clusters (hci)</title>
+      <link>/posts/windows_failover_clusters_hci/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/windows_failover_clusters_hci/</guid>
+      <description>way for windows servers to achieve failover in distributed systems
+ https://docs.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview  </description>
+    </item>
+    
+    <item>
       <title>winograd schemas</title>
       <link>/posts/winograd_schemas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -15994,6 +16100,15 @@ Backlinks  Haddad - Understanding Sectarianism  </description>
       <guid>/posts/yassine_jaber/</guid>
       <description>Tags: lebanon
  Liberal Shia member of the Lebanese parliment from Nabatiyeh South Lebanon district.  Amal affliated, but considered independent from nabih berri   responsible for spearheading the majaruna legalization law https://en.wikipedia.org/wiki/Yassine%5FJaber  </description>
+    </item>
+    
+    <item>
+      <title>yathrib</title>
+      <link>/posts/yathrib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/yathrib/</guid>
+      <description> city in iraq, north of baghdad, in the salah ad din governate captured by islamic state (is/isis/isil) in 2014  </description>
     </item>
     
     <item>
