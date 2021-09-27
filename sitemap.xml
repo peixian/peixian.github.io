@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/posts/un_and_global_governance_final_paper/</loc>
-    <lastmod>2021-05-11T00:00:00-05:00</lastmod>
+    <lastmod>2021-05-11T00:00:00-04:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2021-05-11T00:00:00-05:00</lastmod>
+    <lastmod>2021-05-11T00:00:00-04:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2021-05-11T00:00:00-05:00</lastmod>
+    <lastmod>2021-05-11T00:00:00-04:00</lastmod>
   </url><url>
     <loc>/posts/un_and_global_governance_paper_proposal/</loc>
   </url><url>
@@ -507,6 +507,8 @@
   </url><url>
     <loc>/posts/20200415213733-central_asia/</loc>
   </url><url>
+    <loc>/posts/charles_taylor/</loc>
+  </url><url>
     <loc>/posts/20200416205459-chaterjee_the_nations_and_its_fragments/</loc>
   </url><url>
     <loc>/posts/cheating_blog_post/</loc>
@@ -528,6 +530,8 @@
     <loc>/posts/chips/</loc>
   </url><url>
     <loc>/posts/chomsky/</loc>
+  </url><url>
+    <loc>/posts/chomsky_language_and_mind/</loc>
   </url><url>
     <loc>/posts/chomsky_syntatic_structures/</loc>
   </url><url>
@@ -622,6 +626,8 @@
     <loc>/posts/conflict_and_violence/</loc>
   </url><url>
     <loc>/posts/conflict_prevention/</loc>
+  </url><url>
+    <loc>/posts/confucianism/</loc>
   </url><url>
     <loc>/posts/constitution_making_research_handbook/</loc>
   </url><url>
@@ -781,11 +787,15 @@
   </url><url>
     <loc>/posts/dual_circulation_program/</loc>
   </url><url>
+    <loc>/posts/duara_the_crisis_of_global_modernity/</loc>
+  </url><url>
     <loc>/posts/duffield_development_security_and_unending_war/</loc>
   </url><url>
     <loc>/posts/duhok/</loc>
   </url><url>
     <loc>/posts/20200415113415-dujayla_land_project/</loc>
+  </url><url>
+    <loc>/posts/durkheim/</loc>
   </url><url>
     <loc>/posts/e_activity_2/</loc>
   </url><url>
@@ -1121,6 +1131,8 @@
   </url><url>
     <loc>/posts/google_ngrams_for_historians/</loc>
   </url><url>
+    <loc>/posts/gordon_secularization_genealogy_and_the_legitimacy_of_the_modern_age_remarks_on_the_lowith_blumenberg_debate/</loc>
+  </url><url>
     <loc>/posts/gorno_badakhasan/</loc>
   </url><url>
     <loc>/posts/gorur_and_sharland_prioritizing_the_protection_of_civilians_in_un_peace_operations/</loc>
@@ -1144,6 +1156,8 @@
     <loc>/posts/gradient_descent/</loc>
   </url><url>
     <loc>/posts/grafana_7_0/</loc>
+  </url><url>
+    <loc>/posts/grammar_in_the_brain/</loc>
   </url><url>
     <loc>/posts/grants/</loc>
   </url><url>
@@ -1537,6 +1551,8 @@
   </url><url>
     <loc>/posts/jordan/</loc>
   </url><url>
+    <loc>/posts/jose_casanova/</loc>
+  </url><url>
     <loc>/posts/journals/</loc>
   </url><url>
     <loc>/posts/json/</loc>
@@ -1735,6 +1751,8 @@
   </url><url>
     <loc>/posts/lockman_contending_visions_of_the_middle_east/</loc>
   </url><url>
+    <loc>/posts/logseq/</loc>
+  </url><url>
     <loc>/posts/lome_peace_accord/</loc>
   </url><url>
     <loc>/posts/looking_at_religion_through_linguistical_methods/</loc>
@@ -1808,6 +1826,8 @@
     <loc>/posts/market_apis/</loc>
   </url><url>
     <loc>/posts/market_multicast/</loc>
+  </url><url>
+    <loc>/posts/asad_formations_of_the_secular/</loc>
   </url><url>
     <loc>/posts/marx/</loc>
   </url><url>
@@ -2403,6 +2423,8 @@
   </url><url>
     <loc>/posts/rabat/</loc>
   </url><url>
+    <loc>/posts/rabindranath_tagore/</loc>
+  </url><url>
     <loc>/posts/radio_adiga/</loc>
   </url><url>
     <loc>/posts/rafidain_bank/</loc>
@@ -2495,6 +2517,8 @@
   </url><url>
     <loc>/posts/rights_of_hashd_members/</loc>
   </url><url>
+    <loc>/posts/rituals/</loc>
+  </url><url>
     <loc>/posts/roam_themes/</loc>
   </url><url>
     <loc>/posts/roberta/</loc>
@@ -2528,6 +2552,8 @@
     <loc>/posts/sabah_al_saadi/</loc>
   </url><url>
     <loc>/posts/sacred/</loc>
+  </url><url>
+    <loc>/posts/sacrifice_concept/</loc>
   </url><url>
     <loc>/posts/sadr_city/</loc>
   </url><url>
@@ -2712,6 +2738,8 @@
     <loc>/posts/speicher_tikrit_air_base/</loc>
   </url><url>
     <loc>/posts/spengler_and_the_search_for_a_science_of_human_culture/</loc>
+  </url><url>
+    <loc>/posts/spirituality_modern/</loc>
   </url><url>
     <loc>/posts/spring/</loc>
   </url><url>
@@ -3126,6 +3154,8 @@
     <loc>/posts/website_design_ideas/</loc>
   </url><url>
     <loc>/posts/websockets/</loc>
+  </url><url>
+    <loc>/posts/week_2_reading_response/</loc>
   </url><url>
     <loc>/posts/weinstein_resources_and_the_information_problem_in_rebel_recruitment/</loc>
   </url><url>
