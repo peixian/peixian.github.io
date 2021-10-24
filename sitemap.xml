@@ -197,6 +197,8 @@
   </url><url>
     <loc>/posts/20200415213157-anscombe_state_faith_and_nation/</loc>
   </url><url>
+    <loc>/posts/anthropology/</loc>
+  </url><url>
     <loc>/posts/antinarcotics_in_afghanistan/</loc>
   </url><url>
     <loc>/posts/antonio_guterres/</loc>
@@ -366,6 +368,8 @@
     <loc>/posts/bharatiya_janata_party_bjp/</loc>
   </url><url>
     <loc>/posts/bias_nlp_project/</loc>
+  </url><url>
+    <loc>/posts/bigbench/</loc>
   </url><url>
     <loc>/posts/bikepacking/</loc>
   </url><url>
@@ -812,6 +816,8 @@
     <loc>/posts/economics/</loc>
   </url><url>
     <loc>/posts/education/</loc>
+  </url><url>
+    <loc>/posts/effectiveness_of_scaling_data_and_its_relationship_to_anthropology_questions/</loc>
   </url><url>
     <loc>/posts/20200415154117-egypt/</loc>
   </url><url>
@@ -1557,6 +1563,8 @@
   </url><url>
     <loc>/posts/json/</loc>
   </url><url>
+    <loc>/posts/judea_pearl/</loc>
+  </url><url>
     <loc>/posts/julia/</loc>
   </url><url>
     <loc>/posts/juniper/</loc>
@@ -1576,6 +1584,8 @@
     <loc>/posts/kafka_streams/</loc>
   </url><url>
     <loc>/posts/kalyvas_the_logic_of_violence_in_civil_war/</loc>
+  </url><url>
+    <loc>/posts/kant/</loc>
   </url><url>
     <loc>/posts/kapstein_aid_and_stabilization_in_afghanistan/</loc>
   </url><url>
@@ -1865,6 +1875,10 @@
   </url><url>
     <loc>/posts/mervin_the_shi_a_worlds_and_iran/</loc>
   </url><url>
+    <loc>/posts/mesa_optimizer_and_linguistic_recursion_draft/</loc>
+  </url><url>
+    <loc>/posts/metastable_failures_blog_post/</loc>
+  </url><url>
     <loc>/posts/mexico/</loc>
   </url><url>
     <loc>/posts/mexico_city_drainage_issues/</loc>
@@ -1990,6 +2004,10 @@
     <loc>/posts/mustafa_al_kadhimi/</loc>
   </url><url>
     <loc>/posts/mustafa_kemal/</loc>
+  </url><url>
+    <loc>/posts/mutex/</loc>
+  </url><url>
+    <loc>/posts/mutex_locks/</loc>
   </url><url>
     <loc>/posts/my_work_as_a_system_blog_post/</loc>
   </url><url>
@@ -2278,6 +2296,8 @@
     <loc>/posts/physalia_amazon_ebs/</loc>
   </url><url>
     <loc>/posts/physics/</loc>
+  </url><url>
+    <loc>/posts/pi_calculus/</loc>
   </url><url>
     <loc>/posts/piketty_capital_in_the_twenty_first_century/</loc>
   </url><url>
@@ -3254,6 +3274,8 @@
     <loc>/posts/zaydi/</loc>
   </url><url>
     <loc>/posts/zeno_s_paradoxes/</loc>
+  </url><url>
+    <loc>/posts/zetasql/</loc>
   </url><url>
     <loc>/posts/zettlekasten/</loc>
   </url><url>
