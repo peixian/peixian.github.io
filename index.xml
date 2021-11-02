@@ -21,7 +21,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/un_and_global_governance_paper_proposal/</guid>
-      <description>Working Title: UNAMI&amp;rsquo;s Stumble into Sectarian Narratives Main Research Questions and Arguments  Research Question: Have the mandates for UNAMI substantively shifted to counteract sectarian identities in Iraq, or have they supported these identities in a form of &amp;ldquo;liddism&amp;rdquo;? Argument: The perspective of international human rights promulgated by the UN is inherently a western-liberal one that favors states, because of UNAMI&amp;rsquo;s position, it has inherently favored Iraq&amp;rsquo;s drift towards an unwritten sectarian government (muhasasa ta’ifia) in its pursuit of mandates.</description>
+      <description>Tags: UN and Global Governance
+Working Title: UNAMI&amp;rsquo;s Stumble into Sectarian Narratives Main Research Questions and Arguments  Research Question: Have the mandates for UNAMI substantively shifted to counteract sectarian identities in Iraq, or have they supported these identities in a form of &amp;ldquo;liddism&amp;rdquo;? Argument: The perspective of international human rights promulgated by the UN is inherently a western-liberal one that favors states, because of UNAMI&amp;rsquo;s position, it has inherently favored Iraq&amp;rsquo;s drift towards an unwritten sectarian government (muhasasa ta’ifia) in its pursuit of mandates.</description>
     </item>
     
     <item>
@@ -15024,6 +15025,17 @@ https://trukker.com/</description>
       
       <guid>/posts/truth_and_reconciliation_program/</guid>
       <description>Tags: sierra leone, ddr</description>
+    </item>
+    
+    <item>
+      <title>truthfulqa</title>
+      <link>/posts/20211031204616-truthfulqa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/20211031204616-truthfulqa/</guid>
+      <description>datasets, scaling law seminar
+Adversarial dataset for answering questions, specifically relating to whether models generate good answers to questions
+ interesting finding of this paper is that they found larger models tended to generate more false answers  possibly because larger models are better at imitating falsehoods, or they make more human like (but false) generalizations    </description>
     </item>
     
     <item>
