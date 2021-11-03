@@ -175,6 +175,19 @@ Tentatively aligned with iraqi communist party</description>
     </item>
     
     <item>
+      <title>abstract and reasoning corpus</title>
+      <link>/posts/abstract_and_reasoning_corpus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/abstract_and_reasoning_corpus/</guid>
+      <description>datasets
+  https://github.com/fchollet/ARC
+  different than other datasets, attempts to test for some &amp;ldquo;kind of intelligence&amp;rdquo;
+ &amp;ldquo;ARC can be seen as a general artificial intelligence benchmark, as a program synthesis benchmark, or as a psychometric intelligence test. It is targeted at both humans and artificially intelligent systems that aim at emulating a human-like form of general fluid intelligence.&amp;rdquo;
+   </description>
+    </item>
+    
+    <item>
       <title>abu ali al-basri/adnan ibrahim al-najjar</title>
       <link>/posts/abu_ali_al_basri_adnan_ibrahim_al_najjar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -773,6 +786,25 @@ Co-author of principa mathmatica</description>
       <guid>/posts/ali_shariati/</guid>
       <description>Tags: islam, people
  Similar notions to liberation theology in Latin America Marxist Muslim thinker  </description>
+    </item>
+    
+    <item>
+      <title>allocators</title>
+      <link>/posts/allocators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/allocators/</guid>
+      <description>ram (computer memory)
+Memory Management  Lobster language - https://aardappel.github.io/lobster/memory%5Fmanagement.html  Allocators   Scudo
+  Hoard Allocator
+  jemalloc
+  Dieharder
+  Poseidon Allocator
+  Allocator Aware Infrastructure
+  Comparisons
+#+begin_src markdown
+  ### More Papers * The Shadow over Android
+Exploiting the jemalloc Memory Allocator: Owning Firefox&amp;rsquo;s Heap Attacking the Webkit Heap Windows 8 Heap Internals Windows 10 Segment Heap Internals Heap Layout Optimization for Exploitation FreeGuard: A Faster Secure Heap Allocator  * Academic “fast &amp;amp; secure” heap allocator by the University of Texas (2017) * https://github.</description>
     </item>
     
     <item>
@@ -1383,7 +1415,8 @@ Summarizes the average presence of a feature</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/avionics/</guid>
-      <description>Tags: root</description>
+      <description>Tags: root
+Aerial Refueling  https://en.m.wikipedia.org/wiki/Lockheed%5FSR-71%5FBlackbird  </description>
     </item>
     
     <item>
@@ -2286,7 +2319,7 @@ https://en.wikipedia.org/wiki/C%5Fpreprocessor</description>
       
       <guid>/posts/c_cpp/</guid>
       <description>Tags: computers
-CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646  </description>
+C  Build-once, run anywhere C: https://justine.lol/cosmopolitan/index.html  CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646  Framework  https://preshing.com/20200526/a-new-cross-platform-open-source-cpp-framework/  </description>
     </item>
     
     <item>
@@ -2565,6 +2598,16 @@ Cheating as an indicator of stakes, not cheating as an indicator of respect
       
       <guid>/posts/chile/</guid>
       <description>Tags: latam</description>
+    </item>
+    
+    <item>
+      <title>Chilton and Kopytowska - Religion, Lanugage, and the Human Mind</title>
+      <link>/posts/chilton_and_kopytowska_religion_lanugage_and_the_human_mind/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/chilton_and_kopytowska_religion_lanugage_and_the_human_mind/</guid>
+      <description>books, religion, languages/linguistics, religion and linguistics
+ https://books.google.com/books?hl=en&amp;amp;lr=&amp;amp;id=ruBTDwAAQBAJ&amp;amp;oi=fnd&amp;amp;pg=PA89&amp;amp;dq=religion+and+linguistics&amp;amp;ots=xQBKj9WzU4&amp;amp;sig=EVFnzH5Kv%5F10HTAdDIz1bnVU3%5FQ#v=onepage&amp;amp;q=religion%20and%20linguistics&amp;amp;f=false  </description>
     </item>
     
     <item>
@@ -3082,7 +3125,8 @@ computer science can actually be tested despite being easy to learn
       
       <guid>/posts/computers/</guid>
       <description>https://wiki.c2.com/?SufficientlySmartCompiler
-Tags: root</description>
+Tags: root
+grad school professors  https://software.imdea.org/~gotsman/  </description>
     </item>
     
     <item>
@@ -3471,6 +3515,15 @@ Turkish politics hold contradictory viewpoints of Ottomanism, esepcially with th
     </item>
     
     <item>
+      <title>data structures</title>
+      <link>/posts/data_structures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/data_structures/</guid>
+      <description>computers</description>
+    </item>
+    
+    <item>
       <title>Databases</title>
       <link>/posts/databases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3744,7 +3797,7 @@ bharatiya janata party (bjp) is an example of nationalism in this way</descripti
       
       <guid>/posts/distributed_systems/</guid>
       <description>Tags: computers
- http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html  Short Introduction  http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628  Theory  https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/  Fallacies  https://en.wikipedia.org/wiki/Fallacies%5Fof%5Fdistributed%5Fcomputing https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf  </description>
+ http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html  Short Introduction  http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628  Theory  https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/  Fallacies  https://en.wikipedia.org/wiki/Fallacies%5Fof%5Fdistributed%5Fcomputing https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf  Errors and Examples  https://github.com/dranov/protocol-bugs-list https://covemountainsoftware.com/2021/03/01/a-survey-of-concurrency-bugs/  </description>
     </item>
     
     <item>
@@ -4195,7 +4248,8 @@ When do women actually particpate in peace processes? When they do, do peace pro
       
       <guid>/posts/emacs/</guid>
       <description>Tags: computers
- https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bcompletion/auto-completion https://github.com/jwiegley/use-package Org tempo problems: https://github.com/syl20bnr/spacemacs/issues/11798#issuecomment-454941024  https://github.com/syl20bnr/spacemacs/issues/12003#issuecomment-465686129    Tramp sudo: /ssh:bird@bastion|ssh:you@remotehost:/path</description>
+ https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bcompletion/auto-completion https://github.com/jwiegley/use-package Org tempo problems: https://github.com/syl20bnr/spacemacs/issues/11798#issuecomment-454941024  https://github.com/syl20bnr/spacemacs/issues/12003#issuecomment-465686129    Tramp sudo: /ssh:bird@bastion|ssh:you@remotehost:/path
+Optimizations  https://news.ycombinator.com/item?id=28336724  </description>
     </item>
     
     <item>
@@ -4399,7 +4453,7 @@ Self referantial paradox on
       <guid>/posts/erlang/</guid>
       <description>Tags: programming languages
 -https://erlangexplained.com/index.php/about
- https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference%5Fmanual/introduction.html https://ferd.ca/the-zen-of-erlang.html  </description>
+ https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference%5Fmanual/introduction.html https://ferd.ca/the-zen-of-erlang.html  Erlang/OTP 24 Highlights  https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code!  </description>
     </item>
     
     <item>
@@ -5158,6 +5212,16 @@ Fortna, Virginia Page. “Does Peacekeeping Keep Peace? International Interventi
     </item>
     
     <item>
+      <title>frozen data structures in c&#43;&#43;</title>
+      <link>/posts/frozen_data_structures_in_c/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/frozen_data_structures_in_c/</guid>
+      <description>c/cpp, data structures
+ http://serge-sans-paille.github.io/talks/cppcon2018/frozen/frozen/index.html  </description>
+    </item>
+    
+    <item>
       <title>fsf</title>
       <link>/posts/fsf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5890,7 +5954,7 @@ https://www.microsoft.com/en-us/research/wp-content/uploads/2017/06/paper-1.pdf<
       
       <guid>/posts/greece/</guid>
       <description>Tags: europe
- Independence from ottoman in early 1830&amp;rsquo;s, created the Kingdom of Greece under Great Power protection Recent years of detante with Turkey  </description>
+ Independence from ottoman in early 1830&amp;rsquo;s, created the Kingdom of Greece under Great Power protection Recent years of detante with Turkey  Junta Years  https://en.m.wikipedia.org/wiki/Greek%5FJunta%5FTrials  Greek Junta ruled from 1967-1974, specifically against the actions at Athens Polytechnic    </description>
     </item>
     
     <item>
@@ -7804,6 +7868,16 @@ Put forward the idea that, according to the original theory of secularism, it sh
     </item>
     
     <item>
+      <title>jq</title>
+      <link>/posts/jq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/jq/</guid>
+      <description>json, coding tools
+ https://til.simonwillison.net/jq/extracting-objects-recursively  </description>
+    </item>
+    
+    <item>
       <title>json</title>
       <link>/posts/json/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7841,6 +7915,17 @@ Learning  https://github.com/chrisvoncsefalvay/learn-julia-the-hard-way  </descr
       
       <guid>/posts/juniper/</guid>
       <description>Tags: networks</description>
+    </item>
+    
+    <item>
+      <title>jupyter notebooks</title>
+      <link>/posts/jupyter_notebooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/jupyter_notebooks/</guid>
+      <description>  python, ml
+  https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/
+  </description>
     </item>
     
     <item>
@@ -8601,6 +8686,15 @@ Supervised Learning   most common
       <guid>/posts/lenin_was_a_mushroom/</guid>
       <description>Tags: russia
  https://en.wikipedia.org/wiki/Lenin%5Fwas%5Fa%5Fmushroom  Glasnost had people questioning their past as more information became revealed</description>
+    </item>
+    
+    <item>
+      <title>Levien: Towards GPGPU JSON parsing</title>
+      <link>/posts/levien_towards_gpgpu_json_parsing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/levien_towards_gpgpu_json_parsing/</guid>
+      <description> json, gpu https://raphlinus.github.io/personal/2018/05/10/toward-gpu-json-parsing.html uses scatter gather semantics (xla) to scan, scatter/gather, and sort json texts over gpu&amp;rsquo;s  References  https://developer.nvidia.com/gpugems/gpugems2/part-iv-general-purpose-computation-gpus-primer/chapter-32-taking-plunge-gpu https://raphlinus.github.io/gpu/2020/09/05/stack-monoid.html https://raphlinus.github.io/gpu/2021/05/13/stack-monoid-revisited.html  </description>
     </item>
     
     <item>
@@ -11902,7 +11996,7 @@ Kube API basics
       
       <guid>/posts/programming_languages/</guid>
       <description>Tags: computers
-What programming langauges are used mostly on weekends?  https://stackoverflow.blog/2017/02/07/what-programming-languages-weekends/?cb=1  </description>
+What programming langauges are used mostly on weekends?  https://stackoverflow.blog/2017/02/07/what-programming-languages-weekends/?cb=1  History of Programming Languages  https://felleisen.org/matthias/7480-s21/lectures.html#%28part.%5F1%29 http://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html?m=1 https://hopl4.sigplan.org/ https://dl.acm.org/toc/pacmpl/2020/4/HOPL https://wiki.hh.se/wg211/images/5/58/Foozles.pdf  </description>
     </item>
     
     <item>
@@ -12593,6 +12687,16 @@ Books  https://martinfowler.com/books/refactoring.html  </description>
     </item>
     
     <item>
+      <title>religion and linguistics</title>
+      <link>/posts/religion_and_linguistics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/religion_and_linguistics/</guid>
+      <description>religion, languages/linguistics
+Drafts  looking at religion through linguistical methods  Books  Chilton and Kopytowska - Religion, Lanugage, and the Human Mind https://books.google.com/books?hl=en&amp;amp;lr=&amp;amp;id=Pa05AAAAQBAJ&amp;amp;oi=fnd&amp;amp;pg=PR1&amp;amp;dq=religion+and+linguistics&amp;amp;ots=9i%5FHE3uq5m&amp;amp;sig=1PQF0Ki-nnY8ndXu%5Fh5WerUHNms#v=onepage&amp;amp;q=religion%20and%20linguistics&amp;amp;f=false  </description>
+    </item>
+    
+    <item>
       <title>religion and modernity</title>
       <link>/posts/religion_and_modernity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -12862,7 +12966,7 @@ Most sets are not sets of themselves, but some sets are self-swallowing. For exa
       
       <guid>/posts/rust/</guid>
       <description>Tags: computers
- https://rust-analyzer.github.io/blog/2020/04/20/first-release.html https://rust-unofficial.github.io/too-many-lists/ https://leetcode.com/problemset/all/ https://towardsdatascience.com/you-want-to-learn-rust-but-you-dont-know-where-to-start-fc826402d5ba https://doc.rust-lang.org/book/ch19-06-macros.html  tools  serde: https://serde.rs/  </description>
+ https://rust-analyzer.github.io/blog/2020/04/20/first-release.html https://rust-unofficial.github.io/too-many-lists/ https://leetcode.com/problemset/all/ https://towardsdatascience.com/you-want-to-learn-rust-but-you-dont-know-where-to-start-fc826402d5ba https://doc.rust-lang.org/book/ch19-06-macros.html  tools  serde: https://serde.rs/  Learning Rust  https://news.ycombinator.com/item?id=12477211 https://news.ycombinator.com/item?id=19077354 https://news.ycombinator.com/item?id=19698598  </description>
     </item>
     
     <item>
@@ -13133,7 +13237,8 @@ Iraqi political party run by Muqtada al-Sadr</description>
       
       <guid>/posts/scaling_law_seminar/</guid>
       <description>fall 2021 classes, transformers
-Seminar on scaling laws</description>
+Seminar on scaling laws
+Scaling Laws for Acoustic Models  papers:  https://arxiv.org/pdf/2106.09488.pdf    </description>
     </item>
     
     <item>
@@ -13719,6 +13824,16 @@ Introduction    Model Religion-state ideological links Religion-state institutio
       <description>Tags: books, personal, episteme
  Rather, you will try to learn as efficiently as possible so you can quickly get to the point where actual open questions arise, as these are the only questions worth writing about.
  Key takeaways: make fleeting notes and project notes, review the fleeting notes and file the project notes accordingly. Fleeting notes should be for when things pop into your mind, although I somewhat use things for this purpose as well.</description>
+    </item>
+    
+    <item>
+      <title>source explorers</title>
+      <link>/posts/source_explorers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/source_explorers/</guid>
+      <description>computers, coding tools
+ sourcetrail: https://www.sourcetrail.com/ opengrok: https://oracle.github.io/opengrok/  </description>
     </item>
     
     <item>
@@ -14332,6 +14447,17 @@ Slow adoption, sell side is slowing adopting it</description>
       
       <guid>/posts/systems_thinking/</guid>
       <description>Tags: episteme</description>
+    </item>
+    
+    <item>
+      <title>ta&#39;ziyeh</title>
+      <link>/posts/ta_ziyeh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ta_ziyeh/</guid>
+      <description>shia, rituals
+ http://jalda.azaruniv.ac.ir/article%5F13837.html https://en.wikipedia.org/wiki/Mourning%5Fof%5FMuharram#Types   The central theme of Ta&amp;rsquo;ziyeh, as one of the Islamic tragic drama and folk theater, in one of the major denominations of Islam (the Shia) is a representation of the siege and massacres of Karbala
+ </description>
     </item>
     
     <item>
@@ -15858,7 +15984,8 @@ Lebanese Druze leader</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/wang_et_al_on_the_parallels_between_paxos_and_raft_and_how_to_port_optimizations/</guid>
-      <description>papers, paxos, raft</description>
+      <description>papers, paxos, raft
+ https://arxiv.org/ftp/arxiv/papers/1905/1905.10786.pdf  </description>
     </item>
     
     <item>
@@ -15945,6 +16072,15 @@ Lebanese Druze leader</description>
       <guid>/posts/weiss_in_the_shadows_of_sectarianism/</guid>
       <description>Tags: books, sectarianism
  Puts forward a different typology of &amp;ldquo;sectarianism&amp;rdquo; that doesn&amp;rsquo;t restrict it to one identity Underlying understanding of sectarianism is that it is the polar opposite of state building Argues that sectarianization of the Lebanese Shi&amp;rsquo;a communities during the french mandate in lebanon was pushed both  above: form of elite and colonial divide and rule below: sect-specific rights and religious recongition   argues that we cannot blame sectarianism as a pure product of colonialism  </description>
+    </item>
+    
+    <item>
+      <title>Weng: Are Deep Neural Networks Dramatically Overfitted?</title>
+      <link>/posts/weng_are_deep_neural_networks_dramatically_overfitted/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weng_are_deep_neural_networks_dramatically_overfitted/</guid>
+      <description> https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html#are-deep-learning-models-dramatically-overfitted somewhat related to the scaling law seminar asks the fundalmental question on how good regularization is to generalization on deep learning  </description>
     </item>
     
     <item>
@@ -16213,6 +16349,15 @@ It&amp;rsquo;s built with:
       <guid>/posts/xcode/</guid>
       <description>Tags: os x
 ProvisionQL for looking at ipas and provisions  https://github.com/ealeksandrov/ProvisionQL  </description>
+    </item>
+    
+    <item>
+      <title>xla</title>
+      <link>/posts/xla/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/xla/</guid>
+      <description> tensorflow runtime language for tensorflow  </description>
     </item>
     
     <item>

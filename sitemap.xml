@@ -41,6 +41,8 @@
   </url><url>
     <loc>/posts/abdul_karim_qasim/</loc>
   </url><url>
+    <loc>/posts/abstract_and_reasoning_corpus/</loc>
+  </url><url>
     <loc>/posts/abu_ali_al_basri_adnan_ibrahim_al_najjar/</loc>
   </url><url>
     <loc>/posts/abu_hamid_al_ghazali/</loc>
@@ -160,6 +162,8 @@
     <loc>/posts/ali_shakir_al_khafaf/</loc>
   </url><url>
     <loc>/posts/ali_shariati/</loc>
+  </url><url>
+    <loc>/posts/allocators/</loc>
   </url><url>
     <loc>/posts/alsaree3/</loc>
   </url><url>
@@ -523,6 +527,8 @@
   </url><url>
     <loc>/posts/chile/</loc>
   </url><url>
+    <loc>/posts/chilton_and_kopytowska_religion_lanugage_and_the_human_mind/</loc>
+  </url><url>
     <loc>/posts/china/</loc>
   </url><url>
     <loc>/posts/china_and_the_middle_income_trap/</loc>
@@ -702,6 +708,8 @@
     <loc>/posts/data/</loc>
   </url><url>
     <loc>/posts/data_plane_development_kit_dpdk/</loc>
+  </url><url>
+    <loc>/posts/data_structures/</loc>
   </url><url>
     <loc>/posts/databases/</loc>
   </url><url>
@@ -1036,6 +1044,8 @@
     <loc>/posts/french_revolution/</loc>
   </url><url>
     <loc>/posts/frontend/</loc>
+  </url><url>
+    <loc>/posts/frozen_data_structures_in_c/</loc>
   </url><url>
     <loc>/posts/fsf/</loc>
   </url><url>
@@ -1565,6 +1575,8 @@
   </url><url>
     <loc>/posts/journals/</loc>
   </url><url>
+    <loc>/posts/jq/</loc>
+  </url><url>
     <loc>/posts/json/</loc>
   </url><url>
     <loc>/posts/judea_pearl/</loc>
@@ -1572,6 +1584,8 @@
     <loc>/posts/julia/</loc>
   </url><url>
     <loc>/posts/juniper/</loc>
+  </url><url>
+    <loc>/posts/jupyter_notebooks/</loc>
   </url><url>
     <loc>/posts/jurf_al_sakhar/</loc>
   </url><url>
@@ -1722,6 +1736,8 @@
     <loc>/posts/legal_basis_of_the_hashd/</loc>
   </url><url>
     <loc>/posts/lenin_was_a_mushroom/</loc>
+  </url><url>
+    <loc>/posts/levien_towards_gpgpu_json_parsing/</loc>
   </url><url>
     <loc>/posts/li_the_universal_enemy/</loc>
   </url><url>
@@ -2511,6 +2527,8 @@
   </url><url>
     <loc>/posts/religion/</loc>
   </url><url>
+    <loc>/posts/religion_and_linguistics/</loc>
+  </url><url>
     <loc>/posts/religion_and_modernity/</loc>
   </url><url>
     <loc>/posts/religious_minorities_in_iraq/</loc>
@@ -2741,6 +2759,8 @@
   </url><url>
     <loc>/posts/20200414091517-smart_note_taking/</loc>
   </url><url>
+    <loc>/posts/source_explorers/</loc>
+  </url><url>
     <loc>/posts/south_africa/</loc>
   </url><url>
     <loc>/posts/south_america/</loc>
@@ -2862,6 +2882,8 @@
     <loc>/posts/syscalls/</loc>
   </url><url>
     <loc>/posts/systems_thinking/</loc>
+  </url><url>
+    <loc>/posts/ta_ziyeh/</loc>
   </url><url>
     <loc>/posts/tacit_knowledge/</loc>
   </url><url>
@@ -3187,6 +3209,8 @@
   </url><url>
     <loc>/posts/weiss_in_the_shadows_of_sectarianism/</loc>
   </url><url>
+    <loc>/posts/weng_are_deep_neural_networks_dramatically_overfitted/</loc>
+  </url><url>
     <loc>/posts/west_bank/</loc>
   </url><url>
     <loc>/posts/wti/</loc>
@@ -3240,6 +3264,8 @@
     <loc>/posts/wwan_x1_carbon/</loc>
   </url><url>
     <loc>/posts/xcode/</loc>
+  </url><url>
+    <loc>/posts/xla/</loc>
   </url><url>
     <loc>/posts/xml_roberta/</loc>
   </url><url>
