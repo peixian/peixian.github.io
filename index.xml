@@ -1034,6 +1034,16 @@ https://github.com/kubernetes/apimachinery
     </item>
     
     <item>
+      <title>arabic names</title>
+      <link>/posts/arabic_names/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/arabic_names/</guid>
+      <description>arabic
+ Nesom, Gayle, and Beth Nozton. “The Arabic Naming System.” Accessed November 24, 2019. https://www.councilscienceeditors.org/wp-content/uploads/v28n1p020-021.pdf. kunyas  </description>
+    </item>
+    
+    <item>
       <title>arabic nlp</title>
       <link>/posts/arabic_nlp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3311,6 +3321,16 @@ Damascus, syria  https://www.instapaper.com/read/1299358661 Despite the justific
     </item>
     
     <item>
+      <title>crdts</title>
+      <link>/posts/crdts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/crdts/</guid>
+      <description>distributed systems
+ https://wiki.nikitavoloboev.xyz/distributed-systems/crdt  </description>
+    </item>
+    
+    <item>
       <title>criu/kernal checkpointing</title>
       <link>/posts/criu_kernal_checkpointing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4379,7 +4399,7 @@ Self referantial paradox on
       <guid>/posts/erlang/</guid>
       <description>Tags: programming languages
 -https://erlangexplained.com/index.php/about
- https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference%5Fmanual/introduction.html  </description>
+ https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference%5Fmanual/introduction.html https://ferd.ca/the-zen-of-erlang.html  </description>
     </item>
     
     <item>
@@ -5057,9 +5077,9 @@ Fortna, Virginia Page. “Does Peacekeeping Keep Peace? International Interventi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/fpga/</guid>
-      <description>Tags: chips
-  https://github.com/litex-hub/fpga%5F101
+      <description>  https://github.com/litex-hub/fpga%5F101
   Adaptive on chip memory management - https://ieeexplore.ieee.org/document/6927471?arnumber=6927471
+  FPGA Hashing: https://zistvan.github.io/doc/trets15-istvan.pdf
   </description>
     </item>
     
@@ -5460,8 +5480,7 @@ Hofstadter - Godel, Escher, Bach Bateson - Steps to an Ecology of Mind Knot of t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/gender_bias_paper/</guid>
-      <description>Tags: nlu
- justification for datasets details on usage preparing a table for accuracy word embeddings: https://aclanthology.org/W19-3805.pdf https://towardsdatascience.com/tackling-gender-bias-in-word-embeddings-c965f4076a10  </description>
+      <description> justification for datasets details on usage preparing a table for accuracy word embeddings: https://aclanthology.org/W19-3805.pdf https://towardsdatascience.com/tackling-gender-bias-in-word-embeddings-c965f4076a10 https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/reports/custom/15787612.pdf  </description>
     </item>
     
     <item>
@@ -10420,7 +10439,7 @@ Nicaraguan electricty is expensive due to inefficiency and US sanctions. Transpa
       
       <guid>/posts/nlp/</guid>
       <description>Tags: ml, languages/linguistics
- http://nlpprogress.com/english/word%5Fsense%5Fdisambiguation.html https://huggingface.co/transformers/perplexity.html https://github.com/jshin49/deep-nlp-reading-list  </description>
+ http://nlpprogress.com/english/word%5Fsense%5Fdisambiguation.html https://huggingface.co/transformers/perplexity.html https://github.com/jshin49/deep-nlp-reading-list  Counterfactuals  vaguely related to judea pearl? Hendricks, Lisa Anne, Ronghang Hu, Trevor Darrell, and Zeynep Akata. “Generating Counterfactual Explanations with Natural Language.” ArXiv:1806.09809 [Cs], June 26, 2018. http://arxiv.org/abs/1806.09809.  </description>
     </item>
     
     <item>
@@ -12647,8 +12666,7 @@ Specific kube controller that encodes the ability to startup and stop identical 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/replication_crisis/</guid>
-      <description>Tags: philosophy of science
- https://twitter.com/eigenrobot/status/1334273043590340608 https://arxiv.org/abs/2009.09440 http://www.erikdrysdale.com/winners%5Fcurse/#mjx-eqn-eqpower https://en.wikipedia.org/wiki/Researcher%5Fdegrees%5Fof%5Ffreedom https://en.wikipedia.org/wiki/Publication%5Fbias http://www.erikdrysdale.com/ https://en.wikipedia.org/wiki/Power%5Fof%5Fa%5Ftest https://en.wikipedia.org/wiki/Bayesian%5Finference https://en.wikipedia.org/wiki/Proteus%5Fphenomenon http://www.stat.columbia.edu/~gelman/research/published/retropower%5Ffinal.pdf  What&amp;rsquo;s Wrong with Social Science?  https://fantasticanachronism.com/2020/09/11/whats-wrong-with-social-science-and-how-to-fix-it/ Paper tackling replication rates: https://royalsocietypublishing.org/doi/10.1098/rsos.200566 HTTLPR: https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/ https://www.gwern.net/Scanners#citogenesis-how-often-do-researchers-not-read-the-papers-they-cite https://www.frontiersin.org/articles/10.3389/fnhum.2018.00037/full https://www.nature.com/articles/s41562-018-0522-1 https://www.compare-trials.org/ https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196346  </description>
+      <description> https://twitter.com/eigenrobot/status/1334273043590340608 https://arxiv.org/abs/2009.09440 http://www.erikdrysdale.com/winners%5Fcurse/#mjx-eqn-eqpower https://en.wikipedia.org/wiki/Researcher%5Fdegrees%5Fof%5Ffreedom https://en.wikipedia.org/wiki/Publication%5Fbias http://www.erikdrysdale.com/ https://en.wikipedia.org/wiki/Power%5Fof%5Fa%5Ftest https://en.wikipedia.org/wiki/Bayesian%5Finference https://en.wikipedia.org/wiki/Proteus%5Fphenomenon http://www.stat.columbia.edu/~gelman/research/published/retropower%5Ffinal.pdf https://royalsocietypublishing.org/doi/pdf/10.1098/rsos.200566  What&amp;rsquo;s Wrong with Social Science?  https://fantasticanachronism.com/2020/09/11/whats-wrong-with-social-science-and-how-to-fix-it/ Paper tackling replication rates: https://royalsocietypublishing.org/doi/10.1098/rsos.200566 HTTLPR: https://slatestarcodex.com/2019/05/07/5-httlpr-a-pointed-review/ https://www.gwern.net/Scanners#citogenesis-how-often-do-researchers-not-read-the-papers-they-cite https://www.frontiersin.org/articles/10.3389/fnhum.2018.00037/full https://www.nature.com/articles/s41562-018-0522-1 https://www.compare-trials.org/ https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196346  </description>
     </item>
     
     <item>
@@ -12774,7 +12792,7 @@ https://github.com/xdsopl/robot36</description>
       
       <guid>/posts/root/</guid>
       <description>Notes in Zettelkasten.
-Main site and more complete thoughts are at http://space.af.
+Main site and more complete thoughts are at http://malloc.dog.
 It&amp;rsquo;s built with:
  org-roam ox-hugo hugo hugo theme  </description>
     </item>
@@ -13949,8 +13967,10 @@ Has a concept of a state price vector, which means any derivatives contrct can b
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/statistical_methods/</guid>
-      <description>Tags: statistics
- https://mc-stan.org/  </description>
+      <description>\:PROPERTIES: :ID: 1E95EA69-5FA9-4065-B175-48E0A4391924
+:END:
+Tags: statistics
+ https://mc-stan.org/ laplacian eigenmaps: Belkin, Mikhail, and Partha Niyogi. “Laplacian Eigenmaps and Spectral Techniques for Embedding and Clustering.” In Proceedings of the 14th International Conference on Neural Information Processing Systems: Natural and Synthetic, 585–91. NIPS’01. Cambridge, MA, USA: MIT Press, 2001.  </description>
     </item>
     
     <item>
