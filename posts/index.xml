@@ -1228,6 +1228,15 @@ General  Talks about how the idea of religion is a relatively recent one, and re
     </item>
     
     <item>
+      <title>Asad - Secular Translations</title>
+      <link>/posts/asad_secular_translations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/asad_secular_translations/</guid>
+      <description>Review/Response Talal Asad is deeply concerned about the concept of friendship in this book, and steps through an linguistic analogy of untranslatability, followed by a numerical one about the state using numbers, and ending with a statement about amr bil maruf. In the classical Asad&amp;rsquo;ian way, the point comes across through a variety of writers and sources, drawing from Jakobson to Gilgamesh to Arendt and a gaggle of other characters.</description>
+    </item>
+    
+    <item>
       <title>ashraf qazi</title>
       <link>/posts/ashraf_qazi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1261,7 +1270,8 @@ former UN Iraq SR: https://reliefweb.int/report/iraq/iraq-srsg-ashraf-qazi-reite
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/assembly/</guid>
-      <description>Tags: computers</description>
+      <description>Tags: computers
+mov  https://github.com/xoreaxeaxeax/movfuscator  compiles programs into only ~mov~s    </description>
     </item>
     
     <item>
@@ -1416,7 +1426,7 @@ Summarizes the average presence of a feature</description>
       
       <guid>/posts/avionics/</guid>
       <description>Tags: root
-Aerial Refueling  https://en.m.wikipedia.org/wiki/Lockheed%5FSR-71%5FBlackbird  </description>
+Aerial Refueling  https://en.m.wikipedia.org/wiki/Lockheed%5FSR-71%5FBlackbird  Little Known Airfields - https://news.ycombinator.com/item?id=27192626 </description>
     </item>
     
     <item>
@@ -2043,8 +2053,7 @@ Refugees and history are a two way street, internal refugees of the Ottoman empi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/20200414223410-books/</guid>
-      <description>Tags: root
-Career Books  https://www.reddit.com/r/ExperiencedDevs/comments/hpgkvv/what%5Fare%5Fsome%5Fdeveloper%5Fcareergrowth%5Fbooks%5Fthat/  </description>
+      <description>Career Books  https://www.reddit.com/r/ExperiencedDevs/comments/hpgkvv/what%5Fare%5Fsome%5Fdeveloper%5Fcareergrowth%5Fbooks%5Fthat/  </description>
     </item>
     
     <item>
@@ -3125,8 +3134,7 @@ computer science can actually be tested despite being easy to learn
       
       <guid>/posts/computers/</guid>
       <description>https://wiki.c2.com/?SufficientlySmartCompiler
-Tags: root
-grad school professors  https://software.imdea.org/~gotsman/  </description>
+ https://software.imdea.org/~gotsman/  </description>
     </item>
     
     <item>
@@ -3326,6 +3334,16 @@ An argument is valid iff: under all circumstances in which the presmises would b
     </item>
     
     <item>
+      <title>counterfactual regret</title>
+      <link>/posts/counterfactual_regret/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/counterfactual_regret/</guid>
+      <description>Counterfactual Regret Minimization For information imperfect games, Counterfactual Regret Minization (CFR) is
+ http://martin.zinkevich.org/publications/regretpoker.pdf http://mlanctot.info/files/papers/nips09mccfr.pdf with code: https://nn.labml.ai/cfr/index.html  </description>
+    </item>
+    
+    <item>
       <title>covid</title>
       <link>/posts/covid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3413,6 +3431,15 @@ Provides checkpointing and snapshotting of applications and containers to disk
       <guid>/posts/crypto/</guid>
       <description>Tags: Computers
 Bulletproofs  https://crypto.stanford.edu/bulletproofs/  </description>
+    </item>
+    
+    <item>
+      <title>cuelang</title>
+      <link>/posts/cuelang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cuelang/</guid>
+      <description> https://cuelang.org/docs/install/  </description>
     </item>
     
     <item>
@@ -6471,6 +6498,15 @@ Talks about the rise of civil society and private organizations, especially in t
     </item>
     
     <item>
+      <title>hibernate</title>
+      <link>/posts/hibernate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hibernate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>hierarchical navigable small-world graph (HNSW)</title>
       <link>/posts/hierarchical_navigable_small_world_graph/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7786,8 +7822,7 @@ member of the iraqi finance committee</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/java/</guid>
-      <description>Tags: computers
-tail call optimization  https://github.com/Sipkab/jvm-tail-recursion  JVM profiling  https://blunders.io/ Java Flight  </description>
+      <description> https://github.com/Sipkab/jvm-tail-recursion  JVM profiling  https://blunders.io/ Java Flight  Hibernate  Java orm, very popular  </description>
     </item>
     
     <item>
@@ -8799,8 +8834,7 @@ GH Super Linter  https://github.blog/2020-06-18-introducing-github-super-linter-
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/linux/</guid>
-      <description>Tags: computers
- Currently Linux plumber and hobbiest occupy two different workds  Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros    </description>
+      <description> Currently Linux plumber and hobbiest occupy two different workds  Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros    Debian perf performance issues  https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=911815  when not linked against libbfd, perf calls out to addr2line for every address lookup, which is infeasible possible solution: https://michcioperz.com/post/slow-perf-script/ patches: https://lore.kernel.org/linux-perf-users/20210909112202.1947499-1-tonyg@leastfixedpoint.com/    Linux Audio  Pipewire: http://pipewire.org  provides low latency, graph based processing for audio    </description>
     </item>
     
     <item>
@@ -9687,7 +9721,8 @@ http://www.eecs.harvard.edu/~michaelm/NEWWORK/postscripts/twosurvey.pdf https://
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/ml/</guid>
-      <description>Tags: Computers, math</description>
+      <description>Tags: Computers, math
+Failures  Zillow winds down their ml model house flipping scheme: https://www.prnewswire.com/news-releases/zillow-group-reports-third-quarter-2021-financial-results--shares-plan-to-wind-down-zillow-offers-operations-301414460.html?tc=eml%5Fcleartime  </description>
     </item>
     
     <item>
@@ -10139,6 +10174,15 @@ POSIX Mutexes pthread_mutex  https://pubs.opengroup.org/onlinepubs/009604499/fun
     </item>
     
     <item>
+      <title>mutuality and asad</title>
+      <link>/posts/mutuality_and_asad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mutuality_and_asad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>my work as a system blog post</title>
       <link>/posts/my_work_as_a_system_blog_post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10532,8 +10576,7 @@ Nicaraguan electricty is expensive due to inefficiency and US sanctions. Transpa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/nlp/</guid>
-      <description>Tags: ml, languages/linguistics
- http://nlpprogress.com/english/word%5Fsense%5Fdisambiguation.html https://huggingface.co/transformers/perplexity.html https://github.com/jshin49/deep-nlp-reading-list  Counterfactuals  vaguely related to judea pearl? Hendricks, Lisa Anne, Ronghang Hu, Trevor Darrell, and Zeynep Akata. “Generating Counterfactual Explanations with Natural Language.” ArXiv:1806.09809 [Cs], June 26, 2018. http://arxiv.org/abs/1806.09809.  </description>
+      <description>http://nlpprogress.com/english/word%5Fsense%5Fdisambiguation.html https://huggingface.co/transformers/perplexity.html https://github.com/jshin49/deep-nlp-reading-list  Counterfactuals  Hendricks, Lisa Anne, Ronghang Hu, Trevor Darrell, and Zeynep Akata. “Generating Counterfactual Explanations with Natural Language.” ArXiv:1806.09809 [Cs], June 26, 2018. http://arxiv.org/abs/1806.09809.  Sequence2Sequence  https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/ - translation example encoder + decoder method  encoder compiles everything together into a vector called the context, which is then sent into the decoder encoder as an rnn modifies the hidden state, and passes the final hidden state over as the context   this is pre-attention!</description>
     </item>
     
     <item>
@@ -12431,7 +12474,7 @@ State owned bank</description>
       
       <guid>/posts/ram_computer_memory/</guid>
       <description>Tags: computers
- http://landley.net/writing/memory-faq.txt  Stack Smashing Protector  https://wiki.osdev.org/Stack%5FSmashing%5FProtector Process that helps detect stack buffer overruns by checking if a secret value is changed only detects stack buffer overruns  </description>
+ http://landley.net/writing/memory-faq.txt  Stack Smashing Protector  https://wiki.osdev.org/Stack%5FSmashing%5FProtector Process that helps detect stack buffer overruns by checking if a secret value is changed only detects stack buffer overruns  Memory Management  ruby garbage collector: https://jemma.dev/blog/gc-compaction allocators  </description>
     </item>
     
     <item>
@@ -12626,8 +12669,7 @@ Mushrooms  https://cafedelites.com/roasted-mushrooms/  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/recurrent_neural_networks/</guid>
-      <description>Tags: ml
- good for tasks that require sequential input processes and input sequence one element at a time, maintaining a hidden &amp;ldquo;state vector&amp;rdquo; has a vanishing problem since backpropagated gardients grow or shrink at each time step very good at predicting the next character in the text or the next word in a sequence    </description>
+      <description> good for tasks that require sequential input processes and input sequence one element at a time, maintaining a hidden &amp;ldquo;state vector&amp;rdquo; has a vanishing problem since backpropagated gardients grow or shrink at each time step very good at predicting the next character in the text or the next word in a sequence https://www.youtube.com/watch?v=UNmqTiOnRfg    </description>
     </item>
     
     <item>
@@ -13236,9 +13278,17 @@ Iraqi political party run by Muqtada al-Sadr</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/scaling_law_seminar/</guid>
-      <description>fall 2021 classes, transformers
-Seminar on scaling laws
-Scaling Laws for Acoustic Models  papers:  https://arxiv.org/pdf/2106.09488.pdf    </description>
+      <description>Seminar on scaling laws
+Scaling Laws for Acoustic Models  papers:  https://arxiv.org/pdf/2106.09488.pdf   how do acoustic models scale with model size? maybe ask haoran on this? https://assets.amazon.science/ef/a6/60f65ed543c9af2a519caba269bd/scaling-laws-for-acoustic-models.pdf what proposals are there? what does the current field look like for scaling laws? most models use asr + LM&amp;rsquo;s now, how does this scale with it overall?zz does wav2vec scale? what are the profiles for wer in terms of longer speech datasets?</description>
+    </item>
+    
+    <item>
+      <title>scaling laws draft</title>
+      <link>/posts/scaling_laws_draft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/scaling_laws_draft/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -14265,6 +14315,15 @@ Neoliberalism and neoliberalization are two topics that barely need introduction
     </item>
     
     <item>
+      <title>structured space modeling</title>
+      <link>/posts/structured_space_modeling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/structured_space_modeling/</guid>
+      <description>sequential image classification  stuff that turns it into sequences of length 1024   keyword spotting  1s audio clips to be classified into clips speech is difficult b/c of high sampling rate 1s clips - 16k  mfcc coefficients filter banks, reduces sequences by 100x   irregular continous data missing values of diff frequencies   long range arena A matricies are construed to be stable, or whether stable matricies lead to zero final state  do all matricies derive from the Hippo matricy?</description>
+    </item>
+    
+    <item>
       <title>stuart hamaroff</title>
       <link>/posts/stuart_hamaroff/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -14831,6 +14890,16 @@ Macaes - History has Begun, rooted in fantasies of a &amp;ldquo;frontier&amp;rdq
     </item>
     
     <item>
+      <title>the information plane within deep learning</title>
+      <link>/posts/the_information_plane_within_deep_learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the_information_plane_within_deep_learning/</guid>
+      <description>drafts, Scaling laws for solution compressibility
+[Transformers|Deep Neural Networks|AI] need to be explainable is a common enough refrain. I would say it&amp;rsquo;s a fairly uncontroversial statement that NLP is a field heavy on the experimental and light on the theoretical. With that in mind, I want to talk about the concept of &amp;ldquo;information plane&amp;rdquo;, a term coined by Schwartz-Ziv and Tishby (2017). For Schwartz-Ziv and Tishby, the information plane is &amp;ldquo;the plane of the Mutual Information values that each layer preserves on the input and output variables&amp;rdquo;.</description>
+    </item>
+    
+    <item>
       <title>the metaphysics of bullshit</title>
       <link>/posts/the_metaphysics_of_bullshit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -15328,6 +15397,16 @@ Also sometimes spelled &amp;ldquo;Tuz Khurmatu&amp;rdquo; - https://en.wikipedia
       <guid>/posts/two_sigma_problem/</guid>
       <description>Tags: education
  https://en.wikipedia.org/wiki/Bloom%27s%5F2%5Fsigma%5Fproblem Average tutored student is two standard deviations away from the mean  </description>
+    </item>
+    
+    <item>
+      <title>type systems (programming)</title>
+      <link>/posts/type_systems_programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/type_systems_programming/</guid>
+      <description>A type system is a system that does local checks of a program&amp;rsquo;s source code in order to establish some global property about the program&amp;rsquo;s behavior
+Counterexamples in Type Systems  https://counterexamples.org/intro.html  </description>
     </item>
     
     <item>
@@ -15909,6 +15988,15 @@ HID 6 Key Rollover Most keyboards actually support more, but cheap keyboards onl
       <guid>/posts/visa_s/</guid>
       <description>Tags: travel
 Portugal  https://www.portuguese-nationality.com/residency/the-d7-visa-portugal https://www.reddit.com/r/expats/comments/hdg36h/moving%5Fto%5Fportugal%5Fas%5Fa%5Fsoftware%5Fdeveloper/  </description>
+    </item>
+    
+    <item>
+      <title>visual question answering</title>
+      <link>/posts/visual_question_answering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/visual_question_answering/</guid>
+      <description> VQA-MHUG: A Gaze Dataset to Study Multimodal Neural Attention in Visual Question Answering  basic ideas about coattention, and how humans check the center of the image and center of the text VQA does it separately, does not actually show how much it is    </description>
     </item>
     
     <item>

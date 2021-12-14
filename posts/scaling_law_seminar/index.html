@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.ad3b0fb8aa8670dd462b85def4dd1068f85350886f8278716e05131aaeebc957.js" integrity="sha256-rTsPuKqGcN1GK4Xe9N0QaPhTUIhvgnhxbgUTGq7ryVc="></script>
+<script defer src="/en.search.min.0096137e297c16852cbe5524347216140a16331137df05a071d5f82a8e52c7ef.js" integrity="sha256-AJYTfil8FoUsvlUkNHIWFAoWMxE33wWgcdX4Ko5Sx&#43;8="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -37,8 +37,7 @@
       <div class="content">
           <h1>scaling law seminar</h1>
 
-          <p><a href="/posts/fall_2021_classes/">fall 2021 classes</a>, <a href="/posts/transformers/">transformers</a></p>
-<p>Seminar on scaling laws</p>
+          <p>Seminar on scaling laws</p>
 <h2 id="scaling-laws-for-acoustic-models">Scaling Laws for Acoustic Models</h2>
 <ul>
 <li>papers:
@@ -46,6 +45,66 @@
 <li><a href="https://arxiv.org/pdf/2106.09488.pdf">https://arxiv.org/pdf/2106.09488.pdf</a></li>
 </ul>
 </li>
+<li>how do acoustic models scale with model size?</li>
+<li>maybe ask haoran on this?</li>
+<li><a href="https://assets.amazon.science/ef/a6/60f65ed543c9af2a519caba269bd/scaling-laws-for-acoustic-models.pdf">https://assets.amazon.science/ef/a6/60f65ed543c9af2a519caba269bd/scaling-laws-for-acoustic-models.pdf</a></li>
+<li>what proposals are there? what does the current field look like for scaling laws?</li>
+<li>most models use asr + LM&rsquo;s now, how does this scale with it overall?zz</li>
+<li>does wav2vec scale? what are the profiles for wer in terms of longer speech datasets?</li>
+</ul>
+<h2 id="scaling-laws-for-solution-compressibility">Scaling laws for solution compressibility</h2>
+<ul>
+<li>are solutions in bits smaller as the model size increases?
+<ul>
+<li>how would you measure the solution bit size?</li>
+<li>intuitively the solution size actually should just increase as the transofmer gets bigger</li>
+</ul>
+</li>
+<li>read
+<ul>
+<li>information probing on description length of solutions</li>
+<li>do softmaxes become hardmaxes?</li>
+</ul>
+</li>
+<li>people
+<ul>
+<li><a href="https://www.cs.washington.edu/people/faculty/lsz">https://www.cs.washington.edu/people/faculty/lsz</a></li>
+</ul>
+</li>
+<li>three approaches
+<ul>
+<li>circuit complexity - establishing upper bounds on what this thing is</li>
+<li>renormalization groups - is there something there? information bottleneck?</li>
+<li>probing - probing the description length?</li>
+</ul>
+</li>
+<li>motivate the paper by saying, &ldquo;we should want to predict what types of capabiltiies can emerge, and it&rsquo;s important to take lessons from statistical physics&rdquo;</li>
+</ul>
+<h3 id="on-the-information-bottleneck-theory-of-deep-learning">On the Information Bottleneck Theory of Deep Learning</h3>
+<ul>
+<li>Cites
+<ul>
+<li>Tishby and Zalavsky 2015,Shwartz-Ziv &amp; Tishby, 2017</li>
+<li>Tishby 1999, information bottleneck</li>
+<li>deep nn complex non-linear learning trajectories (Saxe et al 2014)</li>
+<li>baldi and hornik, optimization problems remain non-convex (1989)</li>
+</ul>
+</li>
+<li>Deep learning as representation learners</li>
+<li>information bottleneck deep learning, 3 main claims
+<ul>
+<li>deep nns undergo two distcint phases, an initial fitting phase and a compression one, where fitting is when the mutual information increases, compression is where mutual information decreases</li>
+<li>unclear b/c tanh exhibits a compression, relu does not</li>
+<li>networks that do not do compression exhibit generalization</li>
+<li>SIDEBAR: does this mean that mesa optimizers require compression?</li>
+</ul>
+</li>
+<li>learning trajectories are not easily predictable, mesa optimizers may arise</li>
+<li>SGD - two phases from shwartz-ziv and tishby, 2017, distinguishing between drift phase (mean of gradients over training samples) and diffusion phase (mean becomes smaller than the standard devianation of the gradients)\</li>
+</ul>
+<h3 id="paper-questions">Paper questions</h3>
+<ul>
+<li>does information probing, circuit complexity, or information theory help us get anywhere?</li>
 </ul>
 
           
@@ -1008,6 +1067,12 @@
    
 
    
+
+   
+
+   
+
+   
       
    
 
@@ -3018,6 +3083,18 @@
    
 
    
+      
+   
+
+   
+
+   
+
+   
+
+   
+
+   
 
    
 
@@ -3077,6 +3154,10 @@
 
    
       
+   
+
+   
+
    
 
    
@@ -3383,6 +3464,8 @@
         <ul>
        
           <li><a href="/posts/fall_2021_classes/">fall 2021 classes</a></li>
+       
+          <li><a href="/posts/the_information_plane_within_deep_learning/">the information plane within deep learning</a></li>
        
           <li><a href="/posts/20211031204616-truthfulqa/">truthfulqa</a></li>
        
