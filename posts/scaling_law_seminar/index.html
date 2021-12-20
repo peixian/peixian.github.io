@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.0096137e297c16852cbe5524347216140a16331137df05a071d5f82a8e52c7ef.js" integrity="sha256-AJYTfil8FoUsvlUkNHIWFAoWMxE33wWgcdX4Ko5Sx&#43;8="></script>
+<script defer src="/en.search.min.54d2a2f45e26310e6ecf4ce9747cd8fd7b505fc6d075e88c3a9246f78307bfc5.js" integrity="sha256-VNKi9F4mMQ5uz0zpdHzY/XtQX8bQdeiMOpJG94MHv8U="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -37,7 +37,8 @@
       <div class="content">
           <h1>scaling law seminar</h1>
 
-          <p>Seminar on scaling laws</p>
+          <p><a href="/posts/fall_2021_classes/">fall 2021 classes</a>, <a href="/posts/transformers/">transformers</a></p>
+<p>Seminar on scaling laws</p>
 <h2 id="scaling-laws-for-acoustic-models">Scaling Laws for Acoustic Models</h2>
 <ul>
 <li>papers:
@@ -100,11 +101,77 @@
 </ul>
 </li>
 <li>learning trajectories are not easily predictable, mesa optimizers may arise</li>
-<li>SGD - two phases from shwartz-ziv and tishby, 2017, distinguishing between drift phase (mean of gradients over training samples) and diffusion phase (mean becomes smaller than the standard devianation of the gradients)\</li>
+<li>SGD - two phases from shwartz-ziv and tishby, 2017, distinguishing between drift phase (mean of gradients over training samples) and diffusion phase (mean becomes smaller than the standard devianation of the gradients)</li>
 </ul>
 <h3 id="paper-questions">Paper questions</h3>
 <ul>
 <li>does information probing, circuit complexity, or information theory help us get anywhere?</li>
+</ul>
+<h3 id="effects-of-parameter-norm-growth-during-transformer-training">Effects of Parameter Norm Growth During Transformer Training</h3>
+<ul>
+<li>suggests that transformers learn due to inductive bias (aka projecting out the set of assumptions)</li>
+<li>studies the growth in the l2 norm during training</li>
+<li>norm growth occurs, then reaches a discretized network with saturated network activations
+<ul>
+<li>saturation - neuron predominantly outputs values close to the asymptotic ends of the bounded activation function
+<ul>
+<li>softmaxes become hardmaxes - <a href="https://ieeexplore.ieee.org/document/7376778">https://ieeexplore.ieee.org/document/7376778</a></li>
+</ul>
+</li>
+<li>the l2 norm grows, aka norm growth</li>
+<li>previous work on feedforward networks
+<ul>
+<li>li and auorara 2019, ji and telgarsky 2020</li>
+</ul>
+</li>
+<li>anywhere the norm diverges during the training approaches a saturated network</li>
+</ul>
+</li>
+<li>saturation allows for approximation via circuit complexity</li>
+<li>transformers can implement a countering mechanism (Bhattmishra et al 2020)
+<ul>
+<li>Bhattmishra also finds that trained networks learn to recongize counter languages that rely on computing means</li>
+</ul>
+</li>
+</ul>
+<h2 id="discussions">Discussions</h2>
+<h3 id="reddit">reddit</h3>
+<ul>
+<li><a href="https://old.reddit.com/r/MachineLearning/comments/em3ynp/d%5Ftrying%5Fto%5Fwrap%5Fmy%5Fhead%5Faround%5Fthe%5Finformation/">https://old.reddit.com/r/MachineLearning/comments/em3ynp/d%5Ftrying%5Fto%5Fwrap%5Fmy%5Fhead%5Faround%5Fthe%5Finformation/</a></li>
+<li><a href="https://old.reddit.com/r/MachineLearning/comments/elmgsz/r%5Fon%5Fthe%5Finformation%5Fbottleneck%5Ftheory%5Fof%5Fdeep/">https://old.reddit.com/r/MachineLearning/comments/elmgsz/r%5Fon%5Fthe%5Finformation%5Fbottleneck%5Ftheory%5Fof%5Fdeep/</a></li>
+</ul>
+<h3 id="other-papers">Other papers</h3>
+<ul>
+<li>survey - <a href="https://arxiv.org/pdf/1904.03743.pdf">https://arxiv.org/pdf/1904.03743.pdf</a></li>
+<li>similar paper that tries to measure model complexity with curve activation functions <a href="https://arxiv.org/abs/2006.08962">https://arxiv.org/abs/2006.08962</a></li>
+<li>investigating dropout regularization and model complexity in NN: <a href="https://arxiv.org/abs/2108.06628">https://arxiv.org/abs/2108.06628</a></li>
+<li><a href="https://arxiv.org/pdf/1909.11396.pdf">https://arxiv.org/pdf/1909.11396.pdf</a></li>
+</ul>
+<h2 id="videos">Videos</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=bLqJHjXihK8&amp;t=960s">https://www.youtube.com/watch?v=bLqJHjXihK8&amp;t=960s</a></li>
+</ul>
+<h2 id="the-information-bottleneck-problem-and-its-applications-in-machine-learning">The Information Bottleneck Problem and Its Applications in Machine Learning</h2>
+<ul>
+<li>survey - <a href="https://arxiv.org/pdf/2004.14941.pdf">https://arxiv.org/pdf/2004.14941.pdf</a></li>
+</ul>
+<h2 id="deep-variational-information-bottleneck">Deep variational information bottleneck</h2>
+<ul>
+<li><a href="https://arxiv.org/pdf/1612.00410.pdf">https://arxiv.org/pdf/1612.00410.pdf</a></li>
+</ul>
+<h2 id="saxe-et-al-paper">Saxe et al Paper</h2>
+<ul>
+<li><a href="https://openreview.net/forum?id=ry%5FWPG-A">https://openreview.net/forum?id=ry%5FWPG-A</a>-</li>
+</ul>
+<h2 id="code">Code</h2>
+<ul>
+<li><a href="https://github.com/ravidziv/IDNNs">https://github.com/ravidziv/IDNNs</a> - code for 2015 paper</li>
+</ul>
+<h2 id="scalable-mutual-information-using-dependence-graphs">Scalable Mutual Information Using Dependence Graphs</h2>
+<ul>
+<li><a href="https://arxiv.org/abs/1801.09125">https://arxiv.org/abs/1801.09125</a></li>
+<li>Claims to go against the saxe paper</li>
+<li><a href="https://github.com/mrtnoshad/EDGE/blob/master/information%5Fplane/main.py">https://github.com/mrtnoshad/EDGE/blob/master/information%5Fplane/main.py</a> - code for 2018 paper on EDGE, the scalable linear measure of <a href="/posts/information_theory/#mutual-information">Mutual Information</a></li>
 </ul>
 
           
@@ -2017,6 +2084,14 @@
    
 
    
+      
+   
+
+   
+
+   
+
+   
 
    
 
@@ -2760,6 +2835,8 @@
 
    
 
+   
+      
    
 
    
@@ -3464,6 +3541,10 @@
         <ul>
        
           <li><a href="/posts/fall_2021_classes/">fall 2021 classes</a></li>
+       
+          <li><a href="/posts/mesa_optimizer_and_scaling_laws_draft/">mesa optimizer and scaling laws draft</a></li>
+       
+          <li><a href="/posts/scaling_laws_survey_paper_information_bottleneck_minimum_description_length_etc/">scaling laws survey paper (information bottleneck, minimum description length, etc)</a></li>
        
           <li><a href="/posts/the_information_plane_within_deep_learning/">the information plane within deep learning</a></li>
        

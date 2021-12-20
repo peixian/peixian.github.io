@@ -1,0 +1,22 @@
++++
+title = "disarmingly forthright mscs advice"
+author = ["Peixian Wang"]
+slug = "disarmingly_forthright_mscs_advice"
+draft = false
++++
+
+Tags: [articles]({{<relref "20200419124622-articles.md#" >}}), [grad school]({{<relref "20200415130616-grad_school.md#" >}})
+
+Read the man pages and check the return values!
+
+-   Join ACM and IEEE, compete and practice good opsec.
+-   Most code you read is broken, including:
+    -   open source stuff
+    -   industry code
+    -   textbook code
+-   Bookmark, study, and seek out good code
+-   Learn the entire toolchain, details don't need to memorized right away but should be understood
+-   Learn a scripting language, functional language, and a data retrival language, and learn C & C++ well.
+-   **always** be shaping the thesis
+-   Don't be afraid to ask for clarification
+-   Professors only sometimes have hazy ideas of what's happening

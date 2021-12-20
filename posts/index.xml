@@ -2896,7 +2896,7 @@ https://www.fsmtime.com/blog/article/clock-synchronization-and-technology/
       
       <guid>/posts/coding_tools/</guid>
       <description>Tags: computers
- https://artifacts.bypaulshen.com/code-explorer/02/  </description>
+ https://artifacts.bypaulshen.com/code-explorer/02/  Personal Search Engines  https://monocle.surge.sh/  https://github.com/thesephist/monocle    </description>
     </item>
     
     <item>
@@ -3576,7 +3576,8 @@ Class  https://15721.courses.cs.cmu.edu/spring2019/schedule.html  MariaDB  https
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/datasets/</guid>
-      <description>Tags: ml</description>
+      <description>Tags: ml
+Long Range Arenas  https://mostafadehghani.com/2020/12/04/long-range-arena-a-benchmark-for-efficient-transformers/  </description>
     </item>
     
     <item>
@@ -6619,6 +6620,15 @@ iraqi analyst</description>
     </item>
     
     <item>
+      <title>Hobbes - Introduction to Religious Language</title>
+      <link>/posts/hobbes_introduction_to_religious_language/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hobbes_introduction_to_religious_language/</guid>
+      <description>books, religion and linguistics  Chapter 1  Work on religious language started in the 1980s after Jean Pierre van Noppen  explored the question of &amp;ldquo;where is god&amp;rdquo;   Muslim sermons (Esimaje, 2014) or (Malmstrom, 2016) and Prayers (Shoaps 2002) Main questions to ask  what counts as religious language? who uses it? where can it be found? what are its distinctive features? what purposes does it serve?</description>
+    </item>
+    
+    <item>
       <title>Hofstadter - Godel, Escher, Bach</title>
       <link>/posts/hofstadter_godel_escher_bach/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7042,7 +7052,9 @@ Refs:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/information_theory/</guid>
-      <description>Tags: computers, math</description>
+      <description>Tags: computers, math
+Information Foraging Theory for Programmers  Programmers &amp;ldquo;seek&amp;rdquo; out different type of information &amp;ldquo;diets&amp;rdquo;  https://web.eecs.utk.edu/~azh/blog/informationforaging.html These can be modeled in some form    Mutual Information  https://en.wikipedia.org/wiki/Mutual%5Finformation https://www.youtube.com/watch?v=U9h1xkNELvY https://arxiv.org/pdf/1905.06922.pdf &amp;lt;- variational bounds  discussion https://old.reddit.com/r/MachineLearning/comments/cqn5zg/r%5Fthoughts%5Fon%5Fmutual%5Finformation%5Fmore%5Festimators/ https://old.reddit.com/r/MachineLearning/comments/bpncbp/r%5F190506922%5Fon%5Fvariational%5Fbounds%5Fof%5Fmutual/    Algorithmic Information Theory  https://en.wikipedia.org/wiki/Algorithmic%5Finformation%5Ftheory#cite%5Fnote-2 https://www.cs.auckland.ac.nz/research/groups/CDMTCS/docs/ait.php https://dl.acm.org/doi/10.1145/321892.321894  Information-Theoretic Probing with MDL  papers deep learning  https://arxiv.org/abs/2003.12298
+Solomonoff Theory of Inductive Inference  https://www.lesswrong.com/posts/Kyc5dFDzBg4WccrbK/an-intuitive-explanation-of-solomonoff-induction#formalized%5Fscience https://old.</description>
     </item>
     
     <item>
@@ -9509,6 +9521,16 @@ What is a mental model?  Originally traced back to Jean Piaget&amp;rsquo;s Theor
       <guid>/posts/mesa_optimizer_and_linguistic_recursion_draft/</guid>
       <description>drafts
 Scaling laws are one big unsolved problem in machine learning, and especially NLP. NLP hits the sweet spot where the problems are hard enough to still require ongoing research, but problems are also easy enough to have real practical applications, so the field continues to get funded. One problem some people have raised is the idea of a &amp;ldquo;mesa optimizer&amp;rdquo;, or a model that has learned a generic way of solving a task that may not be directly what you expect.</description>
+    </item>
+    
+    <item>
+      <title>mesa optimizer and scaling laws draft</title>
+      <link>/posts/mesa_optimizer_and_scaling_laws_draft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mesa_optimizer_and_scaling_laws_draft/</guid>
+      <description>Scaling laws for solution compressibility
+Abstract </description>
     </item>
     
     <item>
@@ -13278,7 +13300,8 @@ Iraqi political party run by Muqtada al-Sadr</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/scaling_law_seminar/</guid>
-      <description>Seminar on scaling laws
+      <description>fall 2021 classes, transformers
+Seminar on scaling laws
 Scaling Laws for Acoustic Models  papers:  https://arxiv.org/pdf/2106.09488.pdf   how do acoustic models scale with model size? maybe ask haoran on this? https://assets.amazon.science/ef/a6/60f65ed543c9af2a519caba269bd/scaling-laws-for-acoustic-models.pdf what proposals are there? what does the current field look like for scaling laws? most models use asr + LM&amp;rsquo;s now, how does this scale with it overall?zz does wav2vec scale? what are the profiles for wer in terms of longer speech datasets?</description>
     </item>
     
@@ -13289,6 +13312,17 @@ Scaling Laws for Acoustic Models  papers:  https://arxiv.org/pdf/2106.09488.pdf 
       
       <guid>/posts/scaling_laws_draft/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>scaling laws survey paper (information bottleneck, minimum description length, etc)</title>
+      <link>/posts/scaling_laws_survey_paper_information_bottleneck_minimum_description_length_etc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/scaling_laws_survey_paper_information_bottleneck_minimum_description_length_etc/</guid>
+      <description>scaling law seminar
+Angle: all three measure generalization in some way
+ can we match these together? MI is the most backed, but has issues with high dimensions and hasn&amp;rsquo;t been shown on transformers  (also IB may be just the existence of geometric compression)   norm growth may have X &amp;ldquo;multiple descent&amp;rdquo; do these all criticall validate each other?  </description>
     </item>
     
     <item>
