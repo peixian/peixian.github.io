@@ -770,6 +770,15 @@ Co-author of principa mathmatica</description>
     </item>
     
     <item>
+      <title>ali al-wardi</title>
+      <link>/posts/ali_al_wardi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ali_al_wardi/</guid>
+      <description>people, iraqi shia   Modern iraqi intellectual, phd in sociology from university of texas in 1950 everyone knows him, you&amp;rsquo;ll often see entire sections dedicated to him in bookshelves, even in kurdistan, he&amp;rsquo;s adopted as a national iraqi identity figure quran as social text  Bashkin, Orit. “ADVICE FROM THE PAST: ‘ALI AL-WARDI ON LITERATURE AND SOCIETY.” In Writing the Modern History of Iraq: Historiographical and Political Challenges, edited by Jordi Tejel.</description>
+    </item>
+    
+    <item>
       <title>ali shakir al-khafaf</title>
       <link>/posts/ali_shakir_al_khafaf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1086,7 +1095,7 @@ Camel tools -&amp;gt; result of previous efforts, from madimira
   https://colab.research.google.com/drive/1Y3qCbD6Gw1KEw-lixQx1rI6WlyWnrnDS?usp=sharing#scrollTo=aYsFJl0A5mua
   https://wti.kaust.edu.sa/upcoming-events/Machine-Learning-Arabic-NLP-Webinar/ml-webinar-2020-keynote-1
   Bouamor, Houda, Sabit Hassan, and Nizar Habash. “The MADAR Shared Task on Arabic Fine-Grained Dialect Identification.” In Proceedings of the Fourth Arabic Natural Language Processing Workshop, 199–207. Florence, Italy: Association for Computational Linguistics, 2019. https://doi.org/10.18653/v1/W19-4622.
-  </description>
+  Guellil, Imane, Houda Saâdane, Faical Azouaou, Billel Gueni, and Damien Nouvel. “Arabic Natural Language Processing: An Overview.</description>
     </item>
     
     <item>
@@ -3134,7 +3143,8 @@ computer science can actually be tested despite being easy to learn
       
       <guid>/posts/computers/</guid>
       <description>https://wiki.c2.com/?SufficientlySmartCompiler
- https://software.imdea.org/~gotsman/  </description>
+Tags: root
+grad school professors  https://software.imdea.org/~gotsman/  Firmware  https://osfc.io/archive- open source firmware conference  </description>
     </item>
     
     <item>
@@ -3146,6 +3156,15 @@ computer science can actually be tested despite being easy to learn
       <description>Tags: iraq, grad school
 Notes from the Iraqi conference: http://cih.columbia.edu/iraqi-studies-past-present-and-future/ Archive: https://pinboard.in/cached/38304eb62267/
  October Revolution - Davis  Definition of grpups that define themselves as &amp;ldquo;iraqi&amp;rdquo; Ultimiately a war of position emotional baggage generated from the post-2003   Reflections on Iraqi Studies - Pursely  Driven by post-invasion Shaping of modern iraqi scholars Oversimplication Destruction of 21st century iraq via imperialism Can we define iraq from post-colonial notions? How many states are built on necropolitics Have iraqi scholars engaged in a purely defensive study?</description>
+    </item>
+    
+    <item>
+      <title>configuration langauges</title>
+      <link>/posts/configuration_langauges/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/configuration_langauges/</guid>
+      <description> computers  Skycfg and Starlark  https://github.com/stripe/skycfg https://github.com/bazelbuild/starlark  Cuelang - https://github.com/cue-lang/cue (programming languages) kubernetes (k8s) declarative config  https://twitter.com/bgrant0607/status/1123622874340683776  </description>
     </item>
     
     <item>
@@ -3557,7 +3576,7 @@ Turkish politics hold contradictory viewpoints of Ottomanism, esepcially with th
       
       <guid>/posts/databases/</guid>
       <description>Tags: Computers
-Class  https://15721.courses.cs.cmu.edu/spring2019/schedule.html  MariaDB  https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/  Calcite  https://calcite.apache.org  </description>
+Class  https://15721.courses.cs.cmu.edu/spring2019/schedule.html  MariaDB  https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/  Calcite  https://calcite.apache.org  Query optimizers  how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf  Query Pushdown  basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/  Spanner  https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf  </description>
     </item>
     
     <item>
@@ -4481,7 +4500,7 @@ Self referantial paradox on
       <guid>/posts/erlang/</guid>
       <description>Tags: programming languages
 -https://erlangexplained.com/index.php/about
- https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference%5Fmanual/introduction.html https://ferd.ca/the-zen-of-erlang.html  Erlang/OTP 24 Highlights  https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code!  </description>
+ https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference%5Fmanual/introduction.html https://ferd.ca/the-zen-of-erlang.html  Erlang/OTP 24 Highlights  https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code!  Erlang Projects  https://github.com/apache/couchdb  Interop  https://www.erlang.org/doc/tutorial/introduction.html  </description>
     </item>
     
     <item>
@@ -5576,6 +5595,16 @@ Hofstadter - Godel, Escher, Bach Bateson - Steps to an Ecology of Mind Knot of t
     </item>
     
     <item>
+      <title>generative art</title>
+      <link>/posts/generative_art/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/generative_art/</guid>
+      <description>computers
+ https://paytonturnage.gitbook.io/valora/gallery - rust based art  </description>
+    </item>
+    
+    <item>
       <title>geometry</title>
       <link>/posts/geometry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6062,6 +6091,15 @@ gRPC communication patterns  contract first, protobuf IDL, binary messaging on t
     </item>
     
     <item>
+      <title>Gu et al: Efficiently Modeling Long Sequences with Structured State Spaces</title>
+      <link>/posts/state_space_paper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/state_space_paper/</guid>
+      <description> papers: https://arxiv.org/pdf/2111.00396.pdf Video: Efficiently Modeling Long Sequences with Structured State Spaces Open review version: https://openreview.net/pdf?id=uYLFoz1vlAC  review notes: https://openreview.net/forum?id=uYLFoz1vlAC   state space continious representation: https://en.wikipedia.org/wiki/State-space%5Frepresentation previous work: https://openreview.net/pdf?id=yWd42CWN3c based off of hippo: https://proceedings.neurips.cc/paper/2020/hash/102f0bb6efb3a6128a3c750dd16729be-Abstract.html  https://papertalk.org/papertalks/9174 https://github.com/HazyResearch/hippo-code https://proceedings.neurips.cc/paper/2020/file/102f0bb6efb3a6128a3c750dd16729be-Paper.pdf https://crossminds.ai/video/hippo-recurrent-memory-with-optimal-polynomial-projections-606fddf7f43a7f2f827bf91d/ https://proceedings.neurips.cc/paper/2020/file/102f0bb6efb3a6128a3c750dd16729be-Paper.pdf    Past Similar Work: Legendre Memory Unit  https://www.youtube.com/watch?v=8t64QaTdBcU https://proceedings.neurips.cc/paper/2019/file/952285b9b7e7a1be5aa7849f32ffff05-Paper.pdf https://arxiv.org/abs/2102.11417 https://en.wikipedia.org/wiki/Legendre%5Fpolynomials#Definition%5Fby%5Fconstruction%5Fas%5Fan%5Forthogonal%5Fsystem  State space papers:  https://www.sciencedirect.com/science/article/pii/S0022000067800096 https://orb.binghamton.edu/electrical%5Ffac/3/ http://web.mit.edu/2.14/www/Handouts/StateSpace.pdf https://www.lunduniversity.lu.se/lup/publication/ba1ac2a2-373f-45d5-a633-7b36aeace6da https://lucris.lub.lu.se/ws/portalfiles/portal/22584321/TEAT%5F7245.pdf  </description>
+    </item>
+    
+    <item>
       <title>guatemala</title>
       <link>/posts/guatemala/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6253,6 +6291,19 @@ Factions  internal leadership (gaza, west bank, prisons) external leadership (pa
       
       <guid>/posts/hanna_batatu/</guid>
       <description>people, iraq</description>
+    </item>
+    
+    <item>
+      <title>Hansen - The Saffron Wave</title>
+      <link>/posts/hansen_the_saffron_wave/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hansen_the_saffron_wave/</guid>
+      <description>  books, religion and modernity
+  talks about the rise of Hindu nationalism, which is largely constructed after the partition
+  dieties such as rama had no actual historical root, but nationalists have repurposed it for its root
+  we reproduce aspects of religion, such as the free-floating artifacts
+  reviews  https://journals.sagepub.com/doi/pdf/10.1177/001946460103800309?casa%5Ftoken=FjLkNwHsto4AAAAA:9E23mxOtcpcJh7FWUC9EX-XAeJpE54BSAhrB8cN6f9mjoGkL8Et1dcff%5FltZ8IxSzK-4uX3Gxy%5FD1w https://www-cambridge-org.proxy.library.nyu.edu/core/journals/review-of-politics/article/democratic-resentment-hansenthomas-blom-the-saffron-wave-democracy-and-hindu-nationalism-in-modern-india-princeton-princeton-university-press-1999-pp-vi-293-1795-paper/697B8DB98475F58FAC9FE49E738692F3  </description>
     </item>
     
     <item>
@@ -7053,8 +7104,8 @@ Refs:
       
       <guid>/posts/information_theory/</guid>
       <description>Tags: computers, math
-Information Foraging Theory for Programmers  Programmers &amp;ldquo;seek&amp;rdquo; out different type of information &amp;ldquo;diets&amp;rdquo;  https://web.eecs.utk.edu/~azh/blog/informationforaging.html These can be modeled in some form    Mutual Information  https://en.wikipedia.org/wiki/Mutual%5Finformation https://www.youtube.com/watch?v=U9h1xkNELvY https://arxiv.org/pdf/1905.06922.pdf &amp;lt;- variational bounds  discussion https://old.reddit.com/r/MachineLearning/comments/cqn5zg/r%5Fthoughts%5Fon%5Fmutual%5Finformation%5Fmore%5Festimators/ https://old.reddit.com/r/MachineLearning/comments/bpncbp/r%5F190506922%5Fon%5Fvariational%5Fbounds%5Fof%5Fmutual/    Algorithmic Information Theory  https://en.wikipedia.org/wiki/Algorithmic%5Finformation%5Ftheory#cite%5Fnote-2 https://www.cs.auckland.ac.nz/research/groups/CDMTCS/docs/ait.php https://dl.acm.org/doi/10.1145/321892.321894  Information-Theoretic Probing with MDL  papers deep learning  https://arxiv.org/abs/2003.12298
-Solomonoff Theory of Inductive Inference  https://www.lesswrong.com/posts/Kyc5dFDzBg4WccrbK/an-intuitive-explanation-of-solomonoff-induction#formalized%5Fscience https://old.</description>
+papers that measure information flow An Information-theoretic Visual Analysis Framework for Convolutional Neural Networks   Uses CNN&amp;rsquo;s, but measures entropy directly instead of trying to measure Mutual Information
+       Information flows of diverse autoencoders  https://arxiv.org/abs/2102.07402  Generalization Bounds for Deep learning  https://arxiv.org/pdf/2012.04115.pdf  Information Foraging Theory for Programmers  Programmers &amp;ldquo;seek&amp;rdquo; out different type of information &amp;ldquo;diets&amp;rdquo;  https://web.</description>
     </item>
     
     <item>
@@ -8654,7 +8705,7 @@ First described by Brad Hedlund for Hadoop in 2012, but Google did this earlier 
       
       <guid>/posts/lean_proofs/</guid>
       <description>Tags: mechanized proofs
- https://xenaproject.wordpress.com/what-is-the-xena-project/  </description>
+ https://xenaproject.wordpress.com/what-is-the-xena-project/ https://en.wikipedia.org/wiki/Lean%5F(proof%5Fassistant)  </description>
     </item>
     
     <item>
@@ -8846,7 +8897,8 @@ GH Super Linter  https://github.blog/2020-06-18-introducing-github-super-linter-
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/linux/</guid>
-      <description> Currently Linux plumber and hobbiest occupy two different workds  Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros    Debian perf performance issues  https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=911815  when not linked against libbfd, perf calls out to addr2line for every address lookup, which is infeasible possible solution: https://michcioperz.com/post/slow-perf-script/ patches: https://lore.kernel.org/linux-perf-users/20210909112202.1947499-1-tonyg@leastfixedpoint.com/    Linux Audio  Pipewire: http://pipewire.org  provides low latency, graph based processing for audio    </description>
+      <description>Tags: computers
+ Currently Linux plumber and hobbiest occupy two different workds  Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros    Debian perf performance issues  https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=911815  when not linked against libbfd, perf calls out to addr2line for every address lookup, which is infeasible possible solution: https://michcioperz.com/post/slow-perf-script/ patches: https://lore.kernel.org/linux-perf-users/20210909112202.1947499-1-tonyg@leastfixedpoint.com/    Linux Audio  Pipewire: http://pipewire.org  provides low latency, graph based processing for audio    LD_PRELOAD and LD_LIBRARY_PATH  Different usages on os x, uses DYLD_LIBRARY_PATH and DYLD_FALLBACK_LIBRARY_PATH  See https://stackoverflow.</description>
     </item>
     
     <item>
@@ -9744,7 +9796,7 @@ http://www.eecs.harvard.edu/~michaelm/NEWWORK/postscripts/twosurvey.pdf https://
       
       <guid>/posts/ml/</guid>
       <description>Tags: Computers, math
-Failures  Zillow winds down their ml model house flipping scheme: https://www.prnewswire.com/news-releases/zillow-group-reports-third-quarter-2021-financial-results--shares-plan-to-wind-down-zillow-offers-operations-301414460.html?tc=eml%5Fcleartime  </description>
+Failures  Zillow winds down their ml model house flipping scheme: https://www.prnewswire.com/news-releases/zillow-group-reports-third-quarter-2021-financial-results--shares-plan-to-wind-down-zillow-offers-operations-301414460.html?tc=eml%5Fcleartime  ML Tools  visualizer: https://github.com/lutzroeder/netron  </description>
     </item>
     
     <item>
@@ -12209,7 +12261,8 @@ https://pyobjc.readthedocs.io/en/latest/tutorials/firstapp.html</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/pytorch/</guid>
-      <description>Tags: ml, python</description>
+      <description>Tags: ml, python
+Torchscript  source: https://github.com/pytorch/pytorch/blob/master/torch/script.h  rust torchscript  https://github.com/LaurentMazare/tch-rs  https://github.com/LaurentMazare/tch-rs/blob/main/examples/pretrained-models/main.rs example: https://github.com/LaurentMazare/tch-rs/tree/main/examples/jit   rust bert: https://github.com/guillaume-be/rust-bert  tokenizer: https://github.com/guillaume-be/rust-bert/blob/8ed974b2c7c3490f0632fbc54043d2132a2f6ea9/examples/token%5Fclassification.rs#L42a   rust Sentence Transformer: https://github.com/mladvladimir/rust-sentence-transformers/blob/master/src/model/bert.rs  also https://github.com/cpcdoy/rust-sbert    </description>
     </item>
     
     <item>
@@ -13030,7 +13083,7 @@ Most sets are not sets of themselves, but some sets are self-swallowing. For exa
       
       <guid>/posts/rust/</guid>
       <description>Tags: computers
- https://rust-analyzer.github.io/blog/2020/04/20/first-release.html https://rust-unofficial.github.io/too-many-lists/ https://leetcode.com/problemset/all/ https://towardsdatascience.com/you-want-to-learn-rust-but-you-dont-know-where-to-start-fc826402d5ba https://doc.rust-lang.org/book/ch19-06-macros.html  tools  serde: https://serde.rs/  Learning Rust  https://news.ycombinator.com/item?id=12477211 https://news.ycombinator.com/item?id=19077354 https://news.ycombinator.com/item?id=19698598  </description>
+ https://rust-analyzer.github.io/blog/2020/04/20/first-release.html https://rust-unofficial.github.io/too-many-lists/ https://leetcode.com/problemset/all/ https://towardsdatascience.com/you-want-to-learn-rust-but-you-dont-know-where-to-start-fc826402d5ba https://doc.rust-lang.org/book/ch19-06-macros.html  tools  serde: https://serde.rs/  Learning Rust  https://news.ycombinator.com/item?id=12477211 https://news.ycombinator.com/item?id=19077354 https://news.ycombinator.com/item?id=19698598  Racer (auto-complete for rust in emacs)  https://github.com/racer-rust/racer As of Dec 19th, 2021, you need nightly-2021-06-07:  https://github.com/kurtlawrence/papyrus/issues/106 https://github.com/racer-rust/racer/issues/1069    Lunatic  https://github.com/lunatic-solutions/lunatic erlang inspired rust substrate for wasm  </description>
     </item>
     
     <item>
@@ -15145,7 +15198,7 @@ Splits the data up into what the model is fit, what it is validated against, and
       
       <guid>/posts/transformers/</guid>
       <description>Tags: nlp
- https://huggingface.co/transformers/ http://jalammar.github.io/illustrated-transformer/ https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/ https://huggingface.co/blog/long-range-transformers https://kazemnejad.com/blog/transformer%5Farchitecture%5Fpositional%5Fencoding/ https://timodenk.com/blog/linear-relationships-in-the-transformers-positional-encoding/  </description>
+ https://huggingface.co/transformers/ http://jalammar.github.io/illustrated-transformer/ https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/ https://huggingface.co/blog/long-range-transformers https://kazemnejad.com/blog/transformer%5Farchitecture%5Fpositional%5Fencoding/ https://timodenk.com/blog/linear-relationships-in-the-transformers-positional-encoding/  Sentence Transformer  https://github.com/UKPLab/sentence-transformers/tree/master/tests  </description>
     </item>
     
     <item>
@@ -15913,7 +15966,8 @@ Anthony Alessandrini
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/uruguay/</guid>
-      <description>Tags: americas</description>
+      <description>Tags: americas
+ Rentista Visa - residency foreigner visa  </description>
     </item>
     
     <item>
@@ -16021,7 +16075,7 @@ HID 6 Key Rollover Most keyboards actually support more, but cheap keyboards onl
       
       <guid>/posts/visa_s/</guid>
       <description>Tags: travel
-Portugal  https://www.portuguese-nationality.com/residency/the-d7-visa-portugal https://www.reddit.com/r/expats/comments/hdg36h/moving%5Fto%5Fportugal%5Fas%5Fa%5Fsoftware%5Fdeveloper/  </description>
+Portugal visa  https://www.portuguese-nationality.com/residency/the-d7-visa-portugal https://www.reddit.com/r/expats/comments/hdg36h/moving%5Fto%5Fportugal%5Fas%5Fa%5Fsoftware%5Fdeveloper/  Singapore visa  https://www.edb.gov.sg/en/how-we-help/incentives-and-schemes/tech-pass.html  Uruguay rentista visa  https://www.guruguay.com/getting-uruguay-residency/  </description>
     </item>
     
     <item>
@@ -16128,6 +16182,15 @@ Lebanese Druze leader</description>
       <guid>/posts/war_diary_nlp_project/</guid>
       <description>Tags: project ideas, nlp
  https://wikileaks.org/afg/ - afghanistan  https://www.wikileaks.org/wiki/Afghan%5FWar%5FDiary,%5F2004-2010   https://wardiaries.wikileaks.org/search/ https://www.iraqbodycount.org/database/incidents/k4724 https://airwars.org/civilian-casualties/?belligerent=coalition&amp;amp;country=iraq https://wikileaks.org/irq/event/2007/03/IRQ20070315n8.html https://www.iraqbodycount.org/database/ - iraq  https://www.iraqbodycount.org/analysis/numbers/warlogs/ https://www.iraqbodycount.org/analysis/beyond/warlogs/   https://www.nber.org/papers/w16152 https://www.iraqbodycount.org/analysis/beyond/warlogs/ https://www.iraqbodycount.org/database/incidents/k4724  </description>
+    </item>
+    
+    <item>
+      <title>wasm</title>
+      <link>/posts/wasm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wasm/</guid>
+      <description> computers  </description>
     </item>
     
     <item>
