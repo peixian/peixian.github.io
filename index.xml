@@ -2337,7 +2337,7 @@ https://en.wikipedia.org/wiki/C%5Fpreprocessor</description>
       
       <guid>/posts/c_cpp/</guid>
       <description>Tags: computers
-C  Build-once, run anywhere C: https://justine.lol/cosmopolitan/index.html  CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646  Framework  https://preshing.com/20200526/a-new-cross-platform-open-source-cpp-framework/  </description>
+C  Build-once, run anywhere C: https://justine.lol/cosmopolitan/index.html MISRA C  set of software development guides for the C programming language    CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646  Framework  https://preshing.com/20200526/a-new-cross-platform-open-source-cpp-framework/  </description>
     </item>
     
     <item>
@@ -4258,6 +4258,16 @@ https://aceproject.org/main/english/es/esg03.htm</description>
     </item>
     
     <item>
+      <title>elements of programming interviews</title>
+      <link>/posts/elements_of_programming_interviews/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/elements_of_programming_interviews/</guid>
+      <description>personal
+Interviewing Strats  Clarify the question: if the question seems unnecessarily hard, then clarify it work on concrete examples spell out the brute force solution think out loud apply patterns clarify assumptions that inputs are valid test for corner cases  write unit tests if there is time add code checking for the result syntax - lots of bad syntax shows you have no coding experience   memory management: avoid memory management opportunities all together keep the solutions short  Bit Primitives  integers in Python3 are unbounded, can use max of memory size  sys.</description>
+    </item>
+    
+    <item>
       <title>Elias Khoury</title>
       <link>/posts/elias_khoury/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4295,8 +4305,7 @@ When do women actually particpate in peace processes? When they do, do peace pro
       
       <guid>/posts/emacs/</guid>
       <description>Tags: computers
- https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bcompletion/auto-completion https://github.com/jwiegley/use-package Org tempo problems: https://github.com/syl20bnr/spacemacs/issues/11798#issuecomment-454941024  https://github.com/syl20bnr/spacemacs/issues/12003#issuecomment-465686129    Tramp sudo: /ssh:bird@bastion|ssh:you@remotehost:/path
-Optimizations  https://news.ycombinator.com/item?id=28336724  </description>
+ https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bcompletion/auto-completion https://github.com/jwiegley/use-package Org tempo problems: https://github.com/syl20bnr/spacemacs/issues/11798#issuecomment-454941024  https://github.com/syl20bnr/spacemacs/issues/12003#issuecomment-465686129    Tramp bastion: /ssh:bird@bastion|ssh:you@remotehost:/path Tramp sudo: /ssh:you@remote|sudo:remote:/path Optimizations  https://news.ycombinator.com/item?id=28336724  </description>
     </item>
     
     <item>
@@ -5341,7 +5350,7 @@ Contago/Backwardation  Contago is when the futures 1st derivative is postive Bac
 Fuzzing Image IO   https://www.instapaper.com/read/1303612511
   No source code, large range of inptus is perfect for fuzzing
   Choosing type of fuzzing is more difficult
- Try https://github.com/google/honggfuzz Covered in https://arxiv.org/abs/1812.11875    Libfuzzing  https://github.com/Microsvuln/Awesome-Libfuzzer-Harness  Google  https://github.com/google/fuzzing/tree/master/dictionaries  </description>
+ Try https://github.com/google/honggfuzz Covered in https://arxiv.org/abs/1812.11875    Libfuzzing  https://github.com/Microsvuln/Awesome-Libfuzzer-Harness  Google  https://github.com/google/fuzzing/tree/master/dictionaries  LLVM Fuzzing  libfuzzer: https://llvm.org/docs/LibFuzzer.html  </description>
     </item>
     
     <item>
@@ -8629,7 +8638,7 @@ References  https://math.stackexchange.com/questions/48981/the-langlands-program
     </item>
     
     <item>
-      <title>Language and the Brain</title>
+      <title>Language and the Brain (class)</title>
       <link>/posts/language_and_the_brain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -8645,7 +8654,17 @@ Class 1  What do linguists do? Linguists as part of cognitive science  What is t
       
       <guid>/posts/languages_lingustics/</guid>
       <description>Tags: root
- http://norvig.com/chomsky.html  </description>
+ http://norvig.com/chomsky.html deterministic FSM&amp;rsquo;s and nondeterministic FSM&amp;rsquo;s can be reduced to the same thing if the non-determinsitic one is not augmented by a stack  </description>
+    </item>
+    
+    <item>
+      <title>Larson - An Elegant Puzzle: Systems of Engineering Management</title>
+      <link>/posts/larson_an_elegant_puzzle_systems_of_engineering_management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/larson_an_elegant_puzzle_systems_of_engineering_management/</guid>
+      <description>books, career advice, computers
+ one of the hardest things is to know when to quit a process that&amp;rsquo;s not working  model, document, share/mandate   how do you scale consistency within a team?  often times architecture and product groups begin to arise   presenting:  start with the conclusion! from topic and narration prepare a lot, practice a little value, narrate, ask, diagnosis, principles, what&amp;rsquo;s next, ask &amp;lt;- general plan of attack   work the policy  ask, but know from the policy where you can ask   velocity context for alerts  how likely is something to be escaled to an outage scenario?</description>
     </item>
     
     <item>
@@ -9216,6 +9235,16 @@ Leading sairun (sadr political party) on the iraqi finance committee</descriptio
       
       <guid>/posts/20200414200012-makdisi_the_ecumenical_frame/</guid>
       <description>Tags: books, Post-Ottoman Near East, iraq, lebanon,syria</description>
+    </item>
+    
+    <item>
+      <title>makefiles</title>
+      <link>/posts/makefiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/makefiles/</guid>
+      <description>computers
+linters  github.com/mrtazz/checkmake  linting and checking makefiles   github.com/softprops/mint  </description>
     </item>
     
     <item>
@@ -10794,7 +10823,8 @@ Works with TCP over any network card, requires Mellanox for RoCE (NVMEoF voer UD
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/nyc/</guid>
-      <description>united states</description>
+      <description>united states
+Coworking Spaces  https://www.thequeensboro.com/the-q-home-office ($20 a day, 9-5) Rubeinstein Atrium (closed as of jan 22 2022) - http://www.aboutlincolncenter.org/education-community/david-rubenstein-atrium-at-lincoln-center NY Society Library - https://www.nysoclib.org/ https://www.theresortlic.com/ - Virtual only? https://brooklynwriters.com/become-a-member/ http://www.writersroom.org/membership-fees  </description>
     </item>
     
     <item>
@@ -14091,6 +14121,16 @@ https://www.instapaper.com/read/1370117850 - By T Greer
     </item>
     
     <item>
+      <title>sports betting</title>
+      <link>/posts/sports_betting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sports_betting/</guid>
+      <description>finance
+Sports betting companies  Betriver Caesars FanDuel DraftKings  </description>
+    </item>
+    
+    <item>
       <title>spring</title>
       <link>/posts/spring/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -14278,6 +14318,16 @@ Social Cohesion &amp;amp; Inclusivity - Ailena Sterio &amp;amp; Jessica C. Levy 
       
       <guid>/posts/stochastic_process/</guid>
       <description>Tags: statistics</description>
+    </item>
+    
+    <item>
+      <title>stock options for software engineers</title>
+      <link>/posts/stock_options_for_software_engineers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/stock_options_for_software_engineers/</guid>
+      <description>tech working
+Calculators  https://tldroptions.io/ - small calculator, basic and easy to use https://www.secfi.com/learn - much more complicated calculator  Guides  https://blog.pragmaticengineer.com/equity-for-software-engineers/, tl;dr guide https://www.holloway.com/g/equity-compensation in depth guide  Resources  https://withcompound.com/r/equity-guide-to-fast-growing-companies https://carta.com/blog/category/employee-resource-center/ https://news.ycombinator.com/item?id=25469435 early stage startup questions: https://twitter.com/susanfsu/status/1481332788859064322?s=20https://twitter.com/susanfsu/status/1481332788859064322?s=20  </description>
     </item>
     
     <item>
@@ -14687,7 +14737,7 @@ Rural district north of baghdad</description>
       
       <guid>/posts/talks/</guid>
       <description>Tags: grad school
-Academic Talks:  http://matt.might.net/articles/academic-presentation-tips/ Described in Fiebelman - A PhD is Not Enough  Collectors  https://techyaks.com/all-year-tytop.html  </description>
+Academic Talks:  http://matt.might.net/articles/academic-presentation-tips/ Described in Fiebelman - A PhD is Not Enough  Collectors  https://techyaks.com/all-year-tytop.html  Dan Na: Pushing Through Friction  https://blog.danielna.com/talks/pushing-through-friction/ willingness to accept and power through friction is an important part of pushing through impact what causes friction?  you have to decide for yourself if the steps are worth it, if you have to fix the 10 things you&amp;rsquo;re not responsible for to fix the thing you are responsible  eg git blame where someone doesn&amp;rsquo;t work there anymore, asking a question and nobody response, etc     mid-sized companies face the most amount of friction  when success criteria moves from shipping code asap to teams excelling in concert   talks about aviations  everyone loves aviations analogies, or nuclear reactor one normalization of deviance - 2014  NTSB released a report   danluu.</description>
     </item>
     
     <item>
@@ -16805,7 +16855,7 @@ Says that feedforward ReLU nn&amp;rsquo;s can be related to tropical hypersurfac
       
       <guid>/posts/zotero/</guid>
       <description>Tags: grad school, computers
-Extensions  betterbibtex: https://retorque.re/zotero-better-bibtex/  Autogeneration of .bib files   Zotfile: http://zotfile.com/  Automatic renaming and file management   Zotxt: https://github.com/egh/zotxt  Supports random text files https://github.com/egh/zotxt-emacs   Zutilo: https://github.com/willsALMANJ/Zutilo  Tagging support Notably also allows to to create sections from a book    emacs  http://www.mkbehr.com/posts/a-research-workflow-with-zotero-and-org-mode/  Sqlitedb  https://www.zotero.org/support/dev/client%5Fcoding/direct%5Fsqlite%5Fdatabase%5Faccess schema: https://github.com/zotero/zotero-schema/tree/master  </description>
+Extensions  betterbibtex: https://retorque.re/zotero-better-bibtex/  Autogeneration of .bib files   Zotfile: http://zotfile.com/  Automatic renaming and file management   Zotxt: https://github.com/egh/zotxt  Supports random text files https://github.com/egh/zotxt-emacs   Zutilo: https://github.com/willsALMANJ/Zutilo  Tagging support Notably also allows to to create sections from a book    emacs  http://www.mkbehr.com/posts/a-research-workflow-with-zotero-and-org-mode/  Sqlitedb  https://www.zotero.org/support/dev/client%5Fcoding/direct%5Fsqlite%5Fdatabase%5Faccess schema: https://github.com/zotero/zotero-schema/tree/master  Papership  Papership checks for a lastsync.txt file, creating an empty one under the /zotero/ dir allows sync  </description>
     </item>
     
     <item>
