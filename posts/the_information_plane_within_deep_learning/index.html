@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.a58bccbb001303fb34f2c18408fad0e5794f86e81430de27d196081951853100.js" integrity="sha256-pYvMuwATA/s08sGECPrQ5XlPhugUMN4n0ZYIGVGFMQA="></script>
+<script defer src="/en.search.min.e4abb879d9bc0c73bde03aacd039556298a2827c7d6eec6e7db5c56d842cb63d.js" integrity="sha256-5Ku4edm8DHO94Dqs0DlVYpiignx9buxufbXFbYQstj0="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -45,8 +45,7 @@
 </ol>
 <p>To make this a little more concrete, I think you can see this as a learning curve analogy, where at first the neural network is attempting to memorize all the data until it runs out of space, and then a compression phase begins, where the softmaxes start to become hardmaxes. Now Saxe et al (2019) state that while it&rsquo;s been hypothesized that this compression phase is responsible for generalization properties, they also point out that <em>not all neural networks exhibit compression dynamics</em>. Double saturating networks, such as those that use <code>tanh</code> or sigmoid, do exhibit compression, whereas ReLUs do not. In addition, randomess during the training process does not seem to affect compression, which brings us to a potentially murky territory: could a network learn without compression?</p>
 <p>Saxe et al have this diagram in their paper:</p>
-<figure>
-    <img src="/ox-hugo/2021-12-13_22-46-30_screenshot.png"/> 
+<figure><img src="/ox-hugo/2021-12-13_22-46-30_screenshot.png"/>
 </figure>
 
 <p>What&rsquo;s interesting here is that you can see <code>tanh</code> networks make a beeline for compression towards later epochs, but the ReLUs do not, which means that information must be preserved somehow within the ReLUs. The question then becomes: was the information complexity of the input dataset not high enough to exhibit compression, or do ReLUs simply never exhibit compression and therefore are unable to learn certain types of input?</p>

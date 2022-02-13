@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.a58bccbb001303fb34f2c18408fad0e5794f86e81430de27d196081951853100.js" integrity="sha256-pYvMuwATA/s08sGECPrQ5XlPhugUMN4n0ZYIGVGFMQA="></script>
+<script defer src="/en.search.min.e4abb879d9bc0c73bde03aacd039556298a2827c7d6eec6e7db5c56d842cb63d.js" integrity="sha256-5Ku4edm8DHO94Dqs0DlVYpiignx9buxufbXFbYQstj0="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -199,7 +199,7 @@
 </li>
 <li>
 <p>how do you implement a binary search?</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bsearch</span>(t, A):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bsearch</span>(t, A):
     L, U <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, len(a) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
     <span style="color:#66d9ef">while</span> L <span style="color:#f92672">&lt;=</span> U:
         M <span style="color:#f92672">=</span> L <span style="color:#f92672">+</span> (U<span style="color:#f92672">-</span>L)<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>
@@ -381,8 +381,8 @@
 </li>
 <li>
 <p>BST implementation</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BSTNode</span>:
-    <span style="color:#66d9ef">def</span> __init__(self, data<span style="color:#f92672">=</span>None, left<span style="color:#f92672">=</span>None, right<span style="color:#f92672">=</span>None):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BSTNode</span>:
+    <span style="color:#66d9ef">def</span> __init__(self, data<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, left<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, right<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
         self<span style="color:#f92672">.</span>data, self<span style="color:#f92672">.</span>left, self<span style="color:#f92672">.</span>right <span style="color:#f92672">=</span> data, left, right
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search_bst</span>(tree, key):

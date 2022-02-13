@@ -5,11 +5,11 @@
     <link>/posts/</link>
     <description>Recent content in Posts on عجفت الغور</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 11 May 2021 00:00:00 -0400</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>/posts/un_and_global_governance_final_paper/</link>
-      <pubDate>Tue, 11 May 2021 00:00:00 -0400</pubDate>
+      <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
       
       <guid>/posts/un_and_global_governance_final_paper/</guid>
       <description>Abstract The United Nations Assistance Mission in Iraq (UNAMI) has generated numerous reports on their engagements with the Iraqi political system since 2003. At the same time, Iraq has developed into a unwritten sectarian form of government, where particular cabinet posts are reserved for different groups. This paper evaluates, what, if any, role UNAMI has played in preventing the formation of sectarian identities, in reading UNAMI&amp;rsquo;s reports from 2003 to 2010.</description>
@@ -1223,7 +1223,7 @@ Syrian town within the Idlib governate, sits at the center of Jisr al-Shughur, M
       
       <guid>/posts/aah_asa_ib_ahl_al_haqq/</guid>
       <description>Tags: brigades, hashd al-shaabi (PMF)
-2020-12-26   </description>
+2020-12-26  </description>
     </item>
     
     <item>
@@ -2816,7 +2816,7 @@ Inis L. Claude Jr. “Collective Security as an Approach to Peace.” Accessed F
       
       <guid>/posts/cliffe_un_peace_and_security_reform/</guid>
       <description>Tags: articles, un and global governance lecture 12
- “UN Peace and Security Reform: Cautious Steps in the Right Direction | Center on International Cooperation.” https://cic.nyu.edu/publications/un-peace-and-security-reform-cautious-steps-right-direction article analyzes antonio guterres adoped High-Level Independent Panel on UN Peace Operations (HIPPO), advisory group of experts (AGE), and UNSCR 1325 sec-gen proposes changing the department of political affairs to include peacebuilding, and changing the DPO to manage large field missions resolves:  no more overlap between DPA and DPKO (both missions had become political and operational) allows UN to deploy a &amp;ldquo;spectrum of operations&amp;rdquo; mission transitions should be made smoother       potential issues:  institutional support functions are still separated from the peacebuilding groups peacebuilding support no longer has a direct line to SG, must be through the DPPA, and becoming tied to a single pillar no discussions of what gender looks like maangement reforms are not addressed authority is delegated, but fiscal responsibilities are not politics remain the same: USGs for Political Affairs and PO are the same, held by the united states and france    </description>
+ “UN Peace and Security Reform: Cautious Steps in the Right Direction | Center on International Cooperation.” https://cic.nyu.edu/publications/un-peace-and-security-reform-cautious-steps-right-direction article analyzes antonio guterres adoped High-Level Independent Panel on UN Peace Operations (HIPPO), advisory group of experts (AGE), and UNSCR 1325 sec-gen proposes changing the department of political affairs to include peacebuilding, and changing the DPO to manage large field missions resolves:  no more overlap between DPA and DPKO (both missions had become political and operational) allows UN to deploy a &amp;ldquo;spectrum of operations&amp;rdquo; mission transitions should be made smoother      potential issues:  institutional support functions are still separated from the peacebuilding groups peacebuilding support no longer has a direct line to SG, must be through the DPPA, and becoming tied to a single pillar no discussions of what gender looks like maangement reforms are not addressed authority is delegated, but fiscal responsibilities are not politics remain the same: USGs for Political Affairs and PO are the same, held by the united states and france    </description>
     </item>
     
     <item>
@@ -3276,7 +3276,7 @@ The &amp;ldquo;convolution&amp;rdquo; part of it is where it mixes the input sig
 Convolutions is applying a filter to an input that results in an activation, such as with convolutional neural networks (cnn)
 For ml, a convolution is a linear operation that involves the multiplation of a set of weights with the input
  https://www.youtube.com/watch?v=N-zd-T17uiE    for convolutional neural networks (cnn)
- the filter is smaller than the input data and is mulitplied by the dot product  smaller is intentional, allows the filter to be reused across multiple places in the image   if we design the filter to detect a specific type of feature, then this can be discovered anywhere in the image (aka translation invariance, checking if the feature is present rather than where it was present)      pytorch implements this with conv2d</description>
+ the filter is smaller than the input data and is mulitplied by the dot product  smaller is intentional, allows the filter to be reused across multiple places in the image   if we design the filter to detect a specific type of feature, then this can be discovered anywhere in the image (aka translation invariance, checking if the feature is present rather than where it was present)     pytorch implements this with conv2d</description>
     </item>
     
     <item>
@@ -4334,7 +4334,7 @@ IMAP/JMAP support  https://github.com/josephg/mime-to-jmap https://github.com/fo
   Word embedding is an nlp technique to map text or words to vectors
   Allows vector space operations to happen, such as summing or computing the distances of vectors
  word2vec fasttext gpt2    Once words are generated into individual vectors, combine them into text vectors (aka document or sentence vecotrs)
- Easy way typically sums or averages the vectors together        Two snippets of text are discovered by mapping both of them into vector space and finding the distances between the vectors</description>
+ Easy way typically sums or averages the vectors together       Two snippets of text are discovered by mapping both of them into vector space and finding the distances between the vectors</description>
     </item>
     
     <item>
@@ -4454,7 +4454,7 @@ Self referantial paradox on
       
       <guid>/posts/episteme/</guid>
       <description>Tags: root
-  On thinking
+ On thinking
  https://kinopio.club  </description>
     </item>
     
@@ -4914,7 +4914,7 @@ for hashd al-shaabi (PMF), run by hadi al-ameri</description>
       <description>Tags: finance
   FED QE has dramatically slowed down since 2nd week of March
   Same QE playblock as before, front load the bailout and cut back asset purchases
-    MBS  Balance of MBS&amp;rsquo;s have actually fallen  https://www.newyorkfed.org/markets/ambs/transaction-summary   MBS&amp;rsquo;s take weeks to actually settle  Why?   Boom in mortagage refinancing  https://wolfstreet.com/2020/04/29/mortgage-forbearance-balloons-home-sales-plunge/    REPO  Repo purchases have stalled, big REPO ops are being leftover from a few weeks ago  SPV (special purchase vehicles)  Technically gets around limits imposed by the Federal Reserve Act FED Powers Remained steady at ~162 b Composed of:  Primary credit Secondary Credit Seasonal Credit Primary Dealer credit Money Market Mutual Fund Paycheck Protection Program    Central Bank Repos  BoJ largest user  49% 214 bil   ECB second biggest  32% 142 bil    7 days or 84 day maturities   </description>
+   MBS  Balance of MBS&amp;rsquo;s have actually fallen  https://www.newyorkfed.org/markets/ambs/transaction-summary   MBS&amp;rsquo;s take weeks to actually settle  Why?   Boom in mortagage refinancing  https://wolfstreet.com/2020/04/29/mortgage-forbearance-balloons-home-sales-plunge/    REPO  Repo purchases have stalled, big REPO ops are being leftover from a few weeks ago  SPV (special purchase vehicles)  Technically gets around limits imposed by the Federal Reserve Act FED Powers Remained steady at ~162 b Composed of:  Primary credit Secondary Credit Seasonal Credit Primary Dealer credit Money Market Mutual Fund Paycheck Protection Program    Central Bank Repos  BoJ largest user  49% 214 bil   ECB second biggest  32% 142 bil    7 days or 84 day maturities   </description>
     </item>
     
     <item>
@@ -5133,7 +5133,7 @@ UN force deployed to united nations stabilization mission in the democratic repu
       
       <guid>/posts/foreign_langugages_vs_programming_languages/</guid>
       <description>Tags: articles, languages/linguistics, computers
- https://news.mit.edu/2020/brain-reading-computer-code-1215 https://elifesciences.org/articles/58906 different parts of the brain are activated when reading computer code vs foreign languages  related links  http://web.mit.edu/9.s915/www/classes/duncan.pdf    https://arxiv.org/pdf/2011.07966.pdf https://en.wikipedia.org/wiki/Default%5Flogic https://en.wikipedia.org/wiki/Non-monotonic%5Flogic https://en.wikipedia.org/wiki/Abductive%5Freasoning https://en.wikipedia.org/wiki/John%5FHenry%5FWigmore https://news.ycombinator.com/item?id=25434854  </description>
+ https://news.mit.edu/2020/brain-reading-computer-code-1215 https://elifesciences.org/articles/58906 different parts of the brain are activated when reading computer code vs foreign languages  related links  http://web.mit.edu/9.s915/www/classes/duncan.pdf   https://arxiv.org/pdf/2011.07966.pdf https://en.wikipedia.org/wiki/Default%5Flogic https://en.wikipedia.org/wiki/Non-monotonic%5Flogic https://en.wikipedia.org/wiki/Abductive%5Freasoning https://en.wikipedia.org/wiki/John%5FHenry%5FWigmore https://news.ycombinator.com/item?id=25434854  </description>
     </item>
     
     <item>
@@ -5434,7 +5434,7 @@ Fuzzing Image IO   https://www.instapaper.com/read/1303612511
       <description>Tags: articles, kubernetes (k8s)
 https://www.mgasch.com/post/k8sevents/
 Talks about how the Kube API server is the fundalmental broker with multiple replicated logs or queues. Events are causually related, and every controllers (k8s) can be understood to be a producer and/or consumer of events from these logs.
- ListWatch in k8s, which lists all events from the API server when the consumer starts, then switches to &amp;ldquo;watch mode&amp;rdquo; to reduce the load queue is fundalmentally decoupling both the consumer and producer (with a queue)    No guarentee that things will ever reach the desired state, but it is optimistically trying, which makes controllers stateless even when they handle state operations, and do not require persistency!</description>
+ ListWatch in k8s, which lists all events from the API server when the consumer starts, then switches to &amp;ldquo;watch mode&amp;rdquo; to reduce the load queue is fundalmentally decoupling both the consumer and producer (with a queue)   No guarentee that things will ever reach the desired state, but it is optimistically trying, which makes controllers stateless even when they handle state operations, and do not require persistency!</description>
     </item>
     
     <item>
@@ -6396,7 +6396,7 @@ NVMe  NVMe drives will lie about write speeds under low traffic NVMe drives are 
       
       <guid>/posts/20200415154513-hashd_al_shaabi_pmf/</guid>
       <description>Tags: iraq, militias
-   flags: https://www.crwflags.com/fotw/flags/iq%7Dpmf.html  4 Brigades Loyal to Sistani Fall Under PM Command  April 22, 2020 https://www.instapaper.com/read/1299149009 A letter published on Iraqi state media, addressed to the head of the PMF, a predominantly Shiite network of around 60 paramilitaries, says that four brigades will fall under the “command and management” of the commander-in-chief of the armed forces– a role Abdul-Mahdi currently occupies as caretaker prime minister – and not under the direct command of the PMF board.</description>
+  flags: https://www.crwflags.com/fotw/flags/iq%7Dpmf.html  4 Brigades Loyal to Sistani Fall Under PM Command  April 22, 2020 https://www.instapaper.com/read/1299149009 A letter published on Iraqi state media, addressed to the head of the PMF, a predominantly Shiite network of around 60 paramilitaries, says that four brigades will fall under the “command and management” of the commander-in-chief of the armed forces– a role Abdul-Mahdi currently occupies as caretaker prime minister – and not under the direct command of the PMF board.</description>
     </item>
     
     <item>
@@ -6420,7 +6420,7 @@ Semi-ministry responsible for the hashd al-shaabi (PMF)</description>
   Talks about the &amp;ldquo;sinjar force&amp;rdquo;, possibly brigade 80
   also spoilers of the sinjar agreement (2020)
   also claims that the armed forces are not political
-    </description>
+   </description>
     </item>
     
     <item>
@@ -6583,7 +6583,7 @@ Talks about the rise of civil society and private organizations, especially in t
   One of the fastest ANN&amp;rsquo;s
   uses a search index with multiple layers in a proximity graph
  each node in the graph corresponds to a query vector    Uses a zooming in approach
- start at entrypoint at the top layer and recursively perform a greedy search graph traversal until it reaches the local minimum      </description>
+ start at entrypoint at the top layer and recursively perform a greedy search graph traversal until it reaches the local minimum     </description>
     </item>
     
     <item>
@@ -6642,7 +6642,7 @@ https://www.it.uu.se/research/group/hipe/</description>
       
       <guid>/posts/hindyia_barrage/</guid>
       <description>Tags: irrigation in iraq
- 32°42&#39;46.00&amp;quot;N 44°16&#39;1.00&amp;quot;E     Constructed by Willcocks in 1911, finished in 1913 Constructed because the Euphrates splits into two channels south of Musayyib  Two braches, the Hilla and the Hindiya branch Closing of the salqawia canal diverted more water down the Euphrates  The lower-lying Hindiya branch took more water and started to slit up the Hilla branch Old, previously constructed barrage was not sufficient     Identified two terminal lakes for euphrates:  Lake Milh/بحيرة ملح‎/Lake Razzaz/Lake Abu Dilis Lake Habbaniya   Proposed to remove old Hindiya barrage after completion of the new, although Arabs objected to it as they had used the old barrage as a bridge    </description>
+ 32°42&#39;46.00&amp;quot;N 44°16&#39;1.00&amp;quot;E    Constructed by Willcocks in 1911, finished in 1913 Constructed because the Euphrates splits into two channels south of Musayyib  Two braches, the Hilla and the Hindiya branch Closing of the salqawia canal diverted more water down the Euphrates  The lower-lying Hindiya branch took more water and started to slit up the Hilla branch Old, previously constructed barrage was not sufficient     Identified two terminal lakes for euphrates:  Lake Milh/بحيرة ملح‎/Lake Razzaz/Lake Abu Dilis Lake Habbaniya   Proposed to remove old Hindiya barrage after completion of the new, although Arabs objected to it as they had used the old barrage as a bridge   </description>
     </item>
     
     <item>
@@ -6957,7 +6957,7 @@ https://en.wikipedia.org/wiki/Preisach%5Fmodel%5Fof%5Fhysteresis</description>
       <guid>/posts/ics_training/</guid>
       <description>Tags: disaster response
 What is ICS?  Used for all kinds of incidents, applicable for all events, not only just for emergencies Establishes common processes for incident level planning Used to manage any type of incident  ICS (IS-100)   National Incident Management System
-      Gives a unified chain of command Managable span of control Establishes common terminology    Incident Action Planning Managable Span of Control  Refers to number of individuals that one supervisor can manage effectively during an incidient  Comprehensive Resource Management Entails:</description>
+      - Gives a unified chain of command - Managable span of control - Establishes common terminology  Incident Action Planning Managable Span of Control  Refers to number of individuals that one supervisor can manage effectively during an incidient  Comprehensive Resource Management Entails:</description>
     </item>
     
     <item>
@@ -8441,8 +8441,8 @@ Most servers abide by TCP standards for SHOULD and MUST. A significant subset do
       
       <guid>/posts/krg_visitor_visa_notes/</guid>
       <description> KRG/iraqi kurdistan  Renewing a Visitor Visa  Requirements:  Blood test from Government Hospital Small photo (possibly not needed) 150 dollars - 110 for visa renewal + 40 for lawyer fee   Locations:   Residency Office of Duhok: https://goo.gl/maps/gFaxKCfs4MHkpwd9A
-    Government Hospital for Blood Test (go to window 65): https://goo.gl/maps/294B3AoV6QGheuJU6
-       Notes  there are roaming lawyers around the residency office, they will typically talk to the owners Note that the blood test will send it over to the residency office, you do not have to do anything fee for blood test: 31k pay at window 105, which may not have someone likely need a kurdish proxy    </description>
+   Government Hospital for Blood Test (go to window 65): https://goo.gl/maps/294B3AoV6QGheuJU6
+      Notes  there are roaming lawyers around the residency office, they will typically talk to the owners Note that the blood test will send it over to the residency office, you do not have to do anything fee for blood test: 31k pay at window 105, which may not have someone likely need a kurdish proxy    </description>
     </item>
     
     <item>
@@ -8720,7 +8720,7 @@ Libya passed a law (https://justiceinconflict.org/2012/05/08/impunity-rules-liby
       <guid>/posts/leaf_and_spine/</guid>
       <description>Tags: networks
 First described by Brad Hedlund for Hadoop in 2012, but Google did this earlier with specialized hardware. Can now be done with off the shelf hardware from Arista or Juniper
- Leaves are &amp;ldquo;top of rack&amp;rdquo; switches, spines are densely connected to leaves to get oversubscription of free networks, bgp allows automatic routing table builds, and uses equal cost multipath (ECMP) to spread traffic evenly    </description>
+ Leaves are &amp;ldquo;top of rack&amp;rdquo; switches, spines are densely connected to leaves to get oversubscription of free networks, bgp allows automatic routing table builds, and uses equal cost multipath (ECMP) to spread traffic evenly   </description>
     </item>
     
     <item>
@@ -8788,7 +8788,7 @@ Supervised Learning   most common
   show inputs and annotations
   create an objective function that measures errors
   most people use stochastic gradient descent
-    known since 1960 that linear classifers only carve their input space into very simple regions (half spaces separated by a hyperplane)</description>
+   known since 1960 that linear classifers only carve their input space into very simple regions (half spaces separated by a hyperplane)</description>
     </item>
     
     <item>
@@ -10162,7 +10162,7 @@ Successfully demobilized around 300,000 ex-combatnats, but results varied signif
       
       <guid>/posts/multiateration/</guid>
       <description>Tags: sdr
- Multilateration is triangulation of airfcraft using a method called Time Difference of Arrival Uses multiple ground stations around a single airport, listening for interrogation signals     http://www.multilateration.com/surveillance/multilateration.html https://www.icao.int/APAC/Documents/edocs/cns/mlat%5Fconcept.pdf https://flightaware.com/adsb/mlat/  </description>
+ Multilateration is triangulation of airfcraft using a method called Time Difference of Arrival Uses multiple ground stations around a single airport, listening for interrogation signals    http://www.multilateration.com/surveillance/multilateration.html https://www.icao.int/APAC/Documents/edocs/cns/mlat%5Fconcept.pdf https://flightaware.com/adsb/mlat/  </description>
     </item>
     
     <item>
@@ -11124,7 +11124,7 @@ invasion of gaza by israel in july 2014</description>
       <description>Tags: kubernetes (k8s)
 Builds on top of controllers (k8s) and adds sets of knowledge or configuration to allow it to manage common application tasks
 Example: etcd backup
-  </description>
+ </description>
     </item>
     
     <item>
@@ -11741,7 +11741,7 @@ https://hexdocs.pm/phoenix%5Flive%5Fview/Phoenix.LiveView.html</description>
       
       <guid>/posts/photography/</guid>
       <description>Tags: personal
-Classes  https://www.linkedin.com/learning/photography-foundations-mobile-photography/   https://www.linkedin.com/learning/photography-advanced-composition/welcome?u=2131553  Aperature  Lower aperature means lower lens open  f/2.4 - f/8, etc   Changing aperture changes depth of field Shallow depth of field is basically impossible on phone Wider aperture means shallower depth of field Shallower depth of field means more focus on closer thing  ISO  Higher ISO means higher noise, but allows for faster shutter speed  Exposure Triangle   Light Meter  Only works on generalized assumptions Databases, facial recongition, etc  Depth of Field  Unlikely to achieve shallow depth of field from smartphone, due to small sensor Has to make changes to ISO  No aperature changes on phones   Phone camers don&amp;rsquo;t have a shutter!</description>
+Classes  https://www.linkedin.com/learning/photography-foundations-mobile-photography/   https://www.linkedin.com/learning/photography-advanced-composition/welcome?u=2131553  Aperature  Lower aperature means lower lens open  f/2.4 - f/8, etc   Changing aperture changes depth of field Shallow depth of field is basically impossible on phone Wider aperture means shallower depth of field Shallower depth of field means more focus on closer thing  ISO  Higher ISO means higher noise, but allows for faster shutter speed  Exposure Triangle  Light Meter  Only works on generalized assumptions Databases, facial recongition, etc  Depth of Field  Unlikely to achieve shallow depth of field from smartphone, due to small sensor Has to make changes to ISO  No aperature changes on phones   Phone camers don&amp;rsquo;t have a shutter!</description>
     </item>
     
     <item>
@@ -12652,7 +12652,7 @@ State owned bank</description>
       <guid>/posts/rasmussen_and_lind_coping_with_complexity/</guid>
       <description>Tags: papers, complexity
 Talks about how people cope with complexity in power plants
-Decision models:  Take some data, integrate the data, evaluate and make a decision, and coordinate the acts with an intention in mind    Simple heuristics taken:  Thresholds - when a variable crosses an absolute threshold  Like a threshold in grafana - &amp;ldquo;IO wait in CPU usage occupying more than 50%, I know that the CPU is spending time waiting on IO, resolution is involved with IO&amp;rdquo;   Deviation from normal - when an experienced operator knows what is normal and what is not  Deviation from normal - &amp;ldquo;current time is outside of p99&amp;rdquo;    Abstraction Hierarchies   Physical form relates to the abstract function, which relates to the general understanding</description>
+Decision models:  Take some data, integrate the data, evaluate and make a decision, and coordinate the acts with an intention in mind   Simple heuristics taken:  Thresholds - when a variable crosses an absolute threshold  Like a threshold in grafana - &amp;ldquo;IO wait in CPU usage occupying more than 50%, I know that the CPU is spending time waiting on IO, resolution is involved with IO&amp;rdquo;   Deviation from normal - when an experienced operator knows what is normal and what is not  Deviation from normal - &amp;ldquo;current time is outside of p99&amp;rdquo;    Abstraction Hierarchies  Physical form relates to the abstract function, which relates to the general understanding</description>
     </item>
     
     <item>
@@ -12789,7 +12789,7 @@ Mushrooms  https://cafedelites.com/roasted-mushrooms/  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/recurrent_neural_networks/</guid>
-      <description> good for tasks that require sequential input processes and input sequence one element at a time, maintaining a hidden &amp;ldquo;state vector&amp;rdquo; has a vanishing problem since backpropagated gardients grow or shrink at each time step very good at predicting the next character in the text or the next word in a sequence https://www.youtube.com/watch?v=UNmqTiOnRfg    </description>
+      <description> good for tasks that require sequential input processes and input sequence one element at a time, maintaining a hidden &amp;ldquo;state vector&amp;rdquo; has a vanishing problem since backpropagated gardients grow or shrink at each time step very good at predicting the next character in the text or the next word in a sequence https://www.youtube.com/watch?v=UNmqTiOnRfg   </description>
     </item>
     
     <item>
@@ -14881,7 +14881,7 @@ Tay, Yi, Dara Bahri, Liu Yang, Donald Metzler, and Da-Cheng Juan. “Sparse Sink
       <description>Tags: networks
 What Are?   https://blog.cloudflare.com/syn-packet-handling-in-the-wild/
   Two queues in TCP, one a SYN queue and one Accept Queue
-    Syn queue responsible for storing inbound syn packets
+   Syn queue responsible for storing inbound syn packets
  https://elixir.free-electrons.com/linux/v4.14.12/source/include/net/inet%5Fsock.h#L73    Blogs  https://www.snellman.net/blog/archive/2017-07-20-s3-mystery/ https://kognitio.com/blog/syn-cookies-ate-my-dog-breaking-tcp-on-linux/  Commits  https://github.com/freebsd/freebsd/commit/56ba0a68edde7b38323f81f9d56998b10668dd9e https://github.com/freebsd/freebsd/commit/fc2be30b217171175bae209edb4f697cc0cb542d  Research  https://link.springer.com/chapter/10.1007/978-3-642-36516-4%5F14  </description>
     </item>
     
@@ -14912,7 +14912,7 @@ What Are?   https://blog.cloudflare.com/syn-packet-handling-in-the-wild/
       
       <guid>/posts/tech_working/</guid>
       <description>Tags: personal
-Organizing  https://journals.sagepub.com/doi/full/10.1177/1095796020916201?fbclid=IwAR3CWxeV6jMJ2-vyHm-0YP7dQdvP5wM3W5zJiRQXJTyxPn2VhP-9Fvp8NuE&amp;amp;     https://www.researchgate.net/publication/325283635%5FOn%5FPlayer%5FMotivation%5Fand%5Fthe%5FAppeal%5Fof%5FGames%5FAn%5FExploration%5Fof%5FPlayer%5FMotivation  </description>
+Organizing  https://journals.sagepub.com/doi/full/10.1177/1095796020916201?fbclid=IwAR3CWxeV6jMJ2-vyHm-0YP7dQdvP5wM3W5zJiRQXJTyxPn2VhP-9Fvp8NuE&amp;amp;    https://www.researchgate.net/publication/325283635%5FOn%5FPlayer%5FMotivation%5Fand%5Fthe%5FAppeal%5Fof%5FGames%5FAn%5FExploration%5Fof%5FPlayer%5FMotivation  </description>
     </item>
     
     <item>
@@ -14967,7 +14967,7 @@ https://en.m.wikipedia.org/wiki/Electrical%5Ftelegraphy%5Fin%5Fthe%5FUnited%5FKi
  Ireland as a datahaven and tax haven    AWS/GCP Zones
  AWS China Alibaba    Southeast Asia as cloud ground: https://www.ft.com/content/1e2b9cd9-f82e-4d3b-a2d8-f20c08bdc3aa
  https://en.cifnews.com/southeast-asia-cloud-computing/    Links to the twin insurgency
-    </description>
+   </description>
     </item>
     
     <item>
@@ -15694,7 +15694,7 @@ gustavo  trial and error on developing better tools of dealing with peace in con
       
       <guid>/posts/un_and_global_governance_lecture_11/</guid>
       <description>Tags: UN and Global Governance
-Anou Borrey - Somalia  governance and peacebuilding of international settings IO&amp;rsquo;s do not hold the solutions!  UNSCR 1325 noticing that 1325 is insufficient   requires us to move beyond the checklist problems  can we think through rules of law without aggressive policing?   rwanda - women outnumbered men following the genocide, which meant that they had to take on certain roles  poverty rates of women and sexual violence is very high, large power imbalance between the genders   iraq - women had to have funding to run for parliment  in post conflict countries, money speaks war economies are hard to let go   G7 feminist development agenda principles  many unresolved questions (youth, minorities) 4 main elements  transformative change  aims to redress the historical power imbalances between mena nd women   intersectionality  multiple aspects of identity that play out in people&amp;rsquo;s lives   agency  importance of agency, either an individual or group&amp;rsquo;s ability to make choices to transform those choices into desired outcomes UN is often seen as a part of government   process  feminist aid prioritizes not only reuslts, but the process used to achieve them marlyin strathrone     silos have very limited impact   training local staff to go out and collect information in somalia  found out 74% of women were breadwinners       the UN thinks it brings solutions, but does not look carefully enough at the coping mechanisms developed in communities a women is always refered to wrt to their relationship to men UNDP - local governance project being looked at most interesting work are happening in the communities not enough engagement with the local community and local history  Gender  Notions of &amp;ldquo;masculinity&amp;rdquo; - peace as feminine and war as masculine  which leads to the idea that women are more active in peacebuilding activites then they actually are the partipation of women in the peace process requires speciifc advocacy of women following the conflict   views on sexual violence are extremely skewed towards women  pregent women, mothers, and victims of sexual violence   women are entering an institution where the binary of masculinity and feminity are bound gender mainstreaming -&amp;gt; how do you make the topic of gender dead?</description>
+Anou Borrey - Somalia  governance and peacebuilding of international settings IO&amp;rsquo;s do not hold the solutions!  UNSCR 1325 noticing that 1325 is insufficient   requires us to move beyond the checklist problems  can we think through rules of law without aggressive policing?   rwanda - women outnumbered men following the genocide, which meant that they had to take on certain roles  poverty rates of women and sexual violence is very high, large power imbalance between the genders   iraq - women had to have funding to run for parliment  in post conflict countries, money speaks war economies are hard to let go   G7 feminist development agenda principles  many unresolved questions (youth, minorities) 4 main elements  transformative change  aims to redress the historical power imbalances between mena nd women   intersectionality  multiple aspects of identity that play out in people&amp;rsquo;s lives   agency  importance of agency, either an individual or group&amp;rsquo;s ability to make choices to transform those choices into desired outcomes UN is often seen as a part of government   process  feminist aid prioritizes not only reuslts, but the process used to achieve them marlyin strathrone     silos have very limited impact   training local staff to go out and collect information in somalia  found out 74% of women were breadwinners      the UN thinks it brings solutions, but does not look carefully enough at the coping mechanisms developed in communities a women is always refered to wrt to their relationship to men UNDP - local governance project being looked at most interesting work are happening in the communities not enough engagement with the local community and local history  Gender  Notions of &amp;ldquo;masculinity&amp;rdquo; - peace as feminine and war as masculine  which leads to the idea that women are more active in peacebuilding activites then they actually are the partipation of women in the peace process requires speciifc advocacy of women following the conflict   views on sexual violence are extremely skewed towards women  pregent women, mothers, and victims of sexual violence   women are entering an institution where the binary of masculinity and feminity are bound gender mainstreaming -&amp;gt; how do you make the topic of gender dead?</description>
     </item>
     
     <item>
@@ -15771,7 +15771,7 @@ presentation planning  small summary background and history of sexual violence  
       
       <guid>/posts/un_and_global_governance_lecture_6/</guid>
       <description>Tags: UN and Global Governance
- Stabilization vs peacebuilding  readings put forward the binary of stabilization vs peacebuilding  what does &amp;ldquo;success&amp;rdquo; look like for stabilizing and peacebuilding long term strategy for peacebuilding -&amp;gt; ends in procedural democracy? long term strategy for stabilization -&amp;gt; restore state soverignty  developing human intelligence &amp;ldquo;quick impact projects&amp;rdquo; -&amp;gt; UN country team       &amp;ldquo;What is stabilization&amp;rdquo;?  SIPRI -&amp;gt; general trends for peace operations dodgy doctrinal status in UN missions Dorn: Intelligence Lead Peacekeeping - The United Nations Stabilization Mission in Haiti, united nations stabilization mission in the democratic republic of the congo (MONUSCO), united nations multidimensional integrated stabilization mission in mali (MINUSMA)   penholders in sc practice stabilization in their own interventions create a space for political solution and reconstruction  military actions are politized, and the boundary between military and political activity is blurred   peacebuilding and statebuilding are the same in stabilization stabilization goes beyond counter-insurgency by being interagency     united nations multidimensional integrated stabilization mission in mali (MINUSMA) - does not fight terrorism, but the french and the sahel forces are established with counter-insurgency MINUSCA -&amp;gt; rebels taking on local governance roles  </description>
+ Stabilization vs peacebuilding  readings put forward the binary of stabilization vs peacebuilding  what does &amp;ldquo;success&amp;rdquo; look like for stabilizing and peacebuilding long term strategy for peacebuilding -&amp;gt; ends in procedural democracy? long term strategy for stabilization -&amp;gt; restore state soverignty  developing human intelligence &amp;ldquo;quick impact projects&amp;rdquo; -&amp;gt; UN country team       &amp;ldquo;What is stabilization&amp;rdquo;?  SIPRI -&amp;gt; general trends for peace operations dodgy doctrinal status in UN missions Dorn: Intelligence Lead Peacekeeping - The United Nations Stabilization Mission in Haiti, united nations stabilization mission in the democratic republic of the congo (MONUSCO), united nations multidimensional integrated stabilization mission in mali (MINUSMA)   penholders in sc practice stabilization in their own interventions create a space for political solution and reconstruction  military actions are politized, and the boundary between military and political activity is blurred   peacebuilding and statebuilding are the same in stabilization stabilization goes beyond counter-insurgency by being interagency    united nations multidimensional integrated stabilization mission in mali (MINUSMA) - does not fight terrorism, but the french and the sahel forces are established with counter-insurgency MINUSCA -&amp;gt; rebels taking on local governance roles  </description>
     </item>
     
     <item>
