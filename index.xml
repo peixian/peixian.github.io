@@ -2331,13 +2331,13 @@ https://en.wikipedia.org/wiki/C%5Fpreprocessor</description>
     </item>
     
     <item>
-      <title>c/cpp</title>
+      <title>c/cpp shared resources</title>
       <link>/posts/c_cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/c_cpp/</guid>
       <description>Tags: computers
-C  Build-once, run anywhere C: https://justine.lol/cosmopolitan/index.html MISRA C  set of software development guides for the C programming language    CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646  Framework  https://preshing.com/20200526/a-new-cross-platform-open-source-cpp-framework/  </description>
+C  Build-once, run anywhere C: https://justine.lol/cosmopolitan/index.html MISRA C  set of software development guides for the C programming language    CPP  https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646  Framework  https://preshing.com/20200526/a-new-cross-platform-open-source-cpp-framework/  Structured Bindings  https://en.cppreference.com/w/cpp/language/structured%5Fbinding  </description>
     </item>
     
     <item>
@@ -3844,7 +3844,7 @@ bharatiya janata party (bjp) is an example of nationalism in this way</descripti
       
       <guid>/posts/distributed_systems/</guid>
       <description>Tags: computers
- http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html  Short Introduction  http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628  Theory  https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/  Fallacies  https://en.wikipedia.org/wiki/Fallacies%5Fof%5Fdistributed%5Fcomputing https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf  Errors and Examples  https://github.com/dranov/protocol-bugs-list https://covemountainsoftware.com/2021/03/01/a-survey-of-concurrency-bugs/  </description>
+ http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html  Short Introduction  http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628  Theory  https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/  Fallacies  https://en.wikipedia.org/wiki/Fallacies%5Fof%5Fdistributed%5Fcomputing https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf  Errors and Examples  https://github.com/dranov/protocol-bugs-list https://covemountainsoftware.com/2021/03/01/a-survey-of-concurrency-bugs/  Lamport writings  http://lamport.azurewebsites.net/pubs/pubs.html#lamport-paxos  </description>
     </item>
     
     <item>
@@ -4135,7 +4135,12 @@ Draft Migrants suffer a litany of horrors on their path to their ultimate destin
       
       <guid>/posts/ebpf/</guid>
       <description>Tags: networks, linux
- https://blog.pixielabs.ai/ebpf https://docs.cilium.io/en/v1.9/  </description>
+  https://blog.pixielabs.ai/ebpf
+  https://docs.cilium.io/en/v1.9/
+  https://blogs.igalia.com/dpino/2019/01/07/introduction-to-xdp-and-ebpf/
+  https://lwn.net/Articles/603983/
+  https://www.joyfulbikeshedding.com/blog/2019-01-31-full-system-dynamic-tracing-on-linux-using-ebpf-and-bpftrace.html
+  </description>
     </item>
     
     <item>
@@ -4979,7 +4984,7 @@ http://www.nobius.org/dbg/practical-file-system-design.pdf</description>
       
       <guid>/posts/20200415154751-finance/</guid>
       <description>Tags: root
- https://en.wikipedia.org/wiki/Bucket%5Fshop%5F(stock%5Fmarket) https://en.wikipedia.org/wiki/Secular%5Fstagnation  </description>
+ https://en.wikipedia.org/wiki/Bucket%5Fshop%5F(stock%5Fmarket) https://en.wikipedia.org/wiki/Secular%5Fstagnation  NYSE Binary Protocol  https://www.nyse.com/publicdocs/NYSE%5FPillar%5FGateway%5FBinary%5FProtocol%5FSpecification.pdf  </description>
     </item>
     
     <item>
@@ -7268,7 +7273,8 @@ Company owned by Iraq&amp;rsquo;s two largest state-owned banks Rafidain Bank an
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/interviews/</guid>
-      <description>root</description>
+      <description>root
+Programming Interviews  System design interview - https://www.youtube.com/c/systemdesigninterview System design primer: https://github.com/donnemartin/system-design-primer#study-guide https://github.com/donnemartin/system-design-primer#real-world-architectures  </description>
     </item>
     
     <item>
@@ -8917,7 +8923,7 @@ GH Super Linter  https://github.blog/2020-06-18-introducing-github-super-linter-
       
       <guid>/posts/linux/</guid>
       <description>Tags: computers
- Currently Linux plumber and hobbiest occupy two different workds  Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros    Debian perf performance issues  https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=911815  when not linked against libbfd, perf calls out to addr2line for every address lookup, which is infeasible possible solution: https://michcioperz.com/post/slow-perf-script/ patches: https://lore.kernel.org/linux-perf-users/20210909112202.1947499-1-tonyg@leastfixedpoint.com/    Linux Audio  Pipewire: http://pipewire.org  provides low latency, graph based processing for audio    LD_PRELOAD and LD_LIBRARY_PATH  Different usages on os x, uses DYLD_LIBRARY_PATH and DYLD_FALLBACK_LIBRARY_PATH  See https://stackoverflow.</description>
+ Currently Linux plumber and hobbiest occupy two different workds  Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros    Tracing  https://jvns.ca/blog/2017/07/05/linux-tracing-systems/ ebpf  Debian perf performance issues  https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=911815  when not linked against libbfd, perf calls out to addr2line for every address lookup, which is infeasible possible solution: https://michcioperz.com/post/slow-perf-script/ patches: https://lore.kernel.org/linux-perf-users/20210909112202.1947499-1-tonyg@leastfixedpoint.com/    Linux Audio  Pipewire: http://pipewire.</description>
     </item>
     
     <item>
@@ -11972,6 +11978,15 @@ Describes the case studies of el salvador, mozambique, cambodia, bosnia, and som
     </item>
     
     <item>
+      <title>power, subjectivity, agency</title>
+      <link>/posts/power_subjectivity_agency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/power_subjectivity_agency/</guid>
+      <description>Week 1 Kant, “AN ANSWER TO THE QUESTION: WHAT IS ENLIGHTENMENT?”  Transtemporal meaning of man, argues man&amp;rsquo;s natural state is towards &amp;ldquo;enlightement&amp;rdquo; as civilization Paradoxically, this requires a structure to exist to preserve it (enlightened despot) Distinguishes between private and public freedoms  Private freedom is when you hold certain privilages, such as pastor or soldier, where your choices are constrained. In cases of rulers, their choices are even more constrained, but constrained in choosing not to do something   importance of &amp;ldquo;presentism&amp;rdquo;, Kant believes that we are on the verge of something radical, and that there is potential in the presentism  Hegel et al.</description>
+    </item>
+    
+    <item>
       <title>presentation tools</title>
       <link>/posts/presentation_tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -12798,6 +12813,17 @@ Books  https://martinfowler.com/books/refactoring.html  </description>
     </item>
     
     <item>
+      <title>reflections on programming 5 years</title>
+      <link>/posts/reflections_on_programming_5_years/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/reflections_on_programming_5_years/</guid>
+      <description>drafts
+I&amp;rsquo;m entering my sixth year of programming this year, and like any developer, you begin to have all sorts of thoughts. This is a loose collection of major lessons I&amp;rsquo;ve learned throughout the past five years. Funnily enough, I think most of this is not directly teachable, the majority of these lessons I&amp;rsquo;ve arrived at by failing over and over.
+Outage Driven Development I&amp;rsquo;ve worked at two startups and one large company, and one of the startups was a cloud metrics company, so I&amp;rsquo;ve seen my fair share of outages.</description>
+    </item>
+    
+    <item>
       <title>refugees</title>
       <link>/posts/refugees/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -12889,7 +12915,8 @@ Week 2 reading response The competing narratives of secularization this week see
       
       <guid>/posts/remarkable/</guid>
       <description>Tags: computers
-https://github.com/ddvk/remarkable-stylus https://github.com/ddvk/remarkable-hacks http://www.davisr.me/projects/rcu/ https://github.com/bruot/pyrmexplorer/wiki https://gitlab.com/wrobell/remt</description>
+Basic Patches to Reinstall for every version https://github.com/ddvk/remarkable-stylus https://github.com/ddvk/remarkable-hacks
+Misc http://www.davisr.me/projects/rcu/ https://github.com/bruot/pyrmexplorer/wiki https://gitlab.com/wrobell/remt</description>
     </item>
     
     <item>
@@ -14142,6 +14169,15 @@ Spring Boot  https://spring.io/projects/spring-boot/ inclusive framework for sta
     </item>
     
     <item>
+      <title>spring 2022 classes</title>
+      <link>/posts/spring_2022_classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/spring_2022_classes/</guid>
+      <description>classes</description>
+    </item>
+    
+    <item>
       <title>sql</title>
       <link>/posts/sql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -15248,7 +15284,7 @@ Splits the data up into what the model is fit, what it is validated against, and
       
       <guid>/posts/transformers/</guid>
       <description>Tags: nlp
- https://huggingface.co/transformers/ http://jalammar.github.io/illustrated-transformer/ https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/ https://huggingface.co/blog/long-range-transformers https://kazemnejad.com/blog/transformer%5Farchitecture%5Fpositional%5Fencoding/ https://timodenk.com/blog/linear-relationships-in-the-transformers-positional-encoding/  Sentence Transformer  https://github.com/UKPLab/sentence-transformers/tree/master/tests  </description>
+ https://huggingface.co/transformers/ http://jalammar.github.io/illustrated-transformer/ https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/ https://huggingface.co/blog/long-range-transformers https://kazemnejad.com/blog/transformer%5Farchitecture%5Fpositional%5Fencoding/ https://timodenk.com/blog/linear-relationships-in-the-transformers-positional-encoding/ https://news.ycombinator.com/item?id=29315107  Sentence Transformer  https://github.com/UKPLab/sentence-transformers/tree/master/tests  </description>
     </item>
     
     <item>
@@ -16260,6 +16296,16 @@ Lebanese Druze leader</description>
       <guid>/posts/web_apis/</guid>
       <description>Tags: web
  http://wwwperiodictable.surge.sh/?hn5  </description>
+    </item>
+    
+    <item>
+      <title>webgl</title>
+      <link>/posts/webgl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/webgl/</guid>
+      <description>javascript
+ https://observablehq.com/@bmschmidt/sharing-a-single-zoom-state-between-svg-canvas-and-webgl - d3 zoom with webgl https://peterbeshai.com/blog/2017-05-26-beautifully-animate-points-with-webgl-and-regl/ - points with webgl https://threejs.org/manual/#en/picking - picking with webgl  </description>
     </item>
     
     <item>
