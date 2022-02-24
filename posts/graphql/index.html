@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.e4abb879d9bc0c73bde03aacd039556298a2827c7d6eec6e7db5c56d842cb63d.js" integrity="sha256-5Ku4edm8DHO94Dqs0DlVYpiignx9buxufbXFbYQstj0="></script>
+<script defer src="/en.search.min.97d08a6e0283d20e0285089b70f1238cbad68d08c351315b80a011c54bef513f.js" integrity="sha256-l9CKbgKD0g4ChQibcPEjjLrWjQjDUTFbgKARxUvvUT8="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -39,15 +39,100 @@
 
           <p>Tags: <a href="/posts/computers/">computers</a></p>
 <ul>
-<li><a href="https://hasura.io/learn/">https://hasura.io/learn/</a></li>
-<li><a href="https://hasura.io/blog/remote-joins-a-graphql-api-to-join-database-and-other-data-sources/">https://hasura.io/blog/remote-joins-a-graphql-api-to-join-database-and-other-data-sources/</a></li>
-<li><a href="/posts/golang/">golang</a> - <a href="https://gqlgen.com/">https://gqlgen.com/</a></li>
+<li>
+<p><a href="https://hasura.io/learn/">https://hasura.io/learn/</a></p>
+</li>
+<li>
+<p><a href="https://hasura.io/blog/remote-joins-a-graphql-api-to-join-database-and-other-data-sources/">https://hasura.io/blog/remote-joins-a-graphql-api-to-join-database-and-other-data-sources/</a></p>
+</li>
+<li>
+<p><a href="/posts/golang/">golang</a> - <a href="https://gqlgen.com/">https://gqlgen.com/</a></p>
+</li>
+<li>
+<p>does it just move the query to the client side? fetching information from calls, and works by bypassing the REST -&gt; SQL translation</p>
+</li>
+<li>
+<p>server implementation of graphql -&gt; authorization, efficient, cache results?</p>
+<ul>
+<li>FB&rsquo;s graphql stack
+<ul>
+<li>authentication happens by reusing a viewer which is then passed around like a</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="batching">Batching</h2>
+<ul>
+<li>Implemented in <code>DataLoader</code>: <a href="https://github.com/graphql/dataloader">https://github.com/graphql/dataloader</a>
+<ul>
+<li>Issues a batch request by watching multiple requests together</li>
+</ul>
+</li>
+</ul>
+<h2 id="caching">Caching</h2>
+<ul>
+<li>Uses a globally unique cache key and a refetch identifier</li>
 </ul>
 
           
 
 
 
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
 
    
 

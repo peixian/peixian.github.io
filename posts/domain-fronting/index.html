@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.e4abb879d9bc0c73bde03aacd039556298a2827c7d6eec6e7db5c56d842cb63d.js" integrity="sha256-5Ku4edm8DHO94Dqs0DlVYpiignx9buxufbXFbYQstj0="></script>
+<script defer src="/en.search.min.97d08a6e0283d20e0285089b70f1238cbad68d08c351315b80a011c54bef513f.js" integrity="sha256-l9CKbgKD0g4ChQibcPEjjLrWjQjDUTFbgKARxUvvUT8="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -67,7 +67,7 @@
 <h2 id="draft-1">Draft 1</h2>
 <p>Adopted by the encrypted messaging platform Signal since 2016, domain fronting has been a tool used for evasion of censorship and malware delivery. Domain fronting is a technique utilizing a well-documented loophole within TLS (see RFC) in order to masque traffic from one origin behind another, typically utilizing the infrastructure of Google Cloud Platform or Amazon Web Services. Notably, Signal uses domain fronting to evade censorship within Oman, the United Arab Emirates, Qatar, and Egypt. First declared dead in April of 2018 by Google and Amazon, domain fronting has been quietly been used within Signal on Google Cloud Platform since April of 2019. This paper  discusses the origins, the current progress, and the current Signal implementation.</p>
 <h3 id="history">History</h3>
-<p>Domain fronting via The Onion Router (TOR) network gained widespread awareness in 2017 when it was used by the Russian hacker group Cozy Bear (also known as APT29) in 2017. Investigated by FireEye, Cozy Bear utikized domain fronting to distribute malware from what appeared to be <code>appspot.com</code>, a domain name used by Google as part of their cloud platform (<a href="https://www.fireeye.com/blog/threat-research/2017/03/apt29%5Fdomain%5Ffrontin.html">https://www.fireeye.com/blog/threat-research/2017/03/apt29%5Fdomain%5Ffrontin.html</a>).
+<p>Domain fronting via The Onion Router (TOR) network gained widespread awareness in 2017 when it was used by the Russian hacker group Cozy Bear (also known as APT29) in 2017. Investigated by FireEye, Cozy Bear utikized domain fronting to distribute malware from what appeared to be <code>appspot.com</code>, a domain name used by Google as part of their cloud platform (<a href="https://www.fireeye.com/blog/threat-research/2017/03/apt29_domain_frontin.html">https://www.fireeye.com/blog/threat-research/2017/03/apt29_domain_frontin.html</a>).
 Signal, a commonly used encrypted messaging app, has utilized domain fronting in the past in order to maintain connectivity behind countries that censor traffic, beginning in 2016 (<a href="https://signal.org/blog/doodles-stickers-censorship/">https://signal.org/blog/doodles-stickers-censorship/</a>). In March of 2018, Google moved to shut down the most commonly used endpoints for domain fronting within their cloud service splatform, forcing Signal to switch over to using Amazon Web Services, a similar cloud platform operated by Amazon (<a href="https://github.com/signalapp/Signal-Android/commit/a573ab7c7668360c3ab411627bbb23109ef9facc">https://github.com/signalapp/Signal-Android/commit/a573ab7c7668360c3ab411627bbb23109ef9facc</a>). However, in May of 2018, Amazon moved to also shut down domain fronting within their platform (<a href="https://signal.org/blog/looking-back-on-the-front/">https://signal.org/blog/looking-back-on-the-front/</a>), forcing Signal to find an alternative.</p>
 <h3 id="technical-background">Technical Background</h3>
 <p>Domain fronting requires knowledge of several pieces of internet infrastrure.</p>
@@ -102,7 +102,7 @@ Google App Engine is a simple, lightweight way for programmers to write code mea
 <h2 id="draft-2">Draft 2</h2>
 <p>Adopted by the encrypted messaging platform Signal since 2016, domain fronting has been a tool used for evasion of censorship and malware delivery. Domain fronting is a technique utilizing a well-documented loophole within TLS (see RFC) in order to mask traffic from one origin behind another, typically utilizing the infrastructure of Google Cloud Platform or Amazon Web Services. Notably, Signal uses domain fronting to evade censorship within Oman, the United Arab Emirates, Qatar, and Egypt. First declared dead in April of 2018 by Google and Amazon, domain fronting has been quietly been used within Signal on Google Cloud Platform since April of 2019. This paper  discusses the origins, the current progress, and the current Signal implementation.</p>
 <h3 id="history">History</h3>
-<p>Domain fronting via The Onion Router (TOR) network gained widespread awareness in 2017 when it was used by the Russian hacker group Cozy Bear (also known as APT29) in 2017. Investigated by FireEye, Cozy Bear utilized domain fronting to distribute malware from what appeared to be <code>appspot.com</code>, a domain name used by Google as part of their cloud platform (<a href="https://www.fireeye.com/blog/threat-research/2017/03/apt29%5Fdomain%5Ffrontin.html">https://www.fireeye.com/blog/threat-research/2017/03/apt29%5Fdomain%5Ffrontin.html</a>).
+<p>Domain fronting via The Onion Router (TOR) network gained widespread awareness in 2017 when it was used by the Russian hacker group Cozy Bear (also known as APT29) in 2017. Investigated by FireEye, Cozy Bear utilized domain fronting to distribute malware from what appeared to be <code>appspot.com</code>, a domain name used by Google as part of their cloud platform (<a href="https://www.fireeye.com/blog/threat-research/2017/03/apt29_domain_frontin.html">https://www.fireeye.com/blog/threat-research/2017/03/apt29_domain_frontin.html</a>).
 Signal, a commonly used encrypted messaging app, has utilized domain fronting in the past in order to maintain connectivity behind countries that censor traffic, beginning in 2016 (<a href="https://signal.org/blog/doodles-stickers-censorship/">https://signal.org/blog/doodles-stickers-censorship/</a>). In March of 2018, Google moved to shut down the most commonly used endpoints for domain fronting within their cloud service platform, forcing Signal to switch over to using Amazon Web Services, a similar cloud platform operated by Amazon (<a href="https://github.com/signalapp/Signal-Android/commit/a573ab7c7668360c3ab411627bbb23109ef9facc">https://github.com/signalapp/Signal-Android/commit/a573ab7c7668360c3ab411627bbb23109ef9facc</a>). However, in May of 2018, Amazon moved to also shut down domain fronting within their platform (<a href="https://signal.org/blog/looking-back-on-the-front/">https://signal.org/blog/looking-back-on-the-front/</a>), forcing Signal to find an alternative.</p>
 <h3 id="technical-background">Technical Background</h3>
 <p>Domain fronting requires knowledge of several pieces of internet infrastructure.</p>
@@ -139,6 +139,60 @@ Google App Engine is a simple, lightweight way for programmers to write code mea
 
 
 
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
 
    
 

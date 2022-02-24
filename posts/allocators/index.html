@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.e4abb879d9bc0c73bde03aacd039556298a2827c7d6eec6e7db5c56d842cb63d.js" integrity="sha256-5Ku4edm8DHO94Dqs0DlVYpiignx9buxufbXFbYQstj0="></script>
+<script defer src="/en.search.min.97d08a6e0283d20e0285089b70f1238cbad68d08c351315b80a011c54bef513f.js" integrity="sha256-l9CKbgKD0g4ChQibcPEjjLrWjQjDUTFbgKARxUvvUT8="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -40,38 +40,30 @@
           <p><a href="/posts/ram_computer_memory/">ram (computer memory)</a></p>
 <h2 id="memory-management">Memory Management</h2>
 <ul>
-<li>Lobster language - <a href="https://aardappel.github.io/lobster/memory%5Fmanagement.html">https://aardappel.github.io/lobster/memory%5Fmanagement.html</a></li>
+<li>Lobster language - <a href="https://aardappel.github.io/lobster/memory_management.html">https://aardappel.github.io/lobster/memory_management.html</a></li>
 </ul>
 <h2 id="allocators">Allocators</h2>
 <ul>
-<li>
-<p>Scudo</p>
-</li>
-<li>
-<p>Hoard Allocator</p>
-</li>
-<li>
-<p>jemalloc</p>
-</li>
-<li>
-<p>Dieharder</p>
-</li>
-<li>
-<p>Poseidon Allocator</p>
-</li>
-<li>
-<p>Allocator Aware Infrastructure</p>
-</li>
-<li>
-<p>Comparisons</p>
-<p>#+begin_src markdown</p>
-</li>
+<li>Scudo</li>
+<li>Hoard Allocator</li>
+<li>jemalloc</li>
+<li>Dieharder</li>
+<li>Poseidon Allocator</li>
+<li>Allocator Aware Infrastructure</li>
+<li>Comparisons</li>
 </ul>
+<h3 id="slab-allocator">Slab allocator</h3>
+<ul>
+<li><a href="https://www.kernel.org/doc/gorman/html/understand/understand011.html">https://www.kernel.org/doc/gorman/html/understand/understand011.html</a></li>
+</ul>
+<h3 id="misc">Misc</h3>
+<pre><code>#+begin_src markdown
+</code></pre>
 <p>### More Papers
 *  <a href="https://census-labs.com/media/shadow-infiltrate-2017.pdf">The Shadow over Android</a></p>
-<h2 id="exploiting-the-jemalloc-memory-allocator-owning-firefox-s-heap--https-media-dot-blackhat-dot-com-bh-us-12-briefings-argyoudis-bh-us-12-argyroudis-exploiting-the-20jemalloc-memory-20allocator-wp-dot-pdf"><a href="https://media.blackhat.com/bh-us-12/Briefings/Argyoudis/BH%5FUS%5F12%5FArgyroudis%5FExploiting%5Fthe%5F%20jemalloc%5FMemory%5F%20Allocator%5FWP.pdf">Exploiting the jemalloc Memory Allocator: Owning Firefox&rsquo;s Heap</a></h2>
-<h2 id="attacking-the-webkit-heap--https-infiltratecon-dot-com-archives-webkit-heap-dot-pdf"><a href="https://infiltratecon.com/archives/webkit%5Fheap.pdf">Attacking the Webkit Heap</a></h2>
-<h2 id="windows-8-heap-internals--https-media-dot-blackhat-dot-com-bh-us-12-briefings-valasek-bh-us-12-valasek-windows-8-heap-internals-slides-dot-pdf"><a href="https://media.blackhat.com/bh-us-12/Briefings/Valasek/BH%5FUS%5F12%5FValasek%5FWindows%5F8%5FHeap%5FInternals%5FSlides.pdf">Windows 8 Heap Internals</a></h2>
+<h2 id="exploiting-the-jemalloc-memory-allocator-owning-firefox-s-heap--https-media-dot-blackhat-dot-com-bh-us-12-briefings-argyoudis-bh-us-12-argyroudis-exploiting-the-20jemalloc-memory-20allocator-wp-dot-pdf"><a href="https://media.blackhat.com/bh-us-12/Briefings/Argyoudis/BH_US_12_Argyroudis_Exploiting_the_%20jemalloc_Memory_%20Allocator_WP.pdf">Exploiting the jemalloc Memory Allocator: Owning Firefox&rsquo;s Heap</a></h2>
+<h2 id="attacking-the-webkit-heap--https-infiltratecon-dot-com-archives-webkit-heap-dot-pdf"><a href="https://infiltratecon.com/archives/webkit_heap.pdf">Attacking the Webkit Heap</a></h2>
+<h2 id="windows-8-heap-internals--https-media-dot-blackhat-dot-com-bh-us-12-briefings-valasek-bh-us-12-valasek-windows-8-heap-internals-slides-dot-pdf"><a href="https://media.blackhat.com/bh-us-12/Briefings/Valasek/BH_US_12_Valasek_Windows_8_Heap_Internals_Slides.pdf">Windows 8 Heap Internals</a></h2>
 <h2 id="windows-10-segment-heap-internals--https-www-dot-blackhat-dot-com-docs-us-16-materials-us-16-yason-windows-10-segment-heap-internals-dot-pdf"><a href="https://www.blackhat.com/docs/us-16/materials/us-16-Yason-Windows-10-Segment-Heap-Internals.pdf">Windows 10 Segment Heap Internals</a></h2>
 <h2 id="heap-layout-optimization-for-exploitation--https-www-dot-blackhat-dot-com-docs-eu-17-materials-eu-17-heelan-heap-layout-optimisation-for-exploitation-dot-pdf"><a href="https://www.blackhat.com/docs/eu-17/materials/eu-17-Heelan-Heap-Layout-Optimisation-For-Exploitation.pdf">Heap Layout Optimization for Exploitation</a></h2>
 <h2 id="freeguard-a-faster-secure-heap-allocator--https-arxiv-dot-org-pdf-1709-dot-02746-dot-pdf"><a href="https://arxiv.org/pdf/1709.02746.pdf">FreeGuard: A Faster Secure Heap Allocator</a></h2>
@@ -2598,7 +2590,61 @@
    
 
    
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
       
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
    
 
    

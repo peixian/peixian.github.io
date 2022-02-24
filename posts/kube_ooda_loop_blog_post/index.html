@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.e4abb879d9bc0c73bde03aacd039556298a2827c7d6eec6e7db5c56d842cb63d.js" integrity="sha256-5Ku4edm8DHO94Dqs0DlVYpiignx9buxufbXFbYQstj0="></script>
+<script defer src="/en.search.min.97d08a6e0283d20e0285089b70f1238cbad68d08c351315b80a011c54bef513f.js" integrity="sha256-l9CKbgKD0g4ChQibcPEjjLrWjQjDUTFbgKARxUvvUT8="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -58,7 +58,7 @@
 </ul>
 <p>Draft:
 The fundalmental building block in the Kubernetes (k8s) lego box is the concept of a <a href="https://kubernetes.io/docs/concepts/architecture/controller/">k8s controller</a>, a program that implements a control loop that is responsible for moving k8s towards the desired state.</p>
-<p>I thought it was interesting how similar this was to the <a href="https://en.wikipedia.org/wiki/OODA%5Floop">OODA loop</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, which is a decision making process that breaks down into 4 stages:</p>
+<p>I thought it was interesting how similar this was to the <a href="https://en.wikipedia.org/wiki/OODA_loop">OODA loop</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, which is a decision making process that breaks down into 4 stages:</p>
 <ol>
 <li>Observe</li>
 <li>Orient</li>
@@ -66,11 +66,11 @@ The fundalmental building block in the Kubernetes (k8s) lego box is the concept 
 <li>Act</li>
 </ol>
 <p>Now this is relatively banal, most people already take this sort of decision making process into their daily lives. However, what I want to drill down into is how this process is <em>stateless</em>, that is, you don&rsquo;t actually need to persist <strong>any</strong> information between one iteration loop and into the next.</p>
-<p>An example: pretend you are setting up a k8s <a href="https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/">ReplicaSet</a>. This ReplicaSet is responsible for spinning up a certain number of Docker containers, organized into k8s pods, say 3 pods<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Now <a href="https://github.com/kubernetes/kubernetes/blob/master/pkg/controller/replicaset/replica%5Fset.go#L540-L641">k8s handles this behavior like so</a> on the first iteration:</p>
+<p>An example: pretend you are setting up a k8s <a href="https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/">ReplicaSet</a>. This ReplicaSet is responsible for spinning up a certain number of Docker containers, organized into k8s pods, say 3 pods<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Now <a href="https://github.com/kubernetes/kubernetes/blob/master/pkg/controller/replicaset/replica_set.go#L540-L641">k8s handles this behavior like so</a> on the first iteration:</p>
 <ol>
 <li>observe the number of pods already running for this replicaset (at iteration 0, this is 0 pods)</li>
-<li>compute the difference between the desired amount and current amount (at iteration 0, this is <code>desired</code>-<code>current</code> = 3-0 = 3 pods): <a href="https://github.com/kubernetes/kubernetes/blob/master/pkg/controller/replicaset/replica%5Fset.go#L542">https://github.com/kubernetes/kubernetes/blob/master/pkg/controller/replicaset/replica%5Fset.go#L542</a></li>
-<li>decide whether pods need to be spun up or down: <a href="https://github.com/kubernetes/kubernetes/blob/master/pkg/controller/replicaset/replica%5Fset.go#L548">https://github.com/kubernetes/kubernetes/blob/master/pkg/controller/replicaset/replica%5Fset.go#L548</a></li>
+<li>compute the difference between the desired amount and current amount (at iteration 0, this is <code>desired</code>-<code>current</code> = 3-0 = 3 pods): <a href="https://github.com/kubernetes/kubernetes/blob/master/pkg/controller/replicaset/replica_set.go#L542">https://github.com/kubernetes/kubernetes/blob/master/pkg/controller/replicaset/replica_set.go#L542</a></li>
+<li>decide whether pods need to be spun up or down: <a href="https://github.com/kubernetes/kubernetes/blob/master/pkg/controller/replicaset/replica_set.go#L548">https://github.com/kubernetes/kubernetes/blob/master/pkg/controller/replicaset/replica_set.go#L548</a></li>
 <li>spin up pods or spin down pods accordingly</li>
 </ol>
 <p>This is exactly an OODA loop<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>! Kubernetes observes the current state, orients itself, and then decides to act upon the given information. Now, if you pretend one of the 3 pods has failed to spin up. Iteration 1 would look like:</p>
@@ -100,6 +100,60 @@ The fundalmental building block in the Kubernetes (k8s) lego box is the concept 
 
 
 
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
 
    
 
