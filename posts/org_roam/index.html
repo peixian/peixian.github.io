@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>HUGO_SETUP org-roam</title>
+<html><title>org-roam</title>
 
 
 <meta charset="utf-8">
@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.31aea68fac3a3a3326a6ec66dc4ed1edbf0751db577c1e789d8c1ac09f804615.js" integrity="sha256-Ma6mj6w6OjMmpuxm3E7R7b8HUdtXfB54nYwawJ&#43;ARhU="></script>
+<script defer src="/en.search.min.426ec3351bbe8fd1b3a08972428418a546161ae6aee9ceea5a16520598f03df8.js" integrity="sha256-Qm7DNRu&#43;j9GzoIlyQoQYpUYWGuau6c7qWhZSBZjwPfg="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -35,7 +35,7 @@
   <div class="grid">
     <div class="page" data-level="1">
       <div class="content">
-          <h1>HUGO_SETUP org-roam</h1>
+          <h1>org-roam</h1>
 
           <p>Tags: <a href="/posts/20200414093947-org_mode/">org-mode</a></p>
 <h2 id="org-download">Org-Download</h2>
@@ -99,7 +99,21 @@ coms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">spingl
 <h2 id="org-roam-mobile-with-plainorg">Org-roam mobile with Plainorg</h2>
 <p><a href="https://plainorg.com/">https://plainorg.com/</a></p>
 <p>Sync on Dropbox, does it work better with task tracking?</p>
+<h2 id="org-roam-export">Org-roam export</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">--eval <span style="color:#e6db74">&#34;(run-hooks &#39;emacs-startup-hook)&#34;</span> --eval <span style="color:#e6db74">&#34;(configuration-layer//load)&#34;</span>  --eval <span style="color:#e6db74">&#39;(org-roam-db-autosync-mode)&#39;</span> --eval <span style="color:#e6db74">&#39;(org-roam-export-all)&#39;</span> &gt; /home/peixian/emacs-export.log 2&gt;&amp;<span style="color:#ae81ff">1</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun org-roam-export-all ()
+  <span style="color:#e6db74">&#34;&#34;</span>
+  (interactive)
+  (org-roam-db-sync)
+  (dolist (fil (org-roam--list-files org-roam-directory))
+    (if (and (not (string-match-p <span style="color:#e6db74">&#34;private&#34;</span> fil)) (not (string-match-p <span style="color:#e6db74">&#34;hugo_setup&#34;</span> fil)))
+        (with-current-buffer (find-file-noselect fil)
 
+          (org-hugo-export-wim-to-md)
+          (<span style="color:#a6e22e">kill-buffer</span>))
+      ))
+  )
+</code></pre></div>
           
 
 
@@ -714,56 +728,6 @@ coms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">spingl
    
 
    
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
       
    
 
@@ -1920,6 +1884,74 @@ coms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">spingl
    
 
    
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
       
    
 
@@ -2318,6 +2350,36 @@ coms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">spingl
    
 
    
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
       
    
 
@@ -2666,6 +2728,34 @@ coms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">spingl
    
 
    
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
       
    
 
@@ -2920,95 +3010,19 @@ coms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">spingl
    
 
    
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
       
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
    
 
    
@@ -3552,15 +3566,15 @@ coms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">spingl
     <div class="backlinks">
         <ul>
        
-          <li><a href="/posts/community_detection_with_org_roam_library/">HUGO_SETUP community detection with org-roam library</a></li>
+          <li><a href="/posts/community_detection_with_org_roam_library/">community detection with org-roam library</a></li>
        
-          <li><a href="/posts/logseq/">HUGO_SETUP logseq</a></li>
+          <li><a href="/posts/logseq/">logseq</a></li>
        
-          <li><a href="/posts/org_roam_migration/">HUGO_SETUP org roam migration</a></li>
+          <li><a href="/posts/org_roam_migration/">org roam migration</a></li>
        
-          <li><a href="/posts/roam_themes/">HUGO_SETUP roam themes</a></li>
+          <li><a href="/posts/roam_themes/">roam themes</a></li>
        
-          <li><a href="/posts/stats_from_org_roam/">HUGO_SETUP stats from org roam</a></li>
+          <li><a href="/posts/stats_from_org_roam/">stats from org roam</a></li>
        
      </ul>
     </div>
