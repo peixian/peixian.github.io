@@ -12490,7 +12490,8 @@ booting over the network https://en.wikipedia.org/wiki/Preboot_Execution_Environ
       
       <guid>/posts/python/</guid>
       <description>Tags: computers
- CGI scripts:  https://www.tutorialspoint.com/python/python_cgi_programming.htm    Context sensitivity: https://groups.google.com/g/comp.theory/c/nJzOyRnAP3k/m/AInZxo48FNIJ?pli=1</description>
+ CGI scripts:  https://www.tutorialspoint.com/python/python_cgi_programming.htm    Context sensitivity: https://groups.google.com/g/comp.theory/c/nJzOyRnAP3k/m/AInZxo48FNIJ?pli=1
+Parsing PDF&amp;rsquo;s in Python  You can use:  pypdf2 or pypdf4 pdfminer  also pypdfparser   textract -&amp;gt; https://textract.readthedocs.io/en/stable/python_package.html poppler -&amp;gt; pdf rendering engine? OCR -&amp;gt; tesseract with pytesseract, preprocess with opencv tika with the python tika interface    </description>
     </item>
     
     <item>
