@@ -14556,6 +14556,7 @@ Has a concept of a state price vector, which means any derivatives contrct can b
       
       <guid>/posts/statistical_methods/</guid>
       <description>\:PROPERTIES: :ID: 1E95EA69-5FA9-4065-B175-48E0A4391924
+:END:
 Tags: statistics
  https://mc-stan.org/ laplacian eigenmaps: Belkin, Mikhail, and Partha Niyogi. “Laplacian Eigenmaps and Spectral Techniques for Embedding and Clustering.” In Proceedings of the 14th International Conference on Neural Information Processing Systems: Natural and Synthetic, 585–91. NIPS’01. Cambridge, MA, USA: MIT Press, 2001.  </description>
     </item>
