@@ -2265,6 +2265,16 @@ http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.3.4709&amp;amp;rep=rep1
     </item>
     
     <item>
+      <title>build systems</title>
+      <link>/posts/build_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/build_systems/</guid>
+      <description>computers
+CMake Xmake  https://xmake.io/#/getting_started  </description>
+    </item>
+    
+    <item>
       <title>bully algorithm</title>
       <link>/posts/bully_algorithm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
