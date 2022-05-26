@@ -12125,6 +12125,17 @@ https://developer.apple.com/documentation/apple-silicon/porting-just-in-time-com
     </item>
     
     <item>
+      <title>positive labeling</title>
+      <link>/posts/positive_labeling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/positive_labeling/</guid>
+      <description>statistics, ml
+https://link.springer.com/article/10.1007/s10994-020-05877-5
+Positive labeling is a method of using only positive and unlabeled data in order to train the model to distinguish between negative data as well</description>
+    </item>
+    
+    <item>
       <title>post-conflict statebuilding organization</title>
       <link>/posts/post_conflict_statebuilding_organization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
