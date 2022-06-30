@@ -63,6 +63,8 @@
   </url><url>
     <loc>/posts/actor_model/</loc>
   </url><url>
+    <loc>/posts/actor_network_theory/</loc>
+  </url><url>
     <loc>/posts/20200415113056-adalet_hotels_and_highways/</loc>
   </url><url>
     <loc>/posts/adam_optimizer/</loc>
@@ -109,6 +111,8 @@
   </url><url>
     <loc>/posts/akdedian_et_al_state_atrophy_and_the_reconfiguration_of_borderlands_in_syria_and_iraq/</loc>
   </url><url>
+    <loc>/posts/archbari/</loc>
+  </url><url>
     <loc>/posts/akka/</loc>
   </url><url>
     <loc>/posts/al_zajel_express/</loc>
@@ -150,6 +154,8 @@
     <loc>/posts/alfred_north_whitehead/</loc>
   </url><url>
     <loc>/posts/algeria/</loc>
+  </url><url>
+    <loc>/posts/algeria_and_prostitution/</loc>
   </url><url>
     <loc>/posts/algorithms/</loc>
   </url><url>
@@ -207,6 +213,8 @@
   </url><url>
     <loc>/posts/anthropology/</loc>
   </url><url>
+    <loc>/posts/anthropology_as_an_ill_structured_domain_blog_post/</loc>
+  </url><url>
     <loc>/posts/antinarcotics_in_afghanistan/</loc>
   </url><url>
     <loc>/posts/antonio_guterres/</loc>
@@ -226,8 +234,6 @@
     <loc>/posts/arabic_nlp/</loc>
   </url><url>
     <loc>/posts/arbaeen/</loc>
-  </url><url>
-    <loc>/posts/archbari/</loc>
   </url><url>
     <loc>/posts/archives_introduction_org/</loc>
   </url><url>
@@ -364,6 +370,8 @@
     <loc>/posts/beam_vm/</loc>
   </url><url>
     <loc>/posts/beath_et_al_the_national_solidarity_program_in_afghanistan/</loc>
+  </url><url>
+    <loc>/posts/behdini_and_iraqi_arabic_and_lack_of_grammar/</loc>
   </url><url>
     <loc>/posts/beirut_trash_riots/</loc>
   </url><url>
@@ -594,6 +602,8 @@
     <loc>/posts/coalition_against_is/</loc>
   </url><url>
     <loc>/posts/code_generation/</loc>
+  </url><url>
+    <loc>/posts/codebases_as_communication_post/</loc>
   </url><url>
     <loc>/posts/coding_tools/</loc>
   </url><url>
@@ -989,6 +999,10 @@
   </url><url>
     <loc>/posts/fall_2021_classes/</loc>
   </url><url>
+    <loc>/posts/fall_2022_plans/</loc>
+  </url><url>
+    <loc>/posts/fantasy_sports/</loc>
+  </url><url>
     <loc>/posts/fao/</loc>
   </url><url>
     <loc>/posts/20200414140012-farc_colombia/</loc>
@@ -1034,6 +1048,8 @@
     <loc>/posts/flash_storage/</loc>
   </url><url>
     <loc>/posts/flask/</loc>
+  </url><url>
+    <loc>/posts/flatbuffers_project/</loc>
   </url><url>
     <loc>/posts/20200415114633-food_for_training/</loc>
   </url><url>
@@ -1341,6 +1357,8 @@
   </url><url>
     <loc>/posts/hezbollah/</loc>
   </url><url>
+    <loc>/posts/hft/</loc>
+  </url><url>
     <loc>/posts/hibernate/</loc>
   </url><url>
     <loc>/posts/hierarchical_navigable_small_world_graph/</loc>
@@ -1362,6 +1380,10 @@
     <loc>/posts/hiring_an_editor/</loc>
   </url><url>
     <loc>/posts/hisham_al_hashimi/</loc>
+  </url><url>
+    <loc>/posts/history_of_islamic_law/</loc>
+  </url><url>
+    <loc>/posts/history_of_islamic_law_essay_draft/</loc>
   </url><url>
     <loc>/posts/hizb_al_tahriri_al_islami/</loc>
   </url><url>
@@ -2675,8 +2697,6 @@
   </url><url>
     <loc>/posts/sacred/</loc>
   </url><url>
-    <loc>/posts/sacrifice_concept/</loc>
-  </url><url>
     <loc>/posts/sadr_city/</loc>
   </url><url>
     <loc>/posts/safer_oil_tanker/</loc>
@@ -2764,6 +2784,8 @@
     <loc>/posts/shabak/</loc>
   </url><url>
     <loc>/posts/shannon_a_mathematical_theory_of_communication/</loc>
+  </url><url>
+    <loc>/posts/shaqlawa/</loc>
   </url><url>
     <loc>/posts/sharia_law/</loc>
   </url><url>
@@ -3319,6 +3341,8 @@
   </url><url>
     <loc>/posts/wav2vec/</loc>
   </url><url>
+    <loc>/posts/we_are_all_financers_now/</loc>
+  </url><url>
     <loc>/posts/web/</loc>
   </url><url>
     <loc>/posts/web_apis/</loc>
@@ -3404,6 +3428,8 @@
     <loc>/posts/yassine_jaber/</loc>
   </url><url>
     <loc>/posts/yathrib/</loc>
+  </url><url>
+    <loc>/posts/yazidi/</loc>
   </url><url>
     <loc>/posts/yemen/</loc>
   </url><url>
