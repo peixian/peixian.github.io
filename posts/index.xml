@@ -4427,7 +4427,7 @@ Interviewing Strats  Clarify the question: if the question seems unnecessarily h
       <description>Tags: computers
  https://elixirforum.com/ https://elixir.bootlin.com/linux/latest/ident/lock_kernel  Conventions  folders under /lib/&amp;lt;application_name&amp;gt;  Projects  https://getoban.pro/ https://livebook.dev/  Prometheus Metrics  @counter -&amp;gt; Adds a prometheus metric  https://hexdocs.pm/prometheus_ex/Prometheus.Metric.html Usage   declare a counter with
 @counter [name: :name, labels: [:label1, :label2], help: &amp;#34;#{__MODULE__}name&amp;#34;]   increment a counter with
-Counter.inc([name: :name, labels: [label1, label2]])       exmagick issues with Apple M1 chip:  https://githubmemory.com/repo/Xerpa/exmagick/issues/16  </description>
+Counter.inc([name: :name, labels: [label1, label2]])       exmagick issues with Apple M1 chip:  https://githubmemory.com/repo/Xerpa/exmagick/issues/16  asdf Support  Prebuild binary list https://bobs-list.</description>
     </item>
     
     <item>
@@ -12669,7 +12669,7 @@ booting over the network https://en.wikipedia.org/wiki/Preboot_Execution_Environ
       <guid>/posts/python/</guid>
       <description>Tags: computers
  CGI scripts:  https://www.tutorialspoint.com/python/python_cgi_programming.htm    Context sensitivity: https://groups.google.com/g/comp.theory/c/nJzOyRnAP3k/m/AInZxo48FNIJ?pli=1
-Parsing PDF&amp;rsquo;s in Python  You can use:  pypdf. or pypdf4 pdfminer  also pypdfparser   textract -&amp;gt; https://textract.readthedocs.io/en/stable/python_package.html poppler -&amp;gt; pdf rendering engine? OCR -&amp;gt; tesseract with pytesseract, preprocess with opencv tika.with the python tika interface    Difflib  https://docs.python.org/3/library/difflib.html generates diffs  has a series of diffs that allow for fleixible computing of sequences including:  html pure strings (get_close_matches) number type diffs      </description>
+Parsing PDF&amp;rsquo;s in Python  You can use:  pypdf. or pypdf4 pdfminer  also pypdfparser   textract -&amp;gt; https://textract.readthedocs.io/en/stable/python_package.html poppler -&amp;gt; pdf rendering engine? OCR -&amp;gt; tesseract with pytesseract, preprocess with opencv tika.with the python tika interface    Difflib  https://docs.python.org/3/library/difflib.html generates diffs  has a series of diffs that allow for fleixible computing of sequences including:  html pure strings (get_close_matches) number type diffs      OS  CPU Count:  https://docs.</description>
     </item>
     
     <item>
@@ -14245,7 +14245,7 @@ When your simulation cannot keep up with the timings, if it takes Y seconds to s
 3 potential ones:
  Mohammed Saeed al-Hakim - http://alhakeem.com/ Mohammed Ishaq al-Fayadh - http://alfayadh.org/ Bashir Hussain al-Najafi - http://www.alnajafi.org/  Transition from Khoei to Sistani took 6 years to finish: https://www.al-islam.org/articles/brief-biography-memory-his-late-holiness-ayatullah-al-uzma-sayyid-abul-qasim-al-khui-yasin
 Suggestions of 1-2 year transition? https://web.archive.org/web/20190830164059/http://www.niqash.org/en/articles/society/2917/
-After Sistani   Three main categories of speeches and fatwas since 2003  government corruption (including those of Shia Islamist parties) civil society against sectarian conflict   2013 fatwa denouncing sectarianism 2019 declaration of support for the tishreen Marja is relatively new, formed only in the 19th century and never has been formally institutionalized  </description>
+After Sistani   Three main categories of speeches and fatwas since 2003  government corruption (including those of Shia Islamist parties) civil society against sectarian conflict   2013 fatwa denouncing sectarianism 2019 declaration of support for the tishreen Marja is relatively new, formed only in the 19th century and never has been formally institutionalized Shiraziyyin school of thought in Karbala  </description>
     </item>
     
     <item>
