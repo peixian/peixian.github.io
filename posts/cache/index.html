@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.38a89ef12437bee5f0e10103fff9d7add49014ec218ba2a313782e6291cf0f9c.js" integrity="sha256-OKie8SQ3vuXw4QED//nXrdSQFOwhi6KjE3guYpHPD5w="></script>
+<script defer src="/en.search.min.57a13ab2c2781de2bc69b2c7daadb8be2a5e0c52818a99b3d6a42bc4e78915b2.js" integrity="sha256-V6E6ssJ4HeK8abLH2q24vipeDFKBipmz1qQrxOeJFbI="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -47,12 +47,55 @@
 <li><a href="https://web.stanford.edu/~ouster/cgi-bin/papers/ramcloud.pdf">https://web.stanford.edu/~ouster/cgi-bin/papers/ramcloud.pdf</a></li>
 </ul>
 </li>
+<li>Building an <a href="/posts/elixir/">elixir</a> cache with ETS: <a href="https://www.openmymind.net/Building-A-Cache-In-Elixir/%C3%AC">https://www.openmymind.net/Building-A-Cache-In-Elixir/%C3%AC</a></li>
 </ul>
+<h2 id="semi-random-eviction-within-redis--prior-to-6-dot-0">Semi-random eviction within Redis (prior to 6.0)</h2>
+<ul>
+<li>Randomly probe the cache and evict entries, have a process every few milliseconds that checks a random set of keys, and see if they expire
+<ul>
+<li>if &gt;25% are about to expire, repeat this process again</li>
+<li>if &lt;25%, then sleep and poll for the next round</li>
+</ul>
+</li>
+<li>Downsides: probablistic, which means at scale this probably has fat tails</li>
+</ul>
+<h2 id="caching-blog-post">Caching Blog Post</h2>
+<p>I read a Hacker News post about how Redis used to evict <a href="https://news.ycombinator.com/item?id=32067303">cache keys prior to version 6.0</a>:</p>
+<blockquote>
+<p>Every N milliseconds:</p>
+<ul>
+<li>Pick a random set of keys (say, 50):
+<ul>
+<li>Check how many have expired
+<ul>
+<li>If the number is &gt; 25%, then evict and repeat</li>
+<li>Otherwise evict and sleep for N milliseconds</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>I couldn&rsquo;t actually find any information that detailed this, although I did find <a href="https://tokers.github.io/posts/lru-and-lfu-in-redis-memory-eviction/">a blog post about the LFU and LRU policies around Redis eviction policies circa 2018</a>. I found something similar to what the author was referencing in the source, although that doesn&rsquo;t seem to exact be it either: <a href="https://github.com/redis/redis/blob/5.0/src/evict.c#L531-L550">https://github.com/redis/redis/blob/5.0/src/evict.c#L531-L550</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>Nevertheless, this simple algorithm spawned a discussion between me and a friend on how these probablistic algorithms have fat tails, and the assumptions that this algorithm makes. For example, for this simple random eviction policy to work, all the values need to be within a constant range of sizes. If you have a few values that are magnitudes larger than others, at enough scale you could end up in situations where the random scanning algorithm fails to catch the fat values for multiple cycles, which then puts more pressure on the eviction policy.</p>
+<p>My friend then pointed to <a href="https://research.google/pubs/pub48030/">https://research.google/pubs/pub48030/</a>, a paper that describes some of the issues with the remote caching mechanisms. The paper itself is worth reading, although the problems it recapitualtes will be familiar: serialization costs are annoyingly high, protocols add an additional layer of complexity, the usage of a K/V model means that you could be attempting to read an entire JSON blob when you just need a single element, and that network latency is non-trivial.</p>
+<p>I think the bulk of the problem here comes from the implication that the cache should not be co-located with the caller. The addition of &ldquo;cache managers&rdquo; such as Redis Sentinel and distributed Memcache are a concession to this: caches cannot typically be held within a single machine, and that optimal performance requires the cache to understand more than just the actual data: the caching layer must have some additional meta-information on how the caller is planning on using it. The Google paper makes the case for an intrusive, distributed in-process cache that effectively acts as a smarter remote cache, which can learn from your calling patterns. This isn&rsquo;t too different from <a href="https://www.erlang.org/doc/man/ets.html">Erlang&rsquo;s ETS</a>. The idea is that we can cut down dramatically on serialization and network hop costs by reducing the amount of information read with native language constructs, which I&rsquo;m in full agreement.</p>
+<p>However, all of this makes the assumption that we <strong>can&rsquo;t</strong> deploy fat, tall servers where your cache is co-located with your application. Obviously the Google paper does not attempt to address this point because it&rsquo;s not feasible for Google, but this type of co-location might be easier than you&rsquo;d expect. In the past I&rsquo;ve successfully run very tall servers co-located with <a href="https://dbmx.net/kyototycoon/">Kyoto Tycoon</a> and communication over Unix sockets. We&rsquo;re not locked into the single small server model, the fat server model also solves the problems of network hops by removing it and solves the overreading problem by simply assuming that the costs of IPC communication is so low compared to the network hop that the extra data doesn&rsquo;t matter. While this design certainly won&rsquo;t work at large enough scale, I think it&rsquo;s actually fairly difficult to run into real world problems that scale further than this if you&rsquo;re not at FAANG scale.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>I always forget how readable the Redis source is until I go back to it.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 
           
 
 
 
+
+   
 
    
 

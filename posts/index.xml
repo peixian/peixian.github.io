@@ -2444,7 +2444,7 @@ Gave the prime minister power to organize the volunteers and provide them with n
       
       <guid>/posts/cache/</guid>
       <description>Tags: computers
- https://medium.com/vimeo-engineering-blog/video-metadata-caching-at-vimeo-a54b25f0b304 rate limiting with https://github.com/mailgun/gubernator distributed caching library: https://github.com/golang/groupcache  https://blog.acolyer.org/2019/06/24/fast-key-value-stores/ https://web.stanford.edu/~ouster/cgi-bin/papers/ramcloud.pdf    </description>
+ https://medium.com/vimeo-engineering-blog/video-metadata-caching-at-vimeo-a54b25f0b304 rate limiting with https://github.com/mailgun/gubernator distributed caching library: https://github.com/golang/groupcache  https://blog.acolyer.org/2019/06/24/fast-key-value-stores/ https://web.stanford.edu/~ouster/cgi-bin/papers/ramcloud.pdf   Building an elixir cache with ETS: https://www.openmymind.net/Building-A-Cache-In-Elixir/%C3%AC  Semi-random eviction within Redis (prior to 6.0)  Randomly probe the cache and evict entries, have a process every few milliseconds that checks a random set of keys, and see if they expire  if &amp;gt;25% are about to expire, repeat this process again if &amp;lt;25%, then sleep and poll for the next round   Downsides: probablistic, which means at scale this probably has fat tails  Caching Blog Post I read a Hacker News post about how Redis used to evict cache keys prior to version 6.</description>
     </item>
     
     <item>
@@ -8463,7 +8463,7 @@ API on top of producer and consumer that allows for defining transformations on 
       
       <guid>/posts/karbala/</guid>
       <description>Tags: iraq
- Karbala Center for Studies and Research  https://maps.app.goo.gl/5Qtw7qYmbnAkn3b66    Karbala Radoods School at Husseinya al Yassine at Mohammad Amin Street (حسينية ال ياسين في شارع محمد الامين)  https://goo.gl/maps/etPHsb2jTbkjnJ3W7 March 25, 2022 3 different classes at this Husseinyya, one qu&amp;rsquo;ran recitation class, one fiqh class, one radood class For qu&amp;rsquo;ran class, each teenager recites and there is also a choir of older men and younger kids The older men perform at the end of class and the younger kids perform after them Teacher corrects them at every stage Afterwards fiqh class happens and the sheikh seems to talk to everyone Smells like a regular ventilated mosque, although not much to report on that Interior structure is a 2 story Radood school is the same as qu&amp;rsquo;ran school, except that people pick different Qasidas, there are some famous ones Ages from 8-40  Generators in Karbala  Public electricty is very bad, like everywhere else But not paid via card like the KRG, but rather paid monthly  </description>
+ Karbala Center for Studies and Research  https://maps.app.goo.gl/5Qtw7qYmbnAkn3b66    Karbala Radoods School at Husseinya al Yassine at Mohammad Amin Street (حسينية ال ياسين في شارع محمد الامين)  https://goo.gl/maps/etPHsb2jTbkjnJ3W7 March 25, 2022 3 different classes at this Husseinyya, one qu&amp;rsquo;ran recitation class, one fiqh class, one radood class For qu&amp;rsquo;ran class, each teenager recites and there is also a choir of older men and younger kids The older men perform at the end of class and the younger kids perform after them Teacher corrects them at every stage Afterwards fiqh class happens and the sheikh seems to talk to everyone Smells like a regular ventilated mosque, although not much to report on that Interior structure is a 2 story Radood school is the same as qu&amp;rsquo;ran school, except that people pick different Qasidas, there are some famous ones Ages from 8-40  Generators in Karbala  Public electricty is very bad, like everywhere else But not paid via card like the KRG, but rather paid monthly  Travel Guide  International media office Shia center Coffee time cafe al-Kefil society Hay Hussein Food time Nova Cafe Where the rituals happen al-Hur  </description>
     </item>
     
     <item>
@@ -11216,6 +11216,17 @@ Coworking Spaces  https://www.thequeensboro.com/the-q-home-office ($20 a day, 9-
       <guid>/posts/nyc_water_tunnel_no_3/</guid>
       <description>nyc
 Water supply tunnel, largest construction project in NYC history: https://en.wikipedia.org/wiki/New_York_City_Water_Tunnel_No._3</description>
+    </item>
+    
+    <item>
+      <title>Nystrom - Crafting Interpreters</title>
+      <link>/posts/nystrom_crafting_interpreters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/nystrom_crafting_interpreters/</guid>
+      <description>  books, compilers classes
+  https://craftinginterpreters.com
+  Reviews  https://eli.thegreenplace.net/2022/book-review-crafting-interpreters-by-robert-nystrom/ https://chidiwilliams.com/post/crafting-interpreters-a-review/  </description>
     </item>
     
     <item>
