@@ -3261,7 +3261,7 @@ computer science can actually be tested despite being easy to learn
       <guid>/posts/computers/</guid>
       <description>https://wiki.c2.com/?SufficientlySmartCompiler
 Tags: root
-grad school professors  https://software.imdea.org/~gotsman/  Firmware  https://osfc.io/archive- open source firmware conference  Laptop Manufacturers  Clevo - company that manufactures white label laptops  </description>
+grad school professors  https://software.imdea.org/~gotsman/  Firmware  https://osfc.io/archive- open source firmware conference  Laptop Manufacturers  Clevo - company that manufactures white label laptops  History  https://mitpress.mit.edu/books/john-von-neumann-and-origins-modern-computing  Devlogs  https://forums.tigsource.com/index.php?board=27.0  Lucas Pope Devlogs  https://forums.tigsource.com/index.php?topic=40832.720 https://forums.tigsource.com/index.php?topic=29750.700 https://dukope.itch.io/mars-after-midnight/devlog/261758/mars-after-midnight  </description>
     </item>
     
     <item>
@@ -10636,7 +10636,7 @@ Mushrooms act as circuit breakers for trees within forests, gating distribution 
       
       <guid>/posts/mutex_locks/</guid>
       <description>computers
-POSIX Mutexes pthread_mutex  https://pubs.opengroup.org/onlinepubs/009604499/functions/pthread_mutex_lock.html The way posix mutexes are implemented, especially because they require so much semantics, makes them impossible to allocate efficiently  https://www.youtube.com/watch?v=IznEq2Uf2xk&amp;amp;list=PLpIELpJvZsvcZAyx4NruEccCVlNZGKODs&amp;amp;index=16    </description>
+POSIX Mutexes pthread_mutex  https://pubs.opengroup.org/onlinepubs/009604499/functions/pthread_mutex_lock.html The way posix mutexes are implemented, especially because they require so much semantics, makes them impossible to allocate efficiently  https://www.youtube.com/watch?v=IznEq2Uf2xk&amp;amp;list=PLpIELpJvZsvcZAyx4NruEccCVlNZGKODs&amp;amp;index=16    Locking Engineering Principles  https://blog.ffwll.ch/2022/08/locking-hierarchy.html https://blog.ffwll.ch/2022/07/locking-engineering.html  </description>
     </item>
     
     <item>
@@ -17478,7 +17478,7 @@ Set of paradoxes developed, 9 survive today: https://en.wikipedia.org/wiki/Zeno%
       
       <guid>/posts/zettlekasten/</guid>
       <description>Tags: writing, episteme
- https://notes.andymatuschak.org/z4AX7pHAu5uUfmrq4K4zig9x8jmmF62XgaMXm?stackedNotes=z4KZ9973AoHhvM9Pj5Qrds48JXNbMEwVJmVRw&amp;amp;stackedNotes=z8RTzukqNLKFXzqLwx25HrUrg5E5jiziGznWB&amp;amp;stackedNotes=z6UDDkom8Aifg6mLdjT1sPtbMBweCmpyTwmJT http://luhmann.surge.sh/communicating-with-slip-boxes https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C?stackedNotes=z3SjnvsB5aR2ddsycyXofbYR7fCxo7RmKW2be&amp;amp;stackedNotes=z3PBVkZ2SvsAgFXkjHsycBeyS6Cw1QXf7kcD8  </description>
+ https://notes.andymatuschak.org/z4AX7pHAu5uUfmrq4K4zig9x8jmmF62XgaMXm?stackedNotes=z4KZ9973AoHhvM9Pj5Qrds48JXNbMEwVJmVRw&amp;amp;stackedNotes=z8RTzukqNLKFXzqLwx25HrUrg5E5jiziGznWB&amp;amp;stackedNotes=z6UDDkom8Aifg6mLdjT1sPtbMBweCmpyTwmJT http://luhmann.surge.sh/communicating-with-slip-boxes https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C?stackedNotes=z3SjnvsB5aR2ddsycyXofbYR7fCxo7RmKW2be&amp;amp;stackedNotes=z3PBVkZ2SvsAgFXkjHsycBeyS6Cw1QXf7kcD8 https://www.liquidtext.net/ https://github.com/xwmx/nb  </description>
     </item>
     
     <item>
