@@ -426,7 +426,7 @@ Correct training enhances the mitochondria content, pump volume of heart, and ox
       
       <guid>/posts/afghanistan_visa/</guid>
       <description>Tags: afghanistan, travel
-https://caravanistan.com/forum/viewtopic.php?f=3&amp;amp;t=10001</description>
+ https://caravanistan.com/forum/viewtopic.php?f=3&amp;amp;t=10001 (pre-taliban) post-taliban people are slowly trickling back in via kabul  </description>
     </item>
     
     <item>
@@ -436,7 +436,10 @@ https://caravanistan.com/forum/viewtopic.php?f=3&amp;amp;t=10001</description>
       
       <guid>/posts/afl_american_fuzzy_lop/</guid>
       <description>Tags: fuzzing
- instrumenting fuzzing with afl: https://liveoverflow.com/why-pick-sudo-research-target-part-1/#instrumenting-sudo-with-afl  </description>
+  instrumenting fuzzing with afl: https://liveoverflow.com/why-pick-sudo-research-target-part-1/#instrumenting-sudo-with-afl
+  AFL++ (https://github.com/AFLplusplus/AFLplusplus) has replaced the inactive AFL
+  also the name of a bunny
+  </description>
     </item>
     
     <item>
@@ -445,7 +448,8 @@ https://caravanistan.com/forum/viewtopic.php?f=3&amp;amp;t=10001</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/africa/</guid>
-      <description>Tags: root</description>
+      <description>Tags: root
+Madagascar  Thinking about madagascar vacation  </description>
     </item>
     
     <item>
@@ -454,7 +458,8 @@ https://caravanistan.com/forum/viewtopic.php?f=3&amp;amp;t=10001</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/african_union_au/</guid>
-      <description>Tags: africa</description>
+      <description>Tags: africa
+Meets semi-annually, headed in Addis Ababa</description>
     </item>
     
     <item>
@@ -477,7 +482,8 @@ Aman Allah  Greatly respected mustafa kemal Configured the early Afghan state Mu
       <guid>/posts/aiken_et_al_deconstructing_process_isolation/</guid>
       <description>Tags: papers, operating systems
 Aiken, Mark, Manuel Fähndrich, Chris Hawblitzel, Galen Hunt, and James Larus. “Deconstructing Process Isolation.” In Proceedings of the 2006 Workshop on Memory System Performance and Correctness - MSPC ’06, 1. San Jose, California: ACM Press, 2006. https://doi.org/10.1145/1178597.1178599.
-Operating systems usually enforce process isolation via hardware mechanisms, this paper compares the performance of a software isolated process</description>
+Operating systems usually enforce process isolation via hardware mechanisms, this paper compares the performance of a software isolated process
+This took the form of isolated memory, CPU&amp;rsquo;s use memory management by limiting page access to specific processess, and privilege levels that prevent untrusted code from manipulating the page access code, this is related to TLBs, which make the overhead far too expensive</description>
     </item>
     
     <item>
@@ -487,7 +493,8 @@ Operating systems usually enforce process isolation via hardware mechanisms, thi
       
       <guid>/posts/ain_al_tamur/</guid>
       <description>Tags: iraq
-Small town near karbala</description>
+Small town near karbala, 67 km directly west
+ Used to be considered a big source of dates and mineral water  </description>
     </item>
     
     <item>
@@ -497,7 +504,7 @@ Small town near karbala</description>
       
       <guid>/posts/air_traffic/</guid>
       <description>Tags: data
- https://www.oag.com/busiest-routes-right-now  </description>
+ https://www.oag.com/busiest-routes-right-now Air traffic was changing from Radar to GPS starting 2 years ago: https://www.wsj.com/articles/air-traffic-control-is-in-the-midst-of-a-major-change-11579861800, although ADS-B is not necessarily replacing radar, but providing coverage where radar does not  </description>
     </item>
     
     <item>
@@ -507,7 +514,7 @@ Small town near karbala</description>
       
       <guid>/posts/airbus_350_servers/</guid>
       <description>Tags: computers, avionics
- https://www.youtube.com/watch?v=241-5DZyons safety certification - https://en.m.wikipedia.org/wiki/DO-178C  </description>
+ also called the Avionics Compartment/Bay https://www.youtube.com/watch?v=241-5DZyons safety certification - https://en.m.wikipedia.org/wiki/DO-178C  </description>
     </item>
     
     <item>
@@ -551,7 +558,8 @@ Curiously, they replaced the Usulis at a random later point in time</description
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/akka/</guid>
-      <description>actor model framework for java and scala</description>
+      <description>actor model framework for java and scala
+ Useful for systems that need interactive and autonomous processes  Links  https://www.lightbend.com/blog/how-akka-cluster-works-actors-living-in-a-cluster  </description>
     </item>
     
     <item>
@@ -570,7 +578,8 @@ Curiously, they replaced the Usulis at a random later point in time</description
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/al_abbas_combat_division/</guid>
-      <description>Tags: brigades</description>
+      <description>Tags: brigades
+ Quite a few stuff has been written about them, why?  https://www.al-monitor.com/originals/2019/08/iraq-pmu-abbas-combat-division.html https://www.washingtoninstitute.org/policy-analysis/al-abbas-combat-division-model-reducing-iranian-influence-iraqs-security-forces anti-iranian views?    </description>
     </item>
     
     <item>
@@ -580,8 +589,18 @@ Curiously, they replaced the Usulis at a random later point in time</description
       
       <guid>/posts/al_aziziyah/</guid>
       <description>Tags: iraq
-Small town 80km west of kut
+Small town 80km west of kut, around 50k people
 kataib al-imam ali maintains a training camp here</description>
+    </item>
+    
+    <item>
+      <title>al-Dewachi - Ungovernable Life: Mandatory Medicine and Statecraft in Iraq</title>
+      <link>/posts/al_dewachi_ungovernable_life_mandatory_medicine_and_statecraft_in_iraq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/al_dewachi_ungovernable_life_mandatory_medicine_and_statecraft_in_iraq/</guid>
+      <description>books, iraq
+Predictions for the book  Medicine is a form of statecraft because whoever is denied medicine is used, medical tourism is big, as well as the usage of antibotics Sanctions and its role in medicine, a lack of medicine allowed the state to effectively dictate who lived and who died  </description>
     </item>
     
     <item>
@@ -614,7 +633,7 @@ Notes - sharia law as not a &amp;ldquo;law&amp;rdquo; but as a result of islamic
       
       <guid>/posts/al_hamza/</guid>
       <description>Tags: iraq
-City in qadisiyah governate</description>
+City in qadisiyah governate, has a jubur tribe influence</description>
     </item>
     
     <item>
@@ -645,7 +664,7 @@ Introduction  iraq was tarred with the Bush doctrine of pariah states married to
       
       <guid>/posts/al_juwayni/</guid>
       <description>Tags: people, islam
-early al-shafi&amp;rsquo;i jurist</description>
+early al-shafi&amp;rsquo;i jurist, pondered that there might not be strictly correct answers, but there were better ones</description>
     </item>
     
     <item>
@@ -654,7 +673,7 @@ early al-shafi&amp;rsquo;i jurist</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/al_khoei_foundation/</guid>
-      <description> lineage of Ayatollah al-Khoei khoei foundation recieves around 80% of khums worldwide  al-Khoei in UK (charity # 802000)  https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/802000 financial records: https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/802000/accounts-and-annual-returns online form recording: https://www.shiachat.com/forum/topic/234973651-ayatullah-seestani-khums-account-located/  </description>
+      <description> lineage of Ayatollah al-Khoei khoei foundation recieves around 80% of khums worldwide Massive foundation, has a branch in London and New York  al-Khoei in UK (charity # 802000)  https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/802000 financial records: https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/802000/accounts-and-annual-returns online form recording: https://www.shiachat.com/forum/topic/234973651-ayatullah-seestani-khums-account-located/  </description>
     </item>
     
     <item>
@@ -664,7 +683,7 @@ early al-shafi&amp;rsquo;i jurist</description>
       
       <guid>/posts/al_numaniyah/</guid>
       <description>Tags: iraq
-Town 140km southeast of baghdad</description>
+Town 140km southeast of baghdad, located on the Tigris</description>
     </item>
     
     <item>
@@ -673,7 +692,8 @@ Town 140km southeast of baghdad</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/al_nusra/</guid>
-      <description>Tags: militias</description>
+      <description>Tags: militias
+Operations in syria, later transformed</description>
     </item>
     
     <item>
@@ -682,7 +702,8 @@ Town 140km southeast of baghdad</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/al_qaeda/</guid>
-      <description>Tags: iraq</description>
+      <description>Tags: iraq
+Self explanatory, committed a truck bombing in a market in tel afar in late 2000&amp;rsquo;s that caused severe reprisals against the sunnis</description>
     </item>
     
     <item>
@@ -691,7 +712,8 @@ Town 140km southeast of baghdad</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/al_qassem_brigades/</guid>
-      <description>Tags: militias</description>
+      <description>Tags: militias
+From palestine, one of the more famous militias</description>
     </item>
     
     <item>
@@ -722,7 +744,7 @@ https://satellites.pro/Al-Zafaraniyah_map#33.254695,44.493470,13</description>
       
       <guid>/posts/alaaldin_et_al_the_rise_and_the_future_of_militias_in_the_mena_region/</guid>
       <description>Tags: papers
-Preface  Conventional western models of DDR and SSR appear irrelevant or unenformcable in countries where competition in fractured societies and the absences of strong institutions preclude their implmentation - p 9  calls on dialogue    1 - The Past, Present &amp;amp; Future of Militias - Raaj Alaaldin  Interventions in kosovo and iraq paved the way for weakneing of the international system  Undermined principals of soveriengty and created an environment where other world powers can pursue their own interests under the guise of same legal and normative arguments  russia in georgia, ukraine, and syria     Violence between states has disappeared West has engaged in optimistic, at times unrealistic policy making questions of the fragility of the state and rehabilitation frames the question, whereas militias are the result of long-standing pre-war legacies of dysfunctional governace and authoritarianism  It is not the conflict or the immediate aftermath, but longstanding greviances and a sense of injustice   argues that civil society is better positioned to challenge the promience of militias and can constitute a means through which to discourage the youth from joining armed groups demographics of the region, especially through youth bulges and growing population rates hezbollah paradoxically bridged the gap by providing services where the state couldn&amp;rsquo;t, but also hinder the state&amp;rsquo;s remergence  transnational shia militia groups have transitioned in iraq have transition into socio-political organizations  asks us how can we separate these?</description>
+Notes  How relevant is this at this point? After latest (per September 1, 2022) conflicts between hashd al-shaabi (PMF) and Muqtada al-Sadr, does this offer any understanding?  Preface  Conventional western models of DDR and SSR appear irrelevant or unenformcable in countries where competition in fractured societies and the absences of strong institutions preclude their implmentation - p 9  calls on dialogue    1 - The Past, Present &amp;amp; Future of Militias - Raaj Alaaldin  Interventions in kosovo and iraq paved the way for weakneing of the international system  Undermined principals of soveriengty and created an environment where other world powers can pursue their own interests under the guise of same legal and normative arguments  russia in georgia, ukraine, and syria     Violence between states has disappeared West has engaged in optimistic, at times unrealistic policy making questions of the fragility of the state and rehabilitation frames the question, whereas militias are the result of long-standing pre-war legacies of dysfunctional governace and authoritarianism  It is not the conflict or the immediate aftermath, but longstanding greviances and a sense of injustice   argues that civil society is better positioned to challenge the promience of militias and can constitute a means through which to discourage the youth from joining armed groups demographics of the region, especially through youth bulges and growing population rates hezbollah paradoxically bridged the gap by providing services where the state couldn&amp;rsquo;t, but also hinder the state&amp;rsquo;s remergence  transnational shia militia groups have transitioned in iraq have transition into socio-political organizations  asks us how can we separate these?</description>
     </item>
     
     <item>
@@ -731,7 +753,8 @@ Preface  Conventional western models of DDR and SSR appear irrelevant or unenfor
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/albania/</guid>
-      <description>Tags: balkans</description>
+      <description>Tags: balkans
+ https://online.ucpress.edu/currenthistory/article-abstract/119/815/95/110413/The-Albanian-Question-Looms-Over-the-Balkans-Again?redirectedFrom=fulltext#.X8xg6orxuvM.twitter  </description>
     </item>
     
     <item>
@@ -781,7 +804,7 @@ Sorting Algorithms  pdqsort - https://github.com/orlp/pdqsort  </description>
       
       <guid>/posts/algorithms_for_decision_making/</guid>
       <description>Tags: books, algorithms
- https://github.com/sisl/algorithmsbook/  </description>
+ https://github.com/sisl/algorithmsbook/ How is this different from algorithms for optimization?  </description>
     </item>
     
     <item>
@@ -791,17 +814,17 @@ Sorting Algorithms  pdqsort - https://github.com/orlp/pdqsort  </description>
       
       <guid>/posts/algorithms_for_optimization/</guid>
       <description>Tags: algorithms, books
- https://github.com/sisl/algforopt-notebooks https://mitpress.mit.edu/books/algorithms-optimization  </description>
+ https://github.com/sisl/algforopt-notebooks https://mitpress.mit.edu/books/algorithms-optimization https://press.princeton.edu/books/hardcover/9780691102870/optimization https://www.degruyter.com/document/doi/10.1515/9781400862528/html  </description>
     </item>
     
     <item>
-      <title>Ali Abudllah Saleh</title>
+      <title>Ali Abdullah Saleh</title>
       <link>/posts/ali_abudllah_saleh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/ali_abudllah_saleh/</guid>
       <description>Tags: people yemen
- Former dictator/president of yemen before he was overthrown by the houthis Left on a gulf cooperation council brokered agreement where he ceded power to his vice President Mansour al-Hadi  </description>
+ Former dictator/president of yemen before he was overthrown by the houthis Left on a gulf cooperation council brokered agreement where he ceded power to his vice President Mansour al-Hadi Resigned on Feb 25, 2012  </description>
     </item>
     
     <item>
@@ -819,7 +842,8 @@ Sorting Algorithms  pdqsort - https://github.com/orlp/pdqsort  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/ali_shakir_al_khafaf/</guid>
-      <description>Tags: people, iraq</description>
+      <description>Tags: people, iraq
+ Fighter affairs head for the hashd as of 2019  </description>
     </item>
     
     <item>
@@ -829,7 +853,7 @@ Sorting Algorithms  pdqsort - https://github.com/orlp/pdqsort  </description>
       
       <guid>/posts/ali_shariati/</guid>
       <description>Tags: islam, people
- Similar notions to liberation theology in Latin America Marxist Muslim thinker  </description>
+ Similar notions to liberation theology in Latin America Marxist Muslim thinker Associated with iran  </description>
     </item>
     
     <item>
@@ -911,7 +935,8 @@ General note to anchor about the western hemisphere</description>
       <guid>/posts/amerli/</guid>
       <description>Tags: hashd al-shaabi (PMF)
 badr-lead training camp near tuz khormatu
-Run by quwat al-turkmen (brigade 16)</description>
+Run by quwat al-turkmen (brigade 16)
+Also a Shia turkmen town</description>
     </item>
     
     <item>
@@ -1167,7 +1192,7 @@ Camel tools -&amp;gt; result of previous efforts, from madimira
       
       <guid>/posts/arbaeen/</guid>
       <description>Tags: karbala, shia
- shia rituals  najaf to karbala walk  https://lakhanipilgrimage.com/page-walkers-guide-26  </description>
+ shia rituals  najaf to karbala walk  https://lakhanipilgrimage.com/page-walkers-guide-26 https://www.najaftokarbala.info/ https://shiablog.hds.harvard.edu/blog/1452-poles-karbala  </description>
     </item>
     
     <item>
@@ -1529,7 +1554,7 @@ Pattern1 { ACTIONS; } Pattern2 { ACTIONS; }   Each line will go through each of 
       
       <guid>/posts/aws/</guid>
       <description>Tags: cloud
- https://cloudbite.attejuvonen.fi/  </description>
+ https://cloudbite.attejuvonen.fi/  S3 Presigned Objects  https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html elixir -&amp;gt; https://github.com/erlcloud/erlcloud  </description>
     </item>
     
     <item>
@@ -1651,7 +1676,8 @@ Ideaology largely constructed by Michel Aflaq and Salah ud-Din al-Bitar</descrip
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/baghdad/</guid>
-      <description>Tags: iraq</description>
+      <description>Tags: iraq
+Life in Baghdad https://goo.gl/maps/5iWtsukfRbF6uC8p9</description>
     </item>
     
     <item>
@@ -2449,6 +2475,16 @@ Gave the prime minister power to organize the volunteers and provide them with n
     </item>
     
     <item>
+      <title>calculators</title>
+      <link>/posts/calculators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/calculators/</guid>
+      <description>coding tools
+ https://soulver.app/ https://cruncher.io/?/-N9gjBISuCbE0Sx1lnOg https://numbr.dev/ https://github.com/filipesabella/calcpad https://insect.sh/ https://github.com/seligman/human_calc https://numi.app/ https://github.com/xixixao/recomputer  </description>
+    </item>
+    
+    <item>
       <title>Caliskan et al: Semantics derived automatically from language corpora contain human-like biases</title>
       <link>/posts/caliskan_et_al_semantics_derived_automatically_from_language_corpora_contain_human_like_biases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2598,6 +2634,15 @@ Internals  Seed nodes:  No purpose other than bootstrapping the gossip process D
       <guid>/posts/category_theory/</guid>
       <description>Tags: math
  https://en.wikipedia.org/wiki/Grothendieck_topology https://en.wikipedia.org/wiki/Gravitation_%28book%29 https://ncatlab.org/nlab/show/category+theory  </description>
+    </item>
+    
+    <item>
+      <title>catholics</title>
+      <link>/posts/catholics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/catholics/</guid>
+      <description>religion</description>
     </item>
     
     <item>
@@ -2773,7 +2818,7 @@ Resources:  https://macropolo.org/  </description>
       
       <guid>/posts/chips/</guid>
       <description>Tags: computers, hardware
- Die die interconnects are mostly constrained on power https://en.wikichip.org/wiki/amd/infinity_fabric https://siliconpr0n.org/wiki/doku.php?id=starting  </description>
+ Die die interconnects are mostly constrained on power https://en.wikichip.org/wiki/amd/infinity_fabric https://siliconpr0n.org/wiki/doku.php?id=starting  Intel Optane  Great hope for intel, standalone memory device Used for primary storage but as cheap as disk https://www.theregister.com/2022/08/01/optane_intel_cancellation/  </description>
     </item>
     
     <item>
@@ -2823,6 +2868,24 @@ Relationships to linguistics and algebra? Finite state machines? Links  https://
       <guid>/posts/chopra_building_state_failure_in_east_timor/</guid>
       <description>Tags: papers, un and global governance lecture 5
 Talks about how east timor&amp;rsquo;s state building failure by the UN was largely because the UN failed to account for the local conditions on the ground, and the mission itself, with time, acted to preserve its own autonomy rather than helping the timorese</description>
+    </item>
+    
+    <item>
+      <title>Christianity</title>
+      <link>/posts/christianity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/christianity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>christians</title>
+      <link>/posts/christians/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/christians/</guid>
+      <description>religion</description>
     </item>
     
     <item>
@@ -3127,7 +3190,8 @@ NVDM  varational autoencoder with BOW inputs Word order is ignored, only word co
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/companies/</guid>
-      <description>Tags: root</description>
+      <description>Tags: root
+Facebook  https://www.vanityfair.com/news/2016/06/how-mark-zuckerberg-led-facebooks-war-to-crush-google-plus?utm_source=substack&amp;amp;utm_medium=email  </description>
     </item>
     
     <item>
@@ -4430,9 +4494,7 @@ Interviewing Strats  Clarify the question: if the question seems unnecessarily h
       
       <guid>/posts/elixir/</guid>
       <description>Tags: computers
- https://elixirforum.com/ https://elixir.bootlin.com/linux/latest/ident/lock_kernel  Conventions  folders under /lib/&amp;lt;application_name&amp;gt;  Projects  https://getoban.pro/ https://livebook.dev/  Prometheus Metrics  @counter -&amp;gt; Adds a prometheus metric  https://hexdocs.pm/prometheus_ex/Prometheus.Metric.html Usage   declare a counter with
-@counter [name: :name, labels: [:label1, :label2], help: &amp;#34;#{__MODULE__}name&amp;#34;]   increment a counter with
-Counter.inc([name: :name, labels: [label1, label2]])       exmagick issues with Apple M1 chip:  https://githubmemory.com/repo/Xerpa/exmagick/issues/16  asdf Support  Prebuild binary list https://bobs-list.</description>
+ https://elixirforum.com/ https://elixir.bootlin.com/linux/latest/ident/lock_kernel  Conventions  folders under /lib/&amp;lt;application_name&amp;gt;  Projects  https://getoban.pro/ https://livebook.dev/  Prometheus Metrics  @counter -&amp;gt; Adds a prometheus metric  https://hexdocs.pm/prometheus_ex/Prometheus.Metric.html Usage  declare a counter with @counter [name: :name, labels: [:label1, :label2], help: &amp;#34;#{__MODULE__}name&amp;#34;]  increment a counter with Counter.inc([name: :name, labels: [label1, label2]])       exmagick issues with Apple M1 chip:  https://githubmemory.com/repo/Xerpa/exmagick/issues/16  asdf Support  Prebuild binary list https://bobs-list.</description>
     </item>
     
     <item>
@@ -4610,7 +4672,7 @@ Self referantial paradox on
       <guid>/posts/episteme/</guid>
       <description>Tags: root
  On thinking
- https://kinopio.club  </description>
+ https://kinopio.club  Coastline Paradox  https://en.wikipedia.org/wiki/Coastline_paradox Measurements are approximations, which then depends on the method used to measure it  </description>
     </item>
     
     <item>
@@ -5424,6 +5486,16 @@ Fortna, Virginia Page. “Does Peacekeeping Keep Peace? International Interventi
     </item>
     
     <item>
+      <title>framing shia rituals as political</title>
+      <link>/posts/framing_shia_rituals_as_political/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/framing_shia_rituals_as_political/</guid>
+      <description>writing
+The Karbala ritual of radat (الردات الكربلائي سياسي, lit the karbala political responses) during Muharram is underdiscussed. Despite how many people try to use religion as a scrying sheet for political predictions in Iraq, very little discussion has been had on radat, a ritual that literally has &amp;ldquo;political&amp;rdquo; in the name! I recently tweeted about my favorite radat of late, and thought that I should elaborate on what it symbolizes.</description>
+    </item>
+    
+    <item>
       <title>france</title>
       <link>/posts/france/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6029,7 +6101,8 @@ Central point is that data aggregation on a state level renders citizens more le
       
       <guid>/posts/google_maps/</guid>
       <description>Tags: mapping
-https://joemorrison.substack.com/p/google-maps-moat-is-evaporating</description>
+https://joemorrison.substack.com/p/google-maps-moat-is-evaporating
+   </description>
     </item>
     
     <item>
@@ -6444,6 +6517,16 @@ Overview  &amp;lsquo;sectarianism&amp;rsquo; as a term is too broad and doesn&am
     </item>
     
     <item>
+      <title>hagiography</title>
+      <link>/posts/hagiography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hagiography/</guid>
+      <description>grad school
+textbooks  https://www.degruyter.com/search?query=hagiography&amp;amp;startItem=110&amp;amp;pageSize=10&amp;amp;sortBy=relevance&amp;amp;documentTypeFacet=book https://www.degruyter.com/document/doi/10.1515/9780691233239/html https://www.degruyter.com/document/doi/10.1515/9781503616066/html https://www.degruyter.com/document/doi/10.1515/9780824890216/html https://www.degruyter.com/document/doi/10.1515/9783112208991/html https://www.degruyter.com/document/doi/10.1515/9783110689686/html https://www.degruyter.com/document/doi/10.1515/9780691184180/html https://www.degruyter.com/document/doi/10.1515/9783110419221/html https://www.degruyter.com/document/doi/10.1515/9780691191126/html  </description>
+    </item>
+    
+    <item>
       <title>haider al-abadi</title>
       <link>/posts/haider_al_abadi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6468,7 +6551,8 @@ Former iraqi prime minister</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/haiti/</guid>
-      <description>Tags: latam</description>
+      <description>Tags: latam
+Governor&amp;rsquo;s Island Accord  https://www.haitipolicy.org/archives/Publications&amp;amp;Commentary/governors.htm effectively turned Haiti into a republic of NGO&amp;rsquo;s  </description>
     </item>
     
     <item>
@@ -8266,6 +8350,17 @@ Book that talks about the construction of nearhuman and evoking particular forms
     </item>
     
     <item>
+      <title>Jonassen and Hung: Learning to Troubleshoot: A New Theory-Based Design Architecture</title>
+      <link>/posts/jonassen_and_hung_learning_to_troubleshoot_a_new_theory_based_design_architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/jonassen_and_hung_learning_to_troubleshoot_a_new_theory_based_design_architecture/</guid>
+      <description>papers, debuggers
+[1] D. H. Jonassen and W. Hung, “Learning to Troubleshoot: A New Theory-Based Design Architecture,” Educ Psychol Rev, vol. 18, no. 1, pp. 77–114, Mar. 2006, doi: 10.1007/s10648-006-9001-8.
+ Generic paper on mechanisms that people use to learn how to troubleshoot and debug Notes that working memory, analytical reasoning, and casual reasoning are all important aspects of effective troubleshooting Also goes through the various ways that people have been taught how to troubleshoot in the past, such as procedural demonstration, conceptual instruction, rule-based approaches, simulations, and intelligent tutoring systems  Coginitive Model of Troubleshooting  Construct problem space (novice troubleshooters will rely on external problem representations)  talks   Identify Fault Systems Diagnose Faults (experienced troubleshooters will categorize problems based on prior experiences)  four types of hypotheses generated:  system: fault at the system level subsystem: fault at the subsystem level, reduces the problem space to a discrete subsystem device: reduces it to a specific device component: reduces to a single fault at the component   it seems this categorization is mostly just general, isn&amp;rsquo;t what&amp;rsquo;s important the ability to drill down into specific sections   Generate and Verify Solutions Remeber Experience  Although this is also more likely to happen as a result of post-mortems    Architecture for Troubleshooting Learning  Proposes a system to help learn troubleshooting as well based on a case of previous examples   </description>
+    </item>
+    
+    <item>
       <title>jonathan mason</title>
       <link>/posts/jonathan_mason/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8325,6 +8420,16 @@ Put forward the idea that, according to the original theory of secularism, it sh
     </item>
     
     <item>
+      <title>jubur tribe</title>
+      <link>/posts/jubur_tribe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/jubur_tribe/</guid>
+      <description>iraq
+https://en.wikipedia.org/wiki/Jubur</description>
+    </item>
+    
+    <item>
       <title>judea pearl</title>
       <link>/posts/judea_pearl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8371,7 +8476,7 @@ Learning  https://github.com/chrisvoncsefalvay/learn-julia-the-hard-way  </descr
       <guid>/posts/jurf_al_sakhar/</guid>
       <description>Tags: iraq
 Small town 60 kilometers south of baghdad
-Has a kataib hezbollah (kh) training camp</description>
+Has a kataib hezbollah (kh) training camp, currently a black hole, nobody can get in</description>
     </item>
     
     <item>
@@ -8438,7 +8543,7 @@ API on top of producer and consumer that allows for defining transformations on 
       
       <guid>/posts/kalyvas_the_logic_of_violence_in_civil_war/</guid>
       <description>Tags: books
- From Simpson - War from the Ground Up  posits that mainstream narratives of most civil wars tend to locate violence in terms of macro-level emotions, ideaologies, or cultures. empirical evidence points to a far more complex or fragmented analysis incorrectly labeled as &amp;lsquo;madness&amp;rsquo;  Cramer - Civil War is Not a Stupid Thing   Civil war works the other way around, it privatizes politics, transforms local and personal grievances into lethal violence, and endows violence with political meaning that may naturalize into new and enduring identities logic of civil war is to be found on a micro level  Domination of national level cleavages, grassroots dynamics are often percieved merely as their local manifestations   argues that the agency in the violence of civil wars is partially a function of &amp;lsquo;alliance&amp;rsquo; between the center and the periphery that both use the other to their advantage &amp;lsquo;master-narratives&amp;rsquo; can legitmately identify main cleavages, but is usually accorded too much significane &amp;lsquo;actions in civil war&amp;rsquo; are not necssarily politica, and do not always reflect deep ideological polarization  civil war fosters a process of interaction between actors with distinct idenitites and interests it is the convergence between local motives and supralocal that endows civil war with its inttimate character and leads to joint violence that straddles the divide betwen the political and the private, the collective and the individual      </description>
+ From Simpson - War from the Ground Up  posits that mainstream narratives of most civil wars tend to locate violence in terms of macro-level emotions, ideaologies, or cultures. empirical evidence points to a far more complex or fragmented analysis incorrectly labeled as &amp;lsquo;madness&amp;rsquo;  Cramer - Civil War is Not a Stupid Thing   Civil war works the other way around, it privatizes politics, transforms local and personal grievances into lethal violence, and endows violence with political meaning that may naturalize into new and enduring identities logic of civil war is to be found on a micro level  Domination of national level cleavages, grassroots dynamics are often percieved merely as their local manifestations   argues that the agency in the violence of civil wars is partially a function of &amp;lsquo;alliance&amp;rsquo; between the center and the periphery that both use the other to their advantage &amp;lsquo;master-narratives&amp;rsquo; can legitmately identify main cleavages, but is usually accorded too much significane &amp;lsquo;actions in civil war&amp;rsquo; are not necssarily politica, and do not always reflect deep ideological polarization  civil war fosters a process of interaction between actors with distinct idenitites and interests it is the convergence between local motives and supralocal that endows civil war with its intimate character and leads to joint violence that straddles the divide betwen the political and the private, the collective and the individual      </description>
     </item>
     
     <item>
@@ -8695,6 +8800,16 @@ Consnants as Diaphones  Moslawis uses (غ) for ر  moslawi - غاح نغوح bag
       <guid>/posts/kirkuk/</guid>
       <description>Tags: iraq
 -article 140</description>
+    </item>
+    
+    <item>
+      <title>kite power</title>
+      <link>/posts/kite_power/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/kite_power/</guid>
+      <description>electrical engineering
+Makani  https://github.com/google/makani https://storage.googleapis.com/x-prod.appspot.com/files/Makani_TheEnergyKiteReport_Part3.pdf https://storage.googleapis.com/x-prod.appspot.com/files/Makani_TheEnergyKiteReport_Part2.pdf https://archive.org/details/makani-power?&amp;amp;sort=-week&amp;amp;page=2  </description>
     </item>
     
     <item>
@@ -9066,7 +9181,7 @@ First described by Brad Hedlund for Hadoop in 2012, but Google did this earlier 
       <description>Tags: clocks (distributed systems)
 https://developers.google.com/time/smear
  google smears the leap second before and after each leap  https://googleblog.blogspot.com/2011/09/time-technology-and-leaping-seconds.html https://docs.ntpsec.org/latest/leapsmear.html https://packetpushers.net/ntp-leap-smearing-what-is-it/ https://developers.redhat.com/blog/2015/06/01/five-different-ways-handle-leap-seconds-ntp/ https://xkcd.com/2266/ Burnicki, “Leap Second Smearing with NTP.”
-Questions  do emergency alert systems (EAS) use internet timing? what systems failover to internet timing? what services actually rely directly on gps?  https://ilrs.gsfc.nasa.gov/docs/timing/gpsrole.pdf    </description>
+Questions  do emergency alert systems (EAS) use internet timing? what systems failover to internet timing? what services actually rely directly on gps?  https://ilrs.gsfc.nasa.gov/docs/timing/gpsrole.pdf    Facebook wants to remove leap smearing by removing the leap second entirely  https://engineering.fb.com/2022/07/25/production-engineering/its-time-to-leave-the-leap-second-in-the-past/  </description>
     </item>
     
     <item>
@@ -9257,7 +9372,7 @@ GH Super Linter  https://github.blog/2020-06-18-introducing-github-super-linter-
       
       <guid>/posts/linux/</guid>
       <description>Tags: computers
- Currently Linux plumber and hobbiest occupy two different workds  Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros    Tracing  https://jvns.ca/blog/2017/07/05/linux-tracing-systems/ ebpf  Debian perf performance issues  https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=911815  when not linked against libbfd, perf calls out to addr2line for every address lookup, which is infeasible possible solution: https://michcioperz.com/post/slow-perf-script/ patches: https://lore.kernel.org/linux-perf-users/20210909112202.1947499-1-tonyg@leastfixedpoint.com/    Linux Audio  Pipewire: http://pipewire.</description>
+ Currently Linux plumber and hobbiest occupy two different workds  Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros    Crashes  Breakpad and Crashpad from google allow for dump tracing  https://chromium.googlesource.com/breakpad/breakpad/ https://docs.microsoft.com/en-us/windows/win32/debug/minidump-files https://bugzilla.mozilla.org/show_bug.cgi?id=1588530   https://www.instapaper.com/read/1524786035 Linux uses signals to register SIGABRT/BUS/etc By default, signal handlers are called on the same stack where the crash occured, which is fine for most cases execpt a stack overflow Apple computers use Mach exceptions: https://flylib.</description>
     </item>
     
     <item>
@@ -9700,7 +9815,7 @@ animation library for math:
       
       <guid>/posts/mapping/</guid>
       <description>Tags: computers
- https://news.ycombinator.com/item?id=25349195 https://kepler.gl/ - tool to manage and display data  https://medium.com/vis-gl    </description>
+ https://news.ycombinator.com/item?id=25349195 https://kepler.gl/ - tool to manage and display data  https://medium.com/vis-gl    Tools  https://github.com/marceloprates/prettymaps felt.com  </description>
     </item>
     
     <item>
@@ -9791,7 +9906,7 @@ animation library for math:
       
       <guid>/posts/master_s_thesis/</guid>
       <description>Tags: grad school
-Outline - Forming the Present Through Husseiniyya Rituals  Each center chapter follows a single character and tries to focus the lens around them, zooming out to describe the concept Goal is to move towards a theory of a constructed present Starts with the center of the ritual (radood and audience), goes to describing the institutions, then goes to describe how a &amp;ldquo;normal&amp;rdquo; person participates  Introduction  Thesis: rituals as a sight of constructing the present Lead in: evoking the Imam as a nearhuman construction (Johnson - Automatic Religion)  Various rituals of approaching the shrine   One understudied area is the role of the radood Main key is that the majlis with radood is a specific form ritual that binds individual and society, future and past Main questions to answer:  How do ritual participants view themselves?</description>
+New Outline (September 10, 2022)  Similar to old one, but focused on the concept of change start with institutions representing the past, and shaabi representing the future  Introduction  What is a ritual? Literature review on the main ideas  I depart from these because  permanent/recurring pilgrimage (Shikoku pilgrims) looking at people who service pilgrims, and how they see it as a permanent pilgrimage ritualistic voyeurism the confrontation of moral life and actual life create the space and confirm and create the power of religious symbols symbols are imposed yet not seen to be created     In addition, this work serves as a brief overview of a history of Karbala, and it&amp;rsquo;s grapple with politics, militias, religious authority, and pilgrims, as well as an ethnographic account of ritual shaabi  Chapter 1 - The (near but distant) Past - Infrastructures  Institutions of mokwebs, radoods, and their history Main character  Ali Qazwini Ali the radood school teacher   Authority is mixed here, use this chapter to explain how political (hashd, religious authority, history) The physical space of the shrines, where rituals perform next to each other, where funerals are next to other rituals, children running around as others bury the body  graduation ceremonies as well   Radood, poet, mowkeb, radat  radoods work with certain poets  each pmowkeb has a few poets that stay with them and write anywhere there is a shrine there is a radat, in kathimiya, in najaf taraf abassiyya is famous for having political mowkebs, even though everyone says they&amp;rsquo;re political   hasan kathim interview here   actual ritual performance in bayn haramiin, with signs, then howdij, then radat, and then ends with a latm tatbir and it&amp;rsquo;s nature how does the hashd and military feed into this?</description>
     </item>
     
     <item>
@@ -10177,7 +10292,7 @@ http://www.eecs.harvard.edu/~michaelm/NEWWORK/postscripts/twosurvey.pdf https://
       
       <guid>/posts/ml/</guid>
       <description>Tags: Computers, math
-Failures  Zillow winds down their ml model house flipping scheme: https://www.prnewswire.com/news-releases/zillow-group-reports-third-quarter-2021-financial-results--shares-plan-to-wind-down-zillow-offers-operations-301414460.html?tc=eml_cleartime  ML Tools  visualizer: https://github.com/lutzroeder/netron  </description>
+Failures  Zillow winds down their ml model house flipping scheme: https://www.prnewswire.com/news-releases/zillow-group-reports-third-quarter-2021-financial-results--shares-plan-to-wind-down-zillow-offers-operations-301414460.html?tc=eml_cleartime  ML Tools  visualizer: https://github.com/lutzroeder/netron  Tree Based Models  https://arxiv.org/abs/2207.08815  </description>
     </item>
     
     <item>
@@ -10569,7 +10684,7 @@ Introduction  1990&amp;rsquo;s DDR was largely used to deal with statutory and i
       
       <guid>/posts/muqtada_al_sadr/</guid>
       <description>Tags: iraq
-Leader of badr</description>
+Sayara Salaam </description>
     </item>
     
     <item>
@@ -10990,7 +11105,8 @@ integrated ddr standards has helped fusion of DDR with wider recovery and recons
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/ngo/</guid>
-      <description>Tags: root</description>
+      <description>Tags: root
+NGO&amp;rsquo;s as newsmakers  Journalists cite NGO&amp;rsquo;s, NGO&amp;rsquo;s cite the prestige at being in the &amp;ldquo;paper of record&amp;rdquo;, which creates an iron feedback loop NGO&amp;rsquo;s hire workers, although the fault here is the danger of NGO intentions &amp;ldquo;news is where the journalists are&amp;rdquo; -&amp;gt; &amp;ldquo;news is where the NGO&amp;rsquo;s are&amp;rdquo;  good for both, it&amp;rsquo;s easier for work on them   NGO&amp;rsquo;s are inherently political, which allows smuggling of politics into news  is there objective news though?</description>
     </item>
     
     <item>
@@ -11209,7 +11325,7 @@ Works with TCP over any network card, requires Mellanox for RoCE (NVMEoF voer UD
       
       <guid>/posts/nyc/</guid>
       <description>united states
-Coworking Spaces  https://www.thequeensboro.com/the-q-home-office ($20 a day, 9-5) Rubeinstein Atrium (closed as of jan 22 2022) - http://www.aboutlincolncenter.org/education-community/david-rubenstein-atrium-at-lincoln-center NY Society Library - https://www.nysoclib.org/ https://www.theresortlic.com/ - Virtual only? https://brooklynwriters.com/become-a-member/ http://www.writersroom.org/membership-fees  </description>
+Coworking Spaces  https://www.thequeensboro.com/the-q-home-office ($20 a day, 9-5) Rubeinstein Atrium (closed as of jan 22 2022) - http://www.aboutlincolncenter.org/education-community/david-rubenstein-atrium-at-lincoln-center NY Society Library - https://www.nysoclib.org/ https://www.theresortlic.com/ - Virtual only? https://brooklynwriters.com/become-a-member/ http://www.writersroom.org/membership-fees  Steam  https://www.youtube.com/watch?v=IDLkOWW0_xg  </description>
     </item>
     
     <item>
@@ -11299,6 +11415,26 @@ Water supply tunnel, largest construction project in NYC history: https://en.wik
       <guid>/posts/on_digital_humanities_programs/</guid>
       <description>Tags: drafts
  what are schools doing? are we building extremely complex systems on top of shakey foundations? &amp;ldquo;two cultures&amp;rdquo; are social sciences falisfible?  sociology  criminology is garbage psycology is terrible   linguistics  much of lingusitics is complex built on foundations that map poorly to the real world     is &amp;ldquo;digital&amp;rdquo; part of a tool to make humantities students more marketable?  if so, we&amp;rsquo;re preparing a ton of poor software engineers   is &amp;ldquo;digital&amp;rdquo; part of making theories falisibible?</description>
+    </item>
+    
+    <item>
+      <title>on doing too much</title>
+      <link>/posts/on_doing_too_much/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/on_doing_too_much/</guid>
+      <description>writing
+I think I do too much. I try to do work, I try to engage with tech, I try to do research on shia rituals, I try to do research on Anfal, I try to do volunteering with airwars, and I try to keep a good social life. I try to learn arabic, I try to run this software consulting thing, and I try to keep in shape, and I try to do all sorts of stuff.</description>
+    </item>
+    
+    <item>
+      <title>on funerals</title>
+      <link>/posts/on_funerals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/on_funerals/</guid>
+      <description>drafts
+Why am I in karbala? Viewing funeral and rituals. Coming to Iraq, why stay here? Why listen and go through all this? Why see the disfigured in hopes of seeing the holy? Why ask questions, why see people who go through tatbir and aim at the verge of death?</description>
     </item>
     
     <item>
@@ -11567,9 +11703,7 @@ Need to start using org-mode ID links</description>
       
       <guid>/posts/org_page/</guid>
       <description>Tags: org-mode
- Hosting images:   Create &amp;ldquo;assets&amp;rdquo; folder at root
-  use file syntax:
-[[file:../assets/images/boost-bind2.png]]     </description>
+ Hosting images:  Create &amp;ldquo;assets&amp;rdquo; folder at root use file syntax: [[file:../assets/images/boost-bind2.png]]     </description>
     </item>
     
     <item>
@@ -11579,9 +11713,7 @@ Need to start using org-mode ID links</description>
       
       <guid>/posts/org_roam/</guid>
       <description>Tags: org-mode
-Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download https://github.com/org-roam/org-roam-server/blob/master/org-roam-server.el  Graphs   Groups - https://org-roam.discourse.group/t/analysing-the-semantic-network/56
-  Example:
-## Fetch data library(DBI) # Sqlite con &amp;lt;- dbConnect(RSQLite::SQLite(), &amp;#34;org-roam.db&amp;#34;) dbListTables(con) links &amp;lt;- dbSendQuery(con, &amp;#34;SELECT [from], [to] FROM links&amp;#34;) links &amp;lt;- dbFetch(links) titles &amp;lt;- dbSendQuery(con, &amp;#34;SELECT * FROM titles&amp;#34;) titles &amp;lt;- dbFetch(titles) dbDisconnect(con) ## Create edge list [from - to] with clean labels library(dplyr) # Transformation library(stringr) # String manipulation edges &amp;lt;- inner_join(links, titles, by = c(&amp;#34;from&amp;#34; = &amp;#34;file&amp;#34;)) %&amp;gt;% inner_join(titles, by = c(&amp;#34;to&amp;#34; = &amp;#34;file&amp;#34;)) %&amp;gt;% select(From = titles.</description>
+Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.com/abo-abo/org-download https://github.com/org-roam/org-roam-server/blob/master/org-roam-server.el  Graphs  Groups - https://org-roam.discourse.group/t/analysing-the-semantic-network/56 Example: ## Fetch data library(DBI) # Sqlite con &amp;lt;- dbConnect(RSQLite::SQLite(), &amp;#34;org-roam.db&amp;#34;) dbListTables(con) links &amp;lt;- dbSendQuery(con, &amp;#34;SELECT [from], [to] FROM links&amp;#34;) links &amp;lt;- dbFetch(links) titles &amp;lt;- dbSendQuery(con, &amp;#34;SELECT * FROM titles&amp;#34;) titles &amp;lt;- dbFetch(titles) dbDisconnect(con) ## Create edge list [from - to] with clean labels library(dplyr) # Transformation library(stringr) # String manipulation edges &amp;lt;- inner_join(links, titles, by = c(&amp;#34;from&amp;#34; = &amp;#34;file&amp;#34;)) %&amp;gt;% inner_join(titles, by = c(&amp;#34;to&amp;#34; = &amp;#34;file&amp;#34;)) %&amp;gt;% select(From = titles.</description>
     </item>
     
     <item>
@@ -12180,6 +12312,16 @@ https://www.usenix.org/conference/nsdi20/presentation/brooker</description>
       <description>Tags: books, finance, economics
 Introduction  Frames the discussion around wealth issues Attempts to pull together data  world top incomes database    History  Talks about malthus and his consideration of too many peasants arthur young david ricardo marx and the prediction of industrial aggregate wealth simon kuznets  Conclusions   Piketty states that inequality is not necessarily an unstable state
  path dependency exists, inequality can reduce over time or increase over time    also states that modern american economists are too infatuated with mathematics and physics</description>
+    </item>
+    
+    <item>
+      <title>pilgrimage sites</title>
+      <link>/posts/pilgrimage_sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pilgrimage_sites/</guid>
+      <description>religion
+christians  Santiago de Compostela (spain)  site of spanish christian resistance against islam https://whc.unesco.org/en/list/347    catholics Medjugorje (bosnia)  https://en.wikipedia.org/wiki/Medjugorje  japan Shikoku iraq karbala sufism graves in baghdad? indonesia sufism graves? </description>
     </item>
     
     <item>
@@ -12894,7 +13036,8 @@ lectures:
       
       <guid>/posts/queueing_theory/</guid>
       <description>Tags: computers
-Little&amp;rsquo;s Law L = λ*w average number of items in queue is the average rate new items arrive * average time in queue</description>
+Little&amp;rsquo;s Law L = λ*w average number of items in queue is the average rate new items arrive * average time in queue
+Books  https://www.cs.cmu.edu/~harchol/PerformanceModeling/book.html  </description>
     </item>
     
     <item>
@@ -15094,6 +15237,16 @@ Summer FLAS:  Letter of rec: https://docs.google.com/document/d/1wLwNCglIpKSksGB
     </item>
     
     <item>
+      <title>superintelligence as an infohazard</title>
+      <link>/posts/superintelligence_as_an_infohazard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/superintelligence_as_an_infohazard/</guid>
+      <description>Tags: ml
+ https://idlewords.com/talks/superintelligence.htm Superintelligence feeds into a megolomaniac escapism of projecting problems outward and notions of gradiosity, because it attempts to structure the world in a way that can be surveilled  new dark age arguments    </description>
+    </item>
+    
+    <item>
       <title>supply chain management</title>
       <link>/posts/supply_chain_management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -15417,6 +15570,17 @@ What Are?   https://blog.cloudflare.com/syn-packet-handling-in-the-wild/
     </item>
     
     <item>
+      <title>tech reporting is to user centric</title>
+      <link>/posts/tech_reporting_is_to_user_centric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tech_reporting_is_to_user_centric/</guid>
+      <description>drafts
+most tech reporting seems to focus on users
+ 996 reporting is good  still falls into the social trap   https://lwn.net/Articles/903597/  </description>
+    </item>
+    
+    <item>
       <title>tech working</title>
       <link>/posts/tech_working/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -15528,7 +15692,7 @@ Chrome V8 detects text boundaries with:
       
       <guid>/posts/textbooks/</guid>
       <description>Tags: grad school
- https://open.umn.edu/opentextbooks/  </description>
+ https://open.umn.edu/opentextbooks/  Survey Textbooks  Princeton readings in CRC press  </description>
     </item>
     
     <item>
@@ -15722,9 +15886,7 @@ I disagree, this is at play with how people want USO to be a permanent oil fund,
       <guid>/posts/time_and_consistency_as_a_universal_currency/</guid>
       <description>drafts
   https://dergigi.com/2021/01/14/bitcoin-is-time/
-  graves of tarim, the merchant class of Hadramis and Chinese gain power by using cultural arbitrage: their consistent set of practices and mutual respect cushioned the different economic systems
- chinese businessman trope, bamboo network    currency as money as stored time - locke?
-  How do the sayyids reproduce their social order? they allow for specific marriage principles</description>
+   Timekeeping devices have trans­formed civiliza­tions more than once. As Lewis Mumford pointed out in 1934: “The clock, not the steam-engine, is the key-machine of the modern indus­trial age.”        graves of tarim, the merchant class of Hadramis and Chinese gain power by using cultural arbitrage: their consistent set of practices and mutual respect cushioned the different economic systems</description>
     </item>
     
     <item>
@@ -16829,7 +16991,7 @@ Lebanese Druze leader</description>
       
       <guid>/posts/waqf/</guid>
       <description>Tags: islamic jurisprudence
- https://www.sistani.org/english/book/48/2367/  </description>
+ https://www.sistani.org/english/book/48/2367/  Saddam Mosque in Hilla </description>
     </item>
     
     <item>
@@ -17072,6 +17234,18 @@ Part 1: Political Infrastructure  Consists of public sector institutions that fa
       <guid>/posts/winograd_schemas/</guid>
       <description>Tags: ml
  many different formats rely on tricky sentences (ambigious sentences where pronous are difficult) repeatedly proposed as an nlu-oriented alternative to the turing test no single standard dataset, but many small collections, each with a different format  </description>
+    </item>
+    
+    <item>
+      <title>wkhtmltopdf</title>
+      <link>/posts/wkhtmltopdf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wkhtmltopdf/</guid>
+      <description>computers
+Page break issues with tables:
+ https://stackoverflow.com/questions/13516534/how-to-avoid-page-break-inside-table-row-for-wkhtmltopdf https://github.com/wkhtmltopdf/wkhtmltopdf/issues/4304 https://github.com/wkhtmltopdf/wkhtmltopdf/issues/1627 https://github.com/wkhtmltopdf/wkhtmltopdf/issues/1841 https://github.com/wkhtmltopdf/wkhtmltopdf/issues/3058 https://github.com/wkhtmltopdf/wkhtmltopdf/issues/3208 https://github.com/wkhtmltopdf/wkhtmltopdf/issues/3404 https://github.com/wkhtmltopdf/wkhtmltopdf/issues/4299  Possible solutions:
+tr { page-break-inside: avoid !important; } Sometimes this doesn&amp;rsquo;t work, so you&amp;rsquo;ll have to manually adjust the page size and print tables</description>
     </item>
     
     <item>
@@ -17333,6 +17507,17 @@ Sources  https://www.instapaper.com/read/1308681693 https://www.instapaper.com/r
     </item>
     
     <item>
+      <title>you&#39;re allowed to do whatever</title>
+      <link>/posts/you_re_allowed_to_do_whatever/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/you_re_allowed_to_do_whatever/</guid>
+      <description>drafts
+You&amp;rsquo;re allowed to do whatever you want. That&amp;rsquo;s it. Go hike the PCT. Go take up a cause. Go move to another country.
+ https://twitter.com/atroyn/status/1559993601119199232 https://milan.cvitkovic.net/writing/things_youre_allowed_to_do/ https://awesomekling.github.io/I-quit-my-job-to-focus-on-SerenityOS-full-time/ https://gexp.no/it-wasnt-for-nothing.html https://news.ycombinator.com/item?id=32506359  </description>
+    </item>
+    
+    <item>
       <title>Young - Ultralearning</title>
       <link>/posts/young_ultralearning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -17440,6 +17625,16 @@ ordinary zakat given during any time</description>
       
       <guid>/posts/zakho/</guid>
       <description>Northern city in KRG/iraqi kurdistan</description>
+    </item>
+    
+    <item>
+      <title>Zaman - Islamic Traditions of Refuge in Iraq and Syria</title>
+      <link>/posts/zaman_islamic_traditions_of_refuge_in_iraq_and_syria/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/zaman_islamic_traditions_of_refuge_in_iraq_and_syria/</guid>
+      <description>books, iraq, syria
+Introduction Prediction  Refuge and religion relate because religion forms communities that can be relied on Bonds of kingship and shared universality  Actually  Similar, unclear what the role is, but discusses the paradox of refugees  Neoliberal system foists issues upon people, but also creates a certain freedom to refugee networks Similar, church networks provide cases of access   Pretty similar, talks about religion as a shared background that opens connections, as well as a separate zone the NGO&amp;rsquo;s can tap into  </description>
     </item>
     
     <item>
