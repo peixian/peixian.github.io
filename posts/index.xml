@@ -1068,7 +1068,8 @@ Challenges readers to move away from a Middle East centered approach, including 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/anthropology/</guid>
-      <description>social sciences</description>
+      <description>social sciences
+Victor Turner  Wrote about how pilgrimage is described as &amp;ldquo;out there&amp;rdquo; in contrast to home   </description>
     </item>
     
     <item>
@@ -5759,6 +5760,16 @@ Examples  https://github.com/WeOpenly/localgov.fyi  Tutorials  https://www.gatsb
       
       <guid>/posts/gaussian_mixture_model/</guid>
       <description>Tags: gaussian distribution</description>
+    </item>
+    
+    <item>
+      <title>Gauvain - Salafi Ritual Purity: In the Presence of God</title>
+      <link>/posts/gauvain_salafi_ritual_purity_in_the_presence_of_god/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gauvain_salafi_ritual_purity_in_the_presence_of_god/</guid>
+      <description>books, rituals, islam
+[1] R. Gauvain, Salafi ritual purity: in the presence of God. New York, NY: Routledge, 2013.</description>
     </item>
     
     <item>
@@ -12320,7 +12331,7 @@ Introduction  Frames the discussion around wealth issues Attempts to pull togeth
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/pilgrimage_sites/</guid>
-      <description>religion
+      <description>religion, rituals
 christians  Santiago de Compostela (spain)  site of spanish christian resistance against islam https://whc.unesco.org/en/list/347    catholics Medjugorje (bosnia)  https://en.wikipedia.org/wiki/Medjugorje  japan Shikoku iraq karbala sufism graves in baghdad? indonesia sufism graves? </description>
     </item>
     
@@ -13295,6 +13306,20 @@ Grid Acceleration  Speeding up performance by analyzing objects that &amp;ldquo;
       <guid>/posts/read_the_damn_error_message_draft/</guid>
       <description>Tags: drafts
  Read the damn error message walk through reading an error message in python how do stack traces work? don&amp;rsquo;t jump to a conclusion - cantrill your tools with make you more sad https://gist.github.com/abdulrahimq/c6de8c2b53e1201b876ec5c693ce23aa check the file  is it a library? was it working before? it&amp;rsquo;s probably not your code   check from the bottom up you have to use your brain start with the actual error your system is the one behaving pathologically, not you half mindset, half technical http://cs.</description>
+    </item>
+    
+    <item>
+      <title>Reader and Shultz - Pilgrims Until We Die: Unending Pilgrimage in Shikoku</title>
+      <link>/posts/reader_and_shultz_pilgrims_until_we_die_unending_pilgrimage_in_shikoku/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/reader_and_shultz_pilgrims_until_we_die_unending_pilgrimage_in_shikoku/</guid>
+      <description>rituals, japan
+[1] I. Reader and J. Shultz, Pilgrims Until We Die: Unending Pilgrimage in Shikoku, 1st ed. Oxford University Press, 2021. doi: 10.1093/oso/9780197573587.001.0001.
+Notes   Focuses on how eternal pilgrimage is understudied
+  Linkages to karbala and people there, performing mowkebs as a ritual
+  Uses the idea of &amp;ldquo;permanent pilgrims&amp;rdquo;
+ “We argue that Shikoku should be seen not as a unique outlier but as a manifestation of a potentially recurrent phenomenon, but one that has been rather overlooked in pilgrimage studies—namely repetition, long-term, temporally unbound, and unending pilgrimage engagement.</description>
     </item>
     
     <item>
