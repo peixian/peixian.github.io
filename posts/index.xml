@@ -131,7 +131,7 @@ Differences in migration and nakba</description>
     </item>
     
     <item>
-      <title>a conflict time forgot</title>
+      <title>a conflict time forgot (Western Sahara and Maurtania)</title>
       <link>/posts/a_conflict_time_forgot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -287,7 +287,8 @@ Quick adjustment of Turkish workers to labor rights despite their rural backgrou
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/actor_model/</guid>
-      <description>programming pattern for distributed systems, led to innovations such as erlang</description>
+      <description>programming pattern for distributed systems, led to innovations such as erlang
+ By treating a single actor as the primitive and message passing and inboxes, it allows a more inherently concurrent design  </description>
     </item>
     
     <item>
@@ -317,7 +318,7 @@ I want to add two interrelated concepts to the pile of actor-network theory read
       
       <guid>/posts/adam_optimizer/</guid>
       <description>Tags: ml
- https://www.fast.ai/2018/07/02/adam-weight-decay/  </description>
+ https://www.fast.ai/2018/07/02/adam-weight-decay/ Notably keeps track of momentum, the pace at which we&amp;rsquo;re doing gradient descent, and RMSP, which tried to improve adagrad.  </description>
     </item>
     
     <item>
@@ -328,7 +329,7 @@ I want to add two interrelated concepts to the pile of actor-network theory read
       <guid>/posts/adamcyzk_twenty_years_of_protection_of_civilians_at_the_un_security_council/</guid>
       <description>Tags: papers, un and global governance lecture 4
 Adamczyk, Sarah. “Twenty Years of Protection of Civilians at the UN Security Council,” n.d., 13.
- Talks about how the UNSC has engaged with the PoC agenda 85% of casualties in modern wars are civs OCHA has lead responsiblity in drafting un sec general&amp;rsquo;s reports PoC mandates have increased substanially between 2009 and 2013 Troops still struggle over what is PoC and how to priortize it UN states are often unwilling to discuss the shortcomings and challenges talks about how reporting mechanisms must be much better and stronger  </description>
+ Talks about how the UNSC has engaged with the PoC agenda 85% of casualties in modern wars are civs OCHA has lead responsiblity in drafting un sec general&amp;rsquo;s reports PoC mandates have increased substanially between 2009 and 2013 Troops still struggle over what is PoC and how to priortize it UN states are often unwilling to discuss the shortcomings and challenges talks about how reporting mechanisms must be much better and stronger notes that consistent tracking of civilian casualites is not done across missions  </description>
     </item>
     
     <item>
@@ -349,7 +350,8 @@ Little attention has been paid to relationship between meotions and nationalism.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/adil_abdul_mahdi/</guid>
-      <description>Tags: iraqi prime minister, people</description>
+      <description>Tags: iraqi prime minister, people
+PM during the time of tishriin, ended up resigning as a result, succeeded by mustafa al-kadhimi</description>
     </item>
     
     <item>
@@ -358,7 +360,9 @@ Little attention has been paid to relationship between meotions and nationalism.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/adjacency_lists/</guid>
-      <description>Tags: algorithms</description>
+      <description>Tags: algorithms
+Ways to keep track of neighbors in a graph, you represent the graph by simply keeping a KV store similar to
+   Node Neighbors     A &amp;lt;B, C&amp;gt;    </description>
     </item>
     
     <item>
@@ -368,7 +372,8 @@ Little attention has been paid to relationship between meotions and nationalism.
       
       <guid>/posts/adnan_al_asadi/</guid>
       <description>Tags: iraqi parliment
-Ally of nouri al-maliki</description>
+Ally of nouri al-maliki, still currently a member of the Iraqi parliment
+ https://www.linkedin.com/in/adnan-al-asadi-749176101?originalSubdomain=iq  </description>
     </item>
     
     <item>
@@ -378,7 +383,8 @@ Ally of nouri al-maliki</description>
       
       <guid>/posts/ads_cft/</guid>
       <description>Tags: string theory
-https://en.wikipedia.org/wiki/AdS/CFT_correspondence</description>
+https://en.wikipedia.org/wiki/AdS/CFT_correspondence
+Conjectured relationship between string theory and m theory</description>
     </item>
     
     <item>
@@ -388,7 +394,7 @@ https://en.wikipedia.org/wiki/AdS/CFT_correspondence</description>
       
       <guid>/posts/adversarial_nli/</guid>
       <description>Tags: nli, datasets
- Attempts to explicitly difficult to guess based on only the hypothesis Same creation as Multi-Genre NLI (MNLI), but annotators can only submit an example if a bert-style model gets it wrong BERT actually does pretty well as NLI, so the dataset is largely with tricky cases  </description>
+ Attempts to explicitly difficult to guess based on only the hypothesis Same creation as Multi-Genre NLI (MNLI), but annotators can only submit an example if a bert-style model gets it wrong BERT actually does pretty well as NLI, so the dataset is largely with tricky cases  Notes September 24 - 2022  How as ANLI done recently with GPT3?  </description>
     </item>
     
     <item>
@@ -397,7 +403,8 @@ https://en.wikipedia.org/wiki/AdS/CFT_correspondence</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/advisory_group_of_experts_age/</guid>
-      <description>Tags: un</description>
+      <description>Tags: un
+Solicitied by the UN for peace operations reform</description>
     </item>
     
     <item>
@@ -15925,6 +15932,15 @@ https://arxiv.org/pdf/1906.10860.pdf</description>
     </item>
     
     <item>
+      <title>tishriin</title>
+      <link>/posts/tishriin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tishriin/</guid>
+      <description>iraqi political parties</description>
+    </item>
+    
+    <item>
       <title>toby dodge/bassel salloukh talk (2020-12-22)</title>
       <link>/posts/toby_dodge_bassel_salloukh_talk_2020_12_22/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -17064,7 +17080,8 @@ Neoliberalism has this interesting way of making us all the fruit of the poisono
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/web/</guid>
-      <description>Tags: computers</description>
+      <description>Tags: computers
+Apache WebDav  Make sure to check /var/log/apache2/error.log for authentication issues Also make sure to check that the authentication scheme is correct, sometimes webdav is using Basic Auth, zotero offical mobile and desktop apps support digest auth  </description>
     </item>
     
     <item>
