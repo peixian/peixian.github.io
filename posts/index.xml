@@ -4747,7 +4747,7 @@ Self referantial paradox on
       <guid>/posts/erlang/</guid>
       <description>Tags: programming languages
 -https://erlangexplained.com/index.php/about
- https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/  Erlang/OTP 24 Highlights  https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code!  Erlang Projects  https://github.com/apache/couchdb  Interop  https://www.erlang.org/doc/tutorial/introduction.html  Rustler  rust bridge for erlang https://github.com/rusterlium/rustler  </description>
+ https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/  Erlang/OTP 24 Highlights  https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code!  Erlang Projects  https://github.com/apache/couchdb  Interop  https://www.erlang.org/doc/tutorial/introduction.html  Rustler  rust bridge for erlang https://github.com/rusterlium/rustler  Erlang Scaling Limitations  https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf  </description>
     </item>
     
     <item>
