@@ -4792,6 +4792,15 @@ http://blog.erlang.org/the-road-to-the-jit/</description>
     </item>
     
     <item>
+      <title>erlang pc2 postmortem</title>
+      <link>/posts/erlang_pc2_postmortem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/erlang_pc2_postmortem/</guid>
+      <description>drafts, postmortems and outages, erlang, elixir  This is a description of a BEAM VM1 outage that occurred recently. I feel like there are not very many Erlang PMs out there, especially with Erlang clusters at scale, so hopefully, this postmortem serves as one of the few examples to learn from. We experienced a service degradation that could&amp;rsquo;ve amounted to an outage, but was solved with enough time to prevent an outage.</description>
+    </item>
+    
+    <item>
       <title>ESIM model</title>
       <link>/posts/esim_model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
