@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.87dbe53f82c0cb0b877be2b8f293a77741ff3617312484b1768ceae8fc2758a3.js" integrity="sha256-h9vlP4LAywuHe&#43;K48pOnd0H/NhcxJISxdozq6PwnWKM="></script>
+<script defer src="/en.search.min.9e23687ee19fad0a002348ccd7a627584edff90eaf033e89fac1a92756c05508.js" integrity="sha256-niNofuGfrQoAI0jM16YnWE7f&#43;Q6vAz6J&#43;sGpJ1bAVQg="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -43,7 +43,60 @@
 <li><a href="https://k8s.af/">https://k8s.af/</a></li>
 <li><a href="https://deploy.live/blog/kubernetes-networking-problems-due-to-the-conntrack/">https://deploy.live/blog/kubernetes-networking-problems-due-to-the-conntrack/</a></li>
 </ul>
+<h2 id="tracing">Tracing</h2>
+<ul>
+<li>
+<p>Need</p>
+<blockquote>
+<p>securityContext:
+capabilities:
+add:</p>
+<ul>
+<li>SYS_PTRACE</li>
+</ul>
+</blockquote>
+<p>added to the pod to allow for strace and ptrace to work.
+Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
+<span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+<span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Pod</span>
+<span style="color:#f92672">metadata</span>:
+  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">&lt;POD_NAME&gt;</span>
+  <span style="color:#f92672">namespace</span>: <span style="color:#ae81ff">default</span>
+<span style="color:#f92672">spec</span>:
+  <span style="color:#f92672">containers</span>:
+    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">&lt;IMAGE&gt;</span>
+    <span style="color:#f92672">imagePullPolicy</span>: <span style="color:#ae81ff">IfNotPresent</span>
+    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">web</span>
+    <span style="color:#f92672">command</span>: [<span style="color:#e6db74">&#34;/bin/sleep&#34;</span>]
+    <span style="color:#f92672">args</span>: [<span style="color:#e6db74">&#34;1000000&#34;</span>]
+    <span style="color:#f92672">securityContext</span>:
+      <span style="color:#f92672">capabilities</span>:
+        <span style="color:#f92672">add</span>:
+<span style="color:#ae81ff">​        - SYS_PTRACE</span>
+    <span style="color:#f92672">ports</span>:
+<span style="color:#f92672">​    - containerPort</span>: <span style="color:#ae81ff">80</span>
+      <span style="color:#f92672">name</span>: <span style="color:#ae81ff">http</span>
+      <span style="color:#f92672">protocol</span>: <span style="color:#ae81ff">TCP</span>
+    <span style="color:#f92672">resources</span>:
+      <span style="color:#f92672">limits</span>:
+        <span style="color:#f92672">cpu</span>: <span style="color:#e6db74">&#34;40&#34;</span>
+        <span style="color:#f92672">memory</span>: <span style="color:#ae81ff">100G</span>
+      <span style="color:#f92672">requests</span>:
+        <span style="color:#f92672">cpu</span>: <span style="color:#e6db74">&#34;38&#34;</span>
+        <span style="color:#f92672">memory</span>: <span style="color:#ae81ff">100G</span>
+    <span style="color:#f92672">terminationMessagePath</span>: <span style="color:#ae81ff">/dev/termination-log</span>
+    <span style="color:#f92672">terminationMessagePolicy</span>: <span style="color:#ae81ff">File</span>
+    <span style="color:#f92672">volumeMounts</span>:
+<span style="color:#f92672">​    - mountPath</span>: <span style="color:#ae81ff">/var/run/secrets/kubernetes.io/serviceaccount</span>
+      <span style="color:#f92672">name</span>: <span style="color:#ae81ff">kube-api-access-qtpks</span>
+      <span style="color:#f92672">readOnly</span>: <span style="color:#66d9ef">true</span>
 
+</code></pre></div></li>
+</ul>
+<h2 id="kubernetes-get-all-logs-for-pods-of-a-specific-type">Kubernetes get all logs for pods of a specific type</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">kubectl get pods -o wide |  rg <span style="color:#e6db74">&#39;&lt;POD_NAME&gt; &#39;</span> | rg <span style="color:#e6db74">&#39;0/1&#39;</span> --fixed-strings | rg <span style="color:#e6db74">&#39;&lt;POD_NAME&gt;.{20}\s&#39;</span> -o | cut -d <span style="color:#e6db74">&#39; &#39;</span> -f <span style="color:#ae81ff">1</span> | xargs -L <span style="color:#ae81ff">1</span> kubectl logs --tail <span style="color:#ae81ff">10</span>
+</code></pre></div>
           
 
 
