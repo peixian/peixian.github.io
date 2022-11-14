@@ -4231,7 +4231,8 @@ Useful for when you know what success looks like, but cannot achieve it (such as
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/drafts/</guid>
-      <description>Tags: root</description>
+      <description>Tags: root
+Node used for organizing drafts. Some of these should probably be re-surfaced later through time.</description>
     </item>
     
     <item>
@@ -11764,7 +11765,7 @@ Org-Download  https://github.com/syl20bnr/spacemacs/issues/8479 https://github.c
       <description>Tags: drafts
 Organization:
  GTD via Things Planning my morning in my calendar every day 7:30-9:00 is arabic all the time Read later via Instapaper Archiving via pinboard References via Zotero  Zotfile for file syncing   Book tracking in goodreads Org-roam ties it all together  Goals:
- Work on multiple projects at the same time Deep work on specific tasks, but work on multiple projects Isolate the micro, decentralize the macro  </description>
+ Work on multiple projects at the same time Deep work on specific tasks, but work on multiple projects Isolate the micro, decentralize the macro  Nov 13th, 2022  Revisiting this, this is kind of funny.</description>
     </item>
     
     <item>
@@ -11831,7 +11832,7 @@ Notes that the 2008 war between nouri al-maliki and Muqtada al-Sadr led to al-sa
       
       <guid>/posts/20200419210105-overemphasis_of_the_discrete_blog_post/</guid>
       <description>Tags: drafts
-Matt Might stated that computer programmers tend to optimize for the discrete past the point of usefulness. Random stuff, each new piece of technology is a shiny gadget. Even worse is the intention of only using old gadgets to retrofit and quanitfy each part of our lives</description>
+ Matt Might stated that computer programmers tend to optimize for the discrete past the point of usefulness. Random stuff, each new piece of technology is a shiny gadget. Even worse is the intention of only using old gadgets to retrofit and quanitfy each part of our lives  Notes Nov 13th, 2022  Re-visiting this, it&amp;rsquo;s important to think about how it&amp;rsquo;s usually easier to see discrete things than continous ones.</description>
     </item>
     
     <item>
