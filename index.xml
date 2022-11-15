@@ -3238,8 +3238,8 @@ https://github.com/hanickadot/compile-time-regular-expressions</description>
       
       <guid>/posts/20200419124208-compilers/</guid>
       <description>Tags: Computers
-Stephen Yegge Compilers matter because it Compiler Construction is the first course that brings together everything you learned before. Many things can be generalized into a stream symbol problem.
- https://www.instapaper.com/read/1295231133 Gentle, yet insistent executive summary: If you don&amp;rsquo;t know how compilers work, then you don&amp;rsquo;t know how computers work. If you&amp;rsquo;re not 100% sure whether you know how compilers work, then you don&amp;rsquo;t know how they work.  Midends A compiler midend sits between the frontend (which generates the IR), and the backend (which generates the machine code).</description>
+ffmath  https://github.com/moyix/2_ffast_2_furious  Stephen Yegge Compilers matter because it Compiler Construction is the first course that brings together everything you learned before. Many things can be generalized into a stream symbol problem.
+ https://www.instapaper.com/read/1295231133 Gentle, yet insistent executive summary: If you don&amp;rsquo;t know how compilers work, then you don&amp;rsquo;t know how computers work. If you&amp;rsquo;re not 100% sure whether you know how compilers work, then you don&amp;rsquo;t know how they work.</description>
     </item>
     
     <item>
@@ -13476,7 +13476,7 @@ Outage Driven Development I&amp;rsquo;ve worked at two startups and one large co
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/regex/</guid>
-      <description> https://regex101.com/ can also use -r or -E in sed  </description>
+      <description> https://regex101.com/ can also use -r or -E in sed  PCRE Oniguruma Regex  docs: https://github.com/kkos/oniguruma/blob/master/doc/RE library for regex that has features from many different regular regexes jq has some additional docs at https://github.com/stedolan/jq/wiki/Docs-for-Oniguruma-Regular-Expressions-(RE.txt)  </description>
     </item>
     
     <item>
@@ -14588,7 +14588,8 @@ Finance Essentials for Small Businesses  All businesses start small Often killed
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/sociology/</guid>
-      <description>Tags: root</description>
+      <description>Tags: root
+ https://www.gwern.net/docs/sociology/1987-rossi#introduction  </description>
     </item>
     
     <item>
@@ -17263,6 +17264,16 @@ Apache WebDav  Make sure to check /var/log/apache2/error.log for authentication 
       
       <guid>/posts/e_activity_4_who_bears_responsibility_for_refugee_violence_lebanon/</guid>
       <description>Lebanon Many migrants suffer violence in a multitude of forms on their path to their ultimate destination. Along the way, observers categorize migrants between two poles: either the migrant as &amp;ldquo;refugee&amp;rdquo; or a migrant as an &amp;ldquo;economic migrant&amp;rdquo;. This dual classification, with significant grey area in between, affords people different rights and treatment along the way. The term &amp;ldquo;refugee&amp;rdquo; has legal standing in some countries and carries certain rights and access to international institutions, but implies a loss of agency.</description>
+    </item>
+    
+    <item>
+      <title>where have the iraqi thinkers gone?</title>
+      <link>/posts/where_have_the_iraqi_thinkers_gone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/where_have_the_iraqi_thinkers_gone/</guid>
+      <description>drafts
+where are all the iraqi thinkers? why are we trapped in ali al-wardi?</description>
     </item>
     
     <item>
