@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.922fae6f51b765c268663422f675fe0301a19587df3d442065e953517c204bf6.js" integrity="sha256-ki&#43;ub1G3ZcJoZjQi9nX&#43;AwGhlYffPUQgZelTUXwgS/Y="></script>
+<script defer src="/en.search.min.269e8d776315ec203c322c4edd002023b7d17f9f742fa462e4ec95ba4fa522dc.js" integrity="sha256-Jp6Nd2MV7CA8MixO3QAgI7fRf590L6Ri5OyVuk&#43;lItw="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -96,7 +96,12 @@ Example:</p>
 </ul>
 <h2 id="kubernetes-get-all-logs-for-pods-of-a-specific-type">Kubernetes get all logs for pods of a specific type</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">kubectl get pods -o wide |  rg <span style="color:#e6db74">&#39;&lt;POD_NAME&gt; &#39;</span> | rg <span style="color:#e6db74">&#39;0/1&#39;</span> --fixed-strings | rg <span style="color:#e6db74">&#39;&lt;POD_NAME&gt;.{20}\s&#39;</span> -o | cut -d <span style="color:#e6db74">&#39; &#39;</span> -f <span style="color:#ae81ff">1</span> | xargs -L <span style="color:#ae81ff">1</span> kubectl logs --tail <span style="color:#ae81ff">10</span>
-</code></pre></div>
+</code></pre></div><h2 id="kube-1-dot-24-and-1-dot-25-major-changes">Kube 1.24 and 1.25 major changes</h2>
+<ul>
+<li><a href="https://kubernetes.io/blog/2022/04/07/upcoming-changes-in-kubernetes-1-24/">https://kubernetes.io/blog/2022/04/07/upcoming-changes-in-kubernetes-1-24/</a></li>
+<li><a href="https://kubernetes.io/blog/2022/08/04/upcoming-changes-in-kubernetes-1-25/">https://kubernetes.io/blog/2022/08/04/upcoming-changes-in-kubernetes-1-25/</a></li>
+</ul>
+
           
 
 
