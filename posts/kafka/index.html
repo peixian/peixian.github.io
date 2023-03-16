@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.c1d4aae4be62873a56bd029698e032c181fb4da1d158f0bdbcbdbe37687ed373.js" integrity="sha256-wdSq5L5ihzpWvQKWmOAywYH7TaHRWPC9vL2&#43;N2h&#43;03M="></script>
+<script defer src="/en.search.min.b1b1b8a9ea78a00a13c95d11f0a0113721842df931a01e590769e08b7caacdd3.js" integrity="sha256-sbG4qep4oAoTyV0R8KARNyGELfkxoB5ZB2ngi3yqzdM="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -40,6 +40,20 @@
           <p>Tags: <a href="/posts/computers/">Computers</a></p>
 <ul>
 <li><a href="https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html">https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html</a></li>
+</ul>
+<h2 id="kafka-debugging">Kafka Debugging</h2>
+<ul>
+<li>CP kafka has tools installed under <code>/usr/local/bin</code></li>
+<li>Example:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/usr/bin/kafka-run-class kafka.tools.MirrorMaker --consumer.config source.config <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>--producer.config dest.config <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>--whitelist <span style="color:#e6db74">&#39;.*&#39;</span>
+</code></pre></div></li>
+<li>Can check consumer status with
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/usr/bin/kafka-consumer-groups --bootstrap-server &lt;server:9092 --describe --group notification
+<span style="color:#75715e"># or</span>
+/usr/bin/kafka-consumer-groups --bootstrap-server &lt;server&gt;:9092 --list
+</code></pre></div></li>
 </ul>
 
           

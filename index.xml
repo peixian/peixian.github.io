@@ -8570,7 +8570,7 @@ Has a kataib hezbollah (kh) training camp, currently a black hole, nobody can ge
       
       <guid>/posts/kafka/</guid>
       <description>Tags: Computers
- https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html  </description>
+ https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html  Kafka Debugging  CP kafka has tools installed under /usr/local/bin Example: /usr/bin/kafka-run-class kafka.tools.MirrorMaker --consumer.config source.config \ --producer.config dest.config \ --whitelist &amp;#39;.*&amp;#39;  Can check consumer status with /usr/bin/kafka-consumer-groups --bootstrap-server &amp;lt;server:9092 --describe --group notification # or /usr/bin/kafka-consumer-groups --bootstrap-server &amp;lt;server&amp;gt;:9092 --list   </description>
     </item>
     
     <item>
