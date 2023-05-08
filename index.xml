@@ -3799,7 +3799,7 @@ Turkish politics hold contradictory viewpoints of Ottomanism, esepcially with th
       
       <guid>/posts/databases/</guid>
       <description>Tags: Computers
-Class  https://15721.courses.cs.cmu.edu/spring2019/schedule.html  MariaDB  https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/  Calcite  https://calcite.apache.org  used in bodo.ai    Query optimizers  how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf  Query Pushdown  basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/  Spanner  https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf  </description>
+Class  https://15721.courses.cs.cmu.edu/spring2019/schedule.html  MariaDB  https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/  Calcite  https://calcite.apache.org  used in bodo.ai    Query optimizers  how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf  Query Pushdown  basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/  Spanner  https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf  KV stores:  RocksDB SpeedDB - https://github.com/speedb-io/speedb  </description>
     </item>
     
     <item>
@@ -5708,6 +5708,16 @@ Fuzzing Image IO   https://www.instapaper.com/read/1303612511
       
       <guid>/posts/gaddafi/</guid>
       <description>Tags: libya</description>
+    </item>
+    
+    <item>
+      <title>gall&#39;s law</title>
+      <link>/posts/gall_s_law/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gall_s_law/</guid>
+      <description>complexity
+Complex systems that works is always grown from a simple system that worked. Complex systems designed from scratch never works and can&amp;rsquo;t patch to make it work.</description>
     </item>
     
     <item>
@@ -13046,9 +13056,7 @@ Town 60km south of mosul</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/qi_cards/</guid>
-      <description>:PROPERTIES:g :ID: 9F01C356-CFE7-48FA-A0E2-750CF1F1DF3B
-:END:
-Tags: iraq, finance
+      <description>Tags: iraq, finance
   Electronic payment system by International Smart Card
   Each month, take card to bank, verify with fingerprint,. and receive payment in cash or bank account
   with Rafidian bank and Rasheed bank
@@ -13693,7 +13701,7 @@ Example RFC: https://static1.squarespace.com/static/56ab961ecbced617ccd2461e/t/5
       
       <guid>/posts/rights_of_hashd_members/</guid>
       <description>Tags: Knight et al - Honored, Not Contained
- Large part of historical problems - cannot tell who is formally enrolled as a hashd member  Some people claim to be under hashd, not formally authorized by the hashd comission   patchwork entry process and unification lead to this ambigious membership  asa&amp;rsquo;ib ahl al-haqq (aah) and kataib hezbollah (kh) were already active, along with sons of iraq   Jan 2020 - &amp;gt;160,000 members of the hashd according to abu ali al-basri/adnan ibrahim al-najjar  Fighter Registration  Initial registration started in late 2014 and was on temporary rolling contracts Hashd fighters had no clear expectation of permanent employments Volunteers were haphazardly placed into units, with little influence, units would take new volunteers  Initially 90 day contracts no ID cards or biometrics - iraqi ghost militias   registration windows swapped constantly between reigstered and unregistered  salaries were often distributed and redistrubted between registered and unregistered fighters   unit commanders had almost complete discretion on how to disburse the money with few accountability  often 30% skimmed on salaries as &amp;ldquo;unit funds&amp;rdquo;    Right-sizing and Auditing  2016 - ~122k registered with maybe 40-50k unregistered haider al-abadi wanted to audit all claimed registered individuals and record names and personal identification  hawiyah shahadat al-jinsiya bataqat al-sakan al-tamwiniya also biometrics (photos and fingerprints) abadi ended up failing twice   2018 - hashd finance director qassim dahif al-zubaidi assassinated  may 12, 2018 - iraqi election law actually requires security forces to vote before the public does (so that they can be on site to preotect the elections), but the hashd voted the same time as the public in theri own bases    Biometrics  Iraqi gov slowly moving towards a tawtin al-rawatib (&amp;ldquo;settling of salaries&amp;rdquo; -&amp;gt; automated payment system)  idea was to distrupt the commander based disembursement model   March 25, 2019 - hussein ismail khalil announces fingerprinting and enrolled 80k/160k by March 2019   many hashd still paid with cash, those with widows and disabilities are testing electronic payment system    payments are still authorized by the hashd commission  Registered and Unregistered  Large gulf between units in terms of registered/unregistered #&amp;rsquo;s kataib hezbollah (kh) and badr control the key administrative posts hisham al-hashimi states that around 24k unregistered people were serving in the hashd, or ~17.</description>
+ Large part of historical problems - cannot tell who is formally enrolled as a hashd member  Some people claim to be under hashd, not formally authorized by the hashd comission   patchwork entry process and unification lead to this ambigious membership  asa&amp;rsquo;ib ahl al-haqq (aah) and kataib hezbollah (kh) were already active, along with sons of iraq   Jan 2020 - &amp;gt;160,000 members of the hashd according to abu ali al-basri/adnan ibrahim al-najjar  Fighter Registration  Initial registration started in late 2014 and was on temporary rolling contracts Hashd fighters had no clear expectation of permanent employments Volunteers were haphazardly placed into units, with little influence, units would take new volunteers  Initially 90 day contracts no ID cards or biometrics - iraqi ghost militias   registration windows swapped constantly between reigstered and unregistered  salaries were often distributed and redistrubted between registered and unregistered fighters   unit commanders had almost complete discretion on how to disburse the money with few accountability  often 30% skimmed on salaries as &amp;ldquo;unit funds&amp;rdquo;    Right-sizing and Auditing  2016 - ~122k registered with maybe 40-50k unregistered haider al-abadi wanted to audit all claimed registered individuals and record names and personal identification  hawiyah shahadat al-jinsiya bataqat al-sakan al-tamwiniya also biometrics (photos and fingerprints) abadi ended up failing twice   2018 - hashd finance director qassim dahif al-zubaidi assassinated  may 12, 2018 - iraqi election law actually requires security forces to vote before the public does (so that they can be on site to preotect the elections), but the hashd voted the same time as the public in theri own bases    Biometrics  Iraqi gov slowly moving towards a tawtin al-rawatib (&amp;ldquo;settling of salaries&amp;rdquo; -&amp;gt; automated payment system)  idea was to distrupt the commander based disembursement model   March 25, 2019 - hussein ismail khalil announces fingerprinting and enrolled 80k/160k by March 2019  many hashd still paid with cash, those with widows and disabilities are testing electronic payment system  qi cards     payments are still authorized by the hashd commission  Registered and Unregistered  Large gulf between units in terms of registered/unregistered #&amp;rsquo;s kataib hezbollah (kh) and badr control the key administrative posts hisham al-hashimi states that around 24k unregistered people were serving in the hashd, or ~17.</description>
     </item>
     
     <item>
@@ -14123,7 +14131,8 @@ Angle: all three measure generalization in some way
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/sdr/</guid>
-      <description>Tags: computers</description>
+      <description>Tags: computers
+Signals  https://www.sigidwiki.com/wiki/Category:Digital  </description>
     </item>
     
     <item>
