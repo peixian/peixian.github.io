@@ -3343,7 +3343,7 @@ computer science can actually be tested despite being easy to learn
       <guid>/posts/computers/</guid>
       <description>https://wiki.c2.com/?SufficientlySmartCompiler
 Tags: root
-grad school professors  https://software.imdea.org/~gotsman/  Firmware  https://osfc.io/archive- open source firmware conference  Laptop Manufacturers  Clevo - company that manufactures white label laptops  History  https://mitpress.mit.edu/books/john-von-neumann-and-origins-modern-computing  Devlogs  https://forums.tigsource.com/index.php?board=27.0  Lucas Pope Devlogs  https://forums.tigsource.com/index.php?topic=40832.720 https://forums.tigsource.com/index.php?topic=29750.700 https://dukope.itch.io/mars-after-midnight/devlog/261758/mars-after-midnight  Non-von Neumann Architectures (books)  https://www.goodreads.com/book/show/6033620-the-architecture-of-symbolic-computers https://users.ece.cmu.edu/~koopman/stack_computers/index.html  talks  https://www.youtube.com/c/OpencomputeOrg/videos  </description>
+grad school professors  https://software.imdea.org/~gotsman/  Firmware  https://osfc.io/archive- open source firmware conference  Laptop Manufacturers  Clevo - company that manufactures white label laptops  History  https://mitpress.mit.edu/books/john-von-neumann-and-origins-modern-computing  Devlogs  https://forums.tigsource.com/index.php?board=27.0  Lucas Pope Devlogs  https://forums.tigsource.com/index.php?topic=40832.720 https://forums.tigsource.com/index.php?topic=29750.700 https://dukope.itch.io/mars-after-midnight/devlog/261758/mars-after-midnight  Non-von Neumann Architectures (books)  https://www.goodreads.com/book/show/6033620-the-architecture-of-symbolic-computers https://users.ece.cmu.edu/~koopman/stack_computers/index.html  talks  https://www.youtube.com/c/OpencomputeOrg/videos  Infrastructures  https://clui.org  math  https://www.finseth.com/craft/#preface  </description>
     </item>
     
     <item>
@@ -4545,7 +4545,7 @@ When do women actually particpate in peace processes? When they do, do peace pro
       <guid>/posts/emacs/</guid>
       <description>Tags: computers
  https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bcompletion/auto-completion https://github.com/jwiegley/use-package Org tempo problems: https://github.com/syl20bnr/spacemacs/issues/11798#issuecomment-454941024  https://github.com/syl20bnr/spacemacs/issues/12003#issuecomment-465686129    Tramp bastion: /ssh:bird@bastion|ssh:you@remotehost:/path Tramp sudo: /ssh:you@remote|sudo:remote:/path Optimizations  https://news.ycombinator.com/item?id=28336724  Spacemacs export Load all layers and call a function defined in dotspacemacs/user-config:
- (run-hooks &#39;emacs-startup-hook) actually loads dotspacemacs/user-config  emacs --batch -l ~/.emacs.d/init.el --eval &amp;#34;(run-hooks &amp;#39;emacs-startup-hook)&amp;#34; --eval &amp;#34;(configuration-layer//load)&amp;#34; --eval &amp;#39;(org-roam-db-autosync-mode)&amp;#39; --eval &amp;#39;(org-roam-export-all)&amp;#39; &amp;gt; ~/emacs-export.log 2&amp;gt;&amp;amp;1 </description>
+ (run-hooks &#39;emacs-startup-hook) actually loads dotspacemacs/user-config  emacs --batch -l ~/.emacs.d/init.el --eval &amp;#34;(run-hooks &amp;#39;emacs-startup-hook)&amp;#34; --eval &amp;#34;(configuration-layer//load)&amp;#34; --eval &amp;#39;(org-roam-db-autosync-mode)&amp;#39; --eval &amp;#39;(org-roam-export-all)&amp;#39; &amp;gt; ~/emacs-export.log 2&amp;gt;&amp;amp;1 Books  https://www.finseth.com/craft/#preface  </description>
     </item>
     
     <item>
