@@ -2739,6 +2739,16 @@ Chapter one  Goes against Anderson - Imagined Communities by stating that the co
     </item>
     
     <item>
+      <title>chatgpt</title>
+      <link>/posts/chatgpt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/chatgpt/</guid>
+      <description>ml
+Chatgpt shell  https://github.com/xenodium/chatgpt-shell  </description>
+    </item>
+    
+    <item>
       <title>cheating blog post</title>
       <link>/posts/cheating_blog_post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4522,7 +4532,7 @@ Interviewing Strats  Clarify the question: if the question seems unnecessarily h
       
       <guid>/posts/elixir/</guid>
       <description>Tags: computers
- https://elixirforum.com/ https://elixir.bootlin.com/linux/latest/ident/lock_kernel  Conventions  folders under /lib/&amp;lt;application_name&amp;gt;  Projects  https://getoban.pro/ https://livebook.dev/  Prometheus Metrics  @counter -&amp;gt; Adds a prometheus metric  https://hexdocs.pm/prometheus_ex/Prometheus.Metric.html Usage  declare a counter with @counter [name: :name, labels: [:label1, :label2], help: &amp;#34;#{__MODULE__}name&amp;#34;]  increment a counter with Counter.inc([name: :name, labels: [label1, label2]])       exmagick issues with Apple M1 chip:  https://githubmemory.com/repo/Xerpa/exmagick/issues/16  asdf Support  Prebuild binary list https://bobs-list.</description>
+ https://elixirforum.com/ https://elixir.bootlin.com/linux/latest/ident/lock_kernel  Conventions  folders under /lib/&amp;lt;application_name&amp;gt;  Projects  https://getoban.pro/ https://livebook.dev/  Prometheus Metrics  @counter -&amp;gt; Adds a prometheus metric  https://hexdocs.pm/prometheus_ex/Prometheus.Metric.html Usage  declare a counter with @counter [name: :name, labels: [:label1, :label2], help: &amp;#34;#{__MODULE__}name&amp;#34;]  increment a counter with Counter.inc([name: :name, labels: [label1, label2]])       Platforms  https://gigalixir.com/  exmagick issues with Apple M1 chip:  https://githubmemory.com/repo/Xerpa/exmagick/issues/16  asdf Support  Prebuild binary list https://bobs-list.</description>
     </item>
     
     <item>
@@ -7143,6 +7153,17 @@ Preface   Book is not about math, art, and music relations
     </item>
     
     <item>
+      <title>Homo Sacer dot Country</title>
+      <link>/posts/homo_sacer_dot_country/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/homo_sacer_dot_country/</guid>
+      <description>drafts
+Georgio Agamben&amp;rsquo;s idea of Homo Sacer, a revival of the classical Roman idea of &amp;ldquo;sacer&amp;rdquo; mixes the concepts of &amp;ldquo;sacred&amp;rdquo; and &amp;ldquo;cursed&amp;rdquo;. The concept revolves around state power and biopolitics, but roughly it maps to how certain life cannot be readily sacrified, but can be destroyed without punishment.
+However, Agamben always envisioned this as a state of exception within power relations between the central state. An overarching position of power, with the means to enforce violence became the central feature of Agamben&amp;rsquo;s work, ending with his frequent cries about potential camps in Europe.</description>
+    </item>
+    
+    <item>
       <title>Homogenous Time: Ibn Khaldun and Transaction Logs</title>
       <link>/posts/homogenous_time_blog_post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7441,7 +7462,8 @@ talks about ddr and gives a broad overview of three generations
       
       <guid>/posts/images/</guid>
       <description>Tags: computers
- Raster library: https://gdal.org/ - rasterization satellites imagery: https://github.com/plant99/felicette  imgproxy https://github.com/imgproxy/imgproxy - fast http proxy for images that supports resizing on the fly</description>
+ Raster library: https://gdal.org/ - rasterization satellites imagery: https://github.com/plant99/felicette  imgproxy https://github.com/imgproxy/imgproxy - fast http proxy for images that supports resizing on the fly
+AI Images Class  https://www.cyberneticforests.com/ai-images  </description>
     </item>
     
     <item>
@@ -7787,7 +7809,7 @@ Iran has the world&amp;rsquo;s only regulated kidney market
       <description>Tags: middle east
 Novelists Alum maftoon - Aziz sayyid jassim - Iraqi author
 Al Harb fi hayib tarb - najim waldi - another author
-Climate Change  https://tcf.org/content/report/iraqs-climate-crisis-requires-bold-cooperation/ https://apps.dtic.mil/dtic/tr/fulltext/u2/a525294.pdf https://documents1.worldbank.org/curated/en/848371571505101026/pdf/Iraq-Economic-Monitor-Fall-2019-Turning-the-Corner-Sustaining-Growth-and-Creating-Opportunities-for-Iraq-s-Youth.pdf http://t-zero.it/en/portfolio/swlri-strategy-for-water-and-land-resources-in-iraq/  Artifical State  Artificial state narratives  Modernity  Budget  Oil accounts for 90% of Baghdad&amp;rsquo;s revenue IS particularly active in Diyala province    Irrigation  http://documents.worldbank.org/curated/en/609671468049219564/Iraq-Integrated-National-Energy-Strategy-Technical-Assistance-Project  Oil  https://www.somooil.gov.iq/exports  Elections  http://psephos.adam-carr.net/countries/i/iraq/iraq20181.txt  Updates </description>
+   Author Famous Works     Abdul Rahman Munif &amp;ldquo;Cities of Salt&amp;rdquo;, &amp;ldquo;The Trench&amp;rdquo;, &amp;ldquo;The Gardens of the Night&amp;rdquo;   Ali Bader &amp;ldquo;The Tobacco Keeper&amp;rdquo;, &amp;ldquo;The Unbeliever&amp;rdquo;, &amp;ldquo;The Corporal&amp;rsquo;s Wife&amp;rdquo;   Hassan Blasim &amp;ldquo;The Corpse Exhibition and Other Stories of Iraq&amp;rdquo;, &amp;ldquo;The Madman of Freedom Square&amp;rdquo;   Inaam Kachachi &amp;ldquo;The American Granddaughter&amp;rdquo;, &amp;ldquo;The Tigris and the Euphrates&amp;rdquo;   Sinan Antoon &amp;ldquo;The Corpse Washer&amp;rdquo;, &amp;ldquo;The Baghdad Eucharist&amp;rdquo;   Mahmoud Saeed &amp;ldquo;Saddam City&amp;rdquo;, &amp;ldquo;The World Through the Eyes of Angels&amp;rdquo;   Saadi Youssef &amp;ldquo;Nostalgia, My Enemy&amp;rdquo;, &amp;ldquo;Without an Alphabet, Without a Face&amp;rdquo;   Fadhil al-Azzawi &amp;ldquo;The Last of the Angels&amp;rdquo;, &amp;ldquo;The Traveller and the Innkeeper&amp;rdquo;   Haifa Zangana &amp;ldquo;Women on a Journey: Between Baghdad and London&amp;rdquo;, &amp;ldquo;City of Widows&amp;rdquo;   Luay Hamza Abbas &amp;ldquo;Hamam Balkania&amp;rdquo;, &amp;ldquo;A Man Who Died on His Wedding Night&amp;rdquo;    Climate Change  https://tcf.</description>
     </item>
     
     <item>
@@ -13051,6 +13073,17 @@ Town 60km south of mosul</description>
     </item>
     
     <item>
+      <title>qi card article draft</title>
+      <link>/posts/qi_card_article_draft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/qi_card_article_draft/</guid>
+      <description>qi cards
+ Angle: gig economy neoliberalization, financialization on these terms  Start with a woman that goes and withdrawals (aya?), then move on to talking about how the qi card has become at the forefront of Iraq&amp;rsquo;s digital transformation
+Talk about Iraqi smart card company, run by x, y, z, iraq is cash only economy with parallel currency, recent law that was passed that forces companies to accept dinars and not dollars, although this simply serves to move it to the black market.</description>
+    </item>
+    
+    <item>
       <title>qi cards</title>
       <link>/posts/qi_cards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -14367,7 +14400,8 @@ Sheeran, Scott, and Stephanie Case. “The Intervention Brigade: Legal Issues fo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/shia/</guid>
-      <description>Tags: islam</description>
+      <description>Tags: islam
+Mawla  https://en.wikipedia.org/wiki/Mawla  Ambigious word at Ghideer that declared that Ali was the mawla    </description>
     </item>
     
     <item>
@@ -16999,6 +17033,16 @@ HID 6 Key Rollover Most keyboards actually support more, but cheap keyboards onl
     </item>
     
     <item>
+      <title>video games</title>
+      <link>/posts/video_games/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/video_games/</guid>
+      <description>computers
+Dolphin  In Paper Mario: Thousand Year Door, they utilize &amp;ldquo;EFB copies&amp;rdquo; for some textures that come out of the CPU: https://wiki.dolphin-emu.org/index.php?title=Paper_Mario%3A_The_Thousand-Year_Door  </description>
+    </item>
+    
+    <item>
       <title>vietnam</title>
       <link>/posts/vietnam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -17169,7 +17213,7 @@ Neoliberalism has this interesting way of making us all the fruit of the poisono
       
       <guid>/posts/web/</guid>
       <description>Tags: computers
-Apache WebDav  Make sure to check /var/log/apache2/error.log for authentication issues Also make sure to check that the authentication scheme is correct, sometimes webdav is using Basic Auth, zotero offical mobile and desktop apps support digest auth  </description>
+Apache WebDav  Make sure to check /var/log/apache2/error.log for authentication issues Also make sure to check that the authentication scheme is correct, sometimes webdav is using Basic Auth, zotero offical mobile and desktop apps support digest auth  Webauthn  Relying Party (RP) - application that needs auth User Agent (UA) - Web browser or user agent Authenticator - Hardware or software module that generates the keys The RP initiates the reg process by challenge, than the UA communicates with the authenticator, and then the authentiator stores the private key Basically the UA communicates with the authenticator and signs the challenge and some additional metadata back to the RP  </description>
     </item>
     
     <item>
@@ -17499,6 +17543,19 @@ IFC - Finance Arm of the WB Involvement with iraq  https://pressroom.ifc.org/all
       <guid>/posts/20200419205815-writing/</guid>
       <description>Tags: root
  node for the actual act of writing  4 parts of writing  __Valuable__ Recongizable Organized Clear  Avoid &amp;ldquo;Text based rules&amp;rdquo;  Avoid rules like &amp;ldquo;don&amp;rsquo;t do passive writing&amp;rdquo;, or &amp;ldquo;avoid jargon&amp;rdquo; Avoid writing in a way that shapes the text For every rule, ask &amp;ldquo;which reader&amp;rdquo; and &amp;ldquo;which purpose&amp;rdquo;  Ex: &amp;ldquo;use short sentences&amp;rdquo;  For which reader? For what purpose?      Expert based writing  Writing and thinking are usually entwined, writing helps out the thinking process In the real world, the function of the text you write is to cause readers to change what they think about the world  NOT HOW YOU THINK What makes text valuable is how the readers percieve how they changed how they think    Fellowships  https://www.</description>
+    </item>
+    
+    <item>
+      <title>writing a thesis</title>
+      <link>/posts/writing_a_thesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/writing_a_thesis/</guid>
+      <description>grad school
+Two weeks ago, I finished writing my thesis (link here) on Shi&amp;rsquo;a rituals. While it wasn&amp;rsquo;t really what I expected it to be, there were more than a few twists and turns along the way.
+It started as a hashd thing
+Then moved into a ritual thing after seeing the first latmiya
+Then I bounced around karbala and witnessed tons of rituals, learned about the seven great mowkebs</description>
     </item>
     
     <item>
