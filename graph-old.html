@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <style>
+     #title {
+         position: fixed;
+         flex-direction: row;
+         display: flex;
+         align-items: center;
+     }
+
+     #title .subtitle {
+         margin: 5px 0 5px 20px;
+     }
+
+     #title .subtitle h2 {
+         margin: 5px 0;
+     }
+     div.tooltip {
+         position: absolute;
+         text-align: center;
+         padding: 2px;
+         font: 12px sans-serif;
+         background: lightsteelblue;
+         border: 0px;
+         border-radius: 8px;
+         pointer-events: none;
+     }
+     h1 {
+         font-size: 1em;
+         width: 75%;
+         position: fixed;
+         left: 50%;
+         margin-left: -37.5%;
+     }
+
+
+    </style>
+</head>
+<title>عجفت الغور</title>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="all" rel="stylesheet" />
+
+
+<div id="title">
+    <div class="subtitle">
+        <h2>Notes Graph</h2>
+        <small>Source on
+            <a href="https://github.com/peixian/org-roam-force-graph"
+            >GitHub</a
+                   ></small>
+    </div>
+</div>
+
+<body>
+
+    <div id="chart-container">
+        <div id="chart"></div>
+        <div id="loading"><span>loading...</span></div>
+    </div>
+
+</body>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script>
+
+
+ var div = d3.select("body").append("div")
+             .attr("class", "tooltip")
+             .style("opacity", 0);
+ var scale = d3.scaleOrdinal(d3.schemeCategory10);
+ d3.json("org-data.json")
+   .then(function(data) {
+       var width = window.innerWidth,
+           height = window.innerHeight;
+
+       function color(d) {
+           return scale(d.group);
+       }
+
+       function dx_source(d) {
+           console.log(d);
+           return d.source.x1 * width;
+       }
+
+       function dx_target(d) {
+           return d.target.x2 * width;
+       }
+
+       function dy_source(d) {
+           return d.y1 * height;
+       }
+
+       function dy_target(d) {
+           return d.y2 * height;
+       }
+
+       function dx(d) {
+           return d.x * width;
+       }
+
+       function dy(d) {
+           return d.y * height;
+       }
+
+       function clicked(event, d) {
+           window.open(d.url);
+       }
+
+       function fade(nodeOpacity, linkOpacity) {
+           return (event, d) => {
+               node.style('stroke-opacity', function (o) {
+                   const thisOpacity = isConnected(d, o) ? 1 : nodeOpacity;
+                   this.setAttribute('fill-opacity', thisOpacity);
+                   return thisOpacity;
+               });
+
+               link.style('stroke-opacity', o => (o.source === d.id || o.target === d.id ? 1 : linkOpacity));
+
+           };
+       }
+
+
+       const links = data.links.map(d => Object.create(d));
+       const nodes = data.nodes.map(d => Object.create(d));
+
+
+       const linkedByIndex = {};
+       data.links.forEach(d => {
+           linkedByIndex[`${d.source.index},${d.target.index}`] = 1;
+       });
+
+       function isConnected(a, b) {
+           return linkedByIndex[`${a.index},${b.index}`] || linkedByIndex[`${b.index},${a.index}`] || a.index === b.index;
+       }
+
+       // Building svg
+       let svg = d3.select("#chart")
+                   .classed("svg-container", true)
+                   .append("svg")
+                   .attr("preserveAspectRatio", "xMinYMin meet")
+                   .attr("viewBox", [0, 0, width, height])
+                   .classed("svg-content-responsive", true);
+
+       svg = svg.merge(svg);
+
+       let g = svg.append("g")
+                  .attr("transform", `translate(${width / 2}, ${height / 2})`);
+
+       const link = g.append('g')
+                     .attr("stroke", "#999")
+                     .attr("stroke-opacity", 0.6)
+                     .selectAll("line")
+                     .data(links)
+                     .join("line")
+                     .attr("x1", d => d.x1 * width)
+                     .attr("y1", d => d.y1 * height)
+                     .attr("x2", d => d.x2 * width)
+                     .attr("y2", d => d.y2 * height)
+                     .attr("stroke-width", d => Math.sqrt(d.value));
+
+
+       const node = g
+           .attr("stroke", "#fff")
+           .attr("stroke-width", 1.5)
+           .selectAll("circle")
+           .data(nodes)
+           .join("circle")
+           .attr("r", 5)
+           .attr("cx", dx)
+           .attr("cy", dy)
+           .attr("fill", color)
+           .on("click", clicked)
+           .on("mouseover", function(event, d) {
+               div.html(`<div style='float: right'>${d.id}</div>`)
+                  .style("opacity", .9)
+                  .style('left', event.pageX + 'px')
+                  .style('top', (event.pageY - 28) + 'px')
+                  .style('border', 'solid 3px black')
+                  .style('background-color', 'white')
+                  .style('border-radius', '10px')
+                  .style('float', 'left')
+                  .style('font-family', 'monospace');
+           })
+           .on('mouseover.fade', fade(0.1, 0.1))
+           .on("mouseout", function(event, d) {
+               div.style("opacity", 0);
+           })
+           .on('mouseout.fade', fade(1, 0.6));
+
+
+       //add zoom capabilities
+       let zoomHandler = d3.zoom()
+                           .on("zoom", zoomAction);
+
+       //Zoom functions
+       function zoomAction(event, d) {
+           g.attr("transform", `translate(${width / 2+ event.transform.x}, ${height / 2+ event.transform.y })` + "scale(" + event.transform.k + ")");
+       }
+       zoomHandler(svg);
+   })
+   .catch(function(error) {
+       console.log(error)
+   });
+</script>
