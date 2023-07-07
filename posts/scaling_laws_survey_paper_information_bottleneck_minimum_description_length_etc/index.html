@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.2062ff34f0bb48262d3b3d36d4126a89f0d37e3f0fe3c3c7133b374611a90da9.js" integrity="sha256-IGL/NPC7SCYtOz021BJqifDTfj8P48PHEzs3RhGpDak="></script>
+<script defer src="/en.search.min.ad86ac7a866c0db8d80a445ed403029569b9029139046b5dfe3862b6eed34e4d.js" integrity="sha256-rYaseoZsDbjYCkRe1AMClWm5ApE5BGtd/jhitu7TTk0="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -51,230 +51,230 @@
 <li>do these all criticall validate each other?</li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#75715e">%
-</span><span style="color:#75715e">% File acl2015.tex
-</span><span style="color:#75715e">%
-</span><span style="color:#75715e">% Contact: car@ir.hit.edu.cn, gdzhou@suda.edu.cn
-</span><span style="color:#75715e">%%
-</span><span style="color:#75715e">%% Based on the style files for ACL-2014, which were, in turn,
-</span><span style="color:#75715e">%% Based on the style files for ACL-2013, which were, in turn,
-</span><span style="color:#75715e">%% Based on the style files for ACL-2012, which were, in turn,
-</span><span style="color:#75715e">%% based on the style files for ACL-2011, which were, in turn,
-</span><span style="color:#75715e">%% based on the style files for ACL-2010, which were, in turn,
-</span><span style="color:#75715e">%% based on the style files for ACL-IJCNLP-2009, which were, in turn,
-</span><span style="color:#75715e">%% based on the style files for EACL-2009 and IJCNLP-2008...
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">%% Based on the style files for EACL 2006 by
-</span><span style="color:#75715e">%%e.agirre@ehu.es or Sergi.Balari@uab.es
-</span><span style="color:#75715e">%% and that of ACL 08 by Joakim Nivre and Noah Smith
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">\documentclass</span><span style="color:#a6e22e">[11pt]</span>{article}
-<span style="color:#66d9ef">\usepackage</span>{acl2015}
-<span style="color:#66d9ef">\usepackage</span>{times}
-<span style="color:#66d9ef">\usepackage</span>{url}
-<span style="color:#66d9ef">\usepackage</span>{latexsym}
-<span style="color:#66d9ef">\usepackage</span>{pgfplots}
-<span style="color:#66d9ef">\usepackage</span>{amsmath}
-<span style="color:#66d9ef">\usepackage</span>{tabularx} <span style="color:#75715e">% in the preamble
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[square,numbers]</span>{natbib}
-<span style="color:#66d9ef">\bibliographystyle</span>{abbrvnat}
-
-<span style="color:#75715e">%\setlength\titlebox{5cm}
-</span><span style="color:#75715e">% You can expand the titlebox if you need extra space
-</span><span style="color:#75715e">% to show all the authors. Please do not make the titlebox
-</span><span style="color:#75715e">% smaller than 5cm (the original size); we will check this
-</span><span style="color:#75715e">% in the camera-ready version and ask you to change it back.
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">\title</span>{Measuring Generalization}
-
-<span style="color:#66d9ef">\author</span>{Peixian Wang <span style="color:#66d9ef">\\</span>
-  Bloomberg L.P. <span style="color:#66d9ef">\\</span>
-  {<span style="color:#66d9ef">\tt</span> pwang272@bloomberg.net}<span style="color:#66d9ef">\\</span>}
-<span style="color:#66d9ef">\date</span>{}
-
-<span style="color:#66d9ef">\begin</span>{document}
-<span style="color:#66d9ef">\maketitle</span>
-<span style="color:#66d9ef">\begin</span>{abstract}
-  Recent years have seen an increase in theories on the role of information during the learning stage, especially regarding generalization. One particular approach to this has been work on the information plane <span style="color:#66d9ef">\cite</span>{tishby_deep_2015}, which measures the mutual information between the input layers, output layers, and latent representations. However, as most of the work has analyzed only small neural networks, we analyze the results and speculate on . In addition, we motivate the problem space by discussing the mesa optimizer: a problem within AI alignment theory that relies on sufficient generalization.<span style="color:#66d9ef">\end</span>{abstract}
-
-
-<span style="color:#66d9ef">\section</span>{Introduction}
-
-Deep neural networks have shown impressive results across a variety of tasks, with the transformer based models <span style="color:#66d9ef">\cite</span>{vaswani_attention_2017} such as BERT <span style="color:#66d9ef">\cite</span>{devlin_bert_2019}, RoBERTa <span style="color:#66d9ef">\cite</span>{liu_roberta_2019} and T5 <span style="color:#66d9ef">\cite</span>{raffel_exploring_2020} breaking state of the art on NLP benchmarks. Research on these models have attempted to formalize the behaviors of these models, usually around the learning curve during training.
-
-Typically, a model during training is considered to have two phases, one where the model has not yet sufficiently learned and a generalization gap remains, and a phase where the model begins to over-fit and increase in test error. A variety of studies have discussed the phase transition. <span style="color:#66d9ef">\cite</span>{merrill_effects_nodate} note that discrete structures appear within transformers during training time, where the gradients during gradient descent (GD) start to become similar to hardmaxes as training increases. Various information bottleneck (IB) papers, first proposed by <span style="color:#66d9ef">\cite</span>{tishby_deep_2015}, note that the you can observe a sufficient generalization and overfitting occur on by plotting mutual information <span style="color:#66d9ef">\cite</span>{shwartz-ziv_opening_2017}.
-
-
-This paper seeks to consolidate and summarize the findings from these sometimes conflicting approaches to measuring compression on the IP. To do this, this paper is split into two sections. The first section summarizes the work done on network saturation and the IB, with Table <span style="color:#66d9ef">\ref</span>{sources-table} denoting the sources used for this survey. The second part discusses how the work done on network saturation relate to the work done on the IB.
-
-Our main conclusions are:
-<span style="color:#66d9ef">\begin</span>{itemize}
-<span style="color:#75715e">%\item Multiple descent may only appear on datasets within a &#34;critical regime&#34;, which means that sufficiently large datasets may not exhibit this.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">\item</span> Information bottleneck principle holds true with some limitations for nearly every case of neural network tested so far. However, some limitations exist, such as compression only appearing on the information plane on particular layers.
-<span style="color:#66d9ef">\item</span> Information bottleneck and mutual information measurements research is largely focused on setting theoretical bounds and have rarely been applied outside of small models. Furthermore, there is no information plane calculation for Adam optimizations. Calculating mutual information within a transformer may be a fruitful area of study.
-<span style="color:#66d9ef">\item</span> While compression occurs, saturation is not guarenteed to occur in smaller settings. However, for transformer models, saturation <span style="color:#66d9ef">\textit</span>{is} is observed for nearly all state of the art models.
-
-<span style="color:#66d9ef">\end</span>{itemize}
-
-<span style="color:#66d9ef">\subsubsection</span>{Related Works}
-We note that <span style="color:#66d9ef">\cite</span>{geiger_information_2021} contains much of the same work surveying the information bottleneck papers, and includes some work on drawing attention to the relationship between geometric compression and the information theoretic bounds within the IB. Our work differs from <span style="color:#66d9ef">\cite</span>{geiger_information_2021} as we highlight the role of network saturation in line with compression, as well as cites work relating to pratical applications of IB on used models.
-Two other surveys of IB should be brought up: <span style="color:#66d9ef">\cite</span>{hafez-kolahi_information_2019}, which surveys the variety of information extraction methods, and <span style="color:#66d9ef">\cite</span>{goldfeld_information_2020}, which surveyed much of the same information as <span style="color:#66d9ef">\cite</span>{geiger_information_2021}. We contrast our work by discussing the particularities around network saturation and relating it work done on transformers, which neither of the other two papers attempt to do.
-
-<span style="color:#66d9ef">\begin</span>{figure*}[htbp]
-<span style="color:#66d9ef">\label</span>{sources-table}
-<span style="color:#66d9ef">\begin</span>{tabularx}{<span style="color:#66d9ef">\textwidth</span>}{X|X|X|X|X}
-  <span style="color:#66d9ef">\textbf</span>{Reference} &amp; <span style="color:#66d9ef">\textbf</span>{Obs. Approach} &amp; <span style="color:#66d9ef">\textbf</span>{Architecture} &amp; <span style="color:#66d9ef">\textbf</span>{dataset} &amp; <span style="color:#66d9ef">\textbf</span>{Train}<span style="color:#66d9ef">\\</span>
-<span style="color:#66d9ef">\hline</span>
-<span style="color:#75715e">%\cite{nakkiran_deep_2019} &amp; Descent &amp; ResNets, CNN, transformer &amp; CIFAR-? &amp; ADAM, SGD \\
-</span><span style="color:#75715e">%\cite{dascoli_triple_2020} &amp; Descent &amp; MLP &amp; CIFAR-? &amp; SGD \\
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019} &amp; Saturation &amp; MLP &amp; ADAM &amp; Custom <span style="color:#66d9ef">\\</span>
-<span style="color:#66d9ef">\cite</span>{merrill_effects_nodate} &amp; Saturation &amp; transformer &amp; Various &amp; ADAM <span style="color:#66d9ef">\\</span>
-<span style="color:#66d9ef">\cite</span>{wickstrom_information_2019}&amp; IB &amp; MLP, CNN, VGG16 &amp; MNIST,  CIFAR-10 &amp; SGD <span style="color:#66d9ef">\\</span>
-<span style="color:#66d9ef">\cite</span>{saxe_information_2019} &amp; IB &amp; MLP &amp; SGD, BGD &amp; SZT, MNIST* (augmented) <span style="color:#66d9ef">\\</span>
-<span style="color:#66d9ef">\cite</span>{shwartz-ziv_opening_2017} &amp; IB &amp; MLP &amp; SGD &amp; SZT <span style="color:#66d9ef">\\</span>
-<span style="color:#66d9ef">\cite</span>{noshad_scalable_2018} &amp; IB &amp; MLP, CNN &amp; ADAM &amp; MNIST <span style="color:#66d9ef">\\</span>
-<span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020} &amp; IB &amp; CNN &amp; SGD &amp; MNIST, CIFAR-10 <span style="color:#66d9ef">\\</span>
-<span style="color:#66d9ef">\end</span>{tabularx}
-<span style="color:#66d9ef">\end</span>{figure*}
-
-<span style="color:#66d9ef">\section</span>{Information Bottleneck}
-<span style="color:#75715e">% talk about shannon? \
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">\subsection</span>{Mutual Information}
-<span style="color:#66d9ef">\label</span>{mutual-information}
-In information theory, Claude Shannon introduced the concept of entropy as a measure of uncertainty within outcome, quantifying the information and choice alongside.
-
-Many measures of entropy have been discovered, from discrete entropy, to differential entropy for continous random variables, to conditional entropy for conditional random variables.
-
-Discrete entropy can be defined as
-<span style="color:#66d9ef">\begin</span>{equation} <span style="color:#66d9ef">\label</span>{discrete-entropy}
-H(X) = -<span style="color:#66d9ef">\sum</span>_{i=1}^{N}p_i(x)<span style="color:#66d9ef">\log</span> p_i(x)
-<span style="color:#66d9ef">\end</span>{equation}
-
-Entropy in this case satisfies three main features: it is a positive measurement, it is maximal for a uniformly distributed random variable, and deterministic distributions have a entropy of zero.
-
-Continuous entropy can be defined by replacing the sum symbol with the integral
-
-<span style="color:#66d9ef">\begin</span>{equation} <span style="color:#66d9ef">\label</span>{cont-entropy}
-H(X) = -<span style="color:#66d9ef">\int</span> p_t (x) <span style="color:#66d9ef">\log</span> p_t(x) dt
-<span style="color:#66d9ef">\end</span>{equation}
-
- Conditional entropy can be interpreted as the average amount of information left in the random variable <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> when the outcome of <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span> is known. Notably, it satisfies the following properties:
-<span style="color:#66d9ef">\begin</span>{itemize}
-  <span style="color:#66d9ef">\item</span> For any two variables <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span>, the conditional entropy <span style="color:#e6db74">$</span>H<span style="color:#e6db74">$</span> of <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>X|Y<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> is always lower than or equal to <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>X<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>, or <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>X|Y<span style="color:#f92672">)</span> \leq H<span style="color:#f92672">(</span>X<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>
-  <span style="color:#66d9ef">\item</span> If <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span> are independent, then the conditional entropies are the same: <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>X|Y<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> H<span style="color:#f92672">(</span>X<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>
-  <span style="color:#66d9ef">\item</span> If <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> is completely determined by <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span>, then <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>X|Y<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#e6db74">$</span>
-<span style="color:#66d9ef">\end</span>{itemize}
-
-  From these three properties it is possible to construct the concept of mutual information <span style="color:#e6db74">$</span>I<span style="color:#e6db74">$</span>:
-
-  <span style="color:#66d9ef">\begin</span>{equation}
-    <span style="color:#66d9ef">\begin</span>{gathered}
-      I(X;Y) = H(X) - H(X|Y) <span style="color:#66d9ef">\\</span>
-      = H(Y) - H(Y|X)
-    <span style="color:#66d9ef">\end</span>{gathered}
-  <span style="color:#66d9ef">\end</span>{equation}
-
-  <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X;Y<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> implies:
-  <span style="color:#66d9ef">\begin</span>{itemize}
-  <span style="color:#66d9ef">\item</span> If <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span> are independent, then <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X;Y<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#e6db74">$</span>
-  <span style="color:#66d9ef">\item</span> If <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span> have some non-deterministic statistical relationship, then <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X;Y<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> captures the relationship that can be accounted for without random chance
-    <span style="color:#66d9ef">\item</span> If <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span> are deterministic in relation by <span style="color:#e6db74">$</span>f<span style="color:#f92672">(</span>X<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> Y<span style="color:#e6db74">$</span>, then <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>Y|X<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X;Y<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> H<span style="color:#f92672">(</span>Y<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>
-    <span style="color:#66d9ef">\end</span>{itemize}
-
-
-<span style="color:#66d9ef">\subsection</span>{Information Bottleneck Principle}
-The information bottleneck (IB) was first described by <span style="color:#66d9ef">\cite</span>{tishby_deep_2015}, where for random variables (RVs) <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span>, there exists a  maximally compressed representation <span style="color:#e6db74">$</span>T<span style="color:#e6db74">$</span>. For two RVs with a statistical dependency on each other, <span style="color:#e6db74">$</span>T<span style="color:#e6db74">$</span> is always assumed to exist. A Markov chain of T-X-Y can then be drawn with the joint probability distribution that:
-
-<span style="color:#e6db74">\[</span>p<span style="color:#f92672">(</span>X,Y,T<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> p<span style="color:#f92672">(</span>T|X<span style="color:#f92672">)</span>p<span style="color:#f92672">(</span>Y|X<span style="color:#f92672">)</span>p<span style="color:#f92672">(</span>X<span style="color:#f92672">)</span> <span style="color:#e6db74">\]</span>
-
-Assuming each hidden layer of the neural network is <span style="color:#e6db74">$</span>T_{n}<span style="color:#e6db74">$</span>, the combination of encoder layers can be modeled as predicting <span style="color:#e6db74">$</span>P<span style="color:#f92672">(</span>T|X<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>, whereas the decoder layers predict <span style="color:#e6db74">$</span>P<span style="color:#f92672">(</span>Y|T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> <span style="color:#66d9ef">\cite</span>{shwartz-ziv_opening_2017}. By reusing the mutual information defined <span style="color:#66d9ef">\ref</span>{mutual-information}, a few properties around <span style="color:#e6db74">$</span>T<span style="color:#e6db74">$</span> can be formalized:
-<span style="color:#66d9ef">\begin</span>{itemize}
-    <span style="color:#66d9ef">\item</span> <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>Y;T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> describes the <span style="color:#66d9ef">\textit</span>{accuracy} of a representation
-    <span style="color:#66d9ef">\item</span> <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>T; X<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> provides the <span style="color:#66d9ef">\textit</span>{compression} or <span style="color:#66d9ef">\textit</span>{complexity} of a representation.
-<span style="color:#66d9ef">\end</span>{itemize}
-
-Given these two measurements, it is possible to construct an information plane (IP) plotting <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X; T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>Y; T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>, such as <span style="color:#66d9ef">\ref</span>{fig:neuron-ip}.
-
-<span style="color:#66d9ef">\begin</span>{figure}
-    <span style="color:#66d9ef">\begin</span>{tikzpicture}
-  <span style="color:#66d9ef">\begin</span>{axis}[
-    xlabel=<span style="color:#e6db74">$</span>x<span style="color:#e6db74">$</span>,
-    ylabel={<span style="color:#e6db74">$</span>I<span style="color:#e6db74">$</span>}
-  ]
-    <span style="color:#66d9ef">\addplot</span> {x^2 - x +4};
-  <span style="color:#66d9ef">\end</span>{axis}
-<span style="color:#66d9ef">\end</span>{tikzpicture}
-    <span style="color:#66d9ef">\caption</span>{Caption}
-    <span style="color:#66d9ef">\label</span>{fig:neuron-ip}
-<span style="color:#66d9ef">\end</span>{figure}
-
-Using the training epoch parameter <span style="color:#e6db74">$</span>t<span style="color:#e6db74">$</span>, the IP can be used to examine the two distinct phases: the first, a <span style="color:#e6db74">$</span>fitting<span style="color:#e6db74">$</span> phase, where <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X;T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>Y;T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> both increase as the model learns to fit to the target, and then a <span style="color:#e6db74">$</span>compression<span style="color:#e6db74">$</span> phase, where <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X; T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> decreases, but <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>Y;T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> remains about the same, until reaching a point of <span style="color:#66d9ef">\textit</span>{overfitting}, where <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>Y;T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> drops. In otherwords, the critical phase transition on the regular learning curve is when <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>Y;T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> begins to decrease.
-
-<span style="color:#75715e">% discuss how only saxe found it, but actually this may be an incorrect measurement of mutual information
-</span><span style="color:#75715e"></span>In <span style="color:#66d9ef">\cite</span>{shwartz-ziv_opening_2017}, the authors observed these two phases occuring for all their experiments. Saxe et all in <span style="color:#66d9ef">\cite</span>{saxe_information_2019} found that there was no compression to be to be observed on the IP for a ReLU MLP network trained with either SGD and BGD. The authors of <span style="color:#66d9ef">\cite</span>{noshad_scalable_2018} note that there were differences in estimates of MI between the <span style="color:#66d9ef">\cite</span>{saxe_information_2019} and <span style="color:#66d9ef">\cite</span>{shwartz-ziv_opening_2017} and offer a new way of estimating MI, proposing a linear complexity estimator of MI, and their estimation of MI finds that ReLU networks to show a compression phase.
-
-The authors of <span style="color:#66d9ef">\cite</span>{wickstrom_information_2019} use a different, kernel based estimator where they find compression within the softmax layer of a CNN with three convolutional layers and two fully connected layers of width <span style="color:#e6db74">$</span><span style="color:#ae81ff">400</span><span style="color:#f92672">-</span><span style="color:#ae81ff">256</span><span style="color:#e6db74">$</span> trained on MNIST. <span style="color:#66d9ef">\cite</span>{wickstrom_information_2019} also shows how compression occurs for all layers in a <span style="color:#e6db74">$</span><span style="color:#ae81ff">1000</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">20</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">20</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">20</span><span style="color:#e6db74">$</span> MLP trained on MNIST. Given that all networks investigated in <span style="color:#66d9ef">\cite</span>{wickstrom_information_2019} showed some form of compression, and that the work done in <span style="color:#66d9ef">\cite</span>{noshad_scalable_2018} refutes the only case where compression is <span style="color:#66d9ef">\textit</span>{not} observed, IB theory holds and may have further applications, albiet on particular layers.
-
-
-<span style="color:#75715e">% discuss how to actually calculate mutual information
-</span><span style="color:#75715e"></span>As described above, measurements of mutual information within DNNs are not exact, as they are a result of the estimation process and inherit uncertainty related to the process itself <span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019}. In addition, mutual information can be estimated in a variety of ways <span style="color:#66d9ef">\cite</span>{noshad_scalable_2018}, <span style="color:#66d9ef">\cite</span>{poole_variational_2019}, <span style="color:#66d9ef">\cite</span>{davis_network_2020}, <span style="color:#66d9ef">\cite</span>{gabrie_entropy_2019}, <span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020}, which further increases the uncertainties around estimating mutual information.
-
-Fundamentally, all estimators of mutual information lie around that if mutual information between <span style="color:#e6db74">$</span>T<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> were to be defined as
-<span style="color:#66d9ef">\begin</span>{equation}
-  <span style="color:#66d9ef">\begin</span>{gathered}
-    I(T;X) = H(T) - H(T|X)
-  <span style="color:#66d9ef">\end</span>{gathered}
-<span style="color:#66d9ef">\end</span>{equation}
-
-and from <span style="color:#66d9ef">\ref</span>{cont-entropy} <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>T|X<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> from <span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019} can be defined as
-
-<span style="color:#66d9ef">\begin</span>{equation}
-  <span style="color:#66d9ef">\begin</span>{gathered}
-    H(T|X) = - <span style="color:#66d9ef">\int</span> p_t(t) <span style="color:#66d9ef">\log</span> p_t(t) dt = -<span style="color:#66d9ef">\infty</span>
-  <span style="color:#66d9ef">\end</span>{gathered}
-<span style="color:#66d9ef">\end</span>{equation}
-
-As a result, the mutual information becomes infinite. In order to solve this problem, <span style="color:#66d9ef">\cite</span>{shwartz-ziv_opening_2017} note the importance of adding noise to the process, confirmed by <span style="color:#66d9ef">\cite</span>{saxe_information_2019}. Noise <span style="color:#e6db74">$</span>Z<span style="color:#e6db74">$</span> can be added to <span style="color:#e6db74">$</span>T<span style="color:#e6db74">$</span> as either a Gaussian mixture or or by discretizing into bins, resulting in the noisy variable <span style="color:#e6db74">$</span>\hat{T} <span style="color:#f92672">=</span> T <span style="color:#f92672">+</span> Z<span style="color:#e6db74">$</span>, which then transforms the condition entropy to <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>T|X<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> H<span style="color:#f92672">(</span>Z<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>, and MI becomes <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>\hat{T};X<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> H<span style="color:#f92672">(</span>\hat{T}<span style="color:#f92672">)</span> <span style="color:#f92672">+</span> H<span style="color:#f92672">(</span>Z<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>.
-
-If the noise is added is Gaussian, then a kernel density estimator could be used to estimate the mutal information. If descritized into bins, then the noise arises as part of the discretization process. As <span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019} specifically note, DNNs with double-sided saturating activation functions are not as sensitive to estimation differences in mutual information, but non-saturating activations may or may not show compression depending on how MI is defined.
-
-<span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020} describe a framework for estimation of entropy between layers. The authors formalize the entire data available in a CNN as a four dimensional array <span style="color:#e6db74">$</span>dCNN<span style="color:#f92672">(</span>X, L, C, T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>, where <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> is the input data, <span style="color:#e6db74">$</span>L<span style="color:#e6db74">$</span> is the layer dimension, <span style="color:#e6db74">$</span>C<span style="color:#e6db74">$</span> is the convolutional filters, and <span style="color:#e6db74">$</span>T<span style="color:#e6db74">$</span> is the epoch number. Using a CNN trained on MNIST and CIFAR-10, they use this four dimensional representation to track information flow by estimating change in entropy between layers. <span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020} sidesteps the MI estimation debates by simply measuring entropy, which may prove to be far more tractable in terms of larger networks. The authors also note that they wish to apply their methods to transformer-based models and RNNs in the future.
-<span style="color:#75715e">% Generally, when considering mutual information in DNNs, the analyzed values are technically the result of the estimation process and, therefore, are highly sensitive to it.- chelombiev_adaptive_2019
-</span><span style="color:#75715e">% mutual information is not easy to estimate
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">% discuss how none of these are very deep, and concerns with calculating mutual information beyond a certain amount
-</span><span style="color:#75715e"></span>For all five papers that discussed IB, only two papers implemented something other than a multilayer perceptron (MLP) <span style="color:#66d9ef">\cite</span>{noshad_scalable_2018} <span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020}. Furthermore, for all the papers that implemented an MLP, the network itself was fairly deep and parameters were very small, never going beyond 5 layers. As a result, it is unclear how well bound holds with larger neural networks. To be the best of the authors knowledge, <span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020} has been the only paper which has attempted to formalize IB for larger networks.
-<span style="color:#66d9ef">\subsection</span>{Network Saturation}
-<span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019} uses two types of adapative estimation schemes for mutual information (MI). For both approaches, they find that compression is always present, even when saturation does not. The authors note that compression does not always happen at later stages in the training, but often occurs from intialization depending on network archiecture. They also note that the activation function plays a role in not only whether compression does occur, but how compression occurs. As discussed above, while <span style="color:#66d9ef">\cite</span>{saxe_information_2019} notes that single-sided saturating nonlinearities or linear activation functions do not yield compression, <span style="color:#66d9ef">\cite</span>{noshad_scalable_2018} argues that <span style="color:#66d9ef">\cite</span>{saxe_information_2019} contained a poor measurement of MI, and found that ReLU networks do show compression. Nevertheless, all authors agree that double-sided nonlinearities such as <span style="color:#e6db74">$</span>tanh<span style="color:#e6db74">$</span> or <span style="color:#e6db74">$</span>sigmoid<span style="color:#e6db74">$</span> exhibit compression phases.
-
-<span style="color:#66d9ef">\cite</span>{merril_effects_nodate} note that as parameters grow within training for a transformer network, the network approaches an discretized network with saturated activation functions. The authors find that internal representations of pretrained transformers approximate saturated networks, while randomly initialized transformers do not. Specifically, they find that for T5 <span style="color:#66d9ef">\cite</span>{raffel_exploring_2020}, they establish that the parameter <span style="color:#e6db74">$</span>\ell_<span style="color:#ae81ff">2</span><span style="color:#e6db74">$</span> norm grows during training for every transformer-based model. As the <span style="color:#e6db74">$</span>\ell_<span style="color:#ae81ff">2</span><span style="color:#e6db74">$</span> grows during training, divergence between the parameters leads to a saturated network, where the softmaxes of each layer begin to minimic hardmaxes.
-
-
-<span style="color:#66d9ef">\section</span>{Discussion}
-The information bottleneck (IB) principle provides a potentially fruitful area of research when it comes to analysis of neural networks. One of the main areas of difficulty for measurement of IB is the information plane (IP) behaviors are reliant on estimators of mutual information (MI), which are subject to artifacts during the estimation process.
-<span style="color:#75715e">%Despite there being close relationships between the information plane (IP) and learning rates, no research exists where the effects are compared. Given the variety of methods that can be used to calculate mutual information (MI) $I$, it would seem important to validate MI with a learning curve on a model. For example, in the given case of the double descent small model \cite{nakkiran_deep_2019} figure 9, where the intermediate and large models exhibit double descent at higher epochs \textit{after} initially appearing to overfit, it would be expected that the IP plot would exhibit similar behaviors, where $I(Y;T)$ would decrease, then eventually increase again.
-</span><span style="color:#75715e"></span>
-
-<span style="color:#75715e">%In addition, \cite{merrill_effects_nodate} find that the parameter norm growth also occurs during the training process, before the model begins to overfit. If there were a measure of MI for transformers, where
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019} develops a more robust form of estimating mutual information, which then showed that compression within the IP is dependent on the activation function used and notes that saturation of the activation function is not required for compression. Like all the IB papers, the networks analyzed in <span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019} were very small multilayer perceptrons for tractability purposes. However, given a weak relationship could be found between saturation and compression, combining this work with <span style="color:#66d9ef">\cite</span>{merrill_effects_nodate} may offer new insights on how transformers learn, even without a robust measurement of MI due to tractability purposes.
-
-For a large DNN, <span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020} provides the most tractable usage of
-
-Within learning theory, it is possible to estimate the generalization error bounds of a learning algorithm. As IB formalizes into a learning algorithm, it is possible to construct the generalization error for a given neural network during training, which would prove useful for network analysis. In <span style="color:#66d9ef">\cite</span>{shamir_learning_nodate}, the authors describe mutual information as a measure of performance, providing the example of a document classifier. The authors state that the likelihood of misclassifying a particular document using its words as a sample of points has a strict upper bound, leading to a quantified measure of generalization error.
-
-
-Given it remains difficult and ambiguous to calculate MI for high dimensions <span style="color:#66d9ef">\cite</span>{poole_variational_2019}, if a correlation to IB could be found or approximated with the measurement of norm growth, then it may be possible to approximate the generalization error. The relationship between saturated neural networks and IB, alongside how transformers in some cases are already saturated may suggested a useful meeting point for newer studies.
-
-
-<span style="color:#75715e">% include your own bib file like this:
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">\bibliographystyle</span>{acl}
-<span style="color:#66d9ef">\bibliography</span>{refs.bib}
-
-
-
-<span style="color:#66d9ef">\end</span>{document}
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% File acl2015.tex
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% Contact: car@ir.hit.edu.cn, gdzhou@suda.edu.cn
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% Based on the style files for ACL-2014, which were, in turn,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% Based on the style files for ACL-2013, which were, in turn,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% Based on the style files for ACL-2012, which were, in turn,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% based on the style files for ACL-2011, which were, in turn,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% based on the style files for ACL-2010, which were, in turn,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% based on the style files for ACL-IJCNLP-2009, which were, in turn,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% based on the style files for EACL-2009 and IJCNLP-2008...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%% Based on the style files for EACL 2006 by
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%%e.agirre@ehu.es or Sergi.Balari@uab.es
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% and that of ACL 08 by Joakim Nivre and Noah Smith
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\documentclass</span><span style="color:#a6e22e">[11pt]</span>{article}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{acl2015}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{times}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{url}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{latexsym}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{pgfplots}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{amsmath}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{tabularx} <span style="color:#75715e">% in the preamble
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[square,numbers]</span>{natbib}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\bibliographystyle</span>{abbrvnat}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%\setlength\titlebox{5cm}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% You can expand the titlebox if you need extra space
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% to show all the authors. Please do not make the titlebox
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% smaller than 5cm (the original size); we will check this
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% in the camera-ready version and ask you to change it back.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\title</span>{Measuring Generalization}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\author</span>{Peixian Wang <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span>  Bloomberg L.P. <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span>  {<span style="color:#66d9ef">\tt</span> pwang272@bloomberg.net}<span style="color:#66d9ef">\\</span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\date</span>{}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{document}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\maketitle</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{abstract}
+</span></span><span style="display:flex;"><span>  Recent years have seen an increase in theories on the role of information during the learning stage, especially regarding generalization. One particular approach to this has been work on the information plane <span style="color:#66d9ef">\cite</span>{tishby_deep_2015}, which measures the mutual information between the input layers, output layers, and latent representations. However, as most of the work has analyzed only small neural networks, we analyze the results and speculate on . In addition, we motivate the problem space by discussing the mesa optimizer: a problem within AI alignment theory that relies on sufficient generalization.<span style="color:#66d9ef">\end</span>{abstract}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\section</span>{Introduction}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Deep neural networks have shown impressive results across a variety of tasks, with the transformer based models <span style="color:#66d9ef">\cite</span>{vaswani_attention_2017} such as BERT <span style="color:#66d9ef">\cite</span>{devlin_bert_2019}, RoBERTa <span style="color:#66d9ef">\cite</span>{liu_roberta_2019} and T5 <span style="color:#66d9ef">\cite</span>{raffel_exploring_2020} breaking state of the art on NLP benchmarks. Research on these models have attempted to formalize the behaviors of these models, usually around the learning curve during training.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Typically, a model during training is considered to have two phases, one where the model has not yet sufficiently learned and a generalization gap remains, and a phase where the model begins to over-fit and increase in test error. A variety of studies have discussed the phase transition. <span style="color:#66d9ef">\cite</span>{merrill_effects_nodate} note that discrete structures appear within transformers during training time, where the gradients during gradient descent (GD) start to become similar to hardmaxes as training increases. Various information bottleneck (IB) papers, first proposed by <span style="color:#66d9ef">\cite</span>{tishby_deep_2015}, note that the you can observe a sufficient generalization and overfitting occur on by plotting mutual information <span style="color:#66d9ef">\cite</span>{shwartz-ziv_opening_2017}.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>This paper seeks to consolidate and summarize the findings from these sometimes conflicting approaches to measuring compression on the IP. To do this, this paper is split into two sections. The first section summarizes the work done on network saturation and the IB, with Table <span style="color:#66d9ef">\ref</span>{sources-table} denoting the sources used for this survey. The second part discusses how the work done on network saturation relate to the work done on the IB.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Our main conclusions are:
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{itemize}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%\item Multiple descent may only appear on datasets within a &#34;critical regime&#34;, which means that sufficiently large datasets may not exhibit this.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\item</span> Information bottleneck principle holds true with some limitations for nearly every case of neural network tested so far. However, some limitations exist, such as compression only appearing on the information plane on particular layers.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\item</span> Information bottleneck and mutual information measurements research is largely focused on setting theoretical bounds and have rarely been applied outside of small models. Furthermore, there is no information plane calculation for Adam optimizations. Calculating mutual information within a transformer may be a fruitful area of study.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\item</span> While compression occurs, saturation is not guarenteed to occur in smaller settings. However, for transformer models, saturation <span style="color:#66d9ef">\textit</span>{is} is observed for nearly all state of the art models.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{itemize}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\subsubsection</span>{Related Works}
+</span></span><span style="display:flex;"><span>We note that <span style="color:#66d9ef">\cite</span>{geiger_information_2021} contains much of the same work surveying the information bottleneck papers, and includes some work on drawing attention to the relationship between geometric compression and the information theoretic bounds within the IB. Our work differs from <span style="color:#66d9ef">\cite</span>{geiger_information_2021} as we highlight the role of network saturation in line with compression, as well as cites work relating to pratical applications of IB on used models.
+</span></span><span style="display:flex;"><span>Two other surveys of IB should be brought up: <span style="color:#66d9ef">\cite</span>{hafez-kolahi_information_2019}, which surveys the variety of information extraction methods, and <span style="color:#66d9ef">\cite</span>{goldfeld_information_2020}, which surveyed much of the same information as <span style="color:#66d9ef">\cite</span>{geiger_information_2021}. We contrast our work by discussing the particularities around network saturation and relating it work done on transformers, which neither of the other two papers attempt to do.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{figure*}[htbp]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\label</span>{sources-table}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{tabularx}{<span style="color:#66d9ef">\textwidth</span>}{X|X|X|X|X}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\textbf</span>{Reference} &amp; <span style="color:#66d9ef">\textbf</span>{Obs. Approach} &amp; <span style="color:#66d9ef">\textbf</span>{Architecture} &amp; <span style="color:#66d9ef">\textbf</span>{dataset} &amp; <span style="color:#66d9ef">\textbf</span>{Train}<span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\hline</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%\cite{nakkiran_deep_2019} &amp; Descent &amp; ResNets, CNN, transformer &amp; CIFAR-? &amp; ADAM, SGD \\
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%\cite{dascoli_triple_2020} &amp; Descent &amp; MLP &amp; CIFAR-? &amp; SGD \\
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019} &amp; Saturation &amp; MLP &amp; ADAM &amp; Custom <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\cite</span>{merrill_effects_nodate} &amp; Saturation &amp; transformer &amp; Various &amp; ADAM <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\cite</span>{wickstrom_information_2019}&amp; IB &amp; MLP, CNN, VGG16 &amp; MNIST,  CIFAR-10 &amp; SGD <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\cite</span>{saxe_information_2019} &amp; IB &amp; MLP &amp; SGD, BGD &amp; SZT, MNIST* (augmented) <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\cite</span>{shwartz-ziv_opening_2017} &amp; IB &amp; MLP &amp; SGD &amp; SZT <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\cite</span>{noshad_scalable_2018} &amp; IB &amp; MLP, CNN &amp; ADAM &amp; MNIST <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020} &amp; IB &amp; CNN &amp; SGD &amp; MNIST, CIFAR-10 <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{tabularx}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{figure*}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\section</span>{Information Bottleneck}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% talk about shannon? \
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\subsection</span>{Mutual Information}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\label</span>{mutual-information}
+</span></span><span style="display:flex;"><span>In information theory, Claude Shannon introduced the concept of entropy as a measure of uncertainty within outcome, quantifying the information and choice alongside.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Many measures of entropy have been discovered, from discrete entropy, to differential entropy for continous random variables, to conditional entropy for conditional random variables.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Discrete entropy can be defined as
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{equation} <span style="color:#66d9ef">\label</span>{discrete-entropy}
+</span></span><span style="display:flex;"><span>H(X) = -<span style="color:#66d9ef">\sum</span>_{i=1}^{N}p_i(x)<span style="color:#66d9ef">\log</span> p_i(x)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{equation}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Entropy in this case satisfies three main features: it is a positive measurement, it is maximal for a uniformly distributed random variable, and deterministic distributions have a entropy of zero.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Continuous entropy can be defined by replacing the sum symbol with the integral
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{equation} <span style="color:#66d9ef">\label</span>{cont-entropy}
+</span></span><span style="display:flex;"><span>H(X) = -<span style="color:#66d9ef">\int</span> p_t (x) <span style="color:#66d9ef">\log</span> p_t(x) dt
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{equation}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> Conditional entropy can be interpreted as the average amount of information left in the random variable <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> when the outcome of <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span> is known. Notably, it satisfies the following properties:
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{itemize}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\item</span> For any two variables <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span>, the conditional entropy <span style="color:#e6db74">$</span>H<span style="color:#e6db74">$</span> of <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>X|Y<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> is always lower than or equal to <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>X<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>, or <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>X|Y<span style="color:#f92672">)</span> \leq H<span style="color:#f92672">(</span>X<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\item</span> If <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span> are independent, then the conditional entropies are the same: <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>X|Y<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> H<span style="color:#f92672">(</span>X<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\item</span> If <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> is completely determined by <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span>, then <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>X|Y<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#e6db74">$</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{itemize}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  From these three properties it is possible to construct the concept of mutual information <span style="color:#e6db74">$</span>I<span style="color:#e6db74">$</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\begin</span>{equation}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\begin</span>{gathered}
+</span></span><span style="display:flex;"><span>      I(X;Y) = H(X) - H(X|Y) <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span>      = H(Y) - H(Y|X)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\end</span>{gathered}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\end</span>{equation}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X;Y<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> implies:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\begin</span>{itemize}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\item</span> If <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span> are independent, then <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X;Y<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#e6db74">$</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\item</span> If <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span> have some non-deterministic statistical relationship, then <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X;Y<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> captures the relationship that can be accounted for without random chance
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\item</span> If <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span> are deterministic in relation by <span style="color:#e6db74">$</span>f<span style="color:#f92672">(</span>X<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> Y<span style="color:#e6db74">$</span>, then <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>Y|X<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X;Y<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> H<span style="color:#f92672">(</span>Y<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\end</span>{itemize}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\subsection</span>{Information Bottleneck Principle}
+</span></span><span style="display:flex;"><span>The information bottleneck (IB) was first described by <span style="color:#66d9ef">\cite</span>{tishby_deep_2015}, where for random variables (RVs) <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>Y<span style="color:#e6db74">$</span>, there exists a  maximally compressed representation <span style="color:#e6db74">$</span>T<span style="color:#e6db74">$</span>. For two RVs with a statistical dependency on each other, <span style="color:#e6db74">$</span>T<span style="color:#e6db74">$</span> is always assumed to exist. A Markov chain of T-X-Y can then be drawn with the joint probability distribution that:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">\[</span>p<span style="color:#f92672">(</span>X,Y,T<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> p<span style="color:#f92672">(</span>T|X<span style="color:#f92672">)</span>p<span style="color:#f92672">(</span>Y|X<span style="color:#f92672">)</span>p<span style="color:#f92672">(</span>X<span style="color:#f92672">)</span> <span style="color:#e6db74">\]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Assuming each hidden layer of the neural network is <span style="color:#e6db74">$</span>T_{n}<span style="color:#e6db74">$</span>, the combination of encoder layers can be modeled as predicting <span style="color:#e6db74">$</span>P<span style="color:#f92672">(</span>T|X<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>, whereas the decoder layers predict <span style="color:#e6db74">$</span>P<span style="color:#f92672">(</span>Y|T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> <span style="color:#66d9ef">\cite</span>{shwartz-ziv_opening_2017}. By reusing the mutual information defined <span style="color:#66d9ef">\ref</span>{mutual-information}, a few properties around <span style="color:#e6db74">$</span>T<span style="color:#e6db74">$</span> can be formalized:
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{itemize}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\item</span> <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>Y;T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> describes the <span style="color:#66d9ef">\textit</span>{accuracy} of a representation
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\item</span> <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>T; X<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> provides the <span style="color:#66d9ef">\textit</span>{compression} or <span style="color:#66d9ef">\textit</span>{complexity} of a representation.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{itemize}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Given these two measurements, it is possible to construct an information plane (IP) plotting <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X; T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>Y; T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>, such as <span style="color:#66d9ef">\ref</span>{fig:neuron-ip}.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{figure}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\begin</span>{tikzpicture}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\begin</span>{axis}[
+</span></span><span style="display:flex;"><span>    xlabel=<span style="color:#e6db74">$</span>x<span style="color:#e6db74">$</span>,
+</span></span><span style="display:flex;"><span>    ylabel={<span style="color:#e6db74">$</span>I<span style="color:#e6db74">$</span>}
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\addplot</span> {x^2 - x +4};
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\end</span>{axis}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{tikzpicture}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\caption</span>{Caption}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\label</span>{fig:neuron-ip}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{figure}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Using the training epoch parameter <span style="color:#e6db74">$</span>t<span style="color:#e6db74">$</span>, the IP can be used to examine the two distinct phases: the first, a <span style="color:#e6db74">$</span>fitting<span style="color:#e6db74">$</span> phase, where <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X;T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>Y;T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> both increase as the model learns to fit to the target, and then a <span style="color:#e6db74">$</span>compression<span style="color:#e6db74">$</span> phase, where <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>X; T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> decreases, but <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>Y;T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> remains about the same, until reaching a point of <span style="color:#66d9ef">\textit</span>{overfitting}, where <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>Y;T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> drops. In otherwords, the critical phase transition on the regular learning curve is when <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>Y;T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> begins to decrease.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% discuss how only saxe found it, but actually this may be an incorrect measurement of mutual information
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>In <span style="color:#66d9ef">\cite</span>{shwartz-ziv_opening_2017}, the authors observed these two phases occuring for all their experiments. Saxe et all in <span style="color:#66d9ef">\cite</span>{saxe_information_2019} found that there was no compression to be to be observed on the IP for a ReLU MLP network trained with either SGD and BGD. The authors of <span style="color:#66d9ef">\cite</span>{noshad_scalable_2018} note that there were differences in estimates of MI between the <span style="color:#66d9ef">\cite</span>{saxe_information_2019} and <span style="color:#66d9ef">\cite</span>{shwartz-ziv_opening_2017} and offer a new way of estimating MI, proposing a linear complexity estimator of MI, and their estimation of MI finds that ReLU networks to show a compression phase.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>The authors of <span style="color:#66d9ef">\cite</span>{wickstrom_information_2019} use a different, kernel based estimator where they find compression within the softmax layer of a CNN with three convolutional layers and two fully connected layers of width <span style="color:#e6db74">$</span><span style="color:#ae81ff">400</span><span style="color:#f92672">-</span><span style="color:#ae81ff">256</span><span style="color:#e6db74">$</span> trained on MNIST. <span style="color:#66d9ef">\cite</span>{wickstrom_information_2019} also shows how compression occurs for all layers in a <span style="color:#e6db74">$</span><span style="color:#ae81ff">1000</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">20</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">20</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">20</span><span style="color:#e6db74">$</span> MLP trained on MNIST. Given that all networks investigated in <span style="color:#66d9ef">\cite</span>{wickstrom_information_2019} showed some form of compression, and that the work done in <span style="color:#66d9ef">\cite</span>{noshad_scalable_2018} refutes the only case where compression is <span style="color:#66d9ef">\textit</span>{not} observed, IB theory holds and may have further applications, albiet on particular layers.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% discuss how to actually calculate mutual information
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>As described above, measurements of mutual information within DNNs are not exact, as they are a result of the estimation process and inherit uncertainty related to the process itself <span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019}. In addition, mutual information can be estimated in a variety of ways <span style="color:#66d9ef">\cite</span>{noshad_scalable_2018}, <span style="color:#66d9ef">\cite</span>{poole_variational_2019}, <span style="color:#66d9ef">\cite</span>{davis_network_2020}, <span style="color:#66d9ef">\cite</span>{gabrie_entropy_2019}, <span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020}, which further increases the uncertainties around estimating mutual information.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Fundamentally, all estimators of mutual information lie around that if mutual information between <span style="color:#e6db74">$</span>T<span style="color:#e6db74">$</span> and <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> were to be defined as
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{equation}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\begin</span>{gathered}
+</span></span><span style="display:flex;"><span>    I(T;X) = H(T) - H(T|X)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\end</span>{gathered}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{equation}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>and from <span style="color:#66d9ef">\ref</span>{cont-entropy} <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>T|X<span style="color:#f92672">)</span><span style="color:#e6db74">$</span> from <span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019} can be defined as
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{equation}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\begin</span>{gathered}
+</span></span><span style="display:flex;"><span>    H(T|X) = - <span style="color:#66d9ef">\int</span> p_t(t) <span style="color:#66d9ef">\log</span> p_t(t) dt = -<span style="color:#66d9ef">\infty</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\end</span>{gathered}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{equation}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>As a result, the mutual information becomes infinite. In order to solve this problem, <span style="color:#66d9ef">\cite</span>{shwartz-ziv_opening_2017} note the importance of adding noise to the process, confirmed by <span style="color:#66d9ef">\cite</span>{saxe_information_2019}. Noise <span style="color:#e6db74">$</span>Z<span style="color:#e6db74">$</span> can be added to <span style="color:#e6db74">$</span>T<span style="color:#e6db74">$</span> as either a Gaussian mixture or or by discretizing into bins, resulting in the noisy variable <span style="color:#e6db74">$</span>\hat{T} <span style="color:#f92672">=</span> T <span style="color:#f92672">+</span> Z<span style="color:#e6db74">$</span>, which then transforms the condition entropy to <span style="color:#e6db74">$</span>H<span style="color:#f92672">(</span>T|X<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> H<span style="color:#f92672">(</span>Z<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>, and MI becomes <span style="color:#e6db74">$</span>I<span style="color:#f92672">(</span>\hat{T};X<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> H<span style="color:#f92672">(</span>\hat{T}<span style="color:#f92672">)</span> <span style="color:#f92672">+</span> H<span style="color:#f92672">(</span>Z<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>If the noise is added is Gaussian, then a kernel density estimator could be used to estimate the mutal information. If descritized into bins, then the noise arises as part of the discretization process. As <span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019} specifically note, DNNs with double-sided saturating activation functions are not as sensitive to estimation differences in mutual information, but non-saturating activations may or may not show compression depending on how MI is defined.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020} describe a framework for estimation of entropy between layers. The authors formalize the entire data available in a CNN as a four dimensional array <span style="color:#e6db74">$</span>dCNN<span style="color:#f92672">(</span>X, L, C, T<span style="color:#f92672">)</span><span style="color:#e6db74">$</span>, where <span style="color:#e6db74">$</span>X<span style="color:#e6db74">$</span> is the input data, <span style="color:#e6db74">$</span>L<span style="color:#e6db74">$</span> is the layer dimension, <span style="color:#e6db74">$</span>C<span style="color:#e6db74">$</span> is the convolutional filters, and <span style="color:#e6db74">$</span>T<span style="color:#e6db74">$</span> is the epoch number. Using a CNN trained on MNIST and CIFAR-10, they use this four dimensional representation to track information flow by estimating change in entropy between layers. <span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020} sidesteps the MI estimation debates by simply measuring entropy, which may prove to be far more tractable in terms of larger networks. The authors also note that they wish to apply their methods to transformer-based models and RNNs in the future.
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Generally, when considering mutual information in DNNs, the analyzed values are technically the result of the estimation process and, therefore, are highly sensitive to it.- chelombiev_adaptive_2019
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% mutual information is not easy to estimate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% discuss how none of these are very deep, and concerns with calculating mutual information beyond a certain amount
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>For all five papers that discussed IB, only two papers implemented something other than a multilayer perceptron (MLP) <span style="color:#66d9ef">\cite</span>{noshad_scalable_2018} <span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020}. Furthermore, for all the papers that implemented an MLP, the network itself was fairly deep and parameters were very small, never going beyond 5 layers. As a result, it is unclear how well bound holds with larger neural networks. To be the best of the authors knowledge, <span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020} has been the only paper which has attempted to formalize IB for larger networks.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\subsection</span>{Network Saturation}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019} uses two types of adapative estimation schemes for mutual information (MI). For both approaches, they find that compression is always present, even when saturation does not. The authors note that compression does not always happen at later stages in the training, but often occurs from intialization depending on network archiecture. They also note that the activation function plays a role in not only whether compression does occur, but how compression occurs. As discussed above, while <span style="color:#66d9ef">\cite</span>{saxe_information_2019} notes that single-sided saturating nonlinearities or linear activation functions do not yield compression, <span style="color:#66d9ef">\cite</span>{noshad_scalable_2018} argues that <span style="color:#66d9ef">\cite</span>{saxe_information_2019} contained a poor measurement of MI, and found that ReLU networks do show compression. Nevertheless, all authors agree that double-sided nonlinearities such as <span style="color:#e6db74">$</span>tanh<span style="color:#e6db74">$</span> or <span style="color:#e6db74">$</span>sigmoid<span style="color:#e6db74">$</span> exhibit compression phases.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\cite</span>{merril_effects_nodate} note that as parameters grow within training for a transformer network, the network approaches an discretized network with saturated activation functions. The authors find that internal representations of pretrained transformers approximate saturated networks, while randomly initialized transformers do not. Specifically, they find that for T5 <span style="color:#66d9ef">\cite</span>{raffel_exploring_2020}, they establish that the parameter <span style="color:#e6db74">$</span>\ell_<span style="color:#ae81ff">2</span><span style="color:#e6db74">$</span> norm grows during training for every transformer-based model. As the <span style="color:#e6db74">$</span>\ell_<span style="color:#ae81ff">2</span><span style="color:#e6db74">$</span> grows during training, divergence between the parameters leads to a saturated network, where the softmaxes of each layer begin to minimic hardmaxes.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\section</span>{Discussion}
+</span></span><span style="display:flex;"><span>The information bottleneck (IB) principle provides a potentially fruitful area of research when it comes to analysis of neural networks. One of the main areas of difficulty for measurement of IB is the information plane (IP) behaviors are reliant on estimators of mutual information (MI), which are subject to artifacts during the estimation process.
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%Despite there being close relationships between the information plane (IP) and learning rates, no research exists where the effects are compared. Given the variety of methods that can be used to calculate mutual information (MI) $I$, it would seem important to validate MI with a learning curve on a model. For example, in the given case of the double descent small model \cite{nakkiran_deep_2019} figure 9, where the intermediate and large models exhibit double descent at higher epochs \textit{after} initially appearing to overfit, it would be expected that the IP plot would exhibit similar behaviors, where $I(Y;T)$ would decrease, then eventually increase again.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%In addition, \cite{merrill_effects_nodate} find that the parameter norm growth also occurs during the training process, before the model begins to overfit. If there were a measure of MI for transformers, where
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019} develops a more robust form of estimating mutual information, which then showed that compression within the IP is dependent on the activation function used and notes that saturation of the activation function is not required for compression. Like all the IB papers, the networks analyzed in <span style="color:#66d9ef">\cite</span>{chelombiev_adaptive_2019} were very small multilayer perceptrons for tractability purposes. However, given a weak relationship could be found between saturation and compression, combining this work with <span style="color:#66d9ef">\cite</span>{merrill_effects_nodate} may offer new insights on how transformers learn, even without a robust measurement of MI due to tractability purposes.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>For a large DNN, <span style="color:#66d9ef">\cite</span>{shen_information-theoretic_2020} provides the most tractable usage of
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Within learning theory, it is possible to estimate the generalization error bounds of a learning algorithm. As IB formalizes into a learning algorithm, it is possible to construct the generalization error for a given neural network during training, which would prove useful for network analysis. In <span style="color:#66d9ef">\cite</span>{shamir_learning_nodate}, the authors describe mutual information as a measure of performance, providing the example of a document classifier. The authors state that the likelihood of misclassifying a particular document using its words as a sample of points has a strict upper bound, leading to a quantified measure of generalization error.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Given it remains difficult and ambiguous to calculate MI for high dimensions <span style="color:#66d9ef">\cite</span>{poole_variational_2019}, if a correlation to IB could be found or approximated with the measurement of norm growth, then it may be possible to approximate the generalization error. The relationship between saturated neural networks and IB, alongside how transformers in some cases are already saturated may suggested a useful meeting point for newer studies.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% include your own bib file like this:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\bibliographystyle</span>{acl}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\bibliography</span>{refs.bib}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{document}
+</span></span></code></pre></div>
           
 
 

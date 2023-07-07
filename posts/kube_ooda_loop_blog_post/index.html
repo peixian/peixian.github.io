@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.2062ff34f0bb48262d3b3d36d4126a89f0d37e3f0fe3c3c7133b374611a90da9.js" integrity="sha256-IGL/NPC7SCYtOz021BJqifDTfj8P48PHEzs3RhGpDak="></script>
+<script defer src="/en.search.min.ad86ac7a866c0db8d80a445ed403029569b9029139046b5dfe3862b6eed34e4d.js" integrity="sha256-rYaseoZsDbjYCkRe1AMClWm5ApE5BGtd/jhitu7TTk0="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -81,20 +81,20 @@ The fundalmental building block in the Kubernetes (k8s) lego box is the concept 
 </ol>
 <p>What&rsquo;s interesting here is that <em>no state was stored between iteration 0 and iteration 1</em>. Iteration 1 did not need <em>any</em> information from iteration 0 to perform its actions, rather, iteration 1 oriented itself based on the current state of the world (that two pods already existed).</p>
 <p>Now, you might say that this system is not actually stateless, since there was state encapsulated within the number of pods already running. While this is true, it&rsquo;s important to note that we never explicitly managed the state, that is, we never allocated any variables to track any information generated within the loop. Using this OODA loop, Kubernetes has managed to perform stateful actions while keeping the implementation stateless.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>In fact, <a href="https://www.mgasch.com/post/k8sevents/#fnref:1">Michael Gasch&rsquo;s great article</a> on Kubernetes events points this out as well.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>For simplicity we&rsquo;ll pretend each docker container maps to one pod, although this isn&rsquo;t really necessary information.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>This example is a little contrived since steps 3 and 4 are merged.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
           
 

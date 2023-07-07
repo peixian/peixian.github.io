@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.2062ff34f0bb48262d3b3d36d4126a89f0d37e3f0fe3c3c7133b374611a90da9.js" integrity="sha256-IGL/NPC7SCYtOz021BJqifDTfj8P48PHEzs3RhGpDak="></script>
+<script defer src="/en.search.min.ad86ac7a866c0db8d80a445ed403029569b9029139046b5dfe3862b6eed34e4d.js" integrity="sha256-rYaseoZsDbjYCkRe1AMClWm5ApE5BGtd/jhitu7TTk0="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -57,7 +57,7 @@ Symptoms began to appear at 7:43 PM UTC, where we noticed that new pods were bei
 </ul>
 <h2 id="symptoms-and-root-cause">Symptoms and Root Cause</h2>
 <h3 id="erlang-configuration">Erlang Configuration</h3>
-<p><code>pg2</code><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> is a process group management library used in the BEAM VM for cluster membership. Erlang clusters by default are full mesh, meaning that each node knows every other node. Of course, this inherently limits the number of nodes, as message scaling is \(o\(n^2\)\) within the cluster.</p>
+<p><code>pg2</code><sup id="fnref1:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> is a process group management library used in the BEAM VM for cluster membership. Erlang clusters by default are full mesh, meaning that each node knows every other node. Of course, this inherently limits the number of nodes, as message scaling is \(o\(n^2\)\) within the cluster.</p>
 <p>The <strong>Erlang and OTP in Action</strong><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> mentions:</p>
 <blockquote>
 <p>A cluster of Erlang nodes can consist of two or more nodes. As a practical limit, you may have a couple of dozen, but probably not hundreds of nodes. This is because the cluster is a fully connected network and the communication overhead for keeping machines in touch with each other increases quadratically with the number of nodes.</p>
@@ -97,29 +97,29 @@ Symptoms began to appear at 7:43 PM UTC, where we noticed that new pods were bei
 <li><a href="https://livebook.manning.com/concept/erlang/cluster">https://livebook.manning.com/concept/erlang/cluster</a></li>
 <li><a href="https://arxiv.org/abs/1802.02652">https://arxiv.org/abs/1802.02652</a></li>
 </ul>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>also known as the Erlang VM&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p><a href="https://github.com/bitwalker/distilleryxs">https://github.com/bitwalker/distilleryxs</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
-<p><a href="https://www.erlang.org/docs/18/man/pg2.html">https://www.erlang.org/docs/18/man/pg2.html</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:3">
+<p><a href="https://www.erlang.org/docs/18/man/pg2.html">https://www.erlang.org/docs/18/man/pg2.html</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p><a href="https://github.com/zhongwencool/observer_cli">https://github.com/zhongwencool/observer_cli</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p><a href="https://livebook.manning.com/concept/erlang/cluster">https://livebook.manning.com/concept/erlang/cluster</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:6" role="doc-endnote">
+<li id="fn:6">
 <p><a href="http://charap.co/metastable-failures-in-the-wild/">http://charap.co/metastable-failures-in-the-wild/</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
           
 

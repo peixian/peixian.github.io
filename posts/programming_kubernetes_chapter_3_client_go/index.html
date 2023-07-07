@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.2062ff34f0bb48262d3b3d36d4126a89f0d37e3f0fe3c3c7133b374611a90da9.js" integrity="sha256-IGL/NPC7SCYtOz021BJqifDTfj8P48PHEzs3RhGpDak="></script>
+<script defer src="/en.search.min.ad86ac7a866c0db8d80a445ed403029569b9029139046b5dfe3862b6eed34e4d.js" integrity="sha256-rYaseoZsDbjYCkRe1AMClWm5ApE5BGtd/jhitu7TTk0="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -59,21 +59,21 @@
 </li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// basic client
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">import</span> (
-    <span style="color:#a6e22e">metav1</span> <span style="color:#e6db74">&#34;k8s.io/apimachinery/pkg/apis/meta/v1&#34;</span>
-    <span style="color:#e6db74">&#34;k8s.io/client-go/tools/clientcmd&#34;</span>
-    <span style="color:#e6db74">&#34;k8s.io/client-go/kubernetes&#34;</span>
-)
-
-<span style="color:#a6e22e">kubeconfig</span> = <span style="color:#a6e22e">flag</span>.<span style="color:#a6e22e">String</span>(<span style="color:#e6db74">&#34;kubeconfig, &#34;</span><span style="color:#960050;background-color:#1e0010">~</span><span style="color:#f92672">/</span>.<span style="color:#a6e22e">kube</span><span style="color:#f92672">/</span><span style="color:#a6e22e">config</span><span style="color:#e6db74">&#34;, &#34;</span><span style="color:#a6e22e">kubeconfig</span> <span style="color:#a6e22e">file</span><span style="color:#e6db74">&#34;)
-</span><span style="color:#e6db74">flag.Parse()
-</span><span style="color:#e6db74">config, err := clientcmd.BuildConfigFromFlags(&#34;&#34;, *kubeconfig)
-</span><span style="color:#e6db74">clientset, err := kubernetes.NewForConfig(config)
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">pod, err := clientset.CoreV1().Pods(&#34;</span><span style="color:#a6e22e">book</span><span style="color:#e6db74">&#34;).Get(&#34;</span><span style="color:#a6e22e">example</span><span style="color:#960050;background-color:#1e0010">&#34;</span>, <span style="color:#a6e22e">metav1</span>.<span style="color:#a6e22e">GetOptions</span>{})
-</code></pre></div><p>This parses the appropriate kubeconfig and then gets the pods using the <code>GetOptions</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// basic client
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">metav1</span> <span style="color:#e6db74">&#34;k8s.io/apimachinery/pkg/apis/meta/v1&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;k8s.io/client-go/tools/clientcmd&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;k8s.io/client-go/kubernetes&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">kubeconfig</span> = <span style="color:#a6e22e">flag</span>.<span style="color:#a6e22e">String</span>(<span style="color:#e6db74">&#34;kubeconfig, &#34;</span><span style="color:#960050;background-color:#1e0010">~</span><span style="color:#f92672">/</span>.<span style="color:#a6e22e">kube</span><span style="color:#f92672">/</span><span style="color:#a6e22e">config</span><span style="color:#e6db74">&#34;, &#34;</span><span style="color:#a6e22e">kubeconfig</span> <span style="color:#a6e22e">file</span><span style="color:#e6db74">&#34;)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">flag.Parse()
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">config, err := clientcmd.BuildConfigFromFlags(&#34;&#34;, *kubeconfig)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">clientset, err := kubernetes.NewForConfig(config)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">pod, err := clientset.CoreV1().Pods(&#34;</span><span style="color:#a6e22e">book</span><span style="color:#e6db74">&#34;).Get(&#34;</span><span style="color:#a6e22e">example</span><span style="color:#960050;background-color:#1e0010">&#34;</span>, <span style="color:#a6e22e">metav1</span>.<span style="color:#a6e22e">GetOptions</span>{})
+</span></span></code></pre></div><p>This parses the appropriate kubeconfig and then gets the pods using the <code>GetOptions</code></p>
 <p>If you run a binary inside of a pod inside a cluster, <code>kubelet</code> automatically mounts a sservice account into <code>/var/run/secrets/kubernetes.io/serviceaccount</code></p>
 <p>CRUD operations are run through the <code>XOptions</code>, such as <code>CreateOptions</code> or <code>DeleteOptions</code>. ALl of htem are part of <code>ObjectMeta</code></p>
 <ul>
@@ -96,16 +96,16 @@
 <li><a href="https://github.com/kubernetes/apimachinery/blob/10b38829b6211c0d672e14a126479221312d3368/pkg/apis/meta/v1/types.go#L41">https://github.com/kubernetes/apimachinery/blob/10b38829b6211c0d672e14a126479221312d3368/pkg/apis/meta/v1/types.go#L41</a></li>
 </ul>
 <p>example of a pod declaration</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Pod</span> <span style="color:#66d9ef">struct</span> {
-    <span style="color:#a6e22e">metav1</span>.<span style="color:#a6e22e">TypeMeta</span> <span style="color:#e6db74">`json:&#34;,inline&#34;`</span>
-
-    <span style="color:#a6e22e">metav1</span>.<span style="color:#a6e22e">ObjectMeta</span> <span style="color:#e6db74">`json:&#34;metadata,omitempty&#34;`</span>
-
-    <span style="color:#a6e22e">Spec</span> <span style="color:#a6e22e">PodSpec</span> <span style="color:#e6db74">`json:&#34;spec,omitempty&#34;`</span>
-
-    <span style="color:#a6e22e">Status</span> <span style="color:#a6e22e">PodStatus</span> <span style="color:#e6db74">`json:&#34;status,omitempty&#34;`</span>
-}
-</code></pre></div><p>Note that the type and version are not set by the user, they are set when being marshaled in the versionserializer</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Pod</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">metav1</span>.<span style="color:#a6e22e">TypeMeta</span> <span style="color:#e6db74">`json:&#34;,inline&#34;`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">metav1</span>.<span style="color:#a6e22e">ObjectMeta</span> <span style="color:#e6db74">`json:&#34;metadata,omitempty&#34;`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Spec</span> <span style="color:#a6e22e">PodSpec</span> <span style="color:#e6db74">`json:&#34;spec,omitempty&#34;`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Status</span> <span style="color:#a6e22e">PodStatus</span> <span style="color:#e6db74">`json:&#34;status,omitempty&#34;`</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Note that the type and version are not set by the user, they are set when being marshaled in the versionserializer</p>
 <h2 id="objectmeta"><code>ObjectMeta</code></h2>
 <ul>
 <li>corresponds to the <code>metadata</code> section in yaml</li>

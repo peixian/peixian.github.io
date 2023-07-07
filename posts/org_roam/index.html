@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.2062ff34f0bb48262d3b3d36d4126a89f0d37e3f0fe3c3c7133b374611a90da9.js" integrity="sha256-IGL/NPC7SCYtOz021BJqifDTfj8P48PHEzs3RhGpDak="></script>
+<script defer src="/en.search.min.ad86ac7a866c0db8d80a445ed403029569b9029139046b5dfe3862b6eed34e4d.js" integrity="sha256-rYaseoZsDbjYCkRe1AMClWm5ApE5BGtd/jhitu7TTk0="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -48,40 +48,39 @@
 <ul>
 <li>Groups - <a href="https://org-roam.discourse.group/t/analysing-the-semantic-network/56">https://org-roam.discourse.group/t/analysing-the-semantic-network/56</a></li>
 <li>Example:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">## Fetch data</span>
-<span style="color:#a6e22e">library</span>(DBI) <span style="color:#75715e"># Sqlite</span>
-con <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbConnect</span>(RSQLite<span style="color:#f92672">::</span><span style="color:#a6e22e">SQLite</span>(), <span style="color:#e6db74">&#34;org-roam.db&#34;</span>)
-<span style="color:#a6e22e">dbListTables</span>(con)
-links <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbSendQuery</span>(con, <span style="color:#e6db74">&#34;SELECT [from], [to] FROM links&#34;</span>)
-links <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbFetch</span>(links)
-titles <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbSendQuery</span>(con, <span style="color:#e6db74">&#34;SELECT * FROM titles&#34;</span>)
-titles <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbFetch</span>(titles)
-<span style="color:#a6e22e">dbDisconnect</span>(con)
-
-<span style="color:#75715e">## Create edge list [from - to] with clean labels</span>
-<span style="color:#a6e22e">library</span>(dplyr) <span style="color:#75715e"># Transformation</span>
-<span style="color:#a6e22e">library</span>(stringr) <span style="color:#75715e"># String manipulation</span>
-edges <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">inner_join</span>(links, titles, by <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;from&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;file&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">inner_join</span>(titles, by <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;to&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;file&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">select</span>(From <span style="color:#f92672">=</span> titles.x, To <span style="color:#f92672">=</span> titles.y) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">mutate</span>(From <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_sub</span>(From, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">-3</span>), <span style="color:#75715e"># Clean titles</span>
-         From <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace</span>(From, <span style="color:#e6db74">&#39;&#34; &#34;&#39;</span> ,<span style="color:#e6db74">&#34;/&#34;</span>),
-         To <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_sub</span>(To, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">-3</span>),
-         To <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace</span>(To, <span style="color:#e6db74">&#39;&#34; &#34;&#39;</span> ,<span style="color:#e6db74">&#34;/&#34;</span>),
-         )
-
-<span style="color:#75715e">## Visualise and save as png</span>
-<span style="color:#a6e22e">library</span>(igraph) <span style="color:#75715e"># Network analysis</span>
-<span style="color:#a6e22e">svg</span>(<span style="color:#e6db74">&#34;./org-roam-graph.svg&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">19200</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">10800</span>)
-<span style="color:#a6e22e">par</span>(mar <span style="color:#f92672">=</span> <span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>))
-g <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">graph_from_edgelist</span>(<span style="color:#a6e22e">as.matrix</span>(edges), directed <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
-g <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">simplify</span>(g)
-coms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">spinglass.community</span>(g) <span style="color:#75715e"># Community detection</span>
-<span style="color:#a6e22e">plot</span>(coms, g, layout <span style="color:#f92672">=</span> layout_with_fr,
-            vertex.size<span style="color:#f92672">=</span><span style="color:#a6e22e">degree</span>(g))
-<span style="color:#a6e22e">dev.off</span>()
-
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## Fetch data</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(DBI) <span style="color:#75715e"># Sqlite</span>
+</span></span><span style="display:flex;"><span>con <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbConnect</span>(RSQLite<span style="color:#f92672">::</span><span style="color:#a6e22e">SQLite</span>(), <span style="color:#e6db74">&#34;org-roam.db&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dbListTables</span>(con)
+</span></span><span style="display:flex;"><span>links <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbSendQuery</span>(con, <span style="color:#e6db74">&#34;SELECT [from], [to] FROM links&#34;</span>)
+</span></span><span style="display:flex;"><span>links <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbFetch</span>(links)
+</span></span><span style="display:flex;"><span>titles <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbSendQuery</span>(con, <span style="color:#e6db74">&#34;SELECT * FROM titles&#34;</span>)
+</span></span><span style="display:flex;"><span>titles <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbFetch</span>(titles)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dbDisconnect</span>(con)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Create edge list [from - to] with clean labels</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(dplyr) <span style="color:#75715e"># Transformation</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(stringr) <span style="color:#75715e"># String manipulation</span>
+</span></span><span style="display:flex;"><span>edges <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">inner_join</span>(links, titles, by <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;from&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;file&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">inner_join</span>(titles, by <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;to&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;file&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">select</span>(From <span style="color:#f92672">=</span> titles.x, To <span style="color:#f92672">=</span> titles.y) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(From <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_sub</span>(From, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">-3</span>), <span style="color:#75715e"># Clean titles</span>
+</span></span><span style="display:flex;"><span>         From <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace</span>(From, <span style="color:#e6db74">&#39;&#34; &#34;&#39;</span> ,<span style="color:#e6db74">&#34;/&#34;</span>),
+</span></span><span style="display:flex;"><span>         To <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_sub</span>(To, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">-3</span>),
+</span></span><span style="display:flex;"><span>         To <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace</span>(To, <span style="color:#e6db74">&#39;&#34; &#34;&#39;</span> ,<span style="color:#e6db74">&#34;/&#34;</span>),
+</span></span><span style="display:flex;"><span>         )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Visualise and save as png</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(igraph) <span style="color:#75715e"># Network analysis</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">svg</span>(<span style="color:#e6db74">&#34;./org-roam-graph.svg&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">19200</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">10800</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mar <span style="color:#f92672">=</span> <span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>))
+</span></span><span style="display:flex;"><span>g <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">graph_from_edgelist</span>(<span style="color:#a6e22e">as.matrix</span>(edges), directed <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</span></span><span style="display:flex;"><span>g <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">simplify</span>(g)
+</span></span><span style="display:flex;"><span>coms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">spinglass.community</span>(g) <span style="color:#75715e"># Community detection</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(coms, g, layout <span style="color:#f92672">=</span> layout_with_fr,
+</span></span><span style="display:flex;"><span>            vertex.size<span style="color:#f92672">=</span><span style="color:#a6e22e">degree</span>(g))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span></code></pre></div></li>
 </ul>
 <h2 id="org-roam-bibtex">Org-roam-bibtex</h2>
 <p><a href="https://github.com/zaeph/org-roam-bibtex">https://github.com/zaeph/org-roam-bibtex</a></p>
@@ -97,20 +96,20 @@ coms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">spingl
 <p><a href="https://plainorg.com/">https://plainorg.com/</a></p>
 <p>Sync on Dropbox, does it work better with task tracking?</p>
 <h2 id="org-roam-export">Org-roam export</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">--eval <span style="color:#e6db74">&#34;(run-hooks &#39;emacs-startup-hook)&#34;</span> --eval <span style="color:#e6db74">&#34;(configuration-layer//load)&#34;</span>  --eval <span style="color:#e6db74">&#39;(org-roam-db-autosync-mode)&#39;</span> --eval <span style="color:#e6db74">&#39;(org-roam-export-all)&#39;</span> &gt; /home/peixian/emacs-export.log 2&gt;&amp;<span style="color:#ae81ff">1</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun org-roam-export-all ()
-  <span style="color:#e6db74">&#34;&#34;</span>
-  (interactive)
-  (org-roam-db-sync)
-  (dolist (fil (org-roam--list-files org-roam-directory))
-    (if (and (not (string-match-p <span style="color:#e6db74">&#34;private&#34;</span> fil)) (not (string-match-p <span style="color:#e6db74">&#34;hugo_setup&#34;</span> fil)))
-        (with-current-buffer (find-file-noselect fil)
-
-          (org-hugo-export-wim-to-md)
-          (<span style="color:#a6e22e">kill-buffer</span>))
-      ))
-  )
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>--eval <span style="color:#e6db74">&#34;(run-hooks &#39;emacs-startup-hook)&#34;</span> --eval <span style="color:#e6db74">&#34;(configuration-layer//load)&#34;</span>  --eval <span style="color:#e6db74">&#39;(org-roam-db-autosync-mode)&#39;</span> --eval <span style="color:#e6db74">&#39;(org-roam-export-all)&#39;</span> &gt; /home/peixian/emacs-export.log 2&gt;&amp;<span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span>(defun org-roam-export-all ()
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  (interactive)
+</span></span><span style="display:flex;"><span>  (org-roam-db-sync)
+</span></span><span style="display:flex;"><span>  (dolist (fil (org-roam--list-files org-roam-directory))
+</span></span><span style="display:flex;"><span>    (if (and (not (string-match-p <span style="color:#e6db74">&#34;private&#34;</span> fil)) (not (string-match-p <span style="color:#e6db74">&#34;hugo_setup&#34;</span> fil)))
+</span></span><span style="display:flex;"><span>        (with-current-buffer (find-file-noselect fil)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>          (org-hugo-export-wim-to-md)
+</span></span><span style="display:flex;"><span>          (<span style="color:#a6e22e">kill-buffer</span>))
+</span></span><span style="display:flex;"><span>      ))
+</span></span><span style="display:flex;"><span>  )
+</span></span></code></pre></div>
           
 
 
