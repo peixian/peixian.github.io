@@ -888,7 +888,8 @@ Exploiting the jemalloc Memory Allocator: Owning Firefox&amp;rsquo;s Heap Attack
       
       <guid>/posts/alloy_spec_lang/</guid>
       <description>programming languages
-Specificiation langauge, can be seen to model the single origin policy in web development</description>
+Specificiation langauge, can be seen to model the single origin policy in web development
+https://alloytools.org/ https://buttondown.email/hillelwayne/archive/maybe-software-engineers-could-learn-something/ </description>
     </item>
     
     <item>
@@ -2391,6 +2392,16 @@ https://en.wikipedia.org/wiki/Bully_algorithm</description>
     </item>
     
     <item>
+      <title>Bunz: School Will Never End: On Infantilization in Digital Environments</title>
+      <link>/posts/bunz_school_will_never_end_on_infantilization_in_digital_environments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bunz_school_will_never_end_on_infantilization_in_digital_environments/</guid>
+      <description>articles, computers
+http://sigwait.tk/~alex/doc/bunz%2Cmercedes__school-will-never-end/</description>
+    </item>
+    
+    <item>
       <title>burundi</title>
       <link>/posts/burundi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2789,7 +2800,7 @@ https://books.google.com/books?hl=en&amp;amp;lr=&amp;amp;id=ruBTDwAAQBAJ&amp;amp
       
       <guid>/posts/china/</guid>
       <description>Tags: root
-Resources: https://macropolo.org/ Labor protest map https://maps.clb.org.hk/ </description>
+Resources: https://macropolo.org/ Labor protest map https://maps.clb.org.hk/ Chinese Cities and Breakdown https://crossingtheriver.substack.com/p/how-to-understand-the-provinces-prefectures </description>
     </item>
     
     <item>
@@ -3347,7 +3358,7 @@ either systems are formalistic and hard to learn (lots of acquired knowledge) bu
       <guid>/posts/computers/</guid>
       <description>https://wiki.c2.com/?SufficientlySmartCompiler
 Tags: root
-grad school professors https://software.imdea.org/~gotsman/ Firmware https://osfc.io/archive- open source firmware conference Laptop Manufacturers Clevo - company that manufactures white label laptops History https://mitpress.mit.edu/books/john-von-neumann-and-origins-modern-computing Devlogs https://forums.tigsource.com/index.php?board=27.0 Lucas Pope Devlogs https://forums.tigsource.com/index.php?topic=40832.720 https://forums.tigsource.com/index.php?topic=29750.700 https://dukope.itch.io/mars-after-midnight/devlog/261758/mars-after-midnight Non-von Neumann Architectures (books) https://www.goodreads.com/book/show/6033620-the-architecture-of-symbolic-computers https://users.ece.cmu.edu/~koopman/stack_computers/index.html talks https://www.youtube.com/c/OpencomputeOrg/videos Infrastructures https://clui.org math https://www.finseth.com/craft/#preface </description>
+grad school professors https://software.imdea.org/~gotsman/ Firmware https://osfc.io/archive- open source firmware conference Laptop Manufacturers Clevo - company that manufactures white label laptops History https://mitpress.mit.edu/books/john-von-neumann-and-origins-modern-computing Devlogs https://forums.tigsource.com/index.php?board=27.0 Lucas Pope Devlogs https://forums.tigsource.com/index.php?topic=40832.720 https://forums.tigsource.com/index.php?topic=29750.700 https://dukope.itch.io/mars-after-midnight/devlog/261758/mars-after-midnight Non-von Neumann Architectures (books) https://www.goodreads.com/book/show/6033620-the-architecture-of-symbolic-computers https://users.ece.cmu.edu/~koopman/stack_computers/index.html talks https://www.youtube.com/c/OpencomputeOrg/videos Infrastructures https://clui.org Hetzner Server Auctions https://www.hetzner.com/sb </description>
     </item>
     
     <item>
@@ -3803,7 +3814,7 @@ https://doc.dpdk.org/guides-16.04/linux_gsg/index.html </description>
       
       <guid>/posts/databases/</guid>
       <description>Tags: Computers
-Class https://15721.courses.cs.cmu.edu/spring2019/schedule.html MariaDB https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/ Calcite https://calcite.apache.org used in bodo.ai Query optimizers how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf Query Pushdown basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/ Spanner https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf KV stores: RocksDB SpeedDB - https://github.com/speedb-io/speedb </description>
+Class https://15721.courses.cs.cmu.edu/spring2019/schedule.html https://www.youtube.com/playlist?app=desktop&amp;amp;list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&amp;amp;themeRefresh=1 MariaDB https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/ Calcite https://calcite.apache.org used in bodo.ai Query optimizers how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf Query Pushdown basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/ Spanner https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf KV stores: RocksDB SpeedDB - https://github.com/speedb-io/speedb </description>
     </item>
     
     <item>
@@ -3960,7 +3971,8 @@ Transistors get smaller, power denisty stays constant</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/derivatives/</guid>
-      <description>Tags: finance</description>
+      <description>Tags: finance
+Pricing Primer: https://www.jdawiseman.com/books/pricing-money/Pricing_Money_JDAWiseman.html comments: https://news.ycombinator.com/item?id=36358754</description>
     </item>
     
     <item>
@@ -4139,7 +4151,7 @@ cloud apps domainted by packet processing https://www.usenix.org/sites/default/f
       
       <guid>/posts/dns/</guid>
       <description>Tags: web
-Using it as a key/value dnskv.com </description>
+Using it as a key/value dnskv.com Dynamic DNS with Ubiquiti https://daltonflanagan.com/configuring-ubiquiti-unifi-usg-for-namecheap-ddns/ https://www.devwithimagination.com/2022/05/28/using-cloudflare-for-dynamic-dns-on-unifi/ </description>
     </item>
     
     <item>
@@ -4549,7 +4561,7 @@ UNSCR 1325 undertakes a textual analysis of all negotiated civil war peace agree
       <guid>/posts/emacs/</guid>
       <description>Tags: computers
 https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bcompletion/auto-completion https://github.com/jwiegley/use-package Org tempo problems: https://github.com/syl20bnr/spacemacs/issues/11798#issuecomment-454941024 https://github.com/syl20bnr/spacemacs/issues/12003#issuecomment-465686129 Tramp bastion: /ssh:bird@bastion|ssh:you@remotehost:/path Tramp sudo: /ssh:you@remote|sudo:remote:/path Optimizations https://news.ycombinator.com/item?id=28336724 Spacemacs export Load all layers and call a function defined in dotspacemacs/user-config:
-(run-hooks &#39;emacs-startup-hook) actually loads dotspacemacs/user-config emacs --batch -l ~/.emacs.d/init.el --eval &amp;#34;(run-hooks &amp;#39;emacs-startup-hook)&amp;#34; --eval &amp;#34;(configuration-layer//load)&amp;#34; --eval &amp;#39;(org-roam-db-autosync-mode)&amp;#39; --eval &amp;#39;(org-roam-export-all)&amp;#39; &amp;gt; ~/emacs-export.log 2&amp;gt;&amp;amp;1 Books https://www.finseth.com/craft/#preface </description>
+(run-hooks &#39;emacs-startup-hook) actually loads dotspacemacs/user-config emacs --batch -l ~/.emacs.d/init.el --eval &amp;#34;(run-hooks &amp;#39;emacs-startup-hook)&amp;#34; --eval &amp;#34;(configuration-layer//load)&amp;#34; --eval &amp;#39;(org-roam-db-autosync-mode)&amp;#39; --eval &amp;#39;(org-roam-export-all)&amp;#39; &amp;gt; ~/emacs-export.log 2&amp;gt;&amp;amp;1 </description>
     </item>
     
     <item>
@@ -4763,7 +4775,7 @@ museums kurdish museum landmarks citadel jahil mosque Living in Erbil Shipping C
       <guid>/posts/erlang/</guid>
       <description>Tags: programming languages
 -https://erlangexplained.com/index.php/about
-https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ </description>
+https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ json with erlang https://vining.dev/posts/jerk </description>
     </item>
     
     <item>
@@ -5290,7 +5302,7 @@ http://www.nobius.org/dbg/practical-file-system-design.pdf</description>
       
       <guid>/posts/20200415154751-finance/</guid>
       <description>Tags: root
-https://en.wikipedia.org/wiki/Bucket_shop_(stock_market) https://en.wikipedia.org/wiki/Secular_stagnation NYSE Binary Protocol https://www.nyse.com/publicdocs/NYSE_Pillar_Gateway_Binary_Protocol_Specification.pdf Cybercrime Maintaining cybercrime infrastructure: https://weis2020.econinfosec.org/wp-content/uploads/sites/8/2020/06/weis20-final10.pdf Crossover funds (28-5-22) Crossover funds are pulling out of the private markets as their public valuations tank, so there&amp;rsquo;s no rescue coming Hedge Funds https://www.morningstar.com/ - fund tracker </description>
+https://en.wikipedia.org/wiki/Bucket_shop_(stock_market) https://en.wikipedia.org/wiki/Secular_stagnation NYSE Binary Protocol https://www.nyse.com/publicdocs/NYSE_Pillar_Gateway_Binary_Protocol_Specification.pdf Cybercrime Maintaining cybercrime infrastructure: https://weis2020.econinfosec.org/wp-content/uploads/sites/8/2020/06/weis20-final10.pdf Crossover funds (28-5-22) Crossover funds are pulling out of the private markets as their public valuations tank, so there&amp;rsquo;s no rescue coming Hedge Funds https://www.morningstar.com/ - fund tracker computers https://github.com/srpeck/kchat </description>
     </item>
     
     <item>
@@ -7823,6 +7835,29 @@ https://1001iraqithoughts.com/2021/03/03/does-iraq-have-a-strategy-for-acquiring
     </item>
     
     <item>
+      <title>iraq letter</title>
+      <link>/posts/iraq_letter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/iraq_letter/</guid>
+      <description>drafts
+Topics to hit Friends (expats in Iraq are the most interesting and most boring, generally down on the NGO industry, homo sacer the country)
+academics are the best, met brilliant people who spend a lot of time, but also people who spend too much time, and its at the risk of harming yourself Karbala, it&amp;rsquo;s great, it&amp;rsquo;s also intensely frustrating, the food is really bad
+pizza, kentucky, kebab, gas, shawrma, falafel, etc</description>
+    </item>
+    
+    <item>
+      <title>iraq photos blog post</title>
+      <link>/posts/iraq_photos_blog_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/iraq_photos_blog_post/</guid>
+      <description>drafts
+I&amp;rsquo;ve been going through some memories and decided that I should publish some of my photos from Iraq.
+Baghdad concrete walls kathim abu hanifa roads Karbala red lamps Others hit sheep </description>
+    </item>
+    
+    <item>
       <title>iraq tech ventures</title>
       <link>/posts/iraq_tech_ventures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -9264,6 +9299,17 @@ https://xenaproject.wordpress.com/what-is-the-xena-project/ https://en.wikipedia
 https://developers.google.com/time/smear
 google smears the leap second before and after each leap https://googleblog.blogspot.com/2011/09/time-technology-and-leaping-seconds.html https://docs.ntpsec.org/latest/leapsmear.html https://packetpushers.net/ntp-leap-smearing-what-is-it/ https://developers.redhat.com/blog/2015/06/01/five-different-ways-handle-leap-seconds-ntp/ https://xkcd.com/2266/ Burnicki, “Leap Second Smearing with NTP.”
 Questions do emergency alert systems (EAS) use internet timing? what systems failover to internet timing? what services actually rely directly on gps? https://ilrs.gsfc.nasa.gov/docs/timing/gpsrole.pdf Facebook wants to remove leap smearing by removing the leap second entirely https://engineering.fb.com/2022/07/25/production-engineering/its-time-to-leave-the-leap-second-in-the-past/ </description>
+    </item>
+    
+    <item>
+      <title>learning languages blog post</title>
+      <link>/posts/learning_languages_blog_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/learning_languages_blog_post/</guid>
+      <description>drafts
+I&amp;rsquo;m writing this just as I&amp;rsquo;ve passed my A1 level exam for Spanish. Currently, the hope is to be conversationally fluent in Spanish by Thanksgiving 2023, but we&amp;rsquo;ll see how that works out as time goes on. Given that this is my fourth language, I figured I&amp;rsquo;d write a little about what works and what doesn&amp;rsquo;t work.
+Language learning, in my opinion, is actually an extremely boring ask, filled with mostly just one thing: reptition.</description>
     </item>
     
     <item>
@@ -11800,6 +11846,16 @@ Footcites: https://tex.stackexchange.com/questions/344116/setting-bibliography-s
     </item>
     
     <item>
+      <title>org-noweb</title>
+      <link>/posts/org_noweb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/org_noweb/</guid>
+      <description>org-mode
+noweb can insert direct results of blocks (concat (mapconcat (lambda (n) (format &amp;#34;MonthlyHoursOfSunshine(city: \&amp;#34;Montevideo\&amp;#34;, month: %d, hoursOfSunshine: %d),&amp;#34; n (random 100))) (number-sequence 1 20) &amp;#34;\n&amp;#34;) &amp;#34;\n&amp;#34; (mapconcat (lambda (n) (format &amp;#34;MonthlyHoursOfSunshine(city: \&amp;#34;NYC\&amp;#34;, month: %d, hoursOfSunshine: %d),&amp;#34; n (random 100))) (number-sequence 1 20) &amp;#34;\n&amp;#34;)) </description>
+    </item>
+    
+    <item>
       <title>org-page</title>
       <link>/posts/org_page/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -13132,7 +13188,8 @@ lectures:
 quantum computing
 https://www.cs.huji.ac.il/~doria/Qcomp2005/week8.pdf error correcting codes in qubits are polynomial in runtime alogorithms must be exponential in speedup http://www.math.uwaterloo.ca/~jyard/qic710/
 slides: http://www.math.uwaterloo.ca/~jyard/qic710/F17/ https://www.scottaaronson.com/democritus/
-https://ieeexplore.ieee.org/document/9252061</description>
+https://ieeexplore.ieee.org/document/9252061
+unitary circuits: https://drive.google.com/file/d/1uPLyTeiljsJPfWudwpRgGyC1CdKNcguh/view</description>
     </item>
     
     <item>
@@ -13241,6 +13298,16 @@ https://github.com/lmullen/dh-r </description>
       <guid>/posts/radio_adiga/</guid>
       <description>Tags: middle east
 circassian radio station https://tunein.com/radio/Radio-Adiga-s104722/</description>
+    </item>
+    
+    <item>
+      <title>rafha camp blog post</title>
+      <link>/posts/rafha_camp_blog_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rafha_camp_blog_post/</guid>
+      <description>drafts
+Rafha camp was a UNCHR camp designed for Iraqi refugees from the 1991 Gulf War. The camp was administrated by UNCHR, which proceeded to hand off control to the Saudis.</description>
     </item>
     
     <item>
@@ -14147,6 +14214,15 @@ Scaling Laws for Acoustic Models papers: https://arxiv.org/pdf/2106.09488.pdf ho
       <description>scaling law seminar
 Angle: all three measure generalization in some way
 can we match these together? MI is the most backed, but has issues with high dimensions and hasn&amp;rsquo;t been shown on transformers (also IB may be just the existence of geometric compression) norm growth may have X &amp;ldquo;multiple descent&amp;rdquo; do these all criticall validate each other? % % File acl2015.tex % % Contact: car@ir.hit.edu.cn, gdzhou@suda.edu.cn %% %% Based on the style files for ACL-2014, which were, in turn, %% Based on the style files for ACL-2013, which were, in turn, %% Based on the style files for ACL-2012, which were, in turn, %% based on the style files for ACL-2011, which were, in turn, %% based on the style files for ACL-2010, which were, in turn, %% based on the style files for ACL-IJCNLP-2009, which were, in turn, %% based on the style files for EACL-2009 and IJCNLP-2008.</description>
+    </item>
+    
+    <item>
+      <title>schedulers</title>
+      <link>/posts/schedulers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/schedulers/</guid>
+      <description>computers</description>
     </item>
     
     <item>
@@ -17052,7 +17128,8 @@ Dolphin In Paper Mario: Thousand Year Door, they utilize &amp;ldquo;EFB copies&a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/vietnam/</guid>
-      <description>Tags: south asia</description>
+      <description>Tags: south asia
+Tech Manufacturing Manufacturing as of 2023 has gone bust: https://restofworld.org/2023/vietnam-tech-downturn-job-loss/ </description>
     </item>
     
     <item>
