@@ -3379,7 +3379,7 @@ either systems are formalistic and hard to learn (lots of acquired knowledge) bu
       <guid>/posts/computers/</guid>
       <description>https://wiki.c2.com/?SufficientlySmartCompiler
 Tags: root
-grad school professors https://software.imdea.org/~gotsman/ Firmware https://osfc.io/archive- open source firmware conference Laptop Manufacturers Clevo - company that manufactures white label laptops History https://mitpress.mit.edu/books/john-von-neumann-and-origins-modern-computing Devlogs https://forums.tigsource.com/index.php?board=27.0 Lucas Pope Devlogs https://forums.tigsource.com/index.php?topic=40832.720 https://forums.tigsource.com/index.php?topic=29750.700 https://dukope.itch.io/mars-after-midnight/devlog/261758/mars-after-midnight Non-von Neumann Architectures (books) https://www.goodreads.com/book/show/6033620-the-architecture-of-symbolic-computers https://users.ece.cmu.edu/~koopman/stack_computers/index.html talks https://www.youtube.com/c/OpencomputeOrg/videos Infrastructures https://clui.org Hetzner Server Auctions https://www.hetzner.com/sb </description>
+grad school professors https://software.imdea.org/~gotsman/ Firmware https://osfc.io/archive- open source firmware conference Laptop Manufacturers Clevo - company that manufactures white label laptops History https://mitpress.mit.edu/books/john-von-neumann-and-origins-modern-computing Devlogs https://forums.tigsource.com/index.php?board=27.0 Lucas Pope Devlogs https://forums.tigsource.com/index.php?topic=40832.720 https://forums.tigsource.com/index.php?topic=29750.700 https://dukope.itch.io/mars-after-midnight/devlog/261758/mars-after-midnight Non-von Neumann Architectures (books) https://www.goodreads.com/book/show/6033620-the-architecture-of-symbolic-computers https://users.ece.cmu.edu/~koopman/stack_computers/index.html talks https://www.youtube.com/c/OpencomputeOrg/videos Infrastructures https://clui.org Hetzner Server Auctions https://www.hetzner.com/sb Books books about quirkly computers - https://github.com/fogus/thunks/blob/main/reading/quirkeys.org </description>
     </item>
     
     <item>
@@ -4806,7 +4806,7 @@ museums kurdish museum landmarks citadel jahil mosque Living in Erbil Shipping C
       <guid>/posts/erlang/</guid>
       <description>Tags: programming languages
 -https://erlangexplained.com/index.php/about
-https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ json with erlang https://vining.dev/posts/jerk </description>
+https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ json with erlang https://vining.dev/posts/jerk Supervisor Trees for golang https://www.jerf.org/iri/post/2930/ </description>
     </item>
     
     <item>
@@ -6192,7 +6192,8 @@ http://maizure.org/projects/decoded-gnu-coreutils/ </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/golang/</guid>
-      <description>Tags: computers</description>
+      <description>Tags: computers
+erlang/elixir connection with https://github.com/ergo-services/ergo </description>
     </item>
     
     <item>
@@ -7200,6 +7201,16 @@ time and consistency as a universal currency</description>
       
       <guid>/posts/hobbes_introduction_to_religious_language/</guid>
       <description>books, religion and linguistics Chapter 1 Work on religious language started in the 1980s after Jean Pierre van Noppen explored the question of &amp;ldquo;where is god&amp;rdquo; Muslim sermons (Esimaje, 2014) or (Malmstrom, 2016) and Prayers (Shoaps 2002) Main questions to ask what counts as religious language? who uses it? where can it be found? what are its distinctive features? what purposes does it serve? Chapter 2 - What is Religion?</description>
+    </item>
+    
+    <item>
+      <title>hobbies</title>
+      <link>/posts/hobbies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hobbies/</guid>
+      <description>personal
+Metalcasting https://www.backyardmetalcasting.com/ </description>
     </item>
     
     <item>
@@ -10147,7 +10158,7 @@ turn emphasizing the objects and instruments: https://en.wikipedia.org/wiki/Mate
       
       <guid>/posts/math/</guid>
       <description>Tags:root
-Display on web with https://cindyjs.org/ </description>
+Display on web with https://cindyjs.org/ Self Referential Formulas https://eli.thegreenplace.net/2023/demystifying-tuppers-formula/ https://jtra.cz/stuff/essays/math-self-reference-smooth/index.html </description>
     </item>
     
     <item>
@@ -12485,7 +12496,7 @@ https://www.amazon.com/Bacteria-Bach-Back-Evolution-Minds/dp/0393242072</descrip
       
       <guid>/posts/philosphy_of_programming/</guid>
       <description>Tags: philosophy of science, computers
-https://vimeo.com/71278954 http://lambda-the-ultimate.org/ http://steve-yegge.blogspot.com/2006/04/software-needs-philosophers.html https://steve-yegge.blogspot.com/2010/12/haskell-researchers-announce-discovery.html https://josephg.com/blog/3-tribes/ https://news.ycombinator.com/item?id=20882783 Software Development Waste: https://neverworkintheory.org/2021/08/29/software-development-waste.html </description>
+https://vimeo.com/71278954 http://lambda-the-ultimate.org/ http://steve-yegge.blogspot.com/2006/04/software-needs-philosophers.html https://steve-yegge.blogspot.com/2010/12/haskell-researchers-announce-discovery.html https://josephg.com/blog/3-tribes/ https://news.ycombinator.com/item?id=20882783 Software Development Waste: https://neverworkintheory.org/2021/08/29/software-development-waste.html Why are there no good philosphers of software? https://twitter.com/conflatedauto/status/1576009641183453184 https://conflatedautomatons.org/2022/12/28/there-are-no-good-philosophers-of-software/ https://www.academia.edu/26576082/%D0%9E_%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%BC_%D0%BD%D0%B5%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B8 https://technotheologistinlove.wordpress.com/ https://spbu-academia-edu.translate.goog/MichaelKurtov/Papers?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp https://technotheologistinlove-wordpress-com.translate.goog/2019/12/22/itt-report-2010s HCI? Is it teaching tech? Is software a relation? https://computer.rip/2023-06-02-the-reinvention-of-owens-lake.html https://readwise.io/reader/shared/01h4ee8n7j819pxdkp9egf3e5r https://www.alicemaz.com/writing/priesthood.html https://snowingpine.com/2023/01/05/on-trucking software is eating the world new dark age? http://malloc.dog/blog/2022/06/16/we-are-all-financiers-now/ http://malloc.dog/blog/2020/06/06/numbers-go-up/ Labor relations -&amp;gt; is software a tool Is software ultimately a power relation, is it a tool of thought, is it an industry, s it a cause?</description>
     </item>
     
     <item>
@@ -13430,7 +13441,7 @@ Hardware controller&amp;rsquo;s batteries will fail, and people often will not n
       
       <guid>/posts/ram_computer_memory/</guid>
       <description>Tags: computers
-http://landley.net/writing/memory-faq.txt Stack Smashing Protector https://wiki.osdev.org/Stack_Smashing_Protector Process that helps detect stack buffer overruns by checking if a secret value is changed only detects stack buffer overruns Memory Management ruby garbage collector: https://jemma.dev/blog/gc-compaction allocators </description>
+http://landley.net/writing/memory-faq.txt Stack Smashing Protector https://wiki.osdev.org/Stack_Smashing_Protector Process that helps detect stack buffer overruns by checking if a secret value is changed only detects stack buffer overruns Memory Management ruby garbage collector: https://jemma.dev/blog/gc-compaction allocators Garbage Collection https://gchandbook.org/ </description>
     </item>
     
     <item>
