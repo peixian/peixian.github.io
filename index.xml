@@ -3627,7 +3627,7 @@ Damascus, syria https://www.instapaper.com/read/1299358661 Despite the justifica
       
       <guid>/posts/cpp/</guid>
       <description>programming languages
-CPP https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646 Framework https://preshing.com/20200526/a-new-cross-platform-open-source-cpp-framework/ Structured Bindings https://en.cppreference.com/w/cpp/language/structured_binding constexpr https://www.foonathan.net/2020/10/constexpr-platform/ </description>
+CPP https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646 Framework https://preshing.com/20200526/a-new-cross-platform-open-source-cpp-framework/ Structured Bindings https://en.cppreference.com/w/cpp/language/structured_binding constexpr https://www.foonathan.net/2020/10/constexpr-platform/ NRVO named valued return optimization https://en.cppreference.com/w/cpp/language/copy_elision inverts the usual way people understand the lifetime of objects </description>
     </item>
     
     <item>
@@ -4583,6 +4583,16 @@ https://elixirforum.com/ https://elixir.bootlin.com/linux/latest/ident/lock_kern
     </item>
     
     <item>
+      <title>elixir driver for cassandra/scylla</title>
+      <link>/posts/elixir_driver_for_cassandra_scylla/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/elixir_driver_for_cassandra_scylla/</guid>
+      <description>elixir, Cassandra
+Use a nif to gate https://cpp-driver.docs.scylladb.com/master/ https://github.com/bencheeorg/benchee_json &amp;lt;- benchmarking runtimes https://github.com/vinoski/bitwise &amp;lt;- Nif Issues similar wrapper but for leveldb &amp;lt;- https://github.com/basho/eleveldb </description>
+    </item>
+    
+    <item>
       <title>Ellerby: A Seat at the Table is not Enough: Understanding Women&#39;s Substantive Representation in Peace Processes</title>
       <link>/posts/ellerby_a_seat_at_the_table_is_not_enough_understanding_women_s_substantive_representation_in_peace_processes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4816,7 +4826,7 @@ museums kurdish museum landmarks citadel jahil mosque Living in Erbil Shipping C
       <guid>/posts/erlang/</guid>
       <description>Tags: programming languages
 -https://erlangexplained.com/index.php/about
-https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ json with erlang https://vining.dev/posts/jerk Supervisor Trees for golang https://www.jerf.org/iri/post/2930/ </description>
+https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ json with erlang https://vining.dev/posts/jerk Supervisor Trees for golang https://www.jerf.org/iri/post/2930/ Nif Issues </description>
     </item>
     
     <item>
@@ -7033,6 +7043,16 @@ Rise of linkages of &amp;ldquo;domestic&amp;rdquo; organizations across sister s
       
       <guid>/posts/helmand/</guid>
       <description>Tags: afghanistan</description>
+    </item>
+    
+    <item>
+      <title>Herbert - Erlang in Anger</title>
+      <link>/posts/herbert_erlang_in_anger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/herbert_erlang_in_anger/</guid>
+      <description>books, erlang
+Chapter 1: How to Dive into a Codebase Raw erlang apps old fashioned way, pray for a readme or something OTP Application usually there&amp;rsquo;s some fashion of appname or appname_app which has the supervisor tree, we can typically follow the supervisor tree down for information one_for_one and simple_one_for_one are processes that aren&amp;rsquo;t dependent on each other, but failures will be combined together for total application shutdown rest_for_one~ represents processes that depend on each other in linear manner one_for_all is used for processes that entirely depend on each other gen_server holds resources and tends to follow client/server patterns gen_fsm deals with sequences of events or inputs, usually used to implement protocols (parse X, see Y, do Z) gen_event is the event hub for callbacks, usually the way to deal with notifications OTP Releases Same as OTP applications, except they might package in the Erlang VM.</description>
     </item>
     
     <item>
@@ -15498,7 +15518,9 @@ Summary Talks about DDR within the context of nepal Specifically about the maois
       
       <guid>/posts/submarine_cable_map/</guid>
       <description>Tags: computers
-https://www.submarinecablemap.com/ https://kis-orca.eu/map/ compared to the telegraph cables</description>
+https://www.submarinecablemap.com/ https://kis-orca.eu/map/ compared to the telegraph cables
+https://en.wikipedia.org/wiki/Transatlantic_communications_cable https://en.wikipedia.org/wiki/Mother_Earth_Mother_Board Google Africa Cable -https://www.datacenterdynamics.com/en/news/google-officially-launches-equiano-subsea-cable/
+https://www.datacenterdynamics.com/en/news/google-cloud-platform-to-build-private-transatlantic-cable/ </description>
     </item>
     
     <item>
