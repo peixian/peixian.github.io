@@ -15758,6 +15758,16 @@ http://jalda.azaruniv.ac.ir/article_13837.html https://en.wikipedia.org/wiki/Mou
     </item>
     
     <item>
+      <title>tailscale</title>
+      <link>/posts/tailscale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tailscale/</guid>
+      <description>networks
+https://github.com/tailscale/tailscale/issues/724#issuecomment-834545601 https://github.com/tailscale/tailscale/issues/724#issuecomment-834545601 https://github.com/adyanth/openwrt-tailscale-enabler https://forum.gl-inet.com/t/tailscale-via-openwrt-package-or-not/15785/4 https://github.com/adyanth/openwrt-tailscale-enabler/releases/tag/v1.36.1-fb2f6cf-autoupdate https://old.reddit.com/r/Tailscale/comments/uizunx/trying_to_put_tailscale_on_a_glinet_beryl_router/ </description>
+    </item>
+    
+    <item>
       <title>tailwind</title>
       <link>/posts/tailwind%5C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
