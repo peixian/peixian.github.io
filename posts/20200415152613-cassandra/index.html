@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.4754b9902cc0860f16660e3ad08deaa14e03918ca519bcc998b5a73fd9a2a86f.js" integrity="sha256-R1S5kCzAhg8WZg460I3qoU4DkYylGbzJmLWnP9miqG8="></script>
+<script defer src="/en.search.min.38cb144ab550c833fe8810f5fbe4d15dbc68288368ba62bf008205c416f84c47.js" integrity="sha256-OMsUSrVQyDP&#43;iBD1&#43;&#43;TRXbxoKINoumK/AIIFxBb4TEc="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -85,6 +85,17 @@
 <h2 id="scylla">Scylla</h2>
 <ul>
 <li>Xandra driver uses <a href="https://queue.acm.org/appendices/codel.html">https://queue.acm.org/appendices/codel.html</a></li>
+</ul>
+<h2 id="cassandra-gossiper-protocol">Cassandra Gossiper Protocol</h2>
+<ul>
+<li>Gossiper chooses a random node in the cluster and initializes a session with it
+<ul>
+<li>each gossip require 3 messages</li>
+</ul>
+</li>
+<li>Sends its friend a Gossip Disget Syn Message</li>
+<li>Followed by a GossipDigestAck message</li>
+<li>Th eoriginal ack is returned with a gossip digestack2 message</li>
 </ul>
 
           
