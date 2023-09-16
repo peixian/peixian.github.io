@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.7e9d163bca6e3791417a0e81190cd6067c7d0412819ec9e96db3dc3f5e88ce8c.css"/>
-<script defer src="/en.search.min.7c197478b6c0f5b9ea911882d4e2be624eae060d433d014811fbea37a3bcf0da.js" integrity="sha256-fBl0eLbA9bnqkRiC1OK&#43;Yk6uBg1DPQFIEfvqN6O88No="></script>
+<script defer src="/en.search.min.a55eec1b72086d1383457c22c0d667ea5d8f9c552d28c44e1c0066523620f768.js" integrity="sha256-pV7sG3IIbRODRXwiwNZn6l2PnFUtKMROHABmUjYg92g="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -57,6 +57,13 @@
 <li><a href="https://www.postgresql.org/docs/9.3/routine-vacuuming.html">https://www.postgresql.org/docs/9.3/routine-vacuuming.html</a></li>
 <li><a href="http://rhaas.blogspot.com/2018/01/do-or-undo-there-is-no-vacuum.html">http://rhaas.blogspot.com/2018/01/do-or-undo-there-is-no-vacuum.html</a></li>
 <li><a href="https://github.com/postgres/postgres/blob/master/src/backend/access/heap/README.HOT">https://github.com/postgres/postgres/blob/master/src/backend/access/heap/README.HOT</a></li>
+</ul>
+<h4 id="toast-tables">TOAST Tables</h4>
+<ul>
+<li><a href="https://hakibenita.com/sql-medium-text-performance">https://hakibenita.com/sql-medium-text-performance</a>
+TOAST tables slice up medium/large size text data using a separate TOAST partition</li>
+<li>Indexes are fast in this, but you need to have large size text data</li>
+<li>Medium sized text data will usually kill your performance</li>
 </ul>
 <h3 id="scalablity">Scalablity</h3>
 <ul>

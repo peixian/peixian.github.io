@@ -12800,8 +12800,7 @@ Abstract The opening of the Aswan Low Dam in 1902, as well as the Aswan High Dam
       <description>Tags: Databases, Computers
 Postgres Issues VACUUM Proposals have been made to try to relocate rows on the fly, but it’s hard to do correctly and risks bloating the indexes, since each row moved requires a new entry in each index to point to the new location of the row.
 https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791
-Performance https://www.postgresql.org/docs/current/warm-standby.html#SYNCHRONOUS-REPLICATION-PERFORMANCE https://www.postgresql.org/docs/9.3/routine-vacuuming.html http://rhaas.blogspot.com/2018/01/do-or-undo-there-is-no-vacuum.html https://github.com/postgres/postgres/blob/master/src/backend/access/heap/README.HOT Scalablity https://blog.sentry.io/2015/07/23/transaction-id-wraparound-in-postgres Queues https://www.pgcon.org/2016/schedule/track/Applications/929.en.html https://tapoueh.org/blog/2018/07/postgresql-listen-notify/ JSON Types https://www.postgresql.org/docs/9.4/datatype-json.html
-Can build an index with GIN can use allballs to mean 0 Postgres GIST indicies https://github.</description>
+Performance https://www.postgresql.org/docs/current/warm-standby.html#SYNCHRONOUS-REPLICATION-PERFORMANCE https://www.postgresql.org/docs/9.3/routine-vacuuming.html http://rhaas.blogspot.com/2018/01/do-or-undo-there-is-no-vacuum.html https://github.com/postgres/postgres/blob/master/src/backend/access/heap/README.HOT TOAST Tables https://hakibenita.com/sql-medium-text-performance TOAST tables slice up medium/large size text data using a separate TOAST partition Indexes are fast in this, but you need to have large size text data Medium sized text data will usually kill your performance Scalablity https://blog.</description>
     </item>
     
     <item>
