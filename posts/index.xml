@@ -308,7 +308,7 @@ Veterans organizations have become the locus of ultranationalist campaigns again
       
       <guid>/posts/actor_model/</guid>
       <description>programming pattern for distributed systems, led to innovations such as erlang
-By treating a single actor as the primitive and message passing and inboxes, it allows a more inherently concurrent design </description>
+By treating a single actor as the primitive and message passing and inboxes, it allows a more inherently concurrent design https://www.stateright.rs/ </description>
     </item>
     
     <item>
@@ -3677,8 +3677,8 @@ https://travisdowns.github.io/blog/2021/06/17/rip-zero-opt.html </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/crdts/</guid>
-      <description> distributed systems
-https://wiki.nikitavoloboev.xyz/distributed-systems/crdt </description>
+      <description>- distributed systems
+https://wiki.nikitavoloboev.xyz/distributed-systems/crdt https://hydro.run/research/ https://hydro.run/papers/keep-calm-and-crdt-on.pdf </description>
     </item>
     
     <item>
@@ -4136,7 +4136,7 @@ bharatiya janata party (bjp) is an example of nationalism in this way</descripti
       
       <guid>/posts/distributed_systems/</guid>
       <description>Tags: computers
-http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html Short Introduction http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628 Theory https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/ Fallacies https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf Errors and Examples https://github.com/dranov/protocol-bugs-list https://covemountainsoftware.com/2021/03/01/a-survey-of-concurrency-bugs/ Lamport writings http://lamport.azurewebsites.net/pubs/pubs.html#lamport-paxos </description>
+http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html Short Introduction http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628 Theory https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/ Verification https://lawrencecpaulson.github.io/2022/10/12/verifying-distributed-systems-isabelle.html Fallacies https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf Errors and Examples https://github.com/dranov/protocol-bugs-list https://covemountainsoftware.com/2021/03/01/a-survey-of-concurrency-bugs/ Lamport writings http://lamport.azurewebsites.net/pubs/pubs.html#lamport-paxos </description>
     </item>
     
     <item>
@@ -4837,8 +4837,7 @@ museums kurdish museum landmarks citadel jahil mosque Living in Erbil Shipping C
       
       <guid>/posts/erlang/</guid>
       <description>Tags: programming languages
--https://erlangexplained.com/index.php/about
-https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ json with erlang https://vining.dev/posts/jerk Supervisor Trees for golang https://www.jerf.org/iri/post/2930/ Nif Issues </description>
+https://erlangexplained.com/index.php/about https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ https://medium.com/erlang-battleground https://medium.com/erlang-battleground/property-based-testing-erlang-elixir-de72ad24966b https://github.com/stevana/armstrong-distributed-systems/blob/main/docs/erlang-is-not-about.md#user-content-fn-0-b236052c3934bd6f7ea3426445bf45af https://www.erlang-factory.com/conference/ErlangUserConference2011/speakers/ScottLystigFritchie Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ json with erlang https://vining.dev/posts/jerk Supervisor Trees for golang https://www.jerf.org/iri/post/2930/ https://adoptingerlang.org/docs/development/supervision_trees/ Nif Issues Monitoring for elixir https://github.com/massemanet/redbug https://code.google.com/archive/p/eper/wikis/redbug.wiki https://www.erlang.org/doc/apps/tools/lcnt_chapter.html https://www.erlang.org/doc/man/scheduler.html#sample_all-0 https://erlangforums.com/t/find-out-whats-running-on-dirty-schedulers/2885/3 https://erlangforums.com/t/detecting-blocked-dirty-i-o-schedulers/1116 https://www.erlang.org/doc/apps/erts/beamasm#linux-perf-support - linux https://medium.com/@jlouis666/erlang-dirty-scheduler-overhead-6e1219dcc7 https://blog.jola.dev/patterns-for-managing-ets-tables#menu emacs https://github.</description>
     </item>
     
     <item>
@@ -5385,7 +5384,7 @@ http://www.nobius.org/dbg/practical-file-system-design.pdf</description>
       
       <guid>/posts/20200415154751-finance/</guid>
       <description>Tags: root
-https://en.wikipedia.org/wiki/Bucket_shop_(stock_market) https://en.wikipedia.org/wiki/Secular_stagnation NYSE Binary Protocol https://www.nyse.com/publicdocs/NYSE_Pillar_Gateway_Binary_Protocol_Specification.pdf Cybercrime Maintaining cybercrime infrastructure: https://weis2020.econinfosec.org/wp-content/uploads/sites/8/2020/06/weis20-final10.pdf Crossover funds (28-5-22) Crossover funds are pulling out of the private markets as their public valuations tank, so there&amp;rsquo;s no rescue coming Hedge Funds https://www.morningstar.com/ - fund tracker computers https://github.com/srpeck/kchat </description>
+https://en.wikipedia.org/wiki/Bucket_shop_(stock_market) https://en.wikipedia.org/wiki/Secular_stagnation NYSE Binary Protocol https://www.nyse.com/publicdocs/NYSE_Pillar_Gateway_Binary_Protocol_Specification.pdf Cybercrime Maintaining cybercrime infrastructure: https://weis2020.econinfosec.org/wp-content/uploads/sites/8/2020/06/weis20-final10.pdf Crossover funds (28-5-22) Crossover funds are pulling out of the private markets as their public valuations tank, so there&amp;rsquo;s no rescue coming Hedge Funds https://www.morningstar.com/ - fund tracker computers https://github.com/srpeck/kchat Libor and SOFR https://www.congress.gov/bill/117th-congress/senate-bill/3779/text </description>
     </item>
     
     <item>
@@ -5453,7 +5452,7 @@ Globbing Redirection Bash diff &amp;lt;(dig google.com) &amp;lt;(dig www.google.
       <guid>/posts/flash_storage/</guid>
       <description>Tags: hardware
 &amp;ldquo;Flash needed mobile to jump to the datacenter&amp;rdquo; -&amp;gt; yet another version of the hardware lottery
-Journaled Flash Storage http://ithare.com/journaled-flash-storage-emulating-eeprom-over-flash-acid-transactions-and-more-part-i-flash-vs-eeprom/ Intel Optane https://ark.intel.com/content/www/us/en/ark/products/codename/67560/products-formerly-apache-pass.html https://vastdata.com/ CXL https://en.wikipedia.org/wiki/Compute_Express_Link </description>
+Journaled Flash Storage http://ithare.com/journaled-flash-storage-emulating-eeprom-over-flash-acid-transactions-and-more-part-i-flash-vs-eeprom/ Intel Optane https://ark.intel.com/content/www/us/en/ark/products/codename/67560/products-formerly-apache-pass.html https://vastdata.com/ CXL https://en.wikipedia.org/wiki/Compute_Express_Link https://www.semianalysis.com/p/cxl-deep-dive-future-of-composable </description>
     </item>
     
     <item>
@@ -5605,9 +5604,7 @@ usefulness in sound and probability allows the mapping of a regular function int
       
       <guid>/posts/fpga/</guid>
       <description>Tags: chips
-https://github.com/litex-hub/fpga_101
-Adaptive on chip memory management - https://ieeexplore.ieee.org/document/6927471?arnumber=6927471
-FPGA Hashing: https://zistvan.github.io/doc/trets15-istvan.pdf</description>
+https://github.com/litex-hub/fpga_101 Memory Semantics Adaptive on chip memory management - https://ieeexplore.ieee.org/document/6927471?arnumber=6927471 https://johnwickerson.wordpress.com/2021/07/03/understanding-the-memory-semantics-of-multi-threaded-cpu-fpga-programs/ Hashing FPGA Hashing: https://zistvan.github.io/doc/trets15-istvan.pdf fuzzing https://johnwickerson.wordpress.com/2019/11/22/fuzzing-fpga-synthesis-tools/ </description>
     </item>
     
     <item>
@@ -11337,7 +11334,7 @@ https://github.com/Evidlo/remarkable_printer nearly all netwoirk printers accept
       <guid>/posts/20200415154022-networks/</guid>
       <description>Tags: Computers
 Wireless networks https://cse.sc.edu/~sur/papers/UbiG_MobiCom18.pdf
-https://gafferongames.com/ https://gafferongames.com/post/why_cant_i_send_udp_packets_from_a_browser/ Outages https://cybersquirrel1.com/ Tofu networks for supercomputing https://ieeexplore.ieee.org/document/6041538 16d sync for computers </description>
+https://gafferongames.com/ https://gafferongames.com/post/why_cant_i_send_udp_packets_from_a_browser/ Outages https://cybersquirrel1.com/ Tofu networks for supercomputing https://ieeexplore.ieee.org/document/6041538 16d sync for computers linux Monitoring with Pcap https://isc.sans.edu/diary/pcap2curl+Turning+a+pcap+file+into+a+set+of+cURL+commands+for+replay/22900 </description>
     </item>
     
     <item>
@@ -11580,7 +11577,8 @@ Former iraqi PM, Dawa affilated</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/number_theory/</guid>
-      <description>Tags: math</description>
+      <description>Tags: math
+https://link.springer.com/book/10.1007/978-1-4757-5579-4 </description>
     </item>
     
     <item>
