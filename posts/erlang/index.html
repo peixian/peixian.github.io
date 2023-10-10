@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.e172e0be604ee5ae4733b19fafb42b41cdd2014b949534082916ca0431b26e7d.css"/>
-<script defer src="/en.search.min.d5cb4fcbad77b9ea41697e86eacdc107c5d045cc51a320aa2abb7008860a7f0b.js" integrity="sha256-1ctPy613uepBaX6G6s3BB8XQRcxRoyCqKrtwCIYKfws="></script>
+<script defer src="/en.search.min.5c118984413a2bcc707d44acbefecb2e980a394596281dd62e620c2a3719c1f5.js" integrity="sha256-XBGJhEE6K8xwfUSsvv7LLpgKOUWWKB3WLmIMKjcZwfU="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -106,7 +106,12 @@
 <li><a href="https://medium.com/@jlouis666/erlang-dirty-scheduler-overhead-6e1219dcc7">https://medium.com/@jlouis666/erlang-dirty-scheduler-overhead-6e1219dcc7</a></li>
 <li><a href="https://blog.jola.dev/patterns-for-managing-ets-tables#menu">https://blog.jola.dev/patterns-for-managing-ets-tables#menu</a></li>
 </ul>
-<h2 id="emacs--emacs-dot-md"><a href="/posts/emacs/">emacs</a></h2>
+<h3 id="enabling">Enabling</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elixir" data-lang="elixir"><span style="display:flex;"><span><span style="color:#e6db74">:erlang</span><span style="color:#f92672">.</span>system_flag(<span style="color:#e6db74">:scheduler_wall_time</span>, <span style="color:#66d9ef">true</span>)
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> <span style="color:#e6db74">:schedulers</span><span style="color:#f92672">.</span>get_sample()
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> <span style="color:#e6db74">:schedulers</span><span style="color:#f92672">.</span>get_sample()
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">:schedulers</span><span style="color:#f92672">.</span>utilization(a, b)
+</span></span></code></pre></div><h2 id="emacs--emacs-dot-md"><a href="/posts/emacs/">emacs</a></h2>
 <ul>
 <li><a href="https://github.com/massemanet/distel">https://github.com/massemanet/distel</a>
 <ul>
@@ -1555,6 +1560,10 @@
 
    
       
+   
+
+   
+
    
 
    

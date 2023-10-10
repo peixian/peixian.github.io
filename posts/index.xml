@@ -2793,7 +2793,7 @@ Chapter one Goes against Anderson - Imagined Communities by stating that the con
       
       <guid>/posts/chatgpt/</guid>
       <description>ml
-Chatgpt shell https://github.com/xenodium/chatgpt-shell </description>
+Chatgpt shell https://github.com/xenodium/chatgpt-shell Jailbreak https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516 </description>
     </item>
     
     <item>
@@ -4837,7 +4837,7 @@ museums kurdish museum landmarks citadel jahil mosque Living in Erbil Shipping C
       
       <guid>/posts/erlang/</guid>
       <description>Tags: programming languages
-https://erlangexplained.com/index.php/about https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ https://medium.com/erlang-battleground https://medium.com/erlang-battleground/property-based-testing-erlang-elixir-de72ad24966b https://github.com/stevana/armstrong-distributed-systems/blob/main/docs/erlang-is-not-about.md#user-content-fn-0-b236052c3934bd6f7ea3426445bf45af https://www.erlang-factory.com/conference/ErlangUserConference2011/speakers/ScottLystigFritchie Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ json with erlang https://vining.dev/posts/jerk Supervisor Trees for golang https://www.jerf.org/iri/post/2930/ https://adoptingerlang.org/docs/development/supervision_trees/ Nif Issues Monitoring for elixir https://github.com/massemanet/redbug https://code.google.com/archive/p/eper/wikis/redbug.wiki https://www.erlang.org/doc/apps/tools/lcnt_chapter.html https://www.erlang.org/doc/man/scheduler.html#sample_all-0 https://erlangforums.com/t/find-out-whats-running-on-dirty-schedulers/2885/3 https://erlangforums.com/t/detecting-blocked-dirty-i-o-schedulers/1116 https://www.erlang.org/doc/apps/erts/beamasm#linux-perf-support - linux https://medium.com/@jlouis666/erlang-dirty-scheduler-overhead-6e1219dcc7 https://blog.jola.dev/patterns-for-managing-ets-tables#menu emacs https://github.</description>
+https://erlangexplained.com/index.php/about https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ https://medium.com/erlang-battleground https://medium.com/erlang-battleground/property-based-testing-erlang-elixir-de72ad24966b https://github.com/stevana/armstrong-distributed-systems/blob/main/docs/erlang-is-not-about.md#user-content-fn-0-b236052c3934bd6f7ea3426445bf45af https://www.erlang-factory.com/conference/ErlangUserConference2011/speakers/ScottLystigFritchie Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ json with erlang https://vining.dev/posts/jerk Supervisor Trees for golang https://www.jerf.org/iri/post/2930/ https://adoptingerlang.org/docs/development/supervision_trees/ Nif Issues Monitoring for elixir https://github.com/massemanet/redbug https://code.google.com/archive/p/eper/wikis/redbug.wiki https://www.erlang.org/doc/apps/tools/lcnt_chapter.html https://www.erlang.org/doc/man/scheduler.html#sample_all-0 https://erlangforums.com/t/find-out-whats-running-on-dirty-schedulers/2885/3 https://erlangforums.com/t/detecting-blocked-dirty-i-o-schedulers/1116 https://www.erlang.org/doc/apps/erts/beamasm#linux-perf-support - linux https://medium.com/@jlouis666/erlang-dirty-scheduler-overhead-6e1219dcc7 https://blog.jola.dev/patterns-for-managing-ets-tables#menu Enabling :erlang.</description>
     </item>
     
     <item>
@@ -9713,6 +9713,16 @@ Part of sistaniyun brigades</description>
     </item>
     
     <item>
+      <title>llms</title>
+      <link>/posts/llms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/llms/</guid>
+      <description>ml
+LLama.cpp Models: https://huggingface.co/TheBloke/guanaco-65B-GGML/blob/main/guanaco-65B.ggmlv3.q4_K_M.bin https://github.com/ggerganov/llama.cpp#using-gpt4all specific parameters: https://www.reddit.com/r/LocalLLaMA/comments/12az7ah/comparing_llama_and_alpaca_presets/ Fish commands for running function llama cd ~/code/llama.cpp ./main -m ./models/llama-13 \ --color \ --ctx_size 4096 \ -n -1 \ -ins -b 2048 \ --top_k 0 \ --temp 0.72 \ --top_p 0.73 \ --repeat_penalty 1.1 \ -t 11 \ --tfs 0.95 \ --mlock cd - end while true curl -C - -L &amp;#34;https://huggingface.co/TheBloke/guanaco-65B-GGML/resolve/main/guanaco-65B.ggmlv3.q4_K_M.bin&amp;#34; -o models/guanaco-65b if test $status -eq 0 break end sleep 5 end Tail free sampling: https://www.</description>
+    </item>
+    
+    <item>
       <title>llvm</title>
       <link>/posts/llvm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -13116,6 +13126,15 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5459228/ </description>
       
       <guid>/posts/psychology/</guid>
       <description>Tags: social sciences</description>
+    </item>
+    
+    <item>
+      <title>Public Predictions</title>
+      <link>/posts/predictions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/predictions/</guid>
+      <description> root Forecase Date Eval Date Statement Forecast Probabiltiy Eval Result 9/10/23 31/11/23 I will be B2+/C1- in Spanish 90% 9/10/23 14/12/23 I will have learned basic snowboarding 80% 9/10/23 01/02/24 I will have figured out a topic for UdelaR 75% </description>
     </item>
     
     <item>
