@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.9faa16bdc5b861f3473553bd0aed0cab53f715483c1148a6e1fe9d7d8a4f3093.js" integrity="sha256-n6oWvcW4YfNHNVO9Cu0Mq1P3FUg8EUim4f6dfYpPMJM="></script>
+<script defer src="/en.search.min.c485ae4e8c73e97c7f92255979274bc5ef081b592b82f4eac371d1ae848f54a1.js" integrity="sha256-xIWuToxz6Xx/kiVZeSdLxe8IG1krgvTqw3HRroSPVKE="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -119,6 +119,128 @@
 </ul>
 </li>
 <li><a href="http://www.snookles.com/erlang/">http://www.snookles.com/erlang/</a></li>
+</ul>
+<h2 id="cowboy-web-server">Cowboy Web Server</h2>
+<ul>
+<li><a href="https://gist.github.com/weaversam8/c77fe1df5749d6eaa459d9e1b6f61d9d">https://gist.github.com/weaversam8/c77fe1df5749d6eaa459d9e1b6f61d9d</a> - fully documented stream handler
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-erlang" data-lang="erlang"><span style="display:flex;"><span>-module(reference_stream_h).
+</span></span><span style="display:flex;"><span>-behavior(cowboy_stream).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>-export([init<span style="color:#f92672">/</span><span style="color:#ae81ff">3</span>]).
+</span></span><span style="display:flex;"><span>-export([data<span style="color:#f92672">/</span><span style="color:#ae81ff">4</span>]).
+</span></span><span style="display:flex;"><span>-export([info<span style="color:#f92672">/</span><span style="color:#ae81ff">3</span>]).
+</span></span><span style="display:flex;"><span>-export([terminate<span style="color:#f92672">/</span><span style="color:#ae81ff">3</span>]).
+</span></span><span style="display:flex;"><span>-export([early_error<span style="color:#f92672">/</span><span style="color:#ae81ff">5</span>]).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>-record(state, {next}).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% Callback Functions
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% This implementation was modeled from imetrics_cowboy_stream_h.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% This is a ready-to-use template that other stream handlers can be
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% based on.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% This function is called when the request is first received and the
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% headers are parsed and known.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>-spec init(cowboy_stream:<span style="color:#a6e22e">streamid</span>(), cowboy_req:<span style="color:#a6e22e">req</span>(), cowboy:<span style="color:#a6e22e">opts</span>())
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">-&gt;</span> {cowboy_stream:<span style="color:#a6e22e">commands</span>(), #state{}}.
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">init</span>(StreamID, Req <span style="color:#f92672">=</span> #{ path :<span style="color:#f92672">=</span> Path }, Opts) <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">% The state record here holds our &#34;Next&#34; tuple, which contains a reference
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">% to ourselves (module) and a state maintained by the cowboy_stream module.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">% It can be passed around opaquely.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    State0 <span style="color:#f92672">=</span> #state{},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">% When we&#39;re ready to invoke the next handler in the chain, we call
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">% cowboy_stream:init/3. It returns that &#34;Next&#34; tuple and a list of &#34;commands&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">% to send to the upstream HTTP process. Those commands are documented [here][0]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">% [0]: https://ninenines.eu/docs/en/cowboy/2.8/manual/cowboy_stream/#commands
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    {Commands0, Next} <span style="color:#f92672">=</span> cowboy_stream:<span style="color:#a6e22e">init</span>(StreamID, Req, Opts),
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">% We pass these commands thru our &#34;fold&#34; function, which allows us to iterate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">% thru each command and modify it if necessary. We can also add new commands
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">% here or in that function if we want to. Ultimately, the list of commands is
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">% returned by this function, and passed to the next handler upstream (or cowboy,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">% which passes them to the client, if this is the last handler.)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    fold(Commands0, State0#state{next<span style="color:#f92672">=</span>Next}).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% This function is called with the data sent in the request body. It can be called in
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% chunks, so make sure to check the &#34;IsFin&#34; flag to decide whether you&#39;ve received
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% all the data.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>-spec data(cowboy_stream:<span style="color:#a6e22e">streamid</span>(), cowboy_stream:<span style="color:#a6e22e">fin</span>(), cowboy_req:<span style="color:#a6e22e">resp_body</span>(), State)
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">-&gt;</span> {cowboy_stream:<span style="color:#a6e22e">commands</span>(), State} <span style="color:#66d9ef">when</span> State::#state{}.
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">data</span>(StreamID, IsFin, Data, State0<span style="color:#f92672">=</span>#state{next<span style="color:#f92672">=</span>Next0}) <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">% Invoke the next stream handler in the chain.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    {Commands0, Next} <span style="color:#f92672">=</span> cowboy_stream:<span style="color:#a6e22e">data</span>(StreamID, IsFin, Data, Next0),
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">% Process any commands returned by downstream stream handlers.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    fold(Commands0, State0#state{next<span style="color:#f92672">=</span>Next}).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Any messages addressed to the stream will be sent to this function. Cowboy also uses
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% this function to inform stream handlers of internal events.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>-spec info(cowboy_stream:<span style="color:#a6e22e">streamid</span>(), any(), State)
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">-&gt;</span> {cowboy_stream:<span style="color:#a6e22e">commands</span>(), State} <span style="color:#66d9ef">when</span> State::#state{}.
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">info</span>(StreamID, Info, State0<span style="color:#f92672">=</span>#state{next<span style="color:#f92672">=</span>Next0}) <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">% Invoke the next stream handler in the chain.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    {Commands0, Next} <span style="color:#f92672">=</span> cowboy_stream:<span style="color:#a6e22e">info</span>(StreamID, Info, Next0),
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">% Process any commands returned by downstream stream handlers.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    fold(Commands0, State0#state{next<span style="color:#f92672">=</span>Next}).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% All streams will eventually be terminated and this function will be called. The
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% only time when terminate/3 is not called is when an error occurs in init/3 of
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% any stream handler, since the state is not available.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>-spec terminate(cowboy_stream:<span style="color:#a6e22e">streamid</span>(), cowboy_stream:<span style="color:#a6e22e">reason</span>(), #state{}) <span style="color:#f92672">-&gt;</span> any().
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">terminate</span>(StreamID, Reason, #state{next<span style="color:#f92672">=</span>Next}) <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">% Propagate the terminate to downstream stream handlers.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    cowboy_stream:<span style="color:#a6e22e">terminate</span>(StreamID, Reason, Next).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% This function will be called when an error occurs before the request-line and
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% all headers have been received in an HTTP/1.1 request. It includes the partial
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% request, and the response Cowboy intends to send. The return value of this
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% function is the response, so it allows you to modify it if necessary.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>-spec early_error(cowboy_stream:<span style="color:#a6e22e">streamid</span>(), cowboy_stream:<span style="color:#a6e22e">reason</span>(),
+</span></span><span style="display:flex;"><span>    cowboy_stream:<span style="color:#a6e22e">partial_req</span>(), Resp, cowboy:<span style="color:#a6e22e">opts</span>()) <span style="color:#f92672">-&gt;</span> Resp
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">when</span> Resp::cowboy_stream:<span style="color:#a6e22e">resp_command</span>().
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">early_error</span>(StreamID, Reason, PartialReq, Resp, Opts) <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">% Propagate the error to downstream stream handlers.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    cowboy_stream:<span style="color:#a6e22e">early_error</span>(StreamID, Reason, PartialReq, Resp, Opts).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% Internal Functions
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Any commands (see [0]) returned from downstream handlers are passed thru this
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% fold function, giving us the chance to modify, omit, replace, or append to them.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% This module transparently passes the commands thru without any changes, but this
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% logic remains in place since this is the best documented stream handler in all of
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% our codebases, and it should exist as a reference for other stream handlers to hook
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% into in the future.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% [0]: https://ninenines.eu/docs/en/cowboy/2.8/manual/cowboy_stream/#commands
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fold</span>(Commands, State) <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>    fold(Commands, State, []).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% At the end of the recursion, reverse the accumulator so the original order of
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% commands is preserved.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fold</span>([], State, Acc) <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>    {lists:<span style="color:#a6e22e">reverse</span>(Acc), State};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% You can add additional cases here to catch specific commands.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% fold([{response, ResponseCode, Headers, Body0}|Tail], State0, Acc) -&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%     % do something with the body
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%     Body = do_something(Body0),
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%     Response = {response, ResponseCode, Headers, Body},
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%     fold(Tail, State0, [Response|Acc]);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% This is the catch-all case for any commands we didn&#39;t match above, pass it
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% thru unmodified.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fold</span>([Command|Tail], State, Acc) <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>    fold(Tail, State, [Command|Acc]).
+</span></span></code></pre></div></li>
 </ul>
 
           

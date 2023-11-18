@@ -1403,7 +1403,7 @@ former UN Iraq SR: https://reliefweb.int/report/iraq/iraq-srsg-ashraf-qazi-reite
       
       <guid>/posts/assembly/</guid>
       <description>Tags: computers
-mov https://github.com/xoreaxeaxeax/movfuscator compiles programs into only ~mov~s xchg rax,rax https://www.xorpd.net/pages/xchg_rax/snip_00.html solutions: https://alexaltea.github.io/blog/posts/2016-10-12-xchg-rax-rax-solutions/ </description>
+mov https://github.com/xoreaxeaxeax/movfuscator compiles programs into only ~mov~s rep movsb is the idiomatic way of moving memory around on x86 xchg rax,rax https://www.xorpd.net/pages/xchg_rax/snip_00.html solutions: https://alexaltea.github.io/blog/posts/2016-10-12-xchg-rax-rax-solutions/ </description>
     </item>
     
     <item>
