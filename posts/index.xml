@@ -4335,7 +4335,7 @@ Links https://www.reuters.com/article/china-economy-transformation-explainer/wha
       
       <guid>/posts/duara_the_crisis_of_global_modernity/</guid>
       <description>books, religion
-Chapter 6 talks about how the shape of religion created in Asad - Formations of the Secular does not map neatly to east asia and south asia Utilizes the concept of &amp;ldquo;traffic&amp;rdquo; - the movement between the sphere of religious ideas and practices and the sphere of the secular - pg 196 talks about modern spirituality (modern) refers to Jose Casanova and Charles Taylor Talks about Martin Riesebrodt &amp;ldquo;sacrality is closely associated with, and is frequently the condition for, sacrifice&amp;rdquo; - - pg 203 &amp;ldquo;both the state, by means of its legal, classificatory and coercive powers, and social groups are constantly breaching this separation and remaking religion and the secular sphere.</description>
+Chapter 6 talks about how the shape of religion created in Asad - Formations of the Secular does not map neatly to east asia and south asia Utilizes the concept of &amp;ldquo;traffic&amp;rdquo; - the movement between the sphere of religious ideas and practices and the sphere of the secular - pg 196 talks about modern spirituality (modern) refers to Jose Casanova and Charles Taylor Talks about Martin Riesebrodt &amp;ldquo;sacrality is closely associated with, and is frequently the condition for, sacrifice&amp;rdquo; - pg 203 &amp;ldquo;both the state, by means of its legal, classificatory and coercive powers, and social groups are constantly breaching this separation and remaking religion and the secular sphere.</description>
     </item>
     
     <item>
@@ -4602,7 +4602,9 @@ https://elixirforum.com/ https://elixir.bootlin.com/linux/latest/ident/lock_kern
       
       <guid>/posts/elixir_driver_for_cassandra_scylla/</guid>
       <description>elixir, Cassandra
-Use a nif to gate https://cpp-driver.docs.scylladb.com/master/ https://github.com/bencheeorg/benchee_json &amp;lt;- benchmarking runtimes https://github.com/vinoski/bitwise &amp;lt;- Nif Issues similar wrapper but for leveldb &amp;lt;- https://github.com/basho/eleveldb </description>
+Use a nif to gate https://cpp-driver.docs.scylladb.com/master/ https://github.com/bencheeorg/benchee_json &amp;lt;- benchmarking runtimes https://github.com/vinoski/bitwise &amp;lt;- Nif Issues similar wrapper but for leveldb &amp;lt;- https://github.com/basho/eleveldb TokenAware LB Policy for Xandra and Shard Awareness https://university.scylladb.com/courses/using-scylla-drivers/lessons/scylla-specific-drivers-overview-paging-and-shard-awareness/ https://www.scylladb.com/2021/04/27/connect-faster-to-scylla-with-a-shard-aware-port/ https://www.scylladb.com/glossary/cassandra-query-language-cql/ https://monitoring.docs.scylladb.com/stable/use-monitoring/advisor/cqlNoTokenAware.html Python Examples https://github.com/scylladb/python-driver/blob/64e7fad42ec88dfc72c7f12c389c3ef6c3f392fb/cassandra/pool.py#L659 https://github.com/scylladb/scylladb/blob/master/docs/dev/protocol-extensions.md#intranode-sharding https://github.com/search?q=repo%3Ascylladb%2Fpython-driver%20shard_aware_port&amp;amp;type=code https://python-driver.docs.scylladb.com/stable/ Java Reference https://docs.datastax.com/en/drivers/java/2.1/com/datastax/driver/core/policies/TokenAwarePolicy.html https://github.com/apache/cassandra/blob/trunk/src/java/org/apache/cassandra/utils/MurmurHash.java#L28-L29git Elixir NIF https://github.com/lpgauth/murmur
+Possibly something like this? -
+defmodule ShardCalculator do @min_token -1 &amp;lt;&amp;lt;&amp;lt; 63 @token_max 1 &amp;lt;&amp;lt;&amp;lt; 64 def calculate_shard(token, ignore_msb, nr_shards) do # Bias the token biased_token = token - @min_token # Left shift by ignore_msb bits biased_token = biased_token &amp;lt;&amp;lt;&amp;lt; ignore_msb # Multiply by number of shards and perform truncating division shard = div(biased_token * nr_shards, @token_max) shard end end defmodule ShardCalculator do @min_token -1 &amp;lt;&amp;lt;&amp;lt; 63 @token_max 1 &amp;lt;&amp;lt;&amp;lt; 64 def calculate_shard(token, ignore_msb, nr_shards) do token = token - @min_token token = token &amp;lt;&amp;lt;&amp;lt; ignore_msb tok_lo = token &amp;amp;&amp;amp;&amp;amp; 0xFFFFFFFF tok_hi = token &amp;gt;&amp;gt;&amp;gt; 32 mul1 = tok_lo * nr_shards mul2 = tok_hi * nr_shards sum = (mul1 &amp;gt;&amp;gt;&amp;gt; 32) + mul2 sum &amp;gt;&amp;gt;&amp;gt; 32 end end Existing Xandra https://github.</description>
     </item>
     
     <item>
@@ -7306,7 +7308,7 @@ However, Agamben always envisioned this as a state of exception within power rel
       
       <guid>/posts/homogenous_time_blog_post/</guid>
       <description>Tags: drafts, ibn khaldun, Pursely - Familiar Futures, DiCapua - Gatekeepers of the Arab Past, Cassandra, distributed systems
-What is homogenous time? If you take Sara Pursely&amp;rsquo;s book Familiar Futures, homogenous time lies at the core of modern society today . She describes how by the standardization of homogenous time, capitalism, which is predicated upon &amp;ldquo;uniform duration and endless repetition&amp;rdquo;, has evolved. While her frame of analysis is the history of Iraq, I think it&amp;rsquo;s a bit more interesting if we push past a pure historical or even anthropological frame.</description>
+What is homogenous time? If you take Sara Pursely&amp;rsquo;s book Familiar Futures, homogenous time lies at the core of modern society today pg. 10. She describes how by the standardization of homogenous time, capitalism, which is predicated upon &amp;ldquo;uniform duration and endless repetition&amp;rdquo;, has evolved. While her frame of analysis is the history of Iraq, I think it&amp;rsquo;s a bit more interesting if we push past a pure historical or even anthropological frame.</description>
     </item>
     
     <item>
@@ -12911,7 +12913,7 @@ Book in 1913 describing how to construct axioms for a mathmatical symbol without
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/principal_component_analysis/</guid>
-      <description>Tags:</description>
+      <description>Tags: statistical methods</description>
     </item>
     
     <item>
@@ -14376,7 +14378,7 @@ Scaling Laws for Acoustic Models papers: https://arxiv.org/pdf/2106.09488.pdf ho
       <guid>/posts/scaling_laws_survey_paper_information_bottleneck_minimum_description_length_etc/</guid>
       <description>scaling law seminar
 Angle: all three measure generalization in some way
-can we match these together? MI is the most backed, but has issues with high dimensions and hasn&amp;rsquo;t been shown on transformers (also IB may be just the existence of geometric compression) norm growth may have X &amp;ldquo;multiple descent&amp;rdquo; do these all criticall validate each other? % % File acl2015.tex % % Contact: car@ir.hit.edu.cn, gdzhou@suda.edu.cn %% %% Based on the style files for ACL-2014, which were, in turn, %% Based on the style files for ACL-2013, which were, in turn, %% Based on the style files for ACL-2012, which were, in turn, %% based on the style files for ACL-2011, which were, in turn, %% based on the style files for ACL-2010, which were, in turn, %% based on the style files for ACL-IJCNLP-2009, which were, in turn, %% based on the style files for EACL-2009 and IJCNLP-2008.</description>
+can we match these together? MI is the most backed, but has issues with high dimensions and hasn&amp;rsquo;t been shown on transformers (also IB may be just the existence of geometric compression) norm growth may have X &amp;ldquo;multiple descent&amp;rdquo; do these all criticall validate each other? </description>
     </item>
     
     <item>
@@ -15328,9 +15330,7 @@ Has a concept of a state price vector, which means any derivatives contrct can b
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/statistical_methods/</guid>
-      <description>\:PROPERTIES: :ID: 1E95EA69-5FA9-4065-B175-48E0A4391924
-:END:
-Tags: statistics
+      <description>Tags: statistics
 https://mc-stan.org/ laplacian eigenmaps: Belkin, Mikhail, and Partha Niyogi. “Laplacian Eigenmaps and Spectral Techniques for Embedding and Clustering.” In Proceedings of the 14th International Conference on Neural Information Processing Systems: Natural and Synthetic, 585–91. NIPS’01. Cambridge, MA, USA: MIT Press, 2001. </description>
     </item>
     
@@ -16173,7 +16173,7 @@ boogaloo boys blog post previous imperial wars? vietnam, george kennan &amp;ldqu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/the_information_plane_within_deep_learning/</guid>
-      <description>drafts,
+      <description>drafts, Scaling laws for solution compressibility
 [Transformers|Deep Neural Networks|AI] need to be explainable is a common enough refrain. I would say it&amp;rsquo;s a fairly uncontroversial statement that NLP is a field heavy on the experimental and light on the theoretical. With that in mind, I want to talk about the concept of &amp;ldquo;information plane&amp;rdquo;, a term coined by Schwartz-Ziv and Tishby (2017). For Schwartz-Ziv and Tishby, the information plane is &amp;ldquo;the plane of the Mutual Information values that each layer preserves on the input and output variables&amp;rdquo;.</description>
     </item>
     
@@ -16603,7 +16603,7 @@ However, the UN must mediate between actors, and in selecting the actors it inhe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/tsne/</guid>
-      <description>Tags:
+      <description>Tags: statistical methods
 https://blog.datascienceheroes.com/playing-with-dimensions-from-clustering-pca-t-sne-to-carl-sagan/ https://constantamateur.github.io/2018-01-02-tSNE/ tSNE reduces dimensions into two, as compared to principal component analysis</description>
     </item>
     

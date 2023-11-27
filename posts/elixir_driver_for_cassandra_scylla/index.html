@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.c485ae4e8c73e97c7f92255979274bc5ef081b592b82f4eac371d1ae848f54a1.js" integrity="sha256-xIWuToxz6Xx/kiVZeSdLxe8IG1krgvTqw3HRroSPVKE="></script>
+<script defer src="/en.search.min.eaf27793e242368c73251ec41f530ccffb7cbd1e071cffed9ea537cfb5f85eb4.js" integrity="sha256-6vJ3k&#43;JCNoxzJR7EH1MMz/t8vR4HHP/tnqU3z7X4XrQ="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -43,6 +43,81 @@
 <li><a href="https://github.com/bencheeorg/benchee_json">https://github.com/bencheeorg/benchee_json</a> &lt;- benchmarking runtimes</li>
 <li><a href="https://github.com/vinoski/bitwise">https://github.com/vinoski/bitwise</a> &lt;- <a href="/posts/erlang/#nif-issues">Nif Issues</a></li>
 <li>similar wrapper but for leveldb &lt;- <a href="https://github.com/basho/eleveldb">https://github.com/basho/eleveldb</a></li>
+</ul>
+<h2 id="tokenaware-lb-policy-for-xandra-and-shard-awareness">TokenAware LB Policy for Xandra and Shard Awareness</h2>
+<ul>
+<li><a href="https://university.scylladb.com/courses/using-scylla-drivers/lessons/scylla-specific-drivers-overview-paging-and-shard-awareness/">https://university.scylladb.com/courses/using-scylla-drivers/lessons/scylla-specific-drivers-overview-paging-and-shard-awareness/</a></li>
+<li><a href="https://www.scylladb.com/2021/04/27/connect-faster-to-scylla-with-a-shard-aware-port/">https://www.scylladb.com/2021/04/27/connect-faster-to-scylla-with-a-shard-aware-port/</a></li>
+<li><a href="https://www.scylladb.com/glossary/cassandra-query-language-cql/">https://www.scylladb.com/glossary/cassandra-query-language-cql/</a></li>
+<li><a href="https://monitoring.docs.scylladb.com/stable/use-monitoring/advisor/cqlNoTokenAware.html">https://monitoring.docs.scylladb.com/stable/use-monitoring/advisor/cqlNoTokenAware.html</a></li>
+</ul>
+<h3 id="python-examples">Python Examples</h3>
+<ul>
+<li><a href="https://github.com/scylladb/python-driver/blob/64e7fad42ec88dfc72c7f12c389c3ef6c3f392fb/cassandra/pool.py#L659">https://github.com/scylladb/python-driver/blob/64e7fad42ec88dfc72c7f12c389c3ef6c3f392fb/cassandra/pool.py#L659</a></li>
+<li><a href="https://github.com/scylladb/scylladb/blob/master/docs/dev/protocol-extensions.md#intranode-sharding">https://github.com/scylladb/scylladb/blob/master/docs/dev/protocol-extensions.md#intranode-sharding</a></li>
+<li><a href="https://github.com/search?q=repo%3Ascylladb%2Fpython-driver%20shard_aware_port&amp;type=code">https://github.com/search?q=repo%3Ascylladb%2Fpython-driver%20shard_aware_port&amp;type=code</a></li>
+<li><a href="https://python-driver.docs.scylladb.com/stable/">https://python-driver.docs.scylladb.com/stable/</a></li>
+</ul>
+<h3 id="java-reference">Java Reference</h3>
+<ul>
+<li><a href="https://docs.datastax.com/en/drivers/java/2.1/com/datastax/driver/core/policies/TokenAwarePolicy.html">https://docs.datastax.com/en/drivers/java/2.1/com/datastax/driver/core/policies/TokenAwarePolicy.html</a></li>
+<li><a href="https://github.com/apache/cassandra/blob/trunk/src/java/org/apache/cassandra/utils/MurmurHash.java#L28-L29git">https://github.com/apache/cassandra/blob/trunk/src/java/org/apache/cassandra/utils/MurmurHash.java#L28-L29git</a></li>
+</ul>
+<h3 id="elixir-nif">Elixir NIF</h3>
+<ul>
+<li>
+<p><a href="https://github.com/lpgauth/murmur">https://github.com/lpgauth/murmur</a></p>
+</li>
+<li>
+<p>Possibly something like this? -</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elixir" data-lang="elixir"><span style="display:flex;"><span><span style="color:#66d9ef">defmodule</span> <span style="color:#a6e22e">ShardCalculator</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">@min_token</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;&lt;&lt;</span> <span style="color:#ae81ff">63</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">@token_max</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;&lt;&lt;</span> <span style="color:#ae81ff">64</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> calculate_shard(token, ignore_msb, nr_shards) <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Bias the token</span>
+</span></span><span style="display:flex;"><span>    biased_token <span style="color:#f92672">=</span> token <span style="color:#f92672">-</span> <span style="color:#a6e22e">@min_token</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Left shift by ignore_msb bits</span>
+</span></span><span style="display:flex;"><span>    biased_token <span style="color:#f92672">=</span> biased_token <span style="color:#f92672">&lt;&lt;&lt;</span> ignore_msb
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Multiply by number of shards and perform truncating division</span>
+</span></span><span style="display:flex;"><span>    shard <span style="color:#f92672">=</span> div(biased_token <span style="color:#f92672">*</span> nr_shards, <span style="color:#a6e22e">@token_max</span>)
+</span></span><span style="display:flex;"><span>    shard
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elixir" data-lang="elixir"><span style="display:flex;"><span><span style="color:#66d9ef">defmodule</span> <span style="color:#a6e22e">ShardCalculator</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">@min_token</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;&lt;&lt;</span> <span style="color:#ae81ff">63</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">@token_max</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;&lt;&lt;</span> <span style="color:#ae81ff">64</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> calculate_shard(token, ignore_msb, nr_shards) <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    token <span style="color:#f92672">=</span> token <span style="color:#f92672">-</span> <span style="color:#a6e22e">@min_token</span>
+</span></span><span style="display:flex;"><span>    token <span style="color:#f92672">=</span> token <span style="color:#f92672">&lt;&lt;&lt;</span> ignore_msb
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    tok_lo <span style="color:#f92672">=</span> token <span style="color:#f92672">&amp;&amp;&amp;</span> <span style="color:#ae81ff">0xFFFFFFFF</span>
+</span></span><span style="display:flex;"><span>    tok_hi <span style="color:#f92672">=</span> token <span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#ae81ff">32</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    mul1 <span style="color:#f92672">=</span> tok_lo <span style="color:#f92672">*</span> nr_shards
+</span></span><span style="display:flex;"><span>    mul2 <span style="color:#f92672">=</span> tok_hi <span style="color:#f92672">*</span> nr_shards
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    sum <span style="color:#f92672">=</span> (mul1 <span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#ae81ff">32</span>) <span style="color:#f92672">+</span> mul2
+</span></span><span style="display:flex;"><span>    sum <span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#ae81ff">32</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="existing-xandra">Existing Xandra</h3>
+<ul>
+<li><a href="https://github.com/whatyouhide/xandra/blob/a21d162db7b1b131a3df27764bf559ec56d66823/lib/xandra/cluster/load_balancing_policy/dc_aware_round_robin.ex">https://github.com/whatyouhide/xandra/blob/a21d162db7b1b131a3df27764bf559ec56d66823/lib/xandra/cluster/load_balancing_policy/dc_aware_round_robin.ex</a></li>
+</ul>
+<h3 id="worklist">Worklist</h3>
+<ul>
+<li>Wrap around the idea of distance: <a href="https://docs.datastax.com/en/developer/java-driver/3.6/manual/load_balancing/">https://docs.datastax.com/en/developer/java-driver/3.6/manual/load_balancing/</a>
+<ul>
+<li><a href="https://docs.datastax.com/en/cassandra-oss/3.0/cassandra/architecture/archDataDistributeHashing.html">https://docs.datastax.com/en/cassandra-oss/3.0/cassandra/architecture/archDataDistributeHashing.html</a></li>
+</ul>
+</li>
+<li>Look into fallback strats: <a href="https://docs.datastax.com/en/developer/java-driver/3.6/manual/load_balancing/#fallback-strategies">https://docs.datastax.com/en/developer/java-driver/3.6/manual/load_balancing/#fallback-strategies</a></li>
 </ul>
 
           
