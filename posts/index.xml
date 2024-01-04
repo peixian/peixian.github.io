@@ -4974,7 +4974,7 @@ Wrote homo sacer</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/git/</guid>
       <description>Tags: computers
-https://github.com/jesseduffield/lazygit Finding out what changed and piping git whatchanged --name-only --pretty=&amp;quot;&amp;quot; origin..HEAD | rg &amp;quot;.ex&amp;quot; --fixed-strings | xargs &amp;lt;LINTER&amp;gt; echo &#39;&#39; | fzf --print-query --preview &#39;echo &amp;quot;a\nb\nc\nd&amp;quot; | awk {q}&#39; echo &#39;&#39; | fzf --preview &#39;ls {q}&#39; </description>
+https://github.com/jesseduffield/lazygit Finding out what changed and piping git whatchanged --name-only --pretty=&amp;quot;&amp;quot; origin..HEAD | rg &amp;quot;.ex&amp;quot; --fixed-strings | xargs &amp;lt;LINTER&amp;gt; echo &#39;&#39; | fzf --print-query --preview &#39;echo &amp;quot;a\nb\nc\nd&amp;quot; | awk {q}&#39; echo &#39;&#39; | fzf --preview &#39;ls {q}&#39; git grep &amp;quot;refund_account&amp;quot; $(git log --since=&amp;quot;1 month ago&amp;quot; --format=format:%H_ </description>
     </item>
     <item>
       <title>giulio tononi</title>
