@@ -3711,6 +3711,16 @@ Interviewing Strats Clarify the question: if the question seems unnecessarily ha
 https://elixirforum.com/ https://elixir.bootlin.com/linux/latest/ident/lock_kernel Conventions folders under /lib/&amp;lt;application_name&amp;gt; Projects https://getoban.pro/ https://livebook.dev/ Prometheus Metrics @counter -&amp;gt; Adds a prometheus metric https://hexdocs.pm/prometheus_ex/Prometheus.Metric.html Usage declare a counter with @counter [name: :name, labels: [:label1, :label2], help: &amp;#34;#{__MODULE__} name&amp;#34;] increment a counter with Counter.inc([name: :name, labels: [label1, label2]]) Platforms https://gigalixir.com/ exmagick issues with Apple M1 chip: https://githubmemory.com/repo/Xerpa/exmagick/issues/16 asdf Support Prebuild binary list https://bobs-list.kobrakai.de/elixir ETS Concurrent table: https://www.openmymind.net/Learning-Elixir-ETS/ Trees - https://www.erlang.org/doc/man/gb_trees.html Time Zones https://hexdocs.pm/timex/3.2.0/Timex.Timezone.html#content https://elixirforum.com/t/format-a-datetime-using-strftime-with-the-offset-calculated-in-the-hours/41811 https://hexdocs.pm/elixir/main/DateTime.html#shift_zone!/3 https://github.</description>
     </item>
     <item>
+      <title>elixir and erlang stacktraces</title>
+      <link>/posts/elixir_and_erlang_stacktraces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/elixir_and_erlang_stacktraces/</guid>
+      <description>drafts, elixir
+Erlang and Elixir stacktraces eats the last frame because of super TCO optimizations
+Reproduced able with
+defmodule Demo do def start do perform(__MODULE__, :target, []) end def perform(module, function, args) do {_, stacktrace} = Process.info(self(), :current_stacktrace) IO.inspect(stacktrace, label: &amp;#34;Stack trace in &amp;#39;perform&amp;#39;&amp;#34;) IO.inspect(self(), label: &amp;#34;PERFORM PID&amp;#34;) apply(module, function, args) end def target do {_, stacktrace} = Process.info(self(), :current_stacktrace) IO.inspect(self(), label: &amp;#34;TARGET PID&amp;#34;) IO.inspect(stacktrace, label: &amp;#34;Stack trace in &amp;#39;target&amp;#39;&amp;#34;) end end Demo.</description>
+    </item>
+    <item>
       <title>elixir driver for cassandra/scylla</title>
       <link>/posts/elixir_driver_for_cassandra_scylla/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
