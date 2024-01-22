@@ -1612,7 +1612,8 @@ invented in france Used against TB Not well understood Possible health benefits 
       <link>/posts/bgp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/bgp/</guid>
-      <description>Tags: networks</description>
+      <description>Tags: networks
+Facebook Outage BGP need to find more info on this https://blog.cloudflare.com/october-2021-facebook-outage https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/ Otpus/Akamai outage in Australia (nov 9th, 2023) Lead to people not being able to dial emergency services parlimentary findings: https://parlinfo.aph.gov.au/parlInfo/search/display/display.w3p;query=Id%3A%22committees%2Fcommsen%2F27530%2F0001%22 https://forums.whirlpool.net.au/archive/96n1w7m9-4 https://puck.nether.net/pipermail/outages/2023-November/014924.html </description>
     </item>
     <item>
       <title>bharatiya janata party (bjp)</title>
@@ -2746,7 +2747,7 @@ either systems are formalistic and hard to learn (lots of acquired knowledge) bu
       <guid>/posts/computers/</guid>
       <description>https://wiki.c2.com/?SufficientlySmartCompiler
 Tags: root
-grad school professors https://software.imdea.org/~gotsman/ Firmware https://osfc.io/archive- open source firmware conference Laptop Manufacturers Clevo - company that manufactures white label laptops History https://mitpress.mit.edu/books/john-von-neumann-and-origins-modern-computing Devlogs https://forums.tigsource.com/index.php?board=27.0 Lucas Pope Devlogs https://forums.tigsource.com/index.php?topic=40832.720 https://forums.tigsource.com/index.php?topic=29750.700 https://dukope.itch.io/mars-after-midnight/devlog/261758/mars-after-midnight Non-von Neumann Architectures (books) https://www.goodreads.com/book/show/6033620-the-architecture-of-symbolic-computers https://users.ece.cmu.edu/~koopman/stack_computers/index.html talks https://www.youtube.com/c/OpencomputeOrg/videos Infrastructures https://clui.org Hetzner Server Auctions https://www.hetzner.com/sb Books books about quirkly computers - https://github.com/fogus/thunks/blob/main/reading/quirkeys.org Mozilla https://github.com/mozilla-services/syncstorage-rs/ </description>
+grad school professors https://software.imdea.org/~gotsman/ Firmware https://osfc.io/archive- open source firmware conference Laptop Manufacturers Clevo - company that manufactures white label laptops History https://mitpress.mit.edu/books/john-von-neumann-and-origins-modern-computing Devlogs https://forums.tigsource.com/index.php?board=27.0 Lucas Pope Devlogs https://forums.tigsource.com/index.php?topic=40832.720 https://forums.tigsource.com/index.php?topic=29750.700 https://dukope.itch.io/mars-after-midnight/devlog/261758/mars-after-midnight Non-von Neumann Architectures (books) https://www.goodreads.com/book/show/6033620-the-architecture-of-symbolic-computers https://users.ece.cmu.edu/~koopman/stack_computers/index.html talks https://www.youtube.com/c/OpencomputeOrg/videos Infrastructures https://clui.org Hetzner Server Auctions https://www.hetzner.com/sb Books books about quirkly computers - https://github.com/fogus/thunks/blob/main/reading/quirkeys.org Mozilla https://github.com/mozilla-services/syncstorage-rs/ Old terms https://en.wikipedia.org/wiki/Bastard_Operator_From_Hell </description>
     </item>
     <item>
       <title>computers feel, not see, we need new primatives</title>
