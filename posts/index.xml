@@ -2509,7 +2509,7 @@ we never talk about the close calls close calls are never reported close calls i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/cloud/</guid>
       <description>Tags: computers
-GCP gcloud container operations https://cloud.google.com/sdk/gcloud/reference/container/operations Node autorepair https://cloud.google.com/kubernetes-engine/docs/how-to/node-auto-repair </description>
+GCP gcloud container operations https://cloud.google.com/sdk/gcloud/reference/container/operations Node autorepair https://cloud.google.com/kubernetes-engine/docs/how-to/node-auto-repair Cloudflare Get metrics into grafana: https://github.com/lablabs/cloudflare-exporter </description>
     </item>
     <item>
       <title>cloudflare outage</title>
@@ -13274,7 +13274,7 @@ https://huggingface.co/transformers/ http://jalammar.github.io/illustrated-trans
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/travel/</guid>
       <description>Tags: personal
-Travel Rankings https://multinational.io/ </description>
+Travel Rankings https://multinational.io/ Bus Shades https://sitinshade.com/ </description>
     </item>
     <item>
       <title>trees</title>
