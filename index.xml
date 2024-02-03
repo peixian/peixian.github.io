@@ -2516,7 +2516,7 @@ GCP gcloud container operations https://cloud.google.com/sdk/gcloud/reference/co
       <link>/posts/cloudflare_outage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/cloudflare_outage/</guid>
-      <description> postmortems https://decentralizedthoughts.github.io/2020-12-12-raft-liveness-full-omission/ </description>
+      <description> postmortems https://decentralizedthoughts.github.io/2020-12-12-raft-liveness-full-omission/ thanksgiving outage </description>
     </item>
     <item>
       <title>clustering</title>
@@ -9758,6 +9758,15 @@ Notes that the 2008 war between nouri al-maliki and Muqtada al-Sadr led to al-sa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/20200416085817-ottoman/</guid>
       <description>Tags: middle east</description>
+    </item>
+    <item>
+      <title>outage and debugging for the warring programmer</title>
+      <link>/posts/outage_and_debugging_for_the_working_programmer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/outage_and_debugging_for_the_working_programmer/</guid>
+      <description>drafts, postmortems and outages
+I&amp;rsquo;ve been shoring up our way of handling outages and issues at work lately, and I figured I&amp;rsquo;d write up something about it, and how I try to handle outages. This post assumes you&amp;rsquo;ve know what /proc is others are.
+Alert comes in Triage Mode Outage? Are we violating SLO&amp;rsquo;s? Check dashboards and alerts Crash recovery? What happens if the service crashes right now, are in flight jobs recoverable, or would we violate data?</description>
     </item>
     <item>
       <title>overemphasis of the discrete blog post</title>
