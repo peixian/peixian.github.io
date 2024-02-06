@@ -54,7 +54,7 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> target <span style="color:#66d9ef">do</span>
 </span></span><span style="display:flex;"><span>    {_, stacktrace} <span style="color:#f92672">=</span> <span style="color:#a6e22e">Process</span><span style="color:#f92672">.</span>info(self(), <span style="color:#e6db74">:current_stacktrace</span>)
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">IO</span><span style="color:#f92672">.</span>inspect(self(), <span style="color:#e6db74">label</span>: <span style="color:#e6db74">&#34;TARGET PID&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">IO</span><span style="color:#f92672">.</span>inspect(self(), <span style="color:#e6db74">label</span>: <span style="color:#e6db74">&#34;TARGET PID&#34;</span>)
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">IO</span><span style="color:#f92672">.</span>inspect(stacktrace, <span style="color:#e6db74">label</span>: <span style="color:#e6db74">&#34;Stack trace in &#39;target&#39;&#34;</span>)
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
