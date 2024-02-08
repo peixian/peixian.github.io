@@ -9860,6 +9860,15 @@ Usually these can be found at: https://www.zotero.org/peixianw/library</descript
       <description>Tags: south asia</description>
     </item>
     <item>
+      <title>parallel computing and the os</title>
+      <link>/posts/parallel_computing_and_the_os/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/parallel_computing_and_the_os/</guid>
+      <description>talks, operating systems
+https://dl.acm.org/doi/10.1145/2830903.2830911 https://www.youtube.com/embed/KZ9hm5AUmWU
+Minicomputers -&amp;gt; after timesharing parallel computing sort of dropped off with this logs and interrupts multiprocess parallelism sort of died client/server computing make IO concurrcy big must exploit I/O concurrency microkernel organizations User level services for I/O -&amp;gt; moves into microkernels, pthreads standard events vs threads no sharing of handlers, no locks, etc, CSP style most webservers today are events style john usterhat multiprocessors make a return, NUMA stuff becomes big again but uniprocessors performance keeps improving multicore processors come roaring back cores per processor increase yet again performance goes back up moore&amp;rsquo;s law is dead on single cores, but multi cores are back make, for example, increases and scale more reading a cache line from a different core is expensive congestion on cache lines, but avoiding cache line sharing is challenging even a RW lock is expensive basically the only real optimization is to stop spraying your data structures everywhere RCU!</description>
+    </item>
+    <item>
       <title>parallelizing shell scripts</title>
       <link>/posts/parallelizing_shell_scripts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
