@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.bcb99bf34b519177799feb22ac55ba051ffca4d0692320a02572f0ee911bc34b.js" integrity="sha256-vLmb80tRkXd5n&#43;sirFW6BR/8pNBpIyCgJXLw7pEbw0s="></script>
+<script defer src="/en.search.min.a714f237c341873a612d817e7997738dee2c5bca56c302f2f69966cae875e965.js" integrity="sha256-pxTyN8NBhzphLYF&#43;eZdzje4sW8pWwwLy9plmyuh16WU="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -86,6 +86,25 @@
 <li>shadow managers for recovery to serve read operations only, similar to how RW locks even have contention</li>
 </ul>
 </li>
+<li>Notably, GFS places the consistency checking on the client library, where it requires the you (via the client library) to check</li>
+<li>Is <strong>not</strong> linearizable</li>
+</ul>
+<h2 id="colossus">Colossus</h2>
+<ul>
+<li>GFS single master could not hold everything</li>
+<li>Reed Solomon vs full replication
+<ul>
+<li>parity bits are added for error correction, whereas full replication only uses</li>
+</ul>
+</li>
+<li>Frontend has changed
+<ul>
+<li>Curator -&gt; horizontally scalable metadata servers</li>
+<li>Master metadata database</li>
+<li>Custodians -&gt; horizontal scalers</li>
+</ul>
+</li>
+<li>GFS was built on the assumption that file sizes were always going to outnumber metadata, but the biggest problem is that that may not be true, small blobs double their size with metadata</li>
 </ul>
 <h2 id="slicer">Slicer</h2>
 
