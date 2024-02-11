@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.a714f237c341873a612d817e7997738dee2c5bca56c302f2f69966cae875e965.js" integrity="sha256-pxTyN8NBhzphLYF&#43;eZdzje4sW8pWwwLy9plmyuh16WU="></script>
+<script defer src="/en.search.min.99f6544cffecf21962279650eb54c4841b72b388079e9dc72c9d7b9b48c80f43.js" integrity="sha256-mfZUTP/s8hliJ5ZQ61TEhBtys4gHnp3HLJ17m0jID0M="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -55,6 +55,56 @@
 <h3 id="garbage-collection">Garbage Collection</h3>
 <ul>
 <li><a href="https://gchandbook.org/">https://gchandbook.org/</a></li>
+</ul>
+<h2 id="linux-virtual-memory">Linux Virtual Memory</h2>
+<ul>
+<li>
+<p>Virtual memory range is divided into the kernel space part, a user space part, and a inaccessible part for catching null pointers</p>
+<ul>
+<li><code>cat /proc/sys/vm/mmap_min_addr</code></li>
+</ul>
+</li>
+<li>
+<p>Mode is the execution privileage (code in kernel mode vs code in user mode). Kernel mode can access user <strong>space</strong>, this is used to prevent bad accesses</p>
+</li>
+<li>
+<p>Uniform memory space presented to process is considered the virtual process space, and this is how all process dumps are presented</p>
+</li>
+<li>
+<p>When an app is loaded, all the referenced dynamic libraries are mapped to a virtual memory space</p>
+<figure><img src="/ox-hugo/2024-02-10_19-06-06_screenshot.png"/>
+    </figure>
+
+</li>
+<li>
+<p>A memory dump is the process of taking all the contents of ram and writing them into a readible file</p>
+</li>
+<li>
+<p>Process memory dump is the user space protion of the process space saved, but also your memory is not usually filled, your core dump is has everything outside of kernel space (user and null)</p>
+</li>
+<li>
+<p>GDB commands</p>
+<ul>
+<li><code>info shared</code> -&gt; gets dynamic libraries</li>
+<li><code>maintenence info sections</code> -&gt; get memory regions</li>
+</ul>
+</li>
+<li>
+<p>LLDB commands</p>
+<ul>
+<li><code>image list</code> -&gt; gets dynamic libraries</li>
+<li><code>image dump sections</code> -&gt; Get memory regions</li>
+</ul>
+</li>
+<li>
+<p>Kernel panic has kernel memory dump <strong>only</strong></p>
+</li>
+<li>
+<p>Fiber bundle -&gt; dumping individual processes together with the kernel memory dump</p>
+<figure><img src="/ox-hugo/2024-02-10_19-10-07_screenshot.png"/>
+    </figure>
+
+</li>
 </ul>
 
           
@@ -920,6 +970,8 @@
 
    
       
+   
+
    
 
    

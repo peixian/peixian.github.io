@@ -731,8 +731,7 @@ Similar notions to liberation theology in Latin America Marxist Muslim thinker A
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/allocators/</guid>
       <description>ram (computer memory)
-Memory Management Lobster language - https://aardappel.github.io/lobster/memory_management.html Allocators Scudo Hoard Allocator jemalloc Dieharder Poseidon Allocator Allocator Aware Infrastructure Comparisons Slab allocator https://www.kernel.org/doc/gorman/html/understand/understand011.html Misc #+begin_src markdown ### More Papers * The Shadow over Android
-Exploiting the jemalloc Memory Allocator: Owning Firefox&amp;rsquo;s Heap Attacking the Webkit Heap Windows 8 Heap Internals Windows 10 Segment Heap Internals Heap Layout Optimization for Exploitation FreeGuard: A Faster Secure Heap Allocator * Academic “fast &amp;amp; secure” heap allocator by the University of Texas (2017) * https://github.</description>
+Memory Management Lobster language - https://aardappel.github.io/lobster/memory_management.html two pointers are vital because they have a start pointer (beginning of the memory block) and end pointer (end of the block). When an allocation is done, the start pointer is moved forward, when memory is released, the start pointer is shifted backwards Allocators Scudo Hoard Allocator jemalloc Dieharder Poseidon Allocator Allocator Aware Infrastructure Comparisons Slab allocator https://www.kernel.org/doc/gorman/html/understand/understand011.html Misc #+begin_src markdown ### More Papers * The Shadow over Android</description>
     </item>
     <item>
       <title>alloy (spec lang)</title>
@@ -3121,7 +3120,7 @@ https://doc.dpdk.org/guides-16.04/linux_gsg/index.html </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/databases/</guid>
       <description>Tags: Computers
-Class https://15721.courses.cs.cmu.edu/spring2019/schedule.html https://www.youtube.com/playlist?app=desktop&amp;amp;list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&amp;amp;themeRefresh=1 MariaDB https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/ Calcite https://calcite.apache.org used in bodo.ai Query optimizers how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf Query Pushdown basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/ Spanner https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf KV stores: RocksDB SpeedDB - https://github.com/speedb-io/speedb </description>
+Class https://15721.courses.cs.cmu.edu/spring2019/schedule.html https://www.youtube.com/playlist?app=desktop&amp;amp;list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&amp;amp;themeRefresh=1 MariaDB https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/ Calcite https://calcite.apache.org used in bodo.ai Query optimizers how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf Query Pushdown basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/ Spanner https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf KV stores: RocksDB SpeedDB - https://github.com/speedb-io/speedb ZippyDB Build on RocksDB, but less management Generic KV store, supports snapshot reads and partial read/write Snapshot reads cheap operation that uses snapshot handlers to perform multiple reads basically RCU, but if you read while a write is happening the read goes to a snapshot handles versions, whereas RCU doesn&amp;rsquo;t handle versions also uses a cleaner or garbage collector or sweeper, whereas RCU places the burden on the writer Data can be replicated either with gossip protocols or paxos, although usually there&amp;rsquo;s a master specific read only replicas called followers are occasionally added for high volume reads Divides times into small epocs, each epoc zippy assigns a primary replica, that is the paxos leader Allows clients to choose which consistency level they come into (same as Spanner) Consistent reading -&amp;gt; clients go to the current primary of the shard Stale information -&amp;gt; can go to a replica Also allows for read-your-writes with a hash that signals to the replicas to manually update Has a data shuttle, which basically tiers it into Primary -&amp;gt; Secondary -&amp;gt; Follower, on per shard basis A shard is a box Shard management service is the orchestrator, and tells each shard what they own, master that runs over the control plane Store is based on top of RocksDB </description>
     </item>
     <item>
       <title>dataflow</title>
@@ -7853,6 +7852,14 @@ LLama.cpp Models: https://huggingface.co/TheBloke/guanaco-65B-GGML/blob/main/gua
       <description>Tags: compilers</description>
     </item>
     <item>
+      <title>load balancing</title>
+      <link>/posts/load_balancing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/load_balancing/</guid>
+      <description>distributed systems
+Algorithms Leaky Bucket Algorithm Has known properties of capacity (\(C\)), inflow rate (\(R_{in}\)), and outflow rate ($Rout). As requests come in, check if the bucket is full, and drop it Good for avoiding bursts of requests downstream Slow processing will stall the entire queue Token Bucket Algorithm Bucket has predefined capacity of tokens, each bucket is periodically filled with tokens at a constant rate. Checks for tokens in a bucket every time we recieve a request Similar to leaky bucket, but allows for bursts of traffic to come in, and space efficient.</description>
+    </item>
+    <item>
       <title>Locke: A Letter Containing Toleration</title>
       <link>/posts/locke_a_letter_containing_toleration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10926,7 +10933,8 @@ Hardware controller&amp;rsquo;s batteries will fail, and people often will not n
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/ram_computer_memory/</guid>
       <description>Tags: computers
-http://landley.net/writing/memory-faq.txt Stack Smashing Protector https://wiki.osdev.org/Stack_Smashing_Protector Process that helps detect stack buffer overruns by checking if a secret value is changed only detects stack buffer overruns Memory Management ruby garbage collector: https://jemma.dev/blog/gc-compaction allocators Garbage Collection https://gchandbook.org/ </description>
+http://landley.net/writing/memory-faq.txt Stack Smashing Protector https://wiki.osdev.org/Stack_Smashing_Protector Process that helps detect stack buffer overruns by checking if a secret value is changed only detects stack buffer overruns Memory Management ruby garbage collector: https://jemma.dev/blog/gc-compaction allocators Garbage Collection https://gchandbook.org/ Linux Virtual Memory Virtual memory range is divided into the kernel space part, a user space part, and a inaccessible part for catching null pointers
+cat /proc/sys/vm/mmap_min_addr Mode is the execution privileage (code in kernel mode vs code in user mode).</description>
     </item>
     <item>
       <title>ramadan</title>

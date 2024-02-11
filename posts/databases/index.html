@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.a714f237c341873a612d817e7997738dee2c5bca56c302f2f69966cae875e965.js" integrity="sha256-pxTyN8NBhzphLYF&#43;eZdzje4sW8pWwwLy9plmyuh16WU="></script>
+<script defer src="/en.search.min.99f6544cffecf21962279650eb54c4841b72b388079e9dc72c9d7b9b48c80f43.js" integrity="sha256-mfZUTP/s8hliJ5ZQ61TEhBtys4gHnp3HLJ17m0jID0M="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -72,6 +72,45 @@
 <ul>
 <li>RocksDB</li>
 <li>SpeedDB - <a href="https://github.com/speedb-io/speedb">https://github.com/speedb-io/speedb</a></li>
+</ul>
+<h3 id="zippydb">ZippyDB</h3>
+<figure><img src="/ox-hugo/2024-02-10_17-50-47_screenshot.png"/>
+</figure>
+
+<ul>
+<li>Build on RocksDB, but less management</li>
+<li>Generic KV store, supports snapshot reads and partial read/write</li>
+<li>Snapshot reads
+<ul>
+<li>cheap operation that uses snapshot handlers to perform multiple reads</li>
+<li>basically RCU, but if you read while a write is happening the read goes to a snapshot
+<ul>
+<li>handles versions, whereas RCU doesn&rsquo;t handle versions</li>
+<li>also uses a cleaner or garbage collector or sweeper, whereas RCU places the burden on the writer</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Data can be replicated either with <a href="/posts/gossip_protocols/">gossip protocols</a> or <a href="/posts/paxos/">paxos</a>, although usually there&rsquo;s a master
+<ul>
+<li>specific read only replicas called followers are occasionally added for high volume reads</li>
+</ul>
+</li>
+<li>Divides times into small epocs, each epoc zippy assigns a primary replica, that is the paxos leader
+<ul>
+<li>Allows clients to choose which consistency level they come into (same as Spanner)</li>
+<li>Consistent reading -&gt; clients go to the current primary of the shard</li>
+<li>Stale information -&gt; can go to a replica</li>
+<li>Also allows for read-your-writes with a hash that signals to the replicas to manually update</li>
+</ul>
+</li>
+<li>Has a data shuttle, which basically tiers it into Primary -&gt; Secondary -&gt; Follower, on per shard basis
+<ul>
+<li>A shard is a box</li>
+</ul>
+</li>
+<li>Shard management service is the orchestrator, and tells each shard what they own, master that runs over the control plane</li>
+<li>Store is based on top of RocksDB</li>
 </ul>
 
           
@@ -901,6 +940,10 @@
 
    
 
+   
+
+   
+      
    
 
    
@@ -3717,6 +3760,8 @@
           <li><a href="/posts/20200415152613-cassandra/">Cassandra</a></li>
        
           <li><a href="/posts/dataflow/">dataflow</a></li>
+       
+          <li><a href="/posts/distributed_systems/">distributed systems</a></li>
        
           <li><a href="/posts/philips_introducing_operators/">philips: introducing operators</a></li>
        
