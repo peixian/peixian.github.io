@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.99f6544cffecf21962279650eb54c4841b72b388079e9dc72c9d7b9b48c80f43.js" integrity="sha256-mfZUTP/s8hliJ5ZQ61TEhBtys4gHnp3HLJ17m0jID0M="></script>
+<script defer src="/en.search.min.08fb822539a3e605d52b5422d9fd661d53fdca50aab45686479ba6a26d634eaa.js" integrity="sha256-CPuCJTmj5gXVK1Qi2f1mHVP9ylCqtFaGR5umom1jTqo="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -45,6 +45,10 @@
 </ul>
 </li>
 </ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li>Killing a process can be done with <code>kill -s &lt;SIGNAL&gt; pid</code>, send <code>SIGQUIT</code> to request a craceful quit or <code>SIGABRT</code> to request immediate termination</li>
+</ul>
 <h2 id="crashes">Crashes</h2>
 <ul>
 <li>Breakpad and Crashpad from google allow for dump tracing
@@ -60,6 +64,12 @@
 <li>Apple computers use Mach exceptions: <a href="https://flylib.com/books/en/3.126.1.109/1/">https://flylib.com/books/en/3.126.1.109/1/</a></li>
 <li><a href="https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Mach/Mach.html">https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Mach/Mach.html</a></li>
 <li><a href="https://docs.darlinghq.org/internals/macos-specifics/mach-ports.html">https://docs.darlinghq.org/internals/macos-specifics/mach-ports.html</a></li>
+<li>Core dumps can be enavbled with <code>ulimit -c unlimited</code> on a temp basis. Otherwise configure <code>/etc/security/limits.conf</code></li>
+<li><code>gcore -o filename PID</code> can also be used to generate a core dump</li>
+</ul>
+<h2 id="exceptions">Exceptions</h2>
+<ul>
+<li>Exceptions can happen because of invalid access or when a runtime check fails. This throws a <code>SIGABRT</code></li>
 </ul>
 <h2 id="tracing">Tracing</h2>
 <ul>
@@ -2518,6 +2528,8 @@
    
 
    
+      
+   
 
    
 
@@ -3801,6 +3813,8 @@
           <li><a href="/posts/libuv/">libuv</a></li>
        
           <li><a href="/posts/20200415154022-networks/">networks</a></li>
+       
+          <li><a href="/posts/operating_systems/">operating systems</a></li>
        
           <li><a href="/posts/toolbox/">toolbox</a></li>
        

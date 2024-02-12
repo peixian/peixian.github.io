@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.99f6544cffecf21962279650eb54c4841b72b388079e9dc72c9d7b9b48c80f43.js" integrity="sha256-mfZUTP/s8hliJ5ZQ61TEhBtys4gHnp3HLJ17m0jID0M="></script>
+<script defer src="/en.search.min.08fb822539a3e605d52b5422d9fd661d53fdca50aab45686479ba6a26d634eaa.js" integrity="sha256-CPuCJTmj5gXVK1Qi2f1mHVP9ylCqtFaGR5umom1jTqo="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -108,7 +108,7 @@
 </ul>
 <h2 id="tectonic">Tectonic</h2>
 <ul>
-<li>Facebook version of GFS, uses <a href="/posts/databases/#zippydb">ZippyDB</a> to handle async metadata management and block management</li>
+<li>Facebook version of GFS, uses <a href="/posts/k_v_stores/#zippydb">ZippyDB</a> to handle async metadata management and block management</li>
 <li><strong>Only allows one single writer at a time</strong> via locking</li>
 <li>Each block is 80MB</li>
 <li>Organizes the shards in zippy so that all the ones with the same sharding ID go on the same replica, which uses the <code>directory_id</code></li>
@@ -116,9 +116,39 @@
 <li>Has a cache note called &ldquo;sealing&rdquo;, which restraints updates, allowing caches to be stored longer</li>
 <li>Has a 2pc for rebalancing when nodes need to go down for maintanence</li>
 <li>Divides traffic groups into 3, depending on priority</li>
-<li>Uses the</li>
+<li>Uses the <a href="/posts/load_balancing/#leaky-bucket-algorithm">Leaky Bucket Algorithm</a></li>
 </ul>
 <h2 id="slicer">Slicer</h2>
+<h2 id="bigtable">BigTable</h2>
+<ul>
+<li>Key features
+<ul>
+<li>Single row transactions</li>
+<li>No batching across row keys</li>
+<li>Integer counters</li>
+<li>MapReduce jobs as input source and output target</li>
+</ul>
+</li>
+<li>Uses a column family style, with groups of columns and a timestamp within each cell</li>
+<li>Treats all data as raw byte strings</li>
+<li>All rows have a row key (64kb string), each write and read is atomic</li>
+<li>Column families allow for efficient read/write operations, since they usually hold data of the same type (data within a family is physically close)</li>
+<li>Also has timestamps, keeps the latest 3 versions</li>
+</ul>
+<h3 id="sstable--sorted-string-table">SSTable (Sorted String Table)</h3>
+<ul>
+<li>Components
+<ul>
+<li>Data File</li>
+<li>Primary Index</li>
+<li>Bloom filter (for quickly checking if it&rsquo;s in the data structure)</li>
+<li>Compression information</li>
+<li>Stats</li>
+</ul>
+</li>
+<li>Immutable k/v mappings used to represent tablet states, consisting of blocks, with block indexes facilitating efficient disk access, and can be loaded into memory for quick queries</li>
+<li>Memtables are created in memory and flushed to disk as sstables</li>
+</ul>
 
           
 

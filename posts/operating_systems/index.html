@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.99f6544cffecf21962279650eb54c4841b72b388079e9dc72c9d7b9b48c80f43.js" integrity="sha256-mfZUTP/s8hliJ5ZQ61TEhBtys4gHnp3HLJ17m0jID0M="></script>
+<script defer src="/en.search.min.08fb822539a3e605d52b5422d9fd661d53fdca50aab45686479ba6a26d634eaa.js" integrity="sha256-CPuCJTmj5gXVK1Qi2f1mHVP9ylCqtFaGR5umom1jTqo="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -45,6 +45,57 @@
 <li><a href="https://www.dragonflybsd.org/cgi/web-man?command=sys_checkpoint&amp;section=2">https://www.dragonflybsd.org/cgi/web-man?command=sys_checkpoint&amp;section=2</a></li>
 <li><a href="https://www.dragonflybsd.org/cgi/web-man?command=checkpoint&amp;section=ANY">https://www.dragonflybsd.org/cgi/web-man?command=checkpoint&amp;section=ANY</a></li>
 <li><a href="http://ithare.com/bringing-architecture-of-operating-systems-to-xxi-century-part-iv-first-draft/">http://ithare.com/bringing-architecture-of-operating-systems-to-xxi-century-part-iv-first-draft/</a></li>
+</ul>
+<h2 id="threads">Threads</h2>
+<ul>
+<li>
+<p><a href="/posts/linux/">linux</a> kernel only uses lightweight processes, or threads.</p>
+<ul>
+<li>Threads use <code>libc</code> to transition to kernel space, but posix threads originate from <code>libc</code> and <code>libpthread</code>. Note that the kernel only uses LWPs. However, at the kernel layer, since a userspace thread maps to a lwp, it doesn&rsquo;t really matter</li>
+</ul>
+<figure><img src="/ox-hugo/2024-02-11_19-16-26_screenshot.png"/>
+    </figure>
+
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Debugger commands
+<ul>
+<li>GDB
+<ul>
+<li><code>info threads</code> -&gt; list threads</li>
+<li><code>thread &lt;n&gt;</code> -&gt; switches between threads</li>
+<li><code>thread apply all bt</code> -&gt; backtraces</li>
+</ul>
+</li>
+<li>LLDB
+<ul>
+<li><code>thread list</code></li>
+<li><code>thread select 1</code></li>
+<li><code>thread backtrace all~/~bt all</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Thread stacks
+<ul>
+<li>
+<p>each thread has its own stack to store data, and we can dump it like normal</p>
+</li>
+<li>
+<p>Stack tracing a thread is when a function A calls function B, and function B has a return address to where function A called it.</p>
+<figure><img src="/ox-hugo/2024-02-11_19-18-17_screenshot.png"/>
+        </figure>
+
+</li>
+</ul>
+</li>
+<li>Symbol files
+<ul>
+<li>Symbols provide mappings between memory address ranges and associated symbol names, if you don&rsquo;t have the symbols, you just have the current function</li>
+</ul>
+</li>
 </ul>
 
           
