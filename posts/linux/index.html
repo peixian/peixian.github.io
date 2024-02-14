@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.08fb822539a3e605d52b5422d9fd661d53fdca50aab45686479ba6a26d634eaa.js" integrity="sha256-CPuCJTmj5gXVK1Qi2f1mHVP9ylCqtFaGR5umom1jTqo="></script>
+<script defer src="/en.search.min.1eb1c91fae7c72a1566cddc297826c33f33151b35d330c5fcdce32d12ff72e1f.js" integrity="sha256-HrHJH658cqFWbN3Cl4JsM/MxUbNdMwxfzc4y0S/3Lh8="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -44,10 +44,138 @@
 <li>Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros</li>
 </ul>
 </li>
+<li><a href="https://www.youtube.com/watch?v=5osOHhBWKOQ&amp;list=PLSIUOFhnxEiC3YTdxwqZqgEY5imVL8U8J&amp;index=1">https://www.youtube.com/watch?v=5osOHhBWKOQ&amp;list=PLSIUOFhnxEiC3YTdxwqZqgEY5imVL8U8J&amp;index=1</a></li>
 </ul>
-<h2 id="signals">Signals</h2>
+<h2 id="process">Process</h2>
+<h3 id="internal-datastructure-struct-task-struct">Internal datastructure <code>struct task_struct {}</code>:</h3>
 <ul>
-<li>Killing a process can be done with <code>kill -s &lt;SIGNAL&gt; pid</code>, send <code>SIGQUIT</code> to request a craceful quit or <code>SIGABRT</code> to request immediate termination</li>
+<li>pid -&gt; integer, will wrap around unused pids</li>
+<li>parent -&gt; every proces has a parent, each one has a children</li>
+<li>tty -&gt; in the old days, every process had an associated terminal called a tty</li>
+<li>uid -&gt; user the process is running as</li>
+<li>gid -&gt; group id</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>A process can change its ids (<code>setuid</code>)</li>
+<li>From a sysadmin pov, what can you do to a process?
+<ul>
+<li>create/send signals/ps or proc/strace</li>
+<li>each process has an address space, every process thinks it owns the entire theoretical memory of the computer</li>
+</ul>
+</li>
+</ul>
+<h3 id="memory">memory</h3>
+<ul>
+<li>initialized and uninitalized data</li>
+<li>break system call is used to increase heap size</li>
+<li>heap sits on top and grows up and the stack grows down</li>
+<li>in between space is used for shared libraries</li>
+<li>32 bit 4G</li>
+<li>environment variables and cmdline is at the very top</li>
+<li>kernel puts all of its dataat the top of the data structure</li>
+</ul>
+<h4 id="pmap"><code>pmap</code></h4>
+<ul>
+<li>permissions on the memory regions like file</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>limits
+<ul>
+<li>used to be important during timeshare systems</li>
+<li>rlimit or ulimit for stack size
+<ul>
+<li>common one is the number of open files</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>process priority
+<ul>
+<li><code>nice</code> in shell</li>
+<li>static priority</li>
+<li>dynamic priority</li>
+<li>real-time priority</li>
+<li>all related to scheduling</li>
+<li><code>nice</code> or <code>getpriority()</code> or <code>setpriority()</code> system calls</li>
+</ul>
+</li>
+</ul>
+<h3 id="ipc">IPC</h3>
+<h4 id="pipes">pipes</h4>
+<ul>
+<li>internal buffer data structure</li>
+<li>two file descriptors, connected to each end of the pipe</li>
+<li>similar to a channel in go</li>
+<li>no temp file at all, <strong>all</strong> in memory</li>
+<li>one limitation: only exist between members of the same family within the same process three
+<ul>
+<li>ls | wc works because both ls and wc are children of the chell</li>
+</ul>
+</li>
+<li>FIFOs/named pipes, exist in the filesystem, acts like a regular pipe
+<ul>
+<li>used for multiple processes</li>
+</ul>
+</li>
+<li>cron uses a fifo in the kernel?</li>
+</ul>
+<h4 id="sockets">sockets</h4>
+<h4 id="signals">signals</h4>
+<ul>
+<li>Killing a process can be done with <code>kill -s &lt;SIGNAL&gt; pid</code>, send <code>SIGQUIT</code> to request a craceful quit or <code>SIGABRT</code> to request immediate termination
+<ul>
+<li>32 original flavors</li>
+<li>32 new flavors</li>
+<li>list with <code>kill -l</code></li>
+<li>process can send signals to another process, or kernel sends it to your process</li>
+<li>common
+<ul>
+<li>9 - kill</li>
+<li>15 - term</li>
+<li>1 - HUP - hangup (for when you have a connection), now it&rsquo;s used to reload config files</li>
+<li>2 - INT - interrupt</li>
+<li>19 - STOP - suspend in background
+<ul>
+<li><code>fg</code> command to see</li>
+</ul>
+</li>
+<li>18 - CONT</li>
+<li>14 - ALARM - timer in kernel, when the process is sent an alarm signal</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="system-v-stuff">System V stuff</h4>
+<ul>
+<li>
+<p>semget - semaphore</p>
+</li>
+<li>
+<p>msget - message service get</p>
+</li>
+<li>
+<p>shmget - shared memory</p>
+<ul>
+<li>most efficient is one setting data and another is reading</li>
+</ul>
+</li>
+<li>
+<p>RPC - literally a remote procedure call, sent over to a different process usually on another process</p>
+</li>
+<li>
+<p>mmap - a way to map a file into memory, then shared with another process, BSD trick</p>
+<ul>
+<li>
+<p>you map a chunk of memory out to a file, and then its propagated, then you can have a set of memory that&rsquo;s not tied to a particular file, then another process can share this file</p>
+</li>
+<li>
+<p>anon memory, not tied to a particular process, going to be paged out to swap space</p>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="crashes">Crashes</h2>
 <ul>
