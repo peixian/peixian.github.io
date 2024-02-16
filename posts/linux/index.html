@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.1eb1c91fae7c72a1566cddc297826c33f33151b35d330c5fcdce32d12ff72e1f.js" integrity="sha256-HrHJH658cqFWbN3Cl4JsM/MxUbNdMwxfzc4y0S/3Lh8="></script>
+<script defer src="/en.search.min.74b6d01744c80a5e79dfd840a4a3828687580d6b7a1d3cd7288f101af9473239.js" integrity="sha256-dLbQF0TICl5539hApKOChodYDWt6HTzXKI8QGvlHMjk="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -173,6 +173,145 @@
 </li>
 <li>
 <p>anon memory, not tied to a particular process, going to be paged out to swap space</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="execution-scheduling-processes-and-threads">Execution, Scheduling, Processes, and Threads</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=hgb-1f6BlGI&amp;list=PLSIUOFhnxEiC3YTdxwqZqgEY5imVL8U8J&amp;index=3">https://www.youtube.com/watch?v=hgb-1f6BlGI&amp;list=PLSIUOFhnxEiC3YTdxwqZqgEY5imVL8U8J&amp;index=3</a></li>
+<li><code>fork()</code>
+<ul>
+<li>fork creates a new process that&rsquo;s an exact copy of the original</li>
+<li>copies memory, open files, basically everything</li>
+<li>not inherited: file locks and pending signals</li>
+<li>how does it work? why duplicate?</li>
+<li>fork as the parent returns &gt;0, the pid returns child pid</li>
+<li>0 is child</li>
+<li>&lt;1 is error</li>
+</ul>
+</li>
+</ul>
+<h3 id="file-descriptor">file descriptor</h3>
+<ul>
+<li>integer that represents a kernel data structure that has an inode, read position, etc</li>
+<li>pipes</li>
+<li>it&rsquo;s possible to redirect the inputs and outputs of the program (another great idea of linux)</li>
+<li>now the child can something do different, including exec() a new program
+<ul>
+<li><code>execve()</code> runs a new program, usually fork and exec is the pattern (although fork is bad now)
+<ul>
+<li>apache web server for example forks</li>
+</ul>
+</li>
+<li>bash execs two programs and</li>
+<li>copy on write fork()
+<ul>
+<li>since you&rsquo;re just gonna exec, why bother copying the whole thing?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="daemons"><code>daemons</code>?</h3>
+<ul>
+<li>fork a child process, then the parent exists and leaves the child with parent as the init</li>
+<li>close all open files</li>
+<li>become the process group leader
+<ul>
+<li>process group, by default, a processes of the login shells is in the group</li>
+<li>signals get passed to everyone in the process group, such as shells hanging up</li>
+</ul>
+</li>
+<li>set the umask
+<ul>
+<li>what are the permissions I want to be sure that are turned <strong>off</strong> by default?</li>
+</ul>
+</li>
+<li>change the dir to a safe space
+<ul>
+<li>change your working directory to somewhere safe, the daemon should be in a place that&rsquo;s somewhere safe</li>
+</ul>
+</li>
+</ul>
+<h3 id="scheduling">scheduling</h3>
+<ul>
+<li>linux is multi-processing, but they have to share one CPU</li>
+<li>scheduling is how the kernel manages these running processes and &ldquo;take turns&rdquo;
+<ul>
+<li>&ldquo;context switching&rdquo;, take all the registers values out, load the register values
+<ul>
+<li>instruction pointer</li>
+<li>where is the stack? this kind of stuff</li>
+<li>who gets to run next?
+<ul>
+<li>who&rsquo;s ready to run?</li>
+<li>every process has a task state associated with it</li>
+<li>when simply running, CPU-bound, the krenel will preempt a process</li>
+<li>everything is in a run queue</li>
+<li>process is in the task_running state, has a certain time to quantum to run, by default 100ms
+<ul>
+<li>kernel checks the process time quantum at every tick, causes the kernel to check on the state, if the process hasn&rsquo;t exited or slept, guarentees that a process doesn&rsquo;t run forever</li>
+<li>realistically it&rsquo;s 1 ms now</li>
+</ul>
+</li>
+<li>preemptive multitasking
+<ul>
+<li>all TASK_RUNNING processes are part of the runqueue
+<ul>
+<li>
+<p>length of the runqueue is called the &ldquo;load average&rdquo;</p>
+</li>
+<li>
+<p>uptime shows load averaged command</p>
+<ul>
+<li>
+<p>last minute, 5 minutes, 15 minutes averages</p>
+<blockquote>
+<p>00:43:10 up 122 days, 35 min,  3 users,  load average: 0.10, 0.10, 0.09</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>vmstat also does this with <code>r</code></p>
+<blockquote>
+<p>procs &mdash;&mdash;&mdash;&ndash;memory&mdash;&mdash;&mdash;- &mdash;swap&ndash; &mdash;&ndash;io&mdash;- -system&ndash; &mdash;&mdash;cpu&mdash;&ndash;
+r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+0  0      0 65022788 1420664 60968808    0    0     0     9    0    0  3  0 97  0  0</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>high load average means you&rsquo;re trying to do too much on the system probably</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>states
+<ul>
+<li>TASK_RUNNING</li>
+<li>TASK_INTERRUPTABLE</li>
+<li>TASK_UNINTERRUPTABLE</li>
+<li>TASK_STOPPED (control z)</li>
+<li>TASK_TRACED (strace)</li>
+<li>EXIT_ZOMBIE (the process has ended, but remains in the tree)
+<ul>
+<li>zombies are only leftover datastructures in the kernel</li>
+<li>only reason to keep it around is so that the parent can retrieve its return value</li>
+<li>is not running CPU or mem</li>
+<li>usually a sign that the someone hasn&rsquo;t cleaned up</li>
+<li>orphaned zombies become children of init, but the init will clean it up</li>
+</ul>
+</li>
+<li>EXIT_DEAD
+<ul>
+<li>process has excited, but pages still need to be cleaned up</li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 </li>

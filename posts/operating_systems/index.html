@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.1eb1c91fae7c72a1566cddc297826c33f33151b35d330c5fcdce32d12ff72e1f.js" integrity="sha256-HrHJH658cqFWbN3Cl4JsM/MxUbNdMwxfzc4y0S/3Lh8="></script>
+<script defer src="/en.search.min.74b6d01744c80a5e79dfd840a4a3828687580d6b7a1d3cd7288f101af9473239.js" integrity="sha256-dLbQF0TICl5539hApKOChodYDWt6HTzXKI8QGvlHMjk="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -48,6 +48,22 @@
 </ul>
 <h2 id="threads">Threads</h2>
 <ul>
+<li>
+<p>Similar to a linux process that always run in the same memory</p>
+<ul>
+<li>own instruction pointer, and can be scheduled on different CPU&rsquo;s and executing different things on the same program</li>
+<li>shares the process structure (execpt stacks)</li>
+<li>linux threads have their own pid</li>
+<li>solaris is completely thread based</li>
+<li>in linux, a thread is a prococess without a thread</li>
+<li>created with the clone() system call</li>
+<li>treat as one process in some games, uses the thread group</li>
+<li><code>getpid()</code> will tell you some info</li>
+<li>syn and locks!</li>
+<li>threads tend to be pretty fast, usually an async that does stuff in the background, and never switches off the task running state, spinning is TASK_RUN, but it&rsquo;s not waiting on IO but rather a lock</li>
+<li>biggest reason to use over a fork is because you can do the same memory</li>
+</ul>
+</li>
 <li>
 <p><a href="/posts/linux/">linux</a> kernel only uses lightweight processes, or threads.</p>
 <ul>
