@@ -2962,7 +2962,7 @@ http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p0847r6.html </descripti
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/cpu/</guid>
       <description>Tags: computers
-https://travisdowns.github.io/blog/2021/06/17/rip-zero-opt.html </description>
+https://travisdowns.github.io/blog/2021/06/17/rip-zero-opt.html Registers Nowadays, all registers can be used as general purpose registers RBP is used as a general purpose one, with RSP taking the role as a frame pointer. RIP is still in the stack memory region for each function call info registers in gdb Constants are encoded in instructions, but arbitrary values are retrieved from memory Goto is a JMP Function calls are CALL When a function is called from a caller, the callee needs to make room for local variables.</description>
     </item>
     <item>
       <title>Cramer - Civil War is Not a Stupid Thing</title>
@@ -3199,7 +3199,8 @@ UN proclaims success in el salvador, but it&amp;rsquo;s highly likely this wasn&
       <link>/posts/debuggers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/debuggers/</guid>
-      <description>Tags: computers</description>
+      <description>Tags: computers
+Usually core dumps file name patterns are held in /proc/sys/kernel/core_pattern Diagnostic patterns </description>
     </item>
     <item>
       <title>declaration of the shia in iraq</title>
@@ -4819,7 +4820,8 @@ The PSF (Pennisula Shield Force) is a strictly military one Current plans to cre
       <link>/posts/gdb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/gdb/</guid>
-      <description>Tags: debuggers</description>
+      <description>Tags: debuggers
+Scripts Loading a core gdb -c &amp;lt;core&amp;gt; -se &amp;lt;app-binary&amp;gt; </description>
     </item>
     <item>
       <title>gear blog post</title>

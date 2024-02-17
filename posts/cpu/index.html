@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.74b6d01744c80a5e79dfd840a4a3828687580d6b7a1d3cd7288f101af9473239.js" integrity="sha256-dLbQF0TICl5539hApKOChodYDWt6HTzXKI8QGvlHMjk="></script>
+<script defer src="/en.search.min.2ab5cddfc4342f3c5d5bbd6950566dbea399dab31e5f98ead0a549973616362b.js" integrity="sha256-KrXN38Q0LzxdW71pUFZtvqOZ2rMeX5jq0KVJlzYWNis="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -40,6 +40,17 @@
           <p>Tags: <a href="/posts/computers/">computers</a></p>
 <ul>
 <li><a href="https://travisdowns.github.io/blog/2021/06/17/rip-zero-opt.html">https://travisdowns.github.io/blog/2021/06/17/rip-zero-opt.html</a></li>
+</ul>
+<h2 id="registers">Registers</h2>
+<ul>
+<li>Nowadays, all registers can be used as general purpose registers</li>
+<li>RBP is used as a general purpose one, with RSP taking the role as a frame pointer. RIP is still in the stack memory region for each function call</li>
+<li><code>info registers</code> in gdb</li>
+<li>Constants are encoded in instructions, but arbitrary values are retrieved from memory</li>
+<li>Goto is a <code>JMP</code></li>
+<li>Function calls are <code>CALL</code></li>
+<li>When a function is called from a caller, the callee needs to make room for local variables. In 64bit x86, usually the first six arguments are passed in registers</li>
+<li>Then it saves the base pointer into RBP, and then sets up the new base ptr</li>
 </ul>
 
           
