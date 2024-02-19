@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.2ab5cddfc4342f3c5d5bbd6950566dbea399dab31e5f98ead0a549973616362b.js" integrity="sha256-KrXN38Q0LzxdW71pUFZtvqOZ2rMeX5jq0KVJlzYWNis="></script>
+<script defer src="/en.search.min.814e6f595e86823d5f3943c2aa00070c05da357d416751942ab1df2937feda0c.js" integrity="sha256-gU5vWV6Ggj1fOUPCqgAHDAXaNX1BZ1GUKrHfKTf&#43;2gw="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -44,10 +44,13 @@
 <li>Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros</li>
 </ul>
 </li>
+</ul>
+<h2 id="greybeard-qualification">Greybeard Qualification</h2>
+<ul>
 <li><a href="https://www.youtube.com/watch?v=5osOHhBWKOQ&amp;list=PLSIUOFhnxEiC3YTdxwqZqgEY5imVL8U8J&amp;index=1">https://www.youtube.com/watch?v=5osOHhBWKOQ&amp;list=PLSIUOFhnxEiC3YTdxwqZqgEY5imVL8U8J&amp;index=1</a></li>
 </ul>
-<h2 id="process">Process</h2>
-<h3 id="internal-datastructure-struct-task-struct">Internal datastructure <code>struct task_struct {}</code>:</h3>
+<h3 id="process">Process</h3>
+<h4 id="internal-datastructure-struct-task-struct">Internal datastructure <code>struct task_struct {}</code>:</h4>
 <ul>
 <li>pid -&gt; integer, will wrap around unused pids</li>
 <li>parent -&gt; every proces has a parent, each one has a children</li>
@@ -65,7 +68,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="memory">memory</h3>
+<h4 id="memory">memory</h4>
 <ul>
 <li>initialized and uninitalized data</li>
 <li>break system call is used to increase heap size</li>
@@ -75,7 +78,10 @@
 <li>environment variables and cmdline is at the very top</li>
 <li>kernel puts all of its dataat the top of the data structure</li>
 </ul>
-<h4 id="pmap"><code>pmap</code></h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p><code>pmap</code></p>
 <ul>
 <li>permissions on the memory regions like file</li>
 </ul>
@@ -102,8 +108,13 @@
 </ul>
 </li>
 </ul>
-<h3 id="ipc">IPC</h3>
-<h4 id="pipes">pipes</h4>
+</li>
+</ul>
+<h4 id="ipc">IPC</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>pipes</p>
 <ul>
 <li>internal buffer data structure</li>
 <li>two file descriptors, connected to each end of the pipe</li>
@@ -121,8 +132,16 @@
 </li>
 <li>cron uses a fifo in the kernel?</li>
 </ul>
-<h4 id="sockets">sockets</h4>
-<h4 id="signals">signals</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>sockets</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>signals</p>
 <ul>
 <li>Killing a process can be done with <code>kill -s &lt;SIGNAL&gt; pid</code>, send <code>SIGQUIT</code> to request a craceful quit or <code>SIGABRT</code> to request immediate termination
 <ul>
@@ -148,7 +167,12 @@
 </ul>
 </li>
 </ul>
-<h4 id="system-v-stuff">System V stuff</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>System V stuff</p>
 <ul>
 <li>
 <p>semget - semaphore</p>
@@ -168,16 +192,17 @@
 <li>
 <p>mmap - a way to map a file into memory, then shared with another process, BSD trick</p>
 <ul>
-<li>
-<p>you map a chunk of memory out to a file, and then its propagated, then you can have a set of memory that&rsquo;s not tied to a particular file, then another process can share this file</p>
+<li>you map a chunk of memory out to a file, and then its propagated, then you can have a set of memory that&rsquo;s not tied to a particular file, then another process can share this file
+<ul>
+<li>anon memory, not tied to a particular process, going to be paged out to swap space</li>
+</ul>
 </li>
-<li>
-<p>anon memory, not tied to a particular process, going to be paged out to swap space</p>
+</ul>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="execution-scheduling-processes-and-threads">Execution, Scheduling, Processes, and Threads</h2>
+<h3 id="execution-scheduling-processes-and-threads">Execution, Scheduling, Processes, and Threads</h3>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=hgb-1f6BlGI&amp;list=PLSIUOFhnxEiC3YTdxwqZqgEY5imVL8U8J&amp;index=3">https://www.youtube.com/watch?v=hgb-1f6BlGI&amp;list=PLSIUOFhnxEiC3YTdxwqZqgEY5imVL8U8J&amp;index=3</a></li>
 <li><code>fork()</code>
@@ -192,7 +217,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="file-descriptor">file descriptor</h3>
+<h4 id="file-descriptor">file descriptor</h4>
 <ul>
 <li>integer that represents a kernel data structure that has an inode, read position, etc</li>
 <li>pipes</li>
@@ -213,7 +238,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="daemons"><code>daemons</code>?</h3>
+<h4 id="daemons"><code>daemons</code>?</h4>
 <ul>
 <li>fork a child process, then the parent exists and leaves the child with parent as the init</li>
 <li>close all open files</li>
@@ -234,7 +259,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="scheduling">scheduling</h3>
+<h4 id="scheduling">scheduling</h4>
 <ul>
 <li>linux is multi-processing, but they have to share one CPU</li>
 <li>scheduling is how the kernel manages these running processes and &ldquo;take turns&rdquo;
@@ -313,6 +338,181 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 </li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+<h3 id="memory-management">Memory Management</h3>
+<h4 id="virtual-memory">Virtual Memory</h4>
+<ul>
+<li>We&rsquo;re not compressing images anymore</li>
+<li>But still multiprocessing, so we need to maintain individual process space</li>
+<li>Memory mapping is a little different for the 64 bit versions</li>
+<li>Memory mapping gets changed all the times</li>
+</ul>
+<h4 id="paging">Paging</h4>
+<ul>
+<li>
+<p>Page sizes traditionally 4kb, but really if you&rsquo;re a big boy we&rsquo;re all huge pages now</p>
+</li>
+<li>
+<p>There&rsquo;s a page table, and we represent the address space of the program and how it&rsquo;s mapped into the actual ram</p>
+</li>
+<li>
+<p>page table entries change logical memory spaces into physical spaces, how they ordered, how they used, varies widely</p>
+</li>
+<li>
+<p>you don&rsquo;t have to map all the pages, but if they&rsquo;re not in ram, where are they?</p>
+</li>
+<li>
+<p>kernel allocates the pages, and mapped when a program is loaded at execute time</p>
+</li>
+<li>
+<p>shared libraries (shared among various processes, chances are .so apges are already in RAM, so they map to another process address space)</p>
+<ul>
+<li>although now static binaries might be good enough since we have tons of ram now</li>
+</ul>
+</li>
+<li>
+<p>context switching doesn&rsquo;t involve memory changes</p>
+<ul>
+<li>means switching to different address spaces and different page tables</li>
+<li>address spaces can sit all in memory with enough ram, just change the register values, no freeing memory</li>
+<li>pages are copied out to swap (AND HIT DISK)</li>
+<li>reason why it&rsquo;s called &ldquo;swap&rdquo;, to swap processes between context switches</li>
+<li>now you just move the pages out as you need to</li>
+</ul>
+</li>
+<li>
+<p>typically a disk partition or a file, and we can have multiple swap spaces</p>
+<ul>
+<li><code>mkswap(8)</code> and <code>swapon(8)</code></li>
+<li><code>swapon -s</code> in terms of unix blocks
+<ul>
+<li>unix blocks are 512 bytes, each block is half a K, although now there&rsquo;s different</li>
+</ul>
+</li>
+</ul>
+<figure><img src="/ox-hugo/2024-02-18_18-46-21_screenshot.png"/>
+    </figure>
+
+</li>
+<li>
+<p>Possible to have memory on the swap space <strong>and</strong> in memory!</p>
+</li>
+<li>
+<p>&ldquo;dirty page&rdquo; - means that one copy that has been created is not the same as a the one in swap anymore</p>
+<ul>
+<li>dirty pages need to reswap out</li>
+</ul>
+</li>
+<li>
+<p>A &ldquo;page fault&rdquo; happens when you hit something that is not in RAM, which triggers a copy back from swap</p>
+</li>
+<li>
+<p>happens on demand, which means paging in and out requires a <strong>very</strong> long wait</p>
+</li>
+<li>
+<p>page ins are synchronous! the worst case</p>
+</li>
+</ul>
+<h4 id="file-mapping-and-demand-paging">File Mapping and Demand Paging</h4>
+<ul>
+<li>old way: exec the process, create the VM space, copy the text, init data, then swap and copies as needed</li>
+<li>now /bin file is also copied into swap</li>
+<li>why not let the program on disk be its own swap space!</li>
+<li>file mapping - original copy of the program is a disk copy of what&rsquo;s in memory, and then we reload them back from the file
+<ul>
+<li>file mapping is swap</li>
+</ul>
+</li>
+<li>then we can just map the file into memory, you don&rsquo;t even need it in memory!
+<ul>
+<li>
+<p>big win: only bring in pages as needed</p>
+</li>
+<li>
+<p>mapping is instant, no waiting for the program to load</p>
+</li>
+<li>
+<p>overall a win, demand-paging is good for most usecases (<code>ls</code> for example, you don&rsquo;t load all the code for all the options)</p>
+<figure><img src="/ox-hugo/2024-02-18_18-53-53_screenshot.png"/>
+        </figure>
+
+</li>
+<li>
+<p>same thing happens for shared libraries -&gt; libc is used</p>
+</li>
+<li>
+<p>anon pages -&gt; not represented by real world files, aka swap space is only needed for dynamically allocated files</p>
+</li>
+<li>
+<p>shared libraries <code>ld.so</code></p>
+</li>
+<li>
+<p>copy on write</p>
+<ul>
+<li>when you fork a process, copy on write is a flag set on each page</li>
+</ul>
+</li>
+<li>
+<p>demand paging, waiting for page faults</p>
+<ul>
+<li>normally: yes, but the alternative is on startup loading</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="monitoring-vm">Monitoring VM</h4>
+<ul>
+<li><code>vmstat</code> - first line is always an average (<code>si</code> <code>so</code> = page ins and page outs)
+<ul>
+<li>block IO is usually paging</li>
+</ul>
+</li>
+<li><code>swpd</code> - memory in swap space</li>
+<li><code>free</code> - RAM that&rsquo;s free</li>
+</ul>
+<h4 id="file-i-o">File I/O</h4>
+<ul>
+<li>Solaris also does this
+<ul>
+<li>solaris has a page scanner that frees up scanner and each version also show scan rate</li>
+<li>if the page scanner was actually running and desperately scanning then we know what&rsquo;s the memory problem</li>
+</ul>
+</li>
+<li>All file I/O in linux is done via paging</li>
+<li>Paging isn&rsquo;t necessarily bad</li>
+<li><code>/proc/pid/maps</code></li>
+<li><code>/proc/meminfo</code></li>
+<li><code>/proc/pid/smaps</code>
+<ul>
+<li>Shows you the size of the memory segment</li>
+<li>RSS -&gt; how much of this segment is physically present in memory</li>
+<li>how much of it is shared</li>
+<li>how much of it isn&rsquo;t shared</li>
+<li>how much of it is dirty</li>
+</ul>
+</li>
+</ul>
+<h4 id="ram-and-swap">RAM and Swap</h4>
+<ul>
+<li>How do you manage memory and free it up?</li>
+<li>When you&rsquo;re running low on memory
+<ul>
+<li>old times you do a clockhand algo, where you mark pages with one clockhand another was one that would free</li>
+<li>now there&rsquo;s fancier algorithms, but we still want to get the least recently used ones</li>
+</ul>
+</li>
+<li><code>kswapd</code> -&gt; kernel thread that frees pages</li>
+<li>now when things are dangerously low, now the OOMKiller comes in
+<ul>
+<li>Uses an algorithm that tries to pick processes that can be killed</li>
+</ul>
+</li>
+<li>if you&rsquo;re too low on RAM and keep paging in and out, we&rsquo;re &ldquo;thrashing&rdquo;
+<ul>
+<li>happens on windows more</li>
 </ul>
 </li>
 </ul>
@@ -953,7 +1153,11 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
    
 
    
+
+   
       
+   
+
    
 
    

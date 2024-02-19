@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.2ab5cddfc4342f3c5d5bbd6950566dbea399dab31e5f98ead0a549973616362b.js" integrity="sha256-KrXN38Q0LzxdW71pUFZtvqOZ2rMeX5jq0KVJlzYWNis="></script>
+<script defer src="/en.search.min.814e6f595e86823d5f3943c2aa00070c05da357d416751942ab1df2937feda0c.js" integrity="sha256-gU5vWV6Ggj1fOUPCqgAHDAXaNX1BZ1GUKrHfKTf&#43;2gw="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -69,7 +69,7 @@
 <ul>
 <li><a href="http://lamport.azurewebsites.net/pubs/pubs.html#lamport-paxos">http://lamport.azurewebsites.net/pubs/pubs.html#lamport-paxos</a></li>
 </ul>
-<h2 id="gfs--google-file-system">GFS (Google File System)</h2>
+<h2 id="gfs--google-file-system--storage--dot-dot-dot-dot-dropbox-org-storage-dot-md">GFS (Google File System) - <a href="/posts/storage/">storage</a></h2>
 <ul>
 <li>Single control plane, master, scared it wouldn&rsquo;t scale but it did</li>
 <li>Two specialized operations, record append and snapshot, with other basic file operations
@@ -89,6 +89,79 @@
 <li>Notably, GFS places the consistency checking on the client library, where it requires the you (via the client library) to check</li>
 <li>Is <strong>not</strong> linearizable</li>
 </ul>
+<h3 id="locks">Locks</h3>
+<ul>
+<li>Read lock aquired on the directory nam (full path to the directory so that it&rsquo;s not being edited or renamed)</li>
+<li>Write lock on the file name so that two or more processes cannot write at the same time</li>
+<li>Only a small region is locked, since not doing it carefully destroys performance</li>
+<li>If a manager dies after locking something, the lock goes with it since it&rsquo;s a central master</li>
+<li>left to right locking, so locks are acquired in the shape of
+<ul>
+<li><code>/a</code>, <code>/a/b</code>, <code>/a/b/c</code> for read locks</li>
+<li><code>/a/b/c/file.txt</code> for write locks</li>
+</ul>
+</li>
+</ul>
+<h3 id="reading">Reading</h3>
+<ol>
+<li>To read, user request is first processed by the GFS client that finds a chunk index
+<ul>
+<li>Since each file is divded into 64MB chunks, the client just %&rsquo;s by 64MB to find the appropriate idx</li>
+</ul>
+</li>
+<li>Then the client requests this information from the manager to get the chunk index and chunk handle, which the manager tells an appropriate replica of</li>
+<li>Client then caches the metadata</li>
+</ol>
+<h3 id="writing">Writing</h3>
+<ul>
+<li>Two kinds of writes, a <strong>random</strong> write and an <strong>append</strong> (not POSIX compliant)</li>
+<li>Replicas hold leases that coordinate the writes</li>
+<li>Leases expire, and are only active for a small period of time. This means that if a bad replica has a lease, it will expire and a new node will be found</li>
+<li>Primary replicas exist because they allow the data to be consistent</li>
+</ul>
+<h4 id="writing-workflow">Writing Workflow</h4>
+<ul>
+<li>Random write and append operations are roughly the same, random writes use an offset for where the data is written, whereas the append just goes to the last chunk</li>
+<li>Note that the data is pushed to all the replicas</li>
+</ul>
+<figure><img src="/ox-hugo/2024-02-18_15-49-47_screenshot.png"/>
+</figure>
+
+<ul>
+<li>The write (aka commit) happens to the main replica after all the replicas have recieved the data</li>
+<li>Replicas then ack whether they&rsquo;ve received the data or not</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Edge Cases on Writing</p>
+<ul>
+<li>If the last chunk has available space for appending data, then the chunk servers write that data</li>
+<li>If the chunk is already full, then the chunkserver asks the client to create a new chunk, which requires a new write and request loop from the manager</li>
+<li>If the last chunk is partially full, the chunkserver holding the last chunk will respond to the client with a message about the available server</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Control vs Data Flow</p>
+<ul>
+<li>GFS, critically, decouples the control and the data. The data physically flows via nearest-in-rack, but the manager still runs things</li>
+</ul>
+<figure><img src="/ox-hugo/2024-02-18_15-54-54_screenshot.png"/>
+    </figure>
+
+</li>
+</ul>
+<h3 id="deletes">Deletes</h3>
+<ul>
+<li>Garbage collection is done to avoid sync deletes</li>
+<li>Client says a delete needs to happen, so master creates a read lock on the dir and a write lock on the file</li>
+<li>Master then revokes the leases in progress, and waits for replicas to finish mutations</li>
+<li>Afterwards, delete actually happens</li>
+</ul>
+<h3 id="consistency-model">Consistency Model</h3>
 <h2 id="colossus">Colossus</h2>
 <ul>
 <li>GFS single master could not hold everything</li>
@@ -118,7 +191,6 @@
 <li>Divides traffic groups into 3, depending on priority</li>
 <li>Uses the <a href="/posts/load_balancing/#leaky-bucket-algorithm">Leaky Bucket Algorithm</a></li>
 </ul>
-<h2 id="slicer">Slicer</h2>
 <h2 id="bigtable">BigTable</h2>
 <ul>
 <li>Key features
@@ -624,16 +696,6 @@
    
 
    
-      
-   
-
-   
-
-   
-
-   
-
-   
 
    
       
@@ -649,40 +711,6 @@
 
    
       
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-      
-   
-
-   
-
    
 
    
@@ -724,6 +752,52 @@
    
 
    
+      
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+      
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
 
    
 
@@ -779,6 +853,8 @@
 
    
       
+   
+
    
 
    

@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.2ab5cddfc4342f3c5d5bbd6950566dbea399dab31e5f98ead0a549973616362b.js" integrity="sha256-KrXN38Q0LzxdW71pUFZtvqOZ2rMeX5jq0KVJlzYWNis="></script>
+<script defer src="/en.search.min.814e6f595e86823d5f3943c2aa00070c05da357d416751942ab1df2937feda0c.js" integrity="sha256-gU5vWV6Ggj1fOUPCqgAHDAXaNX1BZ1GUKrHfKTf&#43;2gw="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -38,13 +38,13 @@
           <h1>load balancing</h1>
 
           <p><a href="/posts/distributed_systems/">distributed systems</a></p>
-<h2 id="algorithms">Algorithms</h2>
+<h2 id="algorithms-per-server">Algorithms Per Server</h2>
 <figure><img src="/ox-hugo/2024-02-10_18-20-00_screenshot.png"/>
 </figure>
 
 <h3 id="leaky-bucket-algorithm">Leaky Bucket Algorithm</h3>
 <ul>
-<li>Has known properties of capacity (\(C\)), inflow rate (\(R_{in}\)), and outflow rate ($R<!-- raw HTML omitted -->out<!-- raw HTML omitted -->).</li>
+<li>Has known properties of capacity (\(C\)), inflow rate (\(R_{in}\)), and outflow rate (\(R_{out}\)).</li>
 <li>As requests come in, check if the bucket is full, and drop it</li>
 <li>Good for avoiding bursts of requests downstream</li>
 <li>Slow processing will stall the entire queue</li>
@@ -73,6 +73,9 @@
 <li>Avoids the issue edges, but has problems in that it assumes previous window requests are distributed evenly across the window time</li>
 <li>Smoothes out the burst</li>
 </ul>
+<h2 id="distribution-algorithms">Distribution Algorithms</h2>
+<h3 id="consistent-hashing--dot-dot-dot-dot-dropbox-org-consistent-hashing-dot-md"><a href="/posts/consistent_hashing/">Consistent Hashing</a></h3>
+<h3 id="adya-et-al-slicer-auto-sharding-for-datacenter-applications-dot-pdf--dot-dot-dot-dot-dropbox-org-slicer-dot-md"><a href="/posts/slicer/">Adya et al: Slicer Auto-Sharding for Datacenter Applications.pdf</a></h3>
 
           
 
@@ -159,6 +162,12 @@
 
    
 
+   
+
+   
+
+   
+      
    
 
    
@@ -3709,6 +3718,8 @@
     <h4>Links to this note</h4>
     <div class="backlinks">
         <ul>
+       
+          <li><a href="/posts/slicer/">Adya et al: Slicer Auto-Sharding for Datacenter Applications</a></li>
        
           <li><a href="/posts/distributed_systems/">distributed systems</a></li>
        

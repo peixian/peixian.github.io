@@ -359,6 +359,16 @@ Attempts to explicitly difficult to guess based on only the hypothesis Same crea
 Solicitied by the UN for peace operations reform</description>
     </item>
     <item>
+      <title>Adya et al: Slicer Auto-Sharding for Datacenter Applications</title>
+      <link>/posts/slicer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/slicer/</guid>
+      <description>papers, load balancing
+Key findings, uses slicelet and clerk (slicelet is for server, clerk is for client), where it maintains chunks of adaptive load balancing
+Fills the same role as Consistent Hashing, but instead offers a way to manage hot shards by merging slices together
+Runs a central master </description>
+    </item>
+    <item>
       <title>aerobic capacity</title>
       <link>/posts/20200415115345-aerobic_capacity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2746,7 +2756,7 @@ either systems are formalistic and hard to learn (lots of acquired knowledge) bu
       <guid>/posts/computers/</guid>
       <description>https://wiki.c2.com/?SufficientlySmartCompiler
 Tags: root
-grad school professors https://software.imdea.org/~gotsman/ Firmware https://osfc.io/archive- open source firmware conference Laptop Manufacturers Clevo - company that manufactures white label laptops History https://mitpress.mit.edu/books/john-von-neumann-and-origins-modern-computing Devlogs https://forums.tigsource.com/index.php?board=27.0 Lucas Pope Devlogs https://forums.tigsource.com/index.php?topic=40832.720 https://forums.tigsource.com/index.php?topic=29750.700 https://dukope.itch.io/mars-after-midnight/devlog/261758/mars-after-midnight Non-von Neumann Architectures (books) https://www.goodreads.com/book/show/6033620-the-architecture-of-symbolic-computers https://users.ece.cmu.edu/~koopman/stack_computers/index.html talks https://www.youtube.com/c/OpencomputeOrg/videos Infrastructures https://clui.org Hetzner Server Auctions https://www.hetzner.com/sb Books books about quirkly computers - https://github.com/fogus/thunks/blob/main/reading/quirkeys.org Mozilla https://github.com/mozilla-services/syncstorage-rs/ Old terms https://en.wikipedia.org/wiki/Bastard_Operator_From_Hell </description>
+grad school professors https://software.imdea.org/~gotsman/ Firmware https://osfc.io/archive- open source firmware conference Laptop Manufacturers Clevo - company that manufactures white label laptops History https://mitpress.mit.edu/books/john-von-neumann-and-origins-modern-computing Devlogs https://forums.tigsource.com/index.php?board=27.0 Lucas Pope Devlogs https://forums.tigsource.com/index.php?topic=40832.720 https://forums.tigsource.com/index.php?topic=29750.700 https://dukope.itch.io/mars-after-midnight/devlog/261758/mars-after-midnight Non-von Neumann Architectures (books) https://www.goodreads.com/book/show/6033620-the-architecture-of-symbolic-computers https://users.ece.cmu.edu/~koopman/stack_computers/index.html talks https://www.youtube.com/c/OpencomputeOrg/videos Infrastructures https://clui.org Hetzner Server Auctions https://www.hetzner.com/sb Books books about quirky computers - https://github.com/fogus/thunks/blob/main/reading/quirkeys.org https://www.mckusick.com/books.html Mozilla https://github.com/mozilla-services/syncstorage-rs/ Old terms https://en.wikipedia.org/wiki/Bastard_Operator_From_Hell </description>
     </item>
     <item>
       <title>computers feel, not see, we need new primatives</title>
@@ -2793,6 +2803,13 @@ Lecture 1 What is violence? are surgons violent? what about natural disasters? w
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/confucianism/</guid>
       <description>religion, china</description>
+    </item>
+    <item>
+      <title>Consistent Hashing</title>
+      <link>/posts/consistent_hashing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/consistent_hashing/</guid>
+      <description>algorithms</description>
     </item>
     <item>
       <title>constitution making (research handbook)</title>
@@ -3344,7 +3361,7 @@ bharatiya janata party (bjp) is an example of nationalism in this way</descripti
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/distributed_systems/</guid>
       <description>Tags: computers
-http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html https://github.com/stevana/armstrong-distributed-systems/tree/main Short Introduction http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628 Theory https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/ Verification https://lawrencecpaulson.github.io/2022/10/12/verifying-distributed-systems-isabelle.html Fallacies https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf Errors and Examples https://github.com/dranov/protocol-bugs-list https://covemountainsoftware.com/2021/03/01/a-survey-of-concurrency-bugs/ Lamport writings http://lamport.azurewebsites.net/pubs/pubs.html#lamport-paxos GFS (Google File System) Single control plane, master, scared it wouldn&amp;rsquo;t scale but it did Two specialized operations, record append and snapshot, with other basic file operations record append allows multiple clients to append from small records to a file snapshot allows the clients to create a copy of a file or a directory tree batch oriented workloads commodity servers Recovery?</description>
+http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html https://github.com/stevana/armstrong-distributed-systems/tree/main Short Introduction http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628 Theory https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/ Verification https://lawrencecpaulson.github.io/2022/10/12/verifying-distributed-systems-isabelle.html Fallacies https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf Errors and Examples https://github.com/dranov/protocol-bugs-list https://covemountainsoftware.com/2021/03/01/a-survey-of-concurrency-bugs/ Lamport writings http://lamport.azurewebsites.net/pubs/pubs.html#lamport-paxos GFS (Google File System) - storage Single control plane, master, scared it wouldn&amp;rsquo;t scale but it did Two specialized operations, record append and snapshot, with other basic file operations record append allows multiple clients to append from small records to a file snapshot allows the clients to create a copy of a file or a directory tree batch oriented workloads commodity servers Recovery?</description>
     </item>
     <item>
       <title>distributed systems for fun and profit</title>
@@ -7613,8 +7630,7 @@ https://xenaproject.wordpress.com/what-is-the-xena-project/ https://en.wikipedia
       <guid>/posts/leap_smearing/</guid>
       <description>Tags: clocks (distributed systems)
 https://developers.google.com/time/smear
-google smears the leap second before and after each leap https://googleblog.blogspot.com/2011/09/time-technology-and-leaping-seconds.html https://docs.ntpsec.org/latest/leapsmear.html https://packetpushers.net/ntp-leap-smearing-what-is-it/ https://developers.redhat.com/blog/2015/06/01/five-different-ways-handle-leap-seconds-ntp/ https://xkcd.com/2266/ Burnicki, “Leap Second Smearing with NTP.”
-Questions do emergency alert systems (EAS) use internet timing? what systems failover to internet timing? what services actually rely directly on gps? https://ilrs.gsfc.nasa.gov/docs/timing/gpsrole.pdf Facebook wants to remove leap smearing by removing the leap second entirely https://engineering.fb.com/2022/07/25/production-engineering/its-time-to-leave-the-leap-second-in-the-past/ </description>
+google smears the leap second before and after each leap References https://googleblog.blogspot.com/2011/09/time-technology-and-leaping-seconds.html https://docs.ntpsec.org/latest/leapsmear.html https://packetpushers.net/ntp-leap-smearing-what-is-it/ https://developers.redhat.com/blog/2015/06/01/five-different-ways-handle-leap-seconds-ntp/ https://xkcd.com/2266/ Burnicki, “Leap Second Smearing with NTP.” Questions do emergency alert systems (EAS) use internet timing? what systems failover to internet timing? what services actually rely directly on gps? https://ilrs.gsfc.nasa.gov/docs/timing/gpsrole.pdf Facebook wants to remove leap smearing by removing the leap second entirely https://engineering.fb.com/2022/07/25/production-engineering/its-time-to-leave-the-leap-second-in-the-past/ </description>
     </item>
     <item>
       <title>learning languages blog post</title>
@@ -7784,7 +7800,7 @@ GH Super Linter https://github.blog/2020-06-18-introducing-github-super-linter-o
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/linux/</guid>
       <description>Tags: computers
-Currently Linux plumber and hobbiest occupy two different workds Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros https://www.youtube.com/watch?v=5osOHhBWKOQ&amp;amp;list=PLSIUOFhnxEiC3YTdxwqZqgEY5imVL8U8J&amp;amp;index=1 Process Internal datastructure struct task_struct {}: pid -&amp;gt; integer, will wrap around unused pids parent -&amp;gt; every proces has a parent, each one has a children tty -&amp;gt; in the old days, every process had an associated terminal called a tty uid -&amp;gt; user the process is running as gid -&amp;gt; group id A process can change its ids (setuid) From a sysadmin pov, what can you do to a process?</description>
+Currently Linux plumber and hobbiest occupy two different workds Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros Greybeard Qualification https://www.youtube.com/watch?v=5osOHhBWKOQ&amp;amp;list=PLSIUOFhnxEiC3YTdxwqZqgEY5imVL8U8J&amp;amp;index=1 Process Internal datastructure struct task_struct {}: pid -&amp;gt; integer, will wrap around unused pids parent -&amp;gt; every proces has a parent, each one has a children tty -&amp;gt; in the old days, every process had an associated terminal called a tty uid -&amp;gt; user the process is running as gid -&amp;gt; group id A process can change its ids (setuid) From a sysadmin pov, what can you do to a process?</description>
     </item>
     <item>
       <title>lisp</title>
@@ -7860,7 +7876,7 @@ LLama.cpp Models: https://huggingface.co/TheBloke/guanaco-65B-GGML/blob/main/gua
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/load_balancing/</guid>
       <description>distributed systems
-Algorithms Leaky Bucket Algorithm Has known properties of capacity (\(C\)), inflow rate (\(R_{in}\)), and outflow rate ($Rout). As requests come in, check if the bucket is full, and drop it Good for avoiding bursts of requests downstream Slow processing will stall the entire queue Token Bucket Algorithm Bucket has predefined capacity of tokens, each bucket is periodically filled with tokens at a constant rate. Checks for tokens in a bucket every time we recieve a request Similar to leaky bucket, but allows for bursts of traffic to come in, and space efficient.</description>
+Algorithms Per Server Leaky Bucket Algorithm Has known properties of capacity (\(C\)), inflow rate (\(R_{in}\)), and outflow rate (\(R_{out}\)). As requests come in, check if the bucket is full, and drop it Good for avoiding bursts of requests downstream Slow processing will stall the entire queue Token Bucket Algorithm Bucket has predefined capacity of tokens, each bucket is periodically filled with tokens at a constant rate. Checks for tokens in a bucket every time we recieve a request Similar to leaky bucket, but allows for bursts of traffic to come in, and space efficient.</description>
     </item>
     <item>
       <title>Locke: A Letter Containing Toleration</title>
@@ -12486,7 +12502,8 @@ Colonial Archives and the Arts of Goverance - Ann Stoler Complains that the arch
       <link>/posts/storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/storage/</guid>
-      <description>computers</description>
+      <description>computers
+Ceph &amp;ldquo;Ceph is operated and not shipped&amp;rdquo; </description>
     </item>
     <item>
       <title>strategies for implementing braben&#39;s ideas</title>
