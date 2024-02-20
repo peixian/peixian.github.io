@@ -2963,7 +2963,7 @@ Damascus, syria https://www.instapaper.com/read/1299358661 Despite the justifica
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/cpp/</guid>
       <description>programming languages
-CPP https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646 Framework https://preshing.com/20200526/a-new-cross-platform-open-source-cpp-framework/ Structured Bindings https://en.cppreference.com/w/cpp/language/structured_binding constexpr https://www.foonathan.net/2020/10/constexpr-platform/ NRVO named valued return optimization https://en.cppreference.com/w/cpp/language/copy_elision inverts the usual way people understand the lifetime of objects </description>
+CPP https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646 Framework https://preshing.com/20200526/a-new-cross-platform-open-source-cpp-framework/ Structured Bindings https://en.cppreference.com/w/cpp/language/structured_binding constexpr https://www.foonathan.net/2020/10/constexpr-platform/ NRVO named valued return optimization https://en.cppreference.com/w/cpp/language/copy_elision inverts the usual way people understand the lifetime of objects Pipe Operator (similar to elixir) https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2672r0.html </description>
     </item>
     <item>
       <title>cpp this</title>
@@ -3361,7 +3361,7 @@ bharatiya janata party (bjp) is an example of nationalism in this way</descripti
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/distributed_systems/</guid>
       <description>Tags: computers
-http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html https://github.com/stevana/armstrong-distributed-systems/tree/main Short Introduction http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628 Theory https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/ Verification https://lawrencecpaulson.github.io/2022/10/12/verifying-distributed-systems-isabelle.html Fallacies https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf Errors and Examples https://github.com/dranov/protocol-bugs-list https://covemountainsoftware.com/2021/03/01/a-survey-of-concurrency-bugs/ Lamport writings http://lamport.azurewebsites.net/pubs/pubs.html#lamport-paxos GFS (Google File System) - storage Single control plane, master, scared it wouldn&amp;rsquo;t scale but it did Two specialized operations, record append and snapshot, with other basic file operations record append allows multiple clients to append from small records to a file snapshot allows the clients to create a copy of a file or a directory tree batch oriented workloads commodity servers Recovery?</description>
+http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html https://github.com/stevana/armstrong-distributed-systems/tree/main Short Introduction http://book.mixu.net/distsys/single-page.html http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628 System Design High Level Methodology https://static.googleusercontent.com/media/sre.google/en//static/pdf/nalsd-workbook-letter.pdf Do one thing and do it well Services should be split up into ones that do one thing, makes performance analysis easier and easier for the system to evolve over time Prefer simple, stateless services where possible State must be kept, but try to reduce the surface area of the state. Stateless components are easy to manage because they&amp;rsquo;re trivial to scale horizontally Assumptions, constraints, and SLO&amp;rsquo;s Before you start designing, make sure to look at the constraints and non-functional requirements for your system.</description>
     </item>
     <item>
       <title>distributed systems for fun and profit</title>
@@ -3608,7 +3608,9 @@ https://blog.pixielabs.ai/ebpf
 https://docs.cilium.io/en/v1.9/
 https://blogs.igalia.com/dpino/2019/01/07/introduction-to-xdp-and-ebpf/
 https://lwn.net/Articles/603983/
-https://www.joyfulbikeshedding.com/blog/2019-01-31-full-system-dynamic-tracing-on-linux-using-ebpf-and-bpftrace.html</description>
+https://www.joyfulbikeshedding.com/blog/2019-01-31-full-system-dynamic-tracing-on-linux-using-ebpf-and-bpftrace.html
+https://ebpf-docs.dylanreimerink.nl/
+linux lore page: https://lore.kernel.org/bpf/</description>
     </item>
     <item>
       <title>economics</title>

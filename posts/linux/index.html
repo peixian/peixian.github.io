@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.814e6f595e86823d5f3943c2aa00070c05da357d416751942ab1df2937feda0c.js" integrity="sha256-gU5vWV6Ggj1fOUPCqgAHDAXaNX1BZ1GUKrHfKTf&#43;2gw="></script>
+<script defer src="/en.search.min.df03620cdff1eacf15217477a417f6207a4a9fd0d075fe58934a9e03209001fb.js" integrity="sha256-3wNiDN/x6s8VIXR3pBf2IHpKn9DQdf5Yk0qeAyCQAfs="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -458,6 +458,7 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 <p>demand paging, waiting for page faults</p>
 <ul>
 <li>normally: yes, but the alternative is on startup loading</li>
+<li>turn it off my setting <code>mlock</code> or <code>mlockall</code>, which assures stuff isn&rsquo;t paged out</li>
 </ul>
 </li>
 </ul>
@@ -515,6 +516,200 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 <li>happens on windows more</li>
 </ul>
 </li>
+<li>in the old days
+<ul>
+<li>swap &gt;= ram</li>
+</ul>
+</li>
+<li>since now you only need it for anon memory</li>
+<li>generally VM = RAM + swap</li>
+<li>You want activity in RAM, with enough ram, you should have zero swap</li>
+<li>Kernel still keeps page tables in memory if you have extra space
+<ul>
+<li>I think this is the &ldquo;cache&rdquo;</li>
+<li>Everything that gets paged into memory and kept without looking at disk io</li>
+</ul>
+</li>
+</ul>
+<h3 id="startup-and-init">Startup and Init</h3>
+<h4 id="boot">Boot</h4>
+<ul>
+<li>x86 -&gt; 80x86 architecture</li>
+<li>raise the value of the RESET pin (on the processor)
+<ul>
+<li>this goes through and intializes two important registers</li>
+<li>CS and EIP register
+<ul>
+<li>CS - address of the stack and some other flags</li>
+<li>EIP - instruction pointer</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="bios">BIOS</h4>
+<ul>
+<li>This is coreboot/oreboot/libreboot</li>
+<li>Interrupt driven process that provides access to the hardware (DOS descended)</li>
+<li>Not a major part of the linux operating system, only used to get the kernel loaded</li>
+<li>Linux has its own device drivers and interrupt handlers</li>
+<li>POST (power on self test)</li>
+<li>ACPI (advanced config and power interfaces) - builds tables of devices with info</li>
+<li>initializes hardware - no IRQ or I/O port conflicts. Tabluates PCI (Peripheral Component interconnect) devices</li>
+<li>Looks for something to boot</li>
+<li>Devices
+<ul>
+<li>Have an I/O port that the CPU can do IO to via port addresses</li>
+<li>When the device is ready to be talked to, it raises an interrupt and the linux kernel starts the driver</li>
+<li>ISA days
+<ul>
+<li>part of the trick was picking the devices so that they didn&rsquo;t conflict with the interrupts</li>
+<li>PCI helps with this by automating it so that they don&rsquo;t conflict with each other</li>
+</ul>
+</li>
+<li>You can choose what to do boot from now, and what order</li>
+</ul>
+</li>
+<li>BIOS looks for the boot sector
+<ul>
+<li>copy the first sector into RAM (512 bytes per sector), starting at 0x000 7c00</li>
+<li>then jumps to that address</li>
+</ul>
+</li>
+</ul>
+<h4 id="loaders-lilo-and-grub">Loaders LILO and GRUB</h4>
+<ul>
+<li>First sector of a disk is the Master Boot Record (MBR)</li>
+<li>Containers a partition table and a program</li>
+<li>Within Linux, this is a boot loader. earlier linuxes had a bootloader (512 bytes)</li>
+<li>LILO (linux loader) and GRUB (Grand Unified Bootloader)</li>
+<li>GRUB is much more general purpose, has it&rsquo;s own shell and can read file systems</li>
+<li>You can&rsquo;t fit everything into 512 byte boot sector, so multistage</li>
+<li>First part is 0x0000 7c00, then it jumps to 0x0009 6a00, which then sets up the Real Mode stack</li>
+<li>Second part into 0x0009 6c00, which reads the OS list and lets the user choose the OS to boot</li>
+<li>If it&rsquo;s linux, it displays loading, then loads the 512 bytes at the kernel 0x0009 0000, which then loads <code>setup()</code> to 0x0009 0200, and then jumps to run <code>setup()</code></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Real and Protected Modes</p>
+<ul>
+<li>Addressing modes in 80x86.</li>
+<li>Real mode: segement + offset, the segement address is shifted left by four bits (10 bits)</li>
+<li>Protected mode: uses page tables
+<ul>
+<li>Now has a User/Supervisor flag</li>
+<li>When set to 0, page can only be accessed in kernel mode</li>
+<li>CPL (current privilage level) is 2 bits for the cs register</li>
+<li>CPL = 3 for User mode, CPL = 0 for Kernel mode (there&rsquo;s 4 rings in intel, but we only use two)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="setup">Setup</h4>
+<ul>
+<li>For ACPI systems, build a physical memory layout table in RAM</li>
+<li>Sets up the keyboard and video card</li>
+<li>Initializes the disk controllers</li>
+<li>If EDD (enhanced disk drive) services, uses the BIOS to build a table of hard disks in RAM</li>
+<li>Sets up the interrupt descriptor table (IDT)
+<ul>
+<li>Different devices can raise interrupts and you want something to happen</li>
+<li>A table is a set of addresses that points to code that is run when an interrupt is run</li>
+</ul>
+</li>
+<li>Resets the FPU</li>
+<li>Switches the CPU to protected mode</li>
+<li>Jumps to startup_32() (or startup_64 now)
+<ul>
+<li>Initalizes segmentation registers and a provisional stack</li>
+<li>Zeros out the kernel&rsquo;s uninitialized data</li>
+</ul>
+</li>
+<li>Runs <code>decompress_kernel()</code>
+<ul>
+<li>Kernel is decompressed and loaded into memory, and then jumps to 0x1000 0000</li>
+</ul>
+</li>
+<li>second <code>startup_32()</code>
+<ul>
+<li>intializes segementation registers and a provisional stack</li>
+<li>intializes kernel page tables</li>
+<li>stores Page Global Dir address in <code>cr3</code> register and starts paging, setting the bit PG in the <code>cr0</code> register</li>
+<li>sets up the Kernel Mode stack for process 0
+<ul>
+<li>what if there&rsquo;s no task waiting for the kernel to schedule? the kernel schedules PID 0, which halts the CPU</li>
+<li>every millisecond, an interrupt happens, which then rechecks the run queues</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Nulls all the interrupt handlers</li>
+<li>Copies paramenters from the BIOS into the boot command into the first page frame (in RAM)</li>
+<li>Identifies the processor model</li>
+<li>Initializes the interrupt descriptor table to null handlers</li>
+<li>Jumps to <code>start_kernel()</code></li>
+</ul>
+<h4 id="kernel-startup">Kernel Startup</h4>
+<ul>
+<li>Nulls all the interrupt handlers</li>
+<li>Calls <code>sched_init()</code> to initialize the schedulers</li>
+<li>Initializes memory allocation</li>
+<li>Sets up interrupt handlers with <code>trap_init()</code> and <code>IRQ_init()</code></li>
+<li>System date and time are set with <code>time_init</code></li>
+<li>CPU clock speed determined by <code>calibrate_delay</code></li>
+<li>Then we run <code>kernel_thread()</code></li>
+<li>Finally we are at <code>/sbin/init</code>!</li>
+</ul>
+<h4 id="init-and-run-levels">Init and Run Levels</h4>
+<ul>
+<li>Users run levels (0-6 typically)</li>
+<li>Distinguises between single user mode, GUI&rsquo;s, etc</li>
+<li>Default values
+<ul>
+<li>0 - halt</li>
+<li>1 - single user mode
+<ul>
+<li>Booting into root halfway</li>
+</ul>
+</li>
+<li>6 - reboot</li>
+<li>S is used when entering runlevle 1</li>
+<li>Change with <code>telinit(8)</code>
+<ul>
+<li>Unix applications know what name they&rsquo;re called by, so egrep -&gt; grep -E</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can specify the run level at the command line (GRUB or LILO)</li>
+<li>File names
+<ul>
+<li>In the unix world, <code>.tab</code> is usually table, and <code>rc</code> is &ldquo;run command&rdquo;</li>
+<li><code>/etc/init.d/rc</code></li>
+</ul>
+</li>
+<li><code>inittab</code> entries are what starts</li>
+</ul>
+<h4 id="rc-scripts">RC Scripts</h4>
+<ul>
+<li>Run command</li>
+<li>Takes a run level as an arg</li>
+<li>Then looks for a directory in <code>/etc/rc/\/.d</code></li>
+<li>Runs each scripts with an action arg</li>
+<li>Run level 0, 6 action is stop</li>
+<li>Others are start</li>
+<li>To run a startup script, find the right run level, and look at the different scripts, and then set it there</li>
+<li>But these are init rc and <strong>not</strong> systemd</li>
+<li>Stopping processes - just run <code>pkill</code></li>
+<li><code>init</code> came out of SystemV, which was the original version
+<ul>
+<li>originally commercialized by AT&amp;T</li>
+<li>Berkley did it with a different startup script <code>rc.boot</code>, <code>rc</code>, <code>rc.local</code></li>
+</ul>
+</li>
+<li><code>upstart</code> in ubuntu</li>
 </ul>
 <h2 id="crashes">Crashes</h2>
 <ul>
@@ -1440,6 +1635,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 
    
 
+   
+      
    
 
    
@@ -4270,6 +4467,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
           <li><a href="/posts/centos/">CentOS</a></li>
        
           <li><a href="/posts/criu_kernal_checkpointing/">criu/kernal checkpointing</a></li>
+       
+          <li><a href="/posts/distributed_systems/">distributed systems</a></li>
        
           <li><a href="/posts/ebpf/">ebpf</a></li>
        

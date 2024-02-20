@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.814e6f595e86823d5f3943c2aa00070c05da357d416751942ab1df2937feda0c.js" integrity="sha256-gU5vWV6Ggj1fOUPCqgAHDAXaNX1BZ1GUKrHfKTf&#43;2gw="></script>
+<script defer src="/en.search.min.df03620cdff1eacf15217477a417f6207a4a9fd0d075fe58934a9e03209001fb.js" integrity="sha256-3wNiDN/x6s8VIXR3pBf2IHpKn9DQdf5Yk0qeAyCQAfs="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -47,6 +47,150 @@
 <li><a href="http://book.mixu.net/distsys/single-page.html">http://book.mixu.net/distsys/single-page.html</a></li>
 <li><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628">http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628</a></li>
 </ul>
+<h2 id="system-design">System Design</h2>
+<h3 id="high-level-methodology">High Level Methodology</h3>
+<ul>
+<li><a href="https://static.googleusercontent.com/media/sre.google/en//static/pdf/nalsd-workbook-letter.pdf">https://static.googleusercontent.com/media/sre.google/en//static/pdf/nalsd-workbook-letter.pdf</a></li>
+<li>Do one thing and do it well
+<ul>
+<li>Services should be split up into ones that do one thing, makes performance analysis easier and easier for the system to evolve over time</li>
+</ul>
+</li>
+<li>Prefer simple, stateless services where possible
+<ul>
+<li>State must be kept, but try to reduce the surface area of the state. Stateless components are easy to manage because they&rsquo;re trivial to scale horizontally</li>
+</ul>
+</li>
+<li>Assumptions, constraints, and SLO&rsquo;s
+<ul>
+<li>Before you start designing, make sure to look at the constraints and non-functional requirements for your system. Have they been state? Are they comprehensive?</li>
+<li>At minimum you should understand
+<ul>
+<li>What the system is supposed to do (business logic)</li>
+<li>What the SLOs are around performance, error rates/availability, data loss? If no SLOs, you made need to define them with business owners</li>
+<li>Where should it run? What is the budget or what hardware is available?</li>
+<li>Expected workload (this may be difficult to gauge)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Getting to an initial high level design (or analysing an existing one)
+<ul>
+<li>API
+<ul>
+<li>You need to figure out the API for the system. What operations are available externally? What data goes in, and what results comes out? Do operatinos change the system state, or is it read-only?</li>
+<li>Each set of closely related operations is likely to be a service in the system. Many systems have a stateless API layer that coordinates with other parts of the system to serve results</li>
+</ul>
+</li>
+<li>Follow the data
+<ul>
+<li>After the API, figure out the data flow. What state does the system need to read and/or write in order to do the work? What do we know about the state?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Data consistency - critical data
+<ul>
+<li>Some applications require very consistent views of critical state</li>
+<li>This should be tackled with distributed consensus algorithms to manage state changes, 3/5/+ replicas in different failure domains</li>
+<li>Fastpaxos uses a stable leader process to improve performance. Performance for FastPaxos is one rtt between the leader and qurom of closest replicas to commit and update or a consistent read. The client must communicate with the leader, so the percieved latency for the client is the RTT between client/leader + leader/nearest quorum. Stale reads require a roundtrip to the nearest healthy replica, but the data may not be consistent. Other transactions can be batched</li>
+</ul>
+</li>
+<li>Data consistency - less critical data
+<ul>
+<li>Not all data needs to highly consistent, in these cases replication + backups is often enough.</li>
+</ul>
+</li>
+<li>Data storage considerations
+<ul>
+<li>Lots of things to think about when storing data, most fundalmental is where are you going to organize the data in RAM and disk</li>
+<li>Think about how data is read and written. Which is the most common use case? Usually it&rsquo;s reading.</li>
+<li>Think about storing data to match the most common use case. If you&rsquo;re reading in a chronological order by user, consider storing it like that</li>
+</ul>
+</li>
+<li>Sharding data
+<ul>
+<li>Data obviously needs to be sharded, but watch out for hot shards</li>
+<li>Easiest way to shard is m shardes on n servers, where m &gt; 100x n</li>
+<li>shard = hash(key) modulko m</li>
+<li>we have a map of shard -&gt; server that we look up to find the server</li>
+<li>the system can dynamically move shard and update the map in order to rebalance, since shards are relatively small</li>
+<li>sharded and replicated datastores should have automatic mechanisms that cross-check state with other replicas and load lost state from peers, useful after downtime and when new replicas are added. Note that this should also be rate-limited somehow to avoid thundering herd problems where many replicas are out of sync</li>
+</ul>
+</li>
+<li>Scaling and Performance
+<ul>
+<li>Make sure to do some back of the envelope calculations to estimate the potential performance of the system, any scaling limits created by the bottlenecks in the system, and how many machines are likely to be needed to service the given workload</li>
+<li>Calculations to use
+<ul>
+<li>Disk - sanity check the volume of data read/written, disk seeks over time</li>
+<li>RAM - how much can we cache? Are we storing an index of some kind?</li>
+<li>Bandwidth - size of requests inwards and outwards, do we have enough bandwidth?
+<ul>
+<li>Bandwidth between datacenters and bandwidth between machines in the same DC</li>
+</ul>
+</li>
+<li>CPU - is this a computationally intensive service? - this can be hard to gauge</li>
+<li>What are the estimated concurrent transactions for a service (compute based on throughput per second and latency, e.g. 500 requests per second, 200ms average latency -&gt; 500/(1000/200) -&gt; 100 transactions in flight) - is this a reasonable number? Each request needs some RAM to manage state and some CPU to process</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Iterating and refining
+<ul>
+<li>After a complete design, time to take another look. You might&rsquo;ve unearthed new constraints</li>
+<li>Consider
+<ul>
+<li>Does it work correctly?</li>
+<li>Are you meeting your SLOs and constraints?</li>
+<li>Is it as simple as it could be?</li>
+<li>Is it reliable enough?</li>
+<li>Is it making efficient use of hardware?</li>
+<li>What assumptions did you make and are there risks?</li>
+</ul>
+</li>
+<li>Are there places you can improve caching, indexing, lookup filters like Bloom filters? Can you degrade gracefully when overloaded by doing cheaper operations?</li>
+</ul>
+</li>
+<li>Monitoring
+<ul>
+<li>Montiring should be included in the design phase of any distributed system</li>
+<li>It needs to
+<ul>
+<li>Detect outages (and alert)</li>
+<li>Provide information on whether you&rsquo;re meeting your SLOs</li>
+<li>Give indications of growth and system capacity</li>
+<li>Assist in troubleshooting outages and less critical problems</li>
+</ul>
+</li>
+<li>Design metrics for your system and indicate how you will collect data. What are your alert thresholds/conditions?</li>
+</ul>
+</li>
+<li>What could go wrong?
+<ul>
+<li>Answer these questions
+<ul>
+<li>What is the scariest thing that can happen to your system?</li>
+<li>How does your system defend against it?</li>
+<li>Will it continue to meet its SLO? How can you recover, if not?</li>
+<li>Can improvements be made to the system to prevent the problem, and what would they cost?</li>
+</ul>
+</li>
+<li>Consider
+<ul>
+<li>Loss of a data center</li>
+<li>Loss of important state/data</li>
+<li>Bugs in critical software component</li>
+<li>Load spikes</li>
+<li>Queries/requests of death that can crash the process</li>
+<li>10x growth in workload - will it scale?</li>
+<li>Change in data access patterns changes cache hit rate</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="pub-sub">Pub Sub</h3>
 <h2 id="theory">Theory</h2>
 <ul>
 <li><a href="https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/">https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/</a></li>
@@ -162,6 +306,48 @@
 <li>Afterwards, delete actually happens</li>
 </ul>
 <h3 id="consistency-model">Consistency Model</h3>
+<p>GFS consistency starts from issues during write, we need to prevent writing over multiple times (mix data), and also issues with writing over the same data.</p>
+<h4 id="possible-states-after-mutations">Possible States after mutations</h4>
+<ul>
+<li>Consistent</li>
+<li>Inconsistent</li>
+<li>Defined - when mutations happen to a file and the applications can parse it and read it</li>
+<li>Undefined - when the region hasn&rsquo;t properly changed data yet</li>
+</ul>
+<h3 id="how-to-actually-maintain-consistency">How to actually maintain consistency?</h3>
+<ul>
+<li>Random writes can result in serial success, where one lease or lock after the other allows writes to go through</li>
+<li>Concurrent success can happen when you have multiple writes on the same thing, resulting in mixed data</li>
+<li>Failure</li>
+<li>Serial success for appends happen the same as random writes, proper offsets are used</li>
+<li>Concurrent success is when two writes attempt to use the same offset</li>
+</ul>
+<h3 id="dealing-with-data-inconsistencies">Dealing with Data Inconsistencies</h3>
+<ul>
+<li>It doesn&rsquo;t, you can have overlapping writes, the application level is responsible for locking</li>
+<li>For append however, appends happen as at least one atomic unit.</li>
+<li>GFS only deals with stale data because of bad replications</li>
+</ul>
+<h3 id="metadata-consistency">Metadata Consistency</h3>
+<ul>
+<li>Chunkservers tell the metadata manager what offsets map to where, but the manager also keeps track of it</li>
+<li>We also use shadow managers when the client cannot reach the primary manager, which help facilitate primary reads
+<ul>
+<li>also the shadow might be behind the primary, since it reads off of the master&rsquo;s logs</li>
+</ul>
+</li>
+<li>Master is also fully syncronous, it does not respond to the client&rsquo;s requests for updating metadata until everything is done</li>
+<li>Failures can be retried by the client side, or present in the operation log</li>
+</ul>
+<h3 id="scalability">Scalability</h3>
+<ul>
+<li>Scalability is achieved mostly through having multiple chunkservers, which can be easily added</li>
+<li>Availability is achieved by having three chunk servers per app by default</li>
+<li>Replication happens in the background if hosts are lost, and GFS manager has shadow managers that take over should the master go down</li>
+<li>Durability is acheived that there&rsquo;s replicas for chunkservers and operation logs for the metadata</li>
+<li>Throughput is achieved by separating the data from the metadata flow</li>
+<li>Consistency is applied through relaxed consistency, most files are mutated by having append and reads</li>
+</ul>
 <h2 id="colossus">Colossus</h2>
 <ul>
 <li>GFS single master could not hold everything</li>
@@ -179,6 +365,14 @@
 </li>
 <li>GFS was built on the assumption that file sizes were always going to outnumber metadata, but the biggest problem is that that may not be true, small blobs double their size with metadata</li>
 </ul>
+<h3 id="client-library">Client Library</h3>
+<ul>
+<li>Still the most complex part, plays the same role as the GFS client</li>
+</ul>
+<h3 id="control-plane-and-metadata-database">Control Plane and Metadata Database</h3>
+<ul>
+<li>Metadata Database has moved to BigTable, but curators fill the role of serving metadata (horizonitally scalable metadata servers), and custodians manage the data (by moving files around), D file servers retain the same process as mapping over disks</li>
+</ul>
 <h2 id="tectonic">Tectonic</h2>
 <ul>
 <li>Facebook version of GFS, uses <a href="/posts/k_v_stores/#zippydb">ZippyDB</a> to handle async metadata management and block management</li>
@@ -190,6 +384,16 @@
 <li>Has a 2pc for rebalancing when nodes need to go down for maintanence</li>
 <li>Divides traffic groups into 3, depending on priority</li>
 <li>Uses the <a href="/posts/load_balancing/#leaky-bucket-algorithm">Leaky Bucket Algorithm</a></li>
+</ul>
+<h3 id="multitenancy">Multitenancy</h3>
+<ul>
+<li>Tectonic has quota limits for every user</li>
+<li>Also allows applications to mark itself in the traffic groups, similar to <code>nice</code> values in <a href="/posts/linux/">linux</a></li>
+<li>Tectonic distinguishes between emphermal and non-emphemeral resources for traffic sharding
+<ul>
+<li>Emphemeral is IOPS and metadata query capacity, stuff that changes in real time</li>
+</ul>
+</li>
 </ul>
 <h2 id="bigtable">BigTable</h2>
 <ul>
