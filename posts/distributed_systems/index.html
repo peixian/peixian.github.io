@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.df03620cdff1eacf15217477a417f6207a4a9fd0d075fe58934a9e03209001fb.js" integrity="sha256-3wNiDN/x6s8VIXR3pBf2IHpKn9DQdf5Yk0qeAyCQAfs="></script>
+<script defer src="/en.search.min.195f80d53084c2003b80dd5bae63b29668c024e64333b297337106c4f45cfc19.js" integrity="sha256-GV&#43;A1TCEwgA7gN1brmOylmjAJOZDM7KXM3EGxPRc/Bk="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -392,6 +392,58 @@
 <li>Tectonic distinguishes between emphermal and non-emphemeral resources for traffic sharding
 <ul>
 <li>Emphemeral is IOPS and metadata query capacity, stuff that changes in real time</li>
+<li>Non-emphemeral is non-sharable resources that are once allocated to a tenant and will not be allocated to another, like storage</li>
+</ul>
+</li>
+<li>TrafficGroups is an emphemeral sharing group, which is a collection of clients that have the same latency and IOPS requirements</li>
+<li>There&rsquo;s 50 TrafficGroups per cluster, although this is configurable.</li>
+<li>Each tenant allocates the require emphermal resources based on TraffiCgroup and TrafficClasses (gold, silver, bronze)
+<ul>
+<li>unused emphemeral resources are shared with the traffic group within the tenant of a high traffic class</li>
+</ul>
+</li>
+<li>Client is actually responsible for this, the client library will check for spare capacity that is available within the same traffic group, then different traffic group of the same tenant, and finally spare capacity in the different tenants with the same TrafficClass priority</li>
+<li>Optimizations used by storage nodes
+<ul>
+<li>Avoiding local hotspots is done with a weight round robin</li>
+<li>use a greedy optimiation for allowing low-latency requests to give up their turn for the high traffic class if the request can be completed after the completion of the high traffic class</li>
+<li>limits are set for all non-gold requests</li>
+<li>we have enough disks to rearrange the IO requests</li>
+</ul>
+</li>
+<li>Authentication is done via a token based system</li>
+</ul>
+<h3 id="tenant-specific-optimizations">Tenant Specific Optimizations</h3>
+<ul>
+<li>Data warehouse: write once, read many
+<ul>
+<li>RS (<a href="/posts/reed_solomon_encoding/">reed-solomon encoding</a>) encoded async writes
+<ul>
+<li>RS encoding happens out of sync after the stuff is written</li>
+</ul>
+</li>
+<li>Hedged quorum writes - generating reservation requests
+<ul>
+<li>Improves tail latency</li>
+<li>Rather than sending the chunk to write further on the storage nodes, it sends only reservation requests, which then tell the nodes to accept the request of the reservation</li>
+<li>So if you have 5 nodes, you send out to 5, and just write to the 3 that respond first</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Blob storage (low latency, write many, read many, typically smaller than block size)
+<ul>
+<li>Consistent append on partial blocks
+<ul>
+<li>Whenever a small blob comes in, since they&rsquo;re usually smaller than a block, we can just append to the block and perform replication on the partial block only</li>
+<li>To prevent partial block issues, there&rsquo;s a lock on the writer</li>
+</ul>
+</li>
+<li>Re-encoding blocks
+<ul>
+<li>RS encoding on full blocks is IO efficient, but partial block is inefficient. Save the RS encoding until a full block has been written, and seal the block from further mutation, similar to SS tables</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -3155,6 +3207,8 @@
 
    
       
+   
+
    
 
    
