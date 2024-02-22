@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.195f80d53084c2003b80dd5bae63b29668c024e64333b297337106c4f45cfc19.js" integrity="sha256-GV&#43;A1TCEwgA7gN1brmOylmjAJOZDM7KXM3EGxPRc/Bk="></script>
+<script defer src="/en.search.min.ff0d81a29d1439aab3d7668d0af092f220138877c64f2b03a083a69351f43d52.js" integrity="sha256-/w2Bop0UOaqz12aNCvCS8iATiHfGTysDoIOmk1H0PVI="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -711,6 +711,354 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 </li>
 <li><code>upstart</code> in ubuntu</li>
 </ul>
+<h3 id="block-devices-and-filesystems">Block Devices and Filesystems</h3>
+<h4 id="devices">Devices</h4>
+<ul>
+<li>Devices are special file</li>
+<li><code>/dev</code> is devices</li>
+<li>When we need to do IO on a device, just go out and access it!</li>
+<li>Block special files and character special files
+<ul>
+<li><code>ls -l</code> -&gt; <code>c</code> for character file, <code>b</code> for block file</li>
+<li>major and minor numbers, represents type of the device, and reprsents the instance
+<ul>
+<li>4k major numbers, 2^20 minor numbers</li>
+</ul>
+</li>
+<li><code>mknod</code> is used to make a device special file</li>
+<li>Nothing special about these files! You can make them anywhere</li>
+<li><code>udev</code> is a program that sits there and creates files in the <code>/dev</code> directory
+<ul>
+<li>devices can register themselves or get a number assigned to them</li>
+</ul>
+</li>
+<li>much effort has gone into making devices work together</li>
+<li>traditional device operations
+<ul>
+<li><code>open()</code></li>
+<li><code>close()</code></li>
+<li><code>read()</code></li>
+<li><code>write()</code></li>
+<li><code>seek()</code></li>
+<li><code>ioctl</code>
+<ul>
+<li>lets you do particular things to particular device</li>
+<li>usually takes some integers (like everything in unix world)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>block devices
+<ul>
+<li>tend to do I/O in terms of blocks</li>
+<li>like disk drives</li>
+<li>usually more random access</li>
+<li>disks for example</li>
+</ul>
+</li>
+<li>character devices
+<ul>
+<li>operate in bytes</li>
+<li>usually more seequential</li>
+<li>mouse/audio card/printer/tape/terminal for example</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="block-i-o">Block I/O</h4>
+<ul>
+<li>How does block IO work?</li>
+<li>We want to write some bytes a disk, eventually we must turn this into a block</li>
+<li>Top level: Virtual file system
+<ul>
+<li>Came along SystemV (release 4)</li>
+<li>Pre VFS, you had to mount a read/write for every single file system type</li>
+<li>VFS unifed all of this, generic read/write/open/close</li>
+<li>Cool thing that VFS brought: /proc file system! /cgroup file system! We can have file systems that don&rsquo;t even represent a storage device</li>
+</ul>
+</li>
+<li>Page cache
+<ul>
+<li>There used to a buffer cache for blocks</li>
+<li>and page caches for pages</li>
+<li>now we only have one page cache</li>
+<li>when you make a write call to the disk, the kernel is actually taking the data to write it at a later time</li>
+<li>rapid return of writes is a performance gain but a reliability loss</li>
+<li>if you&rsquo;ve written a lot of data, you might need to get it again! hence why it&rsquo;s held in the page cache
+<ul>
+<li>how pages stay around? We also page cache our writes</li>
+<li><strong>NOT</strong> the pages that represent the memory map</li>
+<li>two different areas of memory</li>
+<li>page cache for regular files, page cache for block IO</li>
+<li>swapped data go into page cache, even special files</li>
+<li>shared memory trick? Memory map fake files in the page cache, and forks can read it back out</li>
+</ul>
+</li>
+<li>Each page is owned by an inode
+<ul>
+<li>also has an offset for that file</li>
+</ul>
+</li>
+<li>We want to periodically scan the page cache for dirty pages and flush to disk
+<ul>
+<li><code>bdflush</code> in the past</li>
+</ul>
+</li>
+<li>We also want to track how long pages have been dirty and flush before too long in the cache
+<ul>
+<li><code>kupdate</code> in the past</li>
+</ul>
+</li>
+<li>Now kernel runs varying number of <code>pdflush</code> threads</li>
+</ul>
+</li>
+<li>Mapping layer
+<ul>
+<li>Most of the action</li>
+<li>FS takes the pointer to the data, allocates appropriate pages, and then turns it into blocks to be written</li>
+<li>FS knows how to talk SCSI or SATA or NVMe</li>
+<li>A disk is represented as a sequential list of blocks, which then we map over</li>
+<li>We also have a &ldquo;segement&rdquo;, we should try to find the blocks that are together, which can be sent together</li>
+<li>Pages are 4kb, sectors are 512 B, blocks can range between these two sizes (although pages are huge now)</li>
+<li>once blocks are known, send the request to the generic block layer via <code>submit_bh()</code> and <code>ll_rw_block()</code> for multiple blocks</li>
+<li>arguments are direction (r/w) and buffer heads</li>
+</ul>
+</li>
+<li>Generic block layer
+<ul>
+<li>Gets sent data from the mapping layer</li>
+<li>Generic block layer combines contingous blocks into segments called a <code>bio</code> (block IO unit)</li>
+<li>calls <code>generic_make_request()</code> (<code>send_bio_noacct</code> now maybe?)</li>
+<li>Then it sends it to the device driver using the <code>strategy()</code> routine</li>
+</ul>
+</li>
+<li>Filestystems
+<ul>
+<li>Stores data on disk</li>
+<li>Data and metadata</li>
+<li>Metadata is permissions, ownership, timestamp, size</li>
+<li>Efficient data access is important</li>
+<li>Usually metadata access is the most important</li>
+<li>Metadata is cached on the system</li>
+<li>Journaling helps (logging)
+<ul>
+<li>Like the traditional DB two-phase commit</li>
+<li>First write log, then append to last</li>
+<li>Then you update the actual disk with the log</li>
+</ul>
+</li>
+<li>If a disk is an inconsistent state, run <code>fsck</code> -&gt; but this is SLOW</li>
+<li>Most journaling filesystems use it only for metadata, but some use it for all. This is usually configurable like <code>ext2</code> and <code>ext3</code>
+<ul>
+<li>Ext3 without journalism is just ex2</li>
+<li>You can put journals on a separate disk (since journal IO isn&rsquo;t competing with disk as much)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="files">Files</h4>
+<ul>
+<li><a href="/posts/inodes/">inodes</a>
+<ul>
+<li>Every file system has an inode (contains all the information returned by <code>ls -l</code>)</li>
+<li>device</li>
+<li>mode</li>
+<li>links</li>
+<li>uid and gid</li>
+<li>size in bytes</li>
+<li>size in blocks
+<ul>
+<li>Block addresses are stored too, 12 direct blocks, one indirect block address, one double-indrect block address, and one triple-indirect block address</li>
+<li>15 total slots</li>
+<li>the reason there&rsquo;s indirect is because the first 12k is stored in the file
+<ul>
+<li>MB files therefore have to use extra blocks</li>
+<li>next address points to a block, that is filled with addresses</li>
+<li>second indirect block points to a block that is filled with addresses that go to a different block!</li>
+<li>third, so on</li>
+<li>direct: 12kb</li>
+<li>indirect: 256 blocks = 256kb</li>
+<li>double: 256^2 = 64MB</li>
+<li>triple: 256^3 = 16 TB</li>
+<li>this goes back at least to version 7</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>atime, mtime, ctime
+<ul>
+<li>atime -&gt; access time, last time file was <code>open()</code></li>
+<li>mtime -&gt; last time file was modified</li>
+<li>ctime -&gt; last time inode was changed (ctime is NOT creation time, most unix systems don&rsquo;t track creation time)</li>
+</ul>
+</li>
+<li>Multiple directions that point to the same inode is a <code>hard link</code></li>
+<li>One inode per file</li>
+</ul>
+</li>
+<li>Unix timestamps
+<ul>
+<li>Since Jan 1st 1970 in UTC</li>
+<li>32 bits</li>
+<li>Jan 18th, 2038</li>
+</ul>
+</li>
+<li>Sparse files
+<ul>
+<li>What if you write some bytes into the beginning, but then jump wayyy down and write later, where there&rsquo;s no data in between.</li>
+<li>Logically, the bytes in between are filled with zeros</li>
+<li>Don&rsquo;t allocate for stuff in between</li>
+<li>If you copy a sparse file, dumb copies will take a bad copy!</li>
+</ul>
+</li>
+<li>Superblock
+<ul>
+<li>Information about the filesystem</li>
+<li>Much of what is in the df command</li>
+</ul>
+</li>
+</ul>
+<h3 id="networking-configuring-and-building-a-kernel">Networking, Configuring &amp; Building a Kernel</h3>
+<ul>
+<li>OSI model -&gt; physical, data link, network, transport, session, presentation, application - <a href="/posts/20200415154022-networks/">networks</a></li>
+<li>What a socket?
+<ul>
+<li>IP address and port on each end, which uniquely identifies a connection</li>
+</ul>
+</li>
+<li>Network layer implements IP to retransmit packets, but this is machine to machine
+<ul>
+<li>Intermediate devices bridge this gap (usually a router)</li>
+</ul>
+</li>
+<li>Ethernet/data link layer is what&rsquo;s next, also packet switched with ethernet address 00:11:22:33:44:55 (mac address), NIC to NIC</li>
+<li>Networking - physical layer, signal level
+<ul>
+<li>CSMA/CD (carrier sense multiple access with collision detect)
+<ul>
+<li>old: 4 way stop sign, everyone tries to transmit and hope that there&rsquo;s nothing there</li>
+<li>old: token rings, everyone gets a turn like a traffic light</li>
+</ul>
+</li>
+<li>carrier modulates an IO signal</li>
+<li>twisted pair cables</li>
+<li>a network device is a special animal</li>
+<li>not a character or a block device</li>
+<li>no major/minor numbers</li>
+<li>hardware interface initiates IO</li>
+<li>not in <code>/dev</code></li>
+<li>when a device driver gets registered, it adds the device to the internal list</li>
+<li>interface is also different!
+<ul>
+<li><code>open</code></li>
+<li><code>stop</code></li>
+<li><code>hard_start_xmit()</code> - start transmit packets</li>
+<li><code>rebuild_header</code> - using ARP (address resolution protocol)</li>
+<li><code>tx_timeout</code></li>
+<li><code>net_device_status</code> - when <code>netstat</code> gets called</li>
+<li><code>set_config</code></li>
+</ul>
+</li>
+<li>also <code>ioctl</code>
+<ul>
+<li>SIOCSIFADDR</li>
+<li>SIOCSIFFLAGS</li>
+<li>&ldquo;socket IO control set InterFace Flags&rdquo;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Packet transmission
+<ul>
+<li>Data is placed on a socket buffer</li>
+<li>call <code>hard_start_xmit</code></li>
+<li>OS checks to make sure you&rsquo;re doing less than the Maximum Transmission Unit (MTU)</li>
+<li>Places in transmission queue</li>
+<li>Driver processes queue and sends to hardware</li>
+</ul>
+</li>
+<li>Packet Reception
+<ul>
+<li>Two ways
+<ul>
+<li>Interrupt drive (most drivers use this one)</li>
+<li>polled</li>
+</ul>
+</li>
+<li>Recieves incoming data, places it in socket buffer</li>
+<li>If IO rate is too high, use polling</li>
+</ul>
+</li>
+<li>Address Resolution Protocol
+<ul>
+<li>Associates IP with a MAC address</li>
+<li>Broadcasts an ARP request on the network: &ldquo;who has 10.1.2.3&rdquo;?</li>
+<li>Saves entries into the ARP cache</li>
+<li>Manipulate with <code>arp</code></li>
+</ul>
+</li>
+<li>Configure Interface
+<ul>
+<li>alawys boils down to <code>ifconfig(8)</code></li>
+</ul>
+</li>
+<li>Linux Packet Filter
+<ul>
+<li>
+<p>Basically the &ldquo;firewall&rdquo;, now managed by <code>iptables</code> or <code>ufw</code></p>
+<ul>
+<li><code>ipchains</code> and <code>ipfwadm</code></li>
+</ul>
+</li>
+<li>
+<p>Sets a list of rules, accept a match and execute an action</p>
+<figure><img src="/ox-hugo/2024-02-21_17-34-47_screenshot.png"/>
+        </figure>
+
+</li>
+<li>
+<p>Three basic chains: input, forward, and output</p>
+<ul>
+<li>Each packet only follows one chain!</li>
+<li>there&rsquo;s a default rule for every chain</li>
+</ul>
+</li>
+<li>
+<p>Connection tracking?</p>
+<ul>
+<li><code>ip_conntrack.o</code> module</li>
+</ul>
+</li>
+<li>
+<p>List all the rules with <code>iptables -L -v</code></p>
+</li>
+</ul>
+</li>
+<li>Router table
+<ul>
+<li>Kernel has a routing function?</li>
+<li>Usually one of the multiple interfaces, so router table</li>
+<li>Order matters, and search until we match a pattern</li>
+<li><code>netstat -nr</code> also shows you the router table (-n for hosts as IPs instead of having it do DNS)</li>
+<li><code>route</code> command for checking the router table</li>
+</ul>
+</li>
+<li>Kernel Build
+<ul>
+<li>go to kernel.org</li>
+<li>need <code>bunzip2</code> to decompress</li>
+<li>can build as anyone, only need root to instal</li>
+<li>why?
+<ul>
+<li>add a new feature/driver, or your driver was left out</li>
+<li>or to leave out specific drivers</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="crashes">Crashes</h2>
 <ul>
 <li>Breakpad and Crashpad from google allow for dump tracing
@@ -722,7 +1070,7 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 </li>
 <li><a href="https://www.instapaper.com/read/1524786035">https://www.instapaper.com/read/1524786035</a></li>
 <li>Linux uses signals to register SIGABRT/BUS/etc</li>
-<li>By default, signal handlers are called on the same stack where the crash occured, which is fine for most cases execpt a stack overflow</li>
+<li>By default, signal handlers are called on the same stack where the crash occured, which is fine for most cases except a stack overflow</li>
 <li>Apple computers use Mach exceptions: <a href="https://flylib.com/books/en/3.126.1.109/1/">https://flylib.com/books/en/3.126.1.109/1/</a></li>
 <li><a href="https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Mach/Mach.html">https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Mach/Mach.html</a></li>
 <li><a href="https://docs.darlinghq.org/internals/macos-specifics/mach-ports.html">https://docs.darlinghq.org/internals/macos-specifics/mach-ports.html</a></li>
@@ -2720,6 +3068,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
    
 
    
+
+   
       
    
 
@@ -4283,6 +4633,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 
    
 
+   
+      
    
 
    
@@ -4489,6 +4841,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
           <li><a href="/posts/operating_systems/">operating systems</a></li>
        
           <li><a href="/posts/toolbox/">toolbox</a></li>
+       
+          <li><a href="/posts/virtualization/">virtualization (VMs)</a></li>
        
      </ul>
     </div>

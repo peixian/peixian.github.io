@@ -2232,7 +2232,8 @@ http://wwwimage.cbsnews.com/htdocs/pdf/complete_report/CBS_Report.pdf </descript
       <link>/posts/centos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/centos/</guid>
-      <description>Tags: operating systems, linux</description>
+      <description>Tags: operating systems, linux
+Rocky Linux Fulfills the same role that CentOS did in the old days </description>
     </item>
     <item>
       <title>central african republic (CAR)</title>
@@ -4371,7 +4372,7 @@ https://wiki.installgentoo.com/wiki/File_Picker_meme</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/file_systems/</guid>
       <description>Tags: computers
-ZFS </description>
+ZFS https://ikrima.dev/dev-notes/homelab/zfs-for-dummies/ </description>
     </item>
     <item>
       <title>finance</title>
@@ -7325,6 +7326,14 @@ https://en.wikipedia.org/wiki/Khums </description>
 Makani https://github.com/google/makani https://storage.googleapis.com/x-prod.appspot.com/files/Makani_TheEnergyKiteReport_Part3.pdf https://storage.googleapis.com/x-prod.appspot.com/files/Makani_TheEnergyKiteReport_Part2.pdf https://archive.org/details/makani-power?&amp;amp;sort=-week&amp;amp;page=2 </description>
     </item>
     <item>
+      <title>kll approximate quantiles</title>
+      <link>/posts/kll_approximate_quantiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/kll_approximate_quantiles/</guid>
+      <description>statistics
+Probably what the APPROX QUANTILES in SQL is doing Minimize base complexity Probably approximately correct Failure is okay! As long as its bounded eplison and delta Union bound The probability of 2 events (A, B) -&amp;gt; probability of both of them happening is limited by the union bound merability allows you to have parallelism stack of compactors does not affect accuracy! shrinking is good and bounds memory usage upper bounds at some point it doesn&amp;rsquo;t matter because you&amp;rsquo;ve seen enough weight provide you information about compaction, tells you how much the rank is going to move symmetric changes in rank repeated compaction </description>
+    </item>
+    <item>
       <title>Knight et al - Honored, Not Contained</title>
       <link>/posts/knight_et_al_honored_not_contained/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7490,7 +7499,7 @@ Leftist urban intellectuals</description>
 Stated that all economies go through a &amp;ldquo;bell shaped&amp;rdquo; curve of inequality expanding at first with only a portion able to capture productive output to reducing at later points</description>
     </item>
     <item>
-      <title>kvms</title>
+      <title>kvms (keyboards and mice)</title>
       <link>/posts/kvms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/kvms/</guid>
@@ -14037,12 +14046,12 @@ Dolphin In Paper Mario: Thousand Year Door, they utilize &amp;ldquo;EFB copies&a
 Tech Manufacturing Manufacturing as of 2023 has gone bust: https://restofworld.org/2023/vietnam-tech-downturn-job-loss/ </description>
     </item>
     <item>
-      <title>virtualization</title>
+      <title>virtualization (VMs)</title>
       <link>/posts/virtualization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/virtualization/</guid>
       <description>Tags: computers
-https://github.com/firecracker-microvm/firecracker/ </description>
+https://github.com/firecracker-microvm/firecracker/ KVM (kernel virtual machine) linux based virtualization, they work together QUEMU qcow2/3 Virtual filesystems for QUEMU </description>
     </item>
     <item>
       <title>visa&#39;s</title>

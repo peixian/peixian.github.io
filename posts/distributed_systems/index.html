@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.195f80d53084c2003b80dd5bae63b29668c024e64333b297337106c4f45cfc19.js" integrity="sha256-GV&#43;A1TCEwgA7gN1brmOylmjAJOZDM7KXM3EGxPRc/Bk="></script>
+<script defer src="/en.search.min.ff0d81a29d1439aab3d7668d0af092f220138877c64f2b03a083a69351f43d52.js" integrity="sha256-/w2Bop0UOaqz12aNCvCS8iATiHfGTysDoIOmk1H0PVI="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -451,19 +451,40 @@
 <ul>
 <li>Key features
 <ul>
-<li>Single row transactions</li>
-<li>No batching across row keys</li>
-<li>Integer counters</li>
-<li>MapReduce jobs as input source and output target</li>
+<li>
+<p>Single row transactions</p>
+</li>
+<li>
+<p>No batching across row keys</p>
+</li>
+<li>
+<p>Integer counters</p>
+</li>
+<li>
+<p>MapReduce jobs as input source and output target</p>
+<figure><img src="/ox-hugo/2024-02-21_16-32-56_screenshot.png"/>
+        </figure>
+
+</li>
 </ul>
 </li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
 <li>Uses a column family style, with groups of columns and a timestamp within each cell</li>
 <li>Treats all data as raw byte strings</li>
 <li>All rows have a row key (64kb string), each write and read is atomic</li>
 <li>Column families allow for efficient read/write operations, since they usually hold data of the same type (data within a family is physically close)</li>
 <li>Also has timestamps, keeps the latest 3 versions</li>
 </ul>
-<h3 id="sstable--sorted-string-table">SSTable (Sorted String Table)</h3>
+<h3 id="components">Components</h3>
+<h4 id="memtable">Memtable</h4>
+<ul>
+<li>Recent modifications in an in-memory, mutable sorted buffer</li>
+<li>When a memtable grows big enough, its gets flushed to disk as an SSTable</li>
+<li>Uses a write-ahead-log for this</li>
+</ul>
+<h4 id="sstable--sorted-string-table">SSTable (Sorted String Table)</h4>
 <ul>
 <li>Components
 <ul>
@@ -472,10 +493,95 @@
 <li>Bloom filter (for quickly checking if it&rsquo;s in the data structure)</li>
 <li>Compression information</li>
 <li>Stats</li>
+<li>64kb blocks</li>
 </ul>
 </li>
 <li>Immutable k/v mappings used to represent tablet states, consisting of blocks, with block indexes facilitating efficient disk access, and can be loaded into memory for quick queries</li>
-<li>Memtables are created in memory and flushed to disk as sstables</li>
+</ul>
+<h4 id="chubby">Chubby</h4>
+<ul>
+<li>Highly available and persistent distributed lock service</li>
+<li>typically runs with five operating replicas, similar to zoo</li>
+<li>Used in BigTable to ensure there&rsquo;s only one operational manager</li>
+<li>Saves a bootstrap information as well as new tablet servers and failures</li>
+<li>ACLs too</li>
+</ul>
+<h3 id="operations">Operations</h3>
+<ul>
+<li>Locating tablets for a piece of data
+<ul>
+<li>Uses a three level structure similar to a B+ tree</li>
+<li>root tablet&rsquo;s location is stored in a Chubby file</li>
+<li>second tier contains all metadata tablets</li>
+<li>third tier contains all user tablets</li>
+</ul>
+</li>
+<li>The root tablet is a pointer to other tablets</li>
+<li>first tablet in the metadata data is the root tablet, which is treated differently</li>
+<li>We cache tablet positions in the client library</li>
+<li>Client can then check the metadata server, which then goes to chubby, to get info</li>
+<li>Basically the thing to know is that this is similar to an inode, where there&rsquo;s three layers of indirection</li>
+<li>A tablet is assigned to just one tablet server, the manager also maintains a record of unassigned tablets and allocates them to tablet servers that have enough space</li>
+<li>Manager requires heartbeats and locks via chubby to assure that a tablet server is holding a tablet</li>
+<li>New managers interact with each active tablet server after looking them up in the tablet server directory in chubby</li>
+</ul>
+<h4 id="writes">Writes</h4>
+<ul>
+<li>When a write is received by a tablet server, it gets checked to ensure to ensure data validity and proper formatting
+<ul>
+<li>check authorizations in the lock</li>
+</ul>
+</li>
+</ul>
+<h4 id="reads">Reads</h4>
+<ul>
+<li>Same thing as write, initial check is via authorization in chubby, and then loads the SS tables</li>
+</ul>
+<h3 id="minor-merging-and-major-compactions">Minor, Merging, and Major Compactions</h3>
+<ul>
+<li>Minor compaction is when it flushes the memtable to disk and turns it into an sstable</li>
+<li>Merging compaction is when sstables become too many and we merge them together, although this could include deleted entries</li>
+<li>Major compaction is when we merge multiple sstables together and remove the deleted datace the tombstones are handled</li>
+</ul>
+<h3 id="design-refinements">Design Refinements</h3>
+<ul>
+<li>Column family locality
+<ul>
+<li>compression is also done on the column family locality to store data</li>
+</ul>
+</li>
+<li>Tablet caches in two ways
+<ul>
+<li>Scan cache - high level cache that stores k/v given to the tablet server</li>
+<li>Block cache - caches blocks, like page caching</li>
+</ul>
+</li>
+<li>Bloom filters
+<ul>
+<li>Bloom filters tell you 100% if it is <strong>not</strong> in the table.</li>
+<li>Quickly check which things are in a sstable</li>
+</ul>
+</li>
+<li>Commit logs
+<ul>
+<li>There&rsquo;s only one big commit log</li>
+<li>Recovering servers must load off of another&rsquo;s commit log</li>
+<li>Duplicate log reads are by sorting the entries by <code>&lt;table, row name, log seq number&gt;</code>.</li>
+</ul>
+</li>
+<li>Speeding up tablet recovery
+<ul>
+<li>Most challenging and time consuming jobs is ensuring the tablet server gets all entries from the commit log</li>
+<li>Minor compactions are done before moving to reduce the amount of stuff needed to move.</li>
+</ul>
+</li>
+</ul>
+<h3 id="system-design-wisdom">System Design Wisdom</h3>
+<ul>
+<li>Uses other services (Chubby and GFS) as building blocks</li>
+<li>Locality hints from the users for many of its optimizations, such as column families</li>
+<li>One log file per tablet is a way to allow individual tablets to recover</li>
+<li>Single manager interface</li>
 </ul>
 
           
@@ -2031,6 +2137,8 @@
 
    
       
+   
+
    
 
    
