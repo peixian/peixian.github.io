@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.ff0d81a29d1439aab3d7668d0af092f220138877c64f2b03a083a69351f43d52.js" integrity="sha256-/w2Bop0UOaqz12aNCvCS8iATiHfGTysDoIOmk1H0PVI="></script>
+<script defer src="/en.search.min.619160f348e259db817c88d23355488c326b18dc5580db99776fcdcf751cf3f8.js" integrity="sha256-YZFg80jiWduBfIjSM1VIjDJrGNxVgNuZd2/Nz3Uc8/g="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -582,6 +582,167 @@
 <li>Locality hints from the users for many of its optimizations, such as column families</li>
 <li>One log file per tablet is a way to allow individual tablets to recover</li>
 <li>Single manager interface</li>
+</ul>
+<h2 id="megastore">Megastore</h2>
+<ul>
+<li>SQL based system</li>
+<li>Built on top of bigtable</li>
+<li>Main goal was to facilitate ACID transactions</li>
+</ul>
+<h3 id="design">Design</h3>
+<ul>
+<li>Application server
+<ul>
+<li>Used to deploy emgastore, local replica on each application server, which writes to the local bigtable</li>
+</ul>
+</li>
+<li>Megastore library
+<ul>
+<li>Connects and implements paxos and replica picking</li>
+</ul>
+</li>
+<li>Replication server
+<ul>
+<li>Checks for unfinished writes, similar to a garbage collector, which provides paxos no-op commands</li>
+</ul>
+</li>
+<li>Coordinator
+<ul>
+<li>Keeps track of entity groups which its replicas has seen every Paxos write</li>
+</ul>
+</li>
+<li>Bigtable
+<ul>
+<li>Handles arbitrary reads and write throughputs</li>
+</ul>
+</li>
+</ul>
+<figure><img src="/ox-hugo/2024-02-22_19-02-48_screenshot.png"/>
+</figure>
+
+<h3 id="replication-strats">Replication Strats</h3>
+<ul>
+<li>Async primary/secondary - write ahead logs are replciated to at least one secondary node, but log appends are recognized and serialized at the primary node while being sent down to the secondary nodes. Primary is responsible for ACID, but it is acceptable to have a node fail and a secondary take on a primary.</li>
+<li>Sync primary/secondary, primary node waits until its actually been replicated before doing a tx</li>
+<li>Optimistic replication, where no primary, and any node can accept the changes and propagate them async to other nodes. Better availability and latency, but transactions are not possible.</li>
+</ul>
+<h3 id="paxos">Paxos</h3>
+<ul>
+<li>Megastore implements paxos, which has issues being slow</li>
+<li>But Paxos gives
+<ul>
+<li>NO primary but a group</li>
+<li>WAL is replciated to all nodes</li>
+<li>Any node can start read/write</li>
+<li>Every log adds the changes only if a majority acks</li>
+<li>Remaining nodes eventually catch up</li>
+<li>Communication is hindered if a majority is down</li>
+</ul>
+</li>
+<li>Entity groups are used to replicate</li>
+</ul>
+<figure><img src="/ox-hugo/2024-02-22_19-06-43_screenshot.png"/>
+</figure>
+
+<ul>
+<li>In entity groups, entities are changed using single-phase ACID transactions, which paxos uses to replicate the common record
+<ul>
+<li>2pc can also be used</li>
+</ul>
+</li>
+<li>Megastore async replicates between different entity groups. Local indexes have strong consistenty, but global ones have weak consistenty</li>
+</ul>
+<figure><img src="/ox-hugo/2024-02-22_19-14-17_screenshot.png"/>
+</figure>
+
+<h3 id="megastore-data-model">Megastore Data Model</h3>
+<ul>
+<li>API design
+<ul>
+<li>Relatively stable performance benefits</li>
+<li>Shift work from read time to write time since there&rsquo;s definitely going to be more reads than writes</li>
+</ul>
+</li>
+<li>Data model is strongly typed, similar to RDMS, where schemas and a collection of tables are named and typed.</li>
+<li>Key distinctions: root tables and child tables
+<ul>
+<li>Child table needs to specificy a foreign key referring to a root table, and a root table and all its child tables make up an entity group</li>
+</ul>
+</li>
+<li>Prejoining with keys
+<ul>
+<li>normally, primary keys have surrogate values that idenitfy each row in a table</li>
+</ul>
+</li>
+<li>Two layers of secondary indexes
+<ul>
+<li>Local index: each group&rsquo;s local index is used as a distinct index, which locates data inside an entity group</li>
+<li>Global index: encompasses many entity groups, used to locate entities without knowing which entity groups include them in advance</li>
+</ul>
+</li>
+<li>All of this is splayed on top of big table to get atomicity, consistency, isolation, and durability
+<ul>
+<li>Uses the versioning feature of bigtable to implement multi-version concurrency control</li>
+</ul>
+</li>
+<li>Read consistency
+<ul>
+<li>Gives you three levels
+<ul>
+<li>Current: makes sure all committed writes have been executed, and does a read</li>
+<li>Snapshot: reads the latest committed write operation</li>
+<li>Inconsistent: reads the most recent value without considering the log&rsquo;s state</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Writes
+<ul>
+<li>Writes do a current read before doing a write so it can find the latest offset for the log, then uses paxos to get all nodes to buy in, then commits it and updates it in bigtable</li>
+</ul>
+</li>
+<li>Queues
+<ul>
+<li>Transactional messaging among groups of entities are handled through queues, which is used for batching many changes into a single transaction</li>
+</ul>
+</li>
+</ul>
+<h3 id="replication-in-megastore">Replication in Megastore</h3>
+<ul>
+<li>Paxos WAL is mostly where it sits</li>
+<li>Also allows local reads from anywhere, since paxos is used to make sure everyone is together</li>
+<li>Each log position is a paxos usage, which optimizes to skip the preparation phase and enter the acceptance phase when the same proposer makes continous proposals</li>
+<li>Leader decides which values are allowed ot use proposal 0</li>
+<li>Different types of replicas
+<ul>
+<li>Witness replicas
+<ul>
+<li>Have WALs and vote in Paxos</li>
+<li>Reduced storage costs because they don&rsquo;t actually store the data</li>
+<li>Are able to avoid the need for an additional round trip when unable write</li>
+</ul>
+</li>
+<li>Read only replicas
+<ul>
+<li>Can&rsquo;t vote</li>
+<li>Contain snapshots of the data</li>
+<li>Read only replicas can distribute the data over large geographic area, basically a CDN</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="replicated-logs">Replicated Logs</h4>
+<ul>
+<li>Replicated logs have many shapes, but we also allow holes in the logs for when consensus was not found</li>
+<li>Catching up
+<ul>
+<li>Node checks if the entity group is up-to-date locally by contacting the coordinator of the local replica</li>
+<li>Then finds the position, which detemrines and picks a replica that has applied through the highest possibly commited log position</li>
+<li>Catches up by reading the values from the different replicas. Empty no-op values for ones that are disputed, Paxos then forces all the majority of the replicas to accept the no-op or previously comimtted write</li>
+</ul>
+</li>
+<li>Coordinators oversee the entire process, and they themselves are locked in Chubby</li>
 </ul>
 
           
