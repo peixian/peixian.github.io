@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.619160f348e259db817c88d23355488c326b18dc5580db99776fcdcf751cf3f8.js" integrity="sha256-YZFg80jiWduBfIjSM1VIjDJrGNxVgNuZd2/Nz3Uc8/g="></script>
+<script defer src="/en.search.min.d591dcdd0b08ff54d09cd1e705d9f4aab451e3673238bfb0eaa1705915e83823.js" integrity="sha256-1ZHc3QsI/1TQnNHnBdn0qrRR42cyOL&#43;w6qFwWRXoOCM="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -743,6 +743,129 @@
 </ul>
 </li>
 <li>Coordinators oversee the entire process, and they themselves are locked in Chubby</li>
+</ul>
+<h2 id="scaling-memcache">Scaling Memcache</h2>
+<h3 id="set-get-delete-operations"><code>set</code>, <code>get</code>, <code>delete</code> operations</h3>
+<h3 id="main-data-structures-of-memcache">Main data structures of memcache</h3>
+<ul>
+<li>
+<p>Hash table</p>
+<ul>
+<li>Chained hash table, everything is a linked list</li>
+</ul>
+</li>
+<li>
+<p>Cache item data structure</p>
+</li>
+<li>
+<p>Slab allocator</p>
+<ul>
+<li>Memcached Items
+<ul>
+<li>Item that holds data for a k,v pair</li>
+</ul>
+</li>
+<li><a href="/posts/allocators/">allocators</a></li>
+<li>A slab is a list of memory sections containing objects (pages) categories by the memroize size range they fall into
+<ul>
+<li>By default the memory is split into 42 slabs</li>
+<li>first slab for items less than 96 bytes</li>
+<li>second for 96-120 bytes</li>
+<li>etc</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>LRU list</p>
+<ul>
+<li>For evicting the oldest and least used items, LRU matches to different slabs</li>
+</ul>
+</li>
+</ul>
+<h3 id="memcache-design">Memcache Design</h3>
+<ul>
+<li>Adaptive slab allocator
+<ul>
+<li>Peroidic rebalancing of slabs</li>
+<li>If slabs needs more memory if it is evicting a lot of items, or if an item that is evicted was being used 20% more recently than the average of the least recently used item in other slab classes</li>
+<li>When we identify a needy slab, we free up the least recently used slab and transer it to the needy class</li>
+</ul>
+</li>
+<li>Short lived keys are pruned using a circular buffer than removes one item every second</li>
+</ul>
+<h3 id="memcache-clustering">Memcache Clustering</h3>
+<ul>
+<li>Key load is managed by consistent hashing</li>
+<li>although this means we need a memcached router for balancing, hence <a href="https://github.com/facebook/mcrouter">https://github.com/facebook/mcrouter</a></li>
+<li>MC router talks with the memcache ASCII protocol</li>
+<li>Network efficiency issue: incast congestion
+<ul>
+<li>When a large number of responses to request overload a DC&rsquo;s cluster and rack switches, when we to rack to rack, such as broadcasting with memcache</li>
+<li>Use a sliding window, similar to TCP</li>
+</ul>
+</li>
+<li>High load issues
+<ul>
+<li>Stale sets
+<ul>
+<li>When a sequence of concurrent operations get reordered</li>
+</ul>
+</li>
+<li>Thundering herd
+<ul>
+<li>When multiple clients attempt to request the same thing at once</li>
+</ul>
+</li>
+<li>Solution: use leases
+<ul>
+<li>We &ldquo;lease&rdquo; the key value to a client by allocating a token, to set the item, the client has to provide the token again</li>
+<li>A token can be invalidated if the Memcached server receives a delete request for the key
+<ul>
+<li>Similar to load-linked and store-conditionals</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Different applications need different sizes, what do we do?
+<ul>
+<li>Different pools of memcached, such as low-churn keys and high-churn keys</li>
+<li>Replication within pools to improve latency and divide the load
+<ul>
+<li>Sometimes we want to split the keyset, but other times we might just want to replicate the key set</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Small outages
+<ul>
+<li>Add &ldquo;gutter&rdquo; servers, which do not rehash the key-value items to other Memcached using consistent hashing. K/V&rsquo;s in the gutter pool are drained quickly</li>
+</ul>
+</li>
+</ul>
+<h3 id="regional-level-memcache">Regional Level Memcache</h3>
+<ul>
+<li>Scaling a cluster natively makes it so that our networks start to face incast congestion</li>
+<li>We&rsquo;d rather replicate clusters</li>
+<li>But how do we invalidate when we replicate?</li>
+<li>THere needs to be two ways of invalidation: either the backend DB invalidates the key on an update, or the client does
+<ul>
+<li>We can set an invalidation daemon that discovers or just broadcasts UDP to all memcached instances to invalidate</li>
+<li>Note that the dameons batch as well</li>
+</ul>
+</li>
+</ul>
+<h3 id="controlling-replication-in-regional-pools">Controlling replication in regional pools</h3>
+<ul>
+<li>How many places should keys be replicated?</li>
+<li>Create a regional pool of memcached servers that multiple clients share, and move data between different pools as needed</li>
+</ul>
+<h3 id="bringing-up-new-pools">Bringing up new pools</h3>
+<ul>
+<li>New pools should look at warm pools to replicate, not the DB, otherwise it threatens to overwhelm the DB</li>
+<li>To avoid races, we hold off <code>delete</code> operations, and clients add to the new cluster instead of the old</li>
 </ul>
 
           
