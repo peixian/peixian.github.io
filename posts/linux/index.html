@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.d591dcdd0b08ff54d09cd1e705d9f4aab451e3673238bfb0eaa1705915e83823.js" integrity="sha256-1ZHc3QsI/1TQnNHnBdn0qrRR42cyOL&#43;w6qFwWRXoOCM="></script>
+<script defer src="/en.search.min.a3d12b9af022642e2a7aebab9bf4a4b8bfaa3b80c68aecb1e53fba3120dbe006.js" integrity="sha256-o9ErmvAiZC4qeuurm/SkuL&#43;qO4DGiuyx5T&#43;6MSDb4AY="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -74,7 +74,7 @@
 <li>break system call is used to increase heap size</li>
 <li>heap sits on top and grows up and the stack grows down</li>
 <li>in between space is used for shared libraries</li>
-<li>32 bit 4G</li>
+<li>32 bit 4GB</li>
 <li>environment variables and cmdline is at the very top</li>
 <li>kernel puts all of its dataat the top of the data structure</li>
 </ul>
@@ -133,10 +133,6 @@
 <li>cron uses a fifo in the kernel?</li>
 </ul>
 </li>
-</ul>
-<!-- raw HTML omitted -->
-<ul>
-<li>sockets</li>
 </ul>
 <!-- raw HTML omitted -->
 <ul>
@@ -272,7 +268,7 @@
 <ul>
 <li>who&rsquo;s ready to run?</li>
 <li>every process has a task state associated with it</li>
-<li>when simply running, CPU-bound, the krenel will preempt a process</li>
+<li>when simply running, CPU-bound, the kernel will preempt a process</li>
 <li>everything is in a run queue</li>
 <li>process is in the task_running state, has a certain time to quantum to run, by default 100ms
 <ul>
@@ -833,7 +829,7 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 <li>Then it sends it to the device driver using the <code>strategy()</code> routine</li>
 </ul>
 </li>
-<li>Filestystems
+<li><a href="/posts/file_systems/">file systems</a>
 <ul>
 <li>Stores data on disk</li>
 <li>Data and metadata</li>
@@ -983,7 +979,7 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 <ul>
 <li>Two ways
 <ul>
-<li>Interrupt drive (most drivers use this one)</li>
+<li>Interrupt driven (most drivers use this one)</li>
 <li>polled</li>
 </ul>
 </li>
@@ -1001,7 +997,7 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 </li>
 <li>Configure Interface
 <ul>
-<li>alawys boils down to <code>ifconfig(8)</code></li>
+<li>always boils down to <code>ifconfig(8)</code></li>
 </ul>
 </li>
 <li>Linux Packet Filter
@@ -1604,6 +1600,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
    
 
    
+      
+   
 
    
 
@@ -2468,6 +2466,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
    
 
    
+      
+   
 
    
 
@@ -2947,6 +2947,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 
    
 
+   
+      
    
 
    
@@ -4818,9 +4820,11 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
     <div class="backlinks">
         <ul>
        
+          <li><a href="/posts/bpf/">bpf</a></li>
+       
           <li><a href="/posts/centos/">CentOS</a></li>
        
-          <li><a href="/posts/criu_kernal_checkpointing/">criu/kernal checkpointing</a></li>
+          <li><a href="/posts/criu_kernal_checkpointing/">criu/kernel checkpointing</a></li>
        
           <li><a href="/posts/distributed_systems/">distributed systems</a></li>
        
@@ -4830,9 +4834,13 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
        
           <li><a href="/posts/fedora_silverblue/">fedora silverblue</a></li>
        
+          <li><a href="/posts/bfp/">Gregg - BFP Performance Tools</a></li>
+       
           <li><a href="/posts/hard_drives/">hard drives</a></li>
        
           <li><a href="/posts/inodes/">inodes</a></li>
+       
+          <li><a href="/posts/kernel_bypass/">kernel bypass</a></li>
        
           <li><a href="/posts/libuv/">libuv</a></li>
        

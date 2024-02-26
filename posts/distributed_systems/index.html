@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.d591dcdd0b08ff54d09cd1e705d9f4aab451e3673238bfb0eaa1705915e83823.js" integrity="sha256-1ZHc3QsI/1TQnNHnBdn0qrRR42cyOL&#43;w6qFwWRXoOCM="></script>
+<script defer src="/en.search.min.a3d12b9af022642e2a7aebab9bf4a4b8bfaa3b80c68aecb1e53fba3120dbe006.js" integrity="sha256-o9ErmvAiZC4qeuurm/SkuL&#43;qO4DGiuyx5T&#43;6MSDb4AY="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -111,10 +111,12 @@
 <li>Sharding data
 <ul>
 <li>Data obviously needs to be sharded, but watch out for hot shards</li>
-<li>Easiest way to shard is m shardes on n servers, where m &gt; 100x n</li>
-<li>shard = hash(key) modulko m</li>
-<li>we have a map of shard -&gt; server that we look up to find the server</li>
-<li>the system can dynamically move shard and update the map in order to rebalance, since shards are relatively small</li>
+<li>Easiest way to shard is m shardes on n servers, where m &gt; 100x n
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>​- m shards on n servers, where m &gt; 100x n
+</span></span><span style="display:flex;"><span>​- shard = hash(key) modulo m
+</span></span><span style="display:flex;"><span>​- keep a map of shard -&gt; server that looks it up each time (needs STRONG CONSISTENCY)
+</span></span><span style="display:flex;"><span>​- system can dynamically move shards and updates the map to rebalance based on some QPS count
+</span></span></code></pre></div></li>
 <li>sharded and replicated datastores should have automatic mechanisms that cross-check state with other replicas and load lost state from peers, useful after downtime and when new replicas are added. Note that this should also be rate-limited somehow to avoid thundering herd problems where many replicas are out of sync</li>
 </ul>
 </li>
@@ -235,7 +237,7 @@
 </ul>
 <h3 id="locks">Locks</h3>
 <ul>
-<li>Read lock aquired on the directory nam (full path to the directory so that it&rsquo;s not being edited or renamed)</li>
+<li>Read lock aquired on the directory (full path to the directory so that it&rsquo;s not being edited or renamed)</li>
 <li>Write lock on the file name so that two or more processes cannot write at the same time</li>
 <li>Only a small region is locked, since not doing it carefully destroys performance</li>
 <li>If a manager dies after locking something, the lock goes with it since it&rsquo;s a central master</li>
@@ -866,6 +868,55 @@
 <ul>
 <li>New pools should look at warm pools to replicate, not the DB, otherwise it threatens to overwhelm the DB</li>
 <li>To avoid races, we hold off <code>delete</code> operations, and clients add to the new cluster instead of the old</li>
+</ul>
+<h3 id="cross-regional-memcached">Cross Regional Memcached</h3>
+<ul>
+<li>Cross region replication is a huge pain</li>
+<li>100-300 ms</li>
+<li>How do we deal with writes from a secondary region?
+<ul>
+<li>User writes to one region, and reads from another</li>
+<li>Set a remote marker in the local region for a specific key</li>
+<li>Perform writes that are appended with the key and the remote marker</li>
+<li>Delete the key in the local cluster</li>
+<li>Eventual consistency considered acceptable in this case</li>
+</ul>
+</li>
+</ul>
+<h2 id="spanner">Spanner</h2>
+<ul>
+<li>Worldwide LTP, SQL semantics, horizontal scalability, availablity, transactional consistency</li>
+<li>Parts
+<ul>
+<li>Client</li>
+<li>Load balancer</li>
+<li>Zone - between 100 and a few thousand servers
+<ul>
+<li>Zone manager</li>
+<li>Placement driver, responsible for automated data transfer between zones</li>
+</ul>
+</li>
+<li>Location proxy
+<ul>
+<li>Uses the per zone location proxies to find spanservers for data</li>
+</ul>
+</li>
+<li>Universe manager
+<ul>
+<li>For interactive debugging</li>
+</ul>
+</li>
+<li>Spanserver - consists of tablets</li>
+<li>Colossus - distributed file system that stores tablet&rsquo;s state similar to B-tree format</li>
+</ul>
+</li>
+</ul>
+<h3 id="design">Design</h3>
+<ul>
+<li>Spanner is deployed as &ldquo;universes&rdquo;, and only a few are active at one time</li>
+<li>Each one relies on TrueTime to provide strong external consistency and global serialization</li>
+<li>Also performs automatic resharding based on data size and load</li>
+<li>Universe manager and placement driver are both singletons, although there are shadow replicas that will take over</li>
 </ul>
 
           

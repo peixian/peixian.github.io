@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.d591dcdd0b08ff54d09cd1e705d9f4aab451e3673238bfb0eaa1705915e83823.js" integrity="sha256-1ZHc3QsI/1TQnNHnBdn0qrRR42cyOL&#43;w6qFwWRXoOCM="></script>
+<script defer src="/en.search.min.a3d12b9af022642e2a7aebab9bf4a4b8bfaa3b80c68aecb1e53fba3120dbe006.js" integrity="sha256-o9ErmvAiZC4qeuurm/SkuL&#43;qO4DGiuyx5T&#43;6MSDb4AY="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -44,6 +44,20 @@
 <li>NVMe drives are good for append-operations (aka <a href="/posts/structured_logs/">structured logs</a>)</li>
 <li><a href="/posts/linux/">linux</a> has <code>nvme</code> to deal with this</li>
 <li>in theory, the drives and the controllers are different, but in practice, these are sold as one whole thing</li>
+<li><a href="https://nvmexpress.org/wp-content/uploads/NVM-Express-1_4c-2021.06.28-Ratified.pdf">https://nvmexpress.org/wp-content/uploads/NVM-Express-1_4c-2021.06.28-Ratified.pdf</a></li>
+<li>Leverages PCIe bus</li>
+<li>NVMe driver replaces the old block layer requester</li>
+</ul>
+<h3 id="writes-and-reads">Writes and Reads</h3>
+<ul>
+<li>NVMe writes and reads are done through two circular buffers, a submission queue and a completion queue.</li>
+<li>When the host system has a command to send to the SSD, it places the command in the submission queue and then rings the doorbell. This updates the tailpointer of the queue</li>
+<li>Similar thing happens for completion queues, the drive updates the head doorbell when something is done</li>
+</ul>
+<h3 id="vs-sata-and-scsi">VS SATA and SCSI</h3>
+<ul>
+<li>NVMe supports 64k queues with 64k commands per queue, so  you have extra parallelism</li>
+<li><a href="https://www.architecting.it/blog/performance-analysis-sas-sata-nvme/">https://www.architecting.it/blog/performance-analysis-sas-sata-nvme/</a></li>
 </ul>
 
           

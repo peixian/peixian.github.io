@@ -1867,7 +1867,7 @@ Abstractly, there&amp;rsquo;s no differences between edge and level triggering, 
       <link>/posts/bpf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/bpf/</guid>
-      <description>Tags: kernel
+      <description>Tags: linux
 originally named for the packet filter, extended for a generic kernel execution engine
 Main frontends are BCC (https://github.com/iovisor/bcc) and bpftrace (https://github.com/iovisor/bpftrace)
 https://www.linux.com/news/bpf-tour-program-types/
@@ -2998,11 +2998,11 @@ https://travisdowns.github.io/blog/2021/06/17/rip-zero-opt.html Registers Nowada
 https://wiki.nikitavoloboev.xyz/distributed-systems/crdt https://hydro.run/research/ https://hydro.run/papers/keep-calm-and-crdt-on.pdf </description>
     </item>
     <item>
-      <title>criu/kernal checkpointing</title>
+      <title>criu/kernel checkpointing</title>
       <link>/posts/criu_kernal_checkpointing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/criu_kernal_checkpointing/</guid>
-      <description>Tags: kernel, linux
+      <description>Tags: linux
 Provides checkpointing and snapshotting of applications and containers to disk
 https://en.wikipedia.org/wiki/CRIU https://criu.org/Main_Page https://access.redhat.com/articles/2455211 https://github.com/checkpoint-restore/criu Fortran days this was common to checkpoint against cores being used, however now issues with:
 signal states, semaphores, futexes, SELinux state, ptrace status, CPU affinities, special purpose file descriptors epoll_wait() </description>
@@ -3122,8 +3122,8 @@ https://dask.org/ Flow order Graph, scheduling, execution constructs a flow orde
       <link>/posts/data_plane_development_kit_dpdk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/data_plane_development_kit_dpdk/</guid>
-      <description>Tags: computers
-https://doc.dpdk.org/guides-16.04/linux_gsg/index.html </description>
+      <description>Tags: kernel bypass, networks
+https://doc.dpdk.org/guides-16.04/linux_gsg/index.html Uses poll mode drivers </description>
     </item>
     <item>
       <title>data structures</title>
@@ -3910,7 +3910,8 @@ https://commoncog.com/blog/range-book-summary/ &amp;ldquo;Instead, the strongest
       <link>/posts/equal_cost_multipath_ecmp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/equal_cost_multipath_ecmp/</guid>
-      <description>Tags: networks</description>
+      <description>Tags: networks
+With appropriate path information, the routers in between can determine what are the path costs for each subsequent hop, leading to better resource utilization </description>
     </item>
     <item>
       <title>equity</title>
@@ -5309,7 +5310,7 @@ Independence from ottoman in early 1830&amp;rsquo;s, created the Kingdom of Gree
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/bfp/</guid>
       <description>Tags: computers, books, bpf
-Chapter 1 - Intro Turned into a general purpose execution engine in 2014 VM Tracing, Snooping, Sampling, Profiling, and Observability Tracing: event based recording Tracing and snooping are the same thing strace, tcp-dump, etc Sampling: tools that take subsets of a measurements to paint a coarse picture Only rough picture Observability: understanding a system through observation Includes tracing tools, sampling tools, and fixed counters Does not include benchmark tools BCC/BFPTrace/IO Visor BCC: BFP Compiler Collection First high levle tracing framework developed for BPF Provides C, with interfaces for Python, lua, and C++ Much more complex than bfptrace Meant for complex tools bfptrace Newer frontend, special purpose high level programming langauge meant for one line scripts IO Visor Linux foundation project on GH Encompases both bcc and bpftrace BCC execsnoop(8) Traces execve(2) system call Output reveals which processes were executed while tracing this prints out per-event data, but other tools allow for summaries biolatency(8) Traces block io latency Displays an ASCII histogram of sizes Visability BPF tracing gives you visibility across the full software stack Supports: Applications tracing with runtimes Application tracing with compiled code /lib/* information same as ltrace syscalls interface same as strace or perf kernel scheduler, file systems, TCP/IP, etc same as ftrace or perf hardware tracing perf, sar, /proc counters Dynamic instrumentation: kprobes and uprobes Dynamic instrumentation allows for probing of live running software Examples: Probe Description kprobe:vfs_read Beginning of vfs_read() kretprobe:vfs_read End of vfs_read() uprobe:/bin/bash:readline Beginning of readline() function in bash uretprobe:/bin/bash:readline End of readline() function in bas Static instrumentation: tracepoints and usdt Function names change and dynamic instrumentation may not always be correct Can use tracepoints or user statically defined tracing: Probe Description tracepoint:syscalls:sys_enter_open instrument open(2) syscall usdt:/usr/sbin/mysqld:mysql:query__start query__start probe bpftrace takes -e for execute -l for listing open tracepoints </description>
+Chapter 1 - Intro Turned into a general purpose execution engine in 2014 VM Tracing, Snooping, Sampling, Profiling, and Observability Tracing: event based recording Tracing and snooping are the same thing strace, tcp-dump, etc Sampling: tools that take subsets of a measurements to paint a coarse picture Only rough picture Observability: understanding a system through observation Includes tracing tools, sampling tools, and fixed counters Does not include benchmark tools BCC/BFPTrace/IO Visor BCC: BFP Compiler Collection First high levle tracing framework developed for BPF Provides C, with interfaces for Python, lua, and C++ Much more complex than bfptrace Meant for complex tools bfptrace Newer frontend, special purpose high level programming langauge meant for one line scripts IO Visor Linux foundation project on GH Encompases both bcc and bpftrace BCC execsnoop(8) Traces execve(2) system call Output reveals which processes were executed while tracing this prints out per-event data, but other tools allow for summaries biolatency(8) Traces block io latency Displays an ASCII histogram of sizes Visability BPF tracing gives you visibility across the full software stack Supports: Applications tracing with runtimes Application tracing with compiled code /lib/* information same as ltrace syscalls interface same as strace or perf linux scheduler, file systems, TCP/IP, etc same as ftrace or perf hardware tracing perf, sar, /proc counters Dynamic instrumentation: kprobes and uprobes Dynamic instrumentation allows for probing of live running software Examples: Probe Description kprobe:vfs_read Beginning of vfs_read() kretprobe:vfs_read End of vfs_read() uprobe:/bin/bash:readline Beginning of readline() function in bash uretprobe:/bin/bash:readline End of readline() function in bas Static instrumentation: tracepoints and usdt Function names change and dynamic instrumentation may not always be correct Can use tracepoints or user statically defined tracing: Probe Description tracepoint:syscalls:sys_enter_open instrument open(2) syscall usdt:/usr/sbin/mysqld:mysql:query__start query__start probe bpftrace takes -e for execute -l for listing open tracepoints </description>
     </item>
     <item>
       <title>Gresham&#39;s Law</title>
@@ -5569,7 +5570,7 @@ Aiming for timing passages Read for strict speed, without comphrension Increase 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/hard_drives/</guid>
       <description>Tags: hardware
-NVMe NVMe drives will lie about write speeds under low traffic NVMe drives are good for append-operations (aka structured logs) linux has nvme to deal with this in theory, the drives and the controllers are different, but in practice, these are sold as one whole thing </description>
+NVMe NVMe drives will lie about write speeds under low traffic NVMe drives are good for append-operations (aka structured logs) linux has nvme to deal with this in theory, the drives and the controllers are different, but in practice, these are sold as one whole thing https://nvmexpress.org/wp-content/uploads/NVM-Express-1_4c-2021.06.28-Ratified.pdf Leverages PCIe bus NVMe driver replaces the old block layer requester Writes and Reads NVMe writes and reads are done through two circular buffers, a submission queue and a completion queue.</description>
     </item>
     <item>
       <title>hardware</title>
@@ -6226,8 +6227,8 @@ taliban continue to kill the intellectual class in kabul</description>
       <link>/posts/infiniband/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/infiniband/</guid>
-      <description>Tags: networks
-https://blog.zhaw.ch/icclab/infiniband-an-introduction-simple-ib-verbs-program-with-rdma-write/ </description>
+      <description>Tags: networks, kernel bypass
+https://blog.zhaw.ch/icclab/infiniband-an-introduction-simple-ib-verbs-program-with-rdma-write/ Uses RDMA </description>
     </item>
     <item>
       <title>information cascade</title>
@@ -7230,7 +7231,8 @@ Criterion: \( f^* = p - \frac{q}{b} = \frac{bp-q}{b} = \frac{bp-(1-p)}{b} = \fra
       <link>/posts/kernel_bypass/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/kernel_bypass/</guid>
-      <description>Tags: kernel, networks</description>
+      <description>Tags: linux, networks
+Now takes on two forms: either one with io_uring or another one with data plane development kit (dpdk)/infiniband verbs</description>
     </item>
     <item>
       <title>kfserving</title>
