@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.a3d12b9af022642e2a7aebab9bf4a4b8bfaa3b80c68aecb1e53fba3120dbe006.js" integrity="sha256-o9ErmvAiZC4qeuurm/SkuL&#43;qO4DGiuyx5T&#43;6MSDb4AY="></script>
+<script defer src="/en.search.min.846e9995fd9c6ff9ab531e72c5584e3b8734657e86b18eaca36f5de6113c8a18.js" integrity="sha256-hG6Zlf2cb/mrUx5yxVhOO4c0ZX6GsY6so29d5hE8ihg="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -917,6 +917,70 @@
 <li>Each one relies on TrueTime to provide strong external consistency and global serialization</li>
 <li>Also performs automatic resharding based on data size and load</li>
 <li>Universe manager and placement driver are both singletons, although there are shadow replicas that will take over</li>
+<li>Each zone works like a cluster of bigtable servers, each spanserver has several tablets ranging from 100-1000
+<ul>
+<li>(key:string, timestamp:int64) -&gt; strings</li>
+</ul>
+</li>
+<li><a href="/posts/paxos/">paxos</a> and TrueTime are used to cover time, and Colossus is used to store data</li>
+<li>Each tablet stores metadata and logs for the state machines, and the paxos implementation supports time-based leaders with long-lived leaders (aka fastpaxos)
+<ul>
+<li>Single leader fast paxos effectively function as raft</li>
+</ul>
+</li>
+<li>Concurrency is handled via a lock table
+<ul>
+<li>Each server enforces concurrency control based on the long-lived paxos leader</li>
+<li>Paxos leaders have around 10s for their leases</li>
+</ul>
+</li>
+<li>Paxos group that has a participant leader that acts as the transaction manager, and the other replicas are participant followers.</li>
+<li>For transactions that span multiple groups, a coordinator is elected</li>
+<li>Note that we only lock for writes</li>
+<li><a href="/posts/bully_algorithm/">bully algorithm</a> is used for leader election</li>
+</ul>
+<h3 id="database-buckets">Database Buckets</h3>
+<ul>
+<li>Spanner has an additional layer of abstraction over the bag of key-value mappings in the form of a directory or bucket
+<ul>
+<li>All adjacent keys that begin with the same prefix</li>
+<li>All the data in the same bucket shares the same replication settings</li>
+<li>Move frequently accessed buckets into the same paxos group or place a bucket geographically closer to its accessors</li>
+</ul>
+</li>
+<li>Spanner buckets differ from Bigtable ones because they don&rsquo;t need to be lexicographically contiguous</li>
+<li>We can <code>movedir</code> buckets across Paxos groups, which then moves the data in the background. The metadata setting is then flipped in the background RCU style</li>
+<li>We use a bucket to specify the geographical replication attributes and placements
+<ul>
+<li>Two settings:
+<ul>
+<li>Total number and type of replicas
+<ul>
+<li>You can tune the amount of voting replicas and place them physically closer</li>
+<li>Read only - can&rsquo;t vote, only allow for scaling reads</li>
+<li>Witness - Vote for the leader and commit write transactions, but don&rsquo;t keep a copy of the data. Can&rsquo;t serve as read leaders</li>
+<li>Read-write replicas - Does both, can be a leader</li>
+</ul>
+</li>
+<li>Geographic placement of replicas</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="data-model">Data Model</h3>
+<ul>
+<li>SQL-like, but Megastore had poor performance</li>
+</ul>
+<h3 id="truetime--dot-dot-dot-dot-dropbox-org-truetime-dot-md"><a href="/posts/truetime/">truetime</a></h3>
+<ul>
+<li>With truetime, any two transactions T1 and T2,m if T2 begins to commit after T1 completes committing, then T2&rsquo;s timestamp is &gt; T1&rsquo;s timestamp</li>
+<li>Consistent timestamp allows easy snapshot isolation, since we can just read at a point in tiem</li>
+</ul>
+<h3 id="cap-theorem-and-spanner">CAP theorem and spanner</h3>
+<ul>
+<li>does not guarentee uptime, but real databases need maint anyways, so it is &ldquo;essentially CA&rdquo;</li>
+<li>Since paxos is used, it opts for consistency over availability, as paxos is possible to livelock</li>
 </ul>
 
           
@@ -4261,6 +4325,8 @@
    
 
    
+      
+   
 
    
 
@@ -4654,6 +4720,8 @@
           <li><a href="/posts/physalia_amazon_ebs/">physalia - amazon ebs</a></li>
        
           <li><a href="/posts/raft/">raft</a></li>
+       
+          <li><a href="/posts/truetime/">truetime</a></li>
        
           <li><a href="/posts/windows_failover_clusters_hci/">windows failover clusters (hci)</a></li>
        

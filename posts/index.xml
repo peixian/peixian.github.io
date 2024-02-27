@@ -1980,7 +1980,9 @@ CMake Xmake https://xmake.io/#/getting_started </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/bully_algorithm/</guid>
       <description>Tags: algorithms, distributed systems
-https://en.wikipedia.org/wiki/Bully_algorithm</description>
+https://en.wikipedia.org/wiki/Bully_algorithm
+If the proposer is not proposing to be a laeder, any node can claim to be a leader. For a particular node to be accepted by the cluster, the node sends its server IDs to all peers within the cluster. The peers respond with their server ID. If all responses are smaller than the node&amp;rsquo;s server ID, that node becomes leader
+If a peer recieves the ID of a node and wants to be a leader, and its ID is greater than the received ID, then instead of returning its ID, it starts an election to become the leader.</description>
     </item>
     <item>
       <title>Bunz: School Will Never End: On Infantilization in Digital Environments</title>
@@ -7087,7 +7089,7 @@ RocksDB SpeedDB - https://github.com/speedb-io/speedb ZippyDB Build on RocksDB, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/kafka/</guid>
       <description>Tags: Computers
-https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html Kafka Debugging CP kafka has tools installed under /usr/local/bin Example: /usr/bin/kafka-run-class kafka.tools.MirrorMaker --consumer.config source.config \ --producer.config dest.config \ --whitelist &amp;#39;.*&amp;#39; Can check consumer status with /usr/bin/kafka-consumer-groups --bootstrap-server &amp;lt;server:9092 --describe --group notification # or /usr/bin/kafka-consumer-groups --bootstrap-server &amp;lt;server&amp;gt;:9092 --list </description>
+https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html Kafka Debugging CP kafka has tools installed under /usr/local/bin Example: /usr/bin/kafka-run-class kafka.tools.MirrorMaker --consumer.config source.config \ --producer.config dest.config \ --whitelist &amp;#39;.*&amp;#39; Can check consumer status with /usr/bin/kafka-consumer-groups --bootstrap-server &amp;lt;server:9092 --describe --group notification # or /usr/bin/kafka-consumer-groups --bootstrap-server &amp;lt;server&amp;gt;:9092 --list SmallRye (java) Framework that abstracts over multiple queues, allowing you to send to multiple kafkas https://smallrye.io/smallrye-reactive-messaging/latest/ </description>
     </item>
     <item>
       <title>kafka streams</title>
@@ -13393,7 +13395,10 @@ https://en.wikipedia.org/wiki/Tropical_geometry</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/truetime/</guid>
       <description>Tags: clocks (distributed systems), cloud
-https://cloud.google.com/spanner/docs/true-time-external-consistency</description>
+https://cloud.google.com/spanner/docs/true-time-external-consistency
+HA distributed clock service, similar to NTP
+True time provides an interval of time, and a way to tell if things were bfeore and after
+TT.now() -&amp;gt; TTinterval: [earliest, latest] TT.after(t) -&amp;gt; True if t has definitely passed TT.before(t) -&amp;gt; True if t has definitely not arrived TrueTime error comes from round trip time to the clock server, clock drift, and time to sycnronize wit hother clocks</description>
     </item>
     <item>
       <title>trukker</title>

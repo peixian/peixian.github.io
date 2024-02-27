@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.a3d12b9af022642e2a7aebab9bf4a4b8bfaa3b80c68aecb1e53fba3120dbe006.js" integrity="sha256-o9ErmvAiZC4qeuurm/SkuL&#43;qO4DGiuyx5T&#43;6MSDb4AY="></script>
+<script defer src="/en.search.min.846e9995fd9c6ff9ab531e72c5584e3b8734657e86b18eaca36f5de6113c8a18.js" integrity="sha256-hG6Zlf2cb/mrUx5yxVhOO4c0ZX6GsY6so29d5hE8ihg="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -39,6 +39,31 @@
 
           <p>Tags: <a href="/posts/clocks_distributed_systems/">clocks (distributed systems)</a>, <a href="/posts/cloud/">cloud</a></p>
 <p><a href="https://cloud.google.com/spanner/docs/true-time-external-consistency">https://cloud.google.com/spanner/docs/true-time-external-consistency</a></p>
+<ul>
+<li>
+<p>HA distributed clock service, similar to NTP</p>
+</li>
+<li>
+<p>True time provides an interval of time, and a way to tell if things were bfeore and after</p>
+<ul>
+<li><code>TT.now()</code> -&gt; <code>TTinterval: [earliest, latest]</code></li>
+<li><code>TT.after(t)</code> -&gt; True if <code>t</code> has definitely passed</li>
+<li><code>TT.before(t)</code> -&gt; True if <code>t</code> has definitely not arrived</li>
+</ul>
+</li>
+<li>
+<p>TrueTime error comes from round trip time to the clock server, clock drift, and time to sycnronize wit hother clocks</p>
+<figure><img src="/ox-hugo/2024-02-26_19-38-46_screenshot.png"/>
+    </figure>
+
+</li>
+<li>
+<p>truetime effectively allows us to do what vector clocks do but with much less space</p>
+</li>
+<li>
+<p>Gives <a href="/posts/distributed_systems/#spanner">Spanner</a> it&rsquo;s external consistency (linearizability).</p>
+</li>
+</ul>
 
           
 
@@ -870,6 +895,8 @@
    
 
    
+      
+   
 
    
 
@@ -3674,8 +3701,19 @@
    
 
    
+
 
 
+  <div class="bl-section">
+    <h4>Links to this note</h4>
+    <div class="backlinks">
+        <ul>
+       
+          <li><a href="/posts/distributed_systems/">distributed systems</a></li>
+       
+     </ul>
+    </div>
+  </div>
 
 
       </div>
