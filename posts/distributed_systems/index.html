@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.846e9995fd9c6ff9ab531e72c5584e3b8734657e86b18eaca36f5de6113c8a18.js" integrity="sha256-hG6Zlf2cb/mrUx5yxVhOO4c0ZX6GsY6so29d5hE8ihg="></script>
+<script defer src="/en.search.min.38a0a4795b1a00b3da8b6007ff51605e6705d2716f575a914f8c24c9b203b371.js" integrity="sha256-OKCkeVsaALPai2AH/1FgXmcF0nFvV1qRT4wkybIDs3E="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -939,6 +939,14 @@
 <li>Note that we only lock for writes</li>
 <li><a href="/posts/bully_algorithm/">bully algorithm</a> is used for leader election</li>
 </ul>
+<h4 id="writes-and-reads">Writes and Reads</h4>
+<ul>
+<li>When a write is done, the lease vote is automatically extended, and leaders need to ask for a lease extension.</li>
+<li>Notably, it waits out the uncertainty before proceeding with a commit</li>
+<li>To serve reads, each replica in Spanner keeps track of the maximum timestap that it was up to date. When a read transaction comes in, it decides whether it&rsquo;s able to serve it</li>
+<li>Commit protocol guaranteees that all nodes know the lower bound of a prepared transaction timestamp.</li>
+<li>We have to assign a timestamp for a snapshot reads, and snapshot reads are only done on replicas that are up to date</li>
+</ul>
 <h3 id="database-buckets">Database Buckets</h3>
 <ul>
 <li>Spanner has an additional layer of abstraction over the bag of key-value mappings in the form of a directory or bucket
@@ -981,6 +989,12 @@
 <ul>
 <li>does not guarentee uptime, but real databases need maint anyways, so it is &ldquo;essentially CA&rdquo;</li>
 <li>Since paxos is used, it opts for consistency over availability, as paxos is possible to livelock</li>
+</ul>
+<h3 id="db-transactions">DB Transactions</h3>
+<h4 id="read-transactions">Read Transactions</h4>
+<ul>
+<li>For read transactions, we buffer them on the client side until commits.</li>
+<li></li>
 </ul>
 
           
