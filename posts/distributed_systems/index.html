@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.38a0a4795b1a00b3da8b6007ff51605e6705d2716f575a914f8c24c9b203b371.js" integrity="sha256-OKCkeVsaALPai2AH/1FgXmcF0nFvV1qRT4wkybIDs3E="></script>
+<script defer src="/en.search.min.802595060ebafdb92da9c4771fd61a26d6d213e2a2334aac8f34f4cf96df2f2f.js" integrity="sha256-gCWVBg66/bktqcR3H9YaJtbSE&#43;KiM0qsjzT0z5bfLy8="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -994,7 +994,116 @@
 <h4 id="read-transactions">Read Transactions</h4>
 <ul>
 <li>For read transactions, we buffer them on the client side until commits.</li>
-<li></li>
+<li>Transactions writes are not visible to subsequent reads inside the same transaction</li>
+<li>Uses wound-wait to prevent deadlocks
+<ul>
+<li>Read request</li>
+<li>The lead replica acquires a lock</li>
+<li>Read to update to date data from the replicas</li>
+</ul>
+</li>
+<li>For read-only transactions
+<ul>
+<li>within a single paxos groups: just send the read transaction to the group&rsquo;s leader</li>
+<li>if it&rsquo;s multiple paxos groups: then determine the \(s_{read}\) value on the last timestamp by doing consensus with leaders
+<ul>
+<li>Or avoid the consensus round</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="uses-a-2pc">Uses a 2PC</h4>
+<ul>
+<li>Guarentees isolation and strong consistency</li>
+<li>If participants in a 2PC are physically nearby, then it selects paxos groups closer</li>
+<li>Leader who aren&rsquo;t coordinators gets access to write locks, and then also does prepare timestamps</li>
+<li>Coordinator roles
+<ul>
+<li>The coordinator bypasses the prepare step and gets locks for writes, and recieves inputs from all the group&rsquo;s leaders</li>
+<li>Commit transactions
+<ul>
+<li>Greater than or equal all prepare timestamps to satisfy the invariants of read-write transactions</li>
+<li>Greater than TT.now().latest</li>
+<li>Greater than the timestamps of all the transactions that the leader coordinator has assigned previously</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure><img src="/ox-hugo/2024-02-27_20-44-32_screenshot.png"/>
+</figure>
+
+<h4 id="schema-change-transactions">Schema Change Transactions</h4>
+<ul>
+<li>Changing the schema in Spanner
+<ol>
+<li>A future timestamp is determined in the prepare phase</li>
+<li>Consider that the t is the timestamp of a registered schema change transaction</li>
+</ol>
+</li>
+</ul>
+<h3 id="eval">Eval</h3>
+<ul>
+<li>Important thing to understand about spanner is TrueTime, by putting bounds on clock drift, you acn get transactions</li>
+</ul>
+<h2 id="dynamodb">DynamoDB</h2>
+<ul>
+<li>No fixed schema
+<ul>
+<li>composite key created from the partition key and the sort key <code>hash(partition key), sort key</code></li>
+<li>has secondary indexes like <a href="/posts/20200415152613-cassandra/">Cassandra</a></li>
+</ul>
+</li>
+<li>Similar to Cassandra</li>
+<li>Automated adaption to traffic patterns, can move partitions around as needed</li>
+<li>Uses <a href="/posts/multi_paxos/">multi-paxos</a> for consensus
+<ul>
+<li>Leader election from multi-paxos</li>
+<li>Write comes in to a laeder,</li>
+<li>Leader prepares to send acceptors containing the WAL to acceptors</li>
+<li>Acceptors acknolwledge the leader&rsquo;s WAL and returns</li>
+<li>Leader will continue to renew lease as long as it is healthy</li>
+</ul>
+</li>
+</ul>
+<h3 id="partitioning">Partitioning</h3>
+<ul>
+<li>Hot partitions are possible</li>
+<li>Alternatively, when a partition gets too big and needs to be pslit is <strong>throughput dilation</strong>.</li>
+<li>Bursting a partition means using the unused capacity on co-resident partitions</li>
+<li>Basically dynamo is organized into partitions, which contain collections of sstables. The hash value matches to a partition grouping, which are dynamic. Multiple partitions can be on the same machine, and bursts can be humored with</li>
+<li>Meaning there&rsquo;s a problem of workload isolation on the co-resident partitions, we must find a way to maintain bursts (aka <a href="/posts/load_balancing/">load balancing</a>)
+<ul>
+<li>Token buckets!</li>
+<li>When a node recieves a request, it checks for the available tokens in the allocation bucket.</li>
+<li>If there&rsquo;s no space available, it checks the burst bucket</li>
+<li>This allows it to smooth out traffic</li>
+</ul>
+</li>
+<li>Scaling this out, we can create a global admission control
+<ul>
+<li>Central master</li>
+<li>Tracks the consumption of a table using tokens</li>
+<li>Request routers maintain local token buckets</li>
+<li>Request routers communicate to the GAC for new tokens</li>
+<li>All GAC servers are tracked by the GAC on an independent hash rings</li>
+<li>Request routers manage tokens and keep deducting tokens as they accept requests</li>
+<li>GAC estimates global token consumption using the information</li>
+<li>GAC allocates tokens that are available</li>
+</ul>
+</li>
+<li>Basically this is the equivilant of having a QPS measurer</li>
+</ul>
+<h3 id="replication">Replication</h3>
+<ul>
+<li>WAL&rsquo;s are used, but actually data replication is pretty slow</li>
+<li>Solved with log replicas, just replicate the logs themselves (metadata operations) rather than the whole memtable</li>
+<li>Silent data errors
+<ul>
+<li>Hardware failures can also cause incorrect data writes, so it uses checksums underneath (presumably they have their own filesystem)</li>
+</ul>
+</li>
 </ul>
 
           
