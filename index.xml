@@ -2785,7 +2785,7 @@ October Revolution - Davis Definition of grpups that define themselves as &amp;l
       <link>/posts/configuration_langauges/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/configuration_langauges/</guid>
-      <description> computers Skycfg and Starlark https://github.com/stripe/skycfg https://github.com/bazelbuild/starlark Cuelang - https://github.com/cue-lang/cue (programming languages) kubernetes (k8s) declarative config https://twitter.com/bgrant0607/status/1123622874340683776 </description>
+      <description> computers Skycfg and Starlark https://github.com/stripe/skycfg https://github.com/bazelbuild/starlark Cuelang - https://github.com/cue-lang/cue (programming languages) kubernetes (k8s) declarative config https://twitter.com/bgrant0607/status/1123622874340683776 Dhall https://github.com/dhall-lang/dhall-lang </description>
     </item>
     <item>
       <title>conflict and violence</title>
@@ -3142,7 +3142,10 @@ https://doc.dpdk.org/guides-16.04/linux_gsg/index.html Uses poll mode drivers </
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/databases/</guid>
       <description>Tags: Computers
-Class https://15721.courses.cs.cmu.edu/spring2019/schedule.html https://www.youtube.com/playlist?app=desktop&amp;amp;list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&amp;amp;themeRefresh=1 MariaDB https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/ Calcite https://calcite.apache.org used in bodo.ai Query optimizers how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf Query Pushdown basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/ Spanner https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf DynamoDB Similar to Cassandra, has partition key and sort key Can horizontally partition across different nodes, similar to cassandra Similarly, need to split a partition when it gets hot There&amp;rsquo;s an automated systems that defines a read capacity unit and a write capacity unit.</description>
+Class https://15721.courses.cs.cmu.edu/spring2019/schedule.html https://www.youtube.com/playlist?app=desktop&amp;amp;list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&amp;amp;themeRefresh=1 MariaDB https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/ Calcite https://calcite.apache.org used in bodo.ai Query optimizers how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf Query Pushdown basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/ Spanner https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf DynamoDB Similar to Cassandra, has partition key and sort key
+Can horizontally partition across different nodes, similar to cassandra
+Similarly, need to split a partition when it gets hot
+There&amp;rsquo;s an automated systems that defines a read capacity unit and a write capacity unit.</description>
     </item>
     <item>
       <title>dataflow</title>
@@ -3615,7 +3618,8 @@ https://blogs.igalia.com/dpino/2019/01/07/introduction-to-xdp-and-ebpf/
 https://lwn.net/Articles/603983/
 https://www.joyfulbikeshedding.com/blog/2019-01-31-full-system-dynamic-tracing-on-linux-using-ebpf-and-bpftrace.html
 https://ebpf-docs.dylanreimerink.nl/
-linux lore page: https://lore.kernel.org/bpf/</description>
+linux lore page: https://lore.kernel.org/bpf/
+ebpf architecture [High-Level Code (C)] | v [1. Compiler Frontend (Clang)] | | (Generates) v [2. LLVM Intermediate Representation (IR)] | | (Optimizations) v [3. Compiler Middle End (LLVM Optimizer)] | | (Translates) v [4. Compiler Backend (eBPF Target in LLVM)] | | (eBPF Bytecode) v [5. eBPF Loader (libbpf)] | | (Verification and JIT Compilation) v [6.</description>
     </item>
     <item>
       <title>economics</title>
@@ -12528,7 +12532,7 @@ Colonial Archives and the Arts of Goverance - Ann Stoler Complains that the arch
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/storage/</guid>
       <description>computers
-Ceph &amp;ldquo;Ceph is operated and not shipped&amp;rdquo; </description>
+Ceph &amp;ldquo;Ceph is operated and not shipped&amp;rdquo; Crucible Oxide&amp;rsquo;s storage service Composed of north and south GFS (Google File System) Single control plane, master, scared it wouldn&amp;rsquo;t scale but it did Two specialized operations, record append and snapshot, with other basic file operations record append allows multiple clients to append from small records to a file snapshot allows the clients to create a copy of a file or a directory tree batch oriented workloads commodity servers Recovery?</description>
     </item>
     <item>
       <title>strategies for implementing braben&#39;s ideas</title>

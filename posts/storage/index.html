@@ -8,8 +8,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 
 
-<link rel="stylesheet" href="/css/main.min.4b9309a2ca0781957619d4e9500f6539479ebf8cdcbfaac702d6364b30e2c87c.css"/>
-<script defer src="/en.search.min.802595060ebafdb92da9c4771fd61a26d6d213e2a2334aac8f34f4cf96df2f2f.js" integrity="sha256-gCWVBg66/bktqcR3H9YaJtbSE&#43;KiM0qsjzT0z5bfLy8="></script>
+<link rel="stylesheet" href="/css/main.min.64009b88c5e38269e8916c15e108058c1fbc99b0a80a96eeeddf1a6dd0e5fb84.css"/>
+<script defer src="/en.search.min.1393503038a14bb6dac7d0e93eff64f280abd7c0970f9afe48d1350de8ae47cf.js" integrity="sha256-E5NQMDihS7bax9DpPv9k8oCr18CXD5r&#43;SNE1DeiuR88="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -41,6 +41,245 @@
 <h2 id="ceph">Ceph</h2>
 <ul>
 <li>&ldquo;Ceph is operated and not shipped&rdquo;</li>
+</ul>
+<h2 id="crucible">Crucible</h2>
+<ul>
+<li>Oxide&rsquo;s storage service</li>
+<li>Composed of north and south</li>
+</ul>
+<h2 id="gfs--google-file-system">GFS (Google File System)</h2>
+<ul>
+<li>Single control plane, master, scared it wouldn&rsquo;t scale but it did</li>
+<li>Two specialized operations, record append and snapshot, with other basic file operations
+<ul>
+<li>record append allows multiple clients to append from small records to a file</li>
+<li>snapshot allows the clients to create a copy of a file or a directory tree</li>
+</ul>
+</li>
+<li>batch oriented workloads</li>
+<li>commodity servers</li>
+<li>Recovery?
+<ul>
+<li>Checkpoints on metadata state, operation log</li>
+<li>shadow managers for recovery to serve read operations only, similar to how RW locks even have contention</li>
+</ul>
+</li>
+<li>Notably, GFS places the consistency checking on the client library, where it requires the you (via the client library) to check</li>
+<li>Is <strong>not</strong> linearizable</li>
+</ul>
+<h3 id="locks">Locks</h3>
+<ul>
+<li>Read lock aquired on the directory (full path to the directory so that it&rsquo;s not being edited or renamed)</li>
+<li>Write lock on the file name so that two or more processes cannot write at the same time</li>
+<li>Only a small region is locked, since not doing it carefully destroys performance</li>
+<li>If a manager dies after locking something, the lock goes with it since it&rsquo;s a central master</li>
+<li>left to right locking, so locks are acquired in the shape of
+<ul>
+<li><code>/a</code>, <code>/a/b</code>, <code>/a/b/c</code> for read locks</li>
+<li><code>/a/b/c/file.txt</code> for write locks</li>
+</ul>
+</li>
+</ul>
+<h3 id="reading">Reading</h3>
+<ol>
+<li>To read, user request is first processed by the GFS client that finds a chunk index
+<ul>
+<li>Since each file is divded into 64MB chunks, the client just %&rsquo;s by 64MB to find the appropriate idx</li>
+</ul>
+</li>
+<li>Then the client requests this information from the manager to get the chunk index and chunk handle, which the manager tells an appropriate replica of</li>
+<li>Client then caches the metadata</li>
+</ol>
+<h3 id="writing">Writing</h3>
+<ul>
+<li>Two kinds of writes, a <strong>random</strong> write and an <strong>append</strong> (not POSIX compliant)</li>
+<li>Replicas hold leases that coordinate the writes</li>
+<li>Leases expire, and are only active for a small period of time. This means that if a bad replica has a lease, it will expire and a new node will be found</li>
+<li>Primary replicas exist because they allow the data to be consistent</li>
+</ul>
+<h4 id="writing-workflow">Writing Workflow</h4>
+<ul>
+<li>Random write and append operations are roughly the same, random writes use an offset for where the data is written, whereas the append just goes to the last chunk</li>
+<li>Note that the data is pushed to all the replicas</li>
+</ul>
+<figure><img src="/ox-hugo/2024-02-18_15-49-47_screenshot.png"/>
+</figure>
+
+<ul>
+<li>The write (aka commit) happens to the main replica after all the replicas have recieved the data</li>
+<li>Replicas then ack whether they&rsquo;ve received the data or not</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Edge Cases on Writing</p>
+<ul>
+<li>If the last chunk has available space for appending data, then the chunk servers write that data</li>
+<li>If the chunk is already full, then the chunkserver asks the client to create a new chunk, which requires a new write and request loop from the manager</li>
+<li>If the last chunk is partially full, the chunkserver holding the last chunk will respond to the client with a message about the available server</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Control vs Data Flow</p>
+<ul>
+<li>GFS, critically, decouples the control and the data. The data physically flows via nearest-in-rack, but the manager still runs things</li>
+</ul>
+<figure><img src="/ox-hugo/2024-02-18_15-54-54_screenshot.png"/>
+    </figure>
+
+</li>
+</ul>
+<h3 id="deletes">Deletes</h3>
+<ul>
+<li>Garbage collection is done to avoid sync deletes</li>
+<li>Client says a delete needs to happen, so master creates a read lock on the dir and a write lock on the file</li>
+<li>Master then revokes the leases in progress, and waits for replicas to finish mutations</li>
+<li>Afterwards, delete actually happens</li>
+</ul>
+<h3 id="consistency-model">Consistency Model</h3>
+<p>GFS consistency starts from issues during write, we need to prevent writing over multiple times (mix data), and also issues with writing over the same data.</p>
+<h4 id="possible-states-after-mutations">Possible States after mutations</h4>
+<ul>
+<li>Consistent</li>
+<li>Inconsistent</li>
+<li>Defined - when mutations happen to a file and the applications can parse it and read it</li>
+<li>Undefined - when the region hasn&rsquo;t properly changed data yet</li>
+</ul>
+<h3 id="how-to-actually-maintain-consistency">How to actually maintain consistency?</h3>
+<ul>
+<li>Random writes can result in serial success, where one lease or lock after the other allows writes to go through</li>
+<li>Concurrent success can happen when you have multiple writes on the same thing, resulting in mixed data</li>
+<li>Failure</li>
+<li>Serial success for appends happen the same as random writes, proper offsets are used</li>
+<li>Concurrent success is when two writes attempt to use the same offset</li>
+</ul>
+<h3 id="dealing-with-data-inconsistencies">Dealing with Data Inconsistencies</h3>
+<ul>
+<li>It doesn&rsquo;t, you can have overlapping writes, the application level is responsible for locking</li>
+<li>For append however, appends happen as at least one atomic unit.</li>
+<li>GFS only deals with stale data because of bad replications</li>
+</ul>
+<h3 id="metadata-consistency">Metadata Consistency</h3>
+<ul>
+<li>Chunkservers tell the metadata manager what offsets map to where, but the manager also keeps track of it</li>
+<li>We also use shadow managers when the client cannot reach the primary manager, which help facilitate primary reads
+<ul>
+<li>also the shadow might be behind the primary, since it reads off of the master&rsquo;s logs</li>
+</ul>
+</li>
+<li>Master is also fully syncronous, it does not respond to the client&rsquo;s requests for updating metadata until everything is done</li>
+<li>Failures can be retried by the client side, or present in the operation log</li>
+</ul>
+<h3 id="scalability">Scalability</h3>
+<ul>
+<li>Scalability is achieved mostly through having multiple chunkservers, which can be easily added</li>
+<li>Availability is achieved by having three chunk servers per app by default</li>
+<li>Replication happens in the background if hosts are lost, and GFS manager has shadow managers that take over should the master go down</li>
+<li>Durability is acheived that there&rsquo;s replicas for chunkservers and operation logs for the metadata</li>
+<li>Throughput is achieved by separating the data from the metadata flow</li>
+<li>Consistency is applied through relaxed consistency, most files are mutated by having append and reads</li>
+</ul>
+<h2 id="colossus">Colossus</h2>
+<ul>
+<li>GFS single master could not hold everything</li>
+<li>Reed Solomon vs full replication
+<ul>
+<li>parity bits are added for error correction, whereas full replication only uses</li>
+</ul>
+</li>
+<li>Frontend has changed
+<ul>
+<li>Curator -&gt; horizontally scalable metadata servers</li>
+<li>Master metadata database</li>
+<li>Custodians -&gt; horizontal scalers</li>
+</ul>
+</li>
+<li>GFS was built on the assumption that file sizes were always going to outnumber metadata, but the biggest problem is that that may not be true, small blobs double their size with metadata</li>
+</ul>
+<h3 id="client-library">Client Library</h3>
+<ul>
+<li>Still the most complex part, plays the same role as the GFS client</li>
+</ul>
+<h3 id="control-plane-and-metadata-database">Control Plane and Metadata Database</h3>
+<ul>
+<li>Metadata Database has moved to BigTable, but curators fill the role of serving metadata (horizonitally scalable metadata servers), and custodians manage the data (by moving files around), D file servers retain the same process as mapping over disks</li>
+</ul>
+<h2 id="tectonic">Tectonic</h2>
+<ul>
+<li>Facebook version of GFS, uses <a href="/posts/k_v_stores/#zippydb">ZippyDB</a> to handle async metadata management and block management</li>
+<li><strong>Only allows one single writer at a time</strong> via locking</li>
+<li>Each block is 80MB</li>
+<li>Organizes the shards in zippy so that all the ones with the same sharding ID go on the same replica, which uses the <code>directory_id</code></li>
+<li>Remote chunk store that actually stores the physical bytes</li>
+<li>Has a cache note called &ldquo;sealing&rdquo;, which restraints updates, allowing caches to be stored longer</li>
+<li>Has a 2pc for rebalancing when nodes need to go down for maintanence</li>
+<li>Divides traffic groups into 3, depending on priority</li>
+<li>Uses the <a href="/posts/load_balancing/#leaky-bucket-algorithm">Leaky Bucket Algorithm</a></li>
+</ul>
+<h3 id="multitenancy">Multitenancy</h3>
+<ul>
+<li>Tectonic has quota limits for every user</li>
+<li>Also allows applications to mark itself in the traffic groups, similar to <code>nice</code> values in <a href="/posts/linux/">linux</a></li>
+<li>Tectonic distinguishes between emphermal and non-emphemeral resources for traffic sharding
+<ul>
+<li>Emphemeral is IOPS and metadata query capacity, stuff that changes in real time</li>
+<li>Non-emphemeral is non-sharable resources that are once allocated to a tenant and will not be allocated to another, like storage</li>
+</ul>
+</li>
+<li>TrafficGroups is an emphemeral sharing group, which is a collection of clients that have the same latency and IOPS requirements</li>
+<li>There&rsquo;s 50 TrafficGroups per cluster, although this is configurable.</li>
+<li>Each tenant allocates the require emphermal resources based on TraffiCgroup and TrafficClasses (gold, silver, bronze)
+<ul>
+<li>unused emphemeral resources are shared with the traffic group within the tenant of a high traffic class</li>
+</ul>
+</li>
+<li>Client is actually responsible for this, the client library will check for spare capacity that is available within the same traffic group, then different traffic group of the same tenant, and finally spare capacity in the different tenants with the same TrafficClass priority</li>
+<li>Optimizations used by storage nodes
+<ul>
+<li>Avoiding local hotspots is done with a weight round robin</li>
+<li>use a greedy optimiation for allowing low-latency requests to give up their turn for the high traffic class if the request can be completed after the completion of the high traffic class</li>
+<li>limits are set for all non-gold requests</li>
+<li>we have enough disks to rearrange the IO requests</li>
+</ul>
+</li>
+<li>Authentication is done via a token based system</li>
+</ul>
+<h3 id="tenant-specific-optimizations">Tenant Specific Optimizations</h3>
+<ul>
+<li>Data warehouse: write once, read many
+<ul>
+<li>RS (<a href="/posts/reed_solomon_encoding/">reed-solomon encoding</a>) encoded async writes
+<ul>
+<li>RS encoding happens out of sync after the stuff is written</li>
+</ul>
+</li>
+<li>Hedged quorum writes - generating reservation requests
+<ul>
+<li>Improves tail latency</li>
+<li>Rather than sending the chunk to write further on the storage nodes, it sends only reservation requests, which then tell the nodes to accept the request of the reservation</li>
+<li>So if you have 5 nodes, you send out to 5, and just write to the 3 that respond first</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Blob storage (low latency, write many, read many, typically smaller than block size)
+<ul>
+<li>Consistent append on partial blocks
+<ul>
+<li>Whenever a small blob comes in, since they&rsquo;re usually smaller than a block, we can just append to the block and perform replication on the partial block only</li>
+<li>To prevent partial block issues, there&rsquo;s a lock on the writer</li>
+</ul>
+</li>
+<li>Re-encoding blocks
+<ul>
+<li>RS encoding on full blocks is IO efficient, but partial block is inefficient. Save the RS encoding until a full block has been written, and seal the block from further mutation, similar to SS tables</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
           
