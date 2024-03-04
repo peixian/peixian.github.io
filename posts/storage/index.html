@@ -8,8 +8,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 
 
-<link rel="stylesheet" href="/css/main.min.64009b88c5e38269e8916c15e108058c1fbc99b0a80a96eeeddf1a6dd0e5fb84.css"/>
-<script defer src="/en.search.min.1393503038a14bb6dac7d0e93eff64f280abd7c0970f9afe48d1350de8ae47cf.js" integrity="sha256-E5NQMDihS7bax9DpPv9k8oCr18CXD5r&#43;SNE1DeiuR88="></script>
+<link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
+<script defer src="/en.search.min.825e9a92f87fd9cf1538e506b214de5274220f37b6563fc3e173fbf1d0a4bce8.js" integrity="sha256-gl6akvh/2c8VOOUGshTeUnQiDze2Vj/D4XP78dCkvOg="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -46,6 +46,7 @@
 <ul>
 <li>Oxide&rsquo;s storage service</li>
 <li>Composed of north and south</li>
+<li><a href="https://rfd.shared.oxide.computer/rfd/0177">https://rfd.shared.oxide.computer/rfd/0177</a></li>
 </ul>
 <h2 id="gfs--google-file-system">GFS (Google File System)</h2>
 <ul>
@@ -217,7 +218,8 @@
 <li>Has a cache note called &ldquo;sealing&rdquo;, which restraints updates, allowing caches to be stored longer</li>
 <li>Has a 2pc for rebalancing when nodes need to go down for maintanence</li>
 <li>Divides traffic groups into 3, depending on priority</li>
-<li>Uses the <a href="/posts/load_balancing/#leaky-bucket-algorithm">Leaky Bucket Algorithm</a></li>
+<li>Uses the <a href="/posts/load_balancing/#leaky-bucket-algorithm">Leaky Bucket Algorithm</a> for traffic control</li>
+<li>Fat client library, client lib actually does RS encoding</li>
 </ul>
 <h3 id="multitenancy">Multitenancy</h3>
 <ul>
@@ -261,6 +263,7 @@
 <li>Improves tail latency</li>
 <li>Rather than sending the chunk to write further on the storage nodes, it sends only reservation requests, which then tell the nodes to accept the request of the reservation</li>
 <li>So if you have 5 nodes, you send out to 5, and just write to the 3 that respond first</li>
+<li>It&rsquo;s like RS but for transactions</li>
 </ul>
 </li>
 </ul>
@@ -2758,6 +2761,8 @@
    
 
    
+      
+   
 
    
 
@@ -3929,6 +3934,8 @@
         <ul>
        
           <li><a href="/posts/distributed_systems/">distributed systems</a></li>
+       
+          <li><a href="/posts/paxos/">paxos</a></li>
        
           <li><a href="/posts/wu_et_al_bpf_for_storage/">Wu et al: BPF for Storage</a></li>
        

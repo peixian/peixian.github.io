@@ -8,8 +8,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 
 
-<link rel="stylesheet" href="/css/main.min.64009b88c5e38269e8916c15e108058c1fbc99b0a80a96eeeddf1a6dd0e5fb84.css"/>
-<script defer src="/en.search.min.1393503038a14bb6dac7d0e93eff64f280abd7c0970f9afe48d1350de8ae47cf.js" integrity="sha256-E5NQMDihS7bax9DpPv9k8oCr18CXD5r&#43;SNE1DeiuR88="></script>
+<link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
+<script defer src="/en.search.min.825e9a92f87fd9cf1538e506b214de5274220f37b6563fc3e173fbf1d0a4bce8.js" integrity="sha256-gl6akvh/2c8VOOUGshTeUnQiDze2Vj/D4XP78dCkvOg="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -38,6 +38,185 @@
           <h1>paxos</h1>
 
           <p><a href="/posts/algorithms/">algorithms</a>, <a href="/posts/distributed_systems/">distributed systems</a></p>
+<ul>
+<li>FLP impossiblity result means that even if one crash is tolerated in an async system, consensus cannot be reached</li>
+</ul>
+<h2 id="tradeoffs-table">Tradeoffs Table</h2>
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>Leader Election RTTs</th>
+<th>Voting RTTs (General Case)</th>
+<th>Voting RTTs (Optimistic Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fast Paxos</td>
+<td>n/a (leaderless)</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/posts/multi_paxos/">multi-paxos</a></td>
+<td>1</td>
+<td>2</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td><a href="/posts/epaxos/">epaxos</a></td>
+<td>n/a (leaderless)</td>
+<td>2</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td><a href="/posts/raft/">raft</a></td>
+<td>1</td>
+<td>2</td>
+<td>n/a</td>
+</tr>
+</tbody>
+</table>
+<h2 id="boxwood">Boxwood</h2>
+<ul>
+<li>Old system used to explore the feasibility of various stages in DB locks
+<ul>
+<li><a href="https://www.usenix.org/legacy/publications/library/proceedings/osdi04/tech/full_papers/maccormick/maccormick_html/index-1.html">https://www.usenix.org/legacy/publications/library/proceedings/osdi04/tech/full_papers/maccormick/maccormick_html/index-1.html</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="chubby">Chubby</h2>
+<ul>
+<li>Google locking system that predates <a href="#zookeeper">Zookeeper</a></li>
+<li>Used by <a href="/posts/storage/#gfs--google-file-system">GFS (Google File System)</a> to appoint a manager server and stores small amounts of data</li>
+<li>Used by <a href="/posts/databases/#bigtable">BigTable</a> to elect bigtable amanger, discover servers, enable clients to locate Bigtable manager, and low volume storage</li>
+</ul>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li>Provides 3 APIs: whole file reads and writes, advisory locks, and notification of events</li>
+<li>Coarse grained locking service, you can lock with minimal overhead, and is a reliable low volume storage</li>
+<li>Also needs to be available and reliable, and have decent throughput</li>
+</ul>
+<h3 id="design">Design</h3>
+<figure><img src="/ox-hugo/2024-03-02_20-38-16_screenshot.png"/>
+</figure>
+
+<h4 id="chubby-cell">Chubby Cell</h4>
+<ul>
+<li>Chubby cell is multiple serbers (usually 5), which replicate with each other</li>
+<li>Each server has a namespace composed of directions and files, with ACLs</li>
+<li>One replica is always elected as the primary, which initiates read and write operations</li>
+<li>Replicas copy the database using a consensus protocol and elect new primaries as needed</li>
+<li>Clients discover the primary by asking any server within the cell which is the primary, and caches it on the client side. It uses this as the primary until the server stops being the primary</li>
+<li>Two types of requests
+<ul>
+<li>Writes: propagated to all the replica servers, are async and only acked when a quorum responds</li>
+<li>Reads: serviced by the primary replica</li>
+</ul>
+</li>
+<li>Each file or directory within a chubby server is knownas a <code>node</code> (similar to a <a href="/posts/inodes/">inodes</a>)
+<ul>
+<li>Each node has a unique name, there&rsquo;s emphemeral and permanent nodes</li>
+<li>Ephemeral nodes are similar to temp files, they get deleted when no client has them open</li>
+</ul>
+</li>
+<li>Uses ACLs in the directory that keeps track of authorized names</li>
+</ul>
+<h4 id="chubby-library">Chubby Library</h4>
+<ul>
+<li>Each client communicates with chubby cells via the client</li>
+<li>Keeps track of the primary replicas to communicate with</li>
+</ul>
+<h3 id="locking">Locking</h3>
+<ul>
+<li>multiple clients can hold a lock in reader mode, only a single client can hold a writer lock</li>
+<li>Locks are adivsory, which means you don&rsquo;t need a lock to read a file. Clients are required to cooperate for conflicts, but advisory locks are more scalable rather than mandatory locks, and clients can emulate strict locking easily (just have them explicitly check for locks)</li>
+<li>If clients are holding a read lock, a write lock cannot be acquired</li>
+</ul>
+<h4 id="sequencers-and-lock-delays">Sequencers and lock delays</h4>
+<ul>
+<li>If you hold a lock and never release it, then we have issues</li>
+<li>Sequence numbers are introduced after a lock is acquired</li>
+<li>Locks that are not released are expired, and we use sequence numbers to note the current state (similar to a lamport clock)</li>
+<li>If a lock becomes free after an expiration, the lock server does not let any other client claim it for a specific time period. This is used to create a backoff from faulty clients claiming a lock, then releasing, then claiming it again.</li>
+<li>To allow systems to know what is happening, Chubby sends events: modifying file contents, modifying nodes, replica failover, handles, locks, conflicts, etc</li>
+</ul>
+<h3 id="caching">Caching</h3>
+<ul>
+<li>Primaries keeps a list of data that clients are caching and sends invalidations to the clients to keep them consistent</li>
+<li>If data or metadata needs to be changed, the primary blocks modifications and sends invalidations to clients with the relevant data cached</li>
+<li>When a client receives an invalidation, it flushes the invalid state and acks it with a keepalive
+<ul>
+<li>If there&rsquo;s no acks for invalidations, then the primary keeps the node uncachable</li>
+</ul>
+</li>
+</ul>
+<h3 id="sessions">Sessions</h3>
+<ul>
+<li>A client and a cell keep track of each other with sessions that are held with keepalives</li>
+<li>A session comes with a lease, which is defined as a time period where the primary will tell the client with updates and will not terminate the connection unilaterally</li>
+<li>The lease is used by the local client to know if something has gone wrong, if it&rsquo;s missing keepalives
+<ul>
+<li>If a local lease times out, then the client
+<ul>
+<li>Empties and disables the cache</li>
+<li>Waits for a grace period, and tries keepalives</li>
+<li>If it connects it, then enable the cache</li>
+<li>If nothing, then assume terminated</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="failovers">Failovers</h3>
+<ul>
+<li>If a node cannot communicate with the primary after the lease ends, it starts and election</li>
+<li>Periodically, the primaries keep a keepalive for the leadership</li>
+<li>Each cell&rsquo;s primary takes snapshots and backs it up</li>
+<li>Mirroring can also occur across different regions, and a mirror that cannot be accessed remains unaltered until communication is reestablished. Updated files are located by contrasting their checksums</li>
+<li>Failure steps for replicas that do not recover after a few hours
+<ul>
+<li>A replacement system is used to provision a new replica</li>
+<li>It initaties the lock server binary</li>
+<li>DNS tables are updated</li>
+<li>Current primary replica also has to have this info, which it polls for</li>
+<li>Cell DB is updated</li>
+<li>Replica servers update themselves with the new member</li>
+<li>New server recieves information</li>
+<li>Afterwards, it is permitted to vote in an election after it processes a write</li>
+</ul>
+</li>
+</ul>
+<h3 id="proxies-and-partitioning">Proxies and Partitioning</h3>
+<ul>
+<li>Proxies act as LB&rsquo;s by allowing KeepAlives to be decreased to the main server</li>
+<li>Partitioning allows us to shard chubby&rsquo;s namespace, where different namespaces set different replicas</li>
+</ul>
+<h3 id="design-decisions">Design Decisions</h3>
+<ul>
+<li>Use a lock service for centrally managed things</li>
+<li>Permit a huge number of clients to access a Chubby file without using many servers</li>
+<li>Use event notification instead of polling because clients and replicas may want to know when things have changed</li>
+<li>Cache the data on the client side</li>
+<li>Use consistent caching because developers get confused by non-intuitive caching semantics</li>
+<li>Redirecting all reads and writes via a single node was the way to provide strong consistentcy. Caches and proxies make up for the loss in R/W throughput</li>
+</ul>
+<h4 id="differences-from-boxwood">Differences from Boxwood</h4>
+<ul>
+<li>Chubby&rsquo;s aspects (lock system, small file storage, and session/lease management) are one thing, whereas boxwood had three different peices</li>
+<li>Chubby has a more advanced interface than boxwood</li>
+<li>Boxwood had a 200ms lease period, whereas Chubby&rsquo;s is 12</li>
+<li>Chubby has a grace period to prevent losing locks</li>
+</ul>
+<h3 id="coarse-grained-vs-fine-grained-locking">Coarse grained vs fine-grained locking</h3>
+<ul>
+<li>Coarse grained locks will need much less load on the lock server, they are rarely acquired</li>
+<li>However, transferring locks from one client to another needs expensive recovery procedures</li>
+<li>Fine grained locks are frequently accessed, which means availability would become critical</li>
+<li>Time penalty for dropping locks would not be severe, since locks are only held for a short period</li>
+</ul>
+<h2 id="zookeeper">Zookeeper</h2>
 
           
 

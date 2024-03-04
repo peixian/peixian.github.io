@@ -2400,7 +2400,7 @@ Talks about how east timor&amp;rsquo;s state building failure by the UN was larg
       <link>/posts/christianity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/christianity/</guid>
-      <description></description>
+      <description>religion</description>
     </item>
     <item>
       <title>christians</title>
@@ -3142,7 +3142,7 @@ https://doc.dpdk.org/guides-16.04/linux_gsg/index.html Uses poll mode drivers </
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/databases/</guid>
       <description>Tags: Computers
-Class https://15721.courses.cs.cmu.edu/spring2019/schedule.html https://www.youtube.com/playlist?app=desktop&amp;amp;list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&amp;amp;themeRefresh=1 MariaDB https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/ Calcite https://calcite.apache.org used in bodo.ai Query optimizers how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf Query Pushdown basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/ Spanner https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf DynamoDB Similar to Cassandra, has partition key and sort key
+Class https://15721.courses.cs.cmu.edu/spring2019/schedule.html https://www.youtube.com/playlist?app=desktop&amp;amp;list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&amp;amp;themeRefresh=1 MariaDB https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/ Calcite https://calcite.apache.org used in bodo.ai Query optimizers how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf Query Pushdown basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/ DynamoDB Similar to Cassandra, has partition key and sort key
 Can horizontally partition across different nodes, similar to cassandra
 Similarly, need to split a partition when it gets hot
 There&amp;rsquo;s an automated systems that defines a read capacity unit and a write capacity unit.</description>
@@ -4253,7 +4253,7 @@ LING-GA 48 - Linguistics as a Cognitive Science (audit) 9:30-10:45AM Monday/Wedn
       <link>/posts/fall_2022_plans/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/fall_2022_plans/</guid>
-      <description> June-July, spend time in karbala, laying the groundwork for fieldwork in august, see if I can get a house, electricity, work, etc July end, make visa run to Amman, sort out housing After visa run, return to Baghdad, lay out groundwork for that August/September, pretty much all Karbala End of September to October, back in Erbil, consolidating gains for NFL season NFL season lasts until Jan, so need to do all the elixir/arabic stuff right now while I&amp;rsquo;m waiting </description>
+      <description> personal June-July, spend time in karbala, laying the groundwork for fieldwork in august, see if I can get a house, electricity, work, etc July end, make visa run to Amman, sort out housing After visa run, return to Baghdad, lay out groundwork for that August/September, pretty much all Karbala End of September to October, back in Erbil, consolidating gains for NFL season NFL season lasts until Jan, so need to do all the elixir/arabic stuff right now while I&amp;rsquo;m waiting </description>
     </item>
     <item>
       <title>fantasy sports</title>
@@ -4333,7 +4333,7 @@ FED Automated Clearing House</description>
       <link>/posts/federenko_emnlp_keynote/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/federenko_emnlp_keynote/</guid>
-      <description> neurobiology of language she&amp;rsquo;s big into the &amp;ldquo;Language Network&amp;rdquo; tests with apasia </description>
+      <description> ml neurobiology of language she&amp;rsquo;s big into the &amp;ldquo;Language Network&amp;rdquo; tests with apasia </description>
     </item>
     <item>
       <title>fedora silverblue</title>
@@ -10057,7 +10057,8 @@ Summary Talks about how human annotations and disagreements from those are not d
       <link>/posts/paxos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/paxos/</guid>
-      <description>algorithms, distributed systems</description>
+      <description>algorithms, distributed systems
+FLP impossiblity result means that even if one crash is tolerated in an async system, consensus cannot be reached Tradeoffs Table Algorithm Leader Election RTTs Voting RTTs (General Case) Voting RTTs (Optimistic Case Fast Paxos n/a (leaderless) 2 1 multi-paxos 1 2 n/a epaxos n/a (leaderless) 2 n/a raft 1 2 n/a Boxwood Old system used to explore the feasibility of various stages in DB locks https://www.usenix.org/legacy/publications/library/proceedings/osdi04/tech/full_papers/maccormick/maccormick_html/index-1.html Chubby Google locking system that predates Zookeeper Used by GFS (Google File System) to appoint a manager server and stores small amounts of data Used by BigTable to elect bigtable amanger, discover servers, enable clients to locate Bigtable manager, and low volume storage Requirements Provides 3 APIs: whole file reads and writes, advisory locks, and notification of events Coarse grained locking service, you can lock with minimal overhead, and is a reliable low volume storage Also needs to be available and reliable, and have decent throughput Design Chubby Cell Chubby cell is multiple serbers (usually 5), which replicate with each other Each server has a namespace composed of directions and files, with ACLs One replica is always elected as the primary, which initiates read and write operations Replicas copy the database using a consensus protocol and elect new primaries as needed Clients discover the primary by asking any server within the cell which is the primary, and caches it on the client side.</description>
     </item>
     <item>
       <title>paxos vs raft reading group</title>
@@ -11245,7 +11246,8 @@ From Wiley-Blackwell Companions to Religion: The Blackwell Companion to Religion
       <link>/posts/relocation_read_only_relro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/relocation_read_only_relro/</guid>
-      <description> https://news.ycombinator.com/item?id=29186252 A way to mitigate attackers on the stack by mucking the global offset table location, since the GOT is located at a static place in memory makes the GOT readonly within memory Tradeoff is that it takes extra startup time </description>
+      <description>linux
+https://news.ycombinator.com/item?id=29186252 A way to mitigate attackers on the stack by mucking the global offset table location, since the GOT is located at a static place in memory makes the GOT readonly within memory Tradeoff is that it takes extra startup time </description>
     </item>
     <item>
       <title>relu</title>
@@ -11884,7 +11886,8 @@ Mawla https://en.wikipedia.org/wiki/Mawla Ambigious word at Ghideer that declare
       <link>/posts/shia_reading_list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/shia_reading_list/</guid>
-      <description>Ayoub, Mahmoud - Redemptive suffering in Islām: a study of the devotional aspects of ʻĀshūrāʾ in twelver Shīʻism Formational Primary Sources Book List Title Author Author D. Year Notes Hadith collection Muhammad Ya&amp;rsquo;qub Ibn Ishaq al-Kulani al-Razi 939 al-Amali aw al-Majalis Shakyn al-Sadqu Ibn Babawayh al-Qummi 991 Maqtal al-Husayn Abu Mikhnaf 774 No records, see Muhammad ibn Jarir ibn Yazid al-Tabari Historical source Muhammad ibn Jarir ibn Yazid al-Tabari 923 Ithbat al-Wasiyyah al-Ma&amp;rsquo;sudi 956 Authenticity is doubted/debated among scholars Maqatil al-Talibiyyin Abu Faraj as-Ishfahani 967 al-Luhuf Ibn Tawus 1266 Muthir al-Ahzan Ibn Nama al-Hilli 1252 al-Hilli claims that his work is a selection of traditoins Unknown maqtal al-Khawarizmi 1172 Book claims numerous traditions, author cites chains of passage Manaqib al-Abi Talib Ibn Shahrashub 1192 Contains elegies!</description>
+      <description>shia, books
+Ayoub, Mahmoud - Redemptive suffering in Islām: a study of the devotional aspects of ʻĀshūrāʾ in twelver Shīʻism Formational Primary Sources Book List Title Author Author D. Year Notes Hadith collection Muhammad Ya&amp;rsquo;qub Ibn Ishaq al-Kulani al-Razi 939 al-Amali aw al-Majalis Shakyn al-Sadqu Ibn Babawayh al-Qummi 991 Maqtal al-Husayn Abu Mikhnaf 774 No records, see Muhammad ibn Jarir ibn Yazid al-Tabari Historical source Muhammad ibn Jarir ibn Yazid al-Tabari 923 Ithbat al-Wasiyyah al-Ma&amp;rsquo;sudi 956 Authenticity is doubted/debated among scholars Maqatil al-Talibiyyin Abu Faraj as-Ishfahani 967 al-Luhuf Ibn Tawus 1266 Muthir al-Ahzan Ibn Nama al-Hilli 1252 al-Hilli claims that his work is a selection of traditoins Unknown maqtal al-Khawarizmi 1172 Book claims numerous traditions, author cites chains of passage Manaqib al-Abi Talib Ibn Shahrashub 1192 Contains elegies!</description>
     </item>
     <item>
       <title>shia rituals</title>
@@ -12532,7 +12535,7 @@ Colonial Archives and the Arts of Goverance - Ann Stoler Complains that the arch
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/storage/</guid>
       <description>computers
-Ceph &amp;ldquo;Ceph is operated and not shipped&amp;rdquo; Crucible Oxide&amp;rsquo;s storage service Composed of north and south GFS (Google File System) Single control plane, master, scared it wouldn&amp;rsquo;t scale but it did Two specialized operations, record append and snapshot, with other basic file operations record append allows multiple clients to append from small records to a file snapshot allows the clients to create a copy of a file or a directory tree batch oriented workloads commodity servers Recovery?</description>
+Ceph &amp;ldquo;Ceph is operated and not shipped&amp;rdquo; Crucible Oxide&amp;rsquo;s storage service Composed of north and south https://rfd.shared.oxide.computer/rfd/0177 GFS (Google File System) Single control plane, master, scared it wouldn&amp;rsquo;t scale but it did Two specialized operations, record append and snapshot, with other basic file operations record append allows multiple clients to append from small records to a file snapshot allows the clients to create a copy of a file or a directory tree batch oriented workloads commodity servers Recovery?</description>
     </item>
     <item>
       <title>strategies for implementing braben&#39;s ideas</title>
@@ -12603,7 +12606,8 @@ Neoliberalism and neoliberalization are two topics that barely need introduction
       <link>/posts/structured_space_modeling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/structured_space_modeling/</guid>
-      <description>sequential image classification stuff that turns it into sequences of length 1024 keyword spotting 1s audio clips to be classified into clips speech is difficult b/c of high sampling rate 1s clips - 16k mfcc coefficients filter banks, reduces sequences by 100x irregular continous data missing values of diff frequencies long range arena A matricies are construed to be stable, or whether stable matricies lead to zero final state do all matricies derive from the Hippo matricy?</description>
+      <description>ml
+sequential image classification stuff that turns it into sequences of length 1024 keyword spotting 1s audio clips to be classified into clips speech is difficult b/c of high sampling rate 1s clips - 16k mfcc coefficients filter banks, reduces sequences by 100x irregular continous data missing values of diff frequencies long range arena A matricies are construed to be stable, or whether stable matricies lead to zero final state do all matricies derive from the Hippo matricy?</description>
     </item>
     <item>
       <title>stuart hamaroff</title>
@@ -13831,7 +13835,8 @@ target war affected and vulnnerable populations (excombatants and youth) concetr
       <link>/posts/undersea_fiber/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/undersea_fiber/</guid>
-      <description>Tags: Networks -submarine cable map
+      <description>Tags: networks
+-submarine cable map
 balancing act budget physical constraints ocean beds are often weird usage growth estimates up to next decade repeater placement extremely expensive sharks https://www.independent.co.uk/life-style/gadgets-and-tech/news/sharks-are-eating-the-internet-in-vietnam-9962747.html iraq internet fiber https://pinboard.in/cached/7fdc6a769248/ fiber backhaul is owned by Baghdad and KRG politicans very little room for new companies most backhauls are via the sea to EU and US servers shortest path to europe is from Iraq-Turkey pipe, but owned by https://en.wikipedia.org/wiki/Gulf_Bridge_International rolling fiber is very hard politically wireless very expensive point microwave towers to turkey were suggested, which then lead to fiber iraqi internet history https://freelancersconflictblog.</description>
     </item>
     <item>
@@ -14081,7 +14086,7 @@ To be honest, most DNs should not come to Uruguay.</description>
       <link>/posts/visual_question_answering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/visual_question_answering/</guid>
-      <description> VQA-MHUG: A Gaze Dataset to Study Multimodal Neural Attention in Visual Question Answering basic ideas about coattention, and how humans check the center of the image and center of the text VQA does it separately, does not actually show how much it is </description>
+      <description> ml VQA-MHUG: A Gaze Dataset to Study Multimodal Neural Attention in Visual Question Answering basic ideas about coattention, and how humans check the center of the image and center of the text VQA does it separately, does not actually show how much it is </description>
     </item>
     <item>
       <title>visualization</title>

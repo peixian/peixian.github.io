@@ -8,8 +8,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 
 
-<link rel="stylesheet" href="/css/main.min.64009b88c5e38269e8916c15e108058c1fbc99b0a80a96eeeddf1a6dd0e5fb84.css"/>
-<script defer src="/en.search.min.1393503038a14bb6dac7d0e93eff64f280abd7c0970f9afe48d1350de8ae47cf.js" integrity="sha256-E5NQMDihS7bax9DpPv9k8oCr18CXD5r&#43;SNE1DeiuR88="></script>
+<link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
+<script defer src="/en.search.min.825e9a92f87fd9cf1538e506b214de5274220f37b6563fc3e173fbf1d0a4bce8.js" integrity="sha256-gl6akvh/2c8VOOUGshTeUnQiDze2Vj/D4XP78dCkvOg="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -63,10 +63,6 @@
 <ul>
 <li>basically compliling the code and pushing the query down to the execution node</li>
 <li><a href="https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/">https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/</a></li>
-</ul>
-<h2 id="spanner">Spanner</h2>
-<ul>
-<li><a href="https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf">https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf</a></li>
 </ul>
 <h2 id="dynamodb">DynamoDB</h2>
 <ul>
@@ -156,6 +152,24 @@
 <ul>
 <li>Hardware failures can also cause incorrect data writes, so it uses checksums underneath (presumably they have their own filesystem)</li>
 </ul>
+</li>
+</ul>
+<h3 id="availability">Availability</h3>
+<ul>
+<li>
+<p>Similar to <a href="#bigtable">BigTable</a>, replication groups are across different sets, and when a replication group is not healthy, the master replaces it</p>
+</li>
+<li>
+<p>Master is done by leader election</p>
+<figure><img src="/ox-hugo/2024-03-02_20-26-40_screenshot.png"/>
+    </figure>
+
+</li>
+<li>
+<p>However, sometimes grey failures happen where one node cannot reach the leader. Before it triggers an election, it asks if a quorum of other nodes can reach the leader</p>
+<figure><img src="/ox-hugo/2024-03-02_20-30-11_screenshot.png"/>
+    </figure>
+
 </li>
 </ul>
 <h2 id="bigtable">BigTable</h2>
@@ -304,7 +318,7 @@
 <ul>
 <li>Application server
 <ul>
-<li>Used to deploy emgastore, local replica on each application server, which writes to the local bigtable</li>
+<li>Used to deploy megastore, local replica on each application server, which writes to the local bigtable</li>
 </ul>
 </li>
 <li>Megastore library
@@ -456,7 +470,9 @@
 <li>Coordinators oversee the entire process, and they themselves are locked in Chubby</li>
 </ul>
 <h2 id="scaling-memcache">Scaling Memcache</h2>
-<h3 id="set-get-delete-operations"><code>set</code>, <code>get</code>, <code>delete</code> operations</h3>
+<ul>
+<li><code>set</code>, <code>get</code>, <code>delete</code> operations</li>
+</ul>
 <h3 id="main-data-structures-of-memcache">Main data structures of memcache</h3>
 <ul>
 <li>
@@ -594,6 +610,7 @@
 </ul>
 <h2 id="spanner">Spanner</h2>
 <ul>
+<li><a href="https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf">https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf</a></li>
 <li>Worldwide LTP, SQL semantics, horizontal scalability, availablity, transactional consistency</li>
 <li>Parts
 <ul>
@@ -3239,6 +3256,8 @@
    
 
    
+      
+   
 
    
 
@@ -4064,6 +4083,8 @@
 
    
 
+   
+      
    
 
    
@@ -4419,9 +4440,13 @@
        
           <li><a href="/posts/k_v_stores/">k/v stores</a></li>
        
+          <li><a href="/posts/paxos/">paxos</a></li>
+       
           <li><a href="/posts/philips_introducing_operators/">philips: introducing operators</a></li>
        
           <li><a href="/posts/20200415211012-postgres/">postgres</a></li>
+       
+          <li><a href="/posts/truetime/">truetime</a></li>
        
      </ul>
     </div>
