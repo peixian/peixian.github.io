@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.825e9a92f87fd9cf1538e506b214de5274220f37b6563fc3e173fbf1d0a4bce8.js" integrity="sha256-gl6akvh/2c8VOOUGshTeUnQiDze2Vj/D4XP78dCkvOg="></script>
+<script defer src="/en.search.min.04db357a843f340287534f21c6826e62d4eb09897203399bb61da56291dfadbd.js" integrity="sha256-BNs1eoQ/NAKHU08hxoJuYtTrCYlyAzmbth2lYpHfrb0="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -236,7 +236,9 @@
 </ul>
 <h4 id="daemons"><code>daemons</code>?</h4>
 <ul>
-<li>fork a child process, then the parent exists and leaves the child with parent as the init</li>
+<li>fork a child process, then the parent exits and leaves the child with parent as the init</li>
+<li>How do become a daemon?
+<ul>
 <li>close all open files</li>
 <li>become the process group leader
 <ul>
@@ -255,6 +257,8 @@
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <h4 id="scheduling">scheduling</h4>
 <ul>
 <li>linux is multi-processing, but they have to share one CPU</li>
@@ -270,7 +274,7 @@
 <li>every process has a task state associated with it</li>
 <li>when simply running, CPU-bound, the kernel will preempt a process</li>
 <li>everything is in a run queue</li>
-<li>process is in the task_running state, has a certain time to quantum to run, by default 100ms
+<li>process is in the task_running state, has a certain time quantum to run, by default 100ms
 <ul>
 <li>kernel checks the process time quantum at every tick, causes the kernel to check on the state, if the process hasn&rsquo;t exited or slept, guarentees that a process doesn&rsquo;t run forever</li>
 <li>realistically it&rsquo;s 1 ms now</li>
@@ -278,13 +282,11 @@
 </li>
 <li>preemptive multitasking
 <ul>
-<li>all TASK_RUNNING processes are part of the runqueue
+<li>
+<p>all TASK_RUNNING processes are part of the runqueue</p>
 <ul>
-<li>
-<p>length of the runqueue is called the &ldquo;load average&rdquo;</p>
-</li>
-<li>
-<p>uptime shows load averaged command</p>
+<li>length of the runqueue is called the &ldquo;load average&rdquo;</li>
+<li>uptime shows load averaged command
 <ul>
 <li>
 <p>last minute, 5 minutes, 15 minutes averages</p>
@@ -294,17 +296,16 @@
 </li>
 </ul>
 </li>
-<li>
-<p>vmstat also does this with <code>r</code></p>
-<blockquote>
-<p>procs &mdash;&mdash;&mdash;&ndash;memory&mdash;&mdash;&mdash;- &mdash;swap&ndash; &mdash;&ndash;io&mdash;- -system&ndash; &mdash;&mdash;cpu&mdash;&ndash;
-r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
-0  0      0 65022788 1420664 60968808    0    0     0     9    0    0  3  0 97  0  0</p>
-</blockquote>
-</li>
+<li>vmstat also does this with <code>r</code>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>procs -----------memory-------- -- ---swap-- -----io---- -system-- ------cpu-----
+</span></span><span style="display:flex;"><span> r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+</span></span><span style="display:flex;"><span> 0  0      0 65022788 1420664 60968808    0    0     0     9    0    0  3  0 97  0  0
+</span></span></code></pre></div></li>
 </ul>
 </li>
-<li>high load average means you&rsquo;re trying to do too much on the system probably</li>
+<li>
+<p>high load average means you&rsquo;re trying to do too much on the system probably</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -363,7 +364,7 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 <p>kernel allocates the pages, and mapped when a program is loaded at execute time</p>
 </li>
 <li>
-<p>shared libraries (shared among various processes, chances are .so apges are already in RAM, so they map to another process address space)</p>
+<p>shared libraries (shared among various processes, chances are .so pages are already in RAM, so they map to another process address space)</p>
 <ul>
 <li>although now static binaries might be good enough since we have tons of ram now</li>
 </ul>
@@ -813,7 +814,7 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 <ul>
 <li>Most of the action</li>
 <li>FS takes the pointer to the data, allocates appropriate pages, and then turns it into blocks to be written</li>
-<li>FS knows how to talk SCSI or SATA or NVMe</li>
+<li>FS knows how to talk SCSI or SATA or <a href="/posts/hard_drives/#nvme">NVMe</a></li>
 <li>A disk is represented as a sequential list of blocks, which then we map over</li>
 <li>We also have a &ldquo;segement&rdquo;, we should try to find the blocks that are together, which can be sent together</li>
 <li>Pages are 4kb, sectors are 512 B, blocks can range between these two sizes (although pages are huge now)</li>
@@ -824,11 +825,19 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 <li>Generic block layer
 <ul>
 <li>Gets sent data from the mapping layer</li>
+</ul>
+</li>
+</ul>
+<p>procs &mdash;&mdash;&mdash;&ndash;memory&mdash;&mdash;&mdash;- &mdash;swap&ndash; &mdash;&ndash;io&mdash;- -system&ndash; &mdash;&mdash;cpu&mdash;&ndash;
+r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+0  0      0 65022788 1420664 60968808    0    0     0     9    0    0  3  0 97  0  0</p>
+<ul>
 <li>Generic block layer combines contingous blocks into segments called a <code>bio</code> (block IO unit)</li>
 <li>calls <code>generic_make_request()</code> (<code>send_bio_noacct</code> now maybe?)</li>
 <li>Then it sends it to the device driver using the <code>strategy()</code> routine</li>
 </ul>
-</li>
+<!-- raw HTML omitted -->
+<ul>
 <li><a href="/posts/file_systems/">file systems</a>
 <ul>
 <li>Stores data on disk</li>
@@ -1329,6 +1338,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 
    
 
+   
+      
    
 
    
@@ -4825,6 +4836,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
     <h4>Links to this note</h4>
     <div class="backlinks">
         <ul>
+       
+          <li><a href="/posts/allocators/">allocators</a></li>
        
           <li><a href="/posts/bpf/">bpf</a></li>
        

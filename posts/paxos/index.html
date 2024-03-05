@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.825e9a92f87fd9cf1538e506b214de5274220f37b6563fc3e173fbf1d0a4bce8.js" integrity="sha256-gl6akvh/2c8VOOUGshTeUnQiDze2Vj/D4XP78dCkvOg="></script>
+<script defer src="/en.search.min.04db357a843f340287534f21c6826e62d4eb09897203399bb61da56291dfadbd.js" integrity="sha256-BNs1eoQ/NAKHU08hxoJuYtTrCYlyAzmbth2lYpHfrb0="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -217,6 +217,156 @@
 <li>Time penalty for dropping locks would not be severe, since locks are only held for a short period</li>
 </ul>
 <h2 id="zookeeper">Zookeeper</h2>
+<h3 id="api">API</h3>
+<ul>
+<li><code>create(path, data[], mode, flag)</code>
+<ul>
+<li>Creates a znode, like an inode, but a unit of abstraction to lock on it</li>
+</ul>
+</li>
+<li><code>setData(path, data[], version)</code>
+<ul>
+<li>sets the data[] in the znode at the specified flag</li>
+</ul>
+</li>
+<li><code>getData(path, watch)</code>
+<ul>
+<li>returns <code>data[]</code>, also allows clients to watch</li>
+</ul>
+</li>
+<li><code>getChildren(path, watch)</code>
+<ul>
+<li>Returns all the children names of the znode at the specified path</li>
+</ul>
+</li>
+<li><code>exists(path, watch)</code>
+<ul>
+<li>Checks whether a znode exists</li>
+</ul>
+</li>
+<li><code>delete(path, version)</code>
+<ul>
+<li>Deletes a znode. Must match the monotonically increasing versions</li>
+</ul>
+</li>
+</ul>
+<h3 id="server">Server</h3>
+<ul>
+<li>Fully replicated, like <a href="/posts/etcd/">etcd</a>, into a set called a <code>ZooKeeper ensemble</code></li>
+<li>Elected leaders and others become followers</li>
+<li>Unlike chubby, clients can connect to any
+<ul>
+<li>Higher availablity, not as strong consistency</li>
+<li>Use <code>sync()</code> to assure that you have the highest consistency</li>
+</ul>
+</li>
+<li>Leader broadcasts operations to the followers, and performs write operation on the coordination data placed in its memory</li>
+<li>Follower can also recieve and respond to write requests. Multiple writes can be batched, but only the request needs to forwarded to the leader, the leader broadcasts all the requests to other followers
+<ul>
+<li>Basically a follower gets a write, sends a request to the leader, the leader broadcasts the state to everyone after it&rsquo;s done</li>
+</ul>
+</li>
+</ul>
+<h3 id="replicated-database">Replicated Database</h3>
+<ul>
+<li>In memory copy of the database so that reads and writes can be done locally</li>
+<li>ZK takes periodic snapshots of all the delivered messages as a WAL
+<ul>
+<li>Snapshots are fuzzy</li>
+<li>Enables at-most-once execution</li>
+<li>If a server dies before the next snapshot is taken, it does a depth first scan of the tree to read every znode&rsquo;s metadata and data atomically then write that metadata and data from disk, extracted from the WAL
+<ul>
+<li>This is why ZK recovery is <strong>slow</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="atomic-broadcast">Atomic Broadcast</h3>
+<ul>
+<li>Used by ZK to broadcast the write request to the replicated database on all servers
+<ul>
+<li>Followers forward writes to leaders</li>
+</ul>
+</li>
+<li>Uses the ZAB protocol
+<ul>
+<li>Two modes
+<ol>
+<li>Broadcast is used to send messages</li>
+<li>Recovery is used to syncronize</li>
+</ol>
+</li>
+<li>Default is \(2f + 1\) for quorum where f is the number of faults</li>
+</ul>
+</li>
+<li>When a leader dies, the new leader is elected and ensures all the updates from the previous leader are incorporated into its replicated db before it broadcasts its own requests</li>
+<li>At every transaction, the leader is broadcasting what it is working on into a replicated queue</li>
+</ul>
+<h3 id="request-processor">Request Processor</h3>
+<ul>
+<li>Manager that keeps the transactions atomic, only the leader uses this</li>
+<li>Transactions within ZK are idempotent</li>
+<li>All requests are linearized on the leader, so the leader converts everything into a <code>setDataTXN</code></li>
+</ul>
+<h3 id="client-server-interactino">Client-server interactino</h3>
+<ul>
+<li><code>getData()</code> and <code>getChildren()</code> can both be performed locally without notifying others</li>
+<li>Servers generate <code>zxid</code> for every read request and retrieves the most recently updated state of the server&rsquo;s data</li>
+<li>Writes have multistep
+<ol>
+<li>Write the data</li>
+<li>Notify the client(s) who have set watches on that data</li>
+<li>Sent the write request to the leader so it can be updated in the replicated database</li>
+<li>Data is replicated among all connected servers in the ensemble</li>
+</ol>
+</li>
+<li>Everything is FIFO, including read requests when there&rsquo;s a write</li>
+<li>However if a read is in progress, multiple readers can read in parallel</li>
+<li>Like a giant R/W lock</li>
+<li>Default is async transmission of data, which comes at the cost of insconsistent or stale reads</li>
+<li>the <code>zxid</code> allows the client to maintain a consistent view across different servers</li>
+<li>Session timeouts and heartbeats are used to maintain connections from servers to clients for watches, which is decided by the leader</li>
+</ul>
+<h3 id="primitives">Primitives</h3>
+<ul>
+<li>
+<p>Config management and service discovery</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>newZnode = create(&#34;/config/port&#34;, 8090, EMPHEMERAL) # set a port
+</span></span><span style="display:flex;"><span>getData(&#34;/config/port&#34;, true) # get a watch
+</span></span><span style="display:flex;"><span>setData(&#34;/config/port&#34;, value, version) # new version
+</span></span></code></pre></div></li>
+<li>
+<p>Rendezvous</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>newZnode = create(&#34;/rendezvous/candidateOne&#34;, &#34;&#34;, EMPHEMERAL) # create a znode to write
+</span></span><span style="display:flex;"><span>getData(&#34;/rendezvous/candidateOne&#34;, true) # get a watch
+</span></span><span style="display:flex;"><span>setData(&#34;/rendevous/candidateOne&#34;, {&#34;10.0.0.1&#34;, 8080})
+</span></span></code></pre></div></li>
+<li>
+<p>Group Membership</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>newZnode = create(&#34;/groups/member0001&#34;, EMPHEMERAL)
+</span></span><span style="display:flex;"><span>newZnode = create(&#34;/groups/member0001/processOne&#34;, EMPHERAL,SEQUENTIAL) # set a sequential flag to generate a unique name
+</span></span><span style="display:flex;"><span>childrenList = getChildren(/groups/member0001&#34;, true)
+</span></span></code></pre></div></li>
+<li>
+<p>Locks</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>newLock = create(&#34;/locks/lock-1&#34;, EMPHEMERAL)
+</span></span><span style="display:flex;"><span>exists(&#34;/locks&#34;, true) # watch the lock tree
+</span></span><span style="display:flex;"><span>delete(newLock) # to release the lock
+</span></span></code></pre></div><ul>
+<li>issues
+<ul>
+<li>
+<p>herding: when a lock is released, many clients stampede to get the lock</p>
+</li>
+<li>
+<p>exclusive lock only</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
           
 

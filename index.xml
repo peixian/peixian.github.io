@@ -743,7 +743,7 @@ Similar notions to liberation theology in Latin America Marxist Muslim thinker A
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/allocators/</guid>
       <description>ram (computer memory)
-Memory Management Lobster language - https://aardappel.github.io/lobster/memory_management.html two pointers are vital because they have a start pointer (beginning of the memory block) and end pointer (end of the block). When an allocation is done, the start pointer is moved forward, when memory is released, the start pointer is shifted backwards Allocators Scudo Hoard Allocator jemalloc Dieharder Poseidon Allocator Allocator Aware Infrastructure Comparisons Slab allocator https://www.kernel.org/doc/gorman/html/understand/understand011.html Misc #+begin_src markdown ### More Papers * The Shadow over Android</description>
+linux Nimble Allocator https://dl.acm.org/doi/10.1145/3297858.3304024 Heterogenous memory allocation across NVMe and RAM Memory Management Lobster language - https://aardappel.github.io/lobster/memory_management.html two pointers are vital because they have a start pointer (beginning of the memory block) and end pointer (end of the block). When an allocation is done, the start pointer is moved forward, when memory is released, the start pointer is shifted backwards Allocators Scudo Hoard Allocator jemalloc Dieharder Poseidon Allocator Allocator Aware Infrastructure Comparisons Slab allocator https://www.</description>
     </item>
     <item>
       <title>alloy (spec lang)</title>
@@ -4380,7 +4380,7 @@ https://wiki.installgentoo.com/wiki/File_Picker_meme</description>
       <link>/posts/file_systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/file_systems/</guid>
-      <description>Tags: computers
+      <description>Tags: computers, storage
 ZFS https://ikrima.dev/dev-notes/homelab/zfs-for-dummies/ </description>
     </item>
     <item>
