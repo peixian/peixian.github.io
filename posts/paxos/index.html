@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.04db357a843f340287534f21c6826e62d4eb09897203399bb61da56291dfadbd.js" integrity="sha256-BNs1eoQ/NAKHU08hxoJuYtTrCYlyAzmbth2lYpHfrb0="></script>
+<script defer src="/en.search.min.bbc741fbe3fc6316d393ebb6893eb70021d0a5ef094d77c274761515884a8adf.js" integrity="sha256-u8dB&#43;&#43;P8YxbTk&#43;u2iT63ACHQpe8JTXfCdHYVFYhKit8="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -331,6 +331,9 @@
 <h3 id="primitives">Primitives</h3>
 <ul>
 <li>
+<p><a href="https://zookeeper.apache.org/doc/r3.4.2/recipes.pdf">https://zookeeper.apache.org/doc/r3.4.2/recipes.pdf</a></p>
+</li>
+<li>
 <p>Config management and service discovery</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>newZnode = create(&#34;/config/port&#34;, 8090, EMPHEMERAL) # set a port
 </span></span><span style="display:flex;"><span>getData(&#34;/config/port&#34;, true) # get a watch
@@ -358,13 +361,68 @@
 <ul>
 <li>
 <p>herding: when a lock is released, many clients stampede to get the lock</p>
+<ul>
+<li>Solved with using <code>SEQUENTIAL</code>, at which point the lowest sequence number will hold the lock
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>newZnode = create(path + &#34;/lock-&#34;, EPHEMERAL, SEQUENTIAL)
+</span></span><span style="display:flex;"><span>do
+</span></span><span style="display:flex;"><span>    childrenList = getChildren(path, false)
+</span></span><span style="display:flex;"><span>    if newZnode is lowest znode in children
+</span></span><span style="display:flex;"><span>        exit
+</span></span><span style="display:flex;"><span>    newPath = znode in childrenList ordered just before newZnode
+</span></span><span style="display:flex;"><span>    if exists(newPath, true)
+</span></span><span style="display:flex;"><span>        wait for event
+</span></span><span style="display:flex;"><span>while true
+</span></span></code></pre></div></li>
+</ul>
 </li>
 <li>
 <p>exclusive lock only</p>
-</li>
+<ul>
+<li>Can implement R/W locks with
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>newZnode = create(path + &#34;/write-&#34;, EPHEMERAL, SEQUENTIAL)
+</span></span><span style="display:flex;"><span>do
+</span></span><span style="display:flex;"><span>    childrenList = getChildren(path, false)
+</span></span><span style="display:flex;"><span>    if newZnode is lowest znode in children
+</span></span><span style="display:flex;"><span>        exit
+</span></span><span style="display:flex;"><span>    newPath = znode in childrenList ordered just before newZnode
+</span></span><span style="display:flex;"><span>    if exists(newPath, true)
+</span></span><span style="display:flex;"><span>        wait for event
+</span></span><span style="display:flex;"><span>while true
+</span></span></code></pre></div></li>
+<li>create a read lock and then reads can happen with other reads, but blocks on writes, and writes block on reads</li>
 </ul>
 </li>
 </ul>
+</li>
+<li>Barriers
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>newZnode = create(path + &#34;/&#34; + processName)
+</span></span><span style="display:flex;"><span>exists(path + &#34;/ready&#34;, true)
+</span></span><span style="display:flex;"><span>newZnodeChild = create(newZnode, EPHEMERAL)
+</span></span><span style="display:flex;"><span>childrenList = getChildren(path, false)
+</span></span><span style="display:flex;"><span>if fewer children in childrenList than barrierThreshold
+</span></span><span style="display:flex;"><span>  wait for watch event
+</span></span><span style="display:flex;"><span>else
+</span></span><span style="display:flex;"><span>  create(path + &#34;/ready&#34;, REGULAR)
+</span></span></code></pre></div></li>
+</ul>
+</li>
+</ul>
+<h3 id="performance">Performance</h3>
+<ul>
+<li>
+<p>Better load distribution than chubby</p>
+<figure><img src="/ox-hugo/2024-03-04_20-09-16_screenshot.png"/>
+    </figure>
+
+</li>
+<li>
+<p>Atomic broadcast decreases performance, has a CPU cost</p>
+</li>
+<li>
+<p>Failures of leaders will grind application to zero while it recovers</p>
+</li>
+<li>
+<p>Solves chubby like problems with different tradeoffs, gives up consistency for a bit of throughput</p>
 </li>
 </ul>
 
@@ -372,6 +430,8 @@
 
 
 
+
+   
 
    
 
@@ -1199,6 +1259,8 @@
 
    
 
+   
+      
    
 
    
@@ -4025,6 +4087,8 @@
         <ul>
        
           <li><a href="/posts/databases/">Databases</a></li>
+       
+          <li><a href="/posts/distributed_systems/">distributed systems</a></li>
        
           <li><a href="/posts/epaxos/">epaxos</a></li>
        

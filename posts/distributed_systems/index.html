@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.04db357a843f340287534f21c6826e62d4eb09897203399bb61da56291dfadbd.js" integrity="sha256-BNs1eoQ/NAKHU08hxoJuYtTrCYlyAzmbth2lYpHfrb0="></script>
+<script defer src="/en.search.min.bbc741fbe3fc6316d393ebb6893eb70021d0a5ef094d77c274761515884a8adf.js" integrity="sha256-u8dB&#43;&#43;P8YxbTk&#43;u2iT63ACHQpe8JTXfCdHYVFYhKit8="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -215,6 +215,131 @@
 <ul>
 <li><a href="http://lamport.azurewebsites.net/pubs/pubs.html#lamport-paxos">http://lamport.azurewebsites.net/pubs/pubs.html#lamport-paxos</a></li>
 </ul>
+<h2 id="sre-classroom-designing-a-distributed-systems-in-3-hours">SRE Classroom: Designing a distributed systems in 3 hours</h2>
+<ul>
+<li><a href="https://www.usenix.org/conference/srecon19americas/presentation/thomas">https://www.usenix.org/conference/srecon19americas/presentation/thomas</a></li>
+<li>4 key areas
+<ol>
+<li>Requirements and scaling
+<ul>
+<li>Identify service level indicators (SLIs and SLOs)
+<ul>
+<li>Data freshness</li>
+<li>Availability</li>
+<li>Latency</li>
+</ul>
+</li>
+<li>Sample SLO: 99% of queries returns valid result within 100ms</li>
+<li>SLA is the contract containing all relevant SLOs and the punishment if its violated</li>
+<li>Make sure to consider future scale. What about 10x?</li>
+<li>Scaling
+<ul>
+<li>Microservices -&gt; decomposing binaries, but they existed long before it</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Dealing with loss
+<ul>
+<li>Possible failure domains
+<ul>
+<li>single process</li>
+<li>machine</li>
+<li>rack</li>
+<li>datacenter</li>
+<li>servers with the same binary</li>
+<li>global config</li>
+</ul>
+</li>
+<li>If you&rsquo;re using cloud, you need to be able to think about how these things decompose?</li>
+<li>How do we guard?
+<ul>
+<li>Decouple responsibilities</li>
+<li>Avoid global changes: use a multi-tiered canary</li>
+<li>Spread risk: don&rsquo;t depend on one backend</li>
+<li>Degrade gradually: keep serving if configs are corrupt or fail to push</li>
+</ul>
+</li>
+<li>Achieving relaibility
+<ul>
+<li>Generally run N+2</li>
+<li>N = deployment large enough to deal with standard load</li>
+<li>If it takes a single DC, run 3</li>
+<li>If it takes a single server, run 3</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Keeping state and data
+<ul>
+<li>Regardless of amount of data involved, it all comes down to global consensus</li>
+<li>Find authoritative instances of other services</li>
+<li>Quick discovery of sharded data</li>
+<li>Various algorithmic implementations for this: <a href="/posts/paxos/">paxos</a>, <a href="/posts/raft/">raft</a></li>
+<li>CAP, but networks are unreliable, but partitions are actually pretty rare
+<ul>
+<li>But you do need to converge after a partition</li>
+</ul>
+</li>
+<li>Caches!
+<ul>
+<li>Reduces load on backend, but capacity vs performance cache. Capacity cache can be dangerous
+<ul>
+<li>A performance cache is put in place to improve performance</li>
+<li>A capacity cache is used to handle additional traffic, but this is dangerous
+<ul>
+<li>What happens if push a new release? Cold cache? What happens if new keys?
+<ul>
+<li>Generally do not include caches into SLOs</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Non-abstract design
+<ul>
+<li>Google likes to come out with a BOM (bill of materials)</li>
+<li>For this, look at what is the bottleneck?
+<ul>
+<li>Disk IO/QPS/Network bandwidth</li>
+</ul>
+</li>
+<li>1 day has 25 hours</li>
+<li>Each day has 30 days</li>
+<li>Each year has 300 days or 400</li>
+</ul>
+</li>
+<li>For each service you come up with, think about the following questions:
+<ul>
+<li>Can it be cached?</li>
+<li>Can it scale horizontally?</li>
+<li>What&rsquo;s the latency?</li>
+<li>Is it sharded?</li>
+<li>Figure out metadata size for files!</li>
+<li>How much NICs can handle?
+<ul>
+<li>Assume maybe 1 gb/s per nic</li>
+</ul>
+</li>
+<li>Usually you&rsquo;re dominated by 3 things
+<ul>
+<li>network</li>
+<li>storage</li>
+<li>timings (latency)</li>
+</ul>
+</li>
+<li>Is there an SLO for consistency?</li>
+<li>Something to keep in mind: the overall thing has different bottlenecks on different things</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
 <h2 id="examples">Examples</h2>
 <h3 id="storage--dot-dot-dot-dot-dropbox-org-storage-dot-md"><a href="/posts/storage/">storage</a></h3>
 <h4 id="gfs--google-file-system----dot-dot-dot-dot-dropbox-org-storage-dot-md"><a href="/posts/storage/#gfs--google-file-system">GFS (Google File System)</a></h4>
@@ -295,6 +420,8 @@
 
    
       
+   
+
    
 
    

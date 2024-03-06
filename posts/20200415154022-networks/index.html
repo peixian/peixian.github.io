@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.04db357a843f340287534f21c6826e62d4eb09897203399bb61da56291dfadbd.js" integrity="sha256-BNs1eoQ/NAKHU08hxoJuYtTrCYlyAzmbth2lYpHfrb0="></script>
+<script defer src="/en.search.min.bbc741fbe3fc6316d393ebb6893eb70021d0a5ef094d77c274761515884a8adf.js" integrity="sha256-u8dB&#43;&#43;P8YxbTk&#43;u2iT63ACHQpe8JTXfCdHYVFYhKit8="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -64,6 +64,20 @@
 <ul>
 <li><a href="https://lore.kernel.org/netdev/20231129072756.3684495-1-lixiaoyan@google.com/">https://lore.kernel.org/netdev/20231129072756.3684495-1-lixiaoyan@google.com/</a></li>
 <li>Up to 45% CPU performance increase by aligning cache lines</li>
+</ul>
+<h2 id="tcp-congestion-control">TCP Congestion Control</h2>
+<ul>
+<li>slow start - begins transmission with a small congestion window and exponetnially increases it until a threshold is reached or packet loss is detected</li>
+<li>congestion avoidance - once a threshold is reached, TCP increases the congestion window linearly to probe for additional bandwidth</li>
+<li>fast retransmist and fast recovery - if packet loss is detected via duplicate acks, then it performs a fast retransmit</li>
+<li>Sequence number wrapping - TCP must handle the sequence number wrapping around</li>
+</ul>
+<h2 id="nagle-s-algorithm">Nagle&rsquo;s Algorithm</h2>
+<ul>
+<li>40ms delay in TCP</li>
+<li>Basically a buffer</li>
+<li>Note that TCP defaults haven&rsquo;t really changed!</li>
+<li>Set <code>TCP_NODELAY</code> to prevent it</li>
 </ul>
 
           
@@ -463,6 +477,8 @@
 
    
       
+   
+
    
 
    

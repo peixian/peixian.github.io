@@ -1646,6 +1646,14 @@ https://docs.google.com/document/d/1MQ2GfjKVbE3NNZid3ZmKm8q3EMVCYabAEPEvyTQnnkI/
 https://huggingface.co/datasets/md_gender_bias</description>
     </item>
     <item>
+      <title>big data processing</title>
+      <link>/posts/big_data_processing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/big_data_processing/</guid>
+      <description>computers
+MapReduce Design Distributed file system Cluster User program Scheduler Hadoop is the open source implementation Implementation Divide the input data into a specific number of splits Then process those individually on workers using a Map function Clients only provide the map and the reduce If values are too large, we feed to the Reduce function via an iterator The manager holds all the state, controlling the subordinate tasks and acts as a relay for intra-worker communications.</description>
+    </item>
+    <item>
       <title>bigbench</title>
       <link>/posts/bigbench/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3415,7 +3423,7 @@ cloud apps domainted by packet processing https://www.usenix.org/sites/default/f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/dns/</guid>
       <description>Tags: web
-Using it as a key/value dnskv.com Dynamic DNS with Ubiquiti https://daltonflanagan.com/configuring-ubiquiti-unifi-usg-for-namecheap-ddns/ https://www.devwithimagination.com/2022/05/28/using-cloudflare-for-dynamic-dns-on-unifi/ </description>
+General notes Name resolution follows /etc/nsswitch.conf Hostname resolution follows /etc/hosts, followed by dns, which usually looks at /etc/resolv.conf Operating systems and browsers usually have their own cache There&amp;rsquo;s ISP DNS, global DNS, etc DNS records are stored in zone viles on authoritative DNS servers, such as A/AAAA/CNAME/MX/NS, each with different purposes /etc/nsswitch.conf tells you to use &#39;file&#39; or &#39;dns&#39; &#39;file&#39; refers to /etc/hosts Using it as a key/value dnskv.</description>
     </item>
     <item>
       <title>docker</title>
@@ -9191,7 +9199,7 @@ https://github.com/Evidlo/remarkable_printer nearly all netwoirk printers accept
       <guid>/posts/20200415154022-networks/</guid>
       <description>Tags: Computers
 Wireless networks https://cse.sc.edu/~sur/papers/UbiG_MobiCom18.pdf
-https://gafferongames.com/ https://gafferongames.com/post/why_cant_i_send_udp_packets_from_a_browser/ Outages https://cybersquirrel1.com/ Tofu networks for supercomputing https://ieeexplore.ieee.org/document/6041538 16d sync for computers linux Monitoring with Pcap https://isc.sans.edu/diary/pcap2curl+Turning+a+pcap+file+into+a+set+of+cURL+commands+for+replay/22900 Cache Line optimization for cpu https://lore.kernel.org/netdev/20231129072756.3684495-1-lixiaoyan@google.com/ Up to 45% CPU performance increase by aligning cache lines </description>
+https://gafferongames.com/ https://gafferongames.com/post/why_cant_i_send_udp_packets_from_a_browser/ Outages https://cybersquirrel1.com/ Tofu networks for supercomputing https://ieeexplore.ieee.org/document/6041538 16d sync for computers linux Monitoring with Pcap https://isc.sans.edu/diary/pcap2curl+Turning+a+pcap+file+into+a+set+of+cURL+commands+for+replay/22900 Cache Line optimization for cpu https://lore.kernel.org/netdev/20231129072756.3684495-1-lixiaoyan@google.com/ Up to 45% CPU performance increase by aligning cache lines TCP Congestion Control slow start - begins transmission with a small congestion window and exponetnially increases it until a threshold is reached or packet loss is detected congestion avoidance - once a threshold is reached, TCP increases the congestion window linearly to probe for additional bandwidth fast retransmist and fast recovery - if packet loss is detected via duplicate acks, then it performs a fast retransmit Sequence number wrapping - TCP must handle the sequence number wrapping around Nagle&amp;rsquo;s Algorithm 40ms delay in TCP Basically a buffer Note that TCP defaults haven&amp;rsquo;t really changed!</description>
     </item>
     <item>
       <title>new election laws iraq 2020</title>
@@ -12951,7 +12959,7 @@ Tay, Yi, Dara Bahri, Liu Yang, Donald Metzler, and Da-Cheng Juan. “Sparse Sink
 What Are? https://blog.cloudflare.com/syn-packet-handling-in-the-wild/
 Two queues in TCP, one a SYN queue and one Accept Queue
 Syn queue responsible for storing inbound syn packets
-https://elixir.free-electrons.com/linux/v4.14.12/source/include/net/inet_sock.h#L73 Blogs https://www.snellman.net/blog/archive/2017-07-20-s3-mystery/ https://kognitio.com/blog/syn-cookies-ate-my-dog-breaking-tcp-on-linux/ Commits https://github.com/freebsd/freebsd/commit/56ba0a68edde7b38323f81f9d56998b10668dd9e https://github.com/freebsd/freebsd/commit/fc2be30b217171175bae209edb4f697cc0cb542d Research https://link.springer.com/chapter/10.1007/978-3-642-36516-4_14 </description>
+https://elixir.free-electrons.com/linux/v4.14.12/source/include/net/inet_sock.h#L73 Blogs https://www.snellman.net/blog/archive/2017-07-20-s3-mystery/ https://kognitio.com/blog/syn-cookies-ate-my-dog-breaking-tcp-on-linux/ Commits https://github.com/freebsd/freebsd/commit/56ba0a68edde7b38323f81f9d56998b10668dd9e https://github.com/freebsd/freebsd/commit/fc2be30b217171175bae209edb4f697cc0cb542d Research https://link.springer.com/chapter/10.1007/978-3-642-36516-4_14 Handshake Process SYN - Client sends a server a SYN packet with a random sequence number SYN-ACK - Server responds with a SYN-ACK packet and increments the sequence number, and sets its own sequence number Finally the client sends an ACK and acks the server sequence number Both syns and acks are 32 bit ints </description>
     </item>
     <item>
       <title>teaching</title>

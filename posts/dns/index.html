@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.04db357a843f340287534f21c6826e62d4eb09897203399bb61da56291dfadbd.js" integrity="sha256-BNs1eoQ/NAKHU08hxoJuYtTrCYlyAzmbth2lYpHfrb0="></script>
+<script defer src="/en.search.min.bbc741fbe3fc6316d393ebb6893eb70021d0a5ef094d77c274761515884a8adf.js" integrity="sha256-u8dB&#43;&#43;P8YxbTk&#43;u2iT63ACHQpe8JTXfCdHYVFYhKit8="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -38,6 +38,19 @@
           <h1>dns</h1>
 
           <p>Tags: <a href="/posts/web/">web</a></p>
+<h2 id="general-notes">General notes</h2>
+<ul>
+<li>Name resolution follows <code>/etc/nsswitch.conf</code></li>
+<li>Hostname resolution follows <code>/etc/hosts</code>, followed by <code>dns</code>, which usually looks at <code>/etc/resolv.conf</code></li>
+<li>Operating systems and browsers usually have their own cache</li>
+<li>There&rsquo;s ISP DNS, global DNS, etc</li>
+<li>DNS records are stored in zone viles on authoritative DNS servers, such as A/AAAA/CNAME/MX/NS, each with different purposes</li>
+<li><code>/etc/nsswitch.conf</code> tells you to use <code>'file'</code> or <code>'dns'</code>
+<ul>
+<li><code>'file'</code> refers to <code>/etc/hosts</code></li>
+</ul>
+</li>
+</ul>
 <h2 id="using-it-as-a-key-value">Using it as a key/value</h2>
 <ul>
 <li>dnskv.com</li>
@@ -52,6 +65,8 @@
 
 
 
+
+   
 
    
 
