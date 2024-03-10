@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.bbc741fbe3fc6316d393ebb6893eb70021d0a5ef094d77c274761515884a8adf.js" integrity="sha256-u8dB&#43;&#43;P8YxbTk&#43;u2iT63ACHQpe8JTXfCdHYVFYhKit8="></script>
+<script defer src="/en.search.min.67acb81d5cfc8e39e14ed2c33fbe3f86b93f1a885273c8a674dd001c800268d7.js" integrity="sha256-Z6y4HVz8jjnhTtLDP74/hrk/GohSc8imdN0AHIACaNc="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -60,6 +60,119 @@
 <li>Framework that abstracts over multiple queues, allowing you to send to multiple kafkas
 <ul>
 <li><a href="https://smallrye.io/smallrye-reactive-messaging/latest/">https://smallrye.io/smallrye-reactive-messaging/latest/</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="design">Design</h2>
+<h3 id="producers">Producers</h3>
+<figure><img src="/ox-hugo/2024-03-09_19-44-45_screenshot.png"/>
+</figure>
+
+<ul>
+<li>Producer makes new messages</li>
+<li>Components
+<ul>
+<li>Producer record: a record is kept for each message created, made of <code>&lt;topic&gt;, &lt;key/partition&gt;, &lt;value&gt;</code></li>
+<li>Serializer: first thing a producer does to a message is to serialize the data into byte arrays</li>
+<li>Partitioner: after serialization, it returns the parittions of a specific topic where the message should be assigned to. If there&rsquo;s a key, it uses a hash function on the message key (CRC32)
+<ul>
+<li>If it&rsquo;s a partition, it just assigns it to that partition</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Default is one partition for each topic.</li>
+<li>Producers already know which topic and partition the message should be written to, and sends it to the appropriate broker</li>
+</ul>
+<h3 id="broker">Broker</h3>
+<figure><img src="/ox-hugo/2024-03-09_19-47-42_screenshot.png"/>
+</figure>
+
+<ul>
+<li>Workers in kafka, which assign offsets to each message and stores them on disk</li>
+<li>There&rsquo;s a cluster controller, elected via Paxos from <a href="/posts/paxos/#zookeeper">Zookeeper</a>, now <a href="/posts/raft/">raft</a>, which is responsbile for assigning partitions to brokers, elects partition leaders, and monitors broker failures</li>
+<li>Since there&rsquo;s multiple brokers, it allows you to scale horizontally.</li>
+<li>Tunable replication across different brokers</li>
+</ul>
+<h3 id="consumers">Consumers</h3>
+<ul>
+<li>Consumers organize themselves into consumer groups, which are keep the offset of the last ACKed message</li>
+</ul>
+<h3 id="efficiency">Efficiency</h3>
+<h4 id="storage--dot-dot-dot-dot-dropbox-org-storage-dot-md--layout-is-simple"><a href="/posts/storage/">storage</a> layout is simple</h4>
+<figure><img src="/ox-hugo/2024-03-09_19-53-09_screenshot.png"/>
+</figure>
+
+<ul>
+<li>a partition is &ldquo;just&rdquo; one big file, really a logical log that comprises a set of segement files approximately the same size.</li>
+<li>new messages are appended to the end of the file, and there&rsquo;s some metadata that tracks the offsets each table has (similar to a sstable)</li>
+<li>Similar to blocks on datastores, you can just delete old chunks of logs as they expire
+<ul>
+<li>every message has its id, but internally kafka addresses each message by it&rsquo;s logical offset</li>
+</ul>
+</li>
+<li>when aconsumer sends a pull request to a broker, the broker keeps a data buffer ready for consumption. The broker then proceeds to read off of the different segements</li>
+</ul>
+<h4 id="efficient-transfer">Efficient transfer</h4>
+<ul>
+<li>
+<p>Data flows in batches, producers can dispatch multiple requests and consumers can ack batches back</p>
+</li>
+<li>
+<p>Aggressively caches the data in RAM via the filesystem</p>
+</li>
+<li>
+<p>for subscriptions, kafka uses a <code>sendfile</code> syscall that bypasses the application/kernel buffers by copying directly from one fd to another</p>
+<figure><img src="/ox-hugo/2024-03-09_19-53-00_screenshot.png"/>
+    </figure>
+
+</li>
+</ul>
+<h4 id="stateless-broker">Stateless broker</h4>
+<ul>
+<li>Consumption done by the consumer state is held in ZK, which helps in case of consumer failures.</li>
+<li>Kafka&rsquo;s usage of time based SLA&rsquo;s (rentention time) is what allows the brokers to delete messages even when the consumer hasn&rsquo;t acked it</li>
+<li>Consumers can also rewind, as it allows you to go back on offsets if there&rsquo;s errors</li>
+</ul>
+<h3 id="distributed-coordination">Distributed coordination</h3>
+<ul>
+<li>Partitions are the smallest unit of parallelism, and those need to be consumed by a single consumer</li>
+<li>No specific manager nodes</li>
+<li><a href="/posts/paxos/#zookeeper">Zookeeper</a> is responsible for keeping track of
+<ul>
+<li>addition or removal of consumers and brokers</li>
+<li>registers consumers and brokers by creating emphemeral nodes</li>
+<li>all the brokers try to create an emphemeral node called a controller, but only one succeeds. The first one is the leader</li>
+<li>Rebalances processes in case brokers or consumers are added or removed</li>
+<li>Maintain the consumption from brokers and track the offset of the last consumed messages of a partition</li>
+</ul>
+</li>
+<li>ZK registries
+<ul>
+<li>Consumer registry - saves information in the consumer registry whenever it starts, has consumer group and subscribed topics</li>
+<li>Broker registry - saves information in the broker registry, has the hostname, port, and set of partitions</li>
+<li>Ownership registry - which consumer id is consuming from a specific partition</li>
+<li>Offset registry - stores info related to each subscribed partition</li>
+</ul>
+</li>
+<li>Rebalancing has to occur when a consumer or producer dies, but this means that message delivery has to stop
+<ul>
+<li>During rebalancing, different consumers have to take ownership of different partitions that are being read from. This means that they create ZK nodes to track them</li>
+</ul>
+</li>
+</ul>
+<h3 id="delivery-guarnetees">Delivery guarnetees</h3>
+<ul>
+<li>At-least-once delivery
+<ul>
+<li>default, delivers each message once to each consumer group.</li>
+<li>Post rebalancing, just continue reading from the last offset</li>
+</ul>
+</li>
+<li>Exactly once
+<ul>
+<li>We can use unique keys in the messages and write the results to a system that supports keys</li>
+<li>Records and offsets can be saved somewhere else to dedup on the client end</li>
 </ul>
 </li>
 </ul>

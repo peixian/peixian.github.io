@@ -686,9 +686,7 @@ Beyond the basic understanding of Algerian law from the French as a single sourc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/algorithms/</guid>
       <description>Tags: Computers
-Sorting Algorithms pdqsort - https://github.com/orlp/pdqsort Marzullo&amp;rsquo;s Algorithm Fault tolerant algorithm designed for use in distributed systems
-Algo
-Collects interval estimates from all sources Sort and process intervals based on their start times, and then processes each interval in the sorted order Each interval the algo tracks the number of overlapping intervals Determines the maximum overlap Finds the interval where the maximum overlap occurs, and the overlapping region is considered to be the most reliable estimate Fault tolerance: inherently tolerates faults Uses</description>
+Sorting Algorithms pdqsort - https://github.com/orlp/pdqsort K-means Used to find k non-overlapping subclusters in a big cluster Format User specifies the k number of subclusters Algorithm chooses k centroids in the feature space for finding k different clusters Assigns points relatively nearer to each centroid point Repeatedly recomputes the centroids until it has no more changes in position Marzullo&amp;rsquo;s Algorithm Fault tolerant algorithm designed for use in distributed systems</description>
     </item>
     <item>
       <title>algorithms for decision making</title>
@@ -7103,7 +7101,7 @@ RocksDB SpeedDB - https://github.com/speedb-io/speedb ZippyDB Build on RocksDB, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/kafka/</guid>
       <description>Tags: Computers
-https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html Kafka Debugging CP kafka has tools installed under /usr/local/bin Example: /usr/bin/kafka-run-class kafka.tools.MirrorMaker --consumer.config source.config \ --producer.config dest.config \ --whitelist &amp;#39;.*&amp;#39; Can check consumer status with /usr/bin/kafka-consumer-groups --bootstrap-server &amp;lt;server:9092 --describe --group notification # or /usr/bin/kafka-consumer-groups --bootstrap-server &amp;lt;server&amp;gt;:9092 --list SmallRye (java) Framework that abstracts over multiple queues, allowing you to send to multiple kafkas https://smallrye.io/smallrye-reactive-messaging/latest/ </description>
+https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html Kafka Debugging CP kafka has tools installed under /usr/local/bin Example: /usr/bin/kafka-run-class kafka.tools.MirrorMaker --consumer.config source.config \ --producer.config dest.config \ --whitelist &amp;#39;.*&amp;#39; Can check consumer status with /usr/bin/kafka-consumer-groups --bootstrap-server &amp;lt;server:9092 --describe --group notification # or /usr/bin/kafka-consumer-groups --bootstrap-server &amp;lt;server&amp;gt;:9092 --list SmallRye (java) Framework that abstracts over multiple queues, allowing you to send to multiple kafkas https://smallrye.io/smallrye-reactive-messaging/latest/ Design Producers Producer makes new messages Components Producer record: a record is kept for each message created, made of &amp;lt;topic&amp;gt;, &amp;lt;key/partition&amp;gt;, &amp;lt;value&amp;gt; Serializer: first thing a producer does to a message is to serialize the data into byte arrays Partitioner: after serialization, it returns the parittions of a specific topic where the message should be assigned to.</description>
     </item>
     <item>
       <title>kafka streams</title>
@@ -12276,7 +12274,8 @@ Anki Decks https://ankiweb.net/shared/info/202862275 https://ankiweb.net/shared/
       <link>/posts/spark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/spark/</guid>
-      <description>Tags: scala</description>
+      <description>Tags: scala
+Overview Similar to MapReduce, processes large volumes of data efficiently However, map reduce had issues: Iterative data development was difficult Interactive, ad hoc queries on the same set was hard How does spark solve issues with iterative data processing? Uses K-means However, for MapReduce, we would need to perform k means multiple times via cascading jobs, and also mapreduce does not keep any intermediate data. Also incurs issues with disk IO, since mapreduce has to write to disk There was a desire for a framework that abstracted over distributed memory, that could perform multiple operations, while also being low latency and fault tolerant, and explicitly was able to let users choose a specific working let to load into memory Design Relies on resilient distributed datasets (RDDs) Abstraction of objects ithin the dataset RDDs can be created in two ways, transforming an RDD or by reading data A lineage graphs is kept to record the source of all RDDs Implemented with List of partition objects that contains their own sets of data Iterator that traverses the data in the partition A list of worker nodes where the partition can be quickly accessed to ensure tasking scheduling An RDD abstraction is similar to a cluster compute where only part of the data is on the node.</description>
     </item>
     <item>
       <title>special economic zones</title>

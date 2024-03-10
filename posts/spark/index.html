@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.bbc741fbe3fc6316d393ebb6893eb70021d0a5ef094d77c274761515884a8adf.js" integrity="sha256-u8dB&#43;&#43;P8YxbTk&#43;u2iT63ACHQpe8JTXfCdHYVFYhKit8="></script>
+<script defer src="/en.search.min.67acb81d5cfc8e39e14ed2c33fbe3f86b93f1a885273c8a674dd001c800268d7.js" integrity="sha256-Z6y4HVz8jjnhTtLDP74/hrk/GohSc8imdN0AHIACaNc="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -38,6 +38,131 @@
           <h1>spark</h1>
 
           <p>Tags: <a href="/posts/scala/">scala</a></p>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>Similar to <a href="/posts/big_data_processing/#mapreduce">MapReduce</a>, processes large volumes of data efficiently</li>
+<li>However, map reduce had issues:
+<ul>
+<li>Iterative data development was difficult</li>
+<li>Interactive, ad hoc queries on the same set was hard</li>
+</ul>
+</li>
+<li>How does spark solve issues with iterative data processing?
+<ul>
+<li>Uses <a href="/posts/algorithms/#k-means">K-means</a></li>
+<li>However, for <a href="/posts/big_data_processing/#mapreduce">MapReduce</a>, we would need to perform k means multiple times via cascading jobs, and also mapreduce does not keep any intermediate data. Also incurs issues with disk IO, since mapreduce has to write to disk</li>
+</ul>
+</li>
+<li>There was a desire for a framework that abstracted over distributed memory, that could perform multiple operations, while also being low latency and fault tolerant, and explicitly was able to let users choose a specific working let to load into memory</li>
+</ul>
+<h2 id="design">Design</h2>
+<h3 id="relies-on-resilient-distributed-datasets--rdds">Relies on resilient distributed datasets (RDDs)</h3>
+<ul>
+<li>Abstraction of objects ithin the dataset</li>
+<li>RDDs can be created in two ways, transforming an RDD or by reading data</li>
+<li>A <!-- raw HTML omitted --><!-- raw HTML omitted -->lineage graphs<!-- raw HTML omitted --><!-- raw HTML omitted --> is kept to record the source of all RDDs</li>
+<li>Implemented with
+<ul>
+<li>List of partition objects that contains their own sets of data</li>
+<li>Iterator that traverses the data in the partition</li>
+<li>A list of worker nodes where the partition can be quickly accessed to ensure tasking scheduling</li>
+</ul>
+</li>
+<li>An RDD abstraction is similar to a cluster compute where only part of the data is on the node. Local nodes run small subsets and get joined later</li>
+<li>Creation
+<ul>
+<li>RDDs can be created from files within a distributed file system, or collections my parallelizing a collection, or from another RDD</li>
+<li>can also be built by altering the persistence of an existing RDD, since RDDs are by default lazy and emphemeral</li>
+</ul>
+</li>
+<li>Paritioning
+<ul>
+<li>Spark automatically partitions the data inside RDDs and distributes it over a cluster of RAM over available nodes. Also provide scontrol to the user on how the data is partitioned, as well as whether the data needs to be shuffled</li>
+</ul>
+</li>
+<li>Vs distributed memory system
+<ul>
+<li>In distributed memory systems, R/W ops are done on specific locations within a global address space. RDDs have more coarse and fine grained transformations</li>
+<li>DSMs use checkpointing, which is pretty costly for restoring data. Only lost RDD partitions need to be recomputed, and provides big data recovery that&rsquo;s better in terms of spatial overheads</li>
+<li>RDDs are immutable, operations create new RDDs (in the lineage graph) which allow you to run backup tasks to mitigate stragglers (speculative exec)</li>
+<li>Systems can exploit data locality to schedule tasks based on their data locality, since they know more information</li>
+<li>You can also page/flush to disk for RDDs</li>
+<li>Spark only offers bulk writes, no random writes like distributed memory systems</li>
+</ul>
+</li>
+<li>Similar to a dataframe chunk</li>
+</ul>
+<h4 id="dependencies">Dependencies</h4>
+<ul>
+<li>When an RDD is created, it&rsquo;s relationship with the parent data forms a DAG, so we have either narrow or wide dependencies
+<ul>
+<li>Narrow dependencies allow pipelined execution to compute all parent and child partitions on a group of machines in a single cluster. Users can apply any operations on a parent RDD on an element-by-element basis. Also easy partition recovery, you just rerun the past partition</li>
+<li>Wide dependencies are more complicated, since they also shuffle the data. Recovering means you need to recompute the whole thing</li>
+<li>Side benefit is that you can compress dags if they get too big via snapshots, and then replicate the dags across the cluster</li>
+</ul>
+</li>
+<li>Clustering can be done with Mesos, YARN, or all sorts of other stuff.</li>
+</ul>
+<h4 id="scheduler">Scheduler</h4>
+<ul>
+<li>Scheduler is responsbile for turning RDDs into actions and creating the DAG</li>
+<li>Fault tolerance retries are handled by the scheduler, who reschedules failed jobs</li>
+</ul>
+<h4 id="actions">Actions</h4>
+<ul>
+<li>Spark builds logical plan for executoins via actions, which trigger the execution of that logical plan.</li>
+<li>Actions are anything that returns a non-RDD value, such as <code>count()</code>, <code>reduce()</code>, <code>collect()</code>, and ~lookup~()</li>
+</ul>
+<h3 id="driver-manager-that-orchestrates-data-sharding">Driver - manager that orchestrates data sharding</h3>
+<ul>
+<li>Launches clusters of workers</li>
+<li>Defines RDDs</li>
+<li>Keeps lineage graph</li>
+<li>Create execution pipelines</li>
+<li>Creates further tasks in each stage and sends them to workers running in parallel</li>
+<li>Schedules tasks</li>
+<li>Shares some variables with all the worker nodes called shared variables</li>
+</ul>
+<h3 id="worker-nodes">Worker nodes</h3>
+<ul>
+<li>Receive tasks from the driver</li>
+<li>Performs assigned tasks</li>
+<li>Stores partitions of the memory abstraction</li>
+<li>Note that usually, within datacenters, network topology is taken into account by scheduling algorithms.</li>
+</ul>
+<h3 id="transformations">Transformations</h3>
+<ul>
+<li>Lazy operations by default, split into two forms: narrow and wide</li>
+<li>Narrow transformations have each partition input map to a single partition output
+<ul>
+<li><code>map</code>, <code>filter</code>, <code>join</code> (kv pairs only, no shuffling on joins), <code>union</code></li>
+</ul>
+</li>
+<li>Wide transformations have RDDs building multiple child RDDs
+<ul>
+<li><code>reduceByKey</code>, <code>join</code> (arbitrary), <code>groupByKey</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="shared-variables">Shared Variables</h3>
+<ul>
+<li>Two types of shared variables:
+<ul>
+<li>broadcast - variable that is kept on the driver, which then is cached on workers</li>
+<li>accumulators - variable is kept on the driver as the workers accumulate their own</li>
+</ul>
+</li>
+</ul>
+<h3 id="refinements">Refinements</h3>
+<ul>
+<li>Limited memory LRU evicts old RDDs in memory</li>
+<li>Flushing to disk as well, users specificy a persistence priority</li>
+<li>Checkpointing RDDs by compacting the graphs into smaller nodes</li>
+</ul>
+<h3 id="design-wisdom">Design wisdom</h3>
+<ul>
+<li>RDD abstraction: immutable, shardable, lazy datastructures that can be recomputed</li>
+</ul>
 
           
 
