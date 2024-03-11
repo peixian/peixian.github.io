@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>docker</title>
+<html><title>docker/containers</title>
 
 
 <meta charset="utf-8">
@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.67acb81d5cfc8e39e14ed2c33fbe3f86b93f1a885273c8a674dd001c800268d7.js" integrity="sha256-Z6y4HVz8jjnhTtLDP74/hrk/GohSc8imdN0AHIACaNc="></script>
+<script defer src="/en.search.min.d7828a583aae9b4c4838103546d787a4a80928ea7f80158f0ab22536ffc16f3d.js" integrity="sha256-14KKWDqum0xIOBA1RteHpKgJKOp/gBWPCrIlNv/Bbz0="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -35,9 +35,33 @@
   <div class="grid">
     <div class="page" data-level="1">
       <div class="content">
-          <h1>docker</h1>
+          <h1>docker/containers</h1>
 
           <p>Tags: <a href="/posts/computers/">computers</a></p>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>Build on <a href="/posts/linux/">linux</a> namespaces and cgroups
+<ul>
+<li>Namespaces segregate the system by allowing each container to have its own view of the system, via process ID&rsquo;s, network interfaces, etc</li>
+<li>Control groups segregate the physical hardware between them</li>
+<li>Capabilities splits the privleages of the root user into distinct units that can be managed</li>
+<li><code>seccomp</code> filters system calls made by processes to restrict kernel functionality</li>
+</ul>
+</li>
+</ul>
+<h2 id="runtimes">Runtimes</h2>
+<ul>
+<li>LXC - tools, templates, and library and language bindings that use the kernel containment features directly - <a href="https://linuxcontainers.org/">https://linuxcontainers.org/</a></li>
+<li><code>libcontainer</code> - <a href="/posts/golang/">golang</a> library created for docker that uses the kernel containment features</li>
+<li><code>runc</code> - portable container runtime that implements the OCI spec, cli wrapper for libcontainer</li>
+</ul>
+<h2 id="high-levels">High Levels</h2>
+<ul>
+<li>Docker - container engine, used to use LXC but then switched to libcontainer/runc</li>
+<li>rkt - podnative design that was built by CoreOS (no longer developed)</li>
+<li><code>containerd</code> - daemon that manages the complete container lifecycle, from image transfer to exec to supervision. Used by <a href="/posts/kubernentes/">kubernetes (k8s)</a> and docker internally</li>
+<li>CRI-o - lightweight container engine specifically for kube, alternative to running kube</li>
+</ul>
 <h2 id="debian">Debian</h2>
 <ul>
 <li><a href="https://knowledgepill.it/posts/docker_install_upgrade/">https://knowledgepill.it/posts/docker_install_upgrade/</a></li>

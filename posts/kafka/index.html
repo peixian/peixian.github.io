@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.67acb81d5cfc8e39e14ed2c33fbe3f86b93f1a885273c8a674dd001c800268d7.js" integrity="sha256-Z6y4HVz8jjnhTtLDP74/hrk/GohSc8imdN0AHIACaNc="></script>
+<script defer src="/en.search.min.d7828a583aae9b4c4838103546d787a4a80928ea7f80158f0ab22536ffc16f3d.js" integrity="sha256-14KKWDqum0xIOBA1RteHpKgJKOp/gBWPCrIlNv/Bbz0="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -175,6 +175,32 @@
 <li>Records and offsets can be saved somewhere else to dedup on the client end</li>
 </ul>
 </li>
+<li>In-order delivery
+<ul>
+<li>Kafka guarnetees that messages in a partition are delivered in a specific order</li>
+<li>No guarentees across multiple partitions</li>
+</ul>
+</li>
+<li>Fault tolerance
+<ul>
+<li>Avoids log corruption with CRC checks on the created logs</li>
+<li>Also replicates the partitions between different nodes
+<ul>
+<li>Replicas that do not lag are called in-sync replicas
+<ul>
+<li>considered to be replicas that have sent a heartbeat to ZK in the last 6 seconds (user configurable)</li>
+<li>replicas that fetched messages from the leader in the last 10 seconds (user confiugurable)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="design-wisdom">Design Wisdom</h3>
+<ul>
+<li>Uses unconventional design, such as brokers not keeping state and not guarenteeing cross-partition ordering, but this pushes users to think more about parellism</li>
+<li>Key thing is that brokers do not keep state, state is kept in ZK</li>
 </ul>
 
           

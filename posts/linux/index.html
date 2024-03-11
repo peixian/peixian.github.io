@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.67acb81d5cfc8e39e14ed2c33fbe3f86b93f1a885273c8a674dd001c800268d7.js" integrity="sha256-Z6y4HVz8jjnhTtLDP74/hrk/GohSc8imdN0AHIACaNc="></script>
+<script defer src="/en.search.min.d7828a583aae9b4c4838103546d787a4a80928ea7f80158f0ab22536ffc16f3d.js" integrity="sha256-14KKWDqum0xIOBA1RteHpKgJKOp/gBWPCrIlNv/Bbz0="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -70,13 +70,30 @@
 </ul>
 <h4 id="memory">memory</h4>
 <ul>
-<li>initialized and uninitalized data</li>
-<li>break system call is used to increase heap size</li>
-<li>heap sits on top and grows up and the stack grows down</li>
-<li>in between space is used for shared libraries</li>
-<li>32 bit 4GB</li>
-<li>environment variables and cmdline is at the very top</li>
-<li>kernel puts all of its dataat the top of the data structure</li>
+<li>
+<p>initialized and uninitalized data</p>
+</li>
+<li>
+<p>break system call is used to increase heap size</p>
+</li>
+<li>
+<p>heap sits on top and grows up and the stack grows down</p>
+<figure><img src="/ox-hugo/2024-03-10_15-59-03_screenshot.png"/>
+    </figure>
+
+</li>
+<li>
+<p>in between space is used for shared libraries</p>
+</li>
+<li>
+<p>32 bit 4GB</p>
+</li>
+<li>
+<p>environment variables and cmdline is at the very top</p>
+</li>
+<li>
+<p>kernel puts all of its dataat the top of the data structure</p>
+</li>
 </ul>
 <!-- raw HTML omitted -->
 <ul>
@@ -261,8 +278,36 @@
 </ul>
 <h4 id="scheduling">scheduling</h4>
 <ul>
-<li>linux is multi-processing, but they have to share one CPU</li>
-<li>scheduling is how the kernel manages these running processes and &ldquo;take turns&rdquo;
+<li>
+<p>linux is multi-processing, but they have to share one CPU</p>
+<ul>
+<li>At any time, each of the CPU&rsquo;s in a system can be
+<ol>
+<li>Not associated with any process, serving and hardware interrupt (Hard IRQs)
+<ul>
+<li>Timer ticks, network cards, keyboards</li>
+<li>Handlers here have to be fast, most of the time it is an ack</li>
+</ul>
+</li>
+<li>Not associated with any process, serving a softirq or tasklet (Software interrupt context)
+<ul>
+<li>Much of the real interrupt handling work is done here</li>
+<li>Tasklets are dynamically registrable versions of software soft interrupt contexts, which means you can have as many as yo want, and any tasklet will only run on one CPU at any time</li>
+</ul>
+</li>
+<li>Running in kernel space, associated with a process (user context)</li>
+<li>Running a process in user space</li>
+</ol>
+</li>
+<li>Bottom two can preempt each other, but above is a strict hierarchy, kernel process cannot preempt a softirq, a soft irq cannot preempt a hardware interrupt
+<ul>
+<li><a href="https://www.kernel.org/doc/html/v5.0/kernel-hacking/hacking.html#the-players">https://www.kernel.org/doc/html/v5.0/kernel-hacking/hacking.html#the-players</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>scheduling is how the kernel manages these running processes and &ldquo;take turns&rdquo;</p>
 <ul>
 <li>&ldquo;context switching&rdquo;, take all the registers values out, load the register values
 <ul>
@@ -1158,6 +1203,10 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 <ul>
 <li>Foundations of containers for <a href="/posts/kubernentes/">kubernetes (k8s)</a></li>
 </ul>
+<h2 id="objects">Objects</h2>
+<ul>
+<li><code>objdump</code> to look at elf files</li>
+</ul>
 
           
 
@@ -2012,6 +2061,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 
    
 
+   
+      
    
 
    
@@ -4846,6 +4897,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
           <li><a href="/posts/centos/">CentOS</a></li>
        
           <li><a href="/posts/criu_kernal_checkpointing/">criu/kernel checkpointing</a></li>
+       
+          <li><a href="/posts/docker/">docker/containers</a></li>
        
           <li><a href="/posts/ebpf/">ebpf</a></li>
        

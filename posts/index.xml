@@ -2036,7 +2036,7 @@ https://www.researchgate.net/publication/339356611_Infantilisation_through_Techn
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/c_language/</guid>
       <description>Tags: programming languages,
-Cosmopolitan C https://justine.lol/cosmopolitan/ Defers in C https://www.usenix.org/conference/nsdi21/presentation/tollman </description>
+Cosmopolitan C https://justine.lol/cosmopolitan/ Defers in C https://www.usenix.org/conference/nsdi21/presentation/tollman Browsers cscope in terminal </description>
     </item>
     <item>
       <title>c preprocessor</title>
@@ -3424,12 +3424,12 @@ cloud apps domainted by packet processing https://www.usenix.org/sites/default/f
 General notes Name resolution follows /etc/nsswitch.conf Hostname resolution follows /etc/hosts, followed by dns, which usually looks at /etc/resolv.conf Operating systems and browsers usually have their own cache There&amp;rsquo;s ISP DNS, global DNS, etc DNS records are stored in zone viles on authoritative DNS servers, such as A/AAAA/CNAME/MX/NS, each with different purposes /etc/nsswitch.conf tells you to use &#39;file&#39; or &#39;dns&#39; &#39;file&#39; refers to /etc/hosts Using it as a key/value dnskv.</description>
     </item>
     <item>
-      <title>docker</title>
+      <title>docker/containers</title>
       <link>/posts/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/docker/</guid>
       <description>Tags: computers
-Debian https://knowledgepill.it/posts/docker_install_upgrade/ Opening Docker Images https://github.com/P3GLEG/Whaler https://github.com/wagoodman/dive https://www.portainer.io https://github.com/google/Docker-Explorer https://theartofmachinery.com/2021/03/18/reverse_engineering_a_docker_image.html </description>
+Overview Build on linux namespaces and cgroups Namespaces segregate the system by allowing each container to have its own view of the system, via process ID&amp;rsquo;s, network interfaces, etc Control groups segregate the physical hardware between them Capabilities splits the privleages of the root user into distinct units that can be managed seccomp filters system calls made by processes to restrict kernel functionality Runtimes LXC - tools, templates, and library and language bindings that use the kernel containment features directly - https://linuxcontainers.</description>
     </item>
     <item>
       <title>Dodge - Bourdieu goes to Baghdad</title>
