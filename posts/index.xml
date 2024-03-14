@@ -7811,7 +7811,7 @@ https://lwn.net/Articles/276782/ Intro What does a linker do? Converts object fi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/linkers/</guid>
       <description>Tags: compilers
-https://blog.thea.codes/the-most-thoroughly-commented-linker-script/ alt-linkers mold lld profiling linkers Static Linking https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking </description>
+https://blog.thea.codes/the-most-thoroughly-commented-linker-script/ https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp alt-linkers gold https://lwn.net/Articles/274859/ https://lwn.net/Articles/276782/ mold lld https://www.youtube.com/watch?v=CYCRqjVa6l4 https://lld.llvm.org/ profiling linkers Static Linking https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking </description>
     </item>
     <item>
       <title>linting</title>
