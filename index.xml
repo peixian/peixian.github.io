@@ -3148,7 +3148,7 @@ https://doc.dpdk.org/guides-16.04/linux_gsg/index.html Uses poll mode drivers </
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/databases/</guid>
       <description>Tags: Computers
-Class https://15721.courses.cs.cmu.edu/spring2019/schedule.html https://www.youtube.com/playlist?app=desktop&amp;amp;list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&amp;amp;themeRefresh=1 MariaDB https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/ Calcite https://calcite.apache.org used in bodo.ai Query optimizers how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf Query Pushdown basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/ DynamoDB Similar to Cassandra, has partition key and sort key
+Class https://15721.courses.cs.cmu.edu/spring2019/schedule.html https://www.youtube.com/playlist?app=desktop&amp;amp;list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&amp;amp;themeRefresh=1 MariaDB https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/ Calcite https://calcite.apache.org used in bodo.ai Query optimizers how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf Query Pushdown basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/ Foundation DB https://apple.github.io/foundationdb/data-modeling.html https://apple.github.io/foundationdb/developer-guide.html DynamoDB Similar to Cassandra, has partition key and sort key
 Can horizontally partition across different nodes, similar to cassandra
 Similarly, need to split a partition when it gets hot
 There&amp;rsquo;s an automated systems that defines a read capacity unit and a write capacity unit.</description>
@@ -3909,7 +3909,7 @@ did Epinmenides speak the truth?</description>
       <guid>/posts/episteme/</guid>
       <description>Tags: root
 On thinking
-https://kinopio.club Coastline Paradox https://en.wikipedia.org/wiki/Coastline_paradox Measurements are approximations, which then depends on the method used to measure it </description>
+https://kinopio.club Coastline Paradox https://en.wikipedia.org/wiki/Coastline_paradox Measurements are approximations, which then depends on the method used to measure it Scanning Notes https://thenewsprint.co/2014/03/18/scanning-field-notes-books/ https://jamierubin.net/2021/07/23/the-weekly-playbook-4-finishing-a-notebook-transcribe-or-scan/ https://blog.leblanc.sh/scanning-field-notes/ https://jamierubin.net/2022/03/29/practically-paperless-with-obsidian-episode-24-use-case-how-i-capture-field-notes-in-obsidian/ https://www.notebookstories.com/2013/12/18/review-doxie-flip-portable-scanner-bonus-field-notes-giveaway/ https://voussoir.net/writing/notes_on_paper </description>
     </item>
     <item>
       <title>Epstine - Range</title>
@@ -3956,7 +3956,7 @@ museums kurdish museum landmarks citadel jahil mosque Living in Erbil Shipping C
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/erlang/</guid>
       <description>Tags: programming languages
-https://erlangexplained.com/index.php/about https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ https://medium.com/erlang-battleground https://medium.com/erlang-battleground/property-based-testing-erlang-elixir-de72ad24966b https://github.com/stevana/armstrong-distributed-systems/blob/main/docs/erlang-is-not-about.md#user-content-fn-0-b236052c3934bd6f7ea3426445bf45af https://www.erlang-factory.com/conference/ErlangUserConference2011/speakers/ScottLystigFritchie Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ json with erlang https://vining.dev/posts/jerk Supervisor Trees for golang https://www.jerf.org/iri/post/2930/ https://adoptingerlang.org/docs/development/supervision_trees/ Nif Issues Monitoring for elixir https://github.com/massemanet/redbug https://code.google.com/archive/p/eper/wikis/redbug.wiki https://www.erlang.org/doc/apps/tools/lcnt_chapter.html https://www.erlang.org/doc/man/scheduler.html#sample_all-0 https://erlangforums.com/t/find-out-whats-running-on-dirty-schedulers/2885/3 https://erlangforums.com/t/detecting-blocked-dirty-i-o-schedulers/1116 https://www.erlang.org/doc/apps/erts/beamasm#linux-perf-support - linux https://medium.com/@jlouis666/erlang-dirty-scheduler-overhead-6e1219dcc7 https://blog.jola.dev/patterns-for-managing-ets-tables#menu Enabling :erlang.</description>
+https://erlangexplained.com/index.php/about https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ https://medium.com/erlang-battleground https://medium.com/erlang-battleground/property-based-testing-erlang-elixir-de72ad24966b https://github.com/stevana/armstrong-distributed-systems/blob/main/docs/erlang-is-not-about.md#user-content-fn-0-b236052c3934bd6f7ea3426445bf45af https://www.erlang-factory.com/conference/ErlangUserConference2011/speakers/ScottLystigFritchie https://adoptingerlang.org/docs/development/otp_high_level/ Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ json with erlang https://vining.dev/posts/jerk Supervisor Trees for golang https://www.jerf.org/iri/post/2930/ https://adoptingerlang.org/docs/development/supervision_trees/ Nif Issues Monitoring for elixir https://github.com/massemanet/redbug https://code.google.com/archive/p/eper/wikis/redbug.wiki https://www.erlang.org/doc/apps/tools/lcnt_chapter.html https://www.erlang.org/doc/man/scheduler.html#sample_all-0 https://erlangforums.com/t/find-out-whats-running-on-dirty-schedulers/2885/3 https://erlangforums.com/t/detecting-blocked-dirty-i-o-schedulers/1116 https://www.erlang.org/doc/apps/erts/beamasm#linux-perf-support - linux https://medium.com/@jlouis666/erlang-dirty-scheduler-overhead-6e1219dcc7 https://blog.jola.dev/patterns-for-managing-ets-tables#menu Enabling :erlang.</description>
     </item>
     <item>
       <title>erlang beam vs jvm</title>
@@ -7339,7 +7339,7 @@ https://en.wikipedia.org/wiki/Khums </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/kite_power/</guid>
       <description>electrical engineering
-Makani https://github.com/google/makani https://storage.googleapis.com/x-prod.appspot.com/files/Makani_TheEnergyKiteReport_Part3.pdf https://storage.googleapis.com/x-prod.appspot.com/files/Makani_TheEnergyKiteReport_Part2.pdf https://archive.org/details/makani-power?&amp;amp;sort=-week&amp;amp;page=2 </description>
+Makani https://github.com/google/makani https://storage.googleapis.com/x-prod.appspot.com/files/Makani_TheEnergyKiteReport_Part3.pdf https://storage.googleapis.com/x-prod.appspot.com/files/Makani_TheEnergyKiteReport_Part2.pdf https://archive.org/details/makani-power?&amp;amp;sort=-week&amp;amp;page=2 https://en.wikipedia.org/wiki/Makani_(company) https://en.wikipedia.org/wiki/KiteGen https://www.youtube.com/watch?v=qd_hEja6bzE </description>
     </item>
     <item>
       <title>kll approximate quantiles</title>
@@ -7811,7 +7811,7 @@ https://lwn.net/Articles/276782/ Intro What does a linker do? Converts object fi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/linkers/</guid>
       <description>Tags: compilers
-https://blog.thea.codes/the-most-thoroughly-commented-linker-script/ https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp alt-linkers gold https://lwn.net/Articles/274859/ https://lwn.net/Articles/276782/ mold lld https://www.youtube.com/watch?v=CYCRqjVa6l4 https://lld.llvm.org/ profiling linkers Static Linking https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking </description>
+https://blog.thea.codes/the-most-thoroughly-commented-linker-script/ https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp alt-linkers gold https://lwn.net/Articles/274859/ https://lwn.net/Articles/276782/ mold https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp https://github.com/rui314/mold/blob/main/docs/design.md lld https://www.youtube.com/watch?v=CYCRqjVa6l4 https://lld.llvm.org/ profiling linkers Static Linking https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking </description>
     </item>
     <item>
       <title>linting</title>
@@ -10638,7 +10638,8 @@ https://medium.com/@nathantnorth/protocol-buffers-text-format-14e0584f70a5 https
       <link>/posts/protocols/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/protocols/</guid>
-      <description>Tags: computers</description>
+      <description>Tags: computers
+Serialization https://github.com/apache/incubator-fury </description>
     </item>
     <item>
       <title>Provonce - The Last Ottoman Generation</title>

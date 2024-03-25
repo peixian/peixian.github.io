@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.bdaf81989c23303575e2f2676f1a165f247cc0d91aff4528efe476ce650e2f98.js" integrity="sha256-va&#43;BmJwjMDV14vJnbxoWXyR8wNka/0Uo7&#43;R2zmUOL5g="></script>
+<script defer src="/en.search.min.b6012586c3d20c68ed9500790787d162d6346ebc5257c52c4ae8085d2dad68c7.js" integrity="sha256-tgElhsPSDGjtlQB5B4fRYtY0brxSV8UsSugIXS2taMc="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -59,6 +59,20 @@
 <li>Aligning structs in TCP gives a ton of improvements!</li>
 </ul>
 </li>
+</ul>
+<h3 id="types-of-caches">Types of Caches</h3>
+<h4 id="direct-mapped-cache">Direct Mapped Cache</h4>
+<ul>
+<li>Like consistent hashing, each memory address is used to map a block to a specific cache line</li>
+<li>both provide deterministic mapping</li>
+</ul>
+<h4 id="fully-associative-cache">Fully Associative Cache</h4>
+<ul>
+<li>Memory can be stored in any cache line, but we need to search to find it</li>
+</ul>
+<h4 id="set-associative">Set Associative</h4>
+<ul>
+<li>Memory address is used to determine the set, and the data can be placed in any block within the set</li>
 </ul>
 <h2 id="load-linked-and-store-conditional--ll-sc">Load-Linked and Store-Conditional (LL/SC)</h2>
 <ul>
