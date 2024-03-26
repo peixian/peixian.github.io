@@ -14077,7 +14077,7 @@ Tech Manufacturing Manufacturing as of 2023 has gone bust: https://restofworld.o
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/virtualization/</guid>
       <description>Tags: computers
-https://github.com/firecracker-microvm/firecracker/ KVM (kernel virtual machine) linux based virtualization, they work together QUEMU qcow2/3 Virtual filesystems for QUEMU </description>
+https://github.com/firecracker-microvm/firecracker/ KVM (kernel virtual machine) linux based virtualization, they work together QUEMU qcow2/3 Virtual filesystems for QUEMU Hot Plug Memory https://github.com/qemu/qemu/blob/db596ae19040574e41d086e78469014191d7d7fc/docs/memory-hotplug.tx11t </description>
     </item>
     <item>
       <title>visa&#39;s</title>
