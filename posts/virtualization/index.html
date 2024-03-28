@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.06b97ae3bfea8ba94cead56e583a9163ddaebadacdbc573e40ad20cb8fb75bed.js" integrity="sha256-Brl647/qi6lM6tVuWDqRY92uutrNvFc&#43;QK0gy4&#43;3W&#43;0="></script>
+<script defer src="/en.search.min.6db66eac183484caf48b689704465469e0d63d785916ad2755bb4949298c8890.js" integrity="sha256-bbZurBg0hMr0i2iXBEZUaeDWPXhZFq0nVbtJSSmMiJA="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -62,7 +62,53 @@
 <li>Timing estimates, for example from TCP</li>
 </ul>
 </li>
-<li>Hypervisors are meant to be tiny, has direct machine access</li>
+<li>Hypervisors are meant to be tiny, has direct machine access
+<ul>
+<li>Hypervisor control node actually runs as a VM</li>
+</ul>
+</li>
+<li>IO rings, similar to <a href="/posts/linux/#io-uring">io_uring</a></li>
+<li>Changes made to make virtualization easier
+<ul>
+<li>Guest OS runs at 1, which works nicely for CPU x86 priv rings</li>
+<li>when the guest starts to run and gets scheduled, it communicates with the hypervisor to register a set of addresses
+<ul>
+<li>When there&rsquo;s a syscall, jump to this part in the OS</li>
+</ul>
+</li>
+<li>GuestOSs have realtime and virtual time
+<ul>
+<li>real time for congestion</li>
+<li>virtual time for when you get descheduled</li>
+</ul>
+</li>
+<li>Hypercalls manages guests to the OS</li>
+</ul>
+</li>
+<li>Paging
+<ul>
+<li>Virtualizing the MMU is very difficult, since the MMU is allowed to walk the page tables</li>
+<li>Xen allows the guest to maintain its own page tables, but Xen checks all modifications to the page tables
+<ul>
+<li>Software managed TLB or TLB with address space modifiers, but x86 doesn&rsquo;t have this</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Xen memory
+<ul>
+<li>everyone manages their own page tables</li>
+<li>minimized involvement for xen</li>
+<li>So Xen lives in the unused memory space</li>
+<li>When guest operating systems creates tables, they create the table ds with address space, any memory that&rsquo;s required is part of that address space
+<ul>
+<li>when they register the page table with xen, then it&rsquo;s read only</li>
+<li>Xen does recieves updates, it can batch em</li>
+</ul>
+</li>
+<li>Guest runs at 1</li>
+</ul>
+</li>
 </ul>
 
           
