@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.6db66eac183484caf48b689704465469e0d63d785916ad2755bb4949298c8890.js" integrity="sha256-bbZurBg0hMr0i2iXBEZUaeDWPXhZFq0nVbtJSSmMiJA="></script>
+<script defer src="/en.search.min.4451a98e3b5cdad60e5490da89c3272f05ef0cf231aa31154f0bfef52b640468.js" integrity="sha256-RFGpjjtc2tYOVJDaicMnLwXvDPIxqjEVTwv&#43;9StkBGg="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -87,26 +87,34 @@
 </li>
 <li>Paging
 <ul>
-<li>Virtualizing the MMU is very difficult, since the MMU is allowed to walk the page tables</li>
-<li>Xen allows the guest to maintain its own page tables, but Xen checks all modifications to the page tables
+<li>
+<p>Virtualizing the MMU is very difficult, since the MMU is allowed to walk the page tables</p>
+</li>
+<li>
+<p>Xen allows the guest to maintain its own page tables, but Xen checks all modifications to the page tables</p>
 <ul>
 <li>Software managed TLB or TLB with address space modifiers, but x86 doesn&rsquo;t have this</li>
 </ul>
 </li>
-</ul>
+<li>
+<p>everyone manages their own page tables</p>
 </li>
-<li>Xen memory
-<ul>
-<li>everyone manages their own page tables</li>
-<li>minimized involvement for xen</li>
-<li>So Xen lives in the unused memory space</li>
-<li>When guest operating systems creates tables, they create the table ds with address space, any memory that&rsquo;s required is part of that address space
+<li>
+<p>minimized involvement for xen</p>
+</li>
+<li>
+<p>So Xen lives in the unused memory space</p>
+</li>
+<li>
+<p>When guest operating systems creates tables, they create the table ds with address space, any memory that&rsquo;s required is part of that address space</p>
 <ul>
 <li>when they register the page table with xen, then it&rsquo;s read only</li>
 <li>Xen does recieves updates, it can batch em</li>
 </ul>
 </li>
-<li>Guest runs at 1</li>
+<li>
+<p>Guest runs at 1</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -115,6 +123,8 @@
 
 
 
+
+   
 
    
 
