@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.bde4eb6688ab9631ad91ffcee92805633e38c9b9d89c6a2c8c227cdf49364b2a.js" integrity="sha256-veTrZoirljGtkf/O6SgFYz44ybnYnGosjCJ830k2Syo="></script>
+<script defer src="/en.search.min.74b5f5b74fb76020f5402d35cec83d26bd318c1206837aa4fd6f64c1dc11b366.js" integrity="sha256-dLX1t0&#43;3YCD1QC01zsg9Jr0xjBIGg3qk/W9kwdwRs2Y="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -78,6 +78,71 @@
 </tr>
 </tbody>
 </table>
+<h2 id="implementation-of-paxos">Implementation of Paxos</h2>
+<ul>
+<li>Paxos is generally used to keep track of a log, and decide which values are appropriate to commit to a log</li>
+<li>Divded into proposers, acceptors, and learners
+<ul>
+<li>Proposers send their proposals to other replica group members, and tries to have a majority of members support their proposal.</li>
+<li>Acceptors are the group members who receive proposals or reject them</li>
+<li>Learners keep track of accepted values, and mark them as chosen. Learners are basically voters that help consensus</li>
+</ul>
+</li>
+</ul>
+<h3 id="steps">Steps</h3>
+<ul>
+<li>Two steps, first a majority voting step and and commit steps.</li>
+<li>The reason there&rsquo;s two steps is because of the potential for a split vote, where the acceptor only accepts the first value, and no majority is chosen
+<ul>
+<li>Conflicting choices can also happen and result in ABA</li>
+<li>However, two phases is not enough to enforce safety, we must have additional members</li>
+</ul>
+</li>
+<li>Proposal numbers play a vital role, acting as logical clocks.</li>
+</ul>
+<p>Actual steps:</p>
+<ol>
+<li>Handshake phase - prepare-promise message, a prepare request is sent by each proposer to all acceptors. <code>prepare(proposal_number)</code> is called, everyone either accepts or rejects the proposal
+<ol>
+<li>If the acceptor hasn&rsquo;t yet promised to any other prepare request, it records the proposal number and sends a promise to the proposer</li>
+<li>If the acceptor also already promised to a pepare request with lower proposal number,  it makes a promise with the newer one and breaks the promise with the already promised request.</li>
+<li>If the acceptor has already promised to a prepare request with the higher numbered proposal, it simply requests the current one</li>
+<li>If the acceptor has already accepted an accept request with a lower proposal number, it makes a promise to the current rprepare, and sends back the accepted proposal number and the corresponding value</li>
+</ol>
+</li>
+<li>Value acceptance phase - accept-accepted messages
+<ul>
+<li>If the proposer receieves a promise from the majority of acceptors, it sends an accept request <code>accept(proposal_number, value)</code></li>
+<li>This includes the value so that
+<ol>
+<li>If the proposer didn&rsquo;t recieve any accepted proposals along with the promise message in response to the prepare requests, then it will propose a value of its choice</li>
+<li>If the proposer received already accepted proposals by the acceptors, along with the promise messages in response to the prepare requests, then it has to select the value with the highest proposal number</li>
+</ol>
+</li>
+<li>An acceptor, on recieving an accept request, responds to the proposer
+<ol>
+<li>If the latest proposal number promised by the acceptor is the same as in the accept request, it will accept the request and respond to the proposer with an accepted message. If the proposer recieves majority acceptance of the proposed value, the value is chosen and broadcast to everyone</li>
+<li>If the acceptor has promised to a new proposal with the higher proposal number, it rejects the accept request, and the protol has to start again</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="liveness-issues">Liveness Issues</h3>
+<ul>
+<li>Since an acceptor always promises on a proposal, it can lead to a situatiion where accept rejects sent by a proposer are always being rejected by the acceptors if there is lag.</li>
+<li>If every time the acceptors recieve a prepare request with a higher proposal number before receiving an accept requests against a proposal that the acceptors promised earlier, none of the accept requests will be accepted.</li>
+<li>To solve this, only single proposers are allowed to issue proposals (aka leaders)</li>
+</ul>
+<h3 id="other-considerations">Other Considerations</h3>
+<ul>
+<li>Why majority instead of highest number? Could result in ties</li>
+<li>Why two steps? Having a majority always choose a value is bad because then you could get overmatching writes</li>
+</ul>
+<h3 id="multipaxos">Multipaxos</h3>
+<ul>
+<li>Basically between paxos rounds, if you have the same leader, you can just just propose and commit, since you know there&rsquo;s no competing proposer</li>
+</ul>
 <h2 id="boxwood">Boxwood</h2>
 <ul>
 <li>Old system used to explore the feasibility of various stages in DB locks
