@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.3cd11cfaf94e3a6292aa3de7d16046c693869eb80e2e2b9a22278ec32a377711.js" integrity="sha256-PNEc&#43;vlOOmKSqj3n0WBGxpOGnrgOLiuaIieOwyo3dxE="></script>
+<script defer src="/en.search.min.12caa472d582e713365b6b70e181f767758f8ec04ad31afe9c1c1bdf6405bf95.js" integrity="sha256-EsqkctWC5xM2W2tw4YH3Z3WPjsBK0xr&#43;nBwb32QFv5U="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -41,6 +41,27 @@
 <ul>
 <li>Cloudflare outages: <a href="https://twitter.com/heidiann360/status/1332733504057188352">https://twitter.com/heidiann360/status/1332733504057188352</a></li>
 <li>Vs <a href="/posts/paxos/">paxos</a>, raft is always safe, but can halt progress if the majority is unavailable</li>
+<li>Implements consensus by first electing a leader and then managing all the replication from the leader to other servers, leader is responsible for accepting log entries from clients, replicating them to other servers, and instructing them when it is safe to apply them to their state machines.</li>
+<li>Ensures unidirectional flow of instructions</li>
+</ul>
+<h2 id="flp-impossibility-avoidance">FLP Impossibility Avoidance</h2>
+<ul>
+<li>Tweaks the meaning of consensus and termination by using a majority rather than immediate agreement, although guarentees that minorities cannot revert the majority decisions</li>
+<li>Detects those cases where consensus is impossible and forward progress is halted</li>
+</ul>
+<h2 id="paxos-comparisons">Paxos comparisons</h2>
+<ul>
+<li>Paxos is difficult to understand</li>
+<li>Regular paxos takes a symmetric p2p approach, which is fine for a world where only one decision needs to be made, but few practical systems do that</li>
+<li>Paxos implementations are far and wide with no reference implementation</li>
+</ul>
+<h2 id="raft-innovations">Raft Innovations</h2>
+<ul>
+<li>Problem decomposition - raft decomposes the consensus problem into separate subproblems with leader election and log replication being different</li>
+<li>Understandable differences: leader election, log replication, and safety</li>
+<li>Automatic cluster management: Novel mechanism for altering cluster membership</li>
+<li>Distinct structure: similar to multi paxos</li>
+<li>Coherence: progress requires a great degree of cohereance</li>
 </ul>
 
           
