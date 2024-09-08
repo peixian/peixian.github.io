@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.964103c7cbd48dcd4ddcc58ddcc04a49a4f51ec2d5439be3ac74e0c8ccbd1d3f.js" integrity="sha256-lkEDx8vUjc1N3MWN3MBKSaT1HsLVQ5vjrHTgyMy9HT8="></script>
+<script defer src="/en.search.min.58538a005854008f44ca5a27b493b68ff28c4e59f66daa0ec693db165a9e3a92.js" integrity="sha256-WFOKAFhUAI9EylontJO2j/KMTln2baoOxpPbFlqeOpI="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -73,6 +73,43 @@
 <li><a href="https://www.portainer.io">https://www.portainer.io</a></li>
 <li><a href="https://github.com/google/Docker-Explorer">https://github.com/google/Docker-Explorer</a></li>
 <li><a href="https://theartofmachinery.com/2021/03/18/reverse_engineering_a_docker_image.html">https://theartofmachinery.com/2021/03/18/reverse_engineering_a_docker_image.html</a></li>
+</ul>
+<h2 id="tupperware-vs-borg-vs-kube">Tupperware vs Borg vs Kube</h2>
+<ul>
+<li>
+<p>Twine: A Uniﬁed Cluster Management System for Shared Infrastructure</p>
+<ul>
+<li><a href="https://www.usenix.org/conference/osdi20/presentation/tang">https://www.usenix.org/conference/osdi20/presentation/tang</a></li>
+</ul>
+</li>
+<li>
+<p>Regional level (borg is cluster level, but presents a virtual abstract regional level API)</p>
+<ul>
+<li>Kubernetes only bothers presenting a 4-5 &ldquo;cluster&rdquo; level</li>
+<li>Regional level control also introduces significant risk. Rate-limiting destructive operations is a hard learned lesson that people learn many times over. Borg favors external sharding (as in each borg group is on a cluster level), whereas Tupperware shards internally into 20 per region.</li>
+</ul>
+</li>
+<li>
+<p>Most interesting part of the paper was that the compute infra is focused on one CPU 64GB ram boxes, with 4 per sled</p>
+</li>
+<li>
+<p>Task control is interesting, borg and kube do this via SIGINT or SIGTERM for preemption. Task control is much more customizable, but leads to potential issues where people are not handling unplanned maintanence. Since the expectation for Borg is that you get 5 minutes to vacate a machine, even unplanned maint events are fine for most applications. Tupperware does not do this, which causes some issues with developer incentives. The hard problem (unplanned maint) should be solved first, since the simpler problem (handling maint) is a reduced form of the hard one</p>
+</li>
+<li>
+<p>Host profiles are interesting, because they allow developers to have fine grained control over their machines. Borg does not offer this, mostly because the foundational teams at Google provide fleet wide improvements (e.g. hugepages). Leaving this up to the user is interesting, but definitely presents problems of stacking since some of these must be enabled on a host level and the cartesian product of configs lead to maintenance headaches.</p>
+</li>
+<li>
+<p>The rebalancer is interesting because it iteratively moves you towards something that fits your usage profile, rather than trying to wait for the solver first. Borg will wait for the solver before actually starting your task, whereas tupperware tries to first start your job <strong>somewhere</strong>, and then move it to an appropriate place.</p>
+</li>
+<li>
+<p>Entitlement fragementation seems like a huge problem with noisey neighbors and an overloaded abstraction. It&rsquo;s good they&rsquo;re changing it.</p>
+</li>
+<li>
+<p>Evaluation of TCO is a little sketchy? 33% reduction one is from shard manager, 48% one is from offloading, is this a real measurement number?</p>
+</li>
+<li>
+<p>Overall, like rocks, this is another FB project with quite a few knobs, which I think seems good in the moment but does not bode well for the future.</p>
+</li>
 </ul>
 
           
