@@ -3006,7 +3006,7 @@ https://travisdowns.github.io/blog/2021/06/17/rip-zero-opt.html Registers Nowada
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/crdts/</guid>
       <description>- distributed systems
-https://wiki.nikitavoloboev.xyz/distributed-systems/crdt https://hydro.run/research/ https://hydro.run/papers/keep-calm-and-crdt-on.pdf </description>
+https://wiki.nikitavoloboev.xyz/distributed-systems/crdt https://hydro.run/research/ https://hydro.run/papers/keep-calm-and-crdt-on.pdf Skyrzypczak - Linearizable State Machine Replication of State-Based CRDTs without Logs GLA is a subset of consensus, what is actually the things that we are losing with consensus but not in GLA? Will not let you read without a quorum LUB - max, min, join/intersection (subcontains operator) Not byzantine fault tolerant learned state plays the leader state faster than raft or paxos, basically faster than clients can keep up </description>
     </item>
     <item>
       <title>criu/kernel checkpointing</title>
