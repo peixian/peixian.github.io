@@ -5590,6 +5590,14 @@ reviews https://journals.sagepub.com/doi/pdf/10.1177/001946460103800309?casa_tok
 Aiming for timing passages Read for strict speed, without comphrension Increase the speed the brain can process arabic script 200 words per day Deconstructing sentences Identifying subjects, objects, verbs, etc Underlining each pronoun and drawing a line linking it back to each noun Don&amp;rsquo;t reach for the dictionary unless necessary Try to study abroad away from the capital Eschew perfection in terms of realistic goals Fully fluent MSA and dialect is unrealistic, focus on the aspects that matter to you Holding a conversation, conducting interviews, etc Strong study base over a long period of time is required Reaching C1 requires extensive practical use of the language Post B1, progress slows until vocab base and weekly practice reveals itself Normal to blur the colloquial and formal registers </description>
     </item>
     <item>
+      <title>haproxy</title>
+      <link>/posts/haproxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/haproxy/</guid>
+      <description>web
+configuration of haproxy by default will cache DNS records, and need to be flushed stats port usually exposed on :8199 </description>
+    </item>
+    <item>
       <title>harakat hezbollah al-nujaba</title>
       <link>/posts/harakat_hezbollah_al_nujaba/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
