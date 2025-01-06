@@ -2802,6 +2802,14 @@ Notes from the Iraqi conference: http://cih.columbia.edu/iraqi-studies-past-pres
 October Revolution - Davis Definition of grpups that define themselves as &amp;ldquo;iraqi&amp;rdquo; Ultimiately a war of position emotional baggage generated from the post-2003 Reflections on Iraqi Studies - Pursely Driven by post-invasion Shaping of modern iraqi scholars Oversimplication Destruction of 21st century iraq via imperialism Can we define iraq from post-colonial notions? How many states are built on necropolitics Have iraqi scholars engaged in a purely defensive study?</description>
     </item>
     <item>
+      <title>confidential computing blog post</title>
+      <link>/posts/confidential_computing_blog_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/confidential_computing_blog_post/</guid>
+      <description>drafts
+what is confidential computing? homomorphic encryption + TEEs TEEs are a bridge to homomorphic encryption also kabuki theatre apple https://machinelearning.apple.com/research/homomorphic-encryption allows you to solve the privacy problem https://desfontain.es/blog/friendly-intro-to-differential-privacy.html also potentially the future for ads and user data, although very awkward gap potentially big tech slamming the door behind them? TEEs require you to fundalmentally trust the vendor provider, and also that the customer hasn&amp;rsquo;t bullied the vendor i.e. google or facebook can say that you&amp;rsquo;re running things on TEEs, but you have to trust their tees https://cloud.</description>
+    </item>
+    <item>
       <title>configuration langauges</title>
       <link>/posts/configuration_langauges/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -12806,7 +12814,8 @@ https://observablehq.com/@makio135/creative-coding</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/swe_tea/</guid>
       <description>computers
-Weekly paper club/book club/video club Need to figure out timings (tuesday nights?) model off of ebpf reading groups and the distirbuted systems reading groups https://hackmd.io/@ebpf-reading-group/rkg0ou0I2 </description>
+Weekly paper club/book club/video club Need to figure out timings (tuesday nights?) model off of ebpf reading groups and the distirbuted systems reading groups https://hackmd.io/@ebpf-reading-group/rkg0ou0I2 Profiling a Warehouse Scale Computer Kanev, Svilen, Juan Pablo Darago, Kim Hazelwood, Parthasarathy Ranganathan, Tipp Moseley, Gu-Yeon Wei, and David Brooks. “Profiling a Warehouse-Scale Computer.” In Proceedings of the 42nd Annual International Symposium on Computer Architecture, 158–69. Portland Oregon: ACM, 2015. https://doi.org/10.1145/2749469.2750392.
+They only used C++, since it made it simpler</description>
     </item>
     <item>
       <title>symphony chat platform</title>

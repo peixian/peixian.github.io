@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.8f05a91f8620f3a07254c7a0f43d203938d5166cb27f4cac5f31d6acd61f7168.js" integrity="sha256-jwWpH4Yg86ByVMeg9D0gOTjVFmyyf0ysXzHWrNYfcWg="></script>
+<script defer src="/en.search.min.36e3911471dc4b6d1570fcbb032cfbcf53c5a19c01909ec139d61ccd7d5bb46a.js" integrity="sha256-NuORFHHcS20VcPy7Ayz7z1PFoZwBkJ7BOdYczX1btGo="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -47,11 +47,94 @@
 </ul>
 </li>
 </ul>
+<h2 id="profiling-a-warehouse-scale-computer">Profiling a Warehouse Scale Computer</h2>
+<ul>
+<li>
+<p>Kanev, Svilen, Juan Pablo Darago, Kim Hazelwood, Parthasarathy Ranganathan, Tipp Moseley, Gu-Yeon Wei, and David Brooks. “Profiling a Warehouse-Scale Computer.” In Proceedings of the 42nd Annual International Symposium on Computer Architecture, 158–69. Portland Oregon: ACM, 2015. <a href="https://doi.org/10.1145/2749469.2750392">https://doi.org/10.1145/2749469.2750392</a>.</p>
+</li>
+<li>
+<p>They only used C++, since it made it simpler</p>
+</li>
+<li>
+<p>only on Ivy Bridge machines</p>
+</li>
+<li>
+<p>No &ldquo;killer application to optimize for, large chunks of compute are data locality bound and CPU stall bound, suggests that 2 wide SMT is not sufficient to eliminate the bulk of the overheads</p>
+<ul>
+<li>What <strong>is</strong> a 2 wide SMT anyways?</li>
+<li>I&rsquo;m assuming it means 2 instructions at once, but not all instructions are parallelizable</li>
+<li>workload diversity is very real, we&rsquo;ve gotten a range of compute that&rsquo;s wide enough for this not to matter
+<ul>
+<li>At the start, 50 hottest binaries account for 80% of execution</li>
+<li>Three years later, top 50 are only 60%</li>
+<li>Coverage decreases more than 5% per over the course of 3 years</li>
+<li>Also does not include public clouds</li>
+</ul>
+</li>
+<li>Applications, as they grow more diverse and fatter, have gotten more flat profiles themselves
+<ul>
+<li>What would this look like for chatd?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>&ldquo;Data center tax&rdquo; is very real, large chunks of your machine are going to be devoted to doing logging, rpc, ser/des</p>
+</li>
+<li>
+<p>Yacine: top down measurement? never heard of this before</p>
+<ul>
+<li>Yasin, Ahmad. “A Top-Down Method for Performance Analysis and Counters Architecture.” In 2014 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), 35–44, 2014. <a href="https://doi.org/10.1109/ISPASS.2014.6844459">https://doi.org/10.1109/ISPASS.2014.6844459</a>.</li>
+<li>Talks about core front-end and core back-end, what is that?
+<ul>
+<li>Front end:
+<ul>
+<li>instruction fetch</li>
+<li>decode unit</li>
+<li>branch prediction</li>
+<li>uop cache</li>
+<li>loop stream detector (?) - optimizes tight loops</li>
+</ul>
+</li>
+<li>Back end:
+<ul>
+<li>sched/reservation station</li>
+<li>execution units</li>
+<li>reorder buffer</li>
+<li>register file</li>
+<li>load/store units</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Top down classifies pipeline slots into retiring (useful work), frontend bounc, backend bound, and bad speculation</li>
+<li>They believe that cache problems (lots of lukewarm code) is why the frontend is the primary staller
+<ul>
+<li>i.e. binaries with 100s of mb</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>memcpy</code> and <code>memove()</code> is 4-5% of datacenter cycles</p>
+<ul>
+<li>as is encryption</li>
+</ul>
+</li>
+<li>
+<p>25% of datacenter tax is compressing and decompressing data</p>
+</li>
+</ul>
+<figure><img src="/ox-hugo/2025-01-05_09-18-46_screenshot.png"/>
+</figure>
+
 
           
 
 
 
+
+   
 
    
 

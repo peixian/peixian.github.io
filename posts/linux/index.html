@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.8f05a91f8620f3a07254c7a0f43d203938d5166cb27f4cac5f31d6acd61f7168.js" integrity="sha256-jwWpH4Yg86ByVMeg9D0gOTjVFmyyf0ysXzHWrNYfcWg="></script>
+<script defer src="/en.search.min.36e3911471dc4b6d1570fcbb032cfbcf53c5a19c01909ec139d61ccd7d5bb46a.js" integrity="sha256-NuORFHHcS20VcPy7Ayz7z1PFoZwBkJ7BOdYczX1btGo="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -57,14 +57,20 @@
 <li>tty -&gt; in the old days, every process had an associated terminal called a tty</li>
 <li>uid -&gt; user the process is running as</li>
 <li>gid -&gt; group id</li>
-</ul>
-<!-- raw HTML omitted -->
-<ul>
 <li>A process can change its ids (<code>setuid</code>)</li>
 <li>From a sysadmin pov, what can you do to a process?
 <ul>
 <li>create/send signals/ps or proc/strace</li>
-<li>each process has an address space, every process thinks it owns the entire theoretical memory of the computer</li>
+<li>each process has an address space, every process thinks it owns the entire theoretical memory of the computer
+<ul>
+<li>why is kernel and user mapped into the same (virtual) address space?</li>
+<li>because it&rsquo;s &ldquo;cheaper&rdquo; in mode switch, and &ldquo;cheaper&rdquo; context switch (kernel stays mapped)
+<ul>
+<li>was actually attempted to be changed in <a href="https://lwn.net/Articles/39283/">https://lwn.net/Articles/39283/</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -92,15 +98,20 @@
 <p>environment variables and cmdline is at the very top</p>
 </li>
 <li>
-<p>kernel puts all of its dataat the top of the data structure</p>
+<p>kernel puts all of its data the top of the data structure</p>
 </li>
-</ul>
-<!-- raw HTML omitted -->
-<ul>
 <li>
-<p><code>pmap</code></p>
+<p>permissions on the memory regions like file</p>
+</li>
+<li>
+<p>physical memory structure (<a href="https://www.youtube.com/watch?v=pI-HRRh7-dU">https://www.youtube.com/watch?v=pI-HRRh7-dU</a>)</p>
+<figure><img src="/ox-hugo/2025-01-05_20-07-50_screenshot.png"/>
+    </figure>
+
 <ul>
-<li>permissions on the memory regions like file</li>
+<li>icache vs dcache</li>
+</ul>
+</li>
 </ul>
 <!-- raw HTML omitted -->
 <ul>
@@ -122,8 +133,6 @@
 <li>real-time priority</li>
 <li>all related to scheduling</li>
 <li><code>nice</code> or <code>getpriority()</code> or <code>setpriority()</code> system calls</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -458,6 +467,40 @@
 </li>
 <li>
 <p>page ins are synchronous! the worst case</p>
+</li>
+<li>
+<p>Linux KPTI:</p>
+<figure><img src="/ox-hugo/2025-01-05_20-34-20_screenshot.png"/>
+    </figure>
+
+<ul>
+<li>separate page table, isolates user space and kernel space (against Meltdown), 5-30% performance degredation, causes partial TLB flushes</li>
+<li><code>pmap</code> gets you memory mappings</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>ASLR</p>
+<ul>
+<li>Where is it controlled?
+<code>/proc/sys/kernel/randomize_va_space</code></li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>48 bit addressing</p>
+<ul>
+<li>
+<p>Linux uses the most significant bit for distinguishing between kernel space and user space (<a href="https://read.seas.harvard.edu/cs161/2018/doc/memory-layout/">https://read.seas.harvard.edu/cs161/2018/doc/memory-layout/</a>)</p>
+<figure><img src="/ox-hugo/2025-01-05_20-56-36_screenshot.png"/>
+        </figure>
+
+</li>
+</ul>
 </li>
 </ul>
 <h4 id="file-mapping-and-demand-paging">File Mapping and Demand Paging</h4>
@@ -1219,6 +1262,11 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 <ul>
 <li><code>objdump</code> to look at elf files</li>
 </ul>
+<h2 id="readelf"><code>readelf</code></h2>
+<ul>
+<li>Allows you to read a binary and check which parts mapped to where</li>
+<li><code>readelf -l userProgram</code></li>
+</ul>
 
           
 
@@ -1779,6 +1827,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 
    
       
+   
+
    
 
    
