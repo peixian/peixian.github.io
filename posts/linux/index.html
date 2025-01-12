@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.36e3911471dc4b6d1570fcbb032cfbcf53c5a19c01909ec139d61ccd7d5bb46a.js" integrity="sha256-NuORFHHcS20VcPy7Ayz7z1PFoZwBkJ7BOdYczX1btGo="></script>
+<script defer src="/en.search.min.a6cb9413eac1f8f226af00d0df63c98760afa4ed7716caa93a97f9582c936fa2.js" integrity="sha256-psuUE&#43;rB&#43;PImrwDQ32PJh2CvpO13FsqpOpf5WCyTb6I="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -1258,7 +1258,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 <ul>
 <li>Foundations of containers for <a href="/posts/kubernentes/">kubernetes (k8s)</a></li>
 </ul>
-<h2 id="objects">Objects</h2>
+<h2 id="memory">Memory</h2>
+<h3 id="objects">Objects</h3>
 <ul>
 <li><code>objdump</code> to look at elf files</li>
 </ul>
@@ -1267,6 +1268,53 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 <li>Allows you to read a binary and check which parts mapped to where</li>
 <li><code>readelf -l userProgram</code></li>
 </ul>
+<h3 id="malloc-behaviors">Malloc Behaviors</h3>
+<ul>
+<li>Malloc can use a data segement on the heap</li>
+<li>Or use an anonmyous mmap()</li>
+<li>Cares about the MMAP_THRESHOLD parameter</li>
+<li>Actually very similar to the erlang binary heap vs heap memory</li>
+<li>Heaps are not really a single region of memory</li>
+</ul>
+<h3 id="syscalls--vsyscalls">Syscalls (vsyscalls)</h3>
+<ul>
+<li>vsyscalls maps a fixed memory region into user space
+<ul>
+<li>some non-dangerous functions, l=such as <code>gettimeofday()</code> are mapped into the user space</li>
+<li>turns out bad with ASLR, and then fixed sizes, so deprecated in favor of vDSO</li>
+</ul>
+</li>
+<li>vDSO
+<ul>
+<li>kernel maps a small shared library into user space</li>
+<li>supports ASLR</li>
+<li>more syscalls space</li>
+</ul>
+</li>
+<li>vvar
+<ul>
+<li>read only variables for VDSO, specific heap for it</li>
+</ul>
+</li>
+</ul>
+<h3 id="stack">Stack</h3>
+<ul>
+<li>how big is the stack? ulimit settings</li>
+<li>on x86, the stack always grows downwards
+<ul>
+<li>since the stack is always a hardware and software feature</li>
+<li>the CPU is aware of the stack</li>
+<li>some arches have the stack grow upwards</li>
+</ul>
+</li>
+<li><code>envp</code> strings sit behind the <code>argv</code> strings
+<ul>
+<li><code>int main(int argc, charg *argv[],char *envp[]) {</code></li>
+<li>auxillery vector sits behind theenvp</li>
+</ul>
+</li>
+</ul>
+<h3 id="data-section">Data Section</h3>
 
           
 
@@ -1451,6 +1499,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 
    
       
+   
+
    
 
    

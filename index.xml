@@ -1733,6 +1733,14 @@ Town east of 10km southeast of baghdad</description>
 https://www.bbc.com/news/world-africa-52488922 </description>
     </item>
     <item>
+      <title>black box optimization</title>
+      <link>/posts/black_box_optimization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/black_box_optimization/</guid>
+      <description>control theory
+vizier ax.dev needs a lot of settings to help tune hyper param sweep gaussian processes </description>
+    </item>
+    <item>
       <title>black scholes</title>
       <link>/posts/black_scholes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7860,7 +7868,7 @@ https://lwn.net/Articles/276782/ Intro What does a linker do? Converts object fi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/linkers/</guid>
       <description>Tags: compilers
-https://blog.thea.codes/the-most-thoroughly-commented-linker-script/ https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp alt-linkers gold https://lwn.net/Articles/274859/ https://lwn.net/Articles/276782/ mold https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp https://github.com/rui314/mold/blob/main/docs/design.md lld https://www.youtube.com/watch?v=CYCRqjVa6l4 https://lld.llvm.org/ profiling linkers Static Linking https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking </description>
+https://blog.thea.codes/the-most-thoroughly-commented-linker-script/ https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp alt-linkers gold https://lwn.net/Articles/274859/ https://lwn.net/Articles/276782/ mold https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp https://github.com/rui314/mold/blob/main/docs/design.md lld https://www.youtube.com/watch?v=CYCRqjVa6l4 https://lld.llvm.org/ profiling linkers Static Linking https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking Tools check ldd and file for linking, although ldd is different </description>
     </item>
     <item>
       <title>linting</title>
