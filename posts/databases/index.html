@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.d9e70994869cf49ad2115571c8a2477b4c535ab26dd380ea9007cac40020b1ef.js" integrity="sha256-2ecJlIac9JrSEVVxyKJHe0xTWrJt04DqkAfKxAAgse8="></script>
+<script defer src="/en.search.min.47735818679718de2ce43dd9e5596ddf8abedf70d8978a431ecbd1abb247c595.js" integrity="sha256-R3NYGGeXGN4s5D3Z5Vlt34q&#43;33DYl4pDHsvRq7JHxZU="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -711,10 +711,11 @@
 <ul>
 <li>SQL-like, but Megastore had poor performance</li>
 </ul>
-<h3 id="truetime--dot-dot-dot-dot-dropbox-org-truetime-dot-md"><a href="/posts/truetime/">truetime</a></h3>
+<h3 id="truetime--truetime-dot-md"><a href="/posts/truetime/">truetime</a></h3>
 <ul>
 <li>With truetime, any two transactions T1 and T2,m if T2 begins to commit after T1 completes committing, then T2&rsquo;s timestamp is &gt; T1&rsquo;s timestamp</li>
 <li>Consistent timestamp allows easy snapshot isolation, since we can just read at a point in tiem</li>
+<li>Liskov, Barbara. “Practical Usesof Synchronized Clocks Undistributed Systems,” n.d.</li>
 </ul>
 <h3 id="cap-theorem-and-spanner">CAP theorem and spanner</h3>
 <ul>
@@ -777,6 +778,47 @@
 <h3 id="eval">Eval</h3>
 <ul>
 <li>Important thing to understand about spanner is TrueTime, by putting bounds on clock drift, you acn get transactions</li>
+</ul>
+<h3 id="spanner-swe-tea-series">Spanner SWE Tea Series</h3>
+<ul>
+<li>Spanner was ultimately based off of F1, which had implemented quite a bit of this before
+<ul>
+<li>Shute, Jeff, Radek Vingralek, Bart Samwel, Ben Handy, Chad Whipkey, Eric Rollins, Mircea Oancea, et al. “F1: A Distributed SQL Database That Scales.” Proceedings of the VLDB Endowment 6, no. 11 (August 27, 2013): 1068–79. <a href="https://doi.org/10.14778/2536222.2536232">https://doi.org/10.14778/2536222.2536232</a>.</li>
+<li>interesting secret sauce was about how they retry requests</li>
+<li>F1 previous had to fetch the entire protobuf value to do a partial decode</li>
+<li>Spanner wasn&rsquo;t originally SQL, but they decided to do quite a bit of pushdown as a result</li>
+</ul>
+</li>
+<li>Becoming a SQL system (Bacon, David F., Nathan Bales, Nico Bruno, Brian F. Cooper, Adam Dickinson, Andrew Fikes, Campbell Fraser, et al. “Spanner: Becoming a SQL System.” In Proceedings of the 2017 ACM International Conference on Management of Data, 331–43. Chicago Illinois USA: ACM, 2017. <a href="https://doi.org/10.1145/3035918.3056103">https://doi.org/10.1145/3035918.3056103</a>.)
+<ul>
+<li>
+<p>range extraction and pushdown</p>
+<ul>
+<li>
+<p>static decomposition of SQL down into <code>scan</code>, <code>filter</code>, and <code>apply</code> primitives</p>
+<figure><img src="/ox-hugo/2025-03-09_16-43-34_screenshot.png"/>
+            </figure>
+
+</li>
+</ul>
+</li>
+<li>
+<p>ressi</p>
+</li>
+<li>
+<p>shard pruning</p>
+<ul>
+<li>location hints about the location of a particular shard</li>
+</ul>
+</li>
+<li>
+<p>restart token</p>
+<ul>
+<li>not much mentioned but this seems to be the secret sauce here</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
           
@@ -2496,6 +2538,10 @@
 
    
 
+   
+
+   
+      
    
 
    
@@ -4470,6 +4516,8 @@
           <li><a href="/posts/distributed_systems/">distributed systems</a></li>
        
           <li><a href="/posts/elixir/">elixir</a></li>
+       
+          <li><a href="/posts/janert_feedback_control_for_computer_systems/">Janert - Feedback Control for Computer Systems</a></li>
        
           <li><a href="/posts/k_v_stores/">k/v stores</a></li>
        

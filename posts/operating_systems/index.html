@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.d9e70994869cf49ad2115571c8a2477b4c535ab26dd380ea9007cac40020b1ef.js" integrity="sha256-2ecJlIac9JrSEVVxyKJHe0xTWrJt04DqkAfKxAAgse8="></script>
+<script defer src="/en.search.min.47735818679718de2ce43dd9e5596ddf8abedf70d8978a431ecbd1abb247c595.js" integrity="sha256-R3NYGGeXGN4s5D3Z5Vlt34q&#43;33DYl4pDHsvRq7JHxZU="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -46,6 +46,30 @@
 <li><a href="https://www.dragonflybsd.org/cgi/web-man?command=checkpoint&amp;section=ANY">https://www.dragonflybsd.org/cgi/web-man?command=checkpoint&amp;section=ANY</a></li>
 <li><a href="http://ithare.com/bringing-architecture-of-operating-systems-to-xxi-century-part-iv-first-draft/">http://ithare.com/bringing-architecture-of-operating-systems-to-xxi-century-part-iv-first-draft/</a></li>
 </ul>
+<h2 id="major-parts">Major Parts</h2>
+<ul>
+<li>Isolation between processes</li>
+<li>Mobility (for mobile)</li>
+<li>Security</li>
+<li>Minimizing the overhead</li>
+<li>Syscalls transition the privilage level
+<ul>
+<li>syscalls are like any regular procedure calls, but with a trap instruction</li>
+<li>kernel agrees to put syscalls on well known locations</li>
+</ul>
+</li>
+</ul>
+<h3 id="trapping-and-untrapping-for-syscalls">Trapping and untrapping for syscalls</h3>
+<ul>
+<li>Process needs to save the program counter (PC)/instruction pointer (IP) which stores the address of the next instructino to be executed (for resuming)</li>
+<li>Some flags about resuming execution on the CPU state</li>
+<li>All of them get written onto a stack on the kernel side, which then pops back up</li>
+</ul>
+<h3 id="limited-direct-execution">Limited Direct Execution</h3>
+<ol>
+<li>At boot kernel initializes a trap table</li>
+<li>When running a process, kernel sets up a trap and return of trap to switch back and forth to do syscalls</li>
+</ol>
 <h2 id="threads">Threads</h2>
 <ul>
 <li>
@@ -681,6 +705,8 @@
 
    
       
+   
+
    
 
    

@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.d9e70994869cf49ad2115571c8a2477b4c535ab26dd380ea9007cac40020b1ef.js" integrity="sha256-2ecJlIac9JrSEVVxyKJHe0xTWrJt04DqkAfKxAAgse8="></script>
+<script defer src="/en.search.min.47735818679718de2ce43dd9e5596ddf8abedf70d8978a431ecbd1abb247c595.js" integrity="sha256-R3NYGGeXGN4s5D3Z5Vlt34q&#43;33DYl4pDHsvRq7JHxZU="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -407,6 +407,13 @@
 <ul>
 <li>
 <p>Page sizes traditionally 4kb, but really if you&rsquo;re a big boy we&rsquo;re all huge pages now</p>
+</li>
+<li>
+<p>One of the bigger issues with paging is that storing the page table and all it&rsquo;s constitutant information can get quite large. So we avoid mapping all the pages</p>
+<ul>
+<li>When a process generates a virtual address, the OS and the hardware have to make it a meaningful real address</li>
+<li>note that if we store page tables in memory, hitting RAM would be prohibitively slow, so we do a TLB</li>
+</ul>
 </li>
 <li>
 <p>There&rsquo;s a page table, and we represent the address space of the program and how it&rsquo;s mapped into the actual ram</p>
@@ -2897,6 +2904,8 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 
    
       
+   
+
    
 
    

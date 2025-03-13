@@ -2258,7 +2258,8 @@ http://wwwimage.cbsnews.com/htdocs/pdf/complete_report/CBS_Report.pdf </descript
       <link>/posts/cellular_networks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/cellular_networks/</guid>
-      <description>Tags: computers</description>
+      <description>Tags: computers
+Go West: microwave tower linking chicago to fiber west coast https://www.gowestnetwork.com/ https://www.ice.com/fixed-income-data-services/access-and-delivery/connectivity-and-feeds/wireless/chicago-tokyo-shanghai similar to https://en.wikipedia.org/wiki/Hibernia_Networks </description>
     </item>
     <item>
       <title>CentOS</title>
@@ -4338,7 +4339,9 @@ Similar to YPG with women soldiers Alienated tons of leftists by kidnapping Near
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/fasttext/</guid>
       <description>Tags: ml, nlp
-https://fasttext.cc/docs/en/supervised-tutorial.html </description>
+https://fasttext.cc/docs/en/supervised-tutorial.html Bojanowski, Piotr, Edouard Grave, Armand Joulin, and Tomas Mikolov. “Enriching Word Vectors with Subword Information.” arXiv, June 19, 2017. https://doi.org/10.48550/arXiv.1607.04606.
+Based off of ngrams
+uses numerically stable transformations, logs to avoid underflow</description>
     </item>
     <item>
       <title>fatah (political party)</title>
@@ -6155,7 +6158,6 @@ https://www.instapaper.com/read/1298996192 Talks about how tech companies not on
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/hystersis_loop/</guid>
       <description>Tags: physics, economics
-https://en.wikipedia.org/wiki/Hysteresis
 https://en.wikipedia.org/wiki/Preisach_model_of_hysteresis</description>
     </item>
     <item>
@@ -6948,6 +6950,14 @@ Pop of around 30k</description>
       <guid>/posts/jamal_kawjar/</guid>
       <description>Tags: people, iraq
 member of the iraqi finance committee</description>
+    </item>
+    <item>
+      <title>Janert - Feedback Control for Computer Systems</title>
+      <link>/posts/janert_feedback_control_for_computer_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/janert_feedback_control_for_computer_systems/</guid>
+      <description>books, computers, control theory
+Chapter 1 - Why Feedback Sets up the book, motivates with reasons to establish control for queues interesting counterpart to queueing theory, where we&amp;rsquo;d traditionally model stuff as a feedforward system Funny this book was written before Kubernetes, which was most people&amp;rsquo;s introduction into a feedback system Chapter 2 - Feedback Systems Notes that you need to track amount of corrective action taken Applying large control actions but need to avoid oscillatory behavior and kicking the system out of a stable state states that the big 3 are: stability, performance, accuracy a lot is buried in accuracy though, since there&amp;rsquo;s a tension between waiting the right amount of time for accurate data and being too slow to take corrective action (Spanner query retries, for example, sets a max wait time by waiting on epsilson) Chapter 3 - System Dynamics Contrasts lag with delay Also mentions that computer systems can arbitrary change internal state, which is true but with a caveat Distributed systems tend to flow from known state to a known state, as multiple nodes typically need to coordinate to move states.</description>
     </item>
     <item>
       <title>janus v ASFCME</title>
@@ -9728,8 +9738,7 @@ Structure from motion library: https://github.com/mapillary/OpenSfM</description
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/operating_systems/</guid>
       <description>Tags: computers
-https://dedis.cs.yale.edu/2010/det/ https://research.cs.wisc.edu/htcondor/description.html https://lwn.net/Articles/293575/ https://www.dragonflybsd.org/cgi/web-man?command=sys_checkpoint&amp;amp;section=2 https://www.dragonflybsd.org/cgi/web-man?command=checkpoint&amp;amp;section=ANY http://ithare.com/bringing-architecture-of-operating-systems-to-xxi-century-part-iv-first-draft/ Threads Similar to a linux process that always run in the same memory
-own instruction pointer, and can be scheduled on different CPU&amp;rsquo;s and executing different things on the same program shares the process structure (execpt stacks) linux threads have their own pid solaris is completely thread based in linux, a thread is a prococess without a thread created with the clone() system call treat as one process in some games, uses the thread group getpid() will tell you some info syn and locks!</description>
+https://dedis.cs.yale.edu/2010/det/ https://research.cs.wisc.edu/htcondor/description.html https://lwn.net/Articles/293575/ https://www.dragonflybsd.org/cgi/web-man?command=sys_checkpoint&amp;amp;section=2 https://www.dragonflybsd.org/cgi/web-man?command=checkpoint&amp;amp;section=ANY http://ithare.com/bringing-architecture-of-operating-systems-to-xxi-century-part-iv-first-draft/ Major Parts Isolation between processes Mobility (for mobile) Security Minimizing the overhead Syscalls transition the privilage level syscalls are like any regular procedure calls, but with a trap instruction kernel agrees to put syscalls on well known locations Trapping and untrapping for syscalls Process needs to save the program counter (PC)/instruction pointer (IP) which stores the address of the next instructino to be executed (for resuming) Some flags about resuming execution on the CPU state All of them get written onto a stack on the kernel side, which then pops back up Limited Direct Execution At boot kernel initializes a trap table When running a process, kernel sets up a trap and return of trap to switch back and forth to do syscalls Threads Similar to a linux process that always run in the same memory</description>
     </item>
     <item>
       <title>operation cast lead</title>
@@ -10742,7 +10751,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5459228/ </description>
       <link>/posts/predictions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/predictions/</guid>
-      <description> root Forecase Date Eval Date Statement Forecast Probabiltiy Eval Result 9/10/23 31/11/23 I will be B2+/C1- in Spanish 90% True 9/10/23 14/12/23 I will have learned basic snowboarding 80% False 9/10/23 01/02/24 I will have figured out a topic for UdelaR 75% False 06/06/24 01/09/24 I will have settled into my job at Meta 80% True 06/06/24 01/10/24 I will have figured out an approach to the code ownership political problem on chatd 50% True 10/13/24 01/02/24 I will have gotten my shit together and be running on all cylindars 80% 10/13/24 01/02/24 I will be able to hold a conversation in Guarani 50% </description>
+      <description> root Forecase Date Eval Date Statement Forecast Probabiltiy Eval Result Failure Reason? 9/10/23 31/11/23 I will be B2+/C1- in Spanish 90% True 9/10/23 14/12/23 I will have learned basic snowboarding 80% False Didn&amp;rsquo;t work out! 9/10/23 01/02/24 I will have figured out a topic for UdelaR 75% False Pivoted to new job 06/06/24 01/09/24 I will have settled into my job at Meta 80% True 06/06/24 01/10/24 I will have figured out an approach to the code ownership political problem on chatd 50% True 13/10/24 01/02/24 I will have gotten my shit together and be running on all cylindars 80% True 13/10/24 01/02/24 I will be able to hold a conversation in Guarani 50% False Deprecated in favor of russian 16/02/24 01/05/24 I will be able to back on mathematics 50% 16/02/24 01/05/24 I will have learned D3 and Ratatui and gotten better at UI tooling 80% 16/02/24 01/05/24 I will be able to hold a conversation in Russian 30% </description>
     </item>
     <item>
       <title>Pursely - Familiar Futures</title>
@@ -10927,7 +10936,7 @@ unitary circuits: https://drive.google.com/file/d/1uPLyTeiljsJPfWudwpRgGyC1CdKNc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/query_optimizers/</guid>
       <description>Tags: sql
-https://www.vldb.org/pvldb/vol9/p204-leis.pdf </description>
+https://www.vldb.org/pvldb/vol9/p204-leis.pdf Reading list https://15799.courses.cs.cmu.edu/spring2025/schedule.html </description>
     </item>
     <item>
       <title>question answering</title>
@@ -12520,7 +12529,8 @@ https://mc-stan.org/ laplacian eigenmaps: Belkin, Mikhail, and Partha Niyogi. �
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/statistics/</guid>
       <description>Tags: math
-https://en.wikipedia.org/wiki/F-score Base Rate Neglect Example problem: given the question &amp;ldquo;is this woman a farmer or a librarian&amp;rdquo;, the base rate is that there are magnitudes more farmers than librarians, so the question actually reduces from woman farmer/librarian to any farmer/librarian, but the base rate is neglected</description>
+https://en.wikipedia.org/wiki/F-score Base Rate Neglect Example problem: given the question &amp;ldquo;is this woman a farmer or a librarian&amp;rdquo;, the base rate is that there are magnitudes more farmers than librarians, so the question actually reduces from woman farmer/librarian to any farmer/librarian, but the base rate is neglected
+Elements of Statistical Learning Guide https://blog.headlandstech.com/2022/02/16/elements-of-statistical-learning-8-10/ companion: https://developers.google.com/machine-learning/guides/rules-of-ml </description>
     </item>
     <item>
       <title>stats from org roam</title>
