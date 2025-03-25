@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.f545d37129e39984b64c18d56c7521e4b70f6b259454461b3e3f1965768a994f.js" integrity="sha256-9UXTcSnjmYS2TBjVbHUh5LcPayWUVEYbPj8ZZXaKmU8="></script>
+<script defer src="/en.search.min.4333a88fb4696f8624a909b771b37ea76901393e922c609b02ffd05d6620e703.js" integrity="sha256-QzOoj7Rpb4YkqQm3cbN&#43;p2kBOT6SLGCbAv/QXWYg5wM="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -41,20 +41,36 @@
 <ul>
 <li><a href="https://fasttext.cc/docs/en/supervised-tutorial.html">https://fasttext.cc/docs/en/supervised-tutorial.html</a></li>
 </ul>
-<!-- raw HTML omitted -->
+<h2 id="bojanowski-piotr-edouard-grave-armand-joulin-and-tomas-mikolov-dot-enriching-word-vectors-with-subword-information-dot-arxiv-june-19-2017-dot-https-doi-dot-org-10-dot-48550-arxiv-dot-1607-dot-04606-dot">Bojanowski, Piotr, Edouard Grave, Armand Joulin, and Tomas Mikolov. “Enriching Word Vectors with Subword Information.” arXiv, June 19, 2017. <a href="https://doi.org/10.48550/arXiv.1607.04606">https://doi.org/10.48550/arXiv.1607.04606</a>.</h2>
 <ul>
-<li>
-<p>Bojanowski, Piotr, Edouard Grave, Armand Joulin, and Tomas Mikolov. “Enriching Word Vectors with Subword Information.” arXiv, June 19, 2017. <a href="https://doi.org/10.48550/arXiv.1607.04606">https://doi.org/10.48550/arXiv.1607.04606</a>.</p>
-</li>
-<li>
-<p>Based off of ngrams</p>
+<li>Based off of ngrams
 <ul>
-<li>
-<p>uses numerically stable transformations, logs to avoid underflow</p>
-</li>
-<li></li>
+<li>uses numerically stable transformations, logs to avoid underflow</li>
+<li>very simple, 1 layer neural network basically</li>
 </ul>
 </li>
+</ul>
+<h2 id="joulin-armand-edouard-grave-piotr-bojanowski-matthijs-douze-hérve-jégou-and-tomas-mikolov-dot-fasttext-dot-zip-compressing-text-classification-models-dot-arxiv-december-12-2016-dot-https-doi-dot-org-10-dot-48550-arxiv-dot-1612-dot-03651-dot">Joulin, Armand, Edouard Grave, Piotr Bojanowski, Matthijs Douze, Hérve Jégou, and Tomas Mikolov. “FastText.Zip: Compressing Text Classification Models.” arXiv, December 12, 2016. <a href="https://doi.org/10.48550/arXiv.1612.03651">https://doi.org/10.48550/arXiv.1612.03651</a>.</h2>
+<ul>
+<li>
+<p>Very simple as well, vector compression by using a codebook: <a href="/posts/product_quantization/">product quantization</a></p>
+</li>
+<li>
+<p>notes that &ldquo;the norms of the vectors are widely spread, typically with a ratio of 1000 between the max and the min&rdquo;</p>
+</li>
+<li>
+<p>turns out you can prune the most common words (those with lowest entropy)</p>
+<ul>
+<li>you can also prune out the vectors that don&rsquo;t add very much (i.e. low norms)</li>
+</ul>
+<figure><img src="/ox-hugo/2025-03-24_20-57-26_screenshot.png"/>
+    </figure>
+
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>the prunables: periods and commas don&rsquo;t add anything so low entropy, mediocre/disappointing/so-so etc don&rsquo;t add much value, so low norm</li>
 </ul>
 
           
@@ -2673,6 +2689,10 @@
    
 
    
+      
+   
+
+   
 
    
 
@@ -3724,6 +3744,8 @@
         <ul>
        
           <li><a href="/posts/embedding_text_into_vector_spaces/">embedding text into vector spaces</a></li>
+       
+          <li><a href="/posts/product_quantization/">product quantization</a></li>
        
      </ul>
     </div>

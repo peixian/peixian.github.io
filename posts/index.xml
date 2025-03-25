@@ -115,7 +115,8 @@ Actively need prioritization statistics nlp (specifically pytorch) raw languages
       <link>/posts/2025_goals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/2025_goals/</guid>
-      <description>2024 Goals recap Got into fb job Fluency in spanish -&amp;gt; very good get back in shape -&amp;gt; no, still around 200 pounds arabic improvements -&amp;gt; definitely, but still a ways to go 2025 Goals 30 years old Need to be in shape Climbing -&amp;gt; climb a 5.11 with ease Weight -&amp;gt; 170 diet really needs to improve for this some kind of humantiarian training, either demining, or wilderness emt, or snr, or whatever Get really good at my fb job, become critical to running calling, media, and chat Go to Syria this year Languages start Russian again Establish base in Guarani Continue with Spanish and Arabic </description>
+      <description>personal
+2024 Goals recap Got into fb job Fluency in spanish -&amp;gt; very good get back in shape -&amp;gt; no, still around 200 pounds arabic improvements -&amp;gt; definitely, but still a ways to go 2025 Goals 30 years old Need to be in shape Climbing -&amp;gt; climb a 5.11 with ease Weight -&amp;gt; 170 diet really needs to improve for this some kind of humantiarian training, either demining, or wilderness emt, or snr, or whatever Get really good at my fb job, become critical to running calling, media, and chat Go to Syria this year Languages start Russian again Establish base in Guarani Continue with Spanish and Arabic </description>
     </item>
     <item>
       <title>48 palestine vs 67 palestine</title>
@@ -897,7 +898,7 @@ Anki thread: https://old.reddit.com/r/Anki/comments/g02f9s/help_me_reevaluate_an
       <link>/posts/anki_test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/anki_test/</guid>
-      <description></description>
+      <description>anki</description>
     </item>
     <item>
       <title>annotations</title>
@@ -4339,9 +4340,7 @@ Similar to YPG with women soldiers Alienated tons of leftists by kidnapping Near
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/fasttext/</guid>
       <description>Tags: ml, nlp
-https://fasttext.cc/docs/en/supervised-tutorial.html Bojanowski, Piotr, Edouard Grave, Armand Joulin, and Tomas Mikolov. “Enriching Word Vectors with Subword Information.” arXiv, June 19, 2017. https://doi.org/10.48550/arXiv.1607.04606.
-Based off of ngrams
-uses numerically stable transformations, logs to avoid underflow</description>
+https://fasttext.cc/docs/en/supervised-tutorial.html Bojanowski, Piotr, Edouard Grave, Armand Joulin, and Tomas Mikolov. “Enriching Word Vectors with Subword Information.” arXiv, June 19, 2017. https://doi.org/10.48550/arXiv.1607.04606. Based off of ngrams uses numerically stable transformations, logs to avoid underflow very simple, 1 layer neural network basically Joulin, Armand, Edouard Grave, Piotr Bojanowski, Matthijs Douze, Hérve Jégou, and Tomas Mikolov. “FastText.Zip: Compressing Text Classification Models.” arXiv, December 12, 2016. https://doi.org/10.48550/arXiv.1612.03651. Very simple as well, vector compression by using a codebook: product quantization</description>
     </item>
     <item>
       <title>fatah (political party)</title>
@@ -8647,7 +8646,7 @@ http://www.eecs.harvard.edu/~michaelm/NEWWORK/postscripts/twosurvey.pdf https://
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/ml/</guid>
       <description>Tags: Computers, math
-Failures Zillow winds down their ml model house flipping scheme: https://www.prnewswire.com/news-releases/zillow-group-reports-third-quarter-2021-financial-results--shares-plan-to-wind-down-zillow-offers-operations-301414460.html?tc=eml_cleartime ML Tools visualizer: https://github.com/lutzroeder/netron voice coloning: https://git.ecker.tech/mrq/ai-voice-cloning/wiki/Installation https://seamless.metademolab.com/expressive/?utm_source=metaai&amp;amp;utm_medium=web&amp;amp;utm_campaign=seamless&amp;amp;utm_content=landing_page seamless voice models from FB Tree Based Models https://arxiv.org/abs/2207.08815 </description>
+Failures Zillow winds down their ml model house flipping scheme: https://www.prnewswire.com/news-releases/zillow-group-reports-third-quarter-2021-financial-results--shares-plan-to-wind-down-zillow-offers-operations-301414460.html?tc=eml_cleartime ML Tools visualizer: https://github.com/lutzroeder/netron voice coloning: https://git.ecker.tech/mrq/ai-voice-cloning/wiki/Installation https://seamless.metademolab.com/expressive/?utm_source=metaai&amp;amp;utm_medium=web&amp;amp;utm_campaign=seamless&amp;amp;utm_content=landing_page seamless voice models from FB Tree Based Models https://arxiv.org/abs/2207.08815 RL Fisher information matrix? Computer Vision </description>
     </item>
     <item>
       <title>ml conferences</title>
@@ -10578,7 +10577,7 @@ Book in 1913 describing how to construct axioms for a mathmatical symbol without
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/probability/</guid>
       <description>Tags: statistics
-https://www.vfu.bg/en/e-Learning/Math--Bertsekas_Tsitsiklis_Introduction_to_probability.pdf https://realnotcomplex.com/probability-and-statistics/probability-theory/introduction-to-probability-by-dimitri-p-bertsekas-and-john-n-tsitsiklis https://realnotcomplex.com/probability-and-statistics/probability-theory/a-short-introduction-to-probability-by-dirk-p-kroese https://faculty.math.illinois.edu/~r-ash/BPT.html https://realnotcomplex.com/probability-and-statistics/probability-theory/basic-probability-theory-by-robert-b-ash https://realnotcomplex.com/ </description>
+https://www.vfu.bg/en/e-Learning/Math--Bertsekas_Tsitsiklis_Introduction_to_probability.pdf https://realnotcomplex.com/probability-and-statistics/probability-theory/introduction-to-probability-by-dimitri-p-bertsekas-and-john-n-tsitsiklis https://realnotcomplex.com/probability-and-statistics/probability-theory/a-short-introduction-to-probability-by-dirk-p-kroese https://faculty.math.illinois.edu/~r-ash/BPT.html https://realnotcomplex.com/probability-and-statistics/probability-theory/basic-probability-theory-by-robert-b-ash https://realnotcomplex.com/ Probability Simplex A shape where each vertex represents a probability Example: Outcomes: {1, 2, 3} Let the probabilities be p1​,p2​,p3​. We know that p1​≥0, p2​≥0, p3​≥0, and p1​+p2​+p3​=1. Geometrically, this can be represented by a 2-simplex, which is an equilateral triangle. Each vertex of the triangle represents a distribution where one outcome has a probability of 1 and the others have a probability of 0.</description>
     </item>
     <item>
       <title>problems and methods</title>
@@ -10628,6 +10627,14 @@ https://procrastinus.com/piers-steel/theories-of-procrastination/ https://common
       <guid>/posts/procyclical_and_countercyclical/</guid>
       <description>Tags: economics
 https://en.wikipedia.org/wiki/Procyclical_and_countercyclical_variables</description>
+    </item>
+    <item>
+      <title>product quantization</title>
+      <link>/posts/product_quantization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/product_quantization/</guid>
+      <description>linear algebra
+Successfully applied in Computer Vision before it got applied to fasttext </description>
     </item>
     <item>
       <title>professional development session with thanassis cambanis</title>
