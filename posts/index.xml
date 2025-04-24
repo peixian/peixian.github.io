@@ -1066,7 +1066,7 @@ Duenas - Unwanted Witnesses Describes arendt as establishing an analogy between 
       <guid>/posts/argentina/</guid>
       <description>Tags: latam
 Taxi drivers in Buenos Aires: https://www.sup.org/books/title/?id=31529
-Tierra Del Fuego religion - there&amp;rsquo;s little stands along the way in Ushuaia, where they call them &amp;ldquo;gauchitos&amp;rdquo;, people offer small offerings like cigs, water, etc to pray for safety along the road Rentista Visa https://www.celano.com.ar/practice-areas/ https://old.reddit.com/r/IWantOut/comments/ie15vm/iwantout_22m_us_argentina/ https://www.sovereignman.com/second-residency/argentina-rentista-visa-2023-a-closer-look-at-this-updated-residency-program-148027/ https://residencies.io/residency/argentina/temporary-residency/ar1 https://immi.legal/rentista-visa/ https://baexpats.org/threads/quick-citizenship.46211/page-2#post-438085 </description>
+Tierra Del Fuego religion - there&amp;rsquo;s little stands along the way in Ushuaia, where they call them &amp;ldquo;gauchitos&amp;rdquo;, people offer small offerings like cigs, water, etc to pray for safety along the road Rentista Visa https://www.celano.com.ar/practice-areas/ https://old.reddit.com/r/IWantOut/comments/ie15vm/iwantout_22m_us_argentina/ https://www.sovereignman.com/second-residency/argentina-rentista-visa-2023-a-closer-look-at-this-updated-residency-program-148027/ https://residencies.io/residency/argentina/temporary-residency/ar1 https://immi.legal/rentista-visa/ https://baexpats.org/threads/quick-citizenship.46211/page-2#post-438085 Impentrable Forest https://www.nationalgeographic.com/travel/article/argentina-impenetrable-national-park-anteaters-jaguars </description>
     </item>
     <item>
       <title>ariha</title>
@@ -3181,10 +3181,9 @@ https://doc.dpdk.org/guides-16.04/linux_gsg/index.html Uses poll mode drivers </
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/databases/</guid>
       <description>Tags: Computers
-Class https://15721.courses.cs.cmu.edu/spring2019/schedule.html https://www.youtube.com/playlist?app=desktop&amp;amp;list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&amp;amp;themeRefresh=1 MariaDB https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/ Calcite https://calcite.apache.org used in bodo.ai Query optimizers how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf Query Pushdown basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/ Foundation DB https://apple.github.io/foundationdb/data-modeling.html https://apple.github.io/foundationdb/developer-guide.html DynamoDB Similar to Cassandra, has partition key and sort key
+papers https://github.com/jonathanc-n/datapapers Class https://15721.courses.cs.cmu.edu/spring2019/schedule.html https://www.youtube.com/playlist?app=desktop&amp;amp;list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&amp;amp;themeRefresh=1 MariaDB https://mariadb.com/kb/en/index-hints-how-to-force-query-plans/ Calcite https://calcite.apache.org used in bodo.ai Query optimizers how good are query optimizers? https://www.vldb.org/pvldb/vol9/p204-leis.pdf Query Pushdown basically compliling the code and pushing the query down to the execution node https://blog.yugabyte.com/5-query-pushdowns-for-distributed-sql-and-how-they-differ-from-a-traditional-rdbms/ Foundation DB https://apple.github.io/foundationdb/data-modeling.html https://apple.github.io/foundationdb/developer-guide.html DynamoDB Similar to Cassandra, has partition key and sort key
 Can horizontally partition across different nodes, similar to cassandra
-Similarly, need to split a partition when it gets hot
-There&amp;rsquo;s an automated systems that defines a read capacity unit and a write capacity unit.</description>
+Similarly, need to split a partition when it gets hot</description>
     </item>
     <item>
       <title>dataflow</title>
@@ -3770,6 +3769,14 @@ https://aceproject.org/main/english/es/esg03.htm</description>
       <guid>/posts/electrical_engineering/</guid>
       <description>Tags: grad school
 https://www.ee.columbia.edu/ms-program-ee https://www.sfs.columbia.edu/content/graduate-10 https://www.ee.columbia.edu/files/seasdepts/electrical-engineering/pdf-files/CommunicationsFlowchart2018.pdf https://bulletin.engineering.columbia.edu/master-science-degree-0 https://www.ee.columbia.edu/ms-program-ee https://study.com/articles/How_Long_is_a_Masters_Degree_in_Electrical_Engineering.html https://www.ee.columbia.edu/files/seasdepts/electrical-engineering/pdf-files/MSCheckList2015.pdf https://www.ee.columbia.edu/course-flowcharts-0 https://www.eecs.mit.edu/academics-admissions/graduate-program/faqs </description>
+    </item>
+    <item>
+      <title>electricity</title>
+      <link>/posts/electricity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/electricity/</guid>
+      <description>electrical engineering
+Kite simulators https://github.com/rafmudaf/openfast/tree/kitefast </description>
     </item>
     <item>
       <title>elements of programming interviews</title>
@@ -6987,7 +6994,7 @@ https://www.dampfkraft.com/how-i-got-my-japanese-pr.html </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/java/</guid>
       <description>Tags: computers
-tail call optimization https://github.com/Sipkab/jvm-tail-recursion JVM profiling https://blunders.io/ Java Flight Hibernate Java orm, very popular </description>
+tail call optimization https://github.com/Sipkab/jvm-tail-recursion JVM profiling https://blunders.io/ Java Flight Hibernate Java orm, very popular https://stopjava.com/ </description>
     </item>
     <item>
       <title>javascript</title>
@@ -14157,7 +14164,7 @@ https://arxiv.org/pdf/1706.03762.pdf https://medium.com/@adityathiruvengadam/tra
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/video_games/</guid>
       <description>computers
-Dolphin In Paper Mario: Thousand Year Door, they utilize &amp;ldquo;EFB copies&amp;rdquo; for some textures that come out of the CPU: https://wiki.dolphin-emu.org/index.php?title=Paper_Mario%3A_The_Thousand-Year_Door </description>
+Dolphin In Paper Mario: Thousand Year Door, they utilize &amp;ldquo;EFB copies&amp;rdquo; for some textures that come out of the CPU: https://wiki.dolphin-emu.org/index.php?title=Paper_Mario%3A_The_Thousand-Year_Door Nintendo Switch https://en-americas-support.nintendo.com/app/answers/detail/a_id/22272/~/how-to-set-up-a-routers-port-forwarding-for-a-nintendo-switch-console - asks you to open ports 1024 through 65535 for UDP lol </description>
     </item>
     <item>
       <title>vietnam</title>
