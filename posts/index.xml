@@ -2346,7 +2346,7 @@ https://books.google.com/books?hl=en&amp;amp;lr=&amp;amp;id=ruBTDwAAQBAJ&amp;amp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/china/</guid>
       <description>Tags: root
-Resources: https://macropolo.org/ Labor protest map https://maps.clb.org.hk/ Chinese Cities and Breakdown https://crossingtheriver.substack.com/p/how-to-understand-the-provinces-prefectures </description>
+Resources: https://macropolo.org/ Labor protest map https://maps.clb.org.hk/ Chinese Cities and Breakdown https://crossingtheriver.substack.com/p/how-to-understand-the-provinces-prefectures Middle East https://www.gorgiaspress.com/islam-in-china-and-the-islamic-world </description>
     </item>
     <item>
       <title>china and the middle income trap</title>
@@ -3079,7 +3079,7 @@ Cross lingual 7.5k per language Meant to evaluate cross-lingual transfer slightl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/crypto/</guid>
       <description>Tags: Computers
-Bulletproofs https://crypto.stanford.edu/bulletproofs/ </description>
+Bulletproofs https://crypto.stanford.edu/bulletproofs/ Noise Pipes https://github.com/libp2p/specs/blob/master/noise/README.md https://github.com/libp2p/specs/issues/246 https://medium.com/@cody_84149/security-without-tls-1da099a80550 https://en.wikipedia.org/wiki/Noise_Protocol_Framework wireguard post quantum - https://rosenpass.eu/ http://www.noiseprotocol.org/#resources https://duo.com/labs/tech-notes/noise-protocol-framework-intro https://dl.acm.org/doi/10.1145/3548606.3560577 https://kclpure.kcl.ac.uk/ws/portalfiles/portal/324396471/whatsapp.pdf </description>
     </item>
     <item>
       <title>cuelang</title>
@@ -3628,7 +3628,8 @@ In &amp;ldquo;Violence and History: A Response to Thandika Mkandawire&amp;rsquo;
       <link>/posts/e_activity_3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/e_activity_3/</guid>
-      <description>Prompt: Where does responsibility for violence suffered by migrants lie?
+      <description>Tags: conflict and violence
+Prompt: Where does responsibility for violence suffered by migrants lie?
 Draft Migrants suffer a litany of horrors on their path to their ultimate destination. Existing on the bounded continuum, migrants are labeled somewhere between &amp;ldquo;refugee&amp;rdquo; and &amp;ldquo;economic migrant&amp;rdquo;. This dual classification, with significant grey area in between, affords people different rights and treatment along the way. For example, the term refugee carries implies significant loss of agency, but garners international sympathy and affords access to certain institutions.</description>
     </item>
     <item>
@@ -14468,6 +14469,13 @@ https://docs.microsoft.com/en-us/windows-server/failover-clustering/failover-clu
       <guid>/posts/winograd_schemas/</guid>
       <description>Tags: ml
 many different formats rely on tricky sentences (ambigious sentences where pronous are difficult) repeatedly proposed as an nlu-oriented alternative to the turing test no single standard dataset, but many small collections, each with a different format </description>
+    </item>
+    <item>
+      <title>wireguard</title>
+      <link>/posts/wireguard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/wireguard/</guid>
+      <description>networks</description>
     </item>
     <item>
       <title>wkhtmltopdf</title>
