@@ -5651,7 +5651,7 @@ configuration of haproxy by default will cache DNS records, and need to be flush
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/hard_drives/</guid>
       <description>Tags: hardware
-NVMe NVMe drives will lie about write speeds under low traffic NVMe drives are good for append-operations (aka structured logs) linux has nvme to deal with this in theory, the drives and the controllers are different, but in practice, these are sold as one whole thing https://nvmexpress.org/wp-content/uploads/NVM-Express-1_4c-2021.06.28-Ratified.pdf Leverages PCIe bus NVMe driver replaces the old block layer requester Writes and Reads NVMe writes and reads are done through two circular buffers, a submission queue and a completion queue.</description>
+Spinning Rust Operating systems implement all sorts of spinning rust scheduling, since they can make a good guess about how long operations will take (compared to jobs) SSTF - shortest seek time first, but vulnerable to starvation due to a stream of nearby jobs SCAN - loops back and forth, enqueueing for the next scan SPTF - Shortest access first Disks can also merge IOs together NVMe NVMe drives will lie about write speeds under low traffic NVMe drives are good for append-operations (aka structured logs) linux has nvme to deal with this in theory, the drives and the controllers are different, but in practice, these are sold as one whole thing https://nvmexpress.</description>
     </item>
     <item>
       <title>hardware</title>

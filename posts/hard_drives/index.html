@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.584cf1de9ca352d9ef3b096ac8cc7c5b58bb88bd14b862f442e9ce713b292ee8.js" integrity="sha256-WEzx3pyjUtnvOwlqyMx8W1i7iL0UuGL0QunOcTspLug="></script>
+<script defer src="/en.search.min.4ae38baa307f0cd37c205bd8fcce59d91195d10b30e7eb60d6466a0a0ca0c161.js" integrity="sha256-SuOLqjB/DNN8IFvY/M5Z2RGV0Qsw5&#43;tg1kZqCgygwWE="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -38,6 +38,17 @@
           <h1>hard drives</h1>
 
           <p>Tags: <a href="/posts/hardware/">hardware</a></p>
+<h2 id="spinning-rust">Spinning Rust</h2>
+<ul>
+<li>Operating systems implement all sorts of spinning rust scheduling, since they can make a good guess about how long operations will take (compared to jobs)
+<ul>
+<li>SSTF - shortest seek time first, but vulnerable to starvation due to a stream of nearby jobs</li>
+<li>SCAN - loops back and forth, enqueueing for the next scan</li>
+<li>SPTF - Shortest access first</li>
+</ul>
+</li>
+<li>Disks can also merge IOs together</li>
+</ul>
 <h2 id="nvme">NVMe</h2>
 <ul>
 <li>NVMe drives will lie about write speeds under low traffic</li>
