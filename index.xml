@@ -9606,6 +9606,14 @@ I think I do too much. I try to do work, I try to engage with tech, I try to do 
 Why am I in karbala? Viewing funeral and rituals. Coming to Iraq, why stay here? Why listen and go through all this? Why see the disfigured in hopes of seeing the holy? Why ask questions, why see people who go through tatbir and aim at the verge of death?</description>
     </item>
     <item>
+      <title>on giving a shit</title>
+      <link>/posts/on_giving_a_shit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/on_giving_a_shit/</guid>
+      <description>drafts
+Everyone at WA gives a shit Some people work hard and very long hours, but the key result is that they really care </description>
+    </item>
+    <item>
       <title>on historiography</title>
       <link>/posts/historiography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -9820,9 +9828,9 @@ https://github.com/schnorr/acmorg https://github.com/novoid/orgmode-ACM-template
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/20200414093947-org_mode/</guid>
       <description>Tags: Taking Smart Notes, emacs
-org deft: https://jblevins.org/projects/deft/ https://www.leonrische.me/ has org flashcards (https://www.leonrische.me/pages/org_flashcards.html) and org zettelkasten (https://github.com/l3kn/org-zettelkasten) org roam appendix: https://org-roam.readthedocs.io/en/master/notetaking_workflow/ org roam HN thread: https://news.ycombinator.com/item?id=22767658 Org bullets: https://www.spacemacs.org/layers/+emacs/org/README.html Org-ref https://github.com/jkitchin/org-ref/blob/master/org-ref.org Example: https://raw.githubusercontent.com/jkitchin/org-ref/master/tests/test-1.org setup need
+org deft: https://jblevins.org/projects/deft/ https://www.leonrische.me/ has org flashcards (https://www.leonrische.me/pages/org_flashcards.html) and org zettelkasten (https://github.com/l3kn/org-zettelkasten) org roam appendix: https://org-roam.readthedocs.io/en/master/notetaking_workflow/ org roam HN thread: https://news.ycombinator.com/item?id=22767658 Org bullets: https://www.spacemacs.org/layers/+emacs/org/README.html 10 years of org https://xenodium.com/writing-experience-my-decade-with-org Org-ref https://github.com/jkitchin/org-ref/blob/master/org-ref.org Example: https://raw.githubusercontent.com/jkitchin/org-ref/master/tests/test-1.org setup need
 #+latex_header: \usepackage[citestyle=verbose,bibstyle=numeric, hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true] {biblatex} #+latex_header: \addbibresource{~/Dropbox/bib/refs.bib} #+EXCLUDE_TAGS: noexport at the start of every file. :noexport: marks headings to not export within the file also see https://tex.stackexchange.com/questions/21439/is-there-any-advantage-to-using-addbibresource-over-bibliography
-Footcites: https://tex.stackexchange.com/questions/344116/setting-bibliography-style-in-footnotes-with-biblatex Biblatex vs bibtex vs biber https://tex.stackexchange.com/questions/25701/bibtex-vs-biber-and-biblatex-vs-natbib Cite types defined in org-ref-cite-types Citing with pages https://old.</description>
+Footcites: https://tex.stackexchange.com/questions/344116/setting-bibliography-style-in-footnotes-with-biblatex Biblatex vs bibtex vs biber https://tex.</description>
     </item>
     <item>
       <title>org-noweb</title>
