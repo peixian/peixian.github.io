@@ -12554,7 +12554,7 @@ https://mc-stan.org/ laplacian eigenmaps: Belkin, Mikhail, and Partha Niyogi. â€
       <guid>/posts/statistics/</guid>
       <description>Tags: math
 https://en.wikipedia.org/wiki/F-score Base Rate Neglect Example problem: given the question &amp;ldquo;is this woman a farmer or a librarian&amp;rdquo;, the base rate is that there are magnitudes more farmers than librarians, so the question actually reduces from woman farmer/librarian to any farmer/librarian, but the base rate is neglected
-Elements of Statistical Learning Guide https://blog.headlandstech.com/2022/02/16/elements-of-statistical-learning-8-10/ companion: https://developers.google.com/machine-learning/guides/rules-of-ml </description>
+Elements of Statistical Learning Guide https://blog.headlandstech.com/2022/02/16/elements-of-statistical-learning-8-10/ companion: https://developers.google.com/machine-learning/guides/rules-of-ml Bradly-Terry (and Plackett-Luce) https://en.wikipedia.org/wiki/Bradley%E2%80%93Terry_model#Plackett%E2%80%93Luce_model Ways of modeling pairwise/N rankings </description>
     </item>
     <item>
       <title>stats from org roam</title>
