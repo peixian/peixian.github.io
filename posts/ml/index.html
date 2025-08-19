@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.f4692ea4d64e41a43748db90f07e640b841e3e86be426a47f6885389450acf3a.js" integrity="sha256-9GkupNZOQaQ3SNuQ8H5kC4QePoa&#43;QmpH9ohTiUUKzzo="></script>
+<script defer src="/en.search.min.c24d2b2f5158135525a6ca1547b575cecfb775550a92e8dedec8686bd221e5cb.js" integrity="sha256-wk0rL1FYE1UlpsoVR7V1zs&#43;3dVUKkuje3shoa9Ih5cs="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -55,6 +55,119 @@
 <h2 id="tree-based-models">Tree Based Models</h2>
 <ul>
 <li><a href="https://arxiv.org/abs/2207.08815">https://arxiv.org/abs/2207.08815</a></li>
+</ul>
+<h2 id="post-training-methods">Post Training Methods</h2>
+<!-- raw HTML omitted -->
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Who supplies preferences?</th>
+<th>Reward model?</th>
+<th>Optimizer / loss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RLHF</td>
+<td>Humans</td>
+<td>Yes</td>
+<td>RL (policy‑gradient) with KL to reference policy</td>
+</tr>
+<tr>
+<td>RLAIF</td>
+<td>LLM (AI)</td>
+<td>Yes</td>
+<td>RL (policy‑gradient) with KL to reference policy</td>
+</tr>
+<tr>
+<td>d‑RLAIF</td>
+<td>LLM (AI), on‑policy scoring</td>
+<td>No — LLM provides scalar reward</td>
+<td>RL (policy‑gradient) with KL to reference policy</td>
+</tr>
+<tr>
+<td>DPO</td>
+<td>Humans or AI (pairwise prefs)</td>
+<td>No</td>
+<td>Direct Preference Optimization (classification‑style)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dpo--direct-preference-optimization">DPO (direct preference optimization)</h2>
+<ul>
+<li>
+<p>Rafailov, Rafael, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D. Manning, and Chelsea Finn. “Direct Preference Optimization: Your Language Model Is Secretly a Reward Model.” arXiv:2305.18290. Preprint, arXiv, July 29, 2024. <a href="https://doi.org/10.48550/arXiv.2305.18290">https://doi.org/10.48550/arXiv.2305.18290</a>. - <a href="/posts/papers/">papers</a></p>
+</li>
+<li>
+<p>Used generally now, llama 4 was done with a combination of online RL (where we have ground truths) and then DPO</p>
+</li>
+<li>
+<p>DPO saves you the effort of having to do any specific RM training</p>
+</li>
+<li>
+<p>Core claim: the standard RLHF objective (maximize learned reward under a KL constraint to a reference policy) can be optimized <strong><strong>exactly</strong></strong> with a simple <strong><strong>binary cross-entropy</strong></strong> on preference pairs—no actor–critic loop, no on-policy sampling, minimal tuning. (Fig. 1, p.2)</p>
+</li>
+<li>
+<p>Reparameterization (the “LM is a reward model” insight):</p>
+<ul>
+<li>Optimal policy under KL control: $ π^*(y \mid x) ∝ π<!-- raw HTML omitted -->\text{ref}<!-- raw HTML omitted -->(y \mid x)exp\!\left(\tfrac{1}{\beta} r(x,y)\right) $.</li>
+<li>Invert to express reward via policy: $ r(x,y) = β log \tfrac{\pi^\star(y \mid x)}{π<!-- raw HTML omitted -->\text{ref}<!-- raw HTML omitted -->(y \mid x)} + β log Z(x) $.</li>
+<li>Bradley–Terry preference prob becomes a function of <strong><strong>policy log-ratio</strong></strong> only; the partition cancels. Resulting DPO loss:
+\[
+L_{\text{DPO}}(\pi_\theta;\pi_{\text{ref}})= -\mathbb{E}_{(x,y_w,y_l)\sim D}\log\sigma\!\Big(\beta\big[\log\tfrac{\pi_\theta(y_w\mid x)}{\pi_{\text{ref}}(y_w\mid x)}-\log\tfrac{\pi_\theta(y_l\mid x)}{\pi_{\text{ref}}(y_l\mid x)}\big]\Big).
+\]</li>
+</ul>
+</li>
+<li>
+<p>Why this avoids degeneration: the gradient <strong><strong>upweights</strong></strong> examples where the current implicit reward \(\hat r_\theta(x,y)=\beta\log\tfrac{\pi_\theta}{\pi_{\text{ref}}}\) ranks the loser above the winner:
+\[
+\nabla_\theta L_{\text{DPO}} = -\beta\,\mathbb{E}\!\left[\sigma\!\left(\hat r_\theta(x,y_l)-\hat r_\theta(x,y_w)\right)\,\big(\nabla\log\pi(y_w\!\mid\!x)-\nabla\log\pi(y_l\!\mid\!x)\big)\right].
+\]
+The per-example weight curbs the naive “push ratios” failure mode observed with unweighted objectives. (pp.4–5)</p>
+</li>
+<li>
+<p>Theoretical framing:</p>
+<ul>
+<li>Rewards differing by any \(f(x)\) are <strong><strong>equivalent</strong></strong> for both preference likelihood and the induced KL-constrained optimal policy. DPO picks the unique representative in each equivalence class with $ ∑_y π<!-- raw HTML omitted -->\text{ref}<!-- raw HTML omitted -->(y\mid x)exp(\tfrac{1}{\beta}r(x,y))=1 $, i.e., one whose optimal policy is directly \(\pi_\theta\). (pp.5–6)</li>
+<li>Actor–critic diagnosis: PPO needs a baseline/“soft value” (normalizer) for stability; DPO’s reparameterization <strong><strong>bakes in</strong></strong> that normalization, avoiding variance/baseline hacks. (p.6)</li>
+</ul>
+</li>
+<li>
+<p>Practical recipe:</p>
+<ul>
+<li>Data: \((x,y_w,y_l)\) from human (or AI) preferences.</li>
+<li>Reference: use \(\pi_{\text{SFT}}\) if available; otherwise fit \(\pi_{\text{ref}}\) by MLE on \(y_w\) only to reduce ref–data shift. (p.5)</li>
+<li>One loss, no rollouts, no separate RM training, no KL penalties at sequence time—KL pressure is implicit via the log-ratios.</li>
+</ul>
+</li>
+<li>
+<p>Empirical signals (paper-scale models up to ~6B):</p>
+<ul>
+<li><strong><strong>Reward–KL frontier</strong></strong> (IMDb sentiment): DPO strictly dominates PPO (even PPO with ground-truth reward). (Fig. 2 left, p.7)</li>
+<li><strong><strong>Summarization (Reddit TL;DR):</strong></strong> DPO ≈ <strong><strong>61%</strong></strong> GPT‑4 win rate vs ref at temp 0.0 vs PPO ≈ <strong><strong>57%</strong></strong> at its best temp; more robust to sampling temperature. (Fig. 2 right, p.7; p.9)</li>
+<li><strong><strong>Dialogue (Anthropic HH, 1‑turn):</strong></strong> DPO is the only efficient method that <strong><strong>beats the dataset “chosen” responses</strong></strong>; roughly matches or exceeds “best‑of‑128” sampling without its test‑time cost. (Fig. 3, p.8; p.9)</li>
+<li><strong><strong>OOD generalization (CNN/DailyMail):</strong></strong> DPO &gt; PPO on GPT‑4 win rate when evaluated off‑distribution. (Table 1, p.9)</li>
+<li><strong><strong>Best‑of‑N plateau:</strong></strong> gains saturate around N≈64–128; DPO rivals this without expensive sampling. (Fig. 4, p.23)</li>
+</ul>
+</li>
+<li>
+<p>Hyperparams the authors actually used (sanity defaults, not sacred):</p>
+<ul>
+<li>\(\beta\) often \(0.1\); TL;DR used \(\beta=0.5\).</li>
+<li>Batch 64; RMSProp; LR \(1\mathrm{e}{-6}\) with 150‑step linear warmup. (App. B, p.20)</li>
+</ul>
+</li>
+<li>
+<p>Caveats / limits worth remembering:</p>
+<ul>
+<li>OOD and self‑labeling dynamics need more study; reward over‑optimization can still bite (small late‑training dips). Scaling beyond 6B left for future work. (p.10)</li>
+<li>Unlikelihood training is unstable on open‑ended tasks (degenerate text). (App. C/D; Table on p.22)</li>
+</ul>
+</li>
+<li>
+<p>TL;DR of the TL;DR: Train one model; treat \(\log\frac{\pi_\theta}{\pi_{\text{ref}}}\) as the implicit reward; fit it with BCE on pairwise prefs. You get PPO‑level (often better) alignment without PPO’s brittleness or cost. (Fig. 1–3, pp.2,7–8)</p>
+</li>
 </ul>
 <h2 id="rl">RL</h2>
 <ul>
