@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.6cbad8704da2bac641af8e1ca4750bb7cf936425708fec8ec5c3de0363057554.js" integrity="sha256-bLrYcE2iusZBr44cpHULt8&#43;TZCVwj&#43;yOxcPeA2MFdVQ="></script>
+<script defer src="/en.search.min.c904e5dcf1ec4e9dd81685dfe7b3e898d2725960e889f708ebfcb11e7c863e87.js" integrity="sha256-yQTl3PHsTp3YFoXf57PomNJyWWDoifcI6/yxHnyGPoc="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -38,7 +38,39 @@
           <h1>schedulers</h1>
 
           <p><a href="/posts/computers/">computers</a></p>
-<h2 id="work-stealing">Work Stealing</h2>
+<h2 id="eevdf">EEVDF</h2>
+<ul>
+<li><a href="https://docs.kernel.org/scheduler/sched-eevdf.html">https://docs.kernel.org/scheduler/sched-eevdf.html</a></li>
+<li><a href="https://lwn.net/Articles/969062/">https://lwn.net/Articles/969062/</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>  We can start with a lag at 0 for everyone. As the time quantum passes, the lag for a process that did not run increases. So then lag accumulates.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  Client server mechanism, wher each quantum is what it changes:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  ```
+</span></span><span style="display:flex;"><span>   An example might help to visualize how lag works. Imagine three CPU-bound tasks, called A, B, and C, that all start at the same time. Before any of them runs, they will all have a lag of zero:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      A	B	C
+</span></span><span style="display:flex;"><span>    Lag:	0ms 	0ms 	0ms
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Since none of the tasks have a negative lag, all are eligible. If the scheduler picks A to run first with a 30ms (to pick a number) time slice, and if A runs until the time slice is exhausted, the lag situation will look like this:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      A	B	C
+</span></span><span style="display:flex;"><span>    Lag:	-20ms 	10ms 	10ms
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Over those 30ms, each task was entitled to 10ms (one-third of the total) of CPU time. A actually got 30ms, so it accumulated a lag of -20ms; the other two tasks, which got no CPU time at all, ended up with 10ms of lag, reflecting the 10ms of CPU time that they should have received.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Task A is no longer eligible, so the scheduler will have to pick one of the others next. If B is given (and uses) a 30ms time slice, the situation becomes:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      A	B	C
+</span></span><span style="display:flex;"><span>    Lag:	-10ms 	-10ms 	20ms
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Once again, each task has earned 10ms of lag corresponding to the CPU time it was entitled to, and B burned 30ms by actually running. Now only C is eligible, so the scheduler&#39;s next decision is easy.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>One property of the EEVDF scheduler that can be seen in the above tables is that the sum of all the lag values in the system is always zero.
+</span></span><span style="display:flex;"><span>```
+</span></span></code></pre></div><h2 id="work-stealing">Work Stealing</h2>
 <ul>
 <li>Cilk - <a href="https://www.researchgate.net/profile/Aske-Plaat/publication/2427921_Programming_Parallel_Applications_in_Cilk/links/0c960528009eddb4e9000000/Programming-Parallel-Applications-in-Cilk.pdf">https://www.researchgate.net/profile/Aske-Plaat/publication/2427921_Programming_Parallel_Applications_in_Cilk/links/0c960528009eddb4e9000000/Programming-Parallel-Applications-in-Cilk.pdf</a></li>
 <li>Junction - <a href="https://joshfried.io/assets/junction_nsdi24.pdf">https://joshfried.io/assets/junction_nsdi24.pdf</a></li>
