@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.c904e5dcf1ec4e9dd81685dfe7b3e898d2725960e889f708ebfcb11e7c863e87.js" integrity="sha256-yQTl3PHsTp3YFoXf57PomNJyWWDoifcI6/yxHnyGPoc="></script>
+<script defer src="/en.search.min.960d87b900bf3aeccf1243896e1f5999b1aed6a20902a77f8ad21616e84ffc73.js" integrity="sha256-lg2HuQC/OuzPEkOJbh9ZmbGu1qIJAqd/itIWFuhP/HM="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -42,6 +42,37 @@
 <ul>
 <li>Dong, Siying, Andrew Kryczka, Yanqin Jin, and Michael Stumm. “RocksDB: Evolution of Development Priorities in a Key-Value Store Serving Large-Scale Applications.” ACM Transactions on Storage 17, no. 4 (2021): 1–32. <a href="https://doi.org/10.1145/3483840">https://doi.org/10.1145/3483840</a>.</li>
 </ul>
+<h3 id="myrocks">MyRocks</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Lxbb_7q8iRo">https://www.youtube.com/watch?v=Lxbb_7q8iRo</a></li>
+<li>Better SSD efficiency</li>
+<li>Better space efficiency</li>
+<li>&ldquo;if you fit the entire working set in ram, you have too much ram?&rdquo;
+<ul>
+<li>If all working set is in RAM, then you&rsquo;re not being efficient with your ram</li>
+<li>What if we are writing back pages with one bit change? Terrible write amplification, only rows in LSM trees</li>
+<li>Are you trying to read keys that don&rsquo;t exist? B-trees have this issue</li>
+</ul>
+</li>
+<li>LSM tree is more space efficient than b-trees
+<ul>
+<li>wasting 1/3rd to 1/2 of the pool, but 10% with LSM tree. How?</li>
+</ul>
+</li>
+<li>Better write efficiency is that you use less space so less write efficiency</li>
+<li>Secondary indices?</li>
+<li>RocksDB is very hard to tune
+<ul>
+<li><code>rocksdb_block_cache_size</code></li>
+<li><code>rocksdb_max_background_compactions</code></li>
+</ul>
+</li>
+<li>Uncommitted changes are buffered in memory by myrocks for tx&rsquo;s</li>
+<li>Performance</li>
+</ul>
+<figure><img src="/ox-hugo/2025-12-07_16-14-47_screenshot.png"/>
+</figure>
+
 <h2 id="speeddb-https-github-dot-com-speedb-io-speedb">SpeedDB - <a href="https://github.com/speedb-io/speedb">https://github.com/speedb-io/speedb</a></h2>
 <h2 id="zippydb">ZippyDB</h2>
 <figure><img src="/ox-hugo/2024-02-10_17-50-47_screenshot.png"/>
