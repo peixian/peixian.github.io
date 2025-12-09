@@ -870,6 +870,13 @@ Summary All nations are imagined because not everyone will meet every other comm
 Pioneered kolmogorov complexity</description>
     </item>
     <item>
+      <title>android</title>
+      <link>/posts/android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/android/</guid>
+      <description>operating systems</description>
+    </item>
+    <item>
       <title>anfal campaign</title>
       <link>/posts/anfal_campaign/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3007,7 +3014,7 @@ Damascus, syria https://www.instapaper.com/read/1299358661 Despite the justifica
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/cpp/</guid>
       <description>programming languages
-CPP https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646 Framework https://preshing.com/20200526/a-new-cross-platform-open-source-cpp-framework/ Structured Bindings https://en.cppreference.com/w/cpp/language/structured_binding constexpr https://www.foonathan.net/2020/10/constexpr-platform/ NRVO named valued return optimization https://en.cppreference.com/w/cpp/language/copy_elision inverts the usual way people understand the lifetime of objects Pipe Operator (similar to elixir) https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2672r0.html </description>
+Sanitizers https://code.google.com/archive/p/syzygy/wikis/SyzyASanDesignDocument.wiki - discovers issues in chrome for windows https://llvm.org/docs/ScudoHardenedAllocator.html allocators for android that is memory hardened ADI: https://docs.oracle.com/cd/E86824_01/html/E54765/adi-2.html - implements memory tagging for SPARC CPP https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf https://community.khronos.org/t/what-are-the-use-of-back-and-front-buffer/24646 Framework https://preshing.com/20200526/a-new-cross-platform-open-source-cpp-framework/ Structured Bindings https://en.cppreference.com/w/cpp/language/structured_binding constexpr https://www.foonathan.net/2020/10/constexpr-platform/ NRVO named valued return optimization https://en.cppreference.com/w/cpp/language/copy_elision inverts the usual way people understand the lifetime of objects Pipe Operator (similar to elixir) https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2672r0.html </description>
     </item>
     <item>
       <title>cpp this</title>
@@ -3023,7 +3030,7 @@ http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p0847r6.html </descripti
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/cpu/</guid>
       <description>Tags: computers
-https://travisdowns.github.io/blog/2021/06/17/rip-zero-opt.html Registers Nowadays, all registers can be used as general purpose registers RBP is used as a general purpose one, with RSP taking the role as a frame pointer. RIP is still in the stack memory region for each function call info registers in gdb Constants are encoded in instructions, but arbitrary values are retrieved from memory Goto is a JMP Function calls are CALL When a function is called from a caller, the callee needs to make room for local variables.</description>
+https://travisdowns.github.io/blog/2021/06/17/rip-zero-opt.html TLBs In normal multiprocessors, each CPU has it&amp;rsquo;s own TLB, usually some split of small entries and big entries SPARC Registers Nowadays, all registers can be used as general purpose registers RBP is used as a general purpose one, with RSP taking the role as a frame pointer. RIP is still in the stack memory region for each function call info registers in gdb Constants are encoded in instructions, but arbitrary values are retrieved from memory Goto is a JMP Function calls are CALL When a function is called from a caller, the callee needs to make room for local variables.</description>
     </item>
     <item>
       <title>Cramer - Civil War is Not a Stupid Thing</title>
