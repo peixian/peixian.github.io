@@ -10815,7 +10815,7 @@ http://frenetic-lang.org/pyretic/ http://frenetic-lang.org/ Allows people to use
       <guid>/posts/python/</guid>
       <description>Tags: computers
 CGI scripts: https://www.tutorialspoint.com/python/python_cgi_programming.htm Context sensitivity: https://groups.google.com/g/comp.theory/c/nJzOyRnAP3k/m/AInZxo48FNIJ?pli=1
-Parsing PDF&amp;rsquo;s in Python You can use: pypdf. or pypdf4 pdfminer also pypdfparser textract -&amp;gt; https://textract.readthedocs.io/en/stable/python_package.html poppler -&amp;gt; pdf rendering engine? OCR -&amp;gt; tesseract with pytesseract, preprocess with opencv tika.with the python tika interface Difflib https://docs.python.org/3/library/difflib.html generates diffs has a series of diffs that allow for fleixible computing of sequences including: html pure strings (get_close_matches) number type diffs OS CPU Count: https://docs.python.org/3/library/os.html#os.cpu_count https://docs.</description>
+Performance Python Vectorcall https://peps.python.org/pep-0590/ C API to optimize calling of objects tp_call too slow Also one function pointer per class, rather than per object. So classes create a lot of intermediate objects Cpython Every object is defined by a C struct called PyTypeObject. This struct contains slots. Parsing PDF&amp;rsquo;s in Python You can use: pypdf. or pypdf4 pdfminer also pypdfparser textract -&amp;gt; https://textract.</description>
     </item>
     <item>
       <title>python objective c bindings</title>
