@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.cdb8f604bf7bbd59c2dd702e9825eda565635ea9a9e0314a79f03ca5e7de8269.js" integrity="sha256-zbj2BL97vVnC3XAumCXtpWVjXqmp4DFKefA8pefegmk="></script>
+<script defer src="/en.search.min.cdbe41dfe87b7fa0f8670a144f0ae28f4f31b6999ef982cdd7059ccbc7906772.js" integrity="sha256-zb5B3&#43;h7f6D4ZwoUTwrij08xtpme&#43;YLN1wWcy8eQZ3I="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -46,6 +46,23 @@
 </ul>
 </li>
 <li><code>!^</code> and <code>!$</code> map to the first and last arguments of the latest command, respectively</li>
+</ul>
+<h2 id="redirects">Redirects</h2>
+<ul>
+<li>Shells processes redirects in POSIX by left to right: <a href="https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#:~:text=The%20shell%20performs%20redirection%20">https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#:~:text=The%20shell%20performs%20redirection%20</a>(see,operands%20from%20the%20parameter%20list.</li>
+<li>Which means orders do matter</li>
+<li>When the shell sees <code>Wjhe</code>, it doesn&rsquo;t create a symbolic link or dynamic reference call, it calls <code>dup2(1,2)</code>
+<ul>
+<li>dup2(oldfd, newfd) copies the file description (internal kernel pointer to open file) from oldfd ot newfd. Once it&rsquo;s copied,. it doesn&rsquo;t change the oldfd.</li>
+</ul>
+</li>
+<li>so <code>ls &gt; file 2&gt;&amp;1</code> works because
+<ul>
+<li><code>&gt; file</code> opens, file, kernel assigns it a fd, X, and then calls dup2(X, 1), so now FD 1 points to file</li>
+<li><code>2&gt;&amp;1</code> shell calls dup2(1, 2), which looks at what 1 has</li>
+</ul>
+</li>
+<li>but <code>ls 2&gt;&amp;1 &gt; file</code> doesn&rsquo;t work because it duplicates 1,FD 1 to 2, and then still remains it TTY. But &gt; file then redirects back to file</li>
 </ul>
 
           
