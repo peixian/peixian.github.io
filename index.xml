@@ -2236,7 +2236,7 @@ Internals Seed nodes: No purpose other than bootstrapping the gossip process DO 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/category_theory/</guid>
       <description>Tags: math
-https://en.wikipedia.org/wiki/Grothendieck_topology https://en.wikipedia.org/wiki/Gravitation_%28book%29 https://ncatlab.org/nlab/show/category+theory </description>
+https://en.wikipedia.org/wiki/Grothendieck_topology https://en.wikipedia.org/wiki/Gravitation_%28book%29 https://ncatlab.org/nlab/show/category+theory https://kerodon.net/ </description>
     </item>
     <item>
       <title>catholics</title>
@@ -5846,6 +5846,13 @@ Chapter 1: How to Dive into a Codebase Raw erlang apps old fashioned way, pray f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/hft/</guid>
       <description>finance</description>
+    </item>
+    <item>
+      <title>hhvm</title>
+      <link>/posts/hhvm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/hhvm/</guid>
+      <description>programming languages</description>
     </item>
     <item>
       <title>hibernate</title>
@@ -11546,6 +11553,15 @@ grpc kubernetes istio envoy kubeflow kfserving etcd rabbitmq redis kyoto tycoon 
 don&amp;rsquo;t really exist except for spelling large chunks of rules aren&amp;rsquo;t errors languges is not rule following, it&amp;rsquo;s controlling the process of the readers language as a technique to control the reader&amp;rsquo;s reading process sentence stress and importance how to create value for the readers? creating value for the reading process -&amp;gt; how? &amp;ldquo;tells what the paper will be about&amp;rdquo; -&amp;gt; this is not a source of value, because they should be reading the entire article writing is not about something do you describe something when writing a paper?</description>
     </item>
     <item>
+      <title>runtimes</title>
+      <link>/posts/runtimes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/runtimes/</guid>
+      <description>computers
+* golang runtime
+No POSIX threads, rather everything is managed as one big process erlang runtime Posix threads allocated at startup hhvm Posix threads allocated at startup python GIL? With a jit? </description>
+    </item>
+    <item>
       <title>russel&#39;s paradox</title>
       <link>/posts/russel_s_paradox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -14868,7 +14884,7 @@ not a sql engine, but a sql parser and analyzer that can be used as an ast parse
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/zettlekasten/</guid>
       <description>Tags: writing, episteme
-https://notes.andymatuschak.org/z4AX7pHAu5uUfmrq4K4zig9x8jmmF62XgaMXm?stackedNotes=z4KZ9973AoHhvM9Pj5Qrds48JXNbMEwVJmVRw&amp;amp;stackedNotes=z8RTzukqNLKFXzqLwx25HrUrg5E5jiziGznWB&amp;amp;stackedNotes=z6UDDkom8Aifg6mLdjT1sPtbMBweCmpyTwmJT http://luhmann.surge.sh/communicating-with-slip-boxes https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C?stackedNotes=z3SjnvsB5aR2ddsycyXofbYR7fCxo7RmKW2be&amp;amp;stackedNotes=z3PBVkZ2SvsAgFXkjHsycBeyS6Cw1QXf7kcD8 https://www.liquidtext.net/ https://github.com/xwmx/nb </description>
+https://notes.andymatuschak.org/z4AX7pHAu5uUfmrq4K4zig9x8jmmF62XgaMXm?stackedNotes=z4KZ9973AoHhvM9Pj5Qrds48JXNbMEwVJmVRw&amp;amp;stackedNotes=z8RTzukqNLKFXzqLwx25HrUrg5E5jiziGznWB&amp;amp;stackedNotes=z6UDDkom8Aifg6mLdjT1sPtbMBweCmpyTwmJT http://luhmann.surge.sh/communicating-with-slip-boxes https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C?stackedNotes=z3SjnvsB5aR2ddsycyXofbYR7fCxo7RmKW2be&amp;amp;stackedNotes=z3PBVkZ2SvsAgFXkjHsycBeyS6Cw1QXf7kcD8 https://www.liquidtext.net/ https://github.com/xwmx/nb https://www.forester-notes.org/index/index.xml this is the most interesting replacement so far, the hyperlinking generation itself is kind of neet maybe I can steal some of the stylesheets </description>
     </item>
     <item>
       <title>Zhang et al: Tropical Geometry of Deep Neural Networks</title>
