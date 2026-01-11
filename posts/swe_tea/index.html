@@ -9,7 +9,7 @@
 
 
 <link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.9485f3ac66687be4a3bb10a505cdf791b64602cf3b8ebd207d1c1d853ef75ffe.js" integrity="sha256-lIXzrGZoe&#43;SjuxClBc33kbZGAs87jr0gfRwdhT73X/4="></script>
+<script defer src="/en.search.min.0bcef588a488d1554606d461563a28f5b22d1a377699fa43fe0c92c3a878fa38.js" integrity="sha256-C871iKSI0VVGBtRhVjoo9bItGjd2mfpD/gySw6h4&#43;jg="></script>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -147,6 +147,22 @@
 <h3 id="li-david-xinliang-raksit-ashok-and-robert-hundt-dot-lightweight-feedback-directed-cross-module-optimization-dot-proceedings-of-the-8th-annual-ieee-acm-international-symposium-on-code-generation-and-optimization-acm-april-24-2010-53-61-dot-https-doi-dot-org-10-dot-1145-1772954-dot-1772964-dot">Li, David Xinliang, Raksit Ashok, and Robert Hundt. “Lightweight Feedback-Directed Cross-Module Optimization.” Proceedings of the 8th Annual IEEE/ACM International Symposium on Code Generation and Optimization, ACM, April 24, 2010, 53–61. <a href="https://doi.org/10.1145/1772954.1772964">https://doi.org/10.1145/1772954.1772964</a>.</h3>
 <ul>
 <li>Two most important IPO passes are function inlining and indirect function call promotion</li>
+<li>Basically:
+<ol>
+<li>We want to have a smarter way of combining things without making fat .o files</li>
+<li>We can use FDO analysis to determine which functions are hot and worth inlining or promoting</li>
+<li>In order to do so, we can use a greedy algorithm to generate families, which help link these together</li>
+</ol>
+</li>
+<li>We push linking earlier by using the profiled data</li>
+<li>Profile data is augmented FDO data, so
+<ul>
+<li>After training run is done, the in-memory info contains a callgraph, using a greedy clustering algorithm to decide on &ldquo;friends&rdquo;</li>
+<li>afterwards, we have a standard FDO data (raw counts of how many times each branch was taken), and also module grouping decisions</li>
+</ul>
+</li>
+<li>In order to make this workable for <a href="/posts/build_systems/#buck-blaze-bazel">Buck / Blaze / Bazel</a>, an auxillery file needs to get shipped so the build system knows which sources to include, even when they&rsquo;re not strictly dependant, as a form of dynamic dependency injection</li>
+<li>Predacessor to <a href="/posts/linkers/#lto--and-thinlto">LTO (and ThinLTO)</a></li>
 </ul>
 
           

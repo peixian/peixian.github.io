@@ -2011,7 +2011,7 @@ https://en.wikipedia.org/wiki/BTR-50 </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/build_systems/</guid>
       <description>computers
-CMake Xmake https://xmake.io/#/getting_started </description>
+CMake Xmake https://xmake.io/#/getting_started Buck / Blaze / Bazel </description>
     </item>
     <item>
       <title>bully algorithm</title>
@@ -7902,7 +7902,7 @@ https://lwn.net/Articles/276782/ Intro What does a linker do? Converts object fi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/linkers/</guid>
       <description>Tags: compilers
-https://blog.thea.codes/the-most-thoroughly-commented-linker-script/ https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp alt-linkers gold https://lwn.net/Articles/274859/ https://lwn.net/Articles/276782/ mold https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp https://github.com/rui314/mold/blob/main/docs/design.md lld https://www.youtube.com/watch?v=CYCRqjVa6l4 https://lld.llvm.org/ profiling linkers Static Linking https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking Tools check ldd and file for linking, although ldd is different </description>
+https://blog.thea.codes/the-most-thoroughly-commented-linker-script/ https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp COMDAT https://maskray.me/blog/2021-07-25-comdat-and-section-group Basically a section used for duplicate code, like cpp templates LTO (and ThinLTO) alt-linkers gold https://lwn.net/Articles/274859/ https://lwn.net/Articles/276782/ mold https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp https://github.com/rui314/mold/blob/main/docs/design.md lld https://www.youtube.com/watch?v=CYCRqjVa6l4 https://lld.llvm.org/ profiling linkers Static Linking https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking Tools check ldd and file for linking, although ldd is different </description>
     </item>
     <item>
       <title>linting</title>
@@ -10792,7 +10792,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5459228/ </description>
       <link>/posts/predictions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/predictions/</guid>
-      <description> root Forecase Date Eval Date Statement Forecast Probabiltiy Eval Result Failure Reason? 9/10/23 31/11/23 I will be B2+/C1- in Spanish 90% True 9/10/23 14/12/23 I will have learned basic snowboarding 80% False Didn&amp;rsquo;t work out! 9/10/23 01/02/24 I will have figured out a topic for UdelaR 75% False Pivoted to new job 06/06/24 01/09/24 I will have settled into my job at Meta 80% True 06/06/24 01/10/24 I will have figured out an approach to the code ownership political problem on chatd 50% True 13/10/24 01/02/24 I will have gotten my shit together and be running on all cylindars 80% True 13/10/24 01/02/24 I will be able to hold a conversation in Guarani 50% False Deprecated in favor of russian 16/02/24 01/05/24 I will be able to back on mathematics 50% 16/02/24 01/05/24 I will have learned D3 and Ratatui and gotten better at UI tooling 80% 16/02/24 01/05/24 I will be able to hold a conversation in Russian 30% </description>
+      <description> root Forecase Date Eval Date Statement Forecast Probabiltiy Eval Result Failure Reason? 9/10/23 31/11/23 I will be B2+/C1- in Spanish 90% True 9/10/23 14/12/23 I will have learned basic snowboarding 80% False Didn&amp;rsquo;t work out! 9/10/23 01/02/24 I will have figured out a topic for UdelaR 75% False Pivoted to new job 06/06/24 01/09/24 I will have settled into my job at Meta 80% True 06/06/24 01/10/24 I will have figured out an approach to the code ownership political problem on chatd 50% True 13/10/24 01/02/24 I will have gotten my shit together and be running on all cylindars 80% True 13/10/24 01/02/24 I will be able to hold a conversation in Guarani 50% False Deprecated in favor of russian 16/02/24 01/05/24 I will be able to back on mathematics 50% False Did not do :( 16/02/24 01/05/24 I will have learned D3 and Ratatui and gotten better at UI tooling 80% True 16/02/24 01/05/24 I will be able to hold a conversation in Russian 30% False Did not do :( </description>
     </item>
     <item>
       <title>Pursely - Familiar Futures</title>
