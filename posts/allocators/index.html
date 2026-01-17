@@ -1,43 +1,64 @@
 <!DOCTYPE html>
-<html><title>allocators</title>
+<html><head>
+<title>allocators</title>
 
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
 
 
-<link rel="stylesheet" href="/css/main.min.532078bb650bec3433e8e9db19e0453faa66c9cc0ce761054558a91d87039e9d.css"/>
-<script defer src="/en.search.min.9f1ae4301355094954ba8dd97a25b2a2eff7a7c1b4a2d2d219af97762279c22f.js" integrity="sha256-nxrkMBNVCUlUuo3ZeiWyou/3p8G0otLSGa&#43;XdiJ5wi8="></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://rsms.me" crossorigin>
 
-<link rel="stylesheet" href="/katex/katex.min.css" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono&display=swap">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+
+
+<link rel="stylesheet" href="/css/main.min.7a8dc5b063775e5d3df0beea151395736f55ccb3343f70eea0595b53da5015c4.css">
+
+
+<script defer src="/en.search.min.f7252b59235fcf6ea4331a5c52492492b8ed7e558eb84ca4f29b13dcbee49f5b.js" integrity="sha256-9yUrWSNfz26kMxpcUkkkkrjtflWOuEyk8psT3L7kn1s="></script>
+
+
+<link rel="stylesheet" href="/katex/katex.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/katex/katex.min.css"></noscript>
 <script defer src="/katex/katex.min.js"></script>
 <script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+</head>
 <body><header>
-    <a href="/" id="logo">
-        <img src="/svg/icon.svg" alt="icon" id="raccoon" />
-
-    </a>
-    <h3 class="site-title">عجفت الغور</h3>
-    <div id="search">
-        
+    <div class="header-main">
+        <a href="/" id="logo">
+            <img src="/svg/icon.svg" alt="icon" id="raccoon" />
+        </a>
+        <h3 class="site-title">عجفت الغور</h3>
+        <div id="search">
+            
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
+        </div>
     </div>
+    <nav id="breadcrumb" aria-label="Note trail"><span class="trail-label">trail</span><span class="trail-crumbs"></span></nav>
 </header>
 
-<div class="grid-container">
-  <div class="grid">
-    <div class="page" data-level="1">
-      <div class="content">
-          <h1>allocators</h1>
+<div class="layout-container">
+  <div class="grid-container">
+    <div class="grid">
+      <div class="page" data-level="1">
+        <div class="content">
+            <h1>allocators</h1>
+            
 
-          <p><a href="/posts/ram_computer_memory/">ram (computer memory)</a></p>
+
+            <p><a href="/posts/ram_computer_memory/">ram (computer memory)</a></p>
 <h2 id="linux--linux-dot-md--nimble-allocator"><a href="/posts/linux/">linux</a> Nimble Allocator</h2>
 <ul>
 <li><a href="https://dl.acm.org/doi/10.1145/3297858.3304024">https://dl.acm.org/doi/10.1145/3297858.3304024</a></li>
@@ -88,10 +109,14 @@
     * <a href="https://github.com/envoyproxy/envoy/pull/6136"><a href="https://github.com/envoyproxy/envoy/pull/6136">https://github.com/envoyproxy/envoy/pull/6136</a></a>
 #+end_src</p>
 
-          
+            
 
 
 
+
+   
+
+   
 
    
 
@@ -2816,7 +2841,13 @@
    
 
    
+
+   
+
+   
       
+   
+
    
 
    
@@ -3783,9 +3814,40 @@
   </div>
 
 
+        </div>
       </div>
     </div>
   </div>
+  
+
+<nav id="toc" class="toc-sidebar">
+  <div class="toc-content">
+    <h2>Table of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#linux--linux-dot-md--nimble-allocator"><a href="HAHAHUGOSHORTCODE171s1HBHB">linux</a> Nimble Allocator</a></li>
+    <li><a href="#memory-management">Memory Management</a></li>
+    <li><a href="#allocators">Allocators</a>
+      <ul>
+        <li><a href="#slab-allocator">Slab allocator</a></li>
+        <li><a href="#misc">Misc</a></li>
+      </ul>
+    </li>
+    <li><a href="#exploiting-the-jemalloc-memory-allocator-owning-firefox-s-heap--https-media-dot-blackhat-dot-com-bh-us-12-briefings-argyoudis-bh-us-12-argyroudis-exploiting-the-20jemalloc-memory-20allocator-wp-dot-pdf"><a href="https://media.blackhat.com/bh-us-12/Briefings/Argyoudis/BH_US_12_Argyroudis_Exploiting_the_%20jemalloc_Memory_%20Allocator_WP.pdf">Exploiting the jemalloc Memory Allocator: Owning Firefox&rsquo;s Heap</a></a></li>
+    <li><a href="#attacking-the-webkit-heap--https-infiltratecon-dot-com-archives-webkit-heap-dot-pdf"><a href="https://infiltratecon.com/archives/webkit_heap.pdf">Attacking the Webkit Heap</a></a></li>
+    <li><a href="#windows-8-heap-internals--https-media-dot-blackhat-dot-com-bh-us-12-briefings-valasek-bh-us-12-valasek-windows-8-heap-internals-slides-dot-pdf"><a href="https://media.blackhat.com/bh-us-12/Briefings/Valasek/BH_US_12_Valasek_Windows_8_Heap_Internals_Slides.pdf">Windows 8 Heap Internals</a></a></li>
+    <li><a href="#windows-10-segment-heap-internals--https-www-dot-blackhat-dot-com-docs-us-16-materials-us-16-yason-windows-10-segment-heap-internals-dot-pdf"><a href="https://www.blackhat.com/docs/us-16/materials/us-16-Yason-Windows-10-Segment-Heap-Internals.pdf">Windows 10 Segment Heap Internals</a></a></li>
+    <li><a href="#heap-layout-optimization-for-exploitation--https-www-dot-blackhat-dot-com-docs-eu-17-materials-eu-17-heelan-heap-layout-optimisation-for-exploitation-dot-pdf"><a href="https://www.blackhat.com/docs/eu-17/materials/eu-17-Heelan-Heap-Layout-Optimisation-For-Exploitation.pdf">Heap Layout Optimization for Exploitation</a></a></li>
+    <li><a href="#freeguard-a-faster-secure-heap-allocator--https-arxiv-dot-org-pdf-1709-dot-02746-dot-pdf"><a href="https://arxiv.org/pdf/1709.02746.pdf">FreeGuard: A Faster Secure Heap Allocator</a></a></li>
+    <li><a href="#dieharder-securing-the-heap--https-people-dot-cs-dot-umass-dot-edu-emery-pubs-ccs03-novark-dot-pdf"><a href="https://people.cs.umass.edu/~emery/pubs/ccs03-novark.pdf">DieHarder: securing the heap</a></a></li>
+    <li><a href="#openbsd-s-ottomalloc--http-openbsd-dot-fries-dot-net-papers-eurobsdcon2009-otto-malloc-dot-pdf"><a href="http://openbsd.fries.net/papers/eurobsdcon2009/otto-malloc.pdf">OpenBSD’s ottomalloc</a></a></li>
+    <li><a href="#intel-c-plus-plus-compiler-c-plus-plus-14-incorrect-sized-delete-compiled-code--https-software-dot-intel-dot-com-en-us-forums-intel-c-compiler-topic-783942"><a href="https://software.intel.com/en-us/forums/intel-c-compiler/topic/783942">Intel C++ Compiler C++14 incorrect sized delete compiled code</a></a></li>
+  </ul>
+</nav>
+  </div>
+</nav>
+
+
 </div>
 
 <script src="/js/URI.js" type="text/javascript"></script>

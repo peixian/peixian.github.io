@@ -36,6 +36,10 @@
   </url><url>
     <loc>/posts/2025_goals/</loc>
   </url><url>
+    <loc>/posts/2025_goals/</loc>
+  </url><url>
+    <loc>/posts/2026_goals/</loc>
+  </url><url>
     <loc>/posts/48_palestine_vs_67_palestine/</loc>
   </url><url>
     <loc>/posts/5g_marketing/</loc>
@@ -996,7 +1000,7 @@
   </url><url>
     <loc>/posts/erlang_live_market_parser_api_on_kubernetes/</loc>
   </url><url>
-    <loc>/posts/erlang_pc2_postmortem/</loc>
+    <loc>/posts/erlang_pg2_postmortem/</loc>
   </url><url>
     <loc>/posts/esim_model/</loc>
   </url><url>
@@ -1267,6 +1271,8 @@
     <loc>/posts/golang/</loc>
   </url><url>
     <loc>/posts/good_cpp_codebases_to_read/</loc>
+  </url><url>
+    <loc>/posts/good_software/</loc>
   </url><url>
     <loc>/posts/goode_artifical_intelligence_and_the_future_of_nationalism/</loc>
   </url><url>
@@ -2546,6 +2552,8 @@
   </url><url>
     <loc>/posts/physalia_amazon_ebs/</loc>
   </url><url>
+    <loc>/posts/good_software/</loc>
+  </url><url>
     <loc>/posts/physics/</loc>
   </url><url>
     <loc>/posts/pi_calculus/</loc>
@@ -3259,6 +3267,8 @@
     <loc>/posts/the_chicago_plan/</loc>
   </url><url>
     <loc>/posts/the_danger_of_treating_ideas_from_finance_as_generalized_self_help/</loc>
+  </url><url>
+    <loc>/posts/good_software/</loc>
   </url><url>
     <loc>/posts/the_frontier_settler_colonialism_the_united_states/</loc>
   </url><url>

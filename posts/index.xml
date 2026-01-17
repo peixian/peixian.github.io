@@ -111,12 +111,28 @@ Taking off of pareto optimal
 Actively need prioritization statistics nlp (specifically pytorch) raw languages/linguistics kubernetes (k8s) erlang In Progress ddr, post-conflict writing iraqi arabic running climbing episteme Opportunistic learning distributed systems kernel bypass golang low level programming (definitely need to read more c/cpp books) Need to pick up at some point in the future queuing theory (have holbacher&amp;rsquo;s book, but still need to actually do it) math (maybe set a specific aim?</description>
     </item>
     <item>
+      <title>2024 goals</title>
+      <link>/posts/2025_goals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/2025_goals/</guid>
+      <description>Tags:
+2023 Recap Learn spanish -&amp;gt; Done! Finish NYU thesis -&amp;gt; Done! Get in BEAM PR -&amp;gt; Nope, still need to do this Focus more on software, hit cruising altitude -&amp;gt; Done! 2024 Goals Two forks in the road: Facebook job -&amp;gt; Move back to NYC in August Grind hard at staff BA -&amp;gt; Otherwise move to BA, I&amp;rsquo;m committing to this Continue to level at work Spanish to fluency, academic spanish by EOY Get back in shape, sub 170 pounds Arabic improvements -&amp;gt; Read a complex arabic novel by EOY </description>
+    </item>
+    <item>
       <title>2025 goals</title>
       <link>/posts/2025_goals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/2025_goals/</guid>
       <description>personal
-2024 Goals recap Got into fb job Fluency in spanish -&amp;gt; very good get back in shape -&amp;gt; no, still around 200 pounds arabic improvements -&amp;gt; definitely, but still a ways to go 2025 Goals 30 years old Need to be in shape Climbing -&amp;gt; climb a 5.11 with ease Weight -&amp;gt; 170 diet really needs to improve for this some kind of humantiarian training, either demining, or wilderness emt, or snr, or whatever Get really good at my fb job, become critical to running calling, media, and chat Go to Syria this year Languages start Russian again Establish base in Guarani Continue with Spanish and Arabic </description>
+2024 goals recap Got into fb job Fluency in spanish -&amp;gt; very good get back in shape -&amp;gt; no, still around 200 pounds arabic improvements -&amp;gt; definitely, but still a ways to go 2025 Goals 30 years old Need to be in shape Climbing -&amp;gt; climb a 5.11 with ease Weight -&amp;gt; 170 diet really needs to improve for this some kind of humantiarian training, either demining, or wilderness emt, or snr, or whatever Get really good at my fb job, become critical to running calling, media, and chat Go to Syria this year Languages start Russian again Establish base in Guarani Continue with Spanish and Arabic </description>
+    </item>
+    <item>
+      <title>2026 goals</title>
+      <link>/posts/2026_goals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/2026_goals/</guid>
+      <description>personal
+2025 goals Recap Vibing at fb Fluency in spanish -&amp;gt; very good Get back in shape -&amp;gt; still heavy, but much stronger Arabic -&amp;gt; ways to goals Did not do any humanitarian training Did go to syria Got really good at my job No russian No guarani 2026 Goals (see Public Predictions) 31 years old Lose some weight Get stronger (4 wheel deadlift, 3 wheel squat, 2 wheel bench, 2 wheel clean) Russian?</description>
     </item>
     <item>
       <title>48 palestine vs 67 palestine</title>
@@ -4045,7 +4061,7 @@ https://adoptingerlang.org/docs/production/kubernetes/</description>
       <link>/posts/erlang_jit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/erlang_jit/</guid>
-      <description>Tags: erlang
+      <description>Tags: erlang, jit
 http://blog.erlang.org/the-road-to-the-jit/</description>
     </item>
     <item>
@@ -4057,10 +4073,10 @@ http://blog.erlang.org/the-road-to-the-jit/</description>
 inspiration: https://matt.sh/load-balance-trades </description>
     </item>
     <item>
-      <title>erlang pc2 postmortem</title>
-      <link>/posts/erlang_pc2_postmortem/</link>
+      <title>erlang pg2 postmortem</title>
+      <link>/posts/erlang_pg2_postmortem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/posts/erlang_pc2_postmortem/</guid>
+      <guid>/posts/erlang_pg2_postmortem/</guid>
       <description>drafts, postmortems and outages, erlang, elixir This is a description of a BEAM VM1 outage that occurred recently. I feel like there are not very many Erlang PMs out there, especially with Erlang clusters at scale, so hopefully, this postmortem serves as one of the few examples to learn from. We experienced a service degradation that could&amp;rsquo;ve amounted to an outage, but was solved with enough time to prevent an outage.</description>
     </item>
     <item>
@@ -5153,6 +5169,14 @@ erlang/elixir connection with https://github.com/ergo-services/ergo Toolchain hi
 https://news.ycombinator.com/item?id=24901244</description>
     </item>
     <item>
+      <title>good software</title>
+      <link>/posts/good_software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/good_software/</guid>
+      <description>drafts
+What is good software? Software that doesn&amp;rsquo;t make me pay attention to it: zotero mailmate emacs upgrading is not difficult and it just works I&amp;rsquo;ve used it and cannot recall a time where it was a pain Software change is promo material, and also often okay, but consumer software does not need to chang ethat much. Industrial software does. But SaaS&amp;rsquo;ification means that consumer software starts to grow towards industrial software </description>
+    </item>
+    <item>
       <title>Goode: Artifical Intelligence and the Future of Nationalism</title>
       <link>/posts/goode_artifical_intelligence_and_the_future_of_nationalism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6046,9 +6070,10 @@ North yemeni tribe, shia</description>
       <link>/posts/how_jit_compilers_are_implemented_and_fast_pypy_luajit_graal_and_more/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/how_jit_compilers_are_implemented_and_fast_pypy_luajit_graal_and_more/</guid>
-      <description>Tags: articles
-https://carolchen.me/blog/jits-impls/
-Interpreted languages still go down to bytecode Function reuse happens, if you compile multiply(1,2), and then wrote multiply(2,3) then the already compiled version will be used llvm bitcode can be seen jits don&amp;rsquo;t compile ahead of time, but still compiles source to machine code not strictly about compiling code just-in-time, but compiling optimial code at an optimal time how do we generate optimal code? not all assembly instructions are created equal humans typically write better assemly than a computer jits usually are more expensive but make up in optimized compiled code </description>
+      <description>Tags: articles, jit
+https://web.archive.org/web/20220430042047/https://carolchen.me/blog/jits-impls/
+original (now dead link): https://carolchen.me/blog/jits-impls/
+Interpreted languages still go down to bytecode Function reuse happens, if you compile multiply(1,2), and then wrote multiply(2,3) then the already compiled version will be used llvm bitcode can be seen jits don&amp;rsquo;t compile ahead of time, but still compiles source to machine code not strictly about compiling code just-in-time, but compiling optimial code at an optimal time how do we generate optimal code?</description>
     </item>
     <item>
       <title>how to make a complete map of every thought you think</title>
@@ -7979,14 +8004,15 @@ Part of sistaniyun brigades</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/llms/</guid>
       <description>ml
-Abliteration https://huggingface.co/posts/mlabonne/714992455492422 https://huggingface.co/blog/mlabonne/abliteration LLama.cpp Models: https://huggingface.co/TheBloke/guanaco-65B-GGML/blob/main/guanaco-65B.ggmlv3.q4_K_M.bin https://github.com/ggerganov/llama.cpp#using-gpt4all specific parameters: https://www.reddit.com/r/LocalLLaMA/comments/12az7ah/comparing_llama_and_alpaca_presets/ Fish commands for running function llama cd ~/code/llama.cpp ./main -m ./models/llama-13 \ --color \ --ctx_size 4096 \ -n -1 \ -ins -b 2048 \ --top_k 0 \ --temp 0.72 \ --top_p 0.73 \ --repeat_penalty 1.1 \ -t 11 \ --tfs 0.95 \ --mlock cd - end while true curl -C - -L &amp;#34;https://huggingface.co/TheBloke/guanaco-65B-GGML/resolve/main/guanaco-65B.ggmlv3.q4_K_M.bin&amp;#34; -o models/guanaco-65b if test $status -eq 0 break end sleep 5 end Tail free sampling: https://www.</description>
+Poisoning/Blocking Crawlers https://rnsaffn.com/poison3/ https://anubis.techaro.lol/ Abliteration https://huggingface.co/posts/mlabonne/714992455492422 https://huggingface.co/blog/mlabonne/abliteration LLama.cpp Models: https://huggingface.co/TheBloke/guanaco-65B-GGML/blob/main/guanaco-65B.ggmlv3.q4_K_M.bin https://github.com/ggerganov/llama.cpp#using-gpt4all specific parameters: https://www.reddit.com/r/LocalLLaMA/comments/12az7ah/comparing_llama_and_alpaca_presets/ Fish commands for running function llama cd ~/code/llama.cpp ./main -m ./models/llama-13 \ --color \ --ctx_size 4096 \ -n -1 \ -ins -b 2048 \ --top_k 0 \ --temp 0.72 \ --top_p 0.73 \ --repeat_penalty 1.1 \ -t 11 \ --tfs 0.95 \ --mlock cd - end while true curl -C - -L &amp;#34;https://huggingface.co/TheBloke/guanaco-65B-GGML/resolve/main/guanaco-65B.ggmlv3.q4_K_M.bin&amp;#34; -o models/guanaco-65b if test $status -eq 0 break end sleep 5 end Tail free sampling: https://www.</description>
     </item>
     <item>
       <title>llvm</title>
       <link>/posts/llvm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/llvm/</guid>
-      <description>Tags: compilers</description>
+      <description>Tags: compilers
+Issues: https://www.npopov.com/2026/01/11/LLVM-The-bad-parts.html Compile time tracker: https://llvm-compile-time-tracker.com/graphs.php?startDate=2021-02-04&amp;amp;interval=100&amp;amp;relative=on </description>
     </item>
     <item>
       <title>load balancing</title>
@@ -10354,6 +10380,14 @@ Classes https://www.linkedin.com/learning/photography-foundations-mobile-photogr
 https://www.usenix.org/conference/nsdi20/presentation/brooker</description>
     </item>
     <item>
+      <title>physicality of paper blog post</title>
+      <link>/posts/good_software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/good_software/</guid>
+      <description>drafts
+Iraq is a country ruled by paper but so is the states But paper acts as a way to shape the population, we care about what we submit on the paper, and we care about what we get back from the paper In iraq, the physical paper and stamp are what matters The ability to print, to get stamps, to traffick in stamps is what matters Paper is not a singular demon, but many Crisis of trust, stamps (hatam), and how it relates to people Paradox of trust </description>
+    </item>
+    <item>
       <title>physics</title>
       <link>/posts/physics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -10792,7 +10826,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5459228/ </description>
       <link>/posts/predictions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/predictions/</guid>
-      <description> root Forecase Date Eval Date Statement Forecast Probabiltiy Eval Result Failure Reason? 9/10/23 31/11/23 I will be B2+/C1- in Spanish 90% True 9/10/23 14/12/23 I will have learned basic snowboarding 80% False Didn&amp;rsquo;t work out! 9/10/23 01/02/24 I will have figured out a topic for UdelaR 75% False Pivoted to new job 06/06/24 01/09/24 I will have settled into my job at Meta 80% True 06/06/24 01/10/24 I will have figured out an approach to the code ownership political problem on chatd 50% True 13/10/24 01/02/24 I will have gotten my shit together and be running on all cylindars 80% True 13/10/24 01/02/24 I will be able to hold a conversation in Guarani 50% False Deprecated in favor of russian 16/02/24 01/05/24 I will be able to back on mathematics 50% False Did not do :( 16/02/24 01/05/24 I will have learned D3 and Ratatui and gotten better at UI tooling 80% True 16/02/24 01/05/24 I will be able to hold a conversation in Russian 30% False Did not do :( 13/01/26 01/05/26 I will have B1 fluency in Portugese 50% 13/01/26 01/12/26 I will have A2 fluency in Russian 80% 13/01/26 01/05/26 I will be able to play the Qanoon at some decent level 50% </description>
+      <description> root Forecase Date Eval Date Statement Forecast Probabiltiy Eval Result Failure Reason? 9/10/23 31/11/23 I will be B2+/C1- in Spanish 90% True 9/10/23 14/12/23 I will have learned basic snowboarding 80% False Didn&amp;rsquo;t work out! 9/10/23 01/02/24 I will have figured out a topic for UdelaR 75% False Pivoted to new job 06/06/24 01/09/24 I will have settled into my job at Meta 80% True 06/06/24 01/10/24 I will have figured out an approach to the code ownership political problem on chatd 50% True 13/10/24 01/02/24 I will have gotten my shit together and be running on all cylindars 80% True 13/10/24 01/02/24 I will be able to hold a conversation in Guarani 50% False Deprecated in favor of russian 16/02/24 01/05/24 I will be able to back on mathematics 50% False Did not do :( 16/02/24 01/05/24 I will have learned D3 and Ratatui and gotten better at UI tooling 80% True 16/02/24 01/05/24 I will be able to hold a conversation in Russian 30% False Did not do :( 13/01/26 01/05/26 I will have B1 fluency in Portugese 50% 13/01/26 01/05/26 I will be able to play the Qanoon at some decent level 50% 15/01/26 09/04/26 I will be able to squat 3 wheels 80% 15/01/26 01/12/26 I will be able to clean 2 wheels 50% </description>
     </item>
     <item>
       <title>Pursely - Familiar Futures</title>
@@ -13244,6 +13278,16 @@ https://www.imf.org/en/Publications/WP/Issues/2016/12/31/The-Chicago-Plan-Revisi
 Also see https://www.researchgate.net/publication/26798603_Conditions_for_Intuitive_Expertise_A_Failure_to_Disagree?enrichId=rgreq-7a806a35-ae6b-4eb6-ab51-89923c22b177&amp;amp;enrichSource=Y292ZXJQYWdlOzI2Nzk4NjAzO0FTOjI5OTQ5MjcwMTE2MzUyMUAxNDQ4NDE2MDMyMTgz&amp;amp;el=1_x_2
 Takeaway: financial advice is generalized because finance is a weird field, software has much more acute learning signals. Finance models are generically not generalizable, no one would apply black-scholes towards their groceries.
 Advice should be taken on how easily something can be abstracted or whether the problem is domain specific. Some patterns applied in firmware and SDR cannot be applied to higher level programming, for example.</description>
+    </item>
+    <item>
+      <title>The Demon of Oncall</title>
+      <link>/posts/good_software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/good_software/</guid>
+      <description>drafts
+Software engineers contend with oncalls in different ways. Some find companies to peace out where there is no oncall load, some pull the Google and try to build follow-the-sun rotations, some move to teams where the oncall burden is light. I&amp;rsquo;ve chosen the worst of all these options: choosing to run into the fire.
+This isn&amp;rsquo;t about how to run an oncall, that&amp;rsquo;s largely banal crisis response.
+In many ways this is sort of my own fault, WhatsApp has a culture of reiability, but also, like many companies, uneven and uncaring oncalls.</description>
     </item>
     <item>
       <title>the frontier, settler colonialism, the united states</title>
