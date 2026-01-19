@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <title>عجفت الغور</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="all" rel="stylesheet" />
     <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
         #title {
             position: absolute;
             bottom: 10px;
             left: 10px;
-            flex-direction: row;
             display: flex;
+            flex-direction: row;
             align-items: center;
             z-index: 10;
-            /* ensures it's above other elements */
             padding: 5px;
             background: rgba(255, 255, 255, 0.8);
-            /* white background with some transparency */
             border-radius: 5px;
         }
 
@@ -24,51 +29,62 @@
 
         #title .subtitle h2 {
             font-size: 0.9em;
-            /* make it smaller */
             margin: 0;
             font-weight: 400;
-            /* make it less bold */
         }
 
         #title .subtitle small {
             display: block;
-            /* put the 'source on GitHub' on a new line */
         }
 
         div.tooltip {
             position: absolute;
-            text-align: center;
-            padding: 2px;
+            text-align: left;
+            padding: 8px 12px;
             font: 12px sans-serif;
-            background: lightsteelblue;
-            border: 0px;
+            background: white;
+            border: 2px solid #333;
             border-radius: 8px;
             pointer-events: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            z-index: 1000;
         }
 
-        h1 {
-            font-size: 1em;
-            width: 75%;
-            position: fixed;
-            left: 50%;
-            margin-left: -37.5%;
+        div.tooltip .tooltip-title {
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        div.tooltip .tooltip-id {
+            font-size: 10px;
+            color: #666;
+            font-family: monospace;
+            word-break: break-all;
         }
 
         #search-bar {
             position: absolute;
-            top: 0;
-            right: 0;
+            top: 10px;
+            right: 10px;
             padding: 10px;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            z-index: 100;
         }
 
         #search-input {
-            width: 100%;
-            padding: 5px;
-            border: none;
-            border-bottom: 1px solid #ccc;
-            font-size: 16px;
+            width: 250px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        #search-input:focus {
+            outline: none;
+            border-color: #007bff;
         }
 
         #search-results {
@@ -76,90 +92,135 @@
             top: 100%;
             right: 0;
             width: 100%;
-            max-height: 200px;
+            max-height: 300px;
             overflow-y: auto;
-            list-style: none;
-            padding: 0;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 5px 5px;
+            margin-top: 2px;
         }
 
         #search-results ul {
-            padding-left: .5em;
-        }
-
-        #search-results li:focus,
-        #search-results li:hover {
-            background-color: #f2f2f2;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            outline: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
         #search-results li {
-            list-style: none;
-            padding: 5px;
+            padding: 8px 12px;
             cursor: pointer;
+            border-bottom: 1px solid #eee;
         }
 
-        #search-results div {
-            padding: 5px;
-            cursor: pointer;
+        #search-results li:last-child {
+            border-bottom: none;
         }
 
-        #search-results div:focus,
-        #search-results div:hover {
-            background-color: #f2f2f2;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            outline: none;
+        #search-results li:hover,
+        #search-results li.selected {
+            background-color: #007bff;
+            color: white;
+        }
+
+        #search-results li .result-title {
+            font-weight: 500;
+        }
+
+        #search-results li .result-id {
+            font-size: 11px;
+            color: #666;
+            font-family: monospace;
+        }
+
+        #search-results li:hover .result-id,
+        #search-results li.selected .result-id {
+            color: rgba(255, 255, 255, 0.8);
         }
 
         #legend-container {
             position: absolute;
             bottom: 10px;
             right: 10px;
-            background-color: rgba(255, 255, 255, 0.8);
-            /* white background with some transparency */
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 5px;
             padding: 10px;
             z-index: 100;
-            /* ensures it's above other elements */
+            max-height: 50vh;
+            overflow-y: auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-
 
         .legend-item {
             display: flex;
             align-items: center;
             margin-bottom: 5px;
             cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .legend-item:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        .legend-item.active {
+            background-color: rgba(0, 0, 0, 0.1);
         }
 
         .legend-item .dot {
-            width: 10px;
-            height: 10px;
-            margin-right: 5px;
+            width: 12px;
+            height: 12px;
+            margin-right: 8px;
             border-radius: 50%;
+            flex-shrink: 0;
         }
 
         .legend-item .name {
-            font-size: 14px;
+            font-size: 13px;
+        }
+
+        .node-label {
+            font-size: 10px;
+            font-family: sans-serif;
+            pointer-events: none;
+            text-shadow:
+                -1px -1px 0 white,
+                1px -1px 0 white,
+                -1px 1px 0 white,
+                1px 1px 0 white;
+        }
+
+        #instructions {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 12px;
+            color: #666;
+            z-index: 10;
+        }
+
+        #instructions kbd {
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 11px;
         }
     </style>
 </head>
-<title>عجفت الغور</title>
-
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="all" rel="stylesheet" />
-
-<div id="title">
-    <div class="subtitle">
-        <h2>Notes Graph</h2>
-        <small>Source on
-            <a href="https://github.com/peixian/org-roam-force-graph">GitHub</a></small>
-    </div>
-</div>
-
 <body>
+    <div id="instructions">
+        <kbd>Scroll</kbd> to zoom &nbsp;|&nbsp;
+        <kbd>Drag</kbd> to pan &nbsp;|&nbsp;
+        <kbd>Click</kbd> node to open &nbsp;|&nbsp;
+        <kbd>/</kbd> to search
+    </div>
 
     <div id="search-bar">
+        <input type="text" id="search-input" placeholder="Search nodes..." />
         <div id="search-results"></div>
     </div>
 
@@ -169,309 +230,438 @@
         <div id="chart"></div>
     </div>
 
-</body>
-<script src="https://d3js.org/d3.v6.min.js"></script>
-<script>
+    <div id="title">
+        <div class="subtitle">
+            <h2>Notes Graph</h2>
+            <small>Source on <a href="https://github.com/peixian/org-roam-force-graph">GitHub</a></small>
+        </div>
+    </div>
 
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script>
+        // Tooltip element
+        const tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
 
-    var div = d3.select("body").append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0);
-    var scale = d3.scaleOrdinal(d3.schemeCategory10);
+        const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
+        d3.json("org-data.json")
+            .then(function (data) {
+                let width = window.innerWidth;
+                let height = window.innerHeight;
 
-
-    d3.json("org-data.json")
-        .then(function (data) {
-            var width = window.innerWidth,
-                height = window.innerHeight;
-
-            window.addEventListener('resize', resize);
-
-            function resize() {
-                width = window.innerWidth;
-                height = window.innerHeight;
-                svg.attr("viewBox", [0, 0, width, height]);
-            }
-
-            function color(d) {
-                return scale(d.group);
-            }
-
-            function dx_source(d) {
-                return d.source.x1 * width;
-            }
-
-            function dx_target(d) {
-                return d.target.x2 * width;
-            }
-
-            function dy_source(d) {
-                return d.y1 * height;
-            }
-
-            function dy_target(d) {
-                return d.y2 * height;
-            }
-
-            function zoomToNode(d) {
-                const connectedNodes = getConnectedNodes(d);
-                const xValues = connectedNodes.map(node => dx(node));
-                const yValues = connectedNodes.map(node => dy(node));
-                const xMin = d3.min(xValues);
-                const xMax = d3.max(xValues);
-                const yMin = d3.min(yValues);
-                const yMax = d3.max(yValues);
-                const padding = 50;
-                const centerX = (xMin + xMax) / 2;
-                const centerY = (yMin + yMax) / 2;
-                const scale = Math.min(8, 0.9 / Math.max(width / width, height / height));
-
-                const translateX = width / 2 - centerX * scale;
-                const translateY = height / 2 - centerY * scale;
-                console.log(translateX, translateY, scale);
-                svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity.translate(translateX, translateY).scale(scale));
-            }
-
-            function getConnectedNodes(d) {
-                const connectedNodes = new Set();
-                connectedNodes.add(d);
-                links.forEach(link => {
-                    if (link.source === d) {
-                        connectedNodes.add(link.target);
-                    } else if (link.target === d) {
-                        connectedNodes.add(link.source);
-                    }
+                // Calculate node degrees for sizing
+                const nodeDegrees = {};
+                data.nodes.forEach(n => nodeDegrees[n.id] = 0);
+                data.links.forEach(l => {
+                    nodeDegrees[l.source] = (nodeDegrees[l.source] || 0) + 1;
+                    nodeDegrees[l.target] = (nodeDegrees[l.target] || 0) + 1;
                 });
-                return Array.from(connectedNodes);
-            }
 
-            function createTooltip(node) {
-                let tooltip = d3.select("body")
-                    .append("div")
-                    .attr("class", "tooltip")
-                    .style("opacity", 0);
+                // Find high-degree nodes for labels (top 15)
+                const sortedByDegree = Object.entries(nodeDegrees)
+                    .sort((a, b) => b[1] - a[1]);
+                const topNodes = new Set(sortedByDegree.slice(0, 15).map(d => d[0]));
+                const maxDegree = sortedByDegree[0]?.[1] || 1;
 
-                tooltip.html(`<div style='float: right'>${node.id}</div>`)
-                    .style("opacity", .9)
-                    .style('left', dx(node) + 'px')
-                    .style('top', (dy(node) - 28) + 'px')
-                    .style('border', 'solid 3px black')
-                    .style('background-color', 'white')
-                    .style('border-radius', '10px')
-                    .style('float', 'left')
-                    .style('font-family', 'monospace');
+                // Node radius scale based on degree
+                const radiusScale = d3.scaleSqrt()
+                    .domain([0, maxDegree])
+                    .range([3, 12]);
 
-                return tooltip;
-            }
+                // Build connected index using node IDs (not indices)
+                const linkedByIndex = {};
+                data.links.forEach(d => {
+                    linkedByIndex[`${d.source},${d.target}`] = true;
+                    linkedByIndex[`${d.target},${d.source}`] = true;
+                });
 
-            function showTooltip(node) {
-                const tooltip = createTooltip(node);
-                node.tooltips.push(tooltip);
-            }
+                function isConnected(a, b) {
+                    return a.id === b.id || linkedByIndex[`${a.id},${b.id}`];
+                }
 
+                // Create nodes with tooltips array
+                const nodes = data.nodes.map(d => ({
+                    ...d,
+                    degree: nodeDegrees[d.id] || 0
+                }));
 
-            function dx(d) {
-                return d.x * width;
-            }
+                const links = data.links.map(d => Object.create(d));
 
-            function dy(d) {
-                return d.y * height;
-            }
+                // Helper functions
+                function dx(d) { return d.x * width; }
+                function dy(d) { return d.y * height; }
+                function color(d) { return colorScale(d.group); }
+                function nodeRadius(d) { return radiusScale(d.degree); }
 
-            function clicked(event, d) {
-                window.open(d.url);
-            }
+                // Build SVG
+                const svg = d3.select("#chart")
+                    .append("svg")
+                    .attr("width", width)
+                    .attr("height", height)
+                    .attr("viewBox", [0, 0, width, height]);
 
-            function fade(nodeOpacity, linkOpacity) {
-                return (event, d) => {
-                    node.style('stroke-opacity', function (o) {
-                        const thisOpacity = isConnected(d, o) ? 1 : nodeOpacity;
-                        this.setAttribute('fill-opacity', thisOpacity);
-                        return thisOpacity;
+                const g = svg.append("g")
+                    .attr("transform", `translate(${width / 2}, ${height / 2})`);
+
+                // Zoom behavior
+                let currentTransform = d3.zoomIdentity;
+                const zoom = d3.zoom()
+                    .scaleExtent([0.5, 10])
+                    .on("zoom", function (event) {
+                        currentTransform = event.transform;
+                        g.attr("transform", `translate(${width / 2 + event.transform.x}, ${height / 2 + event.transform.y}) scale(${event.transform.k})`);
+
+                        // Adjust node radius and stroke based on zoom
+                        node.attr("r", d => nodeRadius(d) / event.transform.k);
+                        node.attr("stroke-width", 1.5 / event.transform.k);
+
+                        // Adjust label size
+                        labels.attr("font-size", d => `${10 / event.transform.k}px`);
                     });
 
-                    link.style('stroke-opacity', o => (o.source === d.id || o.target === d.id ? 1 : linkOpacity));
+                svg.call(zoom);
 
-                };
-            }
+                // Draw links
+                const link = g.append('g')
+                    .attr("class", "links")
+                    .attr("stroke", "#999")
+                    .attr("stroke-opacity", 0.4)
+                    .selectAll("line")
+                    .data(links)
+                    .join("line")
+                    .attr("x1", d => d.x1 * width)
+                    .attr("y1", d => d.y1 * height)
+                    .attr("x2", d => d.x2 * width)
+                    .attr("y2", d => d.y2 * height)
+                    .attr("stroke-width", 1);
 
-            function highlightNode(d) {
-                node.attr("opacity", o => isConnected(d, o) ? 1 : 0.1);
-                link.attr("stroke-opacity", o => (o.source === d || o.target === d) ? 1 : 0.1);
-            }
+                // Draw nodes
+                const node = g.append('g')
+                    .attr("class", "nodes")
+                    .attr("stroke", "#fff")
+                    .attr("stroke-width", 1.5)
+                    .selectAll("circle")
+                    .data(nodes)
+                    .join("circle")
+                    .attr("r", nodeRadius)
+                    .attr("cx", dx)
+                    .attr("cy", dy)
+                    .attr("fill", color)
+                    .style("cursor", "pointer")
+                    .on("click", handleNodeClick)
+                    .on("mouseover", handleNodeMouseOver)
+                    .on("mouseout", handleNodeMouseOut);
 
-            function unhighlightNode() {
-                node.attr("opacity", 1);
-                link.attr("stroke-opacity", 0.1);
-            }
+                // Draw labels for high-degree nodes
+                const labels = g.append('g')
+                    .attr("class", "labels")
+                    .selectAll("text")
+                    .data(nodes.filter(d => topNodes.has(d.id)))
+                    .join("text")
+                    .attr("class", "node-label")
+                    .attr("x", dx)
+                    .attr("y", d => dy(d) - nodeRadius(d) - 3)
+                    .attr("text-anchor", "middle")
+                    .text(d => d.title || d.id);
 
+                // Event handlers
+                function handleNodeClick(event, d) {
+                    window.open(d.url, '_blank');
+                }
 
-            // Building svg
-            let svg = d3.select("#chart")
-                .classed("svg-container", true)
-                .append("svg")
-                .attr("preserveAspectRatio", "xMinYMin meet")
-                .attr("viewBox", [0, 0, width, height])
-                .classed("svg-content-responsive", true);
+                function handleNodeMouseOver(event, d) {
+                    // Show tooltip with title
+                    tooltip
+                        .style("opacity", 1)
+                        .html(`
+                            <div class="tooltip-title">${d.title || d.id}</div>
+                            <div class="tooltip-id">${d.id}</div>
+                        `)
+                        .style("left", (event.pageX + 15) + "px")
+                        .style("top", (event.pageY - 10) + "px");
 
-            svg = svg.merge(svg);
+                    // Highlight connected nodes
+                    node.attr("opacity", o => isConnected(d, o) ? 1 : 0.1);
+                    link.attr("stroke-opacity", o => (o.source === d.id || o.target === d.id) ? 0.8 : 0.05);
+                    labels.attr("opacity", o => isConnected(d, o) ? 1 : 0.1);
+                }
 
-            const zoom = d3.zoom()
-                .scaleExtent([1, 8])
-                .on("zoom", function (event) {
-                    g.attr("transform", event.transform);
+                function handleNodeMouseOut(event, d) {
+                    tooltip.style("opacity", 0);
+                    node.attr("opacity", 1);
+                    link.attr("stroke-opacity", 0.4);
+                    labels.attr("opacity", 1);
+                }
 
-                    // Adjust the node radius according to the zoom scale
-                    node.attr("r", 5 / event.transform.k);
-                    node.attr("stroke-width", 1.5 / event.transform.k);
-                });
+                // Zoom to a specific node
+                function zoomToNode(d) {
+                    const connectedNodes = getConnectedNodes(d);
+                    const xValues = connectedNodes.map(node => dx(node));
+                    const yValues = connectedNodes.map(node => dy(node));
 
-            svg.call(zoom);
+                    const xMin = d3.min(xValues);
+                    const xMax = d3.max(xValues);
+                    const yMin = d3.min(yValues);
+                    const yMax = d3.max(yValues);
 
+                    const padding = 100;
+                    const boxWidth = (xMax - xMin) + padding * 2;
+                    const boxHeight = (yMax - yMin) + padding * 2;
 
-            const groupInfo = data.groups;
-            console.log();
-            const legendContainer = d3.select("#legend-container");
+                    const scale = Math.min(8, Math.min(width / boxWidth, height / boxHeight));
+                    const centerX = (xMin + xMax) / 2;
+                    const centerY = (yMin + yMax) / 2;
 
-            const legend = legendContainer.selectAll('.legend-item')
-                .data(Object.entries(groupInfo))
-                .enter()
-                .append('div')
-                .attr('class', 'legend-item')
-                .on("mouseover", (event, [group, info]) => { 
-                    console.log(group, info)
-                    const centralNode = nodes.find(node => node.id === info.central_node);
-                    if (centralNode) {
-                        node.style('stroke-opacity', function (o) {
-                            const thisOpacity = isConnected(centralNode, o) ? 1 : 0.1;
-                            this.setAttribute('fill-opacity', thisOpacity);
-                            return thisOpacity;
-                        }); 
+                    const translateX = -centerX * scale;
+                    const translateY = -centerY * scale;
 
-                        link.style('stroke-opacity', o => (o.source === centralNode.id || o.target === centralNode.id ? 1 : 0.1));
-                    }
-                })
-                .on("click", (event, [group, info]) => { 
-                    console.log(group, info)
-                    const centralNode = nodes.find(node => node.id === info.central_node);
-                    if (centralNode) {
-                        zoomToNode(centralNode);
-                    }
-                });
+                    svg.transition()
+                        .duration(750)
+                        .call(zoom.transform, d3.zoomIdentity.translate(translateX, translateY).scale(scale));
+                }
 
-            legend.append('div')
-                .attr('class', 'dot')
-                .style('background-color', ([group, info]) => scale(group));
+                function getConnectedNodes(d) {
+                    const connectedNodes = new Set();
+                    connectedNodes.add(d);
+                    links.forEach(link => {
+                        if (link.source === d.id) {
+                            const targetNode = nodes.find(n => n.id === link.target);
+                            if (targetNode) connectedNodes.add(targetNode);
+                        } else if (link.target === d.id) {
+                            const sourceNode = nodes.find(n => n.id === link.source);
+                            if (sourceNode) connectedNodes.add(sourceNode);
+                        }
+                    });
+                    return Array.from(connectedNodes);
+                }
 
-            legend.append('div')
-                .attr('class', 'name')
-                .text(([group, info]) => info.name);
+                // Legend
+                const groupInfo = data.groups;
+                const legendContainer = d3.select("#legend-container");
+                let activeGroup = null;
 
-            let g = svg.append("g")
-                .attr("transform", `translate(${width / 2}, ${height / 2})`);
-
-            const links = data.links.map(d => Object.create(d));
-            //const nodes = data.nodes.map(d => Object.create(d));
-
-            const nodes = data.nodes.map(d => {
-                d.tooltips = [];
-                return Object.create(d);
-            });
-
-
-            const linkedByIndex = {};
-            data.links.forEach(d => {
-                linkedByIndex[`${d.source.index},${d.target.index}`] = 1;
-            });
-
-            function isConnected(a, b) {
-                return linkedByIndex[`${a.index},${b.index}`] || linkedByIndex[`${b.index},${a.index}`] || a.index === b.index;
-            }
-
-            const link = g.append('g')
-                .attr("stroke", "#999")
-                .attr("stroke-opacity", 0.1)
-                .selectAll("line")
-                .data(links)
-                .join("line")
-                .attr("x1", d => d.x1 * width)
-                .attr("y1", d => d.y1 * height)
-                .attr("x2", d => d.x2 * width)
-                .attr("y2", d => d.y2 * height)
-                .attr("stroke-width", d => Math.sqrt(d.value));
-
-
-            const node = g
-                .attr("stroke", "#fff")
-                .attr("stroke-width", 1.5)
-                .selectAll("circle")
-                .data(nodes)
-                .join("circle")
-                .attr("r", 5)
-                .attr("cx", dx)
-                .attr("cy", dy)
-                .attr("fill", color)
-                .on("click", clicked)
-                .on("mouseover", function (event, d) {
-                    div.html(`<div style='float: right'>${d.id}</div>`)
-                        .style("opacity", .9)
-                        .style('left', event.pageX + 'px')
-                        .style('top', (event.pageY - 28) + 'px')
-                        .style('border', 'solid 3px black')
-                        .style('background-color', 'white')
-                        .style('border-radius', '10px')
-                        .style('float', 'left')
-                        .style('font-family', 'monospace');
-                })
-                .on('mouseover.fade', fade(0.1, 0.1))
-                .on("mouseout", function (event, d) {
-                    div.style("opacity", 0);
-                })
-                .on('mouseout.fade', fade(1, 0.1));
-
-
-            const searchInput = d3.select("#search-bar")
-                .append("input")
-                .attr("type", "text")
-                .attr("placeholder", "Search nodes by name");
-
-            searchInput.on("input", function () {
-                const inputValue = this.value.trim().toLowerCase();
-
-                const searchResults = nodes.filter(node => node.id.toLowerCase().includes(inputValue));
-
-                const searchResultsDiv = d3.select("#search-results");
-                searchResultsDiv.selectAll("*").remove(); // Clear previous search results
-                const searchResultsList = searchResultsDiv.append("ul");
-                searchResultsList.selectAll("li")
-                    .data(searchResults)
+                const legend = legendContainer.selectAll('.legend-item')
+                    .data(Object.entries(groupInfo))
                     .enter()
-                    .append("li")
-                    .text(d => d.id)
-                    .on("mouseover", fade(0.1, 0.1))
-                    .on("click", (event, d) => { 
-                        const [x, y] = [dx(d), dy(d)];
-                        fade(0.1, 0.1)
-                        zoomToNode(d);
-                    });
+                    .append('div')
+                    .attr('class', 'legend-item')
+                    .on("mouseover", handleLegendMouseOver)
+                    .on("mouseout", handleLegendMouseOut)
+                    .on("click", handleLegendClick);
 
-            });
+                legend.append('div')
+                    .attr('class', 'dot')
+                    .style('background-color', ([group, info]) => colorScale(group));
 
-            function zoomAction(transform) {
-                g.attr("transform", `translate(${width / 2 + transform.x}, ${height / 2 + transform.y})` + "scale(" + transform.k + ")");
-            }
+                legend.append('div')
+                    .attr('class', 'name')
+                    .text(([group, info]) => info.name);
 
-            let zoomHandler = d3.zoom()
-                .on("zoom", function (event) {
-                    zoomAction(event.transform);
-                    // Adjust the node radius according to the zoom scale
-                    node.attr("r", 5 / event.transform.k);
+                function handleLegendMouseOver(event, [group, info]) {
+                    if (activeGroup !== null) return; // Don't hover-highlight if a group is actively selected
+
+                    const centralNode = nodes.find(n => n.id === info.central_node);
+                    if (centralNode) {
+                        node.attr("opacity", o => isConnected(centralNode, o) ? 1 : 0.1);
+                        link.attr("stroke-opacity", o =>
+                            (o.source === centralNode.id || o.target === centralNode.id) ? 0.8 : 0.05
+                        );
+                        labels.attr("opacity", o => isConnected(centralNode, o) ? 1 : 0.1);
+                    }
+                }
+
+                function handleLegendMouseOut(event, [group, info]) {
+                    if (activeGroup !== null) return; // Don't reset if a group is actively selected
+
+                    node.attr("opacity", 1);
+                    link.attr("stroke-opacity", 0.4);
+                    labels.attr("opacity", 1);
+                }
+
+                function handleLegendClick(event, [group, info]) {
+                    const legendItem = d3.select(this);
+
+                    if (activeGroup === group) {
+                        // Deselect - show all
+                        activeGroup = null;
+                        legendContainer.selectAll('.legend-item').classed('active', false);
+                        node.attr("opacity", 1);
+                        link.attr("stroke-opacity", 0.4);
+                        labels.attr("opacity", 1);
+                    } else {
+                        // Select this group - isolate it
+                        activeGroup = group;
+                        legendContainer.selectAll('.legend-item').classed('active', false);
+                        legendItem.classed('active', true);
+
+                        node.attr("opacity", o => o.group == group ? 1 : 0.1);
+                        link.attr("stroke-opacity", o => {
+                            const sourceNode = nodes.find(n => n.id === o.source);
+                            const targetNode = nodes.find(n => n.id === o.target);
+                            return (sourceNode?.group == group && targetNode?.group == group) ? 0.6 : 0.02;
+                        });
+                        labels.attr("opacity", o => o.group == group ? 1 : 0.1);
+
+                        // Zoom to the central node
+                        const centralNode = nodes.find(n => n.id === info.central_node);
+                        if (centralNode) {
+                            zoomToNode(centralNode);
+                        }
+                    }
+                }
+
+                // Search functionality
+                const searchInput = d3.select("#search-input");
+                const searchResults = d3.select("#search-results");
+                let selectedIndex = -1;
+                let currentResults = [];
+
+                searchInput.on("input", handleSearchInput);
+                searchInput.on("keydown", handleSearchKeydown);
+
+                function handleSearchInput() {
+                    const inputValue = this.value.trim().toLowerCase();
+                    selectedIndex = -1;
+
+                    if (inputValue.length === 0) {
+                        searchResults.selectAll("*").remove();
+                        currentResults = [];
+                        return;
+                    }
+
+                    currentResults = nodes.filter(n =>
+                        n.id.toLowerCase().includes(inputValue) ||
+                        (n.title && n.title.toLowerCase().includes(inputValue))
+                    ).slice(0, 20); // Limit results
+
+                    searchResults.selectAll("*").remove();
+
+                    if (currentResults.length === 0) {
+                        searchResults.append("div")
+                            .style("padding", "8px 12px")
+                            .style("color", "#666")
+                            .text("No results found");
+                        return;
+                    }
+
+                    const list = searchResults.append("ul");
+                    list.selectAll("li")
+                        .data(currentResults)
+                        .enter()
+                        .append("li")
+                        .html(d => `
+                            <div class="result-title">${d.title || d.id}</div>
+                            <div class="result-id">${d.id}</div>
+                        `)
+                        .on("mouseover", function(event, d) {
+                            selectedIndex = currentResults.indexOf(d);
+                            updateSelectedResult();
+                            highlightNode(d);
+                        })
+                        .on("mouseout", function(event, d) {
+                            unhighlightNode();
+                        })
+                        .on("click", function(event, d) {
+                            zoomToNode(d);
+                            highlightNode(d);
+                            searchInput.node().value = d.title || d.id;
+                            searchResults.selectAll("*").remove();
+                            currentResults = [];
+                        });
+                }
+
+                function handleSearchKeydown(event) {
+                    if (currentResults.length === 0) return;
+
+                    switch (event.key) {
+                        case "ArrowDown":
+                            event.preventDefault();
+                            selectedIndex = Math.min(selectedIndex + 1, currentResults.length - 1);
+                            updateSelectedResult();
+                            break;
+                        case "ArrowUp":
+                            event.preventDefault();
+                            selectedIndex = Math.max(selectedIndex - 1, 0);
+                            updateSelectedResult();
+                            break;
+                        case "Enter":
+                            event.preventDefault();
+                            if (selectedIndex >= 0 && selectedIndex < currentResults.length) {
+                                const d = currentResults[selectedIndex];
+                                zoomToNode(d);
+                                highlightNode(d);
+                                searchInput.node().value = d.title || d.id;
+                                searchResults.selectAll("*").remove();
+                                currentResults = [];
+                            }
+                            break;
+                        case "Escape":
+                            searchInput.node().value = "";
+                            searchResults.selectAll("*").remove();
+                            currentResults = [];
+                            unhighlightNode();
+                            break;
+                    }
+                }
+
+                function updateSelectedResult() {
+                    searchResults.selectAll("li")
+                        .classed("selected", (d, i) => i === selectedIndex);
+
+                    if (selectedIndex >= 0) {
+                        highlightNode(currentResults[selectedIndex]);
+                    }
+                }
+
+                function highlightNode(d) {
+                    node.attr("opacity", o => isConnected(d, o) ? 1 : 0.1);
+                    link.attr("stroke-opacity", o => (o.source === d.id || o.target === d.id) ? 0.8 : 0.05);
+                    labels.attr("opacity", o => isConnected(d, o) ? 1 : 0.1);
+                }
+
+                function unhighlightNode() {
+                    if (activeGroup !== null) {
+                        // Restore group filter state
+                        node.attr("opacity", o => o.group == activeGroup ? 1 : 0.1);
+                        link.attr("stroke-opacity", o => {
+                            const sourceNode = nodes.find(n => n.id === o.source);
+                            const targetNode = nodes.find(n => n.id === o.target);
+                            return (sourceNode?.group == activeGroup && targetNode?.group == activeGroup) ? 0.6 : 0.02;
+                        });
+                        labels.attr("opacity", o => o.group == activeGroup ? 1 : 0.1);
+                    } else {
+                        node.attr("opacity", 1);
+                        link.attr("stroke-opacity", 0.4);
+                        labels.attr("opacity", 1);
+                    }
+                }
+
+                // Keyboard shortcut for search
+                document.addEventListener("keydown", function(event) {
+                    if (event.key === "/" && document.activeElement !== searchInput.node()) {
+                        event.preventDefault();
+                        searchInput.node().focus();
+                    }
                 });
 
-            zoomHandler(svg);
-        })
-        .catch(function (error) {
-            console.log(error)
-        });
-</script>
+                // Handle window resize
+                window.addEventListener('resize', function() {
+                    width = window.innerWidth;
+                    height = window.innerHeight;
+                    svg.attr("width", width).attr("height", height);
+                    svg.attr("viewBox", [0, 0, width, height]);
+                });
+            })
+            .catch(function (error) {
+                console.error("Error loading graph data:", error);
+                d3.select("#chart")
+                    .append("div")
+                    .style("padding", "20px")
+                    .style("color", "red")
+                    .text("Error loading graph data. Make sure org-data.json exists.");
+            });
+    </script>
+</body>
+</html>
