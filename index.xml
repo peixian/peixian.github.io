@@ -4102,6 +4102,14 @@ inspiration: https://matt.sh/load-balance-trades </description>
 Fast k/v used in kubernetes (k8s)</description>
     </item>
     <item>
+      <title>eternal 2010</title>
+      <link>/posts/eternal_2010/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/eternal_2010/</guid>
+      <description>drafts
+AI makes it so that we write the same code over and over This is probably good for some things (API, crud, etc) But bad for other things Usefulness of AI will come from ability to recall and bind topics together. It helps you find the known unknowns, but the unknown unknowns will still have to come from you </description>
+    </item>
+    <item>
       <title>etherium</title>
       <link>/posts/etherium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
