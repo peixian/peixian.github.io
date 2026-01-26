@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="/css/main.min.7a8dc5b063775e5d3df0beea151395736f55ccb3343f70eea0595b53da5015c4.css">
 
 
-<script defer src="/en.search.min.c61d7710b45309b00c08dc75b18e3c1756d826642937afd09eeb3b9ae90e4183.js" integrity="sha256-xh13ELRTCbAMCNx1sY48F1bYJmQpN6/Qnus7mukOQYM="></script>
+<script defer src="/en.search.min.848b640e61c555fffaa7b372e4a90cb45ef2833fa9313d805507f3a994af9e50.js" integrity="sha256-hItkDmHFVf/6p7Ny5KkMtF7ygz&#43;pMT2AVQfzqZSvnlA="></script>
 
 
 <link rel="stylesheet" href="/katex/katex.min.css" media="print" onload="this.media='all'">
@@ -184,8 +184,9 @@
 </li>
 <li>In order to make this workable for <a href="/posts/build_systems/#buck-blaze-bazel">Buck / Blaze / Bazel</a>, an auxillery file needs to get shipped so the build system knows which sources to include, even when they&rsquo;re not strictly dependant, as a form of dynamic dependency injection</li>
 <li>Predacessor to <a href="/posts/linkers/#lto--and-thinlto">LTO (and ThinLTO)</a></li>
+<li><a href="https://lists.llvm.org/pipermail/llvm-dev/2019-September/135393.html">https://lists.llvm.org/pipermail/llvm-dev/2019-September/135393.html</a></li>
 </ul>
-<h3 id="discussion">Discussion</h3>
+<h4 id="discussion">Discussion</h4>
 <ul>
 <li>Coming from FDO baseline is a bit specious</li>
 <li>What is a translation unit here?</li>
@@ -193,12 +194,38 @@
 <h3 id="panchenko-maksim-rafael-auler-bill-nell-and-guilherme-ottoni-dot-bolt-a-practical-binary-optimizer-for-data-centers-and-beyond-dot-arxiv-1807-dot-06735-dot-preprint-arxiv-october-12-2018-dot-https-doi-dot-org-10-dot-48550-arxiv-dot-1807-dot-06735-dot">Panchenko, Maksim, Rafael Auler, Bill Nell, and Guilherme Ottoni. “BOLT: A Practical Binary Optimizer for Data Centers and Beyond.” arXiv:1807.06735. Preprint, arXiv, October 12, 2018. <a href="https://doi.org/10.48550/arXiv.1807.06735">https://doi.org/10.48550/arXiv.1807.06735</a>.</h3>
 <ul>
 <li>How does this interact with ASLR?</li>
+<li>I-cache much more constrained than Dcache</li>
+</ul>
+<h3 id="chen-dehao-david-xinliang-li-and-tipp-moseley-dot-autofdo-automatic-feedback-directed-optimization-for-warehouse-scale-applications-dot-proceedings-of-the-2016-international-symposium-on-code-generation-and-optimization-february-29-2016-12-23-dot-https-doi-dot-org-10-dot-1145-2854038-dot-2854044-dot">Chen, Dehao, David Xinliang Li, and Tipp Moseley. “AutoFDO: Automatic Feedback-Directed Optimization for Warehouse-Scale Applications.” Proceedings of the 2016 International Symposium on Code Generation and Optimization, February 29, 2016, 12–23. <a href="https://doi.org/10.1145/2854038.2854044">https://doi.org/10.1145/2854038.2854044</a>.</h3>
+<ul>
+<li>Largely leverages the LBT, but also has to decide on the CFG</li>
+<li>The control flow graph has some nuances</li>
+<li>Optimization is one way, a binary once optimized may not be easily reversible back. Inlined functions are destructive transforms</li>
+<li>Context sensitive -&gt; it uses the path taken to measure hotness for a function
+<ul>
+<li>i.e. foo -&gt; bar -&gt; baz. Baz might be cold globally, but baz might be really hot for the path itself</li>
+</ul>
+</li>
+<li>Calculating edge frequency
+<ul>
+<li>Moves data into equvilance classes
+<ul>
+<li>Basic blocks within the same loop or dominated by the same condition have the same equivlance class</li>
+</ul>
+</li>
+<li>A function might be frequently called, but the functions inside it are varied, so we need the calling context</li>
+<li>Flow based heuristic is iterative</li>
+</ul>
+</li>
+<li>Compiler needs to basically map the control flow structure to map what&rsquo;s show in the profiler</li>
 </ul>
 
             
 
 
 
+
+   
 
    
 
@@ -3912,8 +3939,8 @@
     <li><a href="#pgo-block-1-2026">PGO - Block 1 2026</a>
       <ul>
         <li><a href="#li-david-xinliang-raksit-ashok-and-robert-hundt-dot-lightweight-feedback-directed-cross-module-optimization-dot-proceedings-of-the-8th-annual-ieee-acm-international-symposium-on-code-generation-and-optimization-acm-april-24-2010-53-61-dot-https-doi-dot-org-10-dot-1145-1772954-dot-1772964-dot">Li, David Xinliang, Raksit Ashok, and Robert Hundt. “Lightweight Feedback-Directed Cross-Module Optimization.” Proceedings of the 8th Annual IEEE/ACM International Symposium on Code Generation and Optimization, ACM, April 24, 2010, 53–61. <a href="https://doi.org/10.1145/1772954.1772964">https://doi.org/10.1145/1772954.1772964</a>.</a></li>
-        <li><a href="#discussion">Discussion</a></li>
         <li><a href="#panchenko-maksim-rafael-auler-bill-nell-and-guilherme-ottoni-dot-bolt-a-practical-binary-optimizer-for-data-centers-and-beyond-dot-arxiv-1807-dot-06735-dot-preprint-arxiv-october-12-2018-dot-https-doi-dot-org-10-dot-48550-arxiv-dot-1807-dot-06735-dot">Panchenko, Maksim, Rafael Auler, Bill Nell, and Guilherme Ottoni. “BOLT: A Practical Binary Optimizer for Data Centers and Beyond.” arXiv:1807.06735. Preprint, arXiv, October 12, 2018. <a href="https://doi.org/10.48550/arXiv.1807.06735">https://doi.org/10.48550/arXiv.1807.06735</a>.</a></li>
+        <li><a href="#chen-dehao-david-xinliang-li-and-tipp-moseley-dot-autofdo-automatic-feedback-directed-optimization-for-warehouse-scale-applications-dot-proceedings-of-the-2016-international-symposium-on-code-generation-and-optimization-february-29-2016-12-23-dot-https-doi-dot-org-10-dot-1145-2854038-dot-2854044-dot">Chen, Dehao, David Xinliang Li, and Tipp Moseley. “AutoFDO: Automatic Feedback-Directed Optimization for Warehouse-Scale Applications.” Proceedings of the 2016 International Symposium on Code Generation and Optimization, February 29, 2016, 12–23. <a href="https://doi.org/10.1145/2854038.2854044">https://doi.org/10.1145/2854038.2854044</a>.</a></li>
       </ul>
     </li>
   </ul>
