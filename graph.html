@@ -191,6 +191,11 @@
                 1px 1px 0 white;
         }
 
+        circle.selected {
+            stroke: #333;
+            stroke-width: 3px;
+        }
+
         #instructions {
             position: absolute;
             top: 10px;
@@ -215,7 +220,8 @@
     <div id="instructions">
         <kbd>Scroll</kbd> to zoom &nbsp;|&nbsp;
         <kbd>Drag</kbd> to pan &nbsp;|&nbsp;
-        <kbd>Click</kbd> node to open &nbsp;|&nbsp;
+        <kbd>Click</kbd> to select &nbsp;|&nbsp;
+        <kbd>Dbl-click</kbd> to open &nbsp;|&nbsp;
         <kbd>/</kbd> to search
     </div>
 
@@ -305,10 +311,15 @@
                 const g = svg.append("g")
                     .attr("transform", `translate(${width / 2}, ${height / 2})`);
 
+                // Draw community hulls (background territories) - will be populated after nodes are created
+                const hullsGroup = g.append('g')
+                    .attr('class', 'hulls');
+                let hulls; // Will be set after nodes are defined
+
                 // Zoom behavior
                 let currentTransform = d3.zoomIdentity;
                 const zoom = d3.zoom()
-                    .scaleExtent([0.5, 10])
+                    .scaleExtent([0.1, 10])
                     .on("zoom", function (event) {
                         currentTransform = event.transform;
                         g.attr("transform", `translate(${width / 2 + event.transform.x}, ${height / 2 + event.transform.y}) scale(${event.transform.k})`);
@@ -319,9 +330,31 @@
 
                         // Adjust label size
                         labels.attr("font-size", d => `${10 / event.transform.k}px`);
+
+                        // Adjust hull stroke width
+                        if (hulls) {
+                            hulls.attr('stroke-width', 2 / event.transform.k);
+                        }
                     });
 
                 svg.call(zoom);
+
+                // Click on background to deselect (handler added after legendContainer is defined)
+                function handleBackgroundClick(event) {
+                    // Only deselect if clicking directly on SVG (not on a node)
+                    if (event.target.tagName === 'svg') {
+                        if (activeNode !== null) {
+                            activeNode = null;
+                            node.classed('selected', false);
+                        }
+                        if (activeGroup !== null) {
+                            activeGroup = null;
+                            d3.select("#legend-container").selectAll('.legend-item').classed('active', false);
+                        }
+                        unhighlightNode();
+                    }
+                }
+                svg.on("click", handleBackgroundClick);
 
                 // Draw links
                 const link = g.append('g')
@@ -351,6 +384,7 @@
                     .attr("fill", color)
                     .style("cursor", "pointer")
                     .on("click", handleNodeClick)
+                    .on("dblclick", handleNodeDblClick)
                     .on("mouseover", handleNodeMouseOver)
                     .on("mouseout", handleNodeMouseOut);
 
@@ -366,8 +400,45 @@
                     .attr("text-anchor", "middle")
                     .text(d => d.title || d.id);
 
+                // Create community hulls now that nodes are defined
+                const communities = d3.group(nodes, d => d.group);
+                hulls = hullsGroup.selectAll('path')
+                    .data(Array.from(communities))
+                    .join('path')
+                    .attr('fill', ([groupId]) => colorScale(groupId))
+                    .attr('fill-opacity', 0.1)
+                    .attr('stroke', ([groupId]) => colorScale(groupId))
+                    .attr('stroke-opacity', 0.25)
+                    .attr('stroke-width', 2)
+                    .attr('d', ([groupId, groupNodes]) => {
+                        if (groupNodes.length < 3) return null;
+                        const points = groupNodes.map(d => [dx(d), dy(d)]);
+                        const hull = d3.polygonHull(points);
+                        return hull ? 'M' + hull.join('L') + 'Z' : null;
+                    });
+
                 // Event handlers
                 function handleNodeClick(event, d) {
+                    // Clear any active group selection
+                    if (activeGroup !== null) {
+                        activeGroup = null;
+                        legendContainer.selectAll('.legend-item').classed('active', false);
+                    }
+
+                    if (activeNode === d) {
+                        // Deselect - clicking same node again
+                        activeNode = null;
+                        node.classed('selected', false);
+                        unhighlightNode();
+                    } else {
+                        // Select this node
+                        activeNode = d;
+                        node.classed('selected', o => o === d);
+                        highlightNode(d);
+                    }
+                }
+
+                function handleNodeDblClick(event, d) {
                     window.open(d.url, '_blank');
                 }
 
@@ -382,17 +453,28 @@
                         .style("left", (event.pageX + 15) + "px")
                         .style("top", (event.pageY - 10) + "px");
 
+                    // Don't change highlighting if a node or group is actively selected
+                    if (activeNode !== null || activeGroup !== null) return;
+
                     // Highlight connected nodes
                     node.attr("opacity", o => isConnected(d, o) ? 1 : 0.1);
                     link.attr("stroke-opacity", o => (o.source === d.id || o.target === d.id) ? 0.8 : 0.05);
                     labels.attr("opacity", o => isConnected(d, o) ? 1 : 0.1);
+                    hulls.attr("fill-opacity", ([g]) => g == d.group ? 0.15 : 0.03)
+                        .attr("stroke-opacity", ([g]) => g == d.group ? 0.3 : 0.08);
                 }
 
                 function handleNodeMouseOut(event, d) {
                     tooltip.style("opacity", 0);
+
+                    // Don't change highlighting if a node or group is actively selected
+                    if (activeNode !== null || activeGroup !== null) return;
+
                     node.attr("opacity", 1);
                     link.attr("stroke-opacity", 0.4);
                     labels.attr("opacity", 1);
+                    hulls.attr("fill-opacity", 0.1)
+                        .attr("stroke-opacity", 0.25);
                 }
 
                 // Zoom to a specific node
@@ -441,6 +523,7 @@
                 const groupInfo = data.groups;
                 const legendContainer = d3.select("#legend-container");
                 let activeGroup = null;
+                let activeNode = null;
 
                 const legend = legendContainer.selectAll('.legend-item')
                     .data(Object.entries(groupInfo))
@@ -460,7 +543,8 @@
                     .text(([group, info]) => info.name);
 
                 function handleLegendMouseOver(event, [group, info]) {
-                    if (activeGroup !== null) return; // Don't hover-highlight if a group is actively selected
+                    // Don't hover-highlight if a node or group is actively selected
+                    if (activeGroup !== null || activeNode !== null) return;
 
                     const centralNode = nodes.find(n => n.id === info.central_node);
                     if (centralNode) {
@@ -469,19 +553,30 @@
                             (o.source === centralNode.id || o.target === centralNode.id) ? 0.8 : 0.05
                         );
                         labels.attr("opacity", o => isConnected(centralNode, o) ? 1 : 0.1);
+                        hulls.attr("fill-opacity", ([g]) => g == group ? 0.2 : 0.05)
+                            .attr("stroke-opacity", ([g]) => g == group ? 0.4 : 0.1);
                     }
                 }
 
                 function handleLegendMouseOut(event, [group, info]) {
-                    if (activeGroup !== null) return; // Don't reset if a group is actively selected
+                    // Don't reset if a node or group is actively selected
+                    if (activeGroup !== null || activeNode !== null) return;
 
                     node.attr("opacity", 1);
                     link.attr("stroke-opacity", 0.4);
                     labels.attr("opacity", 1);
+                    hulls.attr("fill-opacity", 0.1)
+                        .attr("stroke-opacity", 0.25);
                 }
 
                 function handleLegendClick(event, [group, info]) {
                     const legendItem = d3.select(this);
+
+                    // Clear any active node selection
+                    if (activeNode !== null) {
+                        activeNode = null;
+                        node.classed('selected', false);
+                    }
 
                     if (activeGroup === group) {
                         // Deselect - show all
@@ -490,6 +585,8 @@
                         node.attr("opacity", 1);
                         link.attr("stroke-opacity", 0.4);
                         labels.attr("opacity", 1);
+                        hulls.attr("fill-opacity", 0.1)
+                            .attr("stroke-opacity", 0.25);
                     } else {
                         // Select this group - isolate it
                         activeGroup = group;
@@ -503,6 +600,8 @@
                             return (sourceNode?.group == group && targetNode?.group == group) ? 0.6 : 0.02;
                         });
                         labels.attr("opacity", o => o.group == group ? 1 : 0.1);
+                        hulls.attr("fill-opacity", ([g]) => g == group ? 0.25 : 0.02)
+                            .attr("stroke-opacity", ([g]) => g == group ? 0.5 : 0.05);
 
                         // Zoom to the central node
                         const centralNode = nodes.find(n => n.id === info.central_node);
@@ -619,10 +718,15 @@
                     node.attr("opacity", o => isConnected(d, o) ? 1 : 0.1);
                     link.attr("stroke-opacity", o => (o.source === d.id || o.target === d.id) ? 0.8 : 0.05);
                     labels.attr("opacity", o => isConnected(d, o) ? 1 : 0.1);
+                    hulls.attr("fill-opacity", ([g]) => g == d.group ? 0.15 : 0.03)
+                        .attr("stroke-opacity", ([g]) => g == d.group ? 0.3 : 0.08);
                 }
 
                 function unhighlightNode() {
-                    if (activeGroup !== null) {
+                    if (activeNode !== null) {
+                        // Restore active node state
+                        highlightNode(activeNode);
+                    } else if (activeGroup !== null) {
                         // Restore group filter state
                         node.attr("opacity", o => o.group == activeGroup ? 1 : 0.1);
                         link.attr("stroke-opacity", o => {
@@ -631,10 +735,14 @@
                             return (sourceNode?.group == activeGroup && targetNode?.group == activeGroup) ? 0.6 : 0.02;
                         });
                         labels.attr("opacity", o => o.group == activeGroup ? 1 : 0.1);
+                        hulls.attr("fill-opacity", ([g]) => g == activeGroup ? 0.25 : 0.02)
+                            .attr("stroke-opacity", ([g]) => g == activeGroup ? 0.5 : 0.05);
                     } else {
                         node.attr("opacity", 1);
                         link.attr("stroke-opacity", 0.4);
                         labels.attr("opacity", 1);
+                        hulls.attr("fill-opacity", 0.1)
+                            .attr("stroke-opacity", 0.25);
                     }
                 }
 
