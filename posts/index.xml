@@ -6224,6 +6224,14 @@ https://www.instapaper.com/read/1298996192 Talks about how tech companies not on
 https://en.wikipedia.org/wiki/Preisach_model_of_hysteresis</description>
     </item>
     <item>
+      <title>i cache is all you need</title>
+      <link>/posts/i_cache_is_all_you_need/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/i_cache_is_all_you_need/</guid>
+      <description>drafts
+BOLT, FDO, PGO, Propeller, tell you specifically it&amp;rsquo;s frontend stalls that matter We really want to be careful of frontend stalls, since i-cache stalls prevent the CPU from doing useful information Frontend is responible for fetching and decoding instructions Responsible for executing instructions Code layout matters for the icache Two types of optimizations really matter Inlining (frees up the icache) Indirect call promotion CPU needs to fetch instructions from memory, and if the required instruction is not in the i-cache, the frontend must wait for it to be retrieved (hundreds of cycles) Instruction TLB I-tlb miss occurs when you need to force a page walk?</description>
+    </item>
+    <item>
       <title>ibn al-hajj</title>
       <link>/posts/ibn_al_hajj/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

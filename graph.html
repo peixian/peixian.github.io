@@ -402,6 +402,18 @@
 
                 // Create community hulls now that nodes are defined
                 const communities = d3.group(nodes, d => d.group);
+
+                // Helper to shrink hull points toward centroid
+                function shrinkHull(points, shrinkFactor = 0.15) {
+                    if (points.length === 0) return points;
+                    const cx = points.reduce((sum, p) => sum + p[0], 0) / points.length;
+                    const cy = points.reduce((sum, p) => sum + p[1], 0) / points.length;
+                    return points.map(([x, y]) => [
+                        x + (cx - x) * shrinkFactor,
+                        y + (cy - y) * shrinkFactor
+                    ]);
+                }
+
                 hulls = hullsGroup.selectAll('path')
                     .data(Array.from(communities))
                     .join('path')
@@ -413,7 +425,8 @@
                     .attr('d', ([groupId, groupNodes]) => {
                         if (groupNodes.length < 3) return null;
                         const points = groupNodes.map(d => [dx(d), dy(d)]);
-                        const hull = d3.polygonHull(points);
+                        const shrunkPoints = shrinkHull(points, 0.15);
+                        const hull = d3.polygonHull(shrunkPoints);
                         return hull ? 'M' + hull.join('L') + 'Z' : null;
                     });
 
