@@ -4057,6 +4057,15 @@ https://erlangexplained.com/index.php/about https://learnyousomeerlang.com/ http
 semantics of Erlang programming language OTP libraries and middleware beam vm </description>
     </item>
     <item>
+      <title>erlang hot reloading post</title>
+      <link>/posts/erlang_hot_reloading_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/erlang_hot_reloading_post/</guid>
+      <description>drafts, erlang
+Hot reloading in the BEAM VM
+Counter v1 -module(counter). -behaviour(gen_server). -vsn(&amp;#34;1.0.0&amp;#34;). -export([start_link/0, get_count/0, increment/0]). -export([init/1, handle_call/3, handle_cast/2, code_change/3, terminate/2, handle_info/2]). %% -- API -- start_link() -&amp;gt; gen_server:start_link({local, ?MODULE}, ?MODULE, [], []). get_count() -&amp;gt; gen_server:call(?MODULE, get_count). increment() -&amp;gt; gen_server:cast(?MODULE, increment). %% -- Callbacks -- init([]) -&amp;gt; {ok, 0}. handle_cast(increment, Count) -&amp;gt; {noreply, Count + 1}. handle_call(get_count, _From, Count) -&amp;gt; {reply, Count, Count}. code_change(_OldVsn, State, _Extra) -&amp;gt; {ok, State}. handle_info(_Info, State) -&amp;gt; {noreply, State}.</description>
+    </item>
+    <item>
       <title>erlang in kubernetes</title>
       <link>/posts/erlang_in_kubernetes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6673,6 +6682,14 @@ https://docs.google.com/spreadsheets/d/1ARRruWyxvZjgGcSKDV5ml3yvVux81zbPzNdwkFBg
       <guid>/posts/iraqi_arabic/</guid>
       <description>Tags: arabic, iraq
 Grammar خل + فعل Let (imperative) + فعل Example: Let us go: خل نروح Let them (f) play: خل يلعبن Let them (m) sleep: خل ينامون Let me sit: خل أگعد هذا &amp;amp; هدي/هاي Demonstrative pronouns, used the same way as فصحى محتاج/محتاجة/محتاجين To need/should Example: I should rest: آني محتاج اراح They need food: هم محتاجين الاكل She needs information: هي محتاجة معلومات Emphasis with personal الصمائر Attach the personal pronoun for emphasis Example: Where is the book?</description>
+    </item>
+    <item>
+      <title>iraqi arabic accent project</title>
+      <link>/posts/iraqi_arabic_accent_project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/iraqi_arabic_accent_project/</guid>
+      <description>nlp, iraqi arabic
+App with two models: CTC model with wave2vec2 that corrects accents Feeds into another fine tuned gemma that gives me other information Things we already have Anki corpus? https://ankiweb.net/shared/info/1907570867 Book CDs from Modern Iraqi Arabic and Beginner Iraqi Arabic Potentially more for speech Also phonemes and corrections We can clone a voice and extract grammar from PDFs Use dial2gp? </description>
     </item>
     <item>
       <title>iraqi archives</title>
@@ -10393,7 +10410,7 @@ https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/photography/</guid>
       <description>Tags: personal
-Classes https://www.linkedin.com/learning/photography-foundations-mobile-photography/ https://www.linkedin.com/learning/photography-advanced-composition/welcome?u=2131553 Aperature Lower aperature means lower lens open f/2.4 - f/8, etc Changing aperture changes depth of field Shallow depth of field is basically impossible on phone Wider aperture means shallower depth of field Shallower depth of field means more focus on closer thing ISO Higher ISO means higher noise, but allows for faster shutter speed Exposure Triangle Light Meter Only works on generalized assumptions Databases, facial recongition, etc Depth of Field Unlikely to achieve shallow depth of field from smartphone, due to small sensor Has to make changes to ISO No aperature changes on phones Phone camers don&amp;rsquo;t have a shutter!</description>
+Videos https://www.youtube.com/watch?v=xHaWs19smVI Classes https://www.linkedin.com/learning/photography-foundations-mobile-photography/ https://www.linkedin.com/learning/photography-advanced-composition/welcome?u=2131553 Aperature Lower aperature means lower lens open f/2.4 - f/8, etc Changing aperture changes depth of field Shallow depth of field is basically impossible on phone Wider aperture means shallower depth of field Shallower depth of field means more focus on closer thing ISO Higher ISO means higher noise, but allows for faster shutter speed Exposure Triangle Light Meter Only works on generalized assumptions Databases, facial recongition, etc Depth of Field Unlikely to achieve shallow depth of field from smartphone, due to small sensor Has to make changes to ISO No aperature changes on phones Phone camers don&amp;rsquo;t have a shutter!</description>
     </item>
     <item>
       <title>physalia - amazon ebs</title>

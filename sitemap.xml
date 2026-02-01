@@ -996,6 +996,8 @@
   </url><url>
     <loc>/posts/erlang_beam_vs_jvm/</loc>
   </url><url>
+    <loc>/posts/erlang_hot_reloading_post/</loc>
+  </url><url>
     <loc>/posts/erlang_in_kubernetes/</loc>
   </url><url>
     <loc>/posts/erlang_jit/</loc>
@@ -1637,6 +1639,8 @@
     <loc>/posts/iraqi_air_strikes/</loc>
   </url><url>
     <loc>/posts/iraqi_arabic/</loc>
+  </url><url>
+    <loc>/posts/iraqi_arabic_accent_project/</loc>
   </url><url>
     <loc>/posts/iraqi_archives/</loc>
   </url><url>
