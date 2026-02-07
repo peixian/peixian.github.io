@@ -1661,7 +1661,7 @@ invented in france Used against TB Not well understood Possible health benefits 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/bgp/</guid>
       <description>Tags: networks
-Facebook Outage BGP need to find more info on this https://blog.cloudflare.com/october-2021-facebook-outage https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/ Otpus/Akamai outage in Australia (nov 9th, 2023) Lead to people not being able to dial emergency services parlimentary findings: https://parlinfo.aph.gov.au/parlInfo/search/display/display.w3p;query=Id%3A%22committees%2Fcommsen%2F27530%2F0001%22 https://forums.whirlpool.net.au/archive/96n1w7m9-4 https://puck.nether.net/pipermail/outages/2023-November/014924.html </description>
+Facebook Outage BGP need to find more info on this https://blog.cloudflare.com/october-2021-facebook-outage https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/ Otpus/Akamai outage in Australia (nov 9th, 2023) Lead to people not being able to dial emergency services parlimentary findings: https://parlinfo.aph.gov.au/parlInfo/search/display/display.w3p;query=Id%3A%22committees%2Fcommsen%2F27530%2F0001%22 https://forums.whirlpool.net.au/archive/96n1w7m9-4 https://puck.nether.net/pipermail/outages/2023-November/014924.html Oxide https://docs.oxide.computer/guides/operator/configuring-bgp OpenR Routing https://engineering.fb.com/2017/11/15/connectivity/open-r-open-routing-for-modern-networks/ </description>
     </item>
     <item>
       <title>bharatiya janata party (bjp)</title>
@@ -2454,7 +2454,8 @@ Talks about how east timor&amp;rsquo;s state building failure by the UN was larg
       <link>/posts/christianity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/christianity/</guid>
-      <description>religion</description>
+      <description>religion
+Early writing: https://earlychristianwritings.com/ </description>
     </item>
     <item>
       <title>christians</title>
@@ -8451,7 +8452,7 @@ turn emphasizing the objects and instruments: https://en.wikipedia.org/wiki/Mate
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/math/</guid>
       <description>Tags:root
-Display on web with https://cindyjs.org/ Self Referential Formulas https://eli.thegreenplace.net/2023/demystifying-tuppers-formula/ https://jtra.cz/stuff/essays/math-self-reference-smooth/index.html </description>
+Display on web with https://cindyjs.org/ Self Referential Formulas https://eli.thegreenplace.net/2023/demystifying-tuppers-formula/ https://jtra.cz/stuff/essays/math-self-reference-smooth/index.html Interesting blogs https://blog.szczepan.org/blog/three-points/ </description>
     </item>
     <item>
       <title>math cultures</title>
