@@ -2408,7 +2408,7 @@ https://en.wikipedia.org/wiki/Chinese_wall information barrier to prevents confl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/chips/</guid>
       <description>Tags: computers, hardware
-Die die interconnects are mostly constrained on power https://en.wikichip.org/wiki/amd/infinity_fabric https://siliconpr0n.org/wiki/doku.php?id=starting Intel Optane Great hope for intel, standalone memory device Used for primary storage but as cheap as disk https://www.theregister.com/2022/08/01/optane_intel_cancellation/ </description>
+Die die interconnects are mostly constrained on power https://en.wikichip.org/wiki/amd/infinity_fabric https://siliconpr0n.org/wiki/doku.php?id=starting Intel Optane Great hope for intel, standalone memory device Used for primary storage but as cheap as disk https://www.theregister.com/2022/08/01/optane_intel_cancellation/ ASIC https://www.zerotoasiccourse.com/ Cadence and Synopsys https://www.youtube.com/watch?v=AUm08ZUD63Q </description>
     </item>
     <item>
       <title>chomsky</title>
@@ -4046,7 +4046,7 @@ museums kurdish museum landmarks citadel jahil mosque Living in Erbil Shipping C
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/erlang/</guid>
       <description>Tags: programming languages
-https://erlangexplained.com/index.php/about https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ https://medium.com/erlang-battleground https://medium.com/erlang-battleground/property-based-testing-erlang-elixir-de72ad24966b https://github.com/stevana/armstrong-distributed-systems/blob/main/docs/erlang-is-not-about.md#user-content-fn-0-b236052c3934bd6f7ea3426445bf45af https://www.erlang-factory.com/conference/ErlangUserConference2011/speakers/ScottLystigFritchie https://adoptingerlang.org/docs/development/otp_high_level/ Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ json with erlang https://vining.dev/posts/jerk Supervisor Trees for golang https://www.jerf.org/iri/post/2930/ https://adoptingerlang.org/docs/development/supervision_trees/ Nif Issues Monitoring for elixir https://github.com/massemanet/redbug https://code.google.com/archive/p/eper/wikis/redbug.wiki https://www.erlang.org/doc/apps/tools/lcnt_chapter.html https://www.erlang.org/doc/man/scheduler.html#sample_all-0 https://erlangforums.com/t/find-out-whats-running-on-dirty-schedulers/2885/3 https://erlangforums.com/t/detecting-blocked-dirty-i-o-schedulers/1116 https://www.erlang.org/doc/apps/erts/beamasm#linux-perf-support - linux https://medium.com/@jlouis666/erlang-dirty-scheduler-overhead-6e1219dcc7 https://blog.jola.dev/patterns-for-managing-ets-tables#menu Enabling :erlang.</description>
+https://erlangexplained.com/index.php/about https://learnyousomeerlang.com/ https://www.erlang-in-anger.com/ https://blog.stenmans.org/theBeamBook/ http://erlang.org/doc/reference_manual/introduction.html https://ferd.ca/the-zen-of-erlang.html https://erlangforums.com/ https://medium.com/erlang-battleground https://medium.com/erlang-battleground/property-based-testing-erlang-elixir-de72ad24966b https://github.com/stevana/armstrong-distributed-systems/blob/main/docs/erlang-is-not-about.md#user-content-fn-0-b236052c3934bd6f7ea3426445bf45af https://www.erlang-factory.com/conference/ErlangUserConference2011/speakers/ScottLystigFritchie https://adoptingerlang.org/docs/development/otp_high_level/ Erlang/OTP 24 Highlights https://blog.erlang.org/My-OTP-24-Highlights/#EEP-56-supervisor-automatic-shutdown removed 320k lines of code! Erlang Projects https://github.com/apache/couchdb Interop https://www.erlang.org/doc/tutorial/introduction.html Rustler rust bridge for erlang https://github.com/rusterlium/rustler Erlang Scaling Limitations https://learnyousomeerlang.com/distribunomicon#burying-the-distribunomicon https://www.youtube.com/watch?v=KrwhOkiifQ8 - Partisan: high performance large scale distributed Erlang https://arxiv.org/abs/1802.02652 https://www.dcs.gla.ac.uk/~amirg/publications/DE-Bench.pdf https://github.com/max-au/spg https://max-au.com/peer/ json with erlang https://vining.dev/posts/jerk Supervisor Trees for golang https://www.jerf.org/iri/post/2930/ https://adoptingerlang.org/docs/development/supervision_trees/ Nif Issues Monitoring for elixir https://github.com/massemanet/redbug https://code.google.com/archive/p/eper/wikis/redbug.wiki https://www.erlang.org/doc/apps/tools/lcnt_chapter.html https://www.</description>
     </item>
     <item>
       <title>erlang beam vs jvm</title>
@@ -7985,7 +7985,7 @@ GH Super Linter https://github.blog/2020-06-18-introducing-github-super-linter-o
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/linux/</guid>
       <description>Tags: computers
-Currently Linux plumber and hobbiest occupy two different workds Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros Greybeard Qualification https://www.youtube.com/watch?v=5osOHhBWKOQ&amp;amp;list=PLSIUOFhnxEiC3YTdxwqZqgEY5imVL8U8J&amp;amp;index=1 Process Internal datastructure struct task_struct {}: pid -&amp;gt; integer, will wrap around unused pids parent -&amp;gt; every proces has a parent, each one has a children tty -&amp;gt; in the old days, every process had an associated terminal called a tty uid -&amp;gt; user the process is running as gid -&amp;gt; group id A process can change its ids (setuid) From a sysadmin pov, what can you do to a process?</description>
+Currently Linux plumber and hobbiest occupy two different workds Desktop linux and DevOps middleware are paid employees, vs poeple who use suckless softawre, musl-based distros Resources https://lazytyped.blogspot.com/2018/03/sunset.html Greybeard Qualification https://www.youtube.com/watch?v=5osOHhBWKOQ&amp;amp;list=PLSIUOFhnxEiC3YTdxwqZqgEY5imVL8U8J&amp;amp;index=1 Process Internal datastructure struct task_struct {}: pid -&amp;gt; integer, will wrap around unused pids parent -&amp;gt; every proces has a parent, each one has a children tty -&amp;gt; in the old days, every process had an associated terminal called a tty uid -&amp;gt; user the process is running as gid -&amp;gt; group id A process can change its ids (setuid) From a sysadmin pov, what can you do to a process?</description>
     </item>
     <item>
       <title>lisp</title>
@@ -14988,6 +14988,14 @@ https://notes.andymatuschak.org/z4AX7pHAu5uUfmrq4K4zig9x8jmmF62XgaMXm?stackedNot
       <description>Tags: papers, ml
 Shows that relu activation is similar to tropical rational maps
 Says that feedforward ReLU nn&amp;rsquo;s can be related to tropical hypersurfaces in tropical geometry</description>
+    </item>
+    <item>
+      <title>zig</title>
+      <link>/posts/zig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/zig/</guid>
+      <description>programming languages
+Books https://www.manning.com/books/systems-programming-with-zig </description>
     </item>
     <item>
       <title>zine el abidine ben ali</title>
