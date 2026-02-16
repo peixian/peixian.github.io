@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="/css/main.min.7a8dc5b063775e5d3df0beea151395736f55ccb3343f70eea0595b53da5015c4.css">
 
 
-<script defer src="/en.search.min.62f876deb39de316613583782e494de97a003e1d66b70f397c7f25f74f5f2d19.js" integrity="sha256-Yvh23rOd4xZhNYN4LklN6XoAPh1mtw85fH8l909fLRk="></script>
+<script defer src="/en.search.min.50e9343cf7b777f57f33fb11d2c41f08fc9689e37f80b207dab7303d464623e3.js" integrity="sha256-UOk0PPe3d/V/M/sR0sQfCPyWieN/gLIH2rcwPUZGI&#43;M="></script>
 
 
 <link rel="stylesheet" href="/katex/katex.min.css" media="print" onload="this.media='all'">
@@ -63,6 +63,14 @@
 <li><a href="https://blog.thea.codes/the-most-thoroughly-commented-linker-script/">https://blog.thea.codes/the-most-thoroughly-commented-linker-script/</a></li>
 <li><a href="https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></li>
 </ul>
+<h2 id="basic-blocks">Basic Blocks</h2>
+<ul>
+<li>A section of code (in binary) where control does not leave the block. There are no jumps <!-- raw HTML omitted -->into<!-- raw HTML omitted --> the middle of the block, and there are no jumps <!-- raw HTML omitted -->out<!-- raw HTML omitted --> of the middle of the block.
+<ul>
+<li>Single entry, single exit</li>
+</ul>
+</li>
+</ul>
 <h2 id="comdat">COMDAT</h2>
 <ul>
 <li><a href="https://maskray.me/blog/2021-07-25-comdat-and-section-group">https://maskray.me/blog/2021-07-25-comdat-and-section-group</a></li>
@@ -72,7 +80,6 @@
 <ul>
 <li>ThinLTO actually evolved out of the work done in <a href="/posts/swe_tea/#li-david-xinliang-raksit-ashok-and-robert-hundt-dot-lightweight-feedback-directed-cross-module-optimization-dot-proceedings-of-the-8th-annual-ieee-acm-international-symposium-on-code-generation-and-optimization-acm-april-24-2010-53-61-dot-https-doi-dot-org-10-dot-1145-1772954-dot-1772964-dot">Li, David Xinliang, Raksit Ashok, and Robert Hundt. “Lightweight Feedback-Directed Cross-Module Optimization.” Proceedings of the 8th Annual IEEE/ACM International Symposium on Code Generation and Optimization, ACM, April 24, 2010, 53–61. https://doi.org/10.1145/1772954.1772964.</a></li>
 <li>Nearly 5 years later, where it took the ideas of using combined summaries to do LTO, during the .o transofrmation</li>
-<li></li>
 </ul>
 <h2 id="alt-linkers">alt-linkers</h2>
 <ul>
@@ -103,6 +110,10 @@
 <h2 id="tools">Tools</h2>
 <ul>
 <li>check <code>ldd</code> and <code>file</code> for linking, although <code>ldd</code> is different</li>
+</ul>
+<h2 id="post-link-optimizations--bolt-propeller-etc">Post-Link Optimizations (BOLT, Propeller, etc)</h2>
+<ul>
+<li>BOLT open projects: <a href="https://discourse.llvm.org/t/bolt-open-projects/61857">https://discourse.llvm.org/t/bolt-open-projects/61857</a></li>
 </ul>
 
             
@@ -2088,6 +2099,8 @@
 
    
 
+   
+      
    
 
    
@@ -3813,6 +3826,8 @@
        
           <li><a href="/posts/linker_essay/">linker essay</a></li>
        
+          <li><a href="/posts/llvm/">llvm</a></li>
+       
           <li><a href="/posts/swe_tea/">swe tea</a></li>
        
      </ul>
@@ -3831,12 +3846,14 @@
     <h2>Table of Contents</h2>
     <nav id="TableOfContents">
   <ul>
+    <li><a href="#basic-blocks">Basic Blocks</a></li>
     <li><a href="#comdat">COMDAT</a></li>
     <li><a href="#lto--and-thinlto">LTO (and ThinLTO)</a></li>
     <li><a href="#alt-linkers">alt-linkers</a></li>
     <li><a href="#profiling-linkers">profiling linkers</a></li>
     <li><a href="#static-linking">Static Linking</a></li>
     <li><a href="#tools">Tools</a></li>
+    <li><a href="#post-link-optimizations--bolt-propeller-etc">Post-Link Optimizations (BOLT, Propeller, etc)</a></li>
   </ul>
 </nav>
   </div>

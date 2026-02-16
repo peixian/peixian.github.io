@@ -7969,7 +7969,7 @@ https://lwn.net/Articles/276782/ Intro What does a linker do? Converts object fi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/linkers/</guid>
       <description>Tags: compilers
-https://blog.thea.codes/the-most-thoroughly-commented-linker-script/ https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp COMDAT https://maskray.me/blog/2021-07-25-comdat-and-section-group Basically a section used for duplicate code, like cpp templates LTO (and ThinLTO) ThinLTO actually evolved out of the work done in Li, David Xinliang, Raksit Ashok, and Robert Hundt. “Lightweight Feedback-Directed Cross-Module Optimization.” Proceedings of the 8th Annual IEEE/ACM International Symposium on Code Generation and Optimization, ACM, April 24, 2010, 53–61. https://doi.org/10.1145/1772954.1772964. Nearly 5 years later, where it took the ideas of using combined summaries to do LTO, during the .</description>
+https://blog.thea.codes/the-most-thoroughly-commented-linker-script/ https://www-sigbus-info.translate.goog/compilerbook?_x_tr_sl=auto&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp Basic Blocks A section of code (in binary) where control does not leave the block. There are no jumps into the middle of the block, and there are no jumps out of the middle of the block. Single entry, single exit COMDAT https://maskray.me/blog/2021-07-25-comdat-and-section-group Basically a section used for duplicate code, like cpp templates LTO (and ThinLTO) ThinLTO actually evolved out of the work done in Li, David Xinliang, Raksit Ashok, and Robert Hundt.</description>
     </item>
     <item>
       <title>linting</title>
@@ -8054,7 +8054,7 @@ Poisoning/Blocking Crawlers https://rnsaffn.com/poison3/ https://anubis.techaro.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/llvm/</guid>
       <description>Tags: compilers
-Issues: https://www.npopov.com/2026/01/11/LLVM-The-bad-parts.html Compile time tracker: https://llvm-compile-time-tracker.com/graphs.php?startDate=2021-02-04&amp;amp;interval=100&amp;amp;relative=on </description>
+Issues: https://www.npopov.com/2026/01/11/LLVM-The-bad-parts.html Compile time tracker: https://llvm-compile-time-tracker.com/graphs.php?startDate=2021-02-04&amp;amp;interval=100&amp;amp;relative=on LLVM Machine Code Project Intro https://blog.llvm.org/2010/04/intro-to-llvm-mc-project.html Used in Post-Link Optimizations (BOLT, Propeller, etc) </description>
     </item>
     <item>
       <title>load balancing</title>
@@ -13023,7 +13023,8 @@ http://jalda.azaruniv.ac.ir/article_13837.html https://en.wikipedia.org/wiki/Mou
       <link>/posts/tacit_knowledge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/tacit_knowledge/</guid>
-      <description>Tags: episteme</description>
+      <description>Tags: episteme
+Resources list: https://www.lesswrong.com/posts/SXJGSPeQWbACveJhs/the-best-tacit-knowledge-videos-on-every-subject </description>
     </item>
     <item>
       <title>taif agreement</title>
@@ -13540,7 +13541,7 @@ islamic notions of agency: god has provided a path and your agency is how far yo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/posts/traffic_stats/</guid>
       <description>Tags: data
-https://developers.google.com/maps/documentation/distance-matrix/overview#request-parameters https://www.tomtom.com/products/historical-traffic-stats// https://developers.google.com/maps/documentation/places/web-service/overview </description>
+https://developers.google.com/maps/documentation/distance-matrix/overview#request-parameters https://www.tomtom.com/products/historical-traffic-stats// https://developers.google.com/maps/documentation/places/web-service/overview Pentagon Pizza Theory https://www.lesswrong.com/posts/Li3Aw7sDLXTCcQHZM/does-pentagon-pizza-theory-work </description>
     </item>
     <item>
       <title>training periods</title>

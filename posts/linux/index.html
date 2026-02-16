@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="/css/main.min.7a8dc5b063775e5d3df0beea151395736f55ccb3343f70eea0595b53da5015c4.css">
 
 
-<script defer src="/en.search.min.62f876deb39de316613583782e494de97a003e1d66b70f397c7f25f74f5f2d19.js" integrity="sha256-Yvh23rOd4xZhNYN4LklN6XoAPh1mtw85fH8l909fLRk="></script>
+<script defer src="/en.search.min.50e9343cf7b777f57f33fb11d2c41f08fc9689e37f80b207dab7303d464623e3.js" integrity="sha256-UOk0PPe3d/V/M/sR0sQfCPyWieN/gLIH2rcwPUZGI&#43;M="></script>
 
 
 <link rel="stylesheet" href="/katex/katex.min.css" media="print" onload="this.media='all'">
@@ -1390,6 +1390,69 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 <figure><img src="/ox-hugo/2025-07-20_12-29-39_screenshot.png"/>
 </figure>
 
+<h2 id="page-folios">Page Folios</h2>
+<ul>
+<li>Got upstreamed in 2021
+<ul>
+<li>
+<p><a href="https://lwn.net/Articles/849538/">https://lwn.net/Articles/849538/</a></p>
+</li>
+<li>
+<p><a href="https://www.alibabacloud.com/blog/new-features-of-linux-memory-management---memory-folios_600565">https://www.alibabacloud.com/blog/new-features-of-linux-memory-management---memory-folios_600565</a></p>
+</li>
+<li>
+<p>Matthew Wilcox. “Memory Folios in The Linux Kernel.” June 23, 2022. <a href="https://www.infradead.org/~willy/linux/2022-06_LCNA_Folios.pdf">https://www.infradead.org/~willy/linux/2022-06_LCNA_Folios.pdf</a>.</p>
+</li>
+<li>
+<p>A THP is a compound page, but internally we were still addressing the structs</p>
+<ul>
+<li>On startup, linux typically creates a massive static array called <code>vmemmap</code> of struct page objects</li>
+<li>you had a struct page for every 4kb of ram, each struct is 64 bytes</li>
+<li>So when you promoted 512 of these to a huge page, it had to mark the first one as the &ldquo;head&rdquo; and the rest as &ldquo;tails&rdquo; (<code>PG_TAIL</code>)</li>
+<li>But this was not really type safe, you had to check if <code>PG_TAIL</code> existed, and always check for the head</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">do_something</span>(<span style="color:#66d9ef">struct</span> page <span style="color:#f92672">*</span>page) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Is this a tail page? If so, find the head.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">struct</span> page <span style="color:#f92672">*</span>head <span style="color:#f92672">=</span> <span style="color:#a6e22e">compound_head</span>(page);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Now operate on the head
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">atomic_inc</span>(<span style="color:#f92672">&amp;</span>head<span style="color:#f92672">-&gt;</span>_refcount);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+<li>
+<p>New:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> folio {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">union</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">/* public: */</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">long</span> flags;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">struct</span> list_head lru;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">struct</span> address_space <span style="color:#f92672">*</span>mapping;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">pgoff_t</span> index;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>private;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">atomic_t</span> _mapcount;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">atomic_t</span> _refcount;
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">/* ... more fields ... */</span>
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">struct</span> page page; <span style="color:#75715e">/* The overlay */</span>
+</span></span><span style="display:flex;"><span>  };
+</span></span></code></pre></div><p>We can cast between these as needed, so now</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> folio <span style="color:#f92672">*</span>folio <span style="color:#f92672">=</span> <span style="color:#a6e22e">page_folio</span>(page);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Internally calls compound_head() once.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// After this, you use &#39;folio&#39; and never pay the cost again.
+</span></span></span></code></pre></div></li>
+<li>
+<p>Type wise, folios guarentee you&rsquo;re looking at the head</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="hvo-hugetlb-page-optimize-vmemmap">HVO/ <code>HUGETLB_PAGE_OPTIMIZE_VMEMMAP</code></h3>
+<ul>
+<li>When we promote to huge pages, we still have all these 64 byte page structs floating around</li>
+<li>HVO basically makes all the tails pointers to the head</li>
+</ul>
 <h2 id="monitoring-tools">Monitoring Tools</h2>
 <p>Guide: <a href="https://www.brendangregg.com/blog/2015-07-08/choosing-a-linux-tracer.html">https://www.brendangregg.com/blog/2015-07-08/choosing-a-linux-tracer.html</a></p>
 <ul>
@@ -5381,6 +5444,11 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
       </ul>
     </li>
     <li><a href="#huge-pages">Huge Pages</a></li>
+    <li><a href="#page-folios">Page Folios</a>
+      <ul>
+        <li><a href="#hvo-hugetlb-page-optimize-vmemmap">HVO/ <code>HUGETLB_PAGE_OPTIMIZE_VMEMMAP</code></a></li>
+      </ul>
+    </li>
     <li><a href="#monitoring-tools">Monitoring Tools</a></li>
     <li><a href="#sysadmin-cookbook">Sysadmin cookbook</a></li>
     <li><a href="#perf">Perf</a></li>
