@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="/css/main.min.7a8dc5b063775e5d3df0beea151395736f55ccb3343f70eea0595b53da5015c4.css">
 
 
-<script defer src="/en.search.min.50e9343cf7b777f57f33fb11d2c41f08fc9689e37f80b207dab7303d464623e3.js" integrity="sha256-UOk0PPe3d/V/M/sR0sQfCPyWieN/gLIH2rcwPUZGI&#43;M="></script>
+<script defer src="/en.search.min.5e33bb8f7e5de639cc8ca890e74b322a7fc404c2b98a9686fffecfe49a955728.js" integrity="sha256-XjO7j35d5jnMjKiQ50syKn/EBMK5ipaG//7P5JqVVyg="></script>
 
 
 <link rel="stylesheet" href="/katex/katex.min.css" media="print" onload="this.media='all'">
@@ -102,7 +102,35 @@
 </ul>
 </li>
 <li>BOLT&rsquo;ing and propeller and lightning bolt</li>
+<li>Zero cost inling is not actually zero cost (see memcmp vs memcpy)</li>
 </ul>
+<h2 id="outline">Outline</h2>
+<ol>
+<li>i-cache as bottleneck</li>
+<li>why frontend stalls are uniquebad</li>
+<li>FDO was great but annoying workflow</li>
+<li>LBR with perf
+<ol>
+<li>You can slice every part of the LBR buffalo, use the in and out BB for CFR, cycles for how long you&rsquo;re spending there</li>
+</ol>
+</li>
+<li>Decompilation fuzziness
+<ol>
+<li>Inling destroys source CFG</li>
+<li>We need to reconstruct a bunch of stuff</li>
+<li>Bolt internally uses MC
+<ol>
+<li>AutoFDO goes address -&gt; DWARF -&gt; source -&gt; recomp</li>
+<li>BOLT goes address -&gt; MC disasembly -&gt; binary CFG -&gt; rewrite</li>
+</ol>
+</li>
+<li>Question about over optimization? Can we merge optimizations?</li>
+</ol>
+</li>
+<li>Apply profile where it was collected with BOLT</li>
+<li>Linker?</li>
+<li>Profile data as universal currency?</li>
+</ol>
 
             
 
@@ -3807,6 +3835,17 @@
     </div>
   </div>
   
+
+<nav id="toc" class="toc-sidebar">
+  <div class="toc-content">
+    <h2>Table of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#outline">Outline</a></li>
+  </ul>
+</nav>
+  </div>
+</nav>
 
 
 </div>
