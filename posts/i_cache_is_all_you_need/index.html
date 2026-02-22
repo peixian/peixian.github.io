@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="/css/main.min.7a8dc5b063775e5d3df0beea151395736f55ccb3343f70eea0595b53da5015c4.css">
 
 
-<script defer src="/en.search.min.5e33bb8f7e5de639cc8ca890e74b322a7fc404c2b98a9686fffecfe49a955728.js" integrity="sha256-XjO7j35d5jnMjKiQ50syKn/EBMK5ipaG//7P5JqVVyg="></script>
+<script defer src="/en.search.min.e6e8a819c082a7827015046158e5032a58a207c409854e373fd52549b44bc08d.js" integrity="sha256-5uioGcCCp4JwFQRhWOUDKliiB8QJhU43P9UlSbRLwI0="></script>
 
 
 <link rel="stylesheet" href="/katex/katex.min.css" media="print" onload="this.media='all'">
@@ -131,6 +131,52 @@
 <li>Linker?</li>
 <li>Profile data as universal currency?</li>
 </ol>
+<h2 id="draft">Draft</h2>
+<p>We&rsquo;ve been doing a series of papers on PGO, specifically modern PGO as it relates to binary layout optimization. I&rsquo;ve been calling it the &ldquo;Xinliang series&rdquo;, mostly because Xinliang David Li has been the throughline for all of these papers. The papers are<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> - Li, David Xinliang, Raksit Ashok, and Robert Hundt. “Lightweight Feedback-Directed Cross-Module Optimization.” Proceedings of the 8th Annual IEEE/ACM International Symposium on Code Generation and Optimization, April 24, 2010, 53–61. https://doi.org/10.1145/1772954.1772964.
+</span></span><span style="display:flex;"><span>- Panchenko, Maksim, Rafael Auler, Bill Nell, and Guilherme Ottoni. “BOLT: A Practical Binary Optimizer for Data Centers and Beyond.” arXiv:1807.06735. Preprint, arXiv, October 12, 2018. https://doi.org/10.48550/arXiv.1807.06735.
+</span></span><span style="display:flex;"><span>- Chen, Dehao, David Xinliang Li, and Tipp Moseley. “AutoFDO: Automatic Feedback-Directed Optimization for Warehouse-Scale Applications.” Proceedings of the 2016 International Symposium on Code Generation and Optimization, February 29, 2016, 12–23. https://doi.org/10.1145/2854038.2854044.
+</span></span><span style="display:flex;"><span>- Ayers, Grant, Nayana Prasad Nagendra, David I. August, et al. “AsmDB: Understanding and Mitigating Front-End Stalls in Warehouse-Scale Computers.” Proceedings of the 46th International Symposium on Computer Architecture, June 22, 2019, 462–73. https://doi.org/10.1145/3307650.3322234.
+</span></span><span style="display:flex;"><span>- Jamilan, Saba, Tanvir Ahmed Khan, Grant Ayers, Baris Kasikci, and Heiner Litz. “APT-GET: Profile-Guided Timely Software Prefetching.” Proceedings of the Seventeenth European Conference on Computer Systems, March 28, 2022, 747–64. https://doi.org/10.1145/3492321.3519583.
+</span></span><span style="display:flex;"><span>- Shen, Han, Krzysztof Pszeniczny, Rahman Lavaee, Snehasish Kumar, Sriraman Tallam, and Xinliang David Li. “Propeller: A Profile Guided, Relinking Optimizer for Warehouse-Scale Applications.” Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2, January 27, 2023, 617–31. https://doi.org/10.1145/3575693.3575727.
+</span></span></code></pre></div><p>The most applicable paper in this block to the working programmer will be the BOLT paper, since you can literally run <code>llvm-bolt</code> on your binary and see if you get a performance increase. The propeller paper is also quite good, but requires you to exist in the hermetic build world, which might be too big of a lift.</p>
+<p>This block of papers was pretty critical to helping me build up an understanding of how important CPU stalls matter, and how poorly optimized our binaries (and data!) are for CPUs. This block also really helped me build up a good understanding of the differences between i-cache and d-cache in practice.</p>
+<p>Critically, we (developers) tend to think about algorithmic complexity or d-cache locality, and we even sometimes insert software prefetching for data in order to mitigate this issue. However, if we think about the CPU, the data fetching happens on the backend of the CPU, which has out of order execution<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. You can wait for one block of data and fetch another one most of the time, assuming you&rsquo;re not doing a ton of pointer chasing and have sufficient independent work in the instruction window. However, instructions must be decoded on the frontend, which means that if you stall on fetching instructions, your CPU is definitely not doing anything.</p>
+<p>In other words, the frontend is significant more exposed to i-cache misses. And if the frontend gets stalled, the backend doesn&rsquo;t even get any instructions to process at all. We have fun stuff like <code>__builtin_prefetch</code> and <code>PREFETCHT0</code> to give the hardware a head start on a d-cache miss, but none of this exists for i-caches.</p>
+<p>The datacenter tax paper<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> critically tells us:</p>
+<figure><img src="/ox-hugo/2026-02-21_19-31-52_screenshot.png"/>
+</figure>
+
+<p>This makes sense, given how uniquely bad frontend stalls are.</p>
+<p>The fix seems relatively simple but getting to it seems quite difficult. One way that we can improve i-cache locality is that we simply have all the hot instructions in memory sit next to the other hot instructions in memory, so that the cache line coverage of hot instructions is higher. But since the cache loads a chunk of memory, we need to make sure that chunk of memory is arranged properly. And for instructions, that means that we need to arrange our binary layout.</p>
+<p>At compile time, however, we only have some basic heuristics to guide us on which instructions in the binary are going to be hot. Which then means that we need to go look into getting information at runtime about which instructions are hot.</p>
+<p>The classical way of solving this has been with FDO, where we instrument the binary with special functions to collect data on which sections of the binary are hot. However, this presents the same issue that ASAN has, where we now have to produce a separate binary, feed it through the same deployment pipeline, and do everything in there. Also the act of producing this special binary means that the same profile data may not actually be reusable for the &ldquo;real&rdquo; binary later on. Reusability of profiles and quality of profiles remains an issue in this space.</p>
+<p>So then AutoFDO came around, and began utilizing the Last Branch Record (LBR) that started being shipped with new CPUs<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, we had a new way of checking which instructions were hot. The LBR captures information about which basic blocks are getting executed, specifically:</p>
+<ul>
+<li>the number of cycles spent in the basic block</li>
+<li>which basic block lead <strong>into</strong> the current block</li>
+<li>which basic block is going <strong>out</strong> of the current block</li>
+</ul>
+<p>This lets us sample the actual production binary with negibile overhead, and doesn&rsquo;t require us to do a whole separate build step. <code>perf record</code> and we&rsquo;re good to go!</p>
+<p>The AsmDB and the BOLT paper both talk about using this information to rebuild a control flow graph, since if you know which chuck of instructions are going in and out of the CPU, you can start counting which paths are particularly hot.</p>
+<p>The APT-GET paper attempts to use every part of the buffalo by using the cycle counter to show that in theory, we could use it to inform an instruction prefetcher, similar to <code>__builtin_prefetch</code>.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>My SWE tea notes on this block are at <a href="https://wiki.malloc.dog/posts/swe_tea/#pgo-block-1-2026">https://wiki.malloc.dog/posts/swe_tea/#pgo-block-1-2026</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Matt Godbolt&rsquo;s <a href="https://www.youtube.com/watch?v=BVVNtG5dgks">Skylake Deep Dive</a> is a great intro to CPU frontends and backends.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Kanev, Svilen, Juan Pablo Darago, Kim Hazelwood, et al. “Profiling a Warehouse-Scale Computer.” Proceedings of the 42nd Annual International Symposium on Computer Architecture, June 13, 2015, 158–69. <a href="https://doi.org/10.1145/2749469.2750392">https://doi.org/10.1145/2749469.2750392</a>.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Or maybe it was the other way around, desire for better FDO influenced CPU manufacturers to allow the LBR to be polled&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
             
 
@@ -3842,6 +3888,7 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#outline">Outline</a></li>
+    <li><a href="#draft">Draft</a></li>
   </ul>
 </nav>
   </div>
