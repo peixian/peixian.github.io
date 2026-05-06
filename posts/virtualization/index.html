@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="/css/main.min.7a8dc5b063775e5d3df0beea151395736f55ccb3343f70eea0595b53da5015c4.css">
 
 
-<script defer src="/en.search.min.6ee691624ee423a510f37d5289df065d127fa6f4bbee63628e8a5d90758648c0.js" integrity="sha256-buaRYk7kI6UQ831Sid8GXRJ/pvS77mNijopdkHWGSMA="></script>
+<script defer src="/en.search.min.7fcb8014496ea0639465ecc1c31c3cb01e9e1af3f3382d0d489cfd80e9f3c209.js" integrity="sha256-f8uAFEluoGOUZezBwxw8sB6eGvPzOC0NSJz9gOnzwgk="></script>
 
 
 <link rel="stylesheet" href="/katex/katex.min.css" media="print" onload="this.media='all'">
@@ -68,10 +68,10 @@
 <li><a href="https://www.redhat.com/en/blog/all-you-need-know-about-kvm-userspace">https://www.redhat.com/en/blog/all-you-need-know-about-kvm-userspace</a></li>
 <li><a href="https://www.redhat.com/en/blog/journey-vhost-users-realm">https://www.redhat.com/en/blog/journey-vhost-users-realm</a></li>
 </ul>
-<h2 id="quemu">QUEMU</h2>
+<h2 id="qemu">QEMU</h2>
 <h3 id="qcow2-3">qcow2/3</h3>
 <ul>
-<li>Virtual filesystems for QUEMU</li>
+<li>Virtual filesystems for QEMU</li>
 </ul>
 <h3 id="hot-plug-memory">Hot Plug Memory</h3>
 <ul>
@@ -149,6 +149,162 @@
 <ul>
 <li><a href="https://buildsoftwaresystems.com/post/guide-to-execution-environments/">https://buildsoftwaresystems.com/post/guide-to-execution-environments/</a></li>
 </ul>
+<h2 id="kvm">KVM</h2>
+<ul>
+<li>What really is KVM anyways?
+<ul>
+<li><a href="/posts/linux/#ioctl--devices">ioctl (Devices)</a> interface (VMM &lt;&gt; KVM)</li>
+<li>vm/vcpu creation</li>
+<li>VM exists and reentry</li>
+<li>memory manager</li>
+<li>interrupt/iohandling flow</li>
+<li>timers!</li>
+</ul>
+</li>
+<li>KVM first started in Linux 2.6.20 (2007 edition)</li>
+<li>Any process can create a guest, a guest is memory and vcpus, with in kernel emulated devices, user space emulated devices, etc</li>
+<li><a href="/posts/cpu/">cpu</a> Arches
+<ul>
+<li>Every supported arch has a CPU guest mode</li>
+<li>x86 is VMX root/non-root (Intel VT-x) SVM (AMD-V)</li>
+<li>ARM is vHE vs nVHE</li>
+<li>RISC-V: hypervisor extension (VS/VU modes)</li>
+<li>Generally the pattern is, run on guest until you hit a trap, then exit ot the host
+<ul>
+<li>trap being priveleaged instruction, IO access, interrupts, page faults</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Generally you want to poll /dev/kvm, then the VM fd, then the vcpu fd</li>
+<li>Lifecycle
+<ol>
+<li><code>open(&quot;/dev/kvm&quot;)</code> to get the list of avaiabilities, such as checking the API version and extnesions, then use <code>KVM_CREATE_VM</code> to get the fd for thE VM. Then we mmap host memory and do <code>KVM_SET_USER_MEMORY_REGION</code></li>
+<li>The vpcu fd mmaps the <code>kvm_run</code> page, which sets <code>KVM_SET_REGS (RIP, RSP)</code>, <code>KVM_SET_SREGS</code> (CR* and EFER) then <code>KVM_SET_CPUID2</code>, and finally we can spawn host threads</li>
+<li>Normal guest -&gt; trap -&gt; handle trap -&gt; re-enter loop</li>
+<li>Teardown is done by signaling to the vCPU threads, then closing the various FDs</li>
+</ol>
+</li>
+<li>Exits
+<ul>
+<li>IO exists are common</li>
+<li>MMIO exists, such as memory mapped devices</li>
+<li>In kernel fast path has various things</li>
+<li>And virtio can write various doorbells</li>
+</ul>
+</li>
+<li>Memory Slots!
+<ul>
+<li>We need to map the guest physical address space into the host virtual address space (VMM)</li>
+<li>So we typically have 4 slots:
+<ul>
+<li>Slot 3: PCI MMIO device memory is <code>mmap region 3</code>, with <code>userspace_addr[3]</code></li>
+<li>Slot 2: High ram -&gt; <code>mmap region 2</code></li>
+<li>Slot 1: Low ram -&gt; <code>mmap region 1</code></li>
+<li>Slot 0: Real mode: first 64k</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>   GPA (x86, 4 GB guest)                        HVA (QEMU process VA)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   0x140000000
+</span></span><span style="display:flex;"><span>─  ┌──────────────────┐
+</span></span><span style="display:flex;"><span>   │  above-4G RAM    │─── slot 2 ─────────────►  0x7fc000000000
+</span></span><span style="display:flex;"><span>   │  (1G remapped    │    base_gfn: 0x100000       ┌──────────┐
+</span></span><span style="display:flex;"><span>   │   above PCI hole)│    npages:   0x40000         │anon mmap │
+</span></span><span style="display:flex;"><span>─  └──────────────────┘    usr_addr: 0x7fc000000000 └──────────┘
+</span></span><span style="display:flex;"><span>   0x100000000
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   ╔══════════════════╗
+</span></span><span style="display:flex;"><span>   ║  PCI / MMIO hole ║  no memslot — KVM_EXIT_MMIO
+</span></span><span style="display:flex;"><span>   ║  0xFEE00000 LAPIC║  dispatched to QEMU device models
+</span></span><span style="display:flex;"><span>   ║  0xFEC00000 IOAPIC
+</span></span><span style="display:flex;"><span>   ║  0xC0000000+ BARs║
+</span></span><span style="display:flex;"><span>   ╚══════════════════╝
+</span></span><span style="display:flex;"><span>   0xC0000000
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>─  ┌──────────────────┐
+</span></span><span style="display:flex;"><span>   │  low extended RAM│─── slot 1 ─────────────►  0x7f8000100000
+</span></span><span style="display:flex;"><span>   │  1 MB → ~3 GB    │    base_gfn: 0x100          ┌──────────┐
+</span></span><span style="display:flex;"><span>   │                  │    npages:   0xBFF00         │anon mmap │
+</span></span><span style="display:flex;"><span>─  └──────────────────┘    usr_addr: 0x7f8000100000 └──────────┘
+</span></span><span style="display:flex;"><span>   0x00100000
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   ╔══════════════════╗
+</span></span><span style="display:flex;"><span>   ║  ISA hole        ║  no memslot — KVM_EXIT_MMIO / KVM_EXIT_IO
+</span></span><span style="display:flex;"><span>   ║  0xA0000 VGA RAM ║  dispatched to QEMU ROM and device handlers
+</span></span><span style="display:flex;"><span>   ║  0xC0000 opt ROM ║
+</span></span><span style="display:flex;"><span>   ║  0xF0000 BIOS    ║
+</span></span><span style="display:flex;"><span>   ╚══════════════════╝
+</span></span><span style="display:flex;"><span>   0x000A0000
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>─  ┌──────────────────┐
+</span></span><span style="display:flex;"><span>   │  conventional RAM│─── slot 0 ─────────────►  0x7f8000000000
+</span></span><span style="display:flex;"><span>   │  0 → 640 KB      │    base_gfn: 0x0            ┌──────────┐
+</span></span><span style="display:flex;"><span>   │                  │    npages:   0xA0            │anon mmap │
+</span></span><span style="display:flex;"><span>─  └──────────────────┘    usr_addr: 0x7f8000000000 └──────────┘
+</span></span><span style="display:flex;"><span>   0x00000000
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   ──────────────────────────────────────────────────────────────
+</span></span><span style="display:flex;"><span>   hva    = slot-&gt;userspace_addr + (gfn - base_gfn) &lt;&lt; PAGE_SHIFT
+</span></span><span style="display:flex;"><span>   gfn    = gpa &gt;&gt; PAGE_SHIFT        (PAGE_SHIFT = 12 for 4K pages)
+</span></span><span style="display:flex;"><span>   lookup → kvm-&gt;memslots[as_id]
+</span></span><span style="display:flex;"><span>            lru_slot checked first (atomic_t, avoids search on hot path)
+</span></span><span style="display:flex;"><span>            then binary search descending on base_gfn
+</span></span><span style="display:flex;"><span>   as_id  → 0 = normal, 1 = SMM shadow memory (x86 only)
+</span></span></code></pre></div><ul>
+<li>Which means we then arrive at three address layers: the Guest Virtual Addres (GVA), the Guest Physical Address (GPA), and the Host Physical Address (HPA)
+<ul>
+<li>So the hardware has to walk on both levels when a TLB miss happens (GVA -&gt; [guest PT walk] -&gt; GPA -&gt; [EPT walk] -&gt; HPA)
+<ul>
+<li>AMD uses NPT (Nested Page Tables instead of Extended Page Tables)</li>
+<li>ARM uses Stage-2 page tables</li>
+<li>RISC-V uses G-stage page tables</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Timers!
+<ul>
+<li>Timers are tricky because the guest OS needs precise timers, but we can deschedule the vCPU. So we need to emulate timers without breaking guest time.</li>
+<li>We have hardware supported timers, which the hardware fires directly into the VM. This allows for no VM exists on ARM64/RISC-V</li>
+<li>But sometimes we have to fallback to software timers, where the guest writes a comparator -&gt; vm exists -&gt; KVM programs the hrtimer
+<ul>
+<li>hrtimer fires -&gt; the KVM injects virtual interrupts -&gt; VM exits</li>
+<li>This is <strong>TWO</strong> exits per cycle</li>
+<li>We can also block. Where the guest halts, the vCPU stops, and the HW timer can&rsquo;t fire.
+<ul>
+<li>So KVM then starts a backup hrtimer to wake it</li>
+</ul>
+</li>
+<li>There&rsquo;s always some form of offset timekeeping so that the guest sees a consistent virtual time</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>IO
+<ul>
+<li>When a guest accesses a device register, the guest reads/writes unampped GPAs, which causes a VM exit, and exits to userspace, triggering <a href="#qemu">QEMU</a></li>
+<li>In certain situations we have kernel shortcuts, such as ioeventfd and irqfd.</li>
+<li>The key is to avoid hitting QEMU, which is very slow</li>
+</ul>
+</li>
+<li>Interrupts
+<ul>
+<li>IRQCHIP is userspace, emualted in VMM (QEMU), which registers a VM exit</li>
+<li>KVM acceleration is handled in the kernel. This prevents an exits to space.</li>
+<li>Sometimes we can signal directly to HW from the guest</li>
+</ul>
+</li>
+<li><code>ioeventfd</code> and <code>irqfd</code> act as dorbells and interrupt injections</li>
+</ul>
+<h2 id="vmms">VMMs</h2>
+<ul>
+<li>VMMs create and manage vms with the help of the hypervisor, such as kvmtool, qemu-kvm, crosvm, cloud-hypervisor</li>
+</ul>
 
             
 
@@ -1352,6 +1508,10 @@
    
 
    
+      
+   
+
+   
 
    
 
@@ -3848,8 +4008,19 @@
    
 
    
+
 
 
+  <div class="bl-section">
+    <h4>Links to this note</h4>
+    <div class="backlinks">
+        <ul>
+       
+          <li><a href="/posts/ganeti/">ganeti</a></li>
+       
+     </ul>
+    </div>
+  </div>
 
 
         </div>
@@ -3864,7 +4035,7 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#kvm--kernel-virtual-machine">KVM (kernel virtual machine)</a></li>
-    <li><a href="#quemu">QUEMU</a>
+    <li><a href="#qemu">QEMU</a>
       <ul>
         <li><a href="#qcow2-3">qcow2/3</a></li>
         <li><a href="#hot-plug-memory">Hot Plug Memory</a></li>
@@ -3873,6 +4044,8 @@
     </li>
     <li><a href="#xen">Xen</a></li>
     <li><a href="#other-execution-environments">Other Execution Environments</a></li>
+    <li><a href="#kvm">KVM</a></li>
+    <li><a href="#vmms">VMMs</a></li>
   </ul>
 </nav>
   </div>
