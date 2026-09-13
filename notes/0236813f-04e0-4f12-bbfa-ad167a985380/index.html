@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>Cowboy Web Server · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon="section"><header class="document-header" tabindex="-1"><h1><span class="taxon">section</span><span dir="auto">Cowboy Web Server</span> <a class="slug" href="/notes/0236813f-04e0-4f12-bbfa-ad167a985380/" title="0236813F-04E0-4F12-BBFA-AD167A985380" aria-label="Permanent link to Cowboy Web Server">[0236813f]</a></h1><div class="metadata">Part of <a class="link local" href="/notes/cf577679-1813-4797-9a8c-4a20601b8f2f/">erlang</a></div></header>
+<div id="note"><ul>
+<li>
+<p><a class="link external bare-url" href="https://gist.github.com/weaversam8/c77fe1df5749d6eaa459d9e1b6f61d9d" title="https://gist.github.com/weaversam8/c77fe1df5749d6eaa459d9e1b6f61d9d">gist.github.com/weaversam8/c77fe1df5749d6eaa459d9e1b6f61d9d</a> - fully documented stream handler</p>
+<ul>
+<li><a class="link external bare-url" href="https://github.com/ninenines/cowboy/issues/1270" title="https://github.com/ninenines/cowboy/issues/1270">github.com/ninenines/cowboy/issues/1270</a></li>
+</ul>
+<div class="src src-erlang">
+<div class="highlight">
+<pre>-module(reference_stream_h).
+-behavior(cowboy_stream).
+
+-export([init/3]).
+-export([data/4]).
+-export([info/3]).
+-export([terminate/3]).
+-export([early_error/5]).
+
+-record(state, {next}).
+
+%%
+%% Callback Functions
+%%
+
+% This implementation was modeled from imetrics_cowboy_stream_h.
+% This is a ready-to-use template that other stream handlers can be
+% based on.
+
+% This function is called when the request is first received and the
+% headers are parsed and known.
+-spec init(cowboy_stream:streamid(), cowboy_req:req(), cowboy:opts())
+  -&gt; {cowboy_stream:commands(), #state{}}.
+init(StreamID, Req = #{ path := Path }, Opts) -&gt;
+  % The state record here holds our &#34;Next&#34; tuple, which contains a reference
+  % to ourselves (module) and a state maintained by the cowboy_stream module.
+  % It can be passed around opaquely.
+  State0 = #state{},
+
+  % When we&#39;re ready to invoke the next handler in the chain, we call
+  % cowboy_stream:init/3. It returns that &#34;Next&#34; tuple and a list of &#34;commands&#34;
+  % to send to the upstream HTTP process. Those commands are documented [here][0]
+  %
+  % [0]: https://ninenines.eu/docs/en/cowboy/2.8/manual/cowboy_stream/#commands
+  {Commands0, Next} = cowboy_stream:init(StreamID, Req, Opts),
+
+  % We pass these commands thru our &#34;fold&#34; function, which allows us to iterate
+  % thru each command and modify it if necessary. We can also add new commands
+  % here or in that function if we want to. Ultimately, the list of commands is
+  % returned by this function, and passed to the next handler upstream (or cowboy,
+  % which passes them to the client, if this is the last handler.)
+  fold(Commands0, State0#state{next=Next}).
+
+% This function is called with the data sent in the request body. It can be called in
+% chunks, so make sure to check the &#34;IsFin&#34; flag to decide whether you&#39;ve received
+% all the data.
+-spec data(cowboy_stream:streamid(), cowboy_stream:fin(), cowboy_req:resp_body(), State)
+  -&gt; {cowboy_stream:commands(), State} when State::#state{}.
+data(StreamID, IsFin, Data, State0=#state{next=Next0}) -&gt;
+  % Invoke the next stream handler in the chain.
+  {Commands0, Next} = cowboy_stream:data(StreamID, IsFin, Data, Next0),
+
+  % Process any commands returned by downstream stream handlers.
+  fold(Commands0, State0#state{next=Next}).
+
+% Any messages addressed to the stream will be sent to this function. Cowboy also uses
+% this function to inform stream handlers of internal events.
+-spec info(cowboy_stream:streamid(), any(), State)
+  -&gt; {cowboy_stream:commands(), State} when State::#state{}.
+info(StreamID, Info, State0=#state{next=Next0}) -&gt;
+  % Invoke the next stream handler in the chain.
+  {Commands0, Next} = cowboy_stream:info(StreamID, Info, Next0),
+
+  % Process any commands returned by downstream stream handlers.
+  fold(Commands0, State0#state{next=Next}).
+
+% All streams will eventually be terminated and this function will be called. The
+% only time when terminate/3 is not called is when an error occurs in init/3 of
+% any stream handler, since the state is not available.
+-spec terminate(cowboy_stream:streamid(), cowboy_stream:reason(), #state{}) -&gt; any().
+terminate(StreamID, Reason, #state{next=Next}) -&gt;
+  % Propagate the terminate to downstream stream handlers.
+  cowboy_stream:terminate(StreamID, Reason, Next).
+
+% This function will be called when an error occurs before the request-line and
+% all headers have been received in an HTTP/1.1 request. It includes the partial
+% request, and the response Cowboy intends to send. The return value of this
+% function is the response, so it allows you to modify it if necessary.
+-spec early_error(cowboy_stream:streamid(), cowboy_stream:reason(),
+  cowboy_stream:partial_req(), Resp, cowboy:opts()) -&gt; Resp
+  when Resp::cowboy_stream:resp_command().
+early_error(StreamID, Reason, PartialReq, Resp, Opts) -&gt;
+  % Propagate the error to downstream stream handlers.
+  cowboy_stream:early_error(StreamID, Reason, PartialReq, Resp, Opts).
+
+%%
+%% Internal Functions
+%%
+
+% Any commands (see [0]) returned from downstream handlers are passed thru this
+% fold function, giving us the chance to modify, omit, replace, or append to them.
+%
+% This module transparently passes the commands thru without any changes, but this
+% logic remains in place since this is the best documented stream handler in all of
+% our codebases, and it should exist as a reference for other stream handlers to hook
+% into in the future.
+%
+% [0]: https://ninenines.eu/docs/en/cowboy/2.8/manual/cowboy_stream/#commands
+fold(Commands, State) -&gt;
+  fold(Commands, State, []).
+
+% At the end of the recursion, reverse the accumulator so the original order of
+% commands is preserved.
+fold([], State, Acc) -&gt;
+  {lists:reverse(Acc), State};
+
+% You can add additional cases here to catch specific commands.
+% fold([{response, ResponseCode, Headers, Body0}|Tail], State0, Acc) -&gt;
+%     % do something with the body
+%     Body = do_something(Body0),
+%     Response = {response, ResponseCode, Headers, Body},
+%     fold(Tail, State0, [Response|Acc]);
+
+% This is the catch-all case for any commands we didn&#39;t match above, pass it
+% thru unmodified.
+fold([Command|Tail], State, Acc) -&gt;
+  fold(Tail, State, [Command|Acc]).
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div></section>
+<footer></footer>
+</article>
+</div></body></html>

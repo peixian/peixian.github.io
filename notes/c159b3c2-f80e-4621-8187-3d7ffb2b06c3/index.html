@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>Zookeeper · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon="section"><header class="document-header" tabindex="-1"><h1><span class="taxon">section</span><span dir="auto">Zookeeper</span> <a class="slug" href="/notes/c159b3c2-f80e-4621-8187-3d7ffb2b06c3/" title="C159B3C2-F80E-4621-8187-3D7FFB2B06C3" aria-label="Permanent link to Zookeeper">[c159b3c2]</a></h1><div class="metadata">Part of <a class="link local" href="/notes/b61cd1ff-6157-4754-a625-a1ae4fcc5770/">paxos</a></div></header>
+<div id="note"><section class="block branch"><details open="" id="r9-section-1"><summary aria-label="1. API" data-title="API" data-number="1"><header><h2 class="tree-heading"><span class="taxon">1. </span><span class="section-title">API</span></h2></header></summary><ul>
+<li>
+<p><code>create(path, data[], mode, flag)</code></p>
+<ul>
+<li>Creates a znode, like an inode, but a unit of abstraction to lock on it</li>
+</ul>
+</li>
+<li>
+<p><code>setData(path, data[], version)</code></p>
+<ul>
+<li>sets the data[] in the znode at the specified flag</li>
+</ul>
+</li>
+<li>
+<p><code>getData(path, watch)</code></p>
+<ul>
+<li>returns <code>data[]</code>, also allows clients to watch</li>
+</ul>
+</li>
+<li>
+<p><code>getChildren(path, watch)</code></p>
+<ul>
+<li>Returns all the children names of the znode at the specified path</li>
+</ul>
+</li>
+<li>
+<p><code>exists(path, watch)</code></p>
+<ul>
+<li>Checks whether a znode exists</li>
+</ul>
+</li>
+<li>
+<p><code>delete(path, version)</code></p>
+<ul>
+<li>Deletes a znode. Must match the monotonically increasing versions</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r9-section-2"><summary aria-label="2. Server" data-title="Server" data-number="2"><header><h2 class="tree-heading"><span class="taxon">2. </span><span class="section-title">Server</span></h2></header></summary><ul>
+<li>Fully replicated, like <a class="link local" href="/notes/0227c046-09bb-4c99-9b36-47e447fc7489/">etcd</a>, into a set called a <code>ZooKeeper ensemble</code></li>
+<li>Elected leaders and others become followers</li>
+<li>
+<p>Unlike chubby, clients can connect to any</p>
+<ul>
+<li>Higher availablity, not as strong consistency</li>
+<li>Use <code>sync()</code> to assure that you have the highest consistency</li>
+</ul>
+</li>
+<li>Leader broadcasts operations to the followers, and performs write operation on the coordination data placed in its memory</li>
+<li>
+<p>Follower can also recieve and respond to write requests. Multiple writes can be batched, but only the request needs to forwarded to the leader, the leader broadcasts all the requests to other followers</p>
+<ul>
+<li>Basically a follower gets a write, sends a request to the leader, the leader broadcasts the state to everyone after it&#39;s done</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r9-section-3"><summary aria-label="3. Replicated Database" data-title="Replicated Database" data-number="3"><header><h2 class="tree-heading"><span class="taxon">3. </span><span class="section-title">Replicated Database</span></h2></header></summary><ul>
+<li>In memory copy of the database so that reads and writes can be done locally</li>
+<li>
+<p>ZK takes periodic snapshots of all the delivered messages as a WAL</p>
+<ul>
+<li>Snapshots are fuzzy</li>
+<li>Enables at-most-once execution</li>
+<li>
+<p>If a server dies before the next snapshot is taken, it does a depth first scan of the tree to read every znode&#39;s metadata and data atomically then write that metadata and data from disk, extracted from the WAL</p>
+<ul>
+<li>This is why ZK recovery is <strong>slow</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r9-section-4"><summary aria-label="4. Atomic Broadcast" data-title="Atomic Broadcast" data-number="4"><header><h2 class="tree-heading"><span class="taxon">4. </span><span class="section-title">Atomic Broadcast</span></h2></header></summary><ul>
+<li>
+<p>Used by ZK to broadcast the write request to the replicated database on all servers</p>
+<ul>
+<li>Followers forward writes to leaders</li>
+</ul>
+</li>
+<li>
+<p>Uses the ZAB protocol</p>
+<ul>
+<li>
+<p>Two modes</p>
+<ol>
+<li>Broadcast is used to send messages</li>
+<li>Recovery is used to syncronize</li>
+</ol>
+</li>
+<li>Default is <span class="org-math" data-display="false" data-tex="2f + 1">$2f + 1$</span> for quorum where f is the number of faults</li>
+</ul>
+</li>
+<li>When a leader dies, the new leader is elected and ensures all the updates from the previous leader are incorporated into its replicated db before it broadcasts its own requests</li>
+<li>At every transaction, the leader is broadcasting what it is working on into a replicated queue</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r9-section-5"><summary aria-label="5. Request Processor" data-title="Request Processor" data-number="5"><header><h2 class="tree-heading"><span class="taxon">5. </span><span class="section-title">Request Processor</span></h2></header></summary><ul>
+<li>Manager that keeps the transactions atomic, only the leader uses this</li>
+<li>Transactions within ZK are idempotent</li>
+<li>All requests are linearized on the leader, so the leader converts everything into a <code>setDataTXN</code></li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r9-section-6"><summary aria-label="6. Client-server interactino" data-title="Client-server interactino" data-number="6"><header><h2 class="tree-heading"><span class="taxon">6. </span><span class="section-title">Client-server interactino</span></h2></header></summary><ul>
+<li><code>getData()</code> and <code>getChildren()</code> can both be performed locally without notifying others</li>
+<li>Servers generate <code>zxid</code> for every read request and retrieves the most recently updated state of the server&#39;s data</li>
+<li>
+<p>Writes have multistep</p>
+<ol>
+<li>Write the data</li>
+<li>Notify the client(s) who have set watches on that data</li>
+<li>Sent the write request to the leader so it can be updated in the replicated database</li>
+<li>Data is replicated among all connected servers in the ensemble</li>
+</ol>
+</li>
+<li>Everything is FIFO, including read requests when there&#39;s a write</li>
+<li>However if a read is in progress, multiple readers can read in parallel</li>
+<li>Like a giant R/W lock</li>
+<li>Default is async transmission of data, which comes at the cost of insconsistent or stale reads</li>
+<li>the <code>zxid</code> allows the client to maintain a consistent view across different servers</li>
+<li>Session timeouts and heartbeats are used to maintain connections from servers to clients for watches, which is decided by the leader</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r9-section-7"><summary aria-label="7. Primitives" data-title="Primitives" data-number="7"><header><h2 class="tree-heading"><span class="taxon">7. </span><span class="section-title">Primitives</span></h2></header></summary><ul>
+<li><a class="link external bare-url" href="https://zookeeper.apache.org/doc/r3.4.2/recipes.pdf" title="https://zookeeper.apache.org/doc/r3.4.2/recipes.pdf">zookeeper.apache.org/doc/r3.4.2/recipes.pdf</a></li>
+<li>
+<p>Config management and service discovery</p>
+<div class="src src-text">
+<div class="highlight">
+<pre>  newZnode = create(&#34;/config/port&#34;, 8090, EMPHEMERAL) # set a port
+  getData(&#34;/config/port&#34;, true) # get a watch
+  setData(&#34;/config/port&#34;, value, version) # new version
+</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Rendezvous</p>
+<div class="src src-text">
+<div class="highlight">
+<pre>  newZnode = create(&#34;/rendezvous/candidateOne&#34;, &#34;&#34;, EMPHEMERAL) # create a znode to write
+  getData(&#34;/rendezvous/candidateOne&#34;, true) # get a watch
+  setData(&#34;/rendevous/candidateOne&#34;, {&#34;10.0.0.1&#34;, 8080})
+</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Group Membership</p>
+<div class="src src-text">
+<div class="highlight">
+<pre>  newZnode = create(&#34;/groups/member0001&#34;, EMPHEMERAL)
+  newZnode = create(&#34;/groups/member0001/processOne&#34;, EMPHERAL,SEQUENTIAL) # set a sequential flag to generate a unique name
+  childrenList = getChildren(/groups/member0001&#34;, true)
+</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Locks</p>
+<div class="src src-text">
+<div class="highlight">
+<pre>  newLock = create(&#34;/locks/lock-1&#34;, EMPHEMERAL)
+  exists(&#34;/locks&#34;, true) # watch the lock tree
+  delete(newLock) # to release the lock
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>issues</p>
+<ul>
+<li>
+<p>herding: when a lock is released, many clients stampede to get the lock</p>
+<ul>
+<li>
+<p>Solved with using <code>SEQUENTIAL</code>, at which point the lowest sequence number will hold the lock</p>
+<div class="src src-text">
+<div class="highlight">
+<pre>  newZnode = create(path + &#34;/lock-&#34;, EPHEMERAL, SEQUENTIAL)
+  do
+      childrenList = getChildren(path, false)
+      if newZnode is lowest znode in children
+          exit
+      newPath = znode in childrenList ordered just before newZnode
+      if exists(newPath, true)
+          wait for event
+  while true
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p>exclusive lock only</p>
+<ul>
+<li>
+<p>Can implement R/W locks with</p>
+<div class="src src-text">
+<div class="highlight">
+<pre>  newZnode = create(path + &#34;/write-&#34;, EPHEMERAL, SEQUENTIAL)
+  do
+      childrenList = getChildren(path, false)
+      if newZnode is lowest znode in children
+          exit
+      newPath = znode in childrenList ordered just before newZnode
+      if exists(newPath, true)
+          wait for event
+  while true
+</pre>
+</div>
+</div>
+</li>
+<li>create a read lock and then reads can happen with other reads, but blocks on writes, and writes block on reads</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Barriers</p>
+<div class="src src-text">
+<div class="highlight">
+<pre>  newZnode = create(path + &#34;/&#34; + processName)
+  exists(path + &#34;/ready&#34;, true)
+  newZnodeChild = create(newZnode, EPHEMERAL)
+  childrenList = getChildren(path, false)
+  if fewer children in childrenList than barrierThreshold
+    wait for watch event
+  else
+    create(path + &#34;/ready&#34;, REGULAR)
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r9-section-8"><summary aria-label="8. Performance" data-title="Performance" data-number="8"><header><h2 class="tree-heading"><span class="taxon">8. </span><span class="section-title">Performance</span></h2></header></summary><ul>
+<li>
+<p>Better load distribution than chubby</p>
+<p><img loading="lazy" decoding="async" src="/assets/b4a49ce717640d8d4c2a4a4ce346082e.png" alt="2024-03-04_20-09-16_screenshot.png" width="982" height="640"/></p>
+</li>
+<li>Atomic broadcast decreases performance, has a CPU cost</li>
+<li>Failures of leaders will grind application to zero while it recovers</li>
+<li>Solves chubby like problems with different tradeoffs, gives up consistency for a bit of throughput</li>
+</ul>
+</details></section></div></section>
+<footer><section id="backlinks" tabindex="-1"><h2>Backlinks <span class="relation-count">2</span></h2><p class="relation-description">Notes that link to this note.<span class="js-only"> Expand an arrow to read here.</span></p><ul class="backlinks"><li><a class="link local" href="/notes/777f756c-ef76-4cee-b592-fb2de8f54ff6/">Chubby</a> <span class="index-context">in paxos</span></li><li><a class="link local" href="/notes/b99d51cf-2aed-4239-831f-66a4f026b8d5/">kafka</a></li></ul></section><section id="outgoing"><details class="outgoing"><summary><h2>Links from this note <span class="relation-count">1</span></h2></summary><ul class="backlinks"><li><a class="link local" href="/notes/0227c046-09bb-4c99-9b36-47e447fc7489/">etcd</a></li></ul></details></section></footer>
+</article>
+<nav id="toc" aria-label="Table of contents"><details open class="toc-disclosure"><summary><h2>Table of contents</h2></summary><ul class="block"><li class="toc-depth-0" data-target="r9-section-1"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r9-section-1" title="API"><span class="taxon">1. </span>API</a></li><li class="toc-depth-0" data-target="r9-section-2"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r9-section-2" title="Server"><span class="taxon">2. </span>Server</a></li><li class="toc-depth-0" data-target="r9-section-3"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r9-section-3" title="Replicated Database"><span class="taxon">3. </span>Replicated Database</a></li><li class="toc-depth-0" data-target="r9-section-4"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r9-section-4" title="Atomic Broadcast"><span class="taxon">4. </span>Atomic Broadcast</a></li><li class="toc-depth-0" data-target="r9-section-5"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r9-section-5" title="Request Processor"><span class="taxon">5. </span>Request Processor</a></li><li class="toc-depth-0" data-target="r9-section-6"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r9-section-6" title="Client-server interactino"><span class="taxon">6. </span>Client-server interactino</a></li><li class="toc-depth-0" data-target="r9-section-7"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r9-section-7" title="Primitives"><span class="taxon">7. </span>Primitives</a></li><li class="toc-depth-0" data-target="r9-section-8"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r9-section-8" title="Performance"><span class="taxon">8. </span>Performance</a></li></ul><p class="tree-tools"><button type="button" data-action="expand">Expand all</button> · <button type="button" data-action="collapse">Collapse all</button></p></details></nav></div></body></html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>Li, David Xinliang, Raksit Ashok, and Robert Hundt. “Lightweight Feedback-Directed Cross-Module Optimization.” Proceedings of the 8th Annual IEEE/ACM International Symposium on Code Generation and Optimization, ACM, April 24, 2010, 53–61. https://doi.org/10.1145/1772954.1772964. · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon="section"><header class="document-header" tabindex="-1"><h1><span class="taxon">section</span><span dir="auto">Li, David Xinliang, Raksit Ashok, and Robert Hundt. “Lightweight Feedback-Directed Cross-Module Optimization.” Proceedings of the 8th Annual IEEE/ACM International Symposium on Code Generation and Optimization, ACM, April 24, 2010, 53–61. https://doi.org/10.1145/1772954.1772964.</span> <a class="slug" href="/notes/264affb8-70e2-4cbc-91ac-be3910f14b68/" title="264AFFB8-70E2-4CBC-91AC-BE3910F14B68" aria-label="Permanent link to Li, David Xinliang, Raksit Ashok, and Robert Hundt. “Lightweight Feedback-Directed Cross-Module Optimization.” Proceedings of the 8th Annual IEEE/ACM International Symposium on Code Generation and Optimization, ACM, April 24, 2010, 53–61. https://doi.org/10.1145/1772954.1772964.">[264affb8]</a></h1><div class="metadata">Part of <a class="link local" href="/notes/a9fde3e6-6702-41e6-a037-cc1aaf4096a2/">PGO - Block 1 2026</a></div></header>
+<div id="note"><ul>
+<li>Two most important IPO passes are function inlining and indirect function call promotion</li>
+<li>
+<p>Basically:</p>
+<ol>
+<li>We want to have a smarter way of combining things without making fat .o files</li>
+<li>We can use FDO analysis to determine which functions are hot and worth inlining or promoting</li>
+<li>In order to do so, we can use a greedy algorithm to generate families, which help link these together</li>
+</ol>
+</li>
+<li>We push linking earlier by using the profiled data</li>
+<li>
+<p>Profile data is augmented FDO data, so</p>
+<ul>
+<li>After training run is done, the in-memory info contains a callgraph, using a greedy clustering algorithm to decide on &#34;friends&#34;</li>
+<li>afterwards, we have a standard FDO data (raw counts of how many times each branch was taken), and also module grouping decisions</li>
+</ul>
+</li>
+<li>In order to make this workable for <a class="link local" href="/notes/b57b2e4f-144c-4ad8-bd2a-786cdb64ae97/">Buck / Blaze / Bazel</a>, an auxillery file needs to get shipped so the build system knows which sources to include, even when they&#39;re not strictly dependant, as a form of dynamic dependency injection</li>
+<li>Predacessor to <a class="link local" href="/notes/bfdee6c7-0f50-482f-a2db-f12eecb905de/">LTO (and ThinLTO)</a></li>
+<li><a class="link external bare-url" href="https://lists.llvm.org/pipermail/llvm-dev/2019-September/135393.html" title="https://lists.llvm.org/pipermail/llvm-dev/2019-September/135393.html">lists.llvm.org/pipermail/llvm-dev/2019-September/135393.html</a></li>
+</ul>
+<section class="block branch"><details open="" id="r2-section-1"><summary aria-label="1. Discussion" data-title="Discussion" data-number="1"><header><h2 class="tree-heading"><span class="taxon">1. </span><span class="section-title">Discussion</span></h2></header></summary><ul>
+<li>Coming from FDO baseline is a bit specious</li>
+<li>What is a translation unit here?</li>
+</ul>
+</details></section></div></section>
+<footer><section id="backlinks" tabindex="-1"><h2>Backlinks <span class="relation-count">1</span></h2><p class="relation-description">Notes that link to this note.<span class="js-only"> Expand an arrow to read here.</span></p><ul class="backlinks"><li><a class="link local" href="/notes/bfdee6c7-0f50-482f-a2db-f12eecb905de/">LTO (and ThinLTO)</a> <span class="index-context">in linkers</span></li></ul></section><section id="outgoing"><details class="outgoing"><summary><h2>Links from this note <span class="relation-count">2</span></h2></summary><ul class="backlinks"><li><a class="link local" href="/notes/b57b2e4f-144c-4ad8-bd2a-786cdb64ae97/">Buck / Blaze / Bazel</a> <span class="index-context">in build systems</span></li><li><a class="link local" href="/notes/bfdee6c7-0f50-482f-a2db-f12eecb905de/">LTO (and ThinLTO)</a> <span class="index-context">in linkers</span></li></ul></details></section></footer>
+</article>
+<nav id="toc" aria-label="Table of contents"><details open class="toc-disclosure"><summary><h2>Table of contents</h2></summary><ul class="block"><li class="toc-depth-0" data-target="r2-section-1"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r2-section-1" title="Discussion"><span class="taxon">1. </span>Discussion</a></li></ul><p class="tree-tools"><button type="button" data-action="expand">Expand all</button> · <button type="button" data-action="collapse">Collapse all</button></p></details></nav></div></body></html>

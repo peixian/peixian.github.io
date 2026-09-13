@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>Chapter 5: Naming · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon="section"><header class="document-header" tabindex="-1"><h1><span class="taxon">section</span><span dir="auto">Chapter 5: Naming</span> <a class="slug" href="/notes/20a077ab-212e-4e4f-b6c2-63a2a8909281/" title="20a077ab-212e-4e4f-b6c2-63a2a8909281" aria-label="Permanent link to Chapter 5: Naming">[20a077ab]</a></h1><div class="metadata">Part of <a class="link local" href="/notes/554c821b-1a78-4a57-8850-af989fe2186a/">Steen and Tanenbaum - Distributed Systems</a></div></header>
+<div id="note"><ul>
+<li>
+<p>an <strong>identifier</strong> is one that is:</p>
+<ul>
+<li>referring to at most one entity</li>
+<li>referred to by at most one identifier</li>
+<li>always referring to the same entity (no-reuse)</li>
+</ul>
+</li>
+<li>
+<p>an <strong>address</strong> is</p>
+<ul>
+<li>a single access point</li>
+<li>can be reused</li>
+<li>can be reassigned</li>
+<li><em>cannot</em> be reused as an identifier</li>
+</ul>
+</li>
+<li>
+<p>oftentimes <strong>name-to-address bindings</strong> are done by creating a (name, address) table</p>
+<ul>
+<li>you can create a self-certifying name by hashing the name, that way the name can always be guarneteed to be the data</li>
+</ul>
+</li>
+<li>flat naming - when we don&#39;t want the name to give any information about how to locate the access point of an entity</li>
+</ul>
+<section class="block branch"><details open="" id="r2-section-1"><summary aria-label="1. Ways of Transmitting Names" data-title="Ways of Transmitting Names" data-number="1"><header><h2 class="tree-heading"><span class="taxon">1. </span><span class="section-title">Ways of Transmitting Names</span></h2></header></summary><ul>
+<li>
+<p>broadcasting names</p>
+<ul>
+<li>
+<p>broadcasting or multicasting is difficult to implement efficiently in large-scale networks</p>
+<ul>
+<li>broadcast a message to each machine regarding the location of an entity and allow every machine to check if it has knowledge about that entity</li>
+<li>
+<p>extremely inefficient as network grows</p>
+<ul>
+<li>somewhat mitgated by <a class="link local" href="/notes/d9ad286e-b3c1-435d-a315-387486be8e7b/">gossip protocols</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>forwarding pointers chains introduce performance problems and are susceptible to broken links</p>
+<ul>
+<li>
+<p>when an entity moves from <strong>A</strong> to <strong>B</strong>, it leaves behind a reference in A about where its going</p>
+<ul>
+<li>chains for highly mobile entities can become very long</li>
+<li>
+<p>example: SSP Chains</p>
+<ul>
+<li>
+<p>SSP chains are forwarding pointers implemented with a <code>(client stub, server stub)</code> pair</p>
+<ul>
+<li>a <code>server stub</code> contains either a local reference to the actual object or a local reference to a remote client stub for that object</li>
+<li>whenever an object moves from <code>A</code> to <code>B</code>, it leaves behind a client stub in A, and sets up a server stub in B.</li>
+<li>this allows shortcuts to be setup, by keeping track of the chain, when a client stub goes to get a server stub and ends up hitting another client stub, it marks where the final server stub is at</li>
+<li>you can piggyback the stub change message on top of the response, by responding directly to the client</li>
+<li>when a sever stub is no longer being used, you can cross it out, similar to a form of distributed garbage collection</li>
+</ul>
+</li>
+<li>
+<p>issues</p>
+<ul>
+<li>
+<p>when stub pairs crashes or becomes unreliable</p>
+<ul>
+<li>you can create a LII system to let the where where an object was created always keep a reference to its current location. That reference is stored and maintained in a fault-tolerant way, and eventually allows the user to ask where the object is at whenever the chain is broken.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Home-based approaches</p>
+<ul>
+<li>keeps track of current location of an entity, which safeguards against network or process failures</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details></section></div></section>
+<footer><section id="outgoing"><details class="outgoing"><summary><h2>Links from this note <span class="relation-count">1</span></h2></summary><ul class="backlinks"><li><a class="link local" href="/notes/d9ad286e-b3c1-435d-a315-387486be8e7b/">gossip protocols</a></li></ul></details></section></footer>
+</article>
+<nav id="toc" aria-label="Table of contents"><details open class="toc-disclosure"><summary><h2>Table of contents</h2></summary><ul class="block"><li class="toc-depth-0" data-target="r2-section-1"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r2-section-1" title="Ways of Transmitting Names"><span class="taxon">1. </span>Ways of Transmitting Names</a></li></ul><p class="tree-tools"><button type="button" data-action="expand">Expand all</button> · <button type="button" data-action="collapse">Collapse all</button></p></details></nav></div></body></html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>BigTable · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon="section"><header class="document-header" tabindex="-1"><h1><span class="taxon">section</span><span dir="auto">BigTable</span> <a class="slug" href="/notes/c792edd0-a9d1-4c6a-ae25-091c41b1f6d4/" title="c792edd0-a9d1-4c6a-ae25-091c41b1f6d4" aria-label="Permanent link to BigTable">[c792edd0]</a></h1><div class="metadata">Part of <a class="link local" href="/notes/4d8f680d-3043-42f2-8635-12ee3f560c8b/">Databases</a></div></header>
+<div id="note"><ul>
+<li>
+<p>Key features</p>
+<ul>
+<li>Single row transactions</li>
+<li>No batching across row keys</li>
+<li>Integer counters</li>
+<li>
+<p>MapReduce jobs as input source and output target</p>
+<p><img loading="lazy" decoding="async" src="/assets/f459f6b7a8e9bb9bce135562aabdc388.png" alt="2024-02-21_16-32-56_screenshot.png" width="1398" height="600"/></p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Uses a column family style, with groups of columns and a timestamp within each cell</li>
+<li>Treats all data as raw byte strings</li>
+<li>All rows have a row key (64kb string), each write and read is atomic</li>
+<li>Column families allow for efficient read/write operations, since they usually hold data of the same type (data within a family is physically close)</li>
+<li>Also has timestamps, keeps the latest 3 versions</li>
+</ul>
+<section class="block branch"><details open="" id="r11-section-1"><summary aria-label="1. Components" data-title="Components" data-number="1"><header><h2 class="tree-heading"><span class="taxon">1. </span><span class="section-title">Components</span></h2></header></summary><section class="block branch"><details open="" id="r11-section-2"><summary aria-label="1.1. Memtable" data-title="Memtable" data-number="1.1"><header><h3 class="tree-heading"><span class="taxon">1.1. </span><span class="section-title">Memtable</span></h3></header></summary><ul>
+<li>Recent modifications in an in-memory, mutable sorted buffer</li>
+<li>When a memtable grows big enough, its gets flushed to disk as an SSTable</li>
+<li>Uses a write-ahead-log for this</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r11-section-3"><summary aria-label="1.2. SSTable (Sorted String Table)" data-title="SSTable (Sorted String Table)" data-number="1.2"><header><h3 class="tree-heading"><span class="taxon">1.2. </span><span class="section-title">SSTable (Sorted String Table)</span></h3></header></summary><ul>
+<li>
+<p>Components</p>
+<ul>
+<li>Data File</li>
+<li>Primary Index</li>
+<li>Bloom filter (for quickly checking if it&#39;s in the data structure)</li>
+<li>Compression information</li>
+<li>Stats</li>
+<li>64kb blocks</li>
+</ul>
+</li>
+<li>Immutable k/v mappings used to represent tablet states, consisting of blocks, with block indexes facilitating efficient disk access, and can be loaded into memory for quick queries</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r11-section-4"><summary aria-label="1.3. Chubby" data-title="Chubby" data-number="1.3"><header><h3 class="tree-heading"><span class="taxon">1.3. </span><span class="section-title">Chubby</span></h3></header></summary><ul>
+<li>Highly available and persistent distributed lock service</li>
+<li>typically runs with five operating replicas, similar to zoo</li>
+<li>Used in BigTable to ensure there&#39;s only one operational manager</li>
+<li>Saves a bootstrap information as well as new tablet servers and failures</li>
+<li>ACLs too</li>
+</ul>
+</details></section></details></section><section class="block branch"><details open="" id="r11-section-5"><summary aria-label="2. Operations" data-title="Operations" data-number="2"><header><h2 class="tree-heading"><span class="taxon">2. </span><span class="section-title">Operations</span></h2></header></summary><ul>
+<li>
+<p>Locating tablets for a piece of data</p>
+<ul>
+<li>Uses a three level structure similar to a B+ tree</li>
+<li>root tablet&#39;s location is stored in a Chubby file</li>
+<li>second tier contains all metadata tablets</li>
+<li>third tier contains all user tablets</li>
+</ul>
+</li>
+<li>The root tablet is a pointer to other tablets</li>
+<li>first tablet in the metadata data is the root tablet, which is treated differently</li>
+<li>We cache tablet positions in the client library</li>
+<li>Client can then check the metadata server, which then goes to chubby, to get info</li>
+<li>Basically the thing to know is that this is similar to an inode, where there&#39;s three layers of indirection</li>
+<li>A tablet is assigned to just one tablet server, the manager also maintains a record of unassigned tablets and allocates them to tablet servers that have enough space</li>
+<li>Manager requires heartbeats and locks via chubby to assure that a tablet server is holding a tablet</li>
+<li>New managers interact with each active tablet server after looking them up in the tablet server directory in chubby</li>
+</ul>
+<section class="block branch"><details open="" id="r11-section-6"><summary aria-label="2.1. Writes" data-title="Writes" data-number="2.1"><header><h3 class="tree-heading"><span class="taxon">2.1. </span><span class="section-title">Writes</span></h3></header></summary><ul>
+<li>
+<p>When a write is received by a tablet server, it gets checked to ensure to ensure data validity and proper formatting</p>
+<ul>
+<li>check authorizations in the lock</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r11-section-7"><summary aria-label="2.2. Reads" data-title="Reads" data-number="2.2"><header><h3 class="tree-heading"><span class="taxon">2.2. </span><span class="section-title">Reads</span></h3></header></summary><ul>
+<li>Same thing as write, initial check is via authorization in chubby, and then loads the SS tables</li>
+</ul>
+</details></section></details></section><section class="block branch"><details open="" id="r11-section-8"><summary aria-label="3. Minor, Merging, and Major Compactions" data-title="Minor, Merging, and Major Compactions" data-number="3"><header><h2 class="tree-heading"><span class="taxon">3. </span><span class="section-title">Minor, Merging, and Major Compactions</span></h2></header></summary><ul>
+<li>Minor compaction is when it flushes the memtable to disk and turns it into an sstable</li>
+<li>Merging compaction is when sstables become too many and we merge them together, although this could include deleted entries</li>
+<li>Major compaction is when we merge multiple sstables together and remove the deleted datace the tombstones are handled</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r11-section-9"><summary aria-label="4. Design Refinements" data-title="Design Refinements" data-number="4"><header><h2 class="tree-heading"><span class="taxon">4. </span><span class="section-title">Design Refinements</span></h2></header></summary><ul>
+<li>
+<p>Column family locality</p>
+<ul>
+<li>compression is also done on the column family locality to store data</li>
+</ul>
+</li>
+<li>
+<p>Tablet caches in two ways</p>
+<ul>
+<li>Scan cache - high level cache that stores k/v given to the tablet server</li>
+<li>Block cache - caches blocks, like page caching</li>
+</ul>
+</li>
+<li>
+<p>Bloom filters</p>
+<ul>
+<li>Bloom filters tell you 100% if it is <strong>not</strong> in the table.</li>
+<li>Quickly check which things are in a sstable</li>
+</ul>
+</li>
+<li>
+<p>Commit logs</p>
+<ul>
+<li>There&#39;s only one big commit log</li>
+<li>Recovering servers must load off of another&#39;s commit log</li>
+<li>Duplicate log reads are by sorting the entries by <code>&lt;table, row name, log seq number&gt;</code>.</li>
+</ul>
+</li>
+<li>
+<p>Speeding up tablet recovery</p>
+<ul>
+<li>Most challenging and time consuming jobs is ensuring the tablet server gets all entries from the commit log</li>
+<li>Minor compactions are done before moving to reduce the amount of stuff needed to move.</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r11-section-10"><summary aria-label="5. System Design Wisdom" data-title="System Design Wisdom" data-number="5"><header><h2 class="tree-heading"><span class="taxon">5. </span><span class="section-title">System Design Wisdom</span></h2></header></summary><ul>
+<li>Uses other services (Chubby and GFS) as building blocks</li>
+<li>Locality hints from the users for many of its optimizations, such as column families</li>
+<li>One log file per tablet is a way to allow individual tablets to recover</li>
+<li>Single manager interface</li>
+</ul>
+</details></section></div></section>
+<footer><section id="backlinks" tabindex="-1"><h2>Backlinks <span class="relation-count">3</span></h2><p class="relation-description">Notes that link to this note.<span class="js-only"> Expand an arrow to read here.</span></p><ul class="backlinks"><li><a class="link local" href="/notes/777f756c-ef76-4cee-b592-fb2de8f54ff6/">Chubby</a> <span class="index-context">in paxos</span></li><li><a class="link local" href="/notes/60e89de2-2826-4c7f-9df6-69a0c00f11a2/">distributed systems</a></li><li><a class="link local" href="/notes/3949f1f8-3e53-499e-979a-1a1c10ec6647/">DynamoDB</a> <span class="index-context">in Databases</span></li></ul></section></footer>
+</article>
+<nav id="toc" aria-label="Table of contents"><details open class="toc-disclosure"><summary><h2>Table of contents</h2></summary><ul class="block"><li class="toc-depth-0" data-target="r11-section-1"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r11-section-1" title="Components"><span class="taxon">1. </span>Components</a></li><li class="toc-depth-1" data-target="r11-section-2"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r11-section-2" title="Memtable"><span class="taxon">1.1. </span>Memtable</a></li><li class="toc-depth-1" data-target="r11-section-3"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r11-section-3" title="SSTable (Sorted String Table)"><span class="taxon">1.2. </span>SSTable (Sorted String Table)</a></li><li class="toc-depth-1" data-target="r11-section-4"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r11-section-4" title="Chubby"><span class="taxon">1.3. </span>Chubby</a></li><li class="toc-depth-0" data-target="r11-section-5"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r11-section-5" title="Operations"><span class="taxon">2. </span>Operations</a></li><li class="toc-depth-1" data-target="r11-section-6"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r11-section-6" title="Writes"><span class="taxon">2.1. </span>Writes</a></li><li class="toc-depth-1" data-target="r11-section-7"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r11-section-7" title="Reads"><span class="taxon">2.2. </span>Reads</a></li><li class="toc-depth-0" data-target="r11-section-8"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r11-section-8" title="Minor, Merging, and Major Compactions"><span class="taxon">3. </span>Minor, Merging, and Major Compactions</a></li><li class="toc-depth-0" data-target="r11-section-9"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r11-section-9" title="Design Refinements"><span class="taxon">4. </span>Design Refinements</a></li><li class="toc-depth-0" data-target="r11-section-10"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r11-section-10" title="System Design Wisdom"><span class="taxon">5. </span>System Design Wisdom</a></li></ul><p class="tree-tools"><button type="button" data-action="expand">Expand all</button> · <button type="button" data-action="collapse">Collapse all</button></p></details></nav></div></body></html>

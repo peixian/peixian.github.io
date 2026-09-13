@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>Paging · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon="section"><header class="document-header" tabindex="-1"><h1><span class="taxon">section</span><span dir="auto">Paging</span> <a class="slug" href="/notes/812ab3d6-cc8b-4f88-b19a-7afccb25e3b2/" title="812AB3D6-CC8B-4F88-B19A-7AFCCB25E3B2" aria-label="Permanent link to Paging">[812ab3d6]</a></h1><div class="metadata">Part of <a class="link local" href="/notes/e00fa741-9906-4793-bc95-ac454362d138/">linux</a></div></header>
+<div id="note"><ul>
+<li>Page sizes traditionally 4kb, but really if you&#39;re a big boy we&#39;re all huge pages now</li>
+<li>There&#39;s a page table, and we represent the address space of the program and how it&#39;s mapped into the actual ram</li>
+<li>
+<p>One of the bigger issues with paging is that storing the page table and all it&#39;s constitutant information can get quite large. So we avoid mapping all the pages</p>
+<ul>
+<li>When a process generates a virtual address, the OS and the hardware have to make it a meaningful real address</li>
+<li>note that if we store page tables in memory, hitting RAM would be prohibitively slow, so we do a TLB</li>
+</ul>
+</li>
+<li>page table entries change logical memory spaces into physical spaces, how they ordered, how they used, varies widely</li>
+<li>you don&#39;t have to map all the pages, but if they&#39;re not in ram, where are they?</li>
+<li>kernel allocates the pages, and mapped when a program is loaded at execute time</li>
+<li>
+<p>shared libraries (shared among various processes, chances are .so pages are already in RAM, so they map to another process address space)</p>
+<ul>
+<li>although now static binaries might be good enough since we have tons of ram now</li>
+</ul>
+</li>
+<li>
+<p>context switching doesn&#39;t involve memory changes</p>
+<ul>
+<li>means switching to different address spaces and different page tables</li>
+<li>address spaces can sit all in memory with enough ram, just change the register values, no freeing memory</li>
+<li>pages are copied out to swap (AND HIT DISK)</li>
+<li>reason why it&#39;s called &#34;swap&#34;, to swap processes between context switches</li>
+<li>now you just move the pages out as you need to</li>
+</ul>
+</li>
+<li>
+<p>typically a disk partition or a file, and we can have multiple swap spaces</p>
+<ul>
+<li><code>mkswap(8)</code> and <code>swapon(8)</code></li>
+<li>
+<p><code>swapon -s</code> in terms of unix blocks</p>
+<ul>
+<li>unix blocks are 512 bytes, each block is half a K, although now there&#39;s different</li>
+</ul>
+</li>
+</ul>
+<p><img loading="lazy" decoding="async" src="/assets/684e7d02f878208f1bbd33273a5beaae.png" alt="2024-02-18_18-46-21_screenshot.png" width="1034" height="658"/></p>
+</li>
+<li>Possible to have memory on the swap space <strong>and</strong> in memory!</li>
+<li>
+<p>&#34;dirty page&#34; - means that one copy that has been created is not the same as a the one in swap anymore</p>
+<ul>
+<li>dirty pages need to reswap out</li>
+</ul>
+</li>
+<li>A &#34;page fault&#34; happens when you hit something that is not in RAM, which triggers a copy back from swap</li>
+<li>happens on demand, which means paging in and out requires a <strong>very</strong> long wait</li>
+<li>page ins are synchronous! the worst case</li>
+<li>
+<p>Linux KPTI:</p>
+<p><img loading="lazy" decoding="async" src="/assets/7ce4369f0f0a12f58c3b29406721ca98.png" alt="2025-01-05_20-34-20_screenshot.png" width="1532" height="682"/></p>
+<ul>
+<li>separate page table, isolates user space and kernel space (against Meltdown), 5-30% performance degredation, causes partial TLB flushes</li>
+<li><code>pmap</code> gets you memory mappings</li>
+</ul>
+</li>
+</ul>
+<section class="block branch"><details open="" id="r6-section-1"><summary aria-label="1. ASLR" data-title="ASLR" data-number="1"><header><h2 class="tree-heading"><span class="taxon">1. </span><span class="section-title">ASLR</span></h2></header></summary><ul>
+<li>Where is it controlled?
+<code>/proc/sys/kernel/randomize_va_space</code></li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r6-section-2"><summary aria-label="2. 48 bit addressing" data-title="48 bit addressing" data-number="2"><header><h2 class="tree-heading"><span class="taxon">2. </span><span class="section-title">48 bit addressing</span></h2></header></summary><ul>
+<li>
+<p>Linux uses the most significant bit for distinguishing between kernel space and user space (<a class="link external bare-url" href="https://read.seas.harvard.edu/cs161/2018/doc/memory-layout/)" title="https://read.seas.harvard.edu/cs161/2018/doc/memory-layout/)">read.seas.harvard.edu/cs161/2018/doc/memory-layout/)</a></p>
+<p><img loading="lazy" decoding="async" src="/assets/b79aad8f31b3fcf84f374f74b8d4a381.png" alt="2025-01-05_20-56-36_screenshot.png" width="1902" height="772"/></p>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r6-section-3"><summary aria-label="3. pgd, pud, pmd, etc" data-title="pgd, pud, pmd, etc" data-number="3"><header><h2 class="tree-heading"><span class="taxon">3. </span><span class="section-title">pgd, pud, pmd, etc</span></h2></header></summary><p><img loading="lazy" decoding="async" src="/assets/193d25177ff011bc23868cb2d456ffbb.png" alt="2025-12-08_20-16-57_screenshot.png" width="2892" height="1456"/></p>
+<ul>
+<li>Different layers of pgd</li>
+<li>
+<p>Why do we even have multilevel paging?</p>
+<ul>
+<li>Because we want to reduce the amount of RAM. If we had a single level, the page table would have to be massive, it would have to allocate the whole table.</li>
+<li>Multilevel is a directory of pages</li>
+</ul>
+</li>
+<li><a class="link external bare-url" href="https://lwn.net/Articles/717293/" title="https://lwn.net/Articles/717293/">lwn.net/Articles/717293/</a></li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r6-section-4"><summary aria-label="4. Huge TLB (hugetlbfs)" data-title="Huge TLB (hugetlbfs)" data-number="4"><header><h2 class="tree-heading"><span class="taxon">4. </span><span class="section-title">Huge TLB (hugetlbfs)</span></h2></header></summary><ul>
+<li><a class="link external bare-url" href="https://www.youtube.com/watch?v=n67gCNiKVcw" title="https://www.youtube.com/watch?v=n67gCNiKVcw">www.youtube.com/watch?v=n67gCNiKVcw</a></li>
+<li>hugetlbfs has been used in the past to reduce the cost of memory translation like any hugetlb, but there&#39;s some issues</li>
+<li>But this pins memory, we can&#39;t swap huge pages to disk, and no THP stalls.</li>
+<li>Transparent Huge Pages can try to act like huge pages, but the merging mechanism can cause CPU spikes and jitter. Same as compaction in LSM trees</li>
+<li>Get default huge page size in <code>/proc/meminfo</code></li>
+<li>You can populate huge tlb on kernel boot, or at runtime</li>
+<li><code>hugepage_cma</code> -&gt; contigious memory allocator</li>
+<li>You can do it at boot time or at runtime, but doing at boot is a lot easier because of fragmentation</li>
+<li>You can mount a hugetlbfs filesystem, and all files in that filesystem are backed by huge pages</li>
+<li>You can&#39;t swap or reclaim huge pages, so you just lose them, end up with a SIGBUS</li>
+<li>We can share the PMD entries in the table for hugetlbfs</li>
+<li>
+<p>What kind of applications benefit from huge pages specifically?</p>
+<ul>
+<li>
+<p><a class="link local" href="/notes/4d8f680d-3043-42f2-8635-12ee3f560c8b/">Databases</a> engines</p>
+<ul>
+<li>Original users, they have a shared memory arena that each query process checks, so less memory lookups</li>
+</ul>
+</li>
+<li>
+<p>Java/JVM</p>
+<ul>
+<li>JVM allocates heap as one continuous block. This makes the GC scans faster by having to scan less on memory translation</li>
+<li><code>-XX:+UseLargePages</code></li>
+</ul>
+</li>
+<li>
+<p>DPDK</p>
+<ul>
+<li>Bypass kernel stack, you need huge pages just for dealing with packet drops</li>
+</ul>
+</li>
+<li>
+<p>AI/ML Training</p>
+<ul>
+<li><code>pin_memory=True</code> in pytorch speeds up memory usage because you need to shuttle around a lot of data</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>What about <strong>not</strong> huge pages?</p>
+<ul>
+<li>
+<p><a class="link local" href="/notes/7d815c05-c23b-40cb-807c-27e749c56c27/">redis</a></p>
+<ul>
+<li>Uses <code>fork()</code> aggressively</li>
+<li>Relies on copy on write, but child procesess have to copy the entire page</li>
+</ul>
+</li>
+<li>
+<p>webservers</p>
+<ul>
+<li>Not a lot of gain because requests are short lived and memory is already fragmented</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r6-section-5"><summary aria-label="5. Arm Paging: https://wiki.osdev.org/ARM_Paging" data-title="Arm Paging: https://wiki.osdev.org/ARM_Paging" data-number="5"><header><h2 class="tree-heading"><span class="taxon">5. </span><span class="section-title">Arm Paging: <a class="link external bare-url" href="https://wiki.osdev.org/ARM_Paging" title="https://wiki.osdev.org/ARM_Paging">wiki.osdev.org/ARM_Paging</a></span></h2></header></summary></details></section></div></section>
+<footer><section id="outgoing"><details class="outgoing"><summary><h2>Links from this note <span class="relation-count">2</span></h2></summary><ul class="backlinks"><li><a class="link local" href="/notes/4d8f680d-3043-42f2-8635-12ee3f560c8b/">Databases</a></li><li><a class="link local" href="/notes/7d815c05-c23b-40cb-807c-27e749c56c27/">redis</a></li></ul></details></section></footer>
+</article>
+<nav id="toc" aria-label="Table of contents"><details open class="toc-disclosure"><summary><h2>Table of contents</h2></summary><ul class="block"><li class="toc-depth-0" data-target="r6-section-1"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r6-section-1" title="ASLR"><span class="taxon">1. </span>ASLR</a></li><li class="toc-depth-0" data-target="r6-section-2"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r6-section-2" title="48 bit addressing"><span class="taxon">2. </span>48 bit addressing</a></li><li class="toc-depth-0" data-target="r6-section-3"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r6-section-3" title="pgd, pud, pmd, etc"><span class="taxon">3. </span>pgd, pud, pmd, etc</a></li><li class="toc-depth-0" data-target="r6-section-4"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r6-section-4" title="Huge TLB (hugetlbfs)"><span class="taxon">4. </span>Huge TLB (hugetlbfs)</a></li><li class="toc-depth-0" data-target="r6-section-5"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r6-section-5" title="Arm Paging: https://wiki.osdev.org/ARM_Paging"><span class="taxon">5. </span>Arm Paging: https://wiki.osdev.org/ARM_Paging</a></li></ul><p class="tree-tools"><button type="button" data-action="expand">Expand all</button> · <button type="button" data-action="collapse">Collapse all</button></p></details></nav></div></body></html>

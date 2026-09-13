@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>kafka · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon=""><header class="document-header" tabindex="-1"><h1><span dir="auto">kafka</span> <a class="slug" href="/notes/b99d51cf-2aed-4239-831f-66a4f026b8d5/" title="B99D51CF-2AED-4239-831F-66A4F026B8D5" aria-label="Permanent link to kafka">[b99d51cf]</a></h1></header>
+<div id="note"><p>Tags: <a class="link local" href="/notes/0c832bad-e9a5-4b04-8a2a-851647119a10/">Computers</a></p>
+<ul>
+<li><a class="link external bare-url" href="https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html" title="https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html">www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html</a></li>
+</ul>
+<section class="block branch"><details open="" id="r14-section-1"><summary aria-label="1. Kafka Debugging" data-title="Kafka Debugging" data-number="1"><header><h2 class="tree-heading"><span class="taxon">1. </span><span class="section-title">Kafka Debugging</span></h2></header></summary><ul>
+<li>CP kafka has tools installed under <code>/usr/local/bin</code></li>
+<li>
+<p>Example:</p>
+<div class="src src-sh">
+<div class="highlight">
+<pre>/usr/bin/kafka-run-class kafka.tools.MirrorMaker --consumer.config source.config \
+--producer.config dest.config \
+--whitelist &#39;.*&#39;
+</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Can check consumer status with</p>
+<div class="src src-sh">
+<div class="highlight">
+<pre>  /usr/bin/kafka-consumer-groups --bootstrap-server &lt;server:9092 --describe --group notification
+  # or
+  /usr/bin/kafka-consumer-groups --bootstrap-server &lt;server&gt;:9092 --list
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-2"><summary aria-label="2. SmallRye (java)" data-title="SmallRye (java)" data-number="2"><header><h2 class="tree-heading"><span class="taxon">2. </span><span class="section-title">SmallRye (<a class="link local" href="/notes/0e4e6abb-2cd6-4d9e-9e8f-2b2b1500b2f0/">java</a>)</span></h2></header></summary><ul>
+<li>
+<p>Framework that abstracts over multiple queues, allowing you to send to multiple kafkas</p>
+<ul>
+<li><a class="link external bare-url" href="https://smallrye.io/smallrye-reactive-messaging/latest/" title="https://smallrye.io/smallrye-reactive-messaging/latest/">smallrye.io/smallrye-reactive-messaging/latest/</a></li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-3"><summary aria-label="3. Design" data-title="Design" data-number="3"><header><h2 class="tree-heading"><span class="taxon">3. </span><span class="section-title">Design</span></h2></header></summary><section class="block branch"><details open="" id="r14-section-4"><summary aria-label="3.1. Producers" data-title="Producers" data-number="3.1"><header><h3 class="tree-heading"><span class="taxon">3.1. </span><span class="section-title">Producers</span></h3></header></summary><p><img loading="lazy" decoding="async" src="/assets/6ac993ae4d462a2406b1360adbaf5b26.png" alt="2024-03-09_19-44-45_screenshot.png" width="1378" height="744"/></p>
+<ul>
+<li>Producer makes new messages</li>
+<li>
+<p>Components</p>
+<ul>
+<li>Producer record: a record is kept for each message created, made of <code>&lt;topic&gt;, &lt;key/partition&gt;, &lt;value&gt;</code></li>
+<li>Serializer: first thing a producer does to a message is to serialize the data into byte arrays</li>
+<li>
+<p>Partitioner: after serialization, it returns the parittions of a specific topic where the message should be assigned to. If there&#39;s a key, it uses a hash function on the message key (CRC32)</p>
+<ul>
+<li>If it&#39;s a partition, it just assigns it to that partition</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Default is one partition for each topic.</li>
+<li>Producers already know which topic and partition the message should be written to, and sends it to the appropriate broker</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-5"><summary aria-label="3.2. Broker" data-title="Broker" data-number="3.2"><header><h3 class="tree-heading"><span class="taxon">3.2. </span><span class="section-title">Broker</span></h3></header></summary><p><img loading="lazy" decoding="async" src="/assets/6a244874528937d3d22262fd3c023585.png" alt="2024-03-09_19-47-42_screenshot.png" width="1106" height="652"/></p>
+<ul>
+<li>Workers in kafka, which assign offsets to each message and stores them on disk</li>
+<li>There&#39;s a cluster controller, elected via Paxos from <a class="link local" href="/notes/c159b3c2-f80e-4621-8187-3d7ffb2b06c3/">Zookeeper</a>, now <a class="link local" href="/notes/f6ab05a3-b84f-42db-8a9f-62470c836025/">raft</a>, which is responsbile for assigning partitions to brokers, elects partition leaders, and monitors broker failures</li>
+<li>Since there&#39;s multiple brokers, it allows you to scale horizontally.</li>
+<li>Tunable replication across different brokers</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-6"><summary aria-label="3.3. Consumers" data-title="Consumers" data-number="3.3"><header><h3 class="tree-heading"><span class="taxon">3.3. </span><span class="section-title">Consumers</span></h3></header></summary><ul>
+<li>Consumers organize themselves into consumer groups, which are keep the offset of the last ACKed message</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-7"><summary aria-label="3.4. Efficiency" data-title="Efficiency" data-number="3.4"><header><h3 class="tree-heading"><span class="taxon">3.4. </span><span class="section-title">Efficiency</span></h3></header></summary><section class="block branch"><details open="" id="r14-section-8"><summary aria-label="3.4.1. storage layout is simple" data-title="storage layout is simple" data-number="3.4.1"><header><h4 class="tree-heading"><span class="taxon">3.4.1. </span><span class="section-title"><a class="link local" href="/notes/00df33a8-c997-49fc-97b2-8f7429e55bf6/">storage</a> layout is simple</span></h4></header></summary><p><img loading="lazy" decoding="async" src="/assets/da4529304a73012b5e59e55ae0c5a229.png" alt="2024-03-09_19-53-09_screenshot.png" width="618" height="738"/></p>
+<ul>
+<li>a partition is &#34;just&#34; one big file, really a logical log that comprises a set of segement files approximately the same size.</li>
+<li>new messages are appended to the end of the file, and there&#39;s some metadata that tracks the offsets each table has (similar to a sstable)</li>
+<li>
+<p>Similar to blocks on datastores, you can just delete old chunks of logs as they expire</p>
+<ul>
+<li>every message has its id, but internally kafka addresses each message by it&#39;s logical offset</li>
+</ul>
+</li>
+<li>when aconsumer sends a pull request to a broker, the broker keeps a data buffer ready for consumption. The broker then proceeds to read off of the different segements</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-9"><summary aria-label="3.4.2. Efficient transfer" data-title="Efficient transfer" data-number="3.4.2"><header><h4 class="tree-heading"><span class="taxon">3.4.2. </span><span class="section-title">Efficient transfer</span></h4></header></summary><ul>
+<li>Data flows in batches, producers can dispatch multiple requests and consumers can ack batches back</li>
+<li>Aggressively caches the data in RAM via the filesystem</li>
+<li>
+<p>for subscriptions, kafka uses a <code>sendfile</code> syscall that bypasses the application/kernel buffers by copying directly from one fd to another</p>
+<p><img loading="lazy" decoding="async" src="/assets/ccc1e9a693f1750f9c0077b73302a959.png" alt="2024-03-09_19-53-00_screenshot.png" width="1322" height="310"/></p>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-10"><summary aria-label="3.4.3. Stateless broker" data-title="Stateless broker" data-number="3.4.3"><header><h4 class="tree-heading"><span class="taxon">3.4.3. </span><span class="section-title">Stateless broker</span></h4></header></summary><ul>
+<li>Consumption done by the consumer state is held in ZK, which helps in case of consumer failures.</li>
+<li>Kafka&#39;s usage of time based SLA&#39;s (rentention time) is what allows the brokers to delete messages even when the consumer hasn&#39;t acked it</li>
+<li>Consumers can also rewind, as it allows you to go back on offsets if there&#39;s errors</li>
+</ul>
+</details></section></details></section><section class="block branch"><details open="" id="r14-section-11"><summary aria-label="3.5. Distributed coordination" data-title="Distributed coordination" data-number="3.5"><header><h3 class="tree-heading"><span class="taxon">3.5. </span><span class="section-title">Distributed coordination</span></h3></header></summary><ul>
+<li>Partitions are the smallest unit of parallelism, and those need to be consumed by a single consumer</li>
+<li>No specific manager nodes</li>
+<li>
+<p><a class="link local" href="/notes/c159b3c2-f80e-4621-8187-3d7ffb2b06c3/">Zookeeper</a> is responsible for keeping track of</p>
+<ul>
+<li>addition or removal of consumers and brokers</li>
+<li>registers consumers and brokers by creating emphemeral nodes</li>
+<li>all the brokers try to create an emphemeral node called a controller, but only one succeeds. The first one is the leader</li>
+<li>Rebalances processes in case brokers or consumers are added or removed</li>
+<li>Maintain the consumption from brokers and track the offset of the last consumed messages of a partition</li>
+</ul>
+</li>
+<li>
+<p>ZK registries</p>
+<ul>
+<li>Consumer registry - saves information in the consumer registry whenever it starts, has consumer group and subscribed topics</li>
+<li>Broker registry - saves information in the broker registry, has the hostname, port, and set of partitions</li>
+<li>Ownership registry - which consumer id is consuming from a specific partition</li>
+<li>Offset registry - stores info related to each subscribed partition</li>
+</ul>
+</li>
+<li>
+<p>Rebalancing has to occur when a consumer or producer dies, but this means that message delivery has to stop</p>
+<ul>
+<li>During rebalancing, different consumers have to take ownership of different partitions that are being read from. This means that they create ZK nodes to track them</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-12"><summary aria-label="3.6. Delivery guarnetees" data-title="Delivery guarnetees" data-number="3.6"><header><h3 class="tree-heading"><span class="taxon">3.6. </span><span class="section-title">Delivery guarnetees</span></h3></header></summary><ul>
+<li>
+<p>At-least-once delivery</p>
+<ul>
+<li>default, delivers each message once to each consumer group.</li>
+<li>Post rebalancing, just continue reading from the last offset</li>
+</ul>
+</li>
+<li>
+<p>Exactly once</p>
+<ul>
+<li>We can use unique keys in the messages and write the results to a system that supports keys</li>
+<li>Records and offsets can be saved somewhere else to dedup on the client end</li>
+</ul>
+</li>
+<li>
+<p>In-order delivery</p>
+<ul>
+<li>Kafka guarnetees that messages in a partition are delivered in a specific order</li>
+<li>No guarentees across multiple partitions</li>
+</ul>
+</li>
+<li>
+<p>Fault tolerance</p>
+<ul>
+<li>Avoids log corruption with CRC checks on the created logs</li>
+<li>
+<p>Also replicates the partitions between different nodes</p>
+<ul>
+<li>
+<p>Replicas that do not lag are called in-sync replicas</p>
+<ul>
+<li>considered to be replicas that have sent a heartbeat to ZK in the last 6 seconds (user configurable)</li>
+<li>replicas that fetched messages from the leader in the last 10 seconds (user confiugurable)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-13"><summary aria-label="3.7. Design Wisdom" data-title="Design Wisdom" data-number="3.7"><header><h3 class="tree-heading"><span class="taxon">3.7. </span><span class="section-title">Design Wisdom</span></h3></header></summary><ul>
+<li>Uses unconventional design, such as brokers not keeping state and not guarenteeing cross-partition ordering, but this pushes users to think more about parellism</li>
+<li>Key thing is that brokers do not keep state, state is kept in ZK</li>
+</ul>
+</details></section></details></section></div></section>
+<footer><section id="backlinks" tabindex="-1"><h2>Backlinks <span class="relation-count">3</span></h2><p class="relation-description">Notes that link to this note.<span class="js-only"> Expand an arrow to read here.</span></p><ul class="backlinks"><li><a class="link local" href="/notes/092fd8bd-ad47-4447-9172-f373aef0b3d0/">big data processing</a></li><li><a class="link local" href="/notes/bffe592e-7a99-4b20-933d-5fc66762996e/">exactly once semantics in kafka (atomic broadcast)</a></li><li><a class="link local" href="/notes/811c5ef1-57d4-4fc9-88d7-cfbd64e1789d/">kafka streams</a></li></ul></section><section id="outgoing"><details class="outgoing"><summary><h2>Links from this note <span class="relation-count">5</span></h2></summary><ul class="backlinks"><li><a class="link local" href="/notes/0c832bad-e9a5-4b04-8a2a-851647119a10/">computers</a></li><li><a class="link local" href="/notes/0e4e6abb-2cd6-4d9e-9e8f-2b2b1500b2f0/">java</a></li><li><a class="link local" href="/notes/f6ab05a3-b84f-42db-8a9f-62470c836025/">raft</a></li><li><a class="link local" href="/notes/00df33a8-c997-49fc-97b2-8f7429e55bf6/">storage</a></li><li><a class="link local" href="/notes/c159b3c2-f80e-4621-8187-3d7ffb2b06c3/">Zookeeper</a> <span class="index-context">in paxos</span></li></ul></details></section></footer>
+</article>
+<nav id="toc" aria-label="Table of contents"><details open class="toc-disclosure"><summary><h2>Table of contents</h2></summary><ul class="block"><li class="toc-depth-0" data-target="r14-section-1"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-1" title="Kafka Debugging"><span class="taxon">1. </span>Kafka Debugging</a></li><li class="toc-depth-0" data-target="r14-section-2"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-2" title="SmallRye (java)"><span class="taxon">2. </span>SmallRye (java)</a></li><li class="toc-depth-0" data-target="r14-section-3"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-3" title="Design"><span class="taxon">3. </span>Design</a></li><li class="toc-depth-1" data-target="r14-section-4"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-4" title="Producers"><span class="taxon">3.1. </span>Producers</a></li><li class="toc-depth-1" data-target="r14-section-5"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-5" title="Broker"><span class="taxon">3.2. </span>Broker</a></li><li class="toc-depth-1" data-target="r14-section-6"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-6" title="Consumers"><span class="taxon">3.3. </span>Consumers</a></li><li class="toc-depth-1" data-target="r14-section-7"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-7" title="Efficiency"><span class="taxon">3.4. </span>Efficiency</a></li><li class="toc-depth-2" data-target="r14-section-8"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-8" title="storage layout is simple"><span class="taxon">3.4.1. </span>storage layout is simple</a></li><li class="toc-depth-2" data-target="r14-section-9"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-9" title="Efficient transfer"><span class="taxon">3.4.2. </span>Efficient transfer</a></li><li class="toc-depth-2" data-target="r14-section-10"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-10" title="Stateless broker"><span class="taxon">3.4.3. </span>Stateless broker</a></li><li class="toc-depth-1" data-target="r14-section-11"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-11" title="Distributed coordination"><span class="taxon">3.5. </span>Distributed coordination</a></li><li class="toc-depth-1" data-target="r14-section-12"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-12" title="Delivery guarnetees"><span class="taxon">3.6. </span>Delivery guarnetees</a></li><li class="toc-depth-1" data-target="r14-section-13"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-13" title="Design Wisdom"><span class="taxon">3.7. </span>Design Wisdom</a></li></ul><p class="tree-tools"><button type="button" data-action="expand">Expand all</button> · <button type="button" data-action="collapse">Collapse all</button></p></details></nav></div></body></html>

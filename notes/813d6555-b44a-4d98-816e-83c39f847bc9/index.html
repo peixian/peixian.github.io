@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>Threads · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon="section"><header class="document-header" tabindex="-1"><h1><span class="taxon">section</span><span dir="auto">Threads</span> <a class="slug" href="/notes/813d6555-b44a-4d98-816e-83c39f847bc9/" title="813D6555-B44A-4D98-816E-83C39F847BC9" aria-label="Permanent link to Threads">[813d6555]</a></h1><div class="metadata">Part of <a class="link local" href="/notes/b05008d3-364d-4c69-ae50-798ad2860551/">operating systems</a></div></header>
+<div id="note"><ul>
+<li>
+<p>Similar to a linux process that always run in the same memory</p>
+<ul>
+<li>own instruction pointer, and can be scheduled on different CPU&#39;s and executing different things on the same program</li>
+<li>shares the process structure (execpt stacks)</li>
+<li>linux threads have their own pid</li>
+<li>solaris is completely thread based</li>
+<li>in linux, a thread is a prococess without a thread</li>
+<li>created with the clone() system call</li>
+<li>treat as one process in some games, uses the thread group</li>
+<li><code>getpid()</code> will tell you some info</li>
+<li>syn and locks!</li>
+<li>threads tend to be pretty fast, usually an async that does stuff in the background, and never switches off the task running state, spinning is TASK_RUN, but it&#39;s not waiting on IO but rather a lock</li>
+<li>biggest reason to use over a fork is because you can do the same memory</li>
+</ul>
+</li>
+<li>
+<p><a class="link local" href="/notes/e00fa741-9906-4793-bc95-ac454362d138/">linux</a> kernel only uses lightweight processes, or threads.</p>
+<ul>
+<li>Threads use <code>libc</code> to transition to kernel space, but posix threads originate from <code>libc</code> and <code>libpthread</code>. Note that the kernel only uses LWPs. However, at the kernel layer, since a userspace thread maps to a lwp, it doesn&#39;t really matter</li>
+</ul>
+<p><img loading="lazy" decoding="async" src="/assets/b22fe303d3ebb14b679a15276886d4ff.png" alt="2024-02-11_19-16-26_screenshot.png" width="608" height="908"/></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Debugger commands</p>
+<ul>
+<li>
+<p>GDB</p>
+<ul>
+<li><code>info threads</code> -&gt; list threads</li>
+<li><code>thread &lt;n&gt;</code> -&gt; switches between threads</li>
+<li><code>thread apply all bt</code> -&gt; backtraces</li>
+</ul>
+</li>
+<li>
+<p>LLDB</p>
+<ul>
+<li><code>thread list</code></li>
+<li><code>thread select 1</code></li>
+<li><code>thread backtrace all~/~bt all</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Thread stacks</p>
+<ul>
+<li>each thread has its own stack to store data, and we can dump it like normal</li>
+<li>
+<p>Stack tracing a thread is when a function A calls function B, and function B has a return address to where function A called it.</p>
+<p><img loading="lazy" decoding="async" src="/assets/91b95bcebcd6e165865be9dec6483638.png" alt="2024-02-11_19-18-17_screenshot.png" width="750" height="1000"/></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Symbol files</p>
+<ul>
+<li>Symbols provide mappings between memory address ranges and associated symbol names, if you don&#39;t have the symbols, you just have the current function</li>
+</ul>
+</li>
+</ul>
+</div></section>
+<footer><section id="outgoing"><details class="outgoing"><summary><h2>Links from this note <span class="relation-count">1</span></h2></summary><ul class="backlinks"><li><a class="link local" href="/notes/e00fa741-9906-4793-bc95-ac454362d138/">linux</a></li></ul></details></section></footer>
+</article>
+</div></body></html>

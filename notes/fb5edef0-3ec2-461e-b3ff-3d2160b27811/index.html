@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>Tupperware vs Borg vs Kube · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon="section"><header class="document-header" tabindex="-1"><h1><span class="taxon">section</span><span dir="auto">Tupperware vs Borg vs Kube</span> <a class="slug" href="/notes/fb5edef0-3ec2-461e-b3ff-3d2160b27811/" title="fb5edef0-3ec2-461e-b3ff-3d2160b27811" aria-label="Permanent link to Tupperware vs Borg vs Kube">[fb5edef0]</a></h1><div class="metadata">Part of <a class="link local" href="/notes/3a46fcc0-9538-4349-9468-608985086d3a/">docker/containers</a></div></header>
+<div id="note"><ul>
+<li>
+<p>Twine: A Uniﬁed Cluster Management System for Shared Infrastructure</p>
+<ul>
+<li><a class="link external bare-url" href="https://www.usenix.org/conference/osdi20/presentation/tang" title="https://www.usenix.org/conference/osdi20/presentation/tang">www.usenix.org/conference/osdi20/presentation/tang</a></li>
+</ul>
+</li>
+<li>
+<p>Regional level (borg is cluster level, but presents a virtual abstract regional level API)</p>
+<ul>
+<li>Kubernetes only bothers presenting a 4-5k &#34;cluster&#34; level</li>
+<li>Regional level control also introduces significant risk. Rate-limiting destructive operations is a hard learned lesson that people learn many times over. Borg favors external sharding (as in each borg group is on a cluster level), whereas Tupperware shards internally into 20 per region.</li>
+</ul>
+</li>
+<li>Most interesting part of the paper was that the compute infra is focused on one CPU 64GB ram boxes, with 4 per sled</li>
+<li>Task control is interesting, borg and kube do this via SIGINT or SIGTERM for preemption. Task control is much more customizable, but leads to potential issues where people are not handling unplanned maintanence. Since the expectation for Borg is that you get 5 minutes to vacate a machine, even unplanned maint events are fine for most applications. Tupperware does not do this, which causes some issues with developer incentives. The hard problem (unplanned maint) should be solved first, since the simpler problem (handling maint) is a reduced form of the hard one</li>
+<li>Host profiles are interesting, because they allow developers to have fine grained control over their machines. Borg does not offer this, mostly because the foundational teams at Google provide fleet wide improvements (e.g. hugepages). Leaving this up to the user is interesting, but definitely presents problems of stacking since some of these must be enabled on a host level and the cartesian product of configs lead to maintenance headaches.</li>
+<li>
+<p>The rebalancer is interesting because it iteratively moves you towards something that fits your usage profile, rather than trying to wait for the solver first. Borg will wait for the solver before actually starting your task, whereas tupperware tries to first start your job <strong>somewhere</strong>, and then move it to an appropriate place.</p>
+<ul>
+<li>Borg keeps track of what your job historically looks like and incorporates that into the solver, rather than trying to look at it each time</li>
+</ul>
+</li>
+<li>Entitlement fragementation seems like a huge problem with noisey neighbors and an overloaded abstraction. It&#39;s good they&#39;re changing it.</li>
+<li>Evaluation of TCO is a little sketchy? 33% reduction one is from shard manager, 48% one is from offloading, is this a real measurement number?</li>
+<li>Overall, like rocks, this is another FB project with quite a few knobs, which I think seems good in the moment but does not bode well for the future.</li>
+</ul>
+</div></section>
+<footer></footer>
+</article>
+</div></body></html>

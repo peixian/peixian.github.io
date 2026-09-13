@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>Spanner · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon="section"><header class="document-header" tabindex="-1"><h1><span class="taxon">section</span><span dir="auto">Spanner</span> <a class="slug" href="/notes/14084886-432c-44bb-94a9-931838124767/" title="14084886-432C-44BB-94A9-931838124767" aria-label="Permanent link to Spanner">[14084886]</a></h1><div class="metadata">Part of <a class="link local" href="/notes/4d8f680d-3043-42f2-8635-12ee3f560c8b/">Databases</a></div></header>
+<div id="note"><ul>
+<li><a class="link external bare-url" href="https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf" title="https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf">www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P6-Spanner.pdf</a></li>
+<li>Worldwide LTP, SQL semantics, horizontal scalability, availablity, transactional consistency</li>
+<li>
+<p>Parts</p>
+<ul>
+<li>Client</li>
+<li>Load balancer</li>
+<li>
+<p>Zone - between 100 and a few thousand servers</p>
+<ul>
+<li>Zone manager</li>
+<li>Placement driver, responsible for automated data transfer between zones</li>
+</ul>
+</li>
+<li>
+<p>Location proxy</p>
+<ul>
+<li>Uses the per zone location proxies to find spanservers for data</li>
+</ul>
+</li>
+<li>
+<p>Universe manager</p>
+<ul>
+<li>For interactive debugging</li>
+</ul>
+</li>
+<li>Spanserver - consists of tablets</li>
+<li>Colossus - distributed file system that stores tablet&#39;s state similar to B-tree format</li>
+</ul>
+</li>
+</ul>
+<section class="block branch"><details open="" id="r13-section-1"><summary aria-label="1. Design" data-title="Design" data-number="1"><header><h2 class="tree-heading"><span class="taxon">1. </span><span class="section-title">Design</span></h2></header></summary><ul>
+<li>Spanner is deployed as &#34;universes&#34;, and only a few are active at one time</li>
+<li>Each one relies on TrueTime to provide strong external consistency and global serialization</li>
+<li>Also performs automatic resharding based on data size and load</li>
+<li>Universe manager and placement driver are both singletons, although there are shadow replicas that will take over</li>
+<li>
+<p>Each zone works like a cluster of bigtable servers, each spanserver has several tablets ranging from 100-1000</p>
+<ul>
+<li>(key:string, timestamp:int64) -&gt; strings</li>
+</ul>
+</li>
+<li><a class="link local" href="/notes/b61cd1ff-6157-4754-a625-a1ae4fcc5770/">paxos</a> and TrueTime are used to cover time, and Colossus is used to store data</li>
+<li>
+<p>Each tablet stores metadata and logs for the state machines, and the paxos implementation supports time-based leaders with long-lived leaders (aka fastpaxos)</p>
+<ul>
+<li>Single leader fast paxos effectively function as raft</li>
+</ul>
+</li>
+<li>
+<p>Concurrency is handled via a lock table</p>
+<ul>
+<li>Each server enforces concurrency control based on the long-lived paxos leader</li>
+<li>Paxos leaders have around 10s for their leases</li>
+</ul>
+</li>
+<li>Paxos group that has a participant leader that acts as the transaction manager, and the other replicas are participant followers.</li>
+<li>For transactions that span multiple groups, a coordinator is elected</li>
+<li>Note that we only lock for writes</li>
+<li><a class="link local" href="/notes/fbe47ac8-2d5f-4d7b-927a-62dd19e529fc/">bully algorithm</a> is used for leader election</li>
+</ul>
+<section class="block branch"><details open="" id="r13-section-2"><summary aria-label="1.1. Writes and Reads" data-title="Writes and Reads" data-number="1.1"><header><h3 class="tree-heading"><span class="taxon">1.1. </span><span class="section-title">Writes and Reads</span></h3></header></summary><ul>
+<li>When a write is done, the lease vote is automatically extended, and leaders need to ask for a lease extension.</li>
+<li>Notably, it waits out the uncertainty before proceeding with a commit</li>
+<li>To serve reads, each replica in Spanner keeps track of the maximum timestap that it was up to date. When a read transaction comes in, it decides whether it&#39;s able to serve it</li>
+<li>Commit protocol guaranteees that all nodes know the lower bound of a prepared transaction timestamp.</li>
+<li>We have to assign a timestamp for a snapshot reads, and snapshot reads are only done on replicas that are up to date</li>
+</ul>
+</details></section></details></section><section class="block branch"><details open="" id="r13-section-3"><summary aria-label="2. Database Buckets" data-title="Database Buckets" data-number="2"><header><h2 class="tree-heading"><span class="taxon">2. </span><span class="section-title">Database Buckets</span></h2></header></summary><ul>
+<li>
+<p>Spanner has an additional layer of abstraction over the bag of key-value mappings in the form of a directory or bucket</p>
+<ul>
+<li>All adjacent keys that begin with the same prefix</li>
+<li>All the data in the same bucket shares the same replication settings</li>
+<li>Move frequently accessed buckets into the same paxos group or place a bucket geographically closer to its accessors</li>
+</ul>
+</li>
+<li>Spanner buckets differ from Bigtable ones because they don&#39;t need to be lexicographically contiguous</li>
+<li>We can <code>movedir</code> buckets across Paxos groups, which then moves the data in the background. The metadata setting is then flipped in the background RCU style</li>
+<li>
+<p>We use a bucket to specify the geographical replication attributes and placements</p>
+<ul>
+<li>
+<p>Two settings:</p>
+<ul>
+<li>
+<p>Total number and type of replicas</p>
+<ul>
+<li>You can tune the amount of voting replicas and place them physically closer</li>
+<li>Read only - can&#39;t vote, only allow for scaling reads</li>
+<li>Witness - Vote for the leader and commit write transactions, but don&#39;t keep a copy of the data. Can&#39;t serve as read leaders</li>
+<li>Read-write replicas - Does both, can be a leader</li>
+</ul>
+</li>
+<li>Geographic placement of replicas</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r13-section-4"><summary aria-label="3. Data Model" data-title="Data Model" data-number="3"><header><h2 class="tree-heading"><span class="taxon">3. </span><span class="section-title">Data Model</span></h2></header></summary><ul>
+<li>SQL-like, but Megastore had poor performance</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r13-section-5"><summary aria-label="4. truetime" data-title="truetime" data-number="4"><header><h2 class="tree-heading"><span class="taxon">4. </span><span class="section-title"><a class="link local" href="/notes/1e49e40d-75e2-41df-a47a-44da6254568a/">truetime</a></span></h2></header></summary><ul>
+<li>With truetime, any two transactions T1 and T2,m if T2 begins to commit after T1 completes committing, then T2&#39;s timestamp is &gt; T1&#39;s timestamp</li>
+<li>Consistent timestamp allows easy snapshot isolation, since we can just read at a point in tiem</li>
+<li>Liskov, Barbara. “Practical Usesof Synchronized Clocks Undistributed Systems,” n.d.</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r13-section-6"><summary aria-label="5. CAP theorem and spanner" data-title="CAP theorem and spanner" data-number="5"><header><h2 class="tree-heading"><span class="taxon">5. </span><span class="section-title">CAP theorem and spanner</span></h2></header></summary><ul>
+<li>does not guarentee uptime, but real databases need maint anyways, so it is &#34;essentially CA&#34;</li>
+<li>Since paxos is used, it opts for consistency over availability, as paxos is possible to livelock</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r13-section-7"><summary aria-label="6. DB Transactions" data-title="DB Transactions" data-number="6"><header><h2 class="tree-heading"><span class="taxon">6. </span><span class="section-title">DB Transactions</span></h2></header></summary><section class="block branch"><details open="" id="r13-section-8"><summary aria-label="6.1. Read Transactions" data-title="Read Transactions" data-number="6.1"><header><h3 class="tree-heading"><span class="taxon">6.1. </span><span class="section-title">Read Transactions</span></h3></header></summary><ul>
+<li>For read transactions, we buffer them on the client side until commits.</li>
+<li>Transactions writes are not visible to subsequent reads inside the same transaction</li>
+<li>
+<p>Uses wound-wait to prevent deadlocks</p>
+<ul>
+<li>Read request</li>
+<li>The lead replica acquires a lock</li>
+<li>Read to update to date data from the replicas</li>
+</ul>
+</li>
+<li>
+<p>For read-only transactions</p>
+<ul>
+<li>within a single paxos groups: just send the read transaction to the group&#39;s leader</li>
+<li>
+<p>if it&#39;s multiple paxos groups: then determine the <span class="org-math" data-display="false" data-tex="s_{read}">$s_{read}$</span> value on the last timestamp by doing consensus with leaders</p>
+<ul>
+<li>Or avoid the consensus round</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r13-section-9"><summary aria-label="6.2. Uses a 2PC" data-title="Uses a 2PC" data-number="6.2"><header><h3 class="tree-heading"><span class="taxon">6.2. </span><span class="section-title">Uses a 2PC</span></h3></header></summary><ul>
+<li>Guarentees isolation and strong consistency</li>
+<li>If participants in a 2PC are physically nearby, then it selects paxos groups closer</li>
+<li>Leader who aren&#39;t coordinators gets access to write locks, and then also does prepare timestamps</li>
+<li>
+<p>Coordinator roles</p>
+<ul>
+<li>The coordinator bypasses the prepare step and gets locks for writes, and recieves inputs from all the group&#39;s leaders</li>
+<li>
+<p>Commit transactions</p>
+<ul>
+<li>Greater than or equal all prepare timestamps to satisfy the invariants of read-write transactions</li>
+<li>Greater than TT.now().latest</li>
+<li>Greater than the timestamps of all the transactions that the leader coordinator has assigned previously</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img loading="lazy" decoding="async" src="/assets/13cdddd7860f994eb39934bf4cb3bc81.png" alt="2024-02-27_20-44-32_screenshot.png" width="1240" height="1076"/></p>
+</details></section><section class="block branch"><details open="" id="r13-section-10"><summary aria-label="6.3. Schema Change Transactions" data-title="Schema Change Transactions" data-number="6.3"><header><h3 class="tree-heading"><span class="taxon">6.3. </span><span class="section-title">Schema Change Transactions</span></h3></header></summary><ul>
+<li>
+<p>Changing the schema in Spanner</p>
+<ol>
+<li>A future timestamp is determined in the prepare phase</li>
+<li>Consider that the t is the timestamp of a registered schema change transaction</li>
+</ol>
+</li>
+</ul>
+</details></section></details></section><section class="block branch"><details open="" id="r13-section-11"><summary aria-label="7. Eval" data-title="Eval" data-number="7"><header><h2 class="tree-heading"><span class="taxon">7. </span><span class="section-title">Eval</span></h2></header></summary><ul>
+<li>Important thing to understand about spanner is TrueTime, by putting bounds on clock drift, you acn get transactions</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r13-section-12"><summary aria-label="8. Spanner SWE Tea Series" data-title="Spanner SWE Tea Series" data-number="8"><header><h2 class="tree-heading"><span class="taxon">8. </span><span class="section-title">Spanner SWE Tea Series</span></h2></header></summary><ul>
+<li>
+<p>Spanner was ultimately based off of F1, which had implemented quite a bit of this before</p>
+<ul>
+<li>Shute, Jeff, Radek Vingralek, Bart Samwel, Ben Handy, Chad Whipkey, Eric Rollins, Mircea Oancea, et al. “F1: A Distributed SQL Database That Scales.” Proceedings of the VLDB Endowment 6, no. 11 (August 27, 2013): 1068–79. <a class="link external bare-url" href="https://doi.org/10.14778/2536222.2536232" title="https://doi.org/10.14778/2536222.2536232">doi.org/10.14778/2536222.2536232</a>.</li>
+<li>interesting secret sauce was about how they retry requests</li>
+<li>F1 previous had to fetch the entire protobuf value to do a partial decode</li>
+<li>Spanner wasn&#39;t originally SQL, but they decided to do quite a bit of pushdown as a result</li>
+</ul>
+</li>
+<li>
+<p>Becoming a SQL system (Bacon, David F., Nathan Bales, Nico Bruno, Brian F. Cooper, Adam Dickinson, Andrew Fikes, Campbell Fraser, et al. “Spanner: Becoming a SQL System.” In Proceedings of the 2017 ACM International Conference on Management of Data, 331–43. Chicago Illinois USA: ACM, 2017. <a class="link external bare-url" href="https://doi.org/10.1145/3035918.3056103.)" title="https://doi.org/10.1145/3035918.3056103.)">doi.org/10.1145/3035918.3056103.)</a></p>
+<ul>
+<li>
+<p>range extraction and pushdown</p>
+<ul>
+<li>
+<p>static decomposition of SQL down into <code>scan</code>, <code>filter</code>, and <code>apply</code> primitives</p>
+<p><img loading="lazy" decoding="async" src="/assets/4f372cd82b710560f82fa1e53cdc548c.png" alt="2025-03-09_16-43-34_screenshot.png" width="1038" height="638"/></p>
+</li>
+</ul>
+</li>
+<li>ressi</li>
+<li>
+<p>shard pruning</p>
+<ul>
+<li>location hints about the location of a particular shard</li>
+</ul>
+</li>
+<li>
+<p>restart token</p>
+<ul>
+<li>not much mentioned but this seems to be the secret sauce here</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details></section></div></section>
+<footer><section id="backlinks" tabindex="-1"><h2>Backlinks <span class="relation-count">3</span></h2><p class="relation-description">Notes that link to this note.<span class="js-only"> Expand an arrow to read here.</span></p><ul class="backlinks"><li><a class="link local" href="/notes/60e89de2-2826-4c7f-9df6-69a0c00f11a2/">distributed systems</a></li><li><a class="link local" href="/notes/640b0277-2ce8-4a2d-bf11-d03fcfd1e62a/">Janert - Feedback Control for Computer Systems</a></li><li><a class="link local" href="/notes/1e49e40d-75e2-41df-a47a-44da6254568a/">truetime</a></li></ul></section><section id="outgoing"><details class="outgoing"><summary><h2>Links from this note <span class="relation-count">3</span></h2></summary><ul class="backlinks"><li><a class="link local" href="/notes/fbe47ac8-2d5f-4d7b-927a-62dd19e529fc/">bully algorithm</a></li><li><a class="link local" href="/notes/b61cd1ff-6157-4754-a625-a1ae4fcc5770/">paxos</a></li><li><a class="link local" href="/notes/1e49e40d-75e2-41df-a47a-44da6254568a/">truetime</a></li></ul></details></section></footer>
+</article>
+<nav id="toc" aria-label="Table of contents"><details open class="toc-disclosure"><summary><h2>Table of contents</h2></summary><ul class="block"><li class="toc-depth-0" data-target="r13-section-1"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r13-section-1" title="Design"><span class="taxon">1. </span>Design</a></li><li class="toc-depth-1" data-target="r13-section-2"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r13-section-2" title="Writes and Reads"><span class="taxon">1.1. </span>Writes and Reads</a></li><li class="toc-depth-0" data-target="r13-section-3"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r13-section-3" title="Database Buckets"><span class="taxon">2. </span>Database Buckets</a></li><li class="toc-depth-0" data-target="r13-section-4"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r13-section-4" title="Data Model"><span class="taxon">3. </span>Data Model</a></li><li class="toc-depth-0" data-target="r13-section-5"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r13-section-5" title="truetime"><span class="taxon">4. </span>truetime</a></li><li class="toc-depth-0" data-target="r13-section-6"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r13-section-6" title="CAP theorem and spanner"><span class="taxon">5. </span>CAP theorem and spanner</a></li><li class="toc-depth-0" data-target="r13-section-7"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r13-section-7" title="DB Transactions"><span class="taxon">6. </span>DB Transactions</a></li><li class="toc-depth-1" data-target="r13-section-8"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r13-section-8" title="Read Transactions"><span class="taxon">6.1. </span>Read Transactions</a></li><li class="toc-depth-1" data-target="r13-section-9"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r13-section-9" title="Uses a 2PC"><span class="taxon">6.2. </span>Uses a 2PC</a></li><li class="toc-depth-1" data-target="r13-section-10"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r13-section-10" title="Schema Change Transactions"><span class="taxon">6.3. </span>Schema Change Transactions</a></li><li class="toc-depth-0" data-target="r13-section-11"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r13-section-11" title="Eval"><span class="taxon">7. </span>Eval</a></li><li class="toc-depth-0" data-target="r13-section-12"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r13-section-12" title="Spanner SWE Tea Series"><span class="taxon">8. </span>Spanner SWE Tea Series</a></li></ul><p class="tree-tools"><button type="button" data-action="expand">Expand all</button> · <button type="button" data-action="collapse">Collapse all</button></p></details></nav></div></body></html>

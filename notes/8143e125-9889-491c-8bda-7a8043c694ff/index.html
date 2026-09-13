@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>Scaling Memcache · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon="section"><header class="document-header" tabindex="-1"><h1><span class="taxon">section</span><span dir="auto">Scaling Memcache</span> <a class="slug" href="/notes/8143e125-9889-491c-8bda-7a8043c694ff/" title="8143E125-9889-491C-8BDA-7A8043C694FF" aria-label="Permanent link to Scaling Memcache">[8143e125]</a></h1><div class="metadata">Part of <a class="link local" href="/notes/4d8f680d-3043-42f2-8635-12ee3f560c8b/">Databases</a></div></header>
+<div id="note"><ul>
+<li><code>set</code>, <code>get</code>, <code>delete</code> operations</li>
+</ul>
+<section class="block branch"><details open="" id="r8-section-1"><summary aria-label="1. Main data structures of memcache" data-title="Main data structures of memcache" data-number="1"><header><h2 class="tree-heading"><span class="taxon">1. </span><span class="section-title">Main data structures of memcache</span></h2></header></summary><ul>
+<li>
+<p>Hash table</p>
+<ul>
+<li>Chained hash table, everything is a linked list</li>
+</ul>
+</li>
+<li>Cache item data structure</li>
+<li>
+<p>Slab allocator</p>
+<ul>
+<li>
+<p>Memcached Items</p>
+<ul>
+<li>Item that holds data for a k,v pair</li>
+</ul>
+</li>
+<li><a class="link local" href="/notes/5a2b0672-10ae-439b-babd-7af8c0660f47/">allocators</a></li>
+<li>
+<p>A slab is a list of memory sections containing objects (pages) categories by the memroize size range they fall into</p>
+<ul>
+<li>By default the memory is split into 42 slabs</li>
+<li>first slab for items less than 96 bytes</li>
+<li>second for 96-120 bytes</li>
+<li>etc</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>LRU list</p>
+<ul>
+<li>For evicting the oldest and least used items, LRU matches to different slabs</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r8-section-2"><summary aria-label="2. Memcache Design" data-title="Memcache Design" data-number="2"><header><h2 class="tree-heading"><span class="taxon">2. </span><span class="section-title">Memcache Design</span></h2></header></summary><ul>
+<li>
+<p>Adaptive slab allocator</p>
+<ul>
+<li>Peroidic rebalancing of slabs</li>
+<li>If slabs needs more memory if it is evicting a lot of items, or if an item that is evicted was being used 20% more recently than the average of the least recently used item in other slab classes</li>
+<li>When we identify a needy slab, we free up the least recently used slab and transer it to the needy class</li>
+</ul>
+</li>
+<li>Short lived keys are pruned using a circular buffer than removes one item every second</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r8-section-3"><summary aria-label="3. Memcache Clustering" data-title="Memcache Clustering" data-number="3"><header><h2 class="tree-heading"><span class="taxon">3. </span><span class="section-title">Memcache Clustering</span></h2></header></summary><ul>
+<li>Key load is managed by consistent hashing</li>
+<li>although this means we need a memcached router for balancing, hence <a class="link external bare-url" href="https://github.com/facebook/mcrouter" title="https://github.com/facebook/mcrouter">github.com/facebook/mcrouter</a></li>
+<li>MC router talks with the memcache ASCII protocol</li>
+<li>
+<p>Network efficiency issue: incast congestion</p>
+<ul>
+<li>When a large number of responses to request overload a DC&#39;s cluster and rack switches, when we to rack to rack, such as broadcasting with memcache</li>
+<li>Use a sliding window, similar to TCP</li>
+</ul>
+</li>
+<li>
+<p>High load issues</p>
+<ul>
+<li>
+<p>Stale sets</p>
+<ul>
+<li>When a sequence of concurrent operations get reordered</li>
+</ul>
+</li>
+<li>
+<p>Thundering herd</p>
+<ul>
+<li>When multiple clients attempt to request the same thing at once</li>
+</ul>
+</li>
+<li>
+<p>Solution: use leases</p>
+<ul>
+<li>We &#34;lease&#34; the key value to a client by allocating a token, to set the item, the client has to provide the token again</li>
+<li>
+<p>A token can be invalidated if the Memcached server receives a delete request for the key</p>
+<ul>
+<li>Similar to load-linked and store-conditionals</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Different applications need different sizes, what do we do?</p>
+<ul>
+<li>Different pools of memcached, such as low-churn keys and high-churn keys</li>
+<li>
+<p>Replication within pools to improve latency and divide the load</p>
+<ul>
+<li>Sometimes we want to split the keyset, but other times we might just want to replicate the key set</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Small outages</p>
+<ul>
+<li>Add &#34;gutter&#34; servers, which do not rehash the key-value items to other Memcached using consistent hashing. K/V&#39;s in the gutter pool are drained quickly</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r8-section-4"><summary aria-label="4. Regional Level Memcache" data-title="Regional Level Memcache" data-number="4"><header><h2 class="tree-heading"><span class="taxon">4. </span><span class="section-title">Regional Level Memcache</span></h2></header></summary><ul>
+<li>Scaling a cluster natively makes it so that our networks start to face incast congestion</li>
+<li>We&#39;d rather replicate clusters</li>
+<li>But how do we invalidate when we replicate?</li>
+<li>
+<p>THere needs to be two ways of invalidation: either the backend DB invalidates the key on an update, or the client does</p>
+<ul>
+<li>We can set an invalidation daemon that discovers or just broadcasts UDP to all memcached instances to invalidate</li>
+<li>Note that the dameons batch as well</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r8-section-5"><summary aria-label="5. Controlling replication in regional pools" data-title="Controlling replication in regional pools" data-number="5"><header><h2 class="tree-heading"><span class="taxon">5. </span><span class="section-title">Controlling replication in regional pools</span></h2></header></summary><ul>
+<li>How many places should keys be replicated?</li>
+<li>Create a regional pool of memcached servers that multiple clients share, and move data between different pools as needed</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r8-section-6"><summary aria-label="6. Bringing up new pools" data-title="Bringing up new pools" data-number="6"><header><h2 class="tree-heading"><span class="taxon">6. </span><span class="section-title">Bringing up new pools</span></h2></header></summary><ul>
+<li>New pools should look at warm pools to replicate, not the DB, otherwise it threatens to overwhelm the DB</li>
+<li>To avoid races, we hold off <code>delete</code> operations, and clients add to the new cluster instead of the old</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r8-section-7"><summary aria-label="7. Cross Regional Memcached" data-title="Cross Regional Memcached" data-number="7"><header><h2 class="tree-heading"><span class="taxon">7. </span><span class="section-title">Cross Regional Memcached</span></h2></header></summary><ul>
+<li>Cross region replication is a huge pain</li>
+<li>100-300 ms</li>
+<li>
+<p>How do we deal with writes from a secondary region?</p>
+<ul>
+<li>User writes to one region, and reads from another</li>
+<li>Set a remote marker in the local region for a specific key</li>
+<li>Perform writes that are appended with the key and the remote marker</li>
+<li>Delete the key in the local cluster</li>
+<li>Eventual consistency considered acceptable in this case</li>
+</ul>
+</li>
+</ul>
+</details></section></div></section>
+<footer><section id="outgoing"><details class="outgoing"><summary><h2>Links from this note <span class="relation-count">1</span></h2></summary><ul class="backlinks"><li><a class="link local" href="/notes/5a2b0672-10ae-439b-babd-7af8c0660f47/">allocators</a></li></ul></details></section></footer>
+</article>
+<nav id="toc" aria-label="Table of contents"><details open class="toc-disclosure"><summary><h2>Table of contents</h2></summary><ul class="block"><li class="toc-depth-0" data-target="r8-section-1"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r8-section-1" title="Main data structures of memcache"><span class="taxon">1. </span>Main data structures of memcache</a></li><li class="toc-depth-0" data-target="r8-section-2"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r8-section-2" title="Memcache Design"><span class="taxon">2. </span>Memcache Design</a></li><li class="toc-depth-0" data-target="r8-section-3"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r8-section-3" title="Memcache Clustering"><span class="taxon">3. </span>Memcache Clustering</a></li><li class="toc-depth-0" data-target="r8-section-4"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r8-section-4" title="Regional Level Memcache"><span class="taxon">4. </span>Regional Level Memcache</a></li><li class="toc-depth-0" data-target="r8-section-5"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r8-section-5" title="Controlling replication in regional pools"><span class="taxon">5. </span>Controlling replication in regional pools</a></li><li class="toc-depth-0" data-target="r8-section-6"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r8-section-6" title="Bringing up new pools"><span class="taxon">6. </span>Bringing up new pools</a></li><li class="toc-depth-0" data-target="r8-section-7"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r8-section-7" title="Cross Regional Memcached"><span class="taxon">7. </span>Cross Regional Memcached</a></li></ul><p class="tree-tools"><button type="button" data-action="expand">Expand all</button> · <button type="button" data-action="collapse">Collapse all</button></p></details></nav></div></body></html>

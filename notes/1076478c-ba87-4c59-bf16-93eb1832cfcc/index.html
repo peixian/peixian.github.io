@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>postgres · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon=""><header class="document-header" tabindex="-1"><h1><span dir="auto">postgres</span> <a class="slug" href="/notes/1076478c-ba87-4c59-bf16-93eb1832cfcc/" title="1076478C-BA87-4C59-BF16-93EB1832CFCC" aria-label="Permanent link to postgres">[1076478c]</a></h1></header>
+<div id="note"><p>
+Tags: <a class="link local" href="/notes/4d8f680d-3043-42f2-8635-12ee3f560c8b/">Databases</a>, <a class="link local" href="/notes/0c832bad-e9a5-4b04-8a2a-851647119a10/">Computers</a></p>
+<section class="block branch"><details open="" id="r15-section-1"><summary aria-label="1. Resources" data-title="Resources" data-number="1"><header><h2 class="tree-heading"><span class="taxon">1. </span><span class="section-title">Resources</span></h2></header></summary><ul>
+<li><a class="link external bare-url" href="https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb" title="https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb">gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb</a></li>
+<li><a class="link external bare-url" href="https://www.interdb.jp/pg/pgsql01/01.html" title="https://www.interdb.jp/pg/pgsql01/01.html">www.interdb.jp/pg/pgsql01/01.html</a></li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r15-section-2"><summary aria-label="2. Concepts" data-title="Concepts" data-number="2"><header><h2 class="tree-heading"><span class="taxon">2. </span><span class="section-title">Concepts</span></h2></header></summary><section class="block branch"><details open="" id="r15-section-3"><summary aria-label="2.1. relfilenode" data-title="relfilenode" data-number="2.1"><header><h3 class="tree-heading"><span class="taxon">2.1. </span><span class="section-title"><code>relfilenode</code></span></h3></header></summary><ul>
+<li>An OID represents the logical identity, <code>relfilenode</code> is the physical data. OIDs are static, but <code>relfilenodes</code> can change</li>
+<li>On initialization, the table <code>relfilenode</code> is the same as the OID, but operates that rewrite the file (TRUNCATE/VACUUM FULL, CLUSTER, REINDEX) all create new <code>relfilenodes</code></li>
+<li>Physical location via <code>SELECT pg_relation_filepath(&#39;tablename&#39;)</code></li>
+<li>File segmentation -&gt; large than 1GB, we get relfilenode segments like <code>reifilenode.1, refilenode.2, etc</code></li>
+<li>Free space map is stored in <code>relfilennode_fsm</code> and visbility map <code>refilenode_vm</code></li>
+<li>Entire table file is called a &#34;heap file&#34; (the relfilenode)</li>
+<li>Inside this there are pages (blocks), which are 8KB</li>
+<li>Inside the page, it contains &#34;heap tuples&#34;, which are actual rows, and line pointers to these rows.</li>
+<li>
+<p>Indices have their own OID and <code>relfilenodes</code></p>
+<p>
+Vaguely like</p>
+<div class="src src-text">
+<div class="highlight">
+<pre>  FILESYSTEM (Directory: $PGDATA/base/[database_OID]/)
+  │
+  ├── File 1: THE TABLE (The &#34;Heap&#34;) [relfilenode: 18740]
+  │   │
+  │   ├── Page 0 (8KB) [3]
+  │   │   ├── Header [12]
+  │   │   ├── Line Pointers (1, 2, 3...) [4]
+  │   │   ├── [Free Space / Hole] [10]
+  │   │   └── Heap Tuples (The actual Data: &#34;John&#34;, &#34;Doe&#34;) [4]
+  │   │
+  │   ├── Page 1 (8KB)
+  │   │   └── ... (More pointers and tuples)
+  │   │
+  │   └── ... (More pages)
+  │
+  │
+  └── File 2: THE INDEX (e.g., B-Tree) [relfilenode: 18750]
+      │   (This is a separate file!) [8]
+      │
+      ├── Page 0 (Meta page/Root)
+      │
+      ├── Page 1 (Leaf Page)
+      │   ├── Header
+      │   └── Index Tuples [11]
+      │       ├── Key: &#34;Doe&#34;
+      │       └── TID: (Block 0, Offset 1)  -----&gt;  Pulls row from Table File
+      │
+      └── ...
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r15-section-4"><summary aria-label="2.2. Slotted Pages" data-title="Slotted Pages" data-number="2.2"><header><h3 class="tree-heading"><span class="taxon">2.2. </span><span class="section-title">Slotted Pages</span></h3></header></summary><ul>
+<li>
+<p>Heap is divided into fixed length pages, which have a:</p>
+<ul>
+<li>header (24 bytes)</li>
+<li>line pointer - array of pointers that track index into actual data</li>
+<li>heap tuples</li>
+</ul>
+</li>
+<li>Internal fragementation can happen in the heap, external fragementation</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r15-section-5"><summary aria-label="2.3. Indices" data-title="Indices" data-number="2.3"><header><h3 class="tree-heading"><span class="taxon">2.3. </span><span class="section-title">Indices</span></h3></header></summary><ul>
+<li>Each tuple has an ID (TID)</li>
+<li>Block number identifies which 8kb page in teh table file contains it, and offset identifies the line pointer</li>
+<li>
+<p>When you do an index scan, pg searches the b-tree index for the key, retreives the tid, and loads the page</p>
+<div class="src src-text">
+<div class="highlight">
+<pre>        INDEX FILE (B-Tree)                     HEAP TABLE FILE (relfilenode)
+     ┌───────────────────────┐             ┌────────────────────────────────────┐
+     │ Key: &#34;50&#34;             │             │ Page 7 (8KB Block)                 │
+     │ TID: (Block 7, Off 2) │ ──────────&gt; │ ┌────────────────────────────────┐ │
+     └───────────────────────┘             │ │ [ Page Header ]                │ │
+                                           │ ├────────────────────────────────┤ │
+                                           │ │ 1. [ Line Pointer 1 ]          │ │
+                                           │ │ 2. [ Line Pointer 2 ] ───────┐ │ │
+                                           │ │ 3. [ Line Pointer 3 ]        │ │ │
+                                           │ ├────────────────────────────────┤ │
+                                           │ │           (Hole)               │ │
+                                           │ │      Free Space for new        │ │
+                                           │ │      pointers/tuples           │ │
+                                           │ ├────────────────────────────────┤ │
+                                           │ │ [ Heap Tuple 3 Data ... ]      │ │
+                                           │ │ [ Heap Tuple 2 Data ... ] &lt;──┘ │ │
+                                           │ │ [ Heap Tuple 1 Data ... ]      │ │
+                                           │ └────────────────────────────────┘ │
+                                           └────────────────────────────────────┘
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</details></section></details></section><section class="block branch"><details open="" id="r15-section-6"><summary aria-label="3. Postgres Issues" data-title="Postgres Issues" data-number="3"><header><h2 class="tree-heading"><span class="taxon">3. </span><span class="section-title">Postgres Issues</span></h2></header></summary><ul>
+<li>
+<p>VACUUM</p>
+<ul>
+<li>Proposals have been made to try to relocate rows on the fly, but it’s hard to do correctly and risks bloating the indexes, since each row moved requires a new entry in each index to point to the new location of the row.</li>
+<li><a class="link external bare-url" href="https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791" title="https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791">medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791</a></li>
+</ul>
+</li>
+</ul>
+<section class="block branch"><details open="" id="r15-section-7"><summary aria-label="3.1. Performance" data-title="Performance" data-number="3.1"><header><h3 class="tree-heading"><span class="taxon">3.1. </span><span class="section-title">Performance</span></h3></header></summary><ul>
+<li><a class="link external bare-url" href="https://www.postgresql.org/docs/current/warm-standby.html#SYNCHRONOUS-REPLICATION-PERFORMANCE" title="https://www.postgresql.org/docs/current/warm-standby.html#SYNCHRONOUS-REPLICATION-PERFORMANCE">www.postgresql.org/docs/current/warm-standby.html#SYNCHRONOUS-REPLICATION-PERFORMANCE</a></li>
+<li><a class="link external bare-url" href="https://www.postgresql.org/docs/9.3/routine-vacuuming.html" title="https://www.postgresql.org/docs/9.3/routine-vacuuming.html">www.postgresql.org/docs/9.3/routine-vacuuming.html</a></li>
+<li><a class="link external bare-url" href="http://rhaas.blogspot.com/2018/01/do-or-undo-there-is-no-vacuum.html" title="http://rhaas.blogspot.com/2018/01/do-or-undo-there-is-no-vacuum.html">rhaas.blogspot.com/2018/01/do-or-undo-there-is-no-vacuum.html</a></li>
+<li><a class="link external bare-url" href="https://github.com/postgres/postgres/blob/master/src/backend/access/heap/README.HOT" title="https://github.com/postgres/postgres/blob/master/src/backend/access/heap/README.HOT">github.com/postgres/postgres/blob/master/src/backend/access/heap/README.HOT</a></li>
+</ul>
+<section class="block branch"><details open="" id="r15-section-8"><summary aria-label="3.1.1. TOAST Tables" data-title="TOAST Tables" data-number="3.1.1"><header><h4 class="tree-heading"><span class="taxon">3.1.1. </span><span class="section-title">TOAST Tables</span></h4></header></summary><ul>
+<li><a class="link external bare-url" href="https://hakibenita.com/sql-medium-text-performance" title="https://hakibenita.com/sql-medium-text-performance">hakibenita.com/sql-medium-text-performance</a>
+TOAST tables slice up medium/large size text data using a separate TOAST partition</li>
+<li>Indexes are fast in this, but you need to have large size text data</li>
+<li>Medium sized text data will usually kill your performance</li>
+</ul>
+</details></section></details></section><section class="block branch"><details open="" id="r15-section-9"><summary aria-label="3.2. Scalablity" data-title="Scalablity" data-number="3.2"><header><h3 class="tree-heading"><span class="taxon">3.2. </span><span class="section-title">Scalablity</span></h3></header></summary><ul>
+<li><a class="link external bare-url" href="https://blog.sentry.io/2015/07/23/transaction-id-wraparound-in-postgres" title="https://blog.sentry.io/2015/07/23/transaction-id-wraparound-in-postgres">blog.sentry.io/2015/07/23/transaction-id-wraparound-in-postgres</a></li>
+</ul>
+</details></section></details></section><section class="block branch"><details open="" id="r15-section-10"><summary aria-label="4. Queues" data-title="Queues" data-number="4"><header><h2 class="tree-heading"><span class="taxon">4. </span><span class="section-title">Queues</span></h2></header></summary><ul>
+<li><a class="link external bare-url" href="https://www.pgcon.org/2016/schedule/track/Applications/929.en.html" title="https://www.pgcon.org/2016/schedule/track/Applications/929.en.html">www.pgcon.org/2016/schedule/track/Applications/929.en.html</a></li>
+<li><a class="link external bare-url" href="https://tapoueh.org/blog/2018/07/postgresql-listen-notify/" title="https://tapoueh.org/blog/2018/07/postgresql-listen-notify/">tapoueh.org/blog/2018/07/postgresql-listen-notify/</a></li>
+<li><a class="link external bare-url" href="https://github.com/tktech/chancy?tab=readme-ov-file" title="https://github.com/tktech/chancy?tab=readme-ov-file">github.com/tktech/chancy?tab=readme-ov-file</a></li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r15-section-11"><summary aria-label="5. JSON Types" data-title="JSON Types" data-number="5"><header><h2 class="tree-heading"><span class="taxon">5. </span><span class="section-title">JSON Types</span></h2></header></summary><p><a class="link external bare-url" href="https://www.postgresql.org/docs/9.4/datatype-json.html" title="https://www.postgresql.org/docs/9.4/datatype-json.html">www.postgresql.org/docs/9.4/datatype-json.html</a></p>
+<ul>
+<li>Can build an index with GIN</li>
+<li>can use <code>allballs</code> to mean 0</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r15-section-12"><summary aria-label="6. Postgres GIST indicies" data-title="Postgres GIST indicies" data-number="6"><header><h2 class="tree-heading"><span class="taxon">6. </span><span class="section-title">Postgres GIST indicies</span></h2></header></summary><ul>
+<li><a class="link external bare-url" href="https://github.com/postgres/postgres/blob/f14aad5169baa5e2ac25d49f1d18f9d5cb3bc7f2/src/backend/utils/adt/rangetypes_gist.c#L282" title="https://github.com/postgres/postgres/blob/f14aad5169baa5e2ac25d49f1d18f9d5cb3bc7f2/src/backend/utils/adt/rangetypes_gist.c#L282">github.com/postgres/postgres/blob/f14aad5169baa5e2ac25d49f1d18f9d5cb3bc7f2/src/backend/utils/adt/rangetypes_gist.c#L282</a></li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r15-section-13"><summary aria-label="7. Multiranges" data-title="Multiranges" data-number="7"><header><h2 class="tree-heading"><span class="taxon">7. </span><span class="section-title">Multiranges</span></h2></header></summary><ul>
+<li></li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r15-section-14"><summary aria-label="8. WAL" data-title="WAL" data-number="8"><header><h2 class="tree-heading"><span class="taxon">8. </span><span class="section-title">WAL</span></h2></header></summary><ul>
+<li><a class="link external bare-url" href="https://wiki.postgresql.org/images/d/da/PGDay2009-WAL.pdf" title="https://wiki.postgresql.org/images/d/da/PGDay2009-WAL.pdf">wiki.postgresql.org/images/d/da/PGDay2009-WAL.pdf</a></li>
+</ul>
+</details></section></div></section>
+<footer><section id="backlinks" tabindex="-1"><h2>Backlinks <span class="relation-count">1</span></h2><p class="relation-description">Notes that link to this note.<span class="js-only"> Expand an arrow to read here.</span></p><ul class="backlinks"><li><a class="link local" href="/notes/a0a37a5e-a266-46b3-8148-d7a40a5f1f78/">kubernetes (k8s)</a></li></ul></section><section id="outgoing"><details class="outgoing"><summary><h2>Links from this note <span class="relation-count">2</span></h2></summary><ul class="backlinks"><li><a class="link local" href="/notes/0c832bad-e9a5-4b04-8a2a-851647119a10/">computers</a></li><li><a class="link local" href="/notes/4d8f680d-3043-42f2-8635-12ee3f560c8b/">Databases</a></li></ul></details></section></footer>
+</article>
+<nav id="toc" aria-label="Table of contents"><details open class="toc-disclosure"><summary><h2>Table of contents</h2></summary><ul class="block"><li class="toc-depth-0" data-target="r15-section-1"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-1" title="Resources"><span class="taxon">1. </span>Resources</a></li><li class="toc-depth-0" data-target="r15-section-2"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-2" title="Concepts"><span class="taxon">2. </span>Concepts</a></li><li class="toc-depth-1" data-target="r15-section-3"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-3" title="relfilenode"><span class="taxon">2.1. </span>relfilenode</a></li><li class="toc-depth-1" data-target="r15-section-4"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-4" title="Slotted Pages"><span class="taxon">2.2. </span>Slotted Pages</a></li><li class="toc-depth-1" data-target="r15-section-5"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-5" title="Indices"><span class="taxon">2.3. </span>Indices</a></li><li class="toc-depth-0" data-target="r15-section-6"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-6" title="Postgres Issues"><span class="taxon">3. </span>Postgres Issues</a></li><li class="toc-depth-1" data-target="r15-section-7"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-7" title="Performance"><span class="taxon">3.1. </span>Performance</a></li><li class="toc-depth-2" data-target="r15-section-8"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-8" title="TOAST Tables"><span class="taxon">3.1.1. </span>TOAST Tables</a></li><li class="toc-depth-1" data-target="r15-section-9"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-9" title="Scalablity"><span class="taxon">3.2. </span>Scalablity</a></li><li class="toc-depth-0" data-target="r15-section-10"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-10" title="Queues"><span class="taxon">4. </span>Queues</a></li><li class="toc-depth-0" data-target="r15-section-11"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-11" title="JSON Types"><span class="taxon">5. </span>JSON Types</a></li><li class="toc-depth-0" data-target="r15-section-12"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-12" title="Postgres GIST indicies"><span class="taxon">6. </span>Postgres GIST indicies</a></li><li class="toc-depth-0" data-target="r15-section-13"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-13" title="Multiranges"><span class="taxon">7. </span>Multiranges</a></li><li class="toc-depth-0" data-target="r15-section-14"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r15-section-14" title="WAL"><span class="taxon">8. </span>WAL</a></li></ul><p class="tree-tools"><button type="button" data-action="expand">Expand all</button> · <button type="button" data-action="collapse">Collapse all</button></p></details></nav></div></body></html>

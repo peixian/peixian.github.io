@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>GFS (Google File System) · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon="section"><header class="document-header" tabindex="-1"><h1><span class="taxon">section</span><span dir="auto">GFS (Google File System)</span> <a class="slug" href="/notes/8725974f-481e-4337-9b60-a06aa14c5e89/" title="8725974F-481E-4337-9B60-A06AA14C5E89" aria-label="Permanent link to GFS (Google File System)">[8725974f]</a></h1><div class="metadata">Part of <a class="link local" href="/notes/00df33a8-c997-49fc-97b2-8f7429e55bf6/">storage</a></div></header>
+<div id="note"><ul>
+<li>Single control plane, master, scared it wouldn&#39;t scale but it did</li>
+<li>
+<p>Two specialized operations, record append and snapshot, with other basic file operations</p>
+<ul>
+<li>record append allows multiple clients to append from small records to a file</li>
+<li>snapshot allows the clients to create a copy of a file or a directory tree</li>
+</ul>
+</li>
+<li>batch oriented workloads</li>
+<li>commodity servers</li>
+<li>
+<p>Recovery?</p>
+<ul>
+<li>Checkpoints on metadata state, operation log</li>
+<li>shadow managers for recovery to serve read operations only, similar to how RW locks even have contention</li>
+</ul>
+</li>
+<li>Notably, GFS places the consistency checking on the client library, where it requires the you (via the client library) to check</li>
+<li>Is <strong>not</strong> linearizable</li>
+</ul>
+<section class="block branch"><details open="" id="r14-section-1"><summary aria-label="1. Locks" data-title="Locks" data-number="1"><header><h2 class="tree-heading"><span class="taxon">1. </span><span class="section-title">Locks</span></h2></header></summary><ul>
+<li>Read lock aquired on the directory (full path to the directory so that it&#39;s not being edited or renamed)</li>
+<li>Write lock on the file name so that two or more processes cannot write at the same time</li>
+<li>Only a small region is locked, since not doing it carefully destroys performance</li>
+<li>If a manager dies after locking something, the lock goes with it since it&#39;s a central master</li>
+<li>
+<p>left to right locking, so locks are acquired in the shape of</p>
+<ul>
+<li><code>/a</code>, <code>/a/b</code>, <code>/a/b/c</code> for read locks</li>
+<li><code>/a/b/c/file.txt</code> for write locks</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-2"><summary aria-label="2. Reading" data-title="Reading" data-number="2"><header><h2 class="tree-heading"><span class="taxon">2. </span><span class="section-title">Reading</span></h2></header></summary><ol>
+<li>
+<p>To read, user request is first processed by the GFS client that finds a chunk index</p>
+<ul>
+<li>Since each file is divded into 64MB chunks, the client just %&#39;s by 64MB to find the appropriate idx</li>
+</ul>
+</li>
+<li>Then the client requests this information from the manager to get the chunk index and chunk handle, which the manager tells an appropriate replica of</li>
+<li>Client then caches the metadata</li>
+</ol>
+</details></section><section class="block branch"><details open="" id="r14-section-3"><summary aria-label="3. Writing" data-title="Writing" data-number="3"><header><h2 class="tree-heading"><span class="taxon">3. </span><span class="section-title">Writing</span></h2></header></summary><ul>
+<li>Two kinds of writes, a <strong>random</strong> write and an <strong>append</strong> (not POSIX compliant)</li>
+<li>Replicas hold leases that coordinate the writes</li>
+<li>Leases expire, and are only active for a small period of time. This means that if a bad replica has a lease, it will expire and a new node will be found</li>
+<li>Primary replicas exist because they allow the data to be consistent</li>
+</ul>
+<section class="block branch"><details open="" id="r14-section-4"><summary aria-label="3.1. Writing Workflow" data-title="Writing Workflow" data-number="3.1"><header><h3 class="tree-heading"><span class="taxon">3.1. </span><span class="section-title">Writing Workflow</span></h3></header></summary><ul>
+<li>Random write and append operations are roughly the same, random writes use an offset for where the data is written, whereas the append just goes to the last chunk</li>
+<li>Note that the data is pushed to all the replicas</li>
+</ul>
+<p></p>
+<ul>
+<li>The write (aka commit) happens to the main replica after all the replicas have recieved the data</li>
+<li>Replicas then ack whether they&#39;ve received the data or not</li>
+</ul>
+<section class="block branch"><details open="" id="r14-section-5"><summary aria-label="3.1.1. Edge Cases on Writing" data-title="Edge Cases on Writing" data-number="3.1.1"><header><h4 class="tree-heading"><span class="taxon">3.1.1. </span><span class="section-title">Edge Cases on Writing</span></h4></header></summary><ul>
+<li>If the last chunk has available space for appending data, then the chunk servers write that data</li>
+<li>If the chunk is already full, then the chunkserver asks the client to create a new chunk, which requires a new write and request loop from the manager</li>
+<li>If the last chunk is partially full, the chunkserver holding the last chunk will respond to the client with a message about the available server</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-6"><summary aria-label="3.1.2. Control vs Data Flow" data-title="Control vs Data Flow" data-number="3.1.2"><header><h4 class="tree-heading"><span class="taxon">3.1.2. </span><span class="section-title">Control vs Data Flow</span></h4></header></summary><ul>
+<li>GFS, critically, decouples the control and the data. The data physically flows via nearest-in-rack, but the manager still runs things</li>
+</ul>
+<p></p>
+</details></section></details></section></details></section><section class="block branch"><details open="" id="r14-section-7"><summary aria-label="4. Deletes" data-title="Deletes" data-number="4"><header><h2 class="tree-heading"><span class="taxon">4. </span><span class="section-title">Deletes</span></h2></header></summary><ul>
+<li>Garbage collection is done to avoid sync deletes</li>
+<li>Client says a delete needs to happen, so master creates a read lock on the dir and a write lock on the file</li>
+<li>Master then revokes the leases in progress, and waits for replicas to finish mutations</li>
+<li>Afterwards, delete actually happens</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-8"><summary aria-label="5. Consistency Model" data-title="Consistency Model" data-number="5"><header><h2 class="tree-heading"><span class="taxon">5. </span><span class="section-title">Consistency Model</span></h2></header></summary><p>GFS consistency starts from issues during write, we need to prevent writing over multiple times (mix data), and also issues with writing over the same data.</p>
+<section class="block branch"><details open="" id="r14-section-9"><summary aria-label="5.1. Possible States after mutations" data-title="Possible States after mutations" data-number="5.1"><header><h3 class="tree-heading"><span class="taxon">5.1. </span><span class="section-title">Possible States after mutations</span></h3></header></summary><ul>
+<li>Consistent</li>
+<li>Inconsistent</li>
+<li>Defined - when mutations happen to a file and the applications can parse it and read it</li>
+<li>Undefined - when the region hasn&#39;t properly changed data yet</li>
+</ul>
+</details></section></details></section><section class="block branch"><details open="" id="r14-section-10"><summary aria-label="6. How to actually maintain consistency?" data-title="How to actually maintain consistency?" data-number="6"><header><h2 class="tree-heading"><span class="taxon">6. </span><span class="section-title">How to actually maintain consistency?</span></h2></header></summary><ul>
+<li>Random writes can result in serial success, where one lease or lock after the other allows writes to go through</li>
+<li>Concurrent success can happen when you have multiple writes on the same thing, resulting in mixed data</li>
+<li>Failure</li>
+<li>Serial success for appends happen the same as random writes, proper offsets are used</li>
+<li>Concurrent success is when two writes attempt to use the same offset</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-11"><summary aria-label="7. Dealing with Data Inconsistencies" data-title="Dealing with Data Inconsistencies" data-number="7"><header><h2 class="tree-heading"><span class="taxon">7. </span><span class="section-title">Dealing with Data Inconsistencies</span></h2></header></summary><ul>
+<li>It doesn&#39;t, you can have overlapping writes, the application level is responsible for locking</li>
+<li>For append however, appends happen as at least one atomic unit.</li>
+<li>GFS only deals with stale data because of bad replications</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-12"><summary aria-label="8. Metadata Consistency" data-title="Metadata Consistency" data-number="8"><header><h2 class="tree-heading"><span class="taxon">8. </span><span class="section-title">Metadata Consistency</span></h2></header></summary><ul>
+<li>Chunkservers tell the metadata manager what offsets map to where, but the manager also keeps track of it</li>
+<li>
+<p>We also use shadow managers when the client cannot reach the primary manager, which help facilitate primary reads</p>
+<ul>
+<li>also the shadow might be behind the primary, since it reads off of the master&#39;s logs</li>
+</ul>
+</li>
+<li>Master is also fully syncronous, it does not respond to the client&#39;s requests for updating metadata until everything is done</li>
+<li>Failures can be retried by the client side, or present in the operation log</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r14-section-13"><summary aria-label="9. Scalability" data-title="Scalability" data-number="9"><header><h2 class="tree-heading"><span class="taxon">9. </span><span class="section-title">Scalability</span></h2></header></summary><ul>
+<li>Scalability is achieved mostly through having multiple chunkservers, which can be easily added</li>
+<li>Availability is achieved by having three chunk servers per app by default</li>
+<li>Replication happens in the background if hosts are lost, and GFS manager has shadow managers that take over should the master go down</li>
+<li>Durability is acheived that there&#39;s replicas for chunkservers and operation logs for the metadata</li>
+<li>Throughput is achieved by separating the data from the metadata flow</li>
+<li>Consistency is applied through relaxed consistency, most files are mutated by having append and reads</li>
+</ul>
+</details></section></div></section>
+<footer><section id="backlinks" tabindex="-1"><h2>Backlinks <span class="relation-count">2</span></h2><p class="relation-description">Notes that link to this note.<span class="js-only"> Expand an arrow to read here.</span></p><ul class="backlinks"><li><a class="link local" href="/notes/777f756c-ef76-4cee-b592-fb2de8f54ff6/">Chubby</a> <span class="index-context">in paxos</span></li><li><a class="link local" href="/notes/60e89de2-2826-4c7f-9df6-69a0c00f11a2/">distributed systems</a></li></ul></section></footer>
+</article>
+<nav id="toc" aria-label="Table of contents"><details open class="toc-disclosure"><summary><h2>Table of contents</h2></summary><ul class="block"><li class="toc-depth-0" data-target="r14-section-1"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-1" title="Locks"><span class="taxon">1. </span>Locks</a></li><li class="toc-depth-0" data-target="r14-section-2"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-2" title="Reading"><span class="taxon">2. </span>Reading</a></li><li class="toc-depth-0" data-target="r14-section-3"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-3" title="Writing"><span class="taxon">3. </span>Writing</a></li><li class="toc-depth-1" data-target="r14-section-4"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-4" title="Writing Workflow"><span class="taxon">3.1. </span>Writing Workflow</a></li><li class="toc-depth-2" data-target="r14-section-5"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-5" title="Edge Cases on Writing"><span class="taxon">3.1.1. </span>Edge Cases on Writing</a></li><li class="toc-depth-2" data-target="r14-section-6"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-6" title="Control vs Data Flow"><span class="taxon">3.1.2. </span>Control vs Data Flow</a></li><li class="toc-depth-0" data-target="r14-section-7"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-7" title="Deletes"><span class="taxon">4. </span>Deletes</a></li><li class="toc-depth-0" data-target="r14-section-8"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-8" title="Consistency Model"><span class="taxon">5. </span>Consistency Model</a></li><li class="toc-depth-1" data-target="r14-section-9"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-9" title="Possible States after mutations"><span class="taxon">5.1. </span>Possible States after mutations</a></li><li class="toc-depth-0" data-target="r14-section-10"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-10" title="How to actually maintain consistency?"><span class="taxon">6. </span>How to actually maintain consistency?</a></li><li class="toc-depth-0" data-target="r14-section-11"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-11" title="Dealing with Data Inconsistencies"><span class="taxon">7. </span>Dealing with Data Inconsistencies</a></li><li class="toc-depth-0" data-target="r14-section-12"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-12" title="Metadata Consistency"><span class="taxon">8. </span>Metadata Consistency</a></li><li class="toc-depth-0" data-target="r14-section-13"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r14-section-13" title="Scalability"><span class="taxon">9. </span>Scalability</a></li></ul><p class="tree-tools"><button type="button" data-action="expand">Expand all</button> · <button type="button" data-action="collapse">Collapse all</button></p></details></nav></div></body></html>

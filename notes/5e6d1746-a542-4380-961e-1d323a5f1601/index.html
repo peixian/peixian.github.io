@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>Cassandra · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon=""><header class="document-header" tabindex="-1"><h1><span dir="auto">Cassandra</span> <a class="slug" href="/notes/5e6d1746-a542-4380-961e-1d323a5f1601/" title="5E6D1746-A542-4380-961E-1D323A5F1601" aria-label="Permanent link to Cassandra">[5e6d1746]</a></h1></header>
+<div id="note"><p>
+Tags: <a class="link local" href="/notes/4d8f680d-3043-42f2-8635-12ee3f560c8b/">Databases</a>, <a class="link local" href="/notes/60e89de2-2826-4c7f-9df6-69a0c00f11a2/">distributed systems</a></p>
+<section class="block branch"><details open="" id="r10-section-1"><summary aria-label="1. Internals" data-title="Internals" data-number="1"><header><h2 class="tree-heading"><span class="taxon">1. </span><span class="section-title">Internals</span></h2></header></summary><ul>
+<li>
+<p>Seed nodes:</p>
+<ul>
+<li>No purpose other than bootstrapping the gossip process</li>
+<li>DO NOT MAKE ALL NODES SEED NODES</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r10-section-2"><summary aria-label="2. concurrent_compactors" data-title="concurrent_compactors" data-number="2"><header><h2 class="tree-heading"><span class="taxon">2. </span><span class="section-title"><code>concurrent_compactors</code></span></h2></header></summary><ul>
+<li>Sets the number of IO threads dedicated to compaction</li>
+<li>
+<p>If too high, can cause IO starvation and not servicing requests</p>
+<ul>
+<li>Depends on NVME drives</li>
+</ul>
+</li>
+<li>
+<p>set by the <code>concurrenct_compactors</code> string in yaml</p>
+<ul>
+<li>can also use <code>nodetool setconcurrent_compactors</code> in C* &gt; 3</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r10-section-3"><summary aria-label="3. Counter Table TTL&#39;s" data-title="Counter Table TTL&#39;s" data-number="3"><header><h2 class="tree-heading"><span class="taxon">3. </span><span class="section-title">Counter Table TTL&#39;s</span></h2></header></summary><ul>
+<li><a class="link external bare-url" href="https://issues.apache.org/jira/browse/CASSANDRA-2103" title="https://issues.apache.org/jira/browse/CASSANDRA-2103">issues.apache.org/jira/browse/CASSANDRA-2103</a></li>
+<li><a class="link external bare-url" href="https://blog.knoldus.com/cassandra-counter-column-and-table/" title="https://blog.knoldus.com/cassandra-counter-column-and-table/">blog.knoldus.com/cassandra-counter-column-and-table/</a></li>
+<li><a class="link external bare-url" href="https://docs.scylladb.com/using-scylla/counters/" title="https://docs.scylladb.com/using-scylla/counters/">docs.scylladb.com/using-scylla/counters/</a></li>
+<li><a class="link external bare-url" href="https://docs.scylladb.com/getting-started/time_to_live/" title="https://docs.scylladb.com/getting-started/time_to_live/">docs.scylladb.com/getting-started/time_to_live/</a></li>
+<li><a class="link external bare-url" href="https://stackoverflow.com/questions/29564744/data-modeling-with-counters-in-cassandra-expiring-columns" title="https://stackoverflow.com/questions/29564744/data-modeling-with-counters-in-cassandra-expiring-columns">stackoverflow.com/questions/29564744/data-modeling-with-counters-in-cassandra-expiring-columns</a></li>
+<li><a class="link external bare-url" href="https://github.com/Netflix/astyanax/wiki/Working-with-counter-columns" title="https://github.com/Netflix/astyanax/wiki/Working-with-counter-columns">github.com/Netflix/astyanax/wiki/Working-with-counter-columns</a></li>
+<li><a class="link external bare-url" href="https://dzone.com/articles/cassandra-counter-columns-and-tables" title="https://dzone.com/articles/cassandra-counter-columns-and-tables">dzone.com/articles/cassandra-counter-columns-and-tables</a></li>
+<li><a class="link external bare-url" href="https://stackoverflow.com/questions/24881957/what-is-the-way-for-counting-number-of-columns-in-row-in-cassandra" title="https://stackoverflow.com/questions/24881957/what-is-the-way-for-counting-number-of-columns-in-row-in-cassandra">stackoverflow.com/questions/24881957/what-is-the-way-for-counting-number-of-columns-in-row-in-cassandra</a></li>
+<li><a class="link external bare-url" href="https://www.ably.io/blog/cassandra-counter-columns-nice-in-theory-hazardous-in-practice" title="https://www.ably.io/blog/cassandra-counter-columns-nice-in-theory-hazardous-in-practice">www.ably.io/blog/cassandra-counter-columns-nice-in-theory-hazardous-in-practice</a></li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r10-section-4"><summary aria-label="4. Jolokia Agent" data-title="Jolokia Agent" data-number="4"><header><h2 class="tree-heading"><span class="taxon">4. </span><span class="section-title">Jolokia Agent</span></h2></header></summary><ul>
+<li><a class="link external bare-url" href="https://stackoverflow.com/questions/35318593/jolokia-agent-for-cassandra" title="https://stackoverflow.com/questions/35318593/jolokia-agent-for-cassandra">stackoverflow.com/questions/35318593/jolokia-agent-for-cassandra</a></li>
+<li><a class="link external bare-url" href="https://stackoverflow.com/questions/35318593/jolokia-agent-for-cassandra" title="https://stackoverflow.com/questions/35318593/jolokia-agent-for-cassandra">stackoverflow.com/questions/35318593/jolokia-agent-for-cassandra</a></li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r10-section-5"><summary aria-label="5. CQLSH" data-title="CQLSH" data-number="5"><header><h2 class="tree-heading"><span class="taxon">5. </span><span class="section-title">CQLSH</span></h2></header></summary><ul>
+<li>cqlsh specifically checks for <code>python2.7</code>, which may need to be aliased somewhere</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r10-section-6"><summary aria-label="6. Scylla" data-title="Scylla" data-number="6"><header><h2 class="tree-heading"><span class="taxon">6. </span><span class="section-title">Scylla</span></h2></header></summary><ul>
+<li>Xandra driver uses <a class="link external bare-url" href="https://queue.acm.org/appendices/codel.html" title="https://queue.acm.org/appendices/codel.html">queue.acm.org/appendices/codel.html</a></li>
+<li>Whether tweaking <code>tombstone_compaction_interval</code> affects things: <a class="link external bare-url" href="https://github.com/PaytmLabs/cassandra/blob/master/src/java/org/apache/cassandra/db/compaction/AbstractCompactionStrategy.java#L360" title="https://github.com/PaytmLabs/cassandra/blob/master/src/java/org/apache/cassandra/db/compaction/AbstractCompactionStrategy.java#L360">github.com/PaytmLabs/cassandra/blob/master/src/java/org/apache/cassandra/db/compaction/AbstractCompactionStrategy.java#L360</a></li>
+</ul>
+<section class="block branch"><details open="" id="r10-section-7"><summary aria-label="6.1. Tracing" data-title="Tracing" data-number="6.1"><header><h3 class="tree-heading"><span class="taxon">6.1. </span><span class="section-title">Tracing</span></h3></header></summary><ul>
+<li><a class="link external bare-url" href="https://opensource.docs.scylladb.com/stable/using-scylla/tracing.html#probabilistic-tracing" title="https://opensource.docs.scylladb.com/stable/using-scylla/tracing.html#probabilistic-tracing">opensource.docs.scylladb.com/stable/using-scylla/tracing.html#probabilistic-tracing</a></li>
+<li>
+<p>normally you can turn on CQL tracing with</p>
+<blockquote>
+<p>cqlsh&gt; TRACING ON</p>
+</blockquote>
+</li>
+<li>also can set <code>nodetool settraceprobability 0.0001</code></li>
+</ul>
+</details></section></details></section><section class="block branch"><details open="" id="r10-section-8"><summary aria-label="7. Cassandra Gossiper Protocol" data-title="Cassandra Gossiper Protocol" data-number="7"><header><h2 class="tree-heading"><span class="taxon">7. </span><span class="section-title">Cassandra Gossiper Protocol</span></h2></header></summary><ul>
+<li>
+<p>Gossiper chooses a random node in the cluster and initializes a session with it</p>
+<ul>
+<li>each gossip require 3 messages</li>
+</ul>
+</li>
+<li>Sends its friend a Gossip Disget Syn Message</li>
+<li>Followed by a GossipDigestAck message</li>
+<li>Th eoriginal ack is returned with a gossip digestack2 message</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r10-section-9"><summary aria-label="8. Talks" data-title="Talks" data-number="8"><header><h2 class="tree-heading"><span class="taxon">8. </span><span class="section-title">Talks</span></h2></header></summary><ul>
+<li><a class="link external bare-url" href="https://github.com/ngcc/ngcc2019/tree/master" title="https://github.com/ngcc/ngcc2019/tree/master">github.com/ngcc/ngcc2019/tree/master</a></li>
+</ul>
+</details></section></div></section>
+<footer><section id="backlinks" tabindex="-1"><h2>Backlinks <span class="relation-count">5</span></h2><p class="relation-description">Notes that link to this note.<span class="js-only"> Expand an arrow to read here.</span></p><ul class="backlinks"><li><a class="link local" href="/notes/3949f1f8-3e53-499e-979a-1a1c10ec6647/">DynamoDB</a> <span class="index-context">in Databases</span></li><li><a class="link local" href="/notes/d5b39161-df16-426c-a98a-f8cf0dfe21f0/">elixir driver for cassandra/scylla</a></li><li><a class="link local" href="/notes/a7874df7-3ad9-434d-8cf8-06f047ae52d2/">Homogenous Time: Ibn Khaldun and Transaction Logs</a></li><li><a class="link local" href="/notes/9a4127a0-2ea8-46b9-a0c2-da6bb24b1405/">k/v stores</a></li><li><a class="link local" href="/notes/1939b0e5-e867-4ef0-8d8f-a3cadeefda57/">programming kubernetes chapter 1 - intro</a></li></ul></section><section id="outgoing"><details class="outgoing"><summary><h2>Links from this note <span class="relation-count">2</span></h2></summary><ul class="backlinks"><li><a class="link local" href="/notes/4d8f680d-3043-42f2-8635-12ee3f560c8b/">Databases</a></li><li><a class="link local" href="/notes/60e89de2-2826-4c7f-9df6-69a0c00f11a2/">distributed systems</a></li></ul></details></section></footer>
+</article>
+<nav id="toc" aria-label="Table of contents"><details open class="toc-disclosure"><summary><h2>Table of contents</h2></summary><ul class="block"><li class="toc-depth-0" data-target="r10-section-1"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r10-section-1" title="Internals"><span class="taxon">1. </span>Internals</a></li><li class="toc-depth-0" data-target="r10-section-2"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r10-section-2" title="concurrent_compactors"><span class="taxon">2. </span>concurrent_compactors</a></li><li class="toc-depth-0" data-target="r10-section-3"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r10-section-3" title="Counter Table TTL&#39;s"><span class="taxon">3. </span>Counter Table TTL&#39;s</a></li><li class="toc-depth-0" data-target="r10-section-4"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r10-section-4" title="Jolokia Agent"><span class="taxon">4. </span>Jolokia Agent</a></li><li class="toc-depth-0" data-target="r10-section-5"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r10-section-5" title="CQLSH"><span class="taxon">5. </span>CQLSH</a></li><li class="toc-depth-0" data-target="r10-section-6"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r10-section-6" title="Scylla"><span class="taxon">6. </span>Scylla</a></li><li class="toc-depth-1" data-target="r10-section-7"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r10-section-7" title="Tracing"><span class="taxon">6.1. </span>Tracing</a></li><li class="toc-depth-0" data-target="r10-section-8"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r10-section-8" title="Cassandra Gossiper Protocol"><span class="taxon">7. </span>Cassandra Gossiper Protocol</a></li><li class="toc-depth-0" data-target="r10-section-9"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r10-section-9" title="Talks"><span class="taxon">8. </span>Talks</a></li></ul><p class="tree-tools"><button type="button" data-action="expand">Expand all</button> · <button type="button" data-action="collapse">Collapse all</button></p></details></nav></div></body></html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>Megastore · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon="section"><header class="document-header" tabindex="-1"><h1><span class="taxon">section</span><span dir="auto">Megastore</span> <a class="slug" href="/notes/4dbf8b11-e3a7-4f81-82bd-e072ab1af854/" title="4DBF8B11-E3A7-4F81-82BD-E072AB1AF854" aria-label="Permanent link to Megastore">[4dbf8b11]</a></h1><div class="metadata">Part of <a class="link local" href="/notes/4d8f680d-3043-42f2-8635-12ee3f560c8b/">Databases</a></div></header>
+<div id="note"><ul>
+<li>SQL based system</li>
+<li>Built on top of bigtable</li>
+<li>Main goal was to facilitate ACID transactions</li>
+</ul>
+<section class="block branch"><details open="" id="r7-section-1"><summary aria-label="1. Design" data-title="Design" data-number="1"><header><h2 class="tree-heading"><span class="taxon">1. </span><span class="section-title">Design</span></h2></header></summary><ul>
+<li>
+<p>Application server</p>
+<ul>
+<li>Used to deploy megastore, local replica on each application server, which writes to the local bigtable</li>
+</ul>
+</li>
+<li>
+<p>Megastore library</p>
+<ul>
+<li>Connects and implements paxos and replica picking</li>
+</ul>
+</li>
+<li>
+<p>Replication server</p>
+<ul>
+<li>Checks for unfinished writes, similar to a garbage collector, which provides paxos no-op commands</li>
+</ul>
+</li>
+<li>
+<p>Coordinator</p>
+<ul>
+<li>Keeps track of entity groups which its replicas has seen every Paxos write</li>
+</ul>
+</li>
+<li>
+<p>Bigtable</p>
+<ul>
+<li>Handles arbitrary reads and write throughputs</li>
+</ul>
+</li>
+</ul>
+<p><img loading="lazy" decoding="async" src="/assets/74ffcbee2087ddfad12ed6b125396b9f.png" alt="2024-02-22_19-02-48_screenshot.png" width="834" height="704"/></p>
+</details></section><section class="block branch"><details open="" id="r7-section-2"><summary aria-label="2. Replication Strats" data-title="Replication Strats" data-number="2"><header><h2 class="tree-heading"><span class="taxon">2. </span><span class="section-title">Replication Strats</span></h2></header></summary><ul>
+<li>Async primary/secondary - write ahead logs are replciated to at least one secondary node, but log appends are recognized and serialized at the primary node while being sent down to the secondary nodes. Primary is responsible for ACID, but it is acceptable to have a node fail and a secondary take on a primary.</li>
+<li>Sync primary/secondary, primary node waits until its actually been replicated before doing a tx</li>
+<li>Optimistic replication, where no primary, and any node can accept the changes and propagate them async to other nodes. Better availability and latency, but transactions are not possible.</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r7-section-3"><summary aria-label="3. Paxos" data-title="Paxos" data-number="3"><header><h2 class="tree-heading"><span class="taxon">3. </span><span class="section-title">Paxos</span></h2></header></summary><ul>
+<li>Megastore implements paxos, which has issues being slow</li>
+<li>
+<p>But Paxos gives</p>
+<ul>
+<li>NO primary but a group</li>
+<li>WAL is replciated to all nodes</li>
+<li>Any node can start read/write</li>
+<li>Every log adds the changes only if a majority acks</li>
+<li>Remaining nodes eventually catch up</li>
+<li>Communication is hindered if a majority is down</li>
+</ul>
+</li>
+<li>Entity groups are used to replicate</li>
+</ul>
+<p><img loading="lazy" decoding="async" src="/assets/1aedd80c5f030e2a3e8aa744638c0c78.png" alt="2024-02-22_19-06-43_screenshot.png" width="1232" height="788"/></p>
+<ul>
+<li>
+<p>In entity groups, entities are changed using single-phase ACID transactions, which paxos uses to replicate the common record</p>
+<ul>
+<li>2pc can also be used</li>
+</ul>
+</li>
+<li>Megastore async replicates between different entity groups. Local indexes have strong consistenty, but global ones have weak consistenty</li>
+</ul>
+<p><img loading="lazy" decoding="async" src="/assets/062adb6e13d4ccdb1a5ad77c5176093b.png" alt="2024-02-22_19-14-17_screenshot.png" width="1112" height="724"/></p>
+</details></section><section class="block branch"><details open="" id="r7-section-4"><summary aria-label="4. Megastore Data Model" data-title="Megastore Data Model" data-number="4"><header><h2 class="tree-heading"><span class="taxon">4. </span><span class="section-title">Megastore Data Model</span></h2></header></summary><ul>
+<li>
+<p>API design</p>
+<ul>
+<li>Relatively stable performance benefits</li>
+<li>Shift work from read time to write time since there&#39;s definitely going to be more reads than writes</li>
+</ul>
+</li>
+<li>Data model is strongly typed, similar to RDMS, where schemas and a collection of tables are named and typed.</li>
+<li>
+<p>Key distinctions: root tables and child tables</p>
+<ul>
+<li>Child table needs to specificy a foreign key referring to a root table, and a root table and all its child tables make up an entity group</li>
+</ul>
+</li>
+<li>
+<p>Prejoining with keys</p>
+<ul>
+<li>normally, primary keys have surrogate values that idenitfy each row in a table</li>
+</ul>
+</li>
+<li>
+<p>Two layers of secondary indexes</p>
+<ul>
+<li>Local index: each group&#39;s local index is used as a distinct index, which locates data inside an entity group</li>
+<li>Global index: encompasses many entity groups, used to locate entities without knowing which entity groups include them in advance</li>
+</ul>
+</li>
+<li>
+<p>All of this is splayed on top of big table to get atomicity, consistency, isolation, and durability</p>
+<ul>
+<li>Uses the versioning feature of bigtable to implement multi-version concurrency control</li>
+</ul>
+</li>
+<li>
+<p>Read consistency</p>
+<ul>
+<li>
+<p>Gives you three levels</p>
+<ul>
+<li>Current: makes sure all committed writes have been executed, and does a read</li>
+<li>Snapshot: reads the latest committed write operation</li>
+<li>Inconsistent: reads the most recent value without considering the log&#39;s state</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Writes</p>
+<ul>
+<li>Writes do a current read before doing a write so it can find the latest offset for the log, then uses paxos to get all nodes to buy in, then commits it and updates it in bigtable</li>
+</ul>
+</li>
+<li>
+<p>Queues</p>
+<ul>
+<li>Transactional messaging among groups of entities are handled through queues, which is used for batching many changes into a single transaction</li>
+</ul>
+</li>
+</ul>
+</details></section><section class="block branch"><details open="" id="r7-section-5"><summary aria-label="5. Replication in Megastore" data-title="Replication in Megastore" data-number="5"><header><h2 class="tree-heading"><span class="taxon">5. </span><span class="section-title">Replication in Megastore</span></h2></header></summary><ul>
+<li>Paxos WAL is mostly where it sits</li>
+<li>Also allows local reads from anywhere, since paxos is used to make sure everyone is together</li>
+<li>Each log position is a paxos usage, which optimizes to skip the preparation phase and enter the acceptance phase when the same proposer makes continous proposals</li>
+<li>Leader decides which values are allowed ot use proposal 0</li>
+<li>
+<p>Different types of replicas</p>
+<ul>
+<li>
+<p>Witness replicas</p>
+<ul>
+<li>Have WALs and vote in Paxos</li>
+<li>Reduced storage costs because they don&#39;t actually store the data</li>
+<li>Are able to avoid the need for an additional round trip when unable write</li>
+</ul>
+</li>
+<li>
+<p>Read only replicas</p>
+<ul>
+<li>Can&#39;t vote</li>
+<li>Contain snapshots of the data</li>
+<li>Read only replicas can distribute the data over large geographic area, basically a CDN</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<section class="block branch"><details open="" id="r7-section-6"><summary aria-label="5.1. Replicated Logs" data-title="Replicated Logs" data-number="5.1"><header><h3 class="tree-heading"><span class="taxon">5.1. </span><span class="section-title">Replicated Logs</span></h3></header></summary><ul>
+<li>Replicated logs have many shapes, but we also allow holes in the logs for when consensus was not found</li>
+<li>
+<p>Catching up</p>
+<ul>
+<li>Node checks if the entity group is up-to-date locally by contacting the coordinator of the local replica</li>
+<li>Then finds the position, which detemrines and picks a replica that has applied through the highest possibly commited log position</li>
+<li>Catches up by reading the values from the different replicas. Empty no-op values for ones that are disputed, Paxos then forces all the majority of the replicas to accept the no-op or previously comimtted write</li>
+</ul>
+</li>
+<li>Coordinators oversee the entire process, and they themselves are locked in Chubby</li>
+</ul>
+</details></section></details></section></div></section>
+<footer><section id="backlinks" tabindex="-1"><h2>Backlinks <span class="relation-count">1</span></h2><p class="relation-description">Notes that link to this note.<span class="js-only"> Expand an arrow to read here.</span></p><ul class="backlinks"><li><a class="link local" href="/notes/60e89de2-2826-4c7f-9df6-69a0c00f11a2/">distributed systems</a></li></ul></section></footer>
+</article>
+<nav id="toc" aria-label="Table of contents"><details open class="toc-disclosure"><summary><h2>Table of contents</h2></summary><ul class="block"><li class="toc-depth-0" data-target="r7-section-1"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r7-section-1" title="Design"><span class="taxon">1. </span>Design</a></li><li class="toc-depth-0" data-target="r7-section-2"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r7-section-2" title="Replication Strats"><span class="taxon">2. </span>Replication Strats</a></li><li class="toc-depth-0" data-target="r7-section-3"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r7-section-3" title="Paxos"><span class="taxon">3. </span>Paxos</a></li><li class="toc-depth-0" data-target="r7-section-4"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r7-section-4" title="Megastore Data Model"><span class="taxon">4. </span>Megastore Data Model</a></li><li class="toc-depth-0" data-target="r7-section-5"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r7-section-5" title="Replication in Megastore"><span class="taxon">5. </span>Replication in Megastore</a></li><li class="toc-depth-1" data-target="r7-section-6"><span class="bullet" aria-hidden="true">▪</span><a class="link local" href="#r7-section-6" title="Replicated Logs"><span class="taxon">5.1. </span>Replicated Logs</a></li></ul><p class="tree-tools"><button type="button" data-action="expand">Expand all</button> · <button type="button" data-action="collapse">Collapse all</button></p></details></nav></div></body></html>

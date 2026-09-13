@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script src="/static/theme.js"></script><title>ZippyDB · عجفت الغور</title><link rel="stylesheet" href="/static/forester.css"><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/katex/katex.min.css"><script defer src="/static/katex/katex.min.js"></script><script defer src="/static/reader.js"></script></head>
+<body><a class="skip" href="#main">Skip to notes</a>
+<header class="header"><nav class="nav" aria-label="Main"><div class="logo"><a href="/" title="Home (g h)" aria-label="عجفت الغور: home" dir="auto">عجفت الغور</a></div><div class="site-actions"><a class="link local" href="/all/" title="All notes (g a)">All notes</a><a class="link local" href="#search" id="search-toggle" aria-controls="search" aria-expanded="false" aria-keyshortcuts="/ Control+k Meta+k">Search <kbd>/</kbd></a><button class="text-control js-only" id="theme-toggle" type="button" title="Change color theme (t)">System</button><a class="link local" href="#shortcuts" id="help-toggle" aria-controls="shortcuts" aria-expanded="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">?</a></div></nav></header>
+<section class="search utility" id="search" aria-label="Search notes">
+<div class="search-line"><label class="sr-only" for="query">Find a note</label><input id="query" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results" aria-describedby="search-status"><button class="text-control" type="button" id="search-close" aria-label="Close search"><kbd>Esc</kbd></button></div>
+<div class="search-caption"><p id="search-status" role="status">Search titles and text</p><span aria-hidden="true">↑ ↓ select · ↵ open</span></div><ul id="results" role="listbox" aria-label="Matching notes"></ul><noscript><p>Search needs JavaScript. <a class="link local" href="/all/">Browse all notes.</a></p></noscript></section>
+<section class="utility shortcuts" id="shortcuts" aria-label="Keyboard shortcuts" tabindex="-1"><div class="utility-heading"><h2>Keyboard shortcuts</h2><button type="button" class="text-control" id="help-close" aria-label="Close keyboard shortcuts"><kbd>Esc</kbd></button></div>
+<dl class="shortcut-list"><div><dt><kbd>/</kbd> or <kbd>⌘/Ctrl K</kbd></dt><dd>Find a note</dd></div><div><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous section or linked note</dd></div><div><dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Collapse or go to parent / expand or enter</dd></div><div><dt><kbd>e</kbd> or Alt-click</dt><dd>Read a linked note here</dd></div><div><dt><kbd>o</kbd></dt><dd>Open focused note on its own</dd></div><div><dt><kbd>g g</kbd> / <kbd>G</kbd></dt><dd>First / last section or linked note</dd></div><div><dt><kbd>g h</kbd> / <kbd>g a</kbd></dt><dd>Home / all notes</dd></div><div><dt><kbd>g b</kbd> / <kbd>g t</kbd></dt><dd>Backlinks / table of contents</dd></div><div><dt><kbd>t</kbd></dt><dd>Cycle System, Light, Dark</dd></div><div><dt><kbd>?</kbd> / <kbd>Esc</kbd></dt><dd>Show / close this reference</dd></div></dl><label class="shortcut-setting"><input id="single-keys" type="checkbox" checked> Enable single-key shortcuts</label><p class="utility-note">Search: ↑/↓ or Ctrl N/P, Enter to open. Shortcuts pause while typing.</p></section>
+<div class="sr-only" id="reader-status" role="status"></div>
+<div id="grid-wrapper"><article id="main" tabindex="-1">
+<section class="block root-tree" data-taxon="section"><header class="document-header" tabindex="-1"><h1><span class="taxon">section</span><span dir="auto">ZippyDB</span> <a class="slug" href="/notes/6acf9ab7-e628-4d41-bd5b-06bc66ada12a/" title="6ACF9AB7-E628-4D41-BD5B-06BC66ADA12A" aria-label="Permanent link to ZippyDB">[6acf9ab7]</a></h1><div class="metadata">Part of <a class="link local" href="/notes/9a4127a0-2ea8-46b9-a0c2-da6bb24b1405/">k/v stores</a></div></header>
+<div id="note"><p><img loading="lazy" decoding="async" src="/assets/252e4c0024d148e9af1c5275684ad163.png" alt="2024-02-10_17-50-47_screenshot.png" width="1374" height="912"/></p>
+<ul>
+<li>Build on RocksDB, but less management</li>
+<li>Generic KV store, supports snapshot reads and partial read/write</li>
+<li>
+<p>Snapshot reads</p>
+<ul>
+<li>cheap operation that uses snapshot handlers to perform multiple reads</li>
+<li>
+<p>basically RCU, but if you read while a write is happening the read goes to a snapshot</p>
+<ul>
+<li>handles versions, whereas RCU doesn&#39;t handle versions</li>
+<li>also uses a cleaner or garbage collector or sweeper, whereas RCU places the burden on the writer</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Data can be replicated either with <a class="link local" href="/notes/d9ad286e-b3c1-435d-a315-387486be8e7b/">gossip protocols</a> or <a class="link local" href="/notes/b61cd1ff-6157-4754-a625-a1ae4fcc5770/">paxos</a>, although usually there&#39;s a master</p>
+<ul>
+<li>specific read only replicas called followers are occasionally added for high volume reads</li>
+</ul>
+</li>
+<li>
+<p>Divides times into small epocs, each epoc zippy assigns a primary replica, that is the paxos leader</p>
+<ul>
+<li>Allows clients to choose which consistency level they come into (same as Spanner)</li>
+<li>Consistent reading -&gt; clients go to the current primary of the shard</li>
+<li>Stale information -&gt; can go to a replica</li>
+<li>Also allows for read-your-writes with a hash that signals to the replicas to manually update</li>
+</ul>
+</li>
+<li>
+<p>Has a data shuttle, which basically tiers it into Primary -&gt; Secondary -&gt; Follower, on per shard basis</p>
+<ul>
+<li>A shard is a box</li>
+</ul>
+</li>
+<li>Shard management service is the orchestrator, and tells each shard what they own, master that runs over the control plane</li>
+<li>Store is based on top of <a class="link local" href="/notes/0601014d-70e8-49a1-bc80-539b71887d75/">RocksDB</a></li>
+</ul>
+</div></section>
+<footer><section id="backlinks" tabindex="-1"><h2>Backlinks <span class="relation-count">1</span></h2><p class="relation-description">Notes that link to this note.<span class="js-only"> Expand an arrow to read here.</span></p><ul class="backlinks"><li><a class="link local" href="/notes/cf37f28d-4e2b-4226-9d20-ea246b8b6492/">Tectonic</a> <span class="index-context">in storage</span></li></ul></section><section id="outgoing"><details class="outgoing"><summary><h2>Links from this note <span class="relation-count">3</span></h2></summary><ul class="backlinks"><li><a class="link local" href="/notes/d9ad286e-b3c1-435d-a315-387486be8e7b/">gossip protocols</a></li><li><a class="link local" href="/notes/b61cd1ff-6157-4754-a625-a1ae4fcc5770/">paxos</a></li><li><a class="link local" href="/notes/0601014d-70e8-49a1-bc80-539b71887d75/">RocksDB</a> <span class="index-context">in k/v stores</span></li></ul></details></section></footer>
+</article>
+</div></body></html>
