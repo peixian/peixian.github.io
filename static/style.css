@@ -69,6 +69,9 @@ section.transclusion>details,section.transclusion>details[open] { margin-bottom:
 article>footer { margin-top:var(--space-8); padding-top:var(--space-4) }
 article>footer:empty { display:none }
 article>footer h2 { font-size:1rem; line-height:1.4; margin:0 0 var(--space-1) }
+.generated-at { color:var(--muted); font-size:.875rem; line-height:1.5; margin:var(--space-8) 0 0 }
+.generated-at:only-child { margin-top:0 }
+.generated-at time { white-space:nowrap }
 .relation-count { color:var(--muted); font-size:.875rem; font-weight:400; margin-left:var(--space-2) }
 .relation-description { color:var(--muted); font-size:.875rem; margin:0 }
 .backlinks { padding-left:1.2em; margin-top:var(--space-2) }
